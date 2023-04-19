@@ -41,7 +41,6 @@ sidebar:
       - section: audit
     - section: expand
     - section: maintain
-    - section: recover
     - title: StorageGRID appliances
       url: /storagegrid-hardware.html    
     - title: Enable StorageGRID
@@ -107,8 +106,6 @@ homepage:
         url: /expand/index.html
       - title: Maintenance procedures
         url: /maintain/index.html
-      - title: Recover nodes or site
-        url: /recover/index.html 
     - title: Demos & tutorials
       links:
       - title: StorageGRID appliances
