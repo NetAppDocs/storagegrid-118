@@ -4,7 +4,7 @@ entries:
   - title: Overview
     pdf-filename: Upgrade StorageGRID software 
     url: "/upgrade/index.html"
-  - title: What's new in StorageGRID 11.7
+  - title: What's new in StorageGRID 11.8
     url: "/upgrade/whats-new.html"
   - title: Removed or deprecated features
     url: "/upgrade/removed-or-deprecated-features.html"
@@ -28,7 +28,7 @@ entries:
       url: "/upgrade/checking-systems-condition-before-upgrading-software.html"
   - title: Upgrade software
     entries:
-    - title: Upgrade workflow
+    - title: Upgrade quick start
       url: "/upgrade/upgrade-workflow.html"    
     - title: 'Linux: Download and install RPM or DEB package'
       url: "/upgrade/linux-installing-rpm-or-deb-package-on-all-hosts.html"    
