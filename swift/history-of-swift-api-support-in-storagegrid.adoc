@@ -15,6 +15,9 @@ You should be aware of changes to the StorageGRID system's support for the Swift
 |===
 | Release| Comments
 
+| 11.8
+|
+
 |11.7
 |Support for Swift client applications has been deprecated and will be removed in a future release.
 

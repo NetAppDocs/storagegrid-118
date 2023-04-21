@@ -33,10 +33,10 @@ Before you begin the software upgrade, you must obtain all required materials so
 *Important*: Ensure that your operating system is upgraded to Linux kernel 4.15 or higher.
     
 |StorageGRID documentation
-|* link:../release-notes/index.html[Release notes] for StorageGRID 11.7 (sign in required). Be sure to read these carefully before starting the upgrade. 
+|* link:../release-notes/index.html[Release notes] for StorageGRID 11.8 (sign in required). Be sure to read these carefully before starting the upgrade. 
 * https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/StorageGRID/StorageGRID_software_upgrade_resolution_guide[StorageGRID software upgrade resolution guide^] for the major version you are upgrading to (sign in required)
 
-* Other https://docs.netapp.com/us-en/storagegrid-117/index.html[StorageGRID 11.7 documentation^], as required.
+* Other https://docs.netapp.com/us-en/storagegrid-118/index.html[StorageGRID 11.8 documentation^], as required.
 
 |===
 
