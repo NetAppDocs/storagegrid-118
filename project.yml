@@ -39,8 +39,10 @@ sidebar:
       - section: monitor
       - section: troubleshoot
       - section: audit
-    - section: expand
-    - section: maintain
+    - title: Maintain
+      entries:
+      - section: expand
+      - section: maintain
     - title: StorageGRID appliances
       url: /storagegrid-hardware.html    
     - title: Enable StorageGRID

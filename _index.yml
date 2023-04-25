@@ -51,14 +51,16 @@ indexpage:
         url: /audit/index.html
     - title: Maintain your grid
       links:        
-      - title: Expand your grid
+      - title: Add nodes and sites
         url: /expand/index.html
-      - title: Maintenance procedures
+      - title: Recover and maintain
         url: /maintain/index.html
-    - title: Demos & tutorials
+    - title: StorageGRID appliances
       links:
       - title: StorageGRID appliances
         url:  https://docs.netapp.com/us-en/storagegrid-appliances/index.html
+    - title: Demos & tutorials
+      links:
       - title: Learn how to enable StorageGRID
         url: https://docs.netapp.com/us-en/storagegrid-enable/index.html
       - title: StorageGRID video library
@@ -85,7 +87,3 @@ indexpage:
         url:  https://docs.netapp.com/us-en/storagegrid-116/index.html
       - title: StorageGRID 11.5 documentation
         url: https://docs.netapp.com/us-en/storagegrid-115/index.html
-      - title: StorageGRID 11.4 documentation
-        url: https://docs.netapp.com/sgws-114/index.jsp
-      - title: StorageGRID 11.3 documentation
-        url: https://docs.netapp.com/sgws-113/index.jsp
