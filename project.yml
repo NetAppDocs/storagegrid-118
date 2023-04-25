@@ -39,8 +39,10 @@ sidebar:
       - section: monitor
       - section: troubleshoot
       - section: audit
-    - section: expand
-    - section: maintain
+    - title: Maintain
+      entries:
+      - section: expand
+      - section: maintain
     - title: StorageGRID appliances
       url: /storagegrid-hardware.html    
     - title: Enable StorageGRID
@@ -49,3 +51,6 @@ sidebar:
       url: /earlier-versions.html
     - title: Legal notices
       url: /legal-notices.html
+product-family:
+  name: StorageGRID documentation
+  repo: storagegrid-family
