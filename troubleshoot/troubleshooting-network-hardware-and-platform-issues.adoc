@@ -80,7 +80,7 @@ The differences in MTU settings could indicate that some, but not all, eth0 netw
 . List the MTU settings for eth0 on all nodes.
  ** Use the query provided in the Grid Manager.
  ** Navigate to `_primary Admin Node IP address_/metrics/graph` and enter the following query: `node_network_mtu_bytes{interface='eth0'}`
-. link:../commonhardware/changing-mtu-setting.html[Modify the MTU settings] as necessary to ensure they are the same for the Grid Network interface (eth0) on all nodes.
+. https://docs.netapp.com/us-en/storagegrid-appliances/commonhardware/changing-mtu-setting.html[Modify the MTU settings] as necessary to ensure they are the same for the Grid Network interface (eth0) on all nodes.
  ** For Linux- and VMware-based nodes, use the following command: `+/usr/sbin/change-ip.py [-h] [-n node] mtu network [network...]+`
 +
 *Example*: `change-ip.py -n node 1500 grid admin`
@@ -167,7 +167,7 @@ The MTU size configured on the node might be smaller than the setting on the swi
 
 IMPORTANT: For the best network performance, all nodes should be configured with similar MTU values on their Grid Network interfaces. The *Grid Network MTU mismatch* alert is triggered if there is a significant difference in MTU settings for the Grid Network on individual nodes. The MTU values don't have to be the same for all network types. See <<troubleshoot_MTU_alert,Troubleshoot the Grid Network MTU mismatch alert>> for more information.
 
-NOTE: Also see link:../commonhardware/changing-mtu-setting.html[Change MTU setting].
+NOTE: Also see https://docs.netapp.com/us-en/storagegrid-appliances/commonhardware/changing-mtu-setting.html[Change MTU setting].
 
 --
 .High link error rates
