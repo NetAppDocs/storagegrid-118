@@ -25,7 +25,7 @@ See the StorageGRID installation instructions for your Linux operating system:
 
 * link:../ubuntu/index.html[Install Ubuntu or Debian]
 
-*Appliances:* On StorageGRID appliances, if the Client or Admin Network was not configured in the StorageGRID Appliance Installer during the initial installation, the network can't be added by using only the Change IP tool. First, you must link:../commonhardware/placing-appliance-into-maintenance-mode.html[place the appliance in maintenance mode], configure the links, return the appliance to normal operating mode, and then use the Change IP tool to modify the network configuration. See the link:../installconfig/configuring-network-links.html[procedure for configuring network links].
+*Appliances:* On StorageGRID appliances, if the Client or Admin Network was not configured in the StorageGRID Appliance Installer during the initial installation, the network can't be added by using only the Change IP tool. First, you must https://review.docs.netapp.com/us-en/storagegrid-appliances_main/commonhardware/placing-appliance-into-maintenance-mode.html[place the appliance in maintenance mode^], configure the links, return the appliance to normal operating mode, and then use the Change IP tool to modify the network configuration. See the https://review.docs.netapp.com/us-en/storagegrid-appliances_main/installconfig/configuring-network-links.html[procedure for configuring network links^].
 
 You can change the IP address, subnet mask, gateway, or MTU value for one or more nodes on any network.
 
@@ -162,13 +162,3 @@ After applying or staging changes, a new Recovery Package is generated as a resu
 . Download a new Recovery Package from the Grid Manager.
  .. Select *MAINTENANCE* > *System* > *Recovery package*.
  .. Enter the provisioning passphrase.
-
-.Related information
-
-link:../sg6100/index.html[SGF6112 storage appliances]
-
-link:../sg6000/index.html[SG6000 storage appliances]
-
-link:../sg5700/index.html[SG5700 storage appliances]
-
-link:../sg100-1000/index.html[SG100 and SG1000 services appliances]

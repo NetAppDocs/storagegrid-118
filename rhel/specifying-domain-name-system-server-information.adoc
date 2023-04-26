@@ -13,7 +13,7 @@ You must specify DNS information for your StorageGRID system, so that you can ac
 
 .About this task
 
-Specifying link:../commonhardware/checking-dns-server-configuration.html[DNS server information] allows you to use Fully Qualified Domain Name (FQDN) hostnames rather than IP addresses for email notifications and AutoSupport.
+Specifying https://review.docs.netapp.com/us-en/storagegrid-appliances_main/commonhardware/checking-dns-server-configuration.html[DNS server information^] allows you to use Fully Qualified Domain Name (FQDN) hostnames rather than IP addresses for email notifications and AutoSupport.
 
 include::../_include/dns-server-restrictions.adoc[]
 
