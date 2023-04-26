@@ -31,7 +31,7 @@ link:../vmware/index.html[Install VMware].
 
 == Guidelines for appliance nodes
 
-If enterprise networking policies restrict access to any of these ports, you can remap ports using the StorageGRID Appliance Installer. See link:../installconfig/optional-remapping-network-ports-for-appliance.html[Optional: Remap network ports for appliance].
+If enterprise networking policies restrict access to any of these ports, you can remap ports using the StorageGRID Appliance Installer. See https://review.docs.netapp.com/us-en/storagegrid-appliances_main/installconfig/optional-remapping-network-ports-for-appliance.html[Optional: Remap network ports for appliance^].
 
 == StorageGRID internal ports
 

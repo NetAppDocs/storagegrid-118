@@ -68,7 +68,7 @@ To install the StorageGRID software on an appliance node, you use the StorageGRI
 .Before you begin
 
 * The appliance has been installed in a rack or cabinet, connected to your networks, and powered on.
-* You have completed the link:../installconfig/configuring-hardware.html[Set up hardware] steps.
+* You have completed the https://review.docs.netapp.com/us-en/storagegrid-appliances_main/installconfig/configuring-hardware.html[Set up hardware^] steps.
 +
 Setting up appliance hardware includes the required steps for configuring StorageGRID connections (network links and IP addresses) as well the optional steps for enabling node encryption, changing the RAID mode, and remapping network ports.
 

@@ -45,7 +45,7 @@ After you determine which StorageGRID networks you want to use and how those net
 
 .Install appliance nodes
 
-* link:../installconfig/index.html[Install appliance hardware]
+* https://review.docs.netapp.com/us-en/storagegrid-appliances_main/installconfig/index.html[Install appliance hardware^]
 
 .Configure and administer StorageGRID software
 

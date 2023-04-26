@@ -17,7 +17,7 @@ See https://docs.netapp.com/us-en/e-series-santricity/sm-support/autosupport-fea
 * You are signed into the Grid Manager using a link:../admin/web-browser-requirements.html[supported web browser].
 * You have the Storage appliance administrator permission or Root access permission.
 * You have configured SANtricity AutoSupport:
-** For SG6000 and SG5700 appliances, link:../installconfig/accessing-and-configuring-santricity-system-manager.html[configure AutoSupport in SANtricity System Manager]
+** For SG6000 and SG5700 appliances, https://review.docs.netapp.com/us-en/storagegrid-appliances_main/installconfig/accessing-and-configuring-santricity-system-manager.html[configure AutoSupport in SANtricity System Manager^]
 
 NOTE: You must have SANtricity firmware 8.70 or higher to access SANtricity System Manager using the Grid Manager.
 

@@ -25,7 +25,7 @@ To use systems and protocols such as SMTP, DNS, SSH, or DHCP, you must remap por
 
 * link:../vmware/index.html[Install VMware]
 
-* link:../installconfig/optional-remapping-network-ports-for-appliance.html[Optional: Remap network ports for appliance]
+* https://review.docs.netapp.com/us-en/storagegrid-appliances_main/installconfig/optional-remapping-network-ports-for-appliance.html[Optional: Remap network ports for appliance^]
 
 
 == Ports used for external communications

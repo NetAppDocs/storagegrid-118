@@ -105,13 +105,13 @@ See the following for more information:
 
 * https://hwu.netapp.com[NetApp Hardware Universe^] 
 
-* link:../installconfig/hardware-description-sg6100.html[SGF6112 storage appliance]
+* https://review.docs.netapp.com/us-en/storagegrid-appliances_main/installconfig/hardware-description-sg6100.html[SGF6112 storage appliance^]
 
-* link:../installconfig/hardware-description-sg100-and-1000.html[SG100 and SG1000 services appliances]
+* https://review.docs.netapp.com/us-en/storagegrid-appliances_main/installconfig/hardware-description-sg100-and-1000.html[SG100 and SG1000 services appliances^]
 
-* link:../installconfig/hardware-description-sg6000.html[SG6000 storage appliances]
+* https://review.docs.netapp.com/us-en/storagegrid-appliances_main/installconfig/hardware-description-sg6000.html[SG6000 storage appliances^]
 
-* link:../installconfig/hardware-description-sg5700.html[SG5700 storage appliances]
+* https://review.docs.netapp.com/us-en/storagegrid-appliances_main/installconfig/hardware-description-sg5700.html[SG5700 storage appliances^]
 
 === Primary services for Admin Nodes
 

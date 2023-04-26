@@ -18,7 +18,7 @@ To install a Gateway Node or Admin Node on an SG100 or SG1000 services appliance
 * If you are installing a Gateway Node or non-primary Admin Node, you know the IP address of the primary Admin Node for the StorageGRID grid.
 * All Grid Network subnets listed on the IP Configuration page of the StorageGRID Appliance Installer are defined in the Grid Network Subnet List on the primary Admin Node.
 +
-See link:../installconfig/index.html[Quick start for hardware installation].
+See https://review.docs.netapp.com/us-en/storagegrid-appliances_main/installconfig/index.html[Quick start for hardware installation^].
 
 * You are using a link:../admin/web-browser-requirements.html[supported web browser].
 * You have one of the IP addresses assigned to the appliance. You can use the IP address for the Admin Network, the Grid Network, or the Client Network.
