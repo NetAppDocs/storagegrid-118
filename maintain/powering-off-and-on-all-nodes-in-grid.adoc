@@ -139,5 +139,5 @@ You can power on these nodes in any order.
 
 * https://review.docs.netapp.com/us-en/storagegrid-appliances_main/sg6000/index.html[SG6000 storage appliances^]
 
-* link:../sg5700/index.html[SG5700 storage appliances]
+* https://review.docs.netapp.com/us-en/storagegrid-appliances_main/sg5700/index.html[SG5700 storage appliances^]
 

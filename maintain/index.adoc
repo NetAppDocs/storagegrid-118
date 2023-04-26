@@ -35,4 +35,4 @@ For hardware procedures, see the maintenance instructions for your StorageGRID a
 
 * https://review.docs.netapp.com/us-en/storagegrid-appliances_main/sg6000/index.html[Maintain SG6000 appliance^]
 
-* link:../sg5700/index.html[Maintain SG5700 appliance]
+* https://review.docs.netapp.com/us-en/storagegrid-appliances_main/sg5700/index.html[Maintain SG5700 appliance^]
