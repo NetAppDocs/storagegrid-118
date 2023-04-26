@@ -98,7 +98,3 @@ If the *Start Installation* button is not enabled, you might need to change the 
 The Current state changes to "`Installation is in progress,`" and the Monitor Installation page is displayed.
 +
 NOTE: If you need to access the Monitor Installation page manually, click *Monitor Installation* from the menu bar.
-
-.Related information
-
-link:../sg100-1000/index.html[Maintain SG100 and SG1000 appliances]

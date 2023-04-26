@@ -31,7 +31,7 @@ For hardware procedures, see the maintenance instructions for your StorageGRID a
 
 * https://review.docs.netapp.com/us-en/storagegrid-appliances_main/sg6100/index.html[Maintain SGF6112 appliance^]
 
-* link:../sg100-1000/index.html[Maintain SG100 and SG1000 appliances]
+* https://review.docs.netapp.com/us-en/storagegrid-appliances_main/sg100-1000/index.html[Maintain SG100 and SG1000 appliances^]
 
 * https://review.docs.netapp.com/us-en/storagegrid-appliances_main/sg6000/index.html[Maintain SG6000 appliance^]
 
