@@ -179,7 +179,7 @@ System maintenance tasks you can perform include:
 
 ** link:../upgrade/index.html[Upgrade procedure]
 ** link:../maintain/storagegrid-hotfix-procedure.html[Hotfix procedure]
-** link:../sg6000/upgrading-santricity-os-on-storage-controllers-using-grid-manager-sg6000.html[Upgrade SANtricity OS on SG6000 storage controllers using Grid Manager]
+** https://review.docs.netapp.com/us-en/storagegrid-appliances_main/sg6000/upgrading-santricity-os-on-storage-controllers-using-grid-manager-sg6000.html[Upgrade SANtricity OS on SG6000 storage controllers using Grid Manager^]
 ** link:../sg5700/upgrading-santricity-os-on-storage-controllers-using-grid-manager-sg5700.html[Upgrade SANtricity OS on SG5700 storage controllers using Grid Manager]
 
 === Network
