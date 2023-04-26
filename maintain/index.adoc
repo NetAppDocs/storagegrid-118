@@ -29,7 +29,7 @@ NOTE: In these instructions, "`Linux`" refers to a Red Hat® Enterprise Linux®,
 
 For hardware procedures, see the maintenance instructions for your StorageGRID appliance.
 
-* link:../sg6100/index.html[Maintain SGF6112 appliance]
+* https://review.docs.netapp.com/us-en/storagegrid-appliances_main/sg6100/index.html[Maintain SGF6112 appliance^]
 
 * link:../sg100-1000/index.html[Maintain SG100 and SG1000 appliances]
 
