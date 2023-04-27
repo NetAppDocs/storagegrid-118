@@ -15,7 +15,7 @@ sidebar:
       entries:
       - section: primer
       - section: network
-      - title: Quick start for StorageGRID
+      - title: Quick start
         url: /quick-start.html      
     - title: Install appliances
       url: /storagegrid-hardware.html 
