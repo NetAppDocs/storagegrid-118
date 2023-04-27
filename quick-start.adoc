@@ -1,5 +1,5 @@
 ---
-permalink: primer/quick-start.html
+permalink: quick-start.html
 sidebar: sidebar
 keywords: storagegrid quick start, tasks
 summary: 'Follow these high-level steps to configure and use any StorageGRID system.'

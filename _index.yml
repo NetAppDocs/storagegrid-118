@@ -12,7 +12,7 @@ indexpage:
       - title: Networking guidelines
         url: /network/index.html
       - title: StorageGRID quick start
-        url: /primer/quick-start.html
+        url: /quick-start.html
     - title: Install & upgrade
       links:
       - title: Red Hat Enterprise Linux or CentOS
@@ -79,7 +79,7 @@ indexpage:
         url: https://netapp.com/blog/
       - title: NetApp community
         url: https://community.netapp.com/
-    - title: Earlier versions
+    - title: Other versions
       links:
       - title: StorageGRID 11.7 documentation
         url:  https://docs.netapp.com/us-en/storagegrid-117/index.html
