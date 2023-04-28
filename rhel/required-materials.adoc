@@ -2,29 +2,48 @@
 permalink: rhel/required-materials.html
 sidebar: sidebar
 keywords: installation materials red hat linux
-summary: 'Before you install StorageGRID, you must gather and prepare required materials.'
+summary: 'Before you install StorageGRID, gather and prepare the required materials.'
 ---
 = Required materials
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Before you install StorageGRID, you must gather and prepare required materials.
+Before you install StorageGRID, gather and prepare the required materials.
+
+NetApp StorageGRID license:: You must have a valid, digitally signed NetApp license.
+
+NOTE: A non-production license, which can be used for testing and proof of concept grids, is included in the StorageGRID installation archive.
+
+StorageGRID installation archive:: link:downloading-and-extracting-storagegrid-installation-files.html[Download the StorageGRID installation archive and extract the files].
+
+Service laptop:: The StorageGRID system is installed through a service laptop.
++
+The service laptop must have:
+
+* Network port
+* SSH client (for example, PuTTY)
+* link:../admin/web-browser-requirements.html[Supported web browser]
+
+StorageGRID documentation:: 
+* link:../release-notes/index.html[Release notes]
+* link:../admin/index.html[Instructions for administering StorageGRID]
+
 
 [cols="1a,2a" options="header"]
 |===
 | Item| Notes
 
-a|NetApp StorageGRID license
-a|You must have a valid, digitally signed NetApp license.
+|NetApp StorageGRID license
+|You must have a valid, digitally signed NetApp license.
 
 *Note*: A non-production license, which can be used for testing and proof of concept grids, is included in the StorageGRID installation archive.
 
-a|StorageGRID installation archive
-a|You must link:downloading-and-extracting-storagegrid-installation-files.html[download the StorageGRID installation archive and extract the files].
+| StorageGRID installation archive
+| You must link:downloading-and-extracting-storagegrid-installation-files.html[download the StorageGRID installation archive and extract the files].
 
-a|Service laptop
-a|The StorageGRID system is installed through a service laptop.
+| Service laptop
+| The StorageGRID system is installed through a service laptop.
 
 The service laptop must have:
 
@@ -32,8 +51,8 @@ The service laptop must have:
 * SSH client (for example, PuTTY)
 * link:../admin/web-browser-requirements.html[Supported web browser]
 
-a|StorageGRID documentation
-a|
+| StorageGRID documentation
+| 
 * link:../release-notes/index.html[Release notes]
 * link:../admin/index.html[Instructions for administering StorageGRID]
 |===

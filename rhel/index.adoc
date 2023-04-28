@@ -11,27 +11,33 @@ summary: 'Installing a StorageGRID system in a Red Hat Enterprise Linux (RHEL) o
 [.lead]
 Installing a StorageGRID system in a Red Hat Enterprise Linux (RHEL) or CentOS Linux environment includes three primary steps.
 
-. *Preparation*: During planning and preparation, you perform the following tasks:
- ** Learn about the hardware and storage requirements for StorageGRID.
- ** Learn about the specifics of link:../network/index.html[StorageGRID networking] so you can configure your network appropriately.
- ** Identify and prepare the physical or virtual servers you plan to use to host your StorageGRID grid nodes.
- ** On the servers you have prepared:
-  *** Install Linux
-  *** Configure the host network
-  *** Configure host storage
-  *** Install container engine
-  *** Install the StorageGRID host services
-. *Deployment*: Deploy grid nodes using the appropriate user interface. When you deploy grid nodes, they are created as part of the StorageGRID system and connected to one or more networks.
- .. Use the Linux command line and node configuration files to deploy software-based grid nodes on the hosts you prepared in step 1.
- .. Use the StorageGRID Appliance Installer to deploy StorageGRID appliance nodes.
+. *Preparation*
+ ** Learn about link:cpu-and-ram-requirements.html[CPU and RAM requirements].
+ ** Learn about link:storage-and-performance-requirements.html[hardware and storage requirements].
+ ** Learn about the specifics of link:../network/index.html[StorageGRID networking].
+ ** link:how-host-wide-settings-change.html[Prepare the Linux servers] that will host your StorageGRID nodes.
+
+. *Deployment*
 +
-NOTE: Hardware-specific installation and integration instructions aren't included in the StorageGRID installation procedure. To learn how to install StorageGRID appliances, see the https://review.docs.netapp.com/us-en/storagegrid-appliances_main/installconfig/index.html[Quick start for hardware installation^] to locate instructions for your appliance.
-. *Configuration*: When all nodes have been deployed, use the Grid Manager to configure the grid and complete the installation.
+Deploy grid nodes using the appropriate user interface. +
+When you deploy grid nodes, they are created as part of the StorageGRID system and connected to one or more networks.
 
-These instructions recommend a standard approach for deploying and configuring a StorageGRID system. See also the information about the following alternative approaches:
+* To deploy software-based grid nodes on the hosts you prepared in step 1, use the Linux command line and link:creating-node-configuration-files.html[node configuration files].
 
-* Use a standard orchestration framework such as Ansible, Puppet, or Chef to install RHEL or CentOS, configure networking and storage, install the container engine and the StorageGRID host service, and deploy virtual grid nodes.
-* Automate the deployment and configuration of the StorageGRID system using a Python configuration script (provided in the installation archive).
-* Automate the deployment and configuration of appliance grid nodes with a Python configuration script (available from the installation archive or from the StorageGRID Appliance Installer).
-* If you are an advanced developer of StorageGRID deployments, use the installation REST APIs to automate the installation of StorageGRID grid nodes.
+* To deploy StorageGRID appliance nodes, follow the https://review.docs.netapp.com/us-en/storagegrid-appliances_main/installconfig/index.html[Quick start for hardware installation^].
 
+. *Configuration*
++
+When all nodes have been deployed, use the Grid Manager to link:navigating-to-grid-manager.html[configure the grid and complete the installation].
+
+. *Alternative approaches*
++
+Instead of following the standard approach for deploying and configuring a StorageGRID system, you can use these alternative approaches:
+
+* For these options, see link:automating-installation.html[Automate the installation]
+** Use a standard orchestration framework such as Ansible, Puppet, or Chef to install RHEL or CentOS, configure networking and storage, install the container engine and the StorageGRID host service, and deploy virtual grid nodes.
+** Automate the deployment and configuration of the StorageGRID system using a Python configuration script (provided in the installation archive).
+** Automate the deployment and configuration of appliance grid nodes with a Python configuration script (available from the installation archive or from the StorageGRID Appliance Installer).
+
+* For this option, see link:overview-of-installation-rest-api.html[Overview of installation REST API]
+** If you are an advanced developer of StorageGRID deployments, use the installation REST APIs to automate the installation of StorageGRID grid nodes.
