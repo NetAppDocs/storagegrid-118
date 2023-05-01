@@ -16,7 +16,7 @@ indexpage:
           url: ../ubuntu/planning-and-preparation.html
         - title: VMware
           url: ../vmware/planning-and-preparation.html
-    - title: Collect information
+    - title: Deploy nodes
       links:          
         - title: Red Hat Enterprise Linux or Centos
           url:  ../rhel/creating-node-configuration-files.html

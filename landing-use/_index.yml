@@ -1,13 +1,13 @@
 indexpage:
    tiles:
-    - title: Get started with tenants
+    - title: Get started
       links:
         - title: What is a tenant?
           url: ../tenant/index.html
-        - title: Sign in to the Tenant Manager
-          url: ../tenant/index.html
+        - title: Sign in to Tenant Manager
+          url: ../tenant/signing-in-to-tenant-manager.html
         - title: Monitor tenant accounts
-          url: ../understanding-tenant-manager-dashboard.html
+          url: ../tenant/understanding-tenant-manager-dashboard.html
         - title: Use Tenant Management API
           url: ../tenant/understanding-tenant-management-api.html
     - title: Manage groups and users
@@ -20,7 +20,7 @@ indexpage:
           url:  ../tenant/tenant-management-permissions.html
         - title: Manage local users
           url:  ../tenant/managing-local-users.html
-    - title: Manage S3 buckets and access keys
+    - title: Manage S3 access keys and buckets
       links:
         - title: Manage S3 access keys
           url: ../tenant/managing-s3-access-keys.html
@@ -36,7 +36,7 @@ indexpage:
           url: ../tenant/grid-federation-account-clone.html
         - title: Cross-grid replication
           url: ../tenant/grid-federation-manage-cross-grid-replication.html
-        - title: StorageGRID platform services
+        - title: Platform services
           url:  ../tenant/what-platform-services-are.html
         - title: S3 Object Lock
           url:  ../tenant/using-s3-object-lock.html
@@ -49,4 +49,4 @@ indexpage:
         - title: Operations on objects
           url: ../s3/operations-on-objects.html
         - title: Bucket and group access policies
-          ulr: ../s3/bucket-and-group-access-policies.html
+          url: ../s3/bucket-and-group-access-policies.html

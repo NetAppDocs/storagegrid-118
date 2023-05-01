@@ -1,6 +1,6 @@
 indexpage:
    tiles:
-    - title: Frequently performed operations
+    - title: Get started
       links:
         - title: Sign in to the Grid Manager
           url: ../admin/signing-in-to-grid-manager.html
@@ -20,7 +20,7 @@ indexpage:
           url:  ../admin/configuring-sso.html
     - title: Use grid federation
       links:
-        - title: What is grid federation
+        - title: What is grid federation?
           url: ../admin/grid-federation-overview.html
         - title: Compare cross-grid replication to CloudMirror
           url: ../admin/grid-federation-compare-cgr-to-cloudmirror.html
@@ -28,30 +28,30 @@ indexpage:
           url: ../admin/grid-federation-create-connection.html
         - title: Manage permitted tenants
           url: ../admin/grid-federation-manage-tenants.html
-    - title: Manage tenants and client connections
+    - title: Manage client connections and tenants
       links:
-        - title: Create tenants
-          url: ../admin/creating-tenant-account.html
         - title: Configure S3 endpoint domain names  
           url: ../admin/configuring-s3-api-endpoint-domain-names.html
         - title: Use S3 setup wizard
           url: ../admin/use-s3-setup-wizard.html
         - title: Use FabricPool setup wizard
-          url: ../fabricpool/use-fabricpool-setup-wizard.html       
+          url: ../fabricpool/use-fabricpool-setup-wizard.html 
+        - title: Create tenants
+          url: ../admin/creating-tenant-account.html                
     - title: Use information lifecycle management (ILM)
       links:
-      - title: ILM lifecycle
+      - title: Understand ILM lifecycle
         url: ../ilm/how-ilm-operates-throughout-objects-life.html
-      - title: ILM rules
+      - title: Manage ILM rules
         url: ../ilm/what-ilm-rule-is.html
-      - title: ILM policies
+      - title: Manage ILM policies
         url: ../ilm/creating-ilm-policy.html    
       - title: ILM examples
         url: ../ilm/example-1-ilm-rules-and-policy-for-object-storage.html
     - title: Secure your system
       links:
       - title: Why system hardening is critical
-        url: ..harden/index.html
+        url: ../harden/index.html
       - title: Review encryption methods
         url: ../admin/reviewing-storagegrid-encryption-methods.html
       - title: Manage security certificates
