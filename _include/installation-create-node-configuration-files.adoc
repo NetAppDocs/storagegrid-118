@@ -42,7 +42,7 @@ The following table defines the values for all supported keys. Each key has one 
 * *Optional*: Optional for all nodes
 
 [cols="1a,4a" option="header"]
-|====
+|===
 | Key and designation| Value
 
 2+| *ADMIN_IP*
