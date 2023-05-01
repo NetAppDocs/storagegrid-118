@@ -1,10 +1,10 @@
 indexpage:
    tiles:
-    - title: Get started
+    - title: Get started with tenants
       links:
         - title: What is a tenant?
           url: ../tenant/index.html
-        - title: Sign in to Tenant Manager
+        - title: Sign in to the Tenant Manager
           url: ../tenant/signing-in-to-tenant-manager.html
         - title: Monitor tenant accounts
           url: ../tenant/understanding-tenant-manager-dashboard.html
