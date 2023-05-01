@@ -29,34 +29,6 @@ StorageGRID documentation::
 * link:../release-notes/index.html[Release notes]
 * link:../admin/index.html[Instructions for administering StorageGRID]
 
-
-[cols="1a,2a" options="header"]
-|===
-| Item| Notes
-
-|NetApp StorageGRID license
-|You must have a valid, digitally signed NetApp license.
-
-*Note*: A non-production license, which can be used for testing and proof of concept grids, is included in the StorageGRID installation archive.
-
-| StorageGRID installation archive
-| You must link:downloading-and-extracting-storagegrid-installation-files.html[download the StorageGRID installation archive and extract the files].
-
-| Service laptop
-| The StorageGRID system is installed through a service laptop.
-
-The service laptop must have:
-
-* Network port
-* SSH client (for example, PuTTY)
-* link:../admin/web-browser-requirements.html[Supported web browser]
-
-| StorageGRID documentation
-| 
-* link:../release-notes/index.html[Release notes]
-* link:../admin/index.html[Instructions for administering StorageGRID]
-|===
-
 .Related information
 
 https://imt.netapp.com/matrix/#welcome[NetApp Interoperability Matrix Tool^]

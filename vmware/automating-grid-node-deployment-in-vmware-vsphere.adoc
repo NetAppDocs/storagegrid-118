@@ -427,7 +427,7 @@ NOTE: For Admin nodes, INSTANCES must always equal 2.
 
 == Run the Bash script
 
-You can use the `deploy-vsphere-ovftool.sh` Bash script and the deploy-vsphere-ovftool.ini configuration file you modified to automate the deployment of StorageGRID grid nodes in VMware vSphere.
+You can use the `deploy-vsphere-ovftool.sh` Bash script and the deploy-vsphere-ovftool.ini configuration file you modified to automate the deployment of StorageGRID nodes in VMware vSphere.
 
 .Before you begin
 

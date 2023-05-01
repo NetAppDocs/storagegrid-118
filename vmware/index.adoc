@@ -14,7 +14,7 @@ Installing a StorageGRID system in a VMware environment includes three primary s
 . *Preparation*: During planning and preparation, you perform the following tasks:
  ** Learn about the hardware, software, virtual machine, storage, and performance requirements for StorageGRID.
  ** Learn about the specifics of link:../network/index.html[StorageGRID networking] so you can configure your network appropriately.
- ** Identify and prepare the physical servers you plan to use to host your StorageGRID grid nodes.
+ ** Identify and prepare the physical servers you plan to use to host your StorageGRID nodes.
  ** On the servers you have prepared:
   *** Install VMware vSphere Hypervisor
   *** Configure the ESX hosts
@@ -32,4 +32,4 @@ These instructions recommend a standard approach for deploying and configuring a
 * Use the deploy-vsphere-ovftool.sh Bash script (available from the installation archive) to deploy grid nodes in VMware vSphere.
 * Automate the deployment and configuration of the StorageGRID system using a Python configuration script (provided in the installation archive).
 * Automate the deployment and configuration of appliance grid nodes with a Python configuration script (available from the installation archive or from the StorageGRID Appliance Installer).
-* If you are an advanced developer of StorageGRID deployments, use the installation REST APIs to automate the installation of StorageGRID grid nodes.
+* If you are an advanced developer of StorageGRID deployments, use the installation REST APIs to automate the installation of StorageGRID nodes.
