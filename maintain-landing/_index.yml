@@ -44,3 +44,17 @@ indexpage:
           url: ../maintain/configuring-ip-addresses.html
         - title: Grid node procedures
           url: ../maintain/grid-node-procedures.html
+    - title: Maintain storage appliances
+      links:
+      - title: SGF6112
+        url: https://review.docs.netapp.com/us-en/storagegrid-appliance_main/sg6100/index.html
+      - title: SG6000
+        url: https://review.docs.netapp.com/us-en/storagegrid-appliance_main//sg6000/index.html
+      - title: SG5700
+        url: https://review.docs.netapp.com/us-en/storagegrid-appliance_main//sg5700/index.html
+      - title: SG5600
+        url: https://review.docs.netapp.com/us-en/storagegrid-appliance_main//sg5600/index.html
+    - title: Maintain services appliances
+      links:        
+      - title: SG100 and SG1000
+        url: https://review.docs.netapp.com/us-en/storagegrid-appliance_main//sg100-1000/index.html
