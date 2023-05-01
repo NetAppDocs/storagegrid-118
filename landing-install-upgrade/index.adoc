@@ -1,0 +1,10 @@
+---
+layout: landing-page
+sidebar: sidebar
+permalink: landing-install-upgrade/index.html
+summary: You can perform maintenance procedures such as expansion, decommission, or recovery on your StorageGRID system.
+---
+= Install or upgrade StorageGRID software
+:hardbreaks:
+:linkattrs:
+:imagesdir: ./media/

@@ -1,0 +1,10 @@
+---
+layout: landing-page
+sidebar: sidebar
+permalink: landing-configure-manage/index.html
+summary: After you install the nodes in your StorageGRID system, you can sign in to the Grid Manager to configure the software.
+---
+= Configure and manage a StorageGRID system
+:hardbreaks:
+:linkattrs:
+:imagesdir: ./media/

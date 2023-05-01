@@ -12,6 +12,7 @@ sidebar:
     - title: Release notes
       url: "/release-notes/index.html"
     - title: Get started
+      url: "/landing-get-started/index.html"  
       entries:
       - section: primer
       - section: network
@@ -20,29 +21,33 @@ sidebar:
     - title: Install appliances
       url: /storagegrid-hardware.html 
     - title: Install and upgrade software
+      url: "/landing-install-upgrade/index.html"  
       entries:
       - section: rhel
       - section: ubuntu
       - section: vmware
       - section: upgrade
     - title: Configure and manage
+      url: "/landing-configure-manage/index.html"  
       entries:
       - section: admin
       - section: ilm
       - section: harden
       - section: fabricpool
     - title: Use StorageGRID
+      url: "/landing-use/index.html"  
       entries:
       - section: tenant
       - section: s3
       - section: swift
     - title: Monitor and troubleshoot
+      url: "/landing-monitor-troubleshoot/index.html"  
       entries:
       - section: monitor
       - section: troubleshoot
       - section: audit
     - title: Maintain
-      url: "/maintain-landing/index.html"    
+      url: "/landing-maintain/index.html"    
       entries:
       - section: expand
       - section: maintain   
