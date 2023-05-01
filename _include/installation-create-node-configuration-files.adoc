@@ -28,7 +28,7 @@ For example, you might use `dc1-adm1.conf` for the first Admin Node in Data Cent
 
 == Contents of a node configuration file
 
-The configuration files contain key/value pairs, with one key and one value per line. For each key/value pair, follow these rules:
+A configuration file contains key/value pairs, with one key and one value per line. For each key/value pair, follow these rules:
 
 * The key and the value must be separated by an equal sign (`=`) and optional whitespace.
 * The keys can contain no spaces.
