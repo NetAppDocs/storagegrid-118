@@ -2,7 +2,7 @@
 layout: landing-page
 sidebar: sidebar
 permalink: landing-maintain/index.html
-summary: You can perform maintenance procedures such as expansion, decommission, or recovery on your StorageGRID system.
+summary: You can add nodes or sites to expand the capacity or functionality of your system. You can also perform various maintenance procedures to recover from failures or to keep your StorageGRID system up-to-date and performing efficiently.
 ---
 = Maintain StorageGRID system
 :hardbreaks:

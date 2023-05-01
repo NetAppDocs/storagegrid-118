@@ -2,7 +2,7 @@
 layout: landing-page
 sidebar: sidebar
 permalink: landing-configure-manage/index.html
-summary: After you install the nodes in your StorageGRID system, you can sign in to the Grid Manager to configure the software.
+summary: The configuration tasks you need to perform for a new StorageGRID system depend on how you will use your grid. At a minimum, you set up system access; use the FabricPool and S3 wizards; and manage various storage and security settings.
 ---
 = Configure and manage a StorageGRID system
 :hardbreaks:

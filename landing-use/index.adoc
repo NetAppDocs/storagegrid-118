@@ -2,7 +2,7 @@
 layout: landing-page
 sidebar: sidebar
 permalink: landing-use/index.html
-summary: You can perform maintenance procedures such as expansion, decommission, or recovery on your StorageGRID system.
+summary: After the initial configuration is complete, StorageGRID tenant accounts can create buckets and use S3 client applications to ingest, retrieve, and delete objects.
 ---
 = Use StorageGRID software
 :hardbreaks:

@@ -1,6 +1,6 @@
 indexpage:
    tiles:
-    - title: Learn about StorageGRID
+    - title: Learn and explore
       links:
         - title: What is StorageGRID?
           url: ../primer/index.html
@@ -14,15 +14,15 @@ indexpage:
           url: ../primer/exploring-tenant-manager.html
     - title: Networking guidelines
       links:
-        - title: StorageGRID network types
+        - title: Network types
           url: ../network/storagegrid-network-types.html
-        - title: Networking requirements
+        - title: Network requirements
           url: ../network/networking-requirements-and-guidelines.html
         - title: Internal grid node communications
           url:  ../network/internal-grid-node-communications.html
         - title: External communications
           url:  ../network/external-communications.html
-    - title: Learn how
+    - title: Get started
       links:
         - title: Quick start for StorageGRID
           url: ./quick-start.html

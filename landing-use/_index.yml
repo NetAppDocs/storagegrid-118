@@ -1,60 +1,52 @@
 indexpage:
    tiles:
-    - title: Frequently performed procedures
+    - title: Get started with tenants
       links:
-        - title: Apply hotfix
-          url: ../maintain/storagegrid-hotfix-procedure.html
-        - title: Rename grid, site, or nodes
-          url: ../maintain/rename-grid-site-node-overview.html
-        - title: Download recovery package
-          url: ../maintain/downloading-recovery-package.html
-    - title: Expand your grid
+        - title: What is a tenant?
+          url: ../tenant/index.html
+        - title: Sign in to the Tenant Manager
+          url: ../tenant/index.html
+        - title: Monitor tenant accounts
+          url: ../understanding-tenant-manager-dashboard.html
+        - title: Use Tenant Management API
+          url: ../tenant/understanding-tenant-management-api.html
+    - title: Manage groups and users
       links:
-        - title: Overview
-          url: ../expand/index.html
-        - title: Add storage volumes
-          url: ../expand/adding-storage-volumes-to-storage-nodes.html
-        - title: Add nodes or site
-          url:  ../expand/adding-grid-nodes-to-existing-site-or-adding-new-site.html
-        - title: Rebalance erasure-coded data
-          url:  ../expand/considerations-for-rebalancing-erasure-coded-data.html
-    - title: Recover failed nodes
+        - title: Use identity federation
+          url: ../tenant/using-identity-federation.html
+        - title: Create S3 groups
+          url: ../tenant/creating-groups-for-s3-tenant.html
+        - title: Tenant management permissions
+          url:  ../tenant/tenant-management-permissions.html
+        - title: Manage local users
+          url:  ../tenant/managing-local-users.html
+    - title: Manage S3 buckets and access keys
       links:
-        - title: Overview
-          url: ../maintain/grid-node-recovery-procedures.html
-        - title: Storage Nodes
-          url: ../maintain/recovering-from-storage-node-failures.html
-        - title: Admin Nodes
-          url: ../maintain/recovering-from-admin-node-failures.html
-        - title: Gateway Nodes
-          url: ../maintain/recovering-from-gateway-node-failures.html
-    - title: Decommission nodes or sites
+        - title: Manage S3 access keys
+          url: ../tenant/managing-s3-access-keys.html
+        - title: Create buckets
+          url: ../tenant/creating-s3-bucket.html
+        - title: View bucket details
+          url: ../tenant/viewing-s3-bucket-details.html
+        - title: Delete bucket
+          url: ../tenant/deleting-s3-bucket.html
+    - title: Use tenant features
       links:
-        - title: Overview
-          url: ../maintain/decommission-procedure.html
-        - title: Remove a grid node
-          url: ../maintain/grid-node-decommissioning.html
-        - title: Remove a site
-          url: ../maintain/site-decommissioning.html
-    - title: Other procedures
+        - title: Account clone
+          url: ../tenant/grid-federation-account-clone.html
+        - title: Cross-grid replication
+          url: ../tenant/grid-federation-manage-cross-grid-replication.html
+        - title: StorageGRID platform services
+          url:  ../tenant/what-platform-services-are.html
+        - title: S3 Object Lock
+          url:  ../tenant/using-s3-object-lock.html
+    - title: Use S3 REST API
       links:
-        - title: Update subnets
-          url: ../maintain/updating-subnets-for-grid-network.html
-        - title: Configure IP addresses
-          url: ../maintain/configuring-ip-addresses.html
-        - title: Grid node procedures
-          url: ../maintain/grid-node-procedures.html
-    - title: Maintain storage appliances
-      links:
-      - title: SGF6112
-        url: https://review.docs.netapp.com/us-en/storagegrid-appliances_main/sg6100/index.html
-      - title: SG6000
-        url: https://review.docs.netapp.com/us-en/storagegrid-appliances_main//sg6000/index.html
-      - title: SG5700
-        url: https://review.docs.netapp.com/us-en/storagegrid-appliances_main//sg5700/index.html
-      - title: SG5600
-        url: https://review.docs.netapp.com/us-en/storagegrid-appliances_main//sg5600/index.html
-    - title: Maintain services appliances
-      links:        
-      - title: SG100 and SG1000
-        url: https://review.docs.netapp.com/us-en/storagegrid-appliances_main//sg100-1000/index.html
+        - title: "Quick reference: Supported S3 API requests"
+          url: ../s3/quick-reference-support-for-aws-apis.html
+        - title: Operations on buckets
+          url: ../s3/operations-on-buckets.html
+        - title: Operations on objects
+          url: ../s3/operations-on-objects.html
+        - title: Bucket and group access policies
+          ulr: ../s3/bucket-and-group-access-policies.html

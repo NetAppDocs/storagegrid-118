@@ -1,19 +1,19 @@
 indexpage:
    tiles:
-    - title: Frequently performed procedures
+    - title: Frequently performed operations
       links:
         - title: Sign in to the Grid Manager
           url: ../admin/signing-in-to-grid-manager.html
         - title: Configure AutoSupport
           url: ../admin/configure-autosupport-grid-manager.html
-        - title: Manage certificates
-          url: ../admin/using-storagegrid-security-certificates.html  
-        - title: System hardening
-          url: ../harden/index.html          
+        - title: Use the Grid Management API
+          url: ../admin/using-grid-management-api.html         
     - title: Control access
       links:
         - title: Use identity federation
           url: ../admin/using-identity-federation.html
+        - title: Manage admin groups
+          url: ../admin/managing-admin-groups.html  
         - title: Admin group permissions
           url: ../admin/admin-group-permissions.html
         - title: Configure single sign-on
@@ -38,17 +38,23 @@ indexpage:
           url: ../admin/use-s3-setup-wizard.html
         - title: Use FabricPool setup wizard
           url: ../fabricpool/use-fabricpool-setup-wizard.html       
-    - title: Manage ILM
+    - title: Use information lifecycle management (ILM)
       links:
       - title: ILM lifecycle
         url: ../ilm/how-ilm-operates-throughout-objects-life.html
-      - title: Storage pools
-        url: ../ilm/what-storage-pool-is.html
-      - title: Cloud Storage Pools
-        url: ../ilm/ilm/what-cloud-storage-pool-is.html
       - title: ILM rules
         url: ../ilm/what-ilm-rule-is.html
       - title: ILM policies
         url: ../ilm/creating-ilm-policy.html    
       - title: ILM examples
         url: ../ilm/example-1-ilm-rules-and-policy-for-object-storage.html
+    - title: Secure your system
+      links:
+      - title: Why system hardening is critical
+        url: ..harden/index.html
+      - title: Review encryption methods
+        url: ../admin/reviewing-storagegrid-encryption-methods.html
+      - title: Manage security certificates
+        url: ../admin/using-storagegrid-security-certificates.html  
+      - title: Manage TLS and SSH policy
+        url: ../admin/manage-tls-ssh-policy.html    
