@@ -1,0 +1,46 @@
+indexpage:
+   tiles:
+    - title: Frequently performed procedures
+      links:
+        - title: Apply hotfix
+          url: ../maintain/storagegrid-hotfix-procedure.html
+        - title: Rename grid, site, or nodes
+          url: ../maintain/rename-grid-site-node-overview.html
+        - title: Download recovery package
+          url: ../maintain/downloading-recovery-package.html
+    - title: Expand your grid
+      links:
+        - title: Overview
+          url: ../expand/index.html
+        - title: Add storage volumes
+          url: ../expand/adding-storage-volumes-to-storage-nodes.html
+        - title: Add nodes or site
+          url:  ../expand/adding-grid-nodes-to-existing-site-or-adding-new-site.html
+        - title: Rebalance erasure-coded data
+          url:  ../expand/considerations-for-rebalancing-erasure-coded-data.html
+    - title: Recover failed nodes
+      links:
+        - title: Overview
+          url: ../maintain/grid-node-recovery-procedures.html
+        - title: Storage Nodes
+          url: ../maintain/recovering-from-storage-node-failures.html
+        - title: Admin Nodes
+          url: ../maintain/recovering-from-admin-node-failures.html
+        - title: Gateway Nodes
+          url: ../maintain/recovering-from-gateway-node-failures.html
+    - title: Decommission nodes or sites
+      links:
+        - title: Overview
+          url: ../maintain/decommission-procedure.html
+        - title: Remove a grid node
+          url: ../maintain/grid-node-decommissioning.html
+        - title: Remove a site
+          url: ../maintain/site-decommissioning.html
+    - title: Other procedures
+      links:
+        - title: Update subnets
+          url: ../maintain/updating-subnets-for-grid-network.html
+        - title: Configure IP addresses
+          url: ../maintain/configuring-ip-addresses.html
+        - title: Grid node procedures
+          url: ../maintain/grid-node-procedures.html

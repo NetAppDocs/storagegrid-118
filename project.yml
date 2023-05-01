@@ -42,6 +42,7 @@ sidebar:
       - section: troubleshoot
       - section: audit
     - title: Maintain
+      url: "/maintain-landing/index.html"    
       entries:
       - section: expand
       - section: maintain   
