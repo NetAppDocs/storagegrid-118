@@ -16,7 +16,7 @@ indexpage:
     - title: Install & upgrade
       links:
       - title: StorageGRID appliances
-        url:  https://docs.netapp.com/us-en/storagegrid-appliances/index.html      
+        url: https://review.docs.netapp.com/us-en/storagegrid-appliances_main/installconfig/index.html    
       - title: Red Hat Enterprise Linux or CentOS
         url: /rhel/index.html
       - title: Ubuntu or Debian
@@ -58,7 +58,7 @@ indexpage:
       - title: Recover and maintain
         url: /maintain/index.html
       - title: StorageGRID appliances
-        url:  https://docs.netapp.com/us-en/storagegrid-appliances/index.html
+        url: https://review.docs.netapp.com/us-en/storagegrid-appliances_main/installconfig/index.html
     - title: Demos & tutorials
       links:
       - title: Learn how to enable StorageGRID
