@@ -8,7 +8,7 @@ indexpage:
           url: ../admin/configure-autosupport-grid-manager.html
         - title: Use the Grid Management API
           url: ../admin/using-grid-management-api.html         
-    - title: Control access
+    - title: Manage admin groups and users
       links:
         - title: Use identity federation
           url: ../admin/using-identity-federation.html
@@ -40,7 +40,7 @@ indexpage:
           url: ../admin/creating-tenant-account.html                
     - title: Use information lifecycle management (ILM)
       links:
-      - title: Understand ILM lifecycle
+      - title: Learn about ILM lifecycle
         url: ../ilm/how-ilm-operates-throughout-objects-life.html
       - title: Manage ILM rules
         url: ../ilm/what-ilm-rule-is.html

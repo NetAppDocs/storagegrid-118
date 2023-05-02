@@ -10,7 +10,7 @@ indexpage:
           url: ../tenant/understanding-tenant-manager-dashboard.html
         - title: Use Tenant Management API
           url: ../tenant/understanding-tenant-management-api.html
-    - title: Manage groups and users
+    - title: Manage tenant groups and users
       links:
         - title: Use identity federation
           url: ../tenant/using-identity-federation.html
@@ -50,3 +50,10 @@ indexpage:
           url: ../s3/operations-on-objects.html
         - title: Bucket and group access policies
           url: ../s3/bucket-and-group-access-policies.html
+    - title: Use Swift REST API (deprecated)
+      links:
+        - title: Supported operations
+          url: ../swift/swift-rest-api-supported-operations.html
+        - title: StorageGRID Swift REST API operations
+          url: ../swift/storagegrid-swift-rest-api-operations.html
+        
