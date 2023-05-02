@@ -4,12 +4,28 @@ sidebar: sidebar
 keywords: installation materials red hat linux
 summary: 'Before you install StorageGRID, gather and prepare the required materials.'
 ---
-= Required materials
+= Required information and materials
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Before you install StorageGRID, gather and prepare the required materials.
+Before you install StorageGRID, gather and prepare the required information and materials.
+
+== Required information
+
+Network plan:: Which networks you intend to attach to each StorageGRID node. StorageGRID supports multiple networks for traffic separation, security, and administrative convenience.
++
+See the StorageGRID link:../network/index.html[Networking guidelines].
+
+Network information:: Unless you are using DHCP, IP addresses to assign to each grid node and the IP addresses of the DNS and NTP servers.
+
+Servers for grid nodes:: Identify a set of servers (physical, virtual, or both) that, in aggregate, provide sufficient resources to support the number and type of StorageGRID nodes you plan to deploy.
+
+Scheduled maintenance (if needed):: Understand the link:node-container-migration-requirements.html[requirements for node migration], if you want to perform scheduled maintenance on physical hosts without any service interruption.
+
+Related information:: https://imt.netapp.com/matrix/#welcome[NetApp Interoperability Matrix Tool^]
+
+== Required materials
 
 NetApp StorageGRID license:: You must have a valid, digitally signed NetApp license.
 
@@ -28,7 +44,3 @@ The service laptop must have:
 StorageGRID documentation:: 
 * link:../release-notes/index.html[Release notes]
 * link:../admin/index.html[Instructions for administering StorageGRID]
-
-.Related information
-
-https://imt.netapp.com/matrix/#welcome[NetApp Interoperability Matrix Tool^]

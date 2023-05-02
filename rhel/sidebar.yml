@@ -6,9 +6,7 @@ entries:
     url: "/rhel/index.html"
   - title: Plan and prepare for Red Hat or CentOS installation
     entries:
-    - title: Before you install (Red Hat or CentOS)
-      url: "/rhel/planning-and-preparation.html"
-    - title: Required materials
+    - title: Required information and materials
       url: "/rhel/required-materials.html"
     - title: Download and extract StorageGRID installation files
       url: "/rhel/downloading-and-extracting-storagegrid-installation-files.html"

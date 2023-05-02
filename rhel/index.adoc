@@ -20,6 +20,7 @@ Follow these high-level steps to install a Red Hat Enterprise Linux (RHEL) or Ce
 // Prepare for installation:
 [role="quick-margin-list"]
 * Learn about link:../primer/storagegrid-architecture-and-network-topology.html[StorageGRID architecture and network topology].
+* Learn about link:required-materials.html[Required information and materials].
 * Learn about link:cpu-and-ram-requirements.html[CPU and RAM requirements].
 * Learn about link:storage-and-performance-requirements.html[hardware and storage requirements].
 * Learn about the specifics of link:../network/index.html[StorageGRID networking].
@@ -28,12 +29,14 @@ Follow these high-level steps to install a Red Hat Enterprise Linux (RHEL) or Ce
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two] Deployment
 
 [role="quick-margin-para"]
-Deploy grid nodes using the appropriate user interface. +
-When you deploy grid nodes, they are created as part of the StorageGRID system and connected to one or more networks.
+Deploy grid nodes. When you deploy grid nodes, they are created as part of the StorageGRID system and connected to one or more networks.
 
 [role="quick-margin-list"]
 * To deploy software-based grid nodes on the hosts you prepared in step 1, use the Linux command line and link:creating-node-configuration-files.html[node configuration files].
 * To deploy StorageGRID appliance nodes, follow the https://review.docs.netapp.com/us-en/storagegrid-appliances_main/installconfig/index.html[Quick start for hardware installation^].
++
+
+IMPORTANT: If your StorageGRID installation will not use StorageGRID appliance (hardware) Storage Nodes, you must use hardware RAID storage with battery-backed write cache (BBWC). StorageGRID does not support the use of virtual storage area networks (vSANs), software RAID, or no RAID protection.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Three] Configuration
 
