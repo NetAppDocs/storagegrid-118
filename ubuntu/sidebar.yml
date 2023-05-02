@@ -18,8 +18,6 @@ entries:
       url: "/ubuntu/storage-and-performance-requirements.html"
     - title: Node container migration requirements
       url: "/ubuntu/node-container-migration-requirements.html"
-    - title: Deployment tools
-      url: "/ubuntu/deployment-tools.html"
     - title: Prepare the hosts (Ubuntu or Debian)
       entries:
       - title: How host-wide settings change

@@ -16,8 +16,6 @@ entries:
       url: "/rhel/storage-and-performance-requirements.html"
     - title: Node container migration requirements
       url: "/rhel/node-container-migration-requirements.html"
-    - title: Deployment tools
-      url: "/rhel/deployment-tools.html"
     - title: Prepare the hosts (Red Hat or CentOS)
       entries:
       - title: How host-wide settings change
