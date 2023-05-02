@@ -41,9 +41,9 @@ The following table defines the values for all supported keys. Each key has one 
 * *Best practice*: Optional, although recommended
 * *Optional*: Optional for all nodes
 
-*ADMIN_IP*
 [cols="4a,2a" option="header"]
 |===
+2+| *ADMIN_IP*
 | Value| Designation
 
 | Grid Network IPv4 address of the primary Admin Node for the grid to which this node belongs. Use the same value you specified for GRID_NETWORK_IP for the grid node with NODE_TYPE = VM_Admin_Node and ADMIN_ROLE = Primary. If you omit this parameter, the node attempts to discover a primary Admin Node using mDNS.
@@ -54,7 +54,7 @@ link:how-grid-nodes-discover-primary-admin-node.html[How grid nodes discover the
 | Best practice
 |===
 
-*ADMIN_NETWORK_CONFIG*
+=== ADMIN_NETWORK_CONFIG
 [cols="4a,2a" option="header"]
 |===
 | Value| Designation
@@ -63,7 +63,7 @@ link:how-grid-nodes-discover-primary-admin-node.html[How grid nodes discover the
 | Optional
 |===
 
-*ADMIN_NETWORK_ESL*
+=== ADMIN_NETWORK_ESL
 [cols="4a,2a" option="header"]
 |===
 | Value| Designation
@@ -74,7 +74,7 @@ Example: `172.16.0.0/21,172.17.0.0/21`
 | Optional
 |===
 
-*ADMIN_NETWORK_GATEWAY*
+=== ADMIN_NETWORK_GATEWAY
 [cols="4a,2a" option="header"]
 |===
 | Value| Designation
@@ -89,7 +89,7 @@ Examples:
 | Required if `ADMIN_NETWORK_ESL` is specified. Optional otherwise.
 |===
 
-*ADMIN_NETWORK_IP*
+=== ADMIN_NETWORK_IP
 [cols="4a,2a" option="header"]
 |===
 | Value| Designation
@@ -104,7 +104,7 @@ Examples:
 | Optional
 |===
 
-*ADMIN_NETWORK_MAC*
+=== ADMIN_NETWORK_MAC
 [cols="4a,2a" option="header"]
 |===
 | Value| Designation
@@ -119,7 +119,7 @@ Example: `b2:9c:02:c2:27:10`
 | Optional
 |===
 
-*ADMIN_NETWORK_MASK*
+=== ADMIN_NETWORK_MASK
 [cols="4a,2a" option="header"]
 |===
 | Value| Designation
@@ -138,9 +138,8 @@ Optional otherwise.
 // old formatting starts here
 [cols="4a,2a" option="header"]
 |===
-| Key and Designation|Value
 2+| *ADMIN_NETWORK_MTU*
-| Optional
+| Value| Key and Designation
 | The maximum transmission unit (MTU) for this node on the Admin Network. Don't specify if ADMIN_NETWORK_CONFIG = DHCP. If specified, the value must be between 1280 and 9216. If omitted, 1500 is used.
 
 If you want to use jumbo frames, set the MTU to a value suitable for jumbo frames, such as 9000. Otherwise, keep the default value.
@@ -152,7 +151,11 @@ Examples:
 `1500`
 
 `8192`
+| Optional
+|===
 
+[cols="4a,2a" option="header"]
+|===
 2+| *ADMIN_NETWORK_TARGET*
 | Best practice
 | Name of the host device that you will use for Admin Network access by the StorageGRID node. Only network interface names are supported. Typically, you use a different interface name than what was specified for GRID_NETWORK_TARGET or CLIENT_NETWORK_TARGET.
