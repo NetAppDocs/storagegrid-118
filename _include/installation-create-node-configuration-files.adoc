@@ -41,31 +41,44 @@ The following table defines the values for all supported keys. Each key has one 
 * *Best practice*: Optional, although recommended
 * *Optional*: Optional for all nodes
 
-[cols="1a,4a" option="header"]
+*ADMIN_IP*
+[cols="4a,2a" option="header"]
 |===
-| Key and designation| Value
+| Value| Designation
 
-2+| *ADMIN_IP*
-
-| Best practice
 | Grid Network IPv4 address of the primary Admin Node for the grid to which this node belongs. Use the same value you specified for GRID_NETWORK_IP for the grid node with NODE_TYPE = VM_Admin_Node and ADMIN_ROLE = Primary. If you omit this parameter, the node attempts to discover a primary Admin Node using mDNS.
 
 link:how-grid-nodes-discover-primary-admin-node.html[How grid nodes discover the primary Admin Node]
 
 *Note*: This value is ignored, and might be prohibited, on the primary Admin Node.
+| Best practice
+|===
 
-2+| *ADMIN_NETWORK_CONFIG*
-| Optional
+*ADMIN_NETWORK_CONFIG*
+[cols="4a,2a" option="header"]
+|===
+| Value| Designation
+
 | DHCP, STATIC, or DISABLED
-
-2+| *ADMIN_NETWORK_ESL*
 | Optional
+|===
+
+*ADMIN_NETWORK_ESL*
+[cols="4a,2a" option="header"]
+|===
+| Value| Designation
+
 | Comma-separated list of subnets in CIDR notation to which this node should communicate using the Admin Network gateway.
 
 Example: `172.16.0.0/21,172.17.0.0/21`
+| Optional
+|===
 
-2+| *ADMIN_NETWORK_GATEWAY*
-| Optional, although Required if `ADMIN_NETWORK_ESL` is specified.
+*ADMIN_NETWORK_GATEWAY*
+[cols="4a,2a" option="header"]
+|===
+| Value| Designation
+
 | IPv4 address of the local Admin Network gateway for this node. Must be on the subnet defined by ADMIN_NETWORK_IP and ADMIN_NETWORK_MASK. This value is ignored for DHCP-configured networks.
 
 Examples:
@@ -73,9 +86,14 @@ Examples:
 `1.1.1.1`
 
 `10.224.4.81`
+| Required if `ADMIN_NETWORK_ESL` is specified. Optional otherwise.
+|===
 
-2+| *ADMIN_NETWORK_IP*
-| Optional
+*ADMIN_NETWORK_IP*
+[cols="4a,2a" option="header"]
+|===
+| Value| Designation
+
 | IPv4 address of this node on the Admin Network. This key is only required when ADMIN_NETWORK_CONFIG = STATIC; don't specify it for other values.
 
 Examples:
@@ -83,9 +101,14 @@ Examples:
 `1.1.1.1`
 
 `10.224.4.81`
-
-2+| *ADMIN_NETWORK_MAC*
 | Optional
+|===
+
+*ADMIN_NETWORK_MAC*
+[cols="4a,2a" option="header"]
+|===
+| Value| Designation
+
 | The MAC address for the Admin Network interface in the container.
 
 This field is optional. If omitted, a MAC address will be generated automatically.
@@ -93,11 +116,13 @@ This field is optional. If omitted, a MAC address will be generated automaticall
 Must be 6 pairs of hexadecimal digits separated by colons.
 
 Example: `b2:9c:02:c2:27:10`
+| Optional
+|===
 
-2+| *ADMIN_NETWORK_MASK*
-| Required if ADMIN_NETWORK_IP is specified and ADMIN_NETWORK_CONFIG = STATIC.
-
-Optional otherwise.
+*ADMIN_NETWORK_MASK*
+[cols="4a,2a" option="header"]
+|===
+| Value| Designation
 | IPv4 netmask for this node, on the Admin Network. Specify this key when ADMIN_NETWORK_CONFIG = STATIC; don't specify it for other values.
 
 Examples:
@@ -105,7 +130,15 @@ Examples:
 `255.255.255.0`
 
 `255.255.248.0`
+| Required if ADMIN_NETWORK_IP is specified and ADMIN_NETWORK_CONFIG = STATIC.
 
+Optional otherwise.
+|===
+
+// old formatting starts here
+[cols="4a,2a" option="header"]
+|===
+| Key and Designation|Value
 2+| *ADMIN_NETWORK_MTU*
 | Optional
 | The maximum transmission unit (MTU) for this node on the Admin Network. Don't specify if ADMIN_NETWORK_CONFIG = DHCP. If specified, the value must be between 1280 and 9216. If omitted, 1500 is used.
