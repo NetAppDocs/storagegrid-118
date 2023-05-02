@@ -18,11 +18,11 @@ sidebar:
       - section: network
       - title: Quick start
         url: /quick-start.html      
-    - title: Install appliances
-      url: /storagegrid-hardware.html 
-    - title: Install and upgrade software
+    - title: Install and upgrade
       url: "/landing-install-upgrade/index.html"  
       entries:
+      - title: Install appliances
+        url: /storagegrid-hardware.html 
       - section: rhel
       - section: ubuntu
       - section: vmware

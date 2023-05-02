@@ -25,6 +25,6 @@ indexpage:
     - title: Get started
       links:
         - title: Quick start for StorageGRID
-          url: /quick-start.html
+          url: ../quick-start.html
         - title: Web browser requirements
           url: ../admin/web-browser-requirements.html     
