@@ -24,7 +24,7 @@ The following table summarizes the available platform services and the S3 APIs u
 
 | Notifications
 | Sends notifications about events in a source StorageGRID bucket to a configured Simple Notification Service (SNS) endpoint.
-| PUT Bucket notification (see link:operations-on-buckets.html[Operations on buckets])
+| PutBucketNotificationConfiguration (see link:operations-on-buckets.html[Operations on buckets])
 
 | Search integration
 | Sends object metadata for objects stored in a StorageGRID bucket to a configured Elasticsearch index.

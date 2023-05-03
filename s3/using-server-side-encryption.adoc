@@ -32,9 +32,9 @@ The SSE request header is supported by the following object operations:
 
 * link:put-object.html[PUT Object]
 
-* link:put-object-copy.html[PUT Object - Copy]
+* link:put-object-copy.html[CopyObject]
 
-* link:initiate-multipart-upload.html[Initiate Multipart Upload]
+* link:initiate-multipart-upload.html[CreateMultipartUpload]
 
 
 == Use SSE-C
@@ -66,9 +66,9 @@ The SSE-C request headers are supported by the following object operations:
 
 * link:put-object.html[PUT Object]
 
-* link:put-object-copy.html[PUT Object - Copy]
+* link:put-object-copy.html[CopyObject]
 
-* link:initiate-multipart-upload.html[Initiate Multipart Upload]
+* link:initiate-multipart-upload.html[CreateMultipartUpload]
 
 * link:upload-part.html[Upload Part]
 

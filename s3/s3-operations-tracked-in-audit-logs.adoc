@@ -15,9 +15,9 @@ Several bucket operations and object operations are tracked in the StorageGRID a
 
 * DELETE Bucket
 * DELETE Bucket tagging
-* DELETE Multiple Objects
-* GET Bucket (List Objects)
-* GET Bucket Object versions
+* DeleteObjects
+* ListObjects (List Objects)
+* ListObjectVersions
 * GET Bucket tagging
 * HEAD Bucket
 * PUT Bucket
@@ -35,7 +35,7 @@ Several bucket operations and object operations are tracked in the StorageGRID a
 * HEAD Object
 * POST Object restore
 * PUT Object
-* PUT Object - Copy
+* CopyObject
 
 .Related information
 

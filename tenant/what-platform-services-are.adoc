@@ -62,8 +62,8 @@ The format for the configuration XML is governed by the S3 REST APIs used to imp
 
 | link:configuring-event-notifications.html[Notifications]
 | 
-* GET Bucket notification
-* PUT Bucket notification
+* GetBucketNotificationConfiguration
+* PutBucketNotificationConfiguration
 
 | link:using-search-integration-service.html[Search integration]
 | 

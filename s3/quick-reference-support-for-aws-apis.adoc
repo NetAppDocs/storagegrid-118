@@ -149,7 +149,7 @@ StorageGRID supports all <<common-params, common parameters and headers>> for th
 None
 
 .StorageGRID documentation
-link:initiate-multipart-upload.html[Initiate Multipart Upload]
+link:initiate-multipart-upload.html[CreateMultipartUpload]
 
 
 //DeleteBucket
@@ -269,7 +269,7 @@ StorageGRID supports all <<common-params, common parameters and headers>> for th
 StorageGRID supports all request body parameters defined by the Amazon S3 REST API at the time of implementation.
 
 .StorageGRID documentation
-link:operations-on-objects.html[Operations on objects] (DELETE Multiple Objects)
+link:operations-on-objects.html[Operations on objects]
 
 
 //DeleteObjectTagging
@@ -334,7 +334,7 @@ None
 
 .StorageGRID documentation
 
-* link:operations-on-buckets.html[Operations on buckets] (GET Bucket lifecycle)
+* link:operations-on-buckets.html[Operations on buckets]
 * link:create-s3-lifecycle-configuration.html[Create S3 lifecycle configuration]
 
 
@@ -361,7 +361,7 @@ StorageGRID supports all <<common-params, common parameters and headers>> for th
 None
 
 .StorageGRID documentation
-link:operations-on-buckets.html[Operations on buckets] (GET Bucket notification)
+link:operations-on-buckets.html[Operations on buckets]
 
 
 //GetBucketPolicy
@@ -598,7 +598,7 @@ StorageGRID supports all <<common-params, common parameters and headers>> for th
 None
 
 .StorageGRID documentation
-link:operations-on-buckets.html[Operations on buckets] (GET Bucket)
+link:operations-on-buckets.html[Operations on buckets]
 
 
 // ListObjectsV2
@@ -619,7 +619,7 @@ StorageGRID supports all <<common-params, common parameters and headers>> for th
 None
 
 .StorageGRID documentation
-link:operations-on-buckets.html[Operations on buckets] (GET Bucket)
+link:operations-on-buckets.html[Operations on buckets]
 
 
 // ListObjectVersions
@@ -639,7 +639,7 @@ StorageGRID supports all <<common-params, common parameters and headers>> for th
 None
 
 .StorageGRID documentation
-link:operations-on-buckets.html[Operations on buckets] (GET Bucket Object versions)
+link:operations-on-buckets.html[Operations on buckets]
 
 
 // ListParts
@@ -720,7 +720,7 @@ StorageGRID supports these request body XML tags:
 * `Status`	
 
 .StorageGRID documentation
-* link:operations-on-buckets.html[Operations on buckets] (PUT Bucket lifecycle)
+* link:operations-on-buckets.html[Operations on buckets]
 * link:create-s3-lifecycle-configuration.html[Create S3 lifecycle configuration]
 
 
@@ -747,7 +747,7 @@ StorageGRID supports these request body XML tags:
 * `Topic`		
 
 .StorageGRID documentation
-link:operations-on-buckets.html[Operations on buckets] (PUT Bucket notification)
+link:operations-on-buckets.html[Operations on buckets]
 
 
 //PutBucketPolicy

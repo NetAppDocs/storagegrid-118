@@ -45,9 +45,9 @@ To remove a specific version, the requestor must be the bucket owner and use the
 
 See link:../s3/use-s3-api-for-s3-object-lock.html[Use S3 REST API to configure S3 Object Lock] to learn how to delete object versions in GOVERNANCE mode.
 
-| DELETE Multiple Objects
+| DeleteObjects
 
-(DeleteObjects)
+(DELETE Multiple Objects)
 
 | Multi-Factor Authentication (MFA) and the response header `x-amz-mfa` aren't supported.
 
@@ -90,8 +90,9 @@ If the `versionId` query parameter is not specified in the request, the operatio
 | PUT Object
 | link:put-object.html[PUT Object]
 
-| PUT Object - Copy
-| link:put-object-copy.html[PUT Object - Copy]
+| CopyObject
+(PUT Object - Copy)
+| link:put-object-copy.html[CopyObject]
 
 | PUT Object legal hold
 | link:../s3/use-s3-api-for-s3-object-lock.html[Use S3 REST API to configure S3 Object Lock]

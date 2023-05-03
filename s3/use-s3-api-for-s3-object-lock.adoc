@@ -166,7 +166,7 @@ You can specify the following settings for each object:
 The legal hold setting for an object is independent of the retention mode and the retain-until-date. If an object version is under a legal hold, no one can delete that version.
 
 
-To specify S3 Object Lock settings when adding an object version to a bucket, issue a link:put-object.html[PUT Object], link:put-object-copy.html[PUT Object - Copy], or link:initiate-multipart-upload.html[Initiate Multipart Upload] request. 
+To specify S3 Object Lock settings when adding an object version to a bucket, issue a link:put-object.html[PUT Object], link:put-object-copy.html[CopyObject], or link:initiate-multipart-upload.html[CreateMultipartUpload] request. 
 
 
 You can use the following:
@@ -186,7 +186,7 @@ If legal hold is ON (case-sensitive), the object is placed under a legal hold. I
 
 If you use any of these request headers, be aware of these restrictions:
 
-* The `Content-MD5` request header is required if any `x-amz-object-lock-*` request header is present in the PUT Object request. `Content-MD5` is not required for PUT Object - Copy or Initiate Multipart Upload.
+* The `Content-MD5` request header is required if any `x-amz-object-lock-*` request header is present in the PUT Object request. `Content-MD5` is not required for CopyObject or CreateMultipartUpload.
 * If the bucket does not have S3 Object Lock enabled and a `x-amz-object-lock-*` request header is present, a 400 Bad Request (InvalidRequest) error is returned.
 * The PUT Object request supports the use of `x-amz-storage-class: REDUCED_REDUNDANCY` to match AWS behavior. However, when an object is ingested into a bucket with S3 Object Lock enabled, StorageGRID will always perform a dual-commit ingest.
 * A subsequent GET or HEAD Object version response will include the headers `x-amz-object-lock-mode`, `x-amz-object-lock-retain-until-date`, and `x-amz-object-lock-legal-hold`, if configured and if the request sender has the correct `s3:Get*` permissions.
@@ -210,7 +210,7 @@ If the new legal-hold value is ON, the object is placed under a legal hold. If t
 
 Users who have the `s3:BypassGovernanceRetention` permission can bypass the active retention settings of an object that uses GOVERNANCE mode. Any DELETE or PUT Object retention operations must include the `x-amz-bypass-governance-retention:true` request header. These users can perform these additional operations:
 
-* Perform DELETE Object or DELETE Multiple Objects operations to delete an object version before its retention period has elapsed.
+* Perform DELETE Object or DeleteObjects operations to delete an object version before its retention period has elapsed.
 +
 Objects that are under a legal hold can't be deleted. Legal hold must be OFF. 
 

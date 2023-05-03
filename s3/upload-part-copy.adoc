@@ -24,11 +24,11 @@ The following request headers are supported:
 
 == Request headers for server-side encryption
 
-If you specified SSE-C encryption for the Initiate Multipart Upload request, you must also include the following request headers in each Upload Part - Copy request:
+If you specified SSE-C encryption for the CreateMultipartUpload request, you must also include the following request headers in each Upload Part - Copy request:
 
 * `x-amz-server-side-encryption-customer-algorithm`: Specify `AES256`.
-* `x-amz-server-side-encryption-customer-key`: Specify the same encryption key that you provided in the Initiate Multipart Upload request.
-* `x-amz-server-side-encryption-customer-key-MD5`: Specify the same MD5 digest that you provided in the Initiate Multipart Upload request.
+* `x-amz-server-side-encryption-customer-key`: Specify the same encryption key that you provided in the CreateMultipartUpload request.
+* `x-amz-server-side-encryption-customer-key-MD5`: Specify the same MD5 digest that you provided in the CreateMultipartUpload request.
 
 If the source object is encrypted using a customer-provided key (SSE-C), you must include the following three headers in the Upload Part - Copy request, so the object can be decrypted and then copied:
 

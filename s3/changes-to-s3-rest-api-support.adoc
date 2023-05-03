@@ -32,7 +32,7 @@ You should be aware of changes to the StorageGRID system's support for the S3 RE
 |
 * Added support for managing bucket encryption.
 * Added support for S3 Object Lock and deprecated legacy Compliance requests.
-* Added support for using DELETE Multiple Objects on versioned buckets.
+* Added support for using DeleteObjects on versioned buckets.
 * The `Content-MD5` request header is now correctly supported.
 
 |11.4
@@ -47,8 +47,8 @@ You should be aware of changes to the StorageGRID system's support for the S3 RE
 |
 
 * Added support for server-side encryption of object data with customer-provided keys (SSE-C).
-* Added support for DELETE, GET, and PUT Bucket lifecycle operations (Expiration action only) and for the `x-amz-expiration` response header.
-* Updated PUT Object, PUT Object - Copy, and Multipart Upload to describe the impact of ILM rules that use synchronous placement at ingest.
+* Added support for DeleteBucketLifecycle, GetBucketLifecycleConfiguration, and PutBucketLifecycleConfiguration operations (Expiration action only) and for the `x-amz-expiration` response header.
+* Updated PUT Object, CopyObject, and Multipart Upload to describe the impact of ILM rules that use synchronous placement at ingest.
 * TLS 1.1 ciphers are no longer supported.
 
 |11.2

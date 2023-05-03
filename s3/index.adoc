@@ -21,23 +21,20 @@ StorageGRID supports the following specific versions of S3 and HTTP.
 |===
 | Item| Version
 
-|S3 specification
-|_Simple Storage Service API Reference_ 2006-03-01
+| S3 specification
+| http://docs.aws.amazon.com/AmazonS3/latest/API/Welcome.html[Amazon Web Services (AWS) Documentation: Amazon Simple Storage Service API Reference^]
 
-|HTTP
-|1.1
+
+| HTTP
+| 1.1
 
 For more information about HTTP, see HTTP/1.1 (RFCs 7230-35).
+
+https://datatracker.ietf.org/doc/html/rfc2616[IETF RFC 2616: Hypertext Transfer Protocol (HTTP/1.1)^]
 
 *Note*: StorageGRID does not support HTTP/1.1 pipelining.
 
 |===
-
-.Related information
-
-https://datatracker.ietf.org/doc/html/rfc2616[IETF RFC 2616: Hypertext Transfer Protocol (HTTP/1.1)^]
-
-http://docs.aws.amazon.com/AmazonS3/latest/API/Welcome.html[Amazon Web Services (AWS) Documentation: Amazon Simple Storage Service API Reference^]
 
 
 == Updates to S3 REST API support
@@ -47,7 +44,7 @@ http://docs.aws.amazon.com/AmazonS3/latest/API/Welcome.html[Amazon Web Services 
 | Release| Comments
 
 | 11.8
-|
+| Updated the names of S3 operations to match the names used in the http://docs.aws.amazon.com/AmazonS3/latest/API/Welcome.html[Amazon Web Services (AWS) Documentation: Amazon Simple Storage Service API Reference^].
 
 |11.7
 |
@@ -67,7 +64,7 @@ http://docs.aws.amazon.com/AmazonS3/latest/API/Welcome.html[Amazon Web Services 
 |
 * Added support for managing bucket encryption.
 * Added support for S3 Object Lock and deprecated legacy Compliance requests.
-* Added support for using DELETE Multiple Objects on versioned buckets.
+* Added support for using DeleteObjects on versioned buckets.
 * The `Content-MD5` request header is now correctly supported.
 
 |11.4
@@ -81,7 +78,7 @@ http://docs.aws.amazon.com/AmazonS3/latest/API/Welcome.html[Amazon Web Services 
 |11.3
 |
 * Added support for server-side encryption of object data with customer-provided keys (SSE-C).
-* Added support for DELETE, GET, and PUT Bucket lifecycle operations (Expiration action only) and for the `x-amz-expiration` response header.
+* Added support for DELETE, GET, and PutBucketLifecycleConfiguration operations (Expiration action only) and for the `x-amz-expiration` response header.
 * Updated PUT Object, PUT Object - Copy, and Multipart Upload to describe the impact of ILM rules that use synchronous placement at ingest.
 * TLS 1.1 ciphers are no longer supported.
 
