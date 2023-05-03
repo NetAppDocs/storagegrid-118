@@ -32,41 +32,41 @@ NOTE: If you are deploying to a vApp, the virtual machines will not start automa
 [cols="1a,1a" options="header"]
 |===
 | Filename| Description
-m|NetApp-SG-version-SHA.vmdk
-|The virtual machine disk file that is used as a template for creating grid node virtual machines.
+m| NetApp-SG-version-SHA.vmdk
+| The virtual machine disk file that is used as a template for creating grid node virtual machines.
 
 *Note:* This file must be in the same folder as the `.ovf` and `.mf` files.
 
-m|vsphere-primary-admin.ovf
+m| vsphere-primary-admin.ovf
 
 vsphere-primary-admin.mf
-|The Open Virtualization Format template file (`.ovf`) and manifest file (`.mf`) for deploying the primary Admin Node.
+| The Open Virtualization Format template file (`.ovf`) and manifest file (`.mf`) for deploying the primary Admin Node.
 
-m|vsphere-non-primary-admin.ovf
+m| vsphere-non-primary-admin.ovf
 
 vsphere-non-primary-admin.mf
-|The template file (`.ovf`) and manifest file (`.mf`) for deploying non-primary Admin Nodes.
+| The template file (`.ovf`) and manifest file (`.mf`) for deploying non-primary Admin Nodes.
 
-m|vsphere-archive.ovf
+m| vsphere-archive.ovf
 
 vsphere-archive.mf
-|The template file (`.ovf`) and manifest file (`.mf`) for deploying Archive Nodes.
+| The template file (`.ovf`) and manifest file (`.mf`) for deploying Archive Nodes.
 
-m|vsphere-gateway.ovf
+m| vsphere-gateway.ovf
 
 vsphere-gateway.mf
-|The template file (`.ovf`) and manifest file (`.mf`) for deploying Gateway Nodes.
+| The template file (`.ovf`) and manifest file (`.mf`) for deploying Gateway Nodes.
 
-m|vsphere-storage.ovf
+m| vsphere-storage.ovf
 
 vsphere-storage.mf
-|The template file (`.ovf`) and manifest file (`.mf`) for deploying virtual machine-based Storage Nodes.
+| The template file (`.ovf`) and manifest file (`.mf`) for deploying virtual machine-based Storage Nodes.
 
-m|deploy-vsphere-ovftool.sh
-|The Bash shell script used to automate the deployment of virtual grid nodes.
+m| deploy-vsphere-ovftool.sh
+| The Bash shell script used to automate the deployment of virtual grid nodes.
 
-m|deploy-vsphere-ovftool-sample.ini
-|The sample configuration file for use with the `deploy-vsphere-ovftool.sh` script.
+m| deploy-vsphere-ovftool-sample.ini
+| The sample configuration file for use with the `deploy-vsphere-ovftool.sh` script.
 |===
 
 === Define the configuration file for your deployment
@@ -498,14 +498,14 @@ After deploying the grid nodes, you can automate the configuration of the Storag
 [cols="1a,1a" options="header"]
 |===
 | Filename| Description
-m|configure-storagegrid.py
-|Python script used to automate the configuration
+m| configure-storagegrid.py
+| Python script used to automate the configuration
 
-m|configure-storagegrid.sample.json
-|Sample configuration file for use with the script
+m| configure-storagegrid.sample.json
+| Sample configuration file for use with the script
 
-m|configure-storagegrid.blank.json
-|Blank configuration file for use with the script
+m| configure-storagegrid.blank.json
+| Blank configuration file for use with the script
 |===
 
 * You have created a `configure-storagegrid.json` configuration file. To create this file, you can modify the sample configuration file (`configure-storagegrid.sample.json`) or the blank configuration file (`configure-storagegrid.blank.json`).
