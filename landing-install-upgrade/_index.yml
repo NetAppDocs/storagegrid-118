@@ -10,14 +10,14 @@ indexpage:
           url: ../ubuntu/index.html   
         - title: VMware
           url: ../vmware/index.html  
-    - title: Plan and prepare
+    - title: Prepare materials
       links:
         - title: Red Hat Enterprise Linux or Centos
-          url: ../rhel/planning-and-preparation.html
+          url: ../rhel/required-materials.html
         - title: Ubuntu or Debian
-          url: ../ubuntu/planning-and-preparation.html
+          url: ../ubuntu/required-materials.html
         - title: VMware
-          url: ../vmware/planning-and-preparation.html
+          url: ../vmware/required-materials.html
     - title: Deploy nodes
       links:          
         - title: Red Hat Enterprise Linux or Centos
