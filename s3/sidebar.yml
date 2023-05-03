@@ -40,8 +40,9 @@ entries:
       - title: Custom operations on buckets
         url: "/s3/custom-operations-on-buckets.html"
     - title: Operations on objects
-      url: "/s3/operations-on-objects.html"
       entries:
+      - title: Overview
+        url: "/s3/operations-on-objects.html"
       - title: Use S3 Select
         url: "/s3/use-s3-select.html"
       - title: Use server-side encryption
