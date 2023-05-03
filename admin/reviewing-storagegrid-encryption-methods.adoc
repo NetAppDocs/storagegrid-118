@@ -35,7 +35,7 @@ Existing stored objects aren't encrypted. Object metadata and other sensitive da
 
 
 | S3 bucket encryption
-| You issue a PUT Bucket encryption request to enable encryption for the bucket. Any new objects that aren't encrypted at the object level are encrypted during ingest.
+| You issue a PutBucketEncryption request to enable encryption for the bucket. Any new objects that aren't encrypted at the object level are encrypted during ingest.
 | Newly ingested S3 object data only.  
 
 Encryption must be specified for the bucket. Existing bucket objects aren't encrypted. Object metadata and other sensitive data aren't encrypted.

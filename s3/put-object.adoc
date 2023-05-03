@@ -1,15 +1,15 @@
 ---
 permalink: s3/put-object.html
 sidebar: sidebar
-keywords: object, add object, put, put object request
-summary: 'You can use the S3 PUT Object request to add an object to a bucket.'
+keywords: object, add object, put, PutObject request
+summary: 'You can use the S3 PutObject request to add an object to a bucket.'
 ---
-= PUT Object
+= PutObject
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You can use the S3 PUT Object request to add an object to a bucket.
+You can use the S3 PutObject request to add an object to a bucket.
 
 == Resolve conflicts
 
@@ -17,9 +17,9 @@ Conflicting client requests, such as two clients writing to the same key, are re
 
 == Object size
 
-The maximum _recommended_ size for a single PUT Object operation is 5 GiB (5,368,709,120 bytes). If you have objects that are larger than 5 GiB, use multipart upload instead. 
+The maximum _recommended_ size for a single PutObject operation is 5 GiB (5,368,709,120 bytes). If you have objects that are larger than 5 GiB, use multipart upload instead. 
 
-The maximum _supported_ size for a single PUT Object operation is 5 TiB (5,497,558,138,880 bytes). However, the *S3 PUT Object size too large* alert will be triggered if you attempt to upload an object that exceeds 5 GiB.
+The maximum _supported_ size for a single PutObject operation is 5 TiB (5,497,558,138,880 bytes). However, the *S3 PUT Object size too large* alert will be triggered if you attempt to upload an object that exceeds 5 GiB.
 
 == User metadata size
 
@@ -31,7 +31,7 @@ If a request includes (unescaped) UTF-8 values in the key name or value of user-
 
 StorageGRID does not parse or interpret escaped UTF-8 characters included in the key name or value of user-defined metadata. Escaped UTF-8 characters are treated as ASCII characters:
 
-* PUT, PUT Object-Copy, GET, and HEAD requests succeed if user-defined metadata includes escaped UTF-8 characters.
+* PutObject, CopyObject, GetObject, and HeadObject requests succeed if user-defined metadata includes escaped UTF-8 characters.
 * StorageGRID does not return the `x-amz-missing-meta` header if the interpreted value of the key name or value includes unprintable characters.
 
 == Object tag limits

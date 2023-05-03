@@ -40,7 +40,7 @@ Unless you require consistency guarantees similar to Amazon S3, you can prevent 
 
 == Specify consistency control for API operation
 
-To set the consistency control for an individual API operation, consistency controls must be supported for the operation, and you must specify the consistency control in the request header. This example sets the consistency control to "`strong-site`" for a GET Object operation.
+To set the consistency control for an individual API operation, consistency controls must be supported for the operation, and you must specify the consistency control in the request header. This example sets the consistency control to "`strong-site`" for a GetObject operation.
 
 [subs="specialcharacters,quotes"]
 ----
@@ -51,7 +51,7 @@ Host: _host_
 Consistency-Control: strong-site
 ----
 
-NOTE: You must use the same consistency control for both the PUT Object and GET Object operations.
+NOTE: You must use the same consistency control for both the PutObject and GetObject operations.
 
 == Specify consistency control for bucket
 

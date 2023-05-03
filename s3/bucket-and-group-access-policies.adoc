@@ -15,7 +15,7 @@ StorageGRID uses the Amazon Web Services (AWS) policy language to allow S3 tenan
 
 There are two kinds of access policies supported by StorageGRID.
 
-* *Bucket policies*, which are configured using the ListObjects policy, PUT Bucket policy, and DELETE Bucket policy S3 API operations. Bucket policies are attached to buckets, so they are configured to control access by users in the bucket owner account or other accounts to the bucket and the objects in it. A bucket policy applies to only one bucket and possibly multiple groups.
+* *Bucket policies*, which are managed using the GetBucketPolicy, PutBucketPolicy, and DeleteBucketPolicy S3 API operations. Bucket policies are attached to buckets, so they are configured to control access by users in the bucket owner account or other accounts to the bucket and the objects in it. A bucket policy applies to only one bucket and possibly multiple groups.
 * *Group policies*, which are configured using the Tenant Manager or Tenant Management API. Group policies are attached to a group in the account, so they are configured to allow that group to access specific resources owned by that account. A group policy applies to only one group and possibly multiple buckets.
 
 NOTE: There is no difference in priority between group and bucket policies.
@@ -105,7 +105,7 @@ By default, any updates you make to group policies are eventually consistent. On
 
 As required, you can change the consistency guarantees for bucket policy updates. For example, you might want a change to a bucket policy to become effective as soon as possible for security reasons.
 
-In this case, you can either set the `Consistency-Control` header in the PUT Bucket policy request, or you can use the PUT Bucket consistency request. When changing the consistency control for this request, you must use the value *all*, which provides the highest guarantee of read-after-write consistency. If you specify any other consistency control value in a header for the PUT Bucket consistency request, the request will be rejected. If you specify any other value for a PUT Bucket policy request, the value will be ignored. Once a bucket policy becomes consistent, the changes can take an additional 8 seconds to take effect, because of policy caching.
+In this case, you can either set the `Consistency-Control` header in the PutBucketPolicy request, or you can use the PUT Bucket consistency request. When changing the consistency control for this request, you must use the value *all*, which provides the highest guarantee of read-after-write consistency. If you specify any other consistency control value in a header for the PUT Bucket consistency request, the request will be rejected. If you specify any other value for a PutBucketPolicy request, the value will be ignored. Once a bucket policy becomes consistent, the changes can take an additional 8 seconds to take effect, because of policy caching.
 
 NOTE: If you set the consistency level to *all* to force a new bucket policy to become effective sooner, be sure to set the bucket-level control back to its original value when you are done. Otherwise, all future bucket requests will use the *all* setting.
 
@@ -137,7 +137,7 @@ Other considerations:
 +
 https://www.ietf.org/rfc/rfc2141.txt[RFC 2141 URN Syntax^]
 +
-The HTTP request body for the PUT Bucket policy operation must be encoded with charset=UTF-8.
+The HTTP request body for the PutBucketPolicy operation must be encoded with charset=UTF-8.
 
 == Specify resources in a policy
 
@@ -218,10 +218,10 @@ In a policy, the Action element is used to allow/deny permissions to a resource.
 
 The tables lists the permissions that apply to buckets and the permissions that apply to objects.
 
-NOTE: Amazon S3 now uses the s3:PutReplicationConfiguration permission for both the PUT and DELETE Bucket replication actions. StorageGRID uses separate permissions for each action, which matches the original Amazon S3
+NOTE: Amazon S3 now uses the s3:PutReplicationConfiguration permission for both the PutBucketReplication and DeleteBucketReplication actions. StorageGRID uses separate permissions for each action, which matches the original Amazon S3
 specification.
 
-NOTE: A DELETE is performed when a PUT is used to overwrite an existing value.
+NOTE: A delete is performed when a put is used to overwrite an existing value.
 
 === Permissions that apply to buckets
 
@@ -231,13 +231,13 @@ NOTE: A DELETE is performed when a PUT is used to overwrite an existing value.
 a|
 s3:CreateBucket
 a|
-PUT Bucket
+CreateBucket
 a|
 
 a|
 s3:DeleteBucket
 a|
-DELETE Bucket
+DeleteBucket
 a|
 
 a|
@@ -249,19 +249,19 @@ Yes
 a|
 s3:DeleteBucketPolicy
 a|
-DELETE Bucket policy
+DeleteBucketPolicy
 a|
 
 a|
 s3:DeleteReplicationConfiguration
 a|
-DELETE Bucket replication
+DeleteBucketReplication
 a|
 Yes, separate permissions for PUT and DELETE*
 a|
 s3:GetBucketAcl
 a|
-GET Bucket ACL
+GetBucketAcl
 a|
 
 a|
@@ -279,13 +279,13 @@ Yes
 a|
 s3:GetBucketCORS
 a|
-GET Bucket cors
+GetBucketCors
 a|
 
 a|
 s3:GetEncryptionConfiguration
 a|
-GET Bucket encryption
+GetBucketEncryption
 a|
 
 a|
@@ -297,7 +297,7 @@ Yes
 a|
 s3:GetBucketLocation
 a|
-GET Bucket location
+GetBucketLocation
 a|
 
 a|
@@ -315,25 +315,25 @@ a|
 a|
 s3:GetBucketObjectLockConfiguration
 a|
-GET Object Lock Configuration
+GetObjectLockConfiguration
 a|
 
 a|
 s3:GetBucketPolicy
 a|
-GET Bucket policy
+GetBucketPolicy
 a|
 
 a|
 s3:GetBucketTagging
 a|
-GET Bucket tagging
+GetBucketTagging
 a|
 
 a|
 s3:GetBucketVersioning
 a|
-GET Bucket versioning
+GetBucketVersioning
 a|
 
 a|
@@ -345,7 +345,7 @@ a|
 a|
 s3:GetReplicationConfiguration
 a|
-GET Bucket replication
+GetBucketReplication
 a|
 
 a|
@@ -362,8 +362,8 @@ s3:ListBucket
 a|
 
 * ListObjects
-* HEAD Bucket
-* POST Object restore
+* HeadBucket
+* RestoreObject
 
 a|
 
@@ -371,8 +371,8 @@ a|
 s3:ListBucketMultipartUploads
 a|
 
-* List Multipart Uploads
-* POST Object restore
+* ListMultipartUploads
+* RestoreObject
 
 a|
 
@@ -398,8 +398,8 @@ a|
 s3:PutBucketCORS
 a|
 
-* DELETE Bucket cors†
-* PUT Bucket cors
+* DeleteBucketCors†
+* PutBucketCors
 
 a|
 
@@ -407,8 +407,8 @@ a|
 s3:PutEncryptionConfiguration
 a|
 
-* DELETE Bucket encryption
-* PUT Bucket encryption
+* DeleteBucketEncryption
+* PutBucketEncryption
 
 a|
 
@@ -433,36 +433,36 @@ a|
 a|
 s3:PutBucketObjectLockConfiguration
 a|
-* PUT Bucket with the `x-amz-bucket-object-lock-enabled: true` request header (also requires the s3:CreateBucket permission)
-* PUT Object Lock Configuration
+* CreateBucket with the `x-amz-bucket-object-lock-enabled: true` request header (also requires the s3:CreateBucket permission)
+* PutObjectLockConfiguration
 a|
 
 a|
 s3:PutBucketPolicy
 a|
-PUT Bucket policy
+PutBucketPolicy
 a|
 
 a|
 s3:PutBucketTagging
 a|
 
-* DELETE Bucket tagging†
-* PUT Bucket tagging
+* DeleteBucketTagging†
+* PutBucketTagging
 
 a|
 
 a|
 s3:PutBucketVersioning
 a|
-PUT Bucket versioning
+PutBucketVersioning
 a|
 
 a|
 s3:PutLifecycleConfiguration
 a|
 
-* DELETE Bucket lifecycle†
+* DeleteBucketLifecycle†
 * PutBucketLifecycleConfiguration
 
 a|
@@ -470,11 +470,11 @@ a|
 a|
 s3:PutReplicationConfiguration
 a|
-PUT Bucket replication
+PutBucketReplication
 a|
 Yes, separate permissions for PUT and DELETE*
 a|
-* Amazon S3 now uses the s3:PutReplicationConfiguration permission for both the PUT and DELETE Bucket replication actions. StorageGRID uses separate permissions for each action, which matches the original Amazon S3 specification.
+* Amazon S3 now uses the s3:PutReplicationConfiguration permission for both the PUT and DeleteBucketReplication actions. StorageGRID uses separate permissions for each action, which matches the original Amazon S3 specification.
 a|
 † A DELETE is performed when a PUT is used to overwrite an existing value.
 |===
@@ -488,16 +488,16 @@ a|
 s3:AbortMultipartUpload
 a|
 
-* Abort Multipart Upload
-* POST Object restore
+* AbortMultipartUpload
+* RestoreObject
 
 a|
 
 a|s3:BypassGovernanceRetention
 a|
-* DELETE Object
+* DeleteObject
 * DeleteObjects
-* PUT Object retention
+* PutObjectRetention
 a|
 
 
@@ -507,137 +507,137 @@ a|
 s3:DeleteObject
 a|
 
-* DELETE Object
+* DeleteObject
 * DeleteObjects
-* POST Object restore
+* RestoreObject
 
 a|
 
 a|
 s3:DeleteObjectTagging
 a|
-DELETE Object Tagging
+DeleteObjectTagging
 a|
 
 a|
 s3:DeleteObjectVersionTagging
 a|
-DELETE Object Tagging (a specific version of the object)
+DeleteObjectTagging (a specific version of the object)
 a|
 
 a|
 s3:DeleteObjectVersion
 a|
-DELETE Object (a specific version of the object)
+DeleteObject (a specific version of the object)
 a|
 
 a|
 s3:GetObject
 a|
 
-* GET Object
-* HEAD Object
-* POST Object restore
-* SELECT Object content
+* GetObject
+* HeadObject
+* RestoreObject
+* SelectObjectContent
 
 a|
 
 a|
 s3:GetObjectAcl
 a|
-GET Object ACL
+GetObjectAcl
 a|
 
 a|
 s3:GetObjectLegalHold
 a|
-GET Object legal hold
+GetObjectLegalHold
 a|
 
 a|
 s3:GetObjectRetention
 a|
-GET Object retention
+GetObjectRetention
 a|
 
 a|
 s3:GetObjectTagging
 a|
-GET Object Tagging
+GetObjectTagging
 a|
 
 a|
 s3:GetObjectVersionTagging
 a|
-GET Object Tagging (a specific version of the object)
+GetObjectTagging (a specific version of the object)
 a|
 
 a|
 s3:GetObjectVersion
 a|
-GET Object (a specific version of the object)
+GetObject (a specific version of the object)
 a|
 
 a|
 s3:ListMultipartUploadParts
 a|
-List Parts, POST Object restore
+ListParts, RestoreObject
 a|
 
 a|
 s3:PutObject
 a|
 
-* PUT Object
+* PutObject
 * CopyObject
-* POST Object restore
+* RestoreObject
 * CreateMultipartUpload
-* Complete Multipart Upload
-* Upload Part
-* Upload Part - Copy
+* CompleteMultipartUpload
+* UploadPart
+* UploadPartCopy
 
 a|
 
 a|
 s3:PutObjectLegalHold
 a|
-PUT Object legal hold
+PutObjectLegalHold
 a|
 
 a|
 s3:PutObjectRetention
 a|
-PUT Object retention
+PutObjectRetention
 a|
 
 a|
 s3:PutObjectTagging
 a|
-PUT Object Tagging
+PutObjectTagging
 a|
 
 a|
 s3:PutObjectVersionTagging
 a|
-PUT Object Tagging (a specific version of the object)
+PutObjectTagging (a specific version of the object)
 a|
 
 a|
 s3:PutOverwriteObject
 a|
 
-* PUT Object
+* PutObject
 * CopyObject
-* PUT Object tagging
-* DELETE Object tagging
-* Complete Multipart Upload
+* PutObjectTagging
+* DeleteObjectTagging
+* CompleteMultipartUpload
 
 a|
 Yes
 a|
 s3:RestoreObject
 a|
-POST Object restore
+RestoreObject
 a|
 
 |===
@@ -653,7 +653,7 @@ Possible settings for this permission include:
  ** If an existing object is found at the same path:
   *** The object's data, user-defined metadata, or S3 object tagging can't be overwritten.
   *** Any ingest operations in progress are cancelled, and an error is returned.
-  *** If S3 versioning is enabled, the Deny setting prevents PUT Object tagging or DELETE Object tagging operations from modifying the TagSet for an object and its noncurrent versions.
+  *** If S3 versioning is enabled, the Deny setting prevents PutObjectTagging or DeleteObjectTagging operations from modifying the TagSet for an object and its noncurrent versions.
  ** If an existing object is not found, this permission has no effect.
 * When this permission is not present, the effect is the same as if Allow were set.
 
@@ -820,7 +820,7 @@ s3:object-lock-remaining-retention-days
 a|    
 Compares to the retain-until-date specified in the `x-amz-object-lock-retain-until-date` request header or computed from the bucket default retention period to make sure that these values are within the allowable range for the following requests:
 
-* PUT Object
+* PutObject
 * CopyObject
 * CreateMultipartUpload
 
@@ -829,7 +829,7 @@ s3:PutObjectRetention
 a|
 s3:object-lock-remaining-retention-days
 a|    
-Compares to the retain-until-date specified in the PUT Object Retention request to ensure that it is within the allowable range.
+Compares to the retain-until-date specified in the PutObjectRetention request to ensure that it is within the allowable range.
 
 |===
 
@@ -968,7 +968,7 @@ Invalid principal
 a|
 Valid
 a|
-Policy grants a non-owner account (including anonymous accounts) permissions to PUT objects
+Policy grants a non-owner account (including anonymous accounts) permissions to put objects.
 a|
 Bucket
 a|
@@ -987,7 +987,7 @@ To ensure that overwrites are always denied, you can:
 * Apply the following rules and S3 policies:
  ** Add a PutOverwriteObject DENY operation to the S3 policy.
  ** Add a DeleteObject DENY operation to the S3 policy.
- ** Add a PUT Object ALLOW operation to the S3 policy.
+ ** Add a PutObject ALLOW operation to the S3 policy.
 
 IMPORTANT: Setting DeleteObject to DENY in an S3 policy does not prevent ILM from deleting objects when a rule such as "`zero copies after 30 days`" exists.
 

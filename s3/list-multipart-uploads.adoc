@@ -1,10 +1,10 @@
 ---
 permalink: s3/list-multipart-uploads.html
 sidebar: sidebar
-keywords: list multipart uploads, uploads, multipart uploads, bucket
-summary: 'The List Multipart Uploads operation lists in-progress multipart uploads for a bucket.'
+keywords: ListMultipartUploads, uploads, multipart uploads, bucket
+summary: 'The ListMultipartUploads operation lists in-progress multipart uploads for a bucket.'
 ---
-= List Multipart Uploads
+= ListMultipartUploads
 :icons: font
 :imagesdir: ../media/
 
@@ -24,4 +24,4 @@ The following request parameters are supported:
 
 == Versioning
 
-Multipart upload consists of separate operations for initiating the upload, listing uploads, uploading parts, assembling the uploaded parts, and completing the upload. When the Complete Multipart Upload operation is performed, that is the point when objects are created (and versioned if applicable).
+Multipart upload consists of separate operations for initiating the upload, listing uploads, uploading parts, assembling the uploaded parts, and completing the upload. When the CompleteMultipartUpload operation is performed, that is the point when objects are created (and versioned if applicable).

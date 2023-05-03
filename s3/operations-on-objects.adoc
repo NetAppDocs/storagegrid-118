@@ -14,11 +14,11 @@ This section describes how the StorageGRID system implements S3 REST API operati
 The following conditions apply to all object operations:
 
 * StorageGRID link:consistency-controls.html[consistency controls] are supported by all operations on objects, with the exception of the following:
- ** GET Object ACL
+ ** GetObjectAcl
  ** `OPTIONS /`
- ** PUT Object legal hold
- ** PUT Object retention
- ** SELECT Object content
+ ** PutObjectLegalHold
+ ** PutObjectRetention
+ ** SelectObjectContent
 * Conflicting client requests, such as two clients writing to the same key, are resolved on a "latest-wins" basis. The timing for the "`latest-wins`" evaluation is based on when the StorageGRID system completes a given request, and not on when S3 clients begin an operation.
 * All objects in a StorageGRID bucket are owned by the bucket owner, including objects created by an anonymous user, or by another account.
 * Data objects ingested to the StorageGRID system through Swift can't be accessed through S3.
@@ -29,10 +29,10 @@ The following table describes how StorageGRID implements S3 REST API object oper
 |===
 | Operation| Implementation
 
-| DELETE Object
+| DeleteObject
 | Multi-Factor Authentication (MFA) and the response header `x-amz-mfa` aren't supported.
 
-When processing a DELETE Object request, StorageGRID attempts to immediately remove all copies of the object from all stored locations. If successful, StorageGRID returns a response to the client immediately. If all copies can't be removed within 30 seconds (for example, because a location is temporarily unavailable), StorageGRID queues the copies for removal and then indicates success to the client.
+When processing a DeleteObject request, StorageGRID attempts to immediately remove all copies of the object from all stored locations. If successful, StorageGRID returns a response to the client immediately. If all copies can't be removed within 30 seconds (for example, because a location is temporarily unavailable), StorageGRID queues the copies for removal and then indicates success to the client.
 
 Versioning::
 
@@ -55,52 +55,52 @@ Multiple objects can be deleted in the same request message.
 
 See link:../s3/use-s3-api-for-s3-object-lock.html[Use S3 REST API to configure S3 Object Lock] to learn how to delete object versions in GOVERNANCE mode.
 
-| DELETE Object tagging
+| DeleteObjectTagging
 | Uses the `tagging` subresource to remove all tags from an object.
 
 Versioning::
 
 If the `versionId` query parameter is not specified in the request, the operation deletes all tags from the most recent version of the object in a versioned bucket. If the current version of the object is a delete marker, a "`MethodNotAllowed`" status is returned with the `x-amz-delete-marker` response header set to `true`.
 
-| GET Object
-| link:get-object.html[GET Object]
+| GetObject
+| link:get-object.html[GetObject]
 
-| GET Object ACL
+| GetObjectAcl
 | If the necessary access credentials are provided for the account, the operation returns a positive response and the ID, DisplayName, and Permission of the object owner, indicating that the owner has full access to the object.
 
-| GET Object legal hold
+| GetObjectLegalHold
 | link:../s3/use-s3-api-for-s3-object-lock.html[Use S3 REST API to configure S3 Object Lock]
 
-| GET Object retention
+| GetObjectRetention
 | link:../s3/use-s3-api-for-s3-object-lock.html[Use S3 REST API to configure S3 Object Lock]
 
-| GET Object tagging
+| GetObjectTagging
 | Uses the `tagging` subresource to return all tags for an object.
 
 Versioning::
 
 If the `versionId` query parameter is not specified in the request, the operation returns all tags from the most recent version of the object in a versioned bucket. If the current version of the object is a delete marker, a "`MethodNotAllowed`" status is returned with the `x-amz-delete-marker` response header set to `true`.
 
-| HEAD Object
-| link:head-object.html[HEAD Object]
+| HeadObject
+| link:head-object.html[HeadObject]
 
-| POST Object restore
-| link:post-object-restore.html[POST Object restore]
+| RestoreObject
+| link:post-object-restore.html[RestoreObject]
 
-| PUT Object
-| link:put-object.html[PUT Object]
+| PutObject
+| link:put-object.html[PutObject]
 
 | CopyObject
 (PUT Object - Copy)
 | link:put-object-copy.html[CopyObject]
 
-| PUT Object legal hold
+| PutObjectLegalHold
 | link:../s3/use-s3-api-for-s3-object-lock.html[Use S3 REST API to configure S3 Object Lock]
 
-| PUT Object retention
+| PutObjectRetention
 | link:../s3/use-s3-api-for-s3-object-lock.html[Use S3 REST API to configure S3 Object Lock]
 
-| PUT Object tagging
+| PutObjectTagging
 | Uses the `tagging` subresource to add a set of tags to an existing object.
 
 Object tag limits::
@@ -109,7 +109,7 @@ You can add tags to new objects when you upload them, or you can add them to exi
 
 Tag updates and ingest behavior::
 
-When you use PUT Object tagging to update an object's tags, StorageGRID does not re-ingest the object. This means that the option for Ingest Behavior specified in the matching ILM rule is not used. Any changes to object placement that are triggered by the update are made when ILM is re-evaluated by normal background ILM processes.
+When you use PutObjectTagging to update an object's tags, StorageGRID does not re-ingest the object. This means that the option for Ingest Behavior specified in the matching ILM rule is not used. Any changes to object placement that are triggered by the update are made when ILM is re-evaluated by normal background ILM processes.
 +
 This means that if the ILM rule uses the Strict option for ingest behavior, no action is taken if the required object placements can't be made (for example, because a newly required location is unavailable). The updated object retains its current placement until the required placement is possible.
 

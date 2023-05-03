@@ -20,7 +20,7 @@ The following table summarizes the available platform services and the S3 APIs u
 
 | CloudMirror replication
 | Replicates objects from a source StorageGRID bucket to the configured remote S3 bucket.
-| PUT Bucket replication (see link:operations-on-buckets.html[Operations on buckets])
+| PutBucketReplication (see link:operations-on-buckets.html[Operations on buckets])
 
 | Notifications
 | Sends notifications about events in a source StorageGRID bucket to a configured Simple Notification Service (SNS) endpoint.

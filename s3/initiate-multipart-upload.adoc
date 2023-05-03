@@ -75,15 +75,15 @@ link:../s3/use-s3-api-for-s3-object-lock.html[Use S3 REST API to configure S3 Ob
 <<Request headers for server-side encryption>>
 
 +
-NOTE: For information about how StorageGRID handles UTF-8 characters, see the documentation for PUT Object.
+NOTE: For information about how StorageGRID handles UTF-8 characters, see the documentation for PutObject.
 
 == Request headers for server-side encryption
 
 You can use the following request headers to encrypt a multipart object with server-side encryption. The SSE and SSE-C options are mutually exclusive.
 
-* *SSE*: Use the following header in the CreateMultipartUpload request if you want to encrypt the object with a unique key managed by StorageGRID. Don't specify this header in any of the Upload Part requests.
+* *SSE*: Use the following header in the CreateMultipartUpload request if you want to encrypt the object with a unique key managed by StorageGRID. Don't specify this header in any of the UploadPart requests.
  ** `x-amz-server-side-encryption`
-* *SSE-C*: Use all three of these headers in the CreateMultipartUpload request (and in each subsequent Upload Part request) if you want to encrypt the object with a unique key that you provide and manage.
+* *SSE-C*: Use all three of these headers in the CreateMultipartUpload request (and in each subsequent UploadPart request) if you want to encrypt the object with a unique key that you provide and manage.
  ** `x-amz-server-side-encryption-customer-algorithm`: Specify `AES256`.
  ** `x-amz-server-side-encryption-customer-key`: Specify your encryption key for the new object.
  ** `x-amz-server-side-encryption-customer-key-MD5`: Specify the MD5 digest of the new object's encryption key.
@@ -98,10 +98,10 @@ The following request header is not supported and returns `XNotImplemented`
 
 == Versioning
 
-Multipart upload consists of separate operations for initiating the upload, listing uploads, uploading parts, assembling the uploaded parts, and completing the upload. Objects are created (and versioned if applicable) when the Complete Multipart Upload operation is performed.
+Multipart upload consists of separate operations for initiating the upload, listing uploads, uploading parts, assembling the uploaded parts, and completing the upload. Objects are created (and versioned if applicable) when the CompleteMultipartUpload operation is performed.
 
 .Related information
 
 link:../ilm/index.html[Manage objects with ILM]
 
-link:put-object.html[PUT Object]
+link:put-object.html[PutObject]

@@ -42,13 +42,13 @@ entries:
         url: "/s3/use-s3-select.html"
       - title: Use server-side encryption
         url: "/s3/using-server-side-encryption.html"
-      - title: GET Object
+      - title: GetObject
         url: "/s3/get-object.html"
-      - title: HEAD Object
+      - title: HeadObject
         url: "/s3/head-object.html"
-      - title: POST Object restore
+      - title: RestoreObject
         url: "/s3/post-object-restore.html"
-      - title: PUT Object
+      - title: PutObject
         url: "/s3/put-object.html"
       - title: CopyObject
         url: "/s3/put-object-copy.html"
@@ -61,11 +61,11 @@ entries:
         url: "/s3/list-multipart-uploads.html"
       - title: CreateMultipartUpload
         url: "/s3/initiate-multipart-upload.html"
-      - title: Upload Part
+      - title: UploadPart
         url: "/s3/upload-part.html"
-      - title: Upload Part - Copy
+      - title: UploadPartCopy
         url: "/s3/upload-part-copy.html"
-      - title: Complete Multipart Upload
+      - title: CompleteMultipartUpload
         url: "/s3/complete-multipart-upload.html"
     - title: Error responses
       url: "/s3/error-responses.html"

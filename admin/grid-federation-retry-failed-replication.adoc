@@ -127,7 +127,7 @@ TIP: It might take several hours or longer for an object or delete marker to be 
 
 You can monitor retry operations in either of two ways:
 
-* Use an S3 link:../s3/head-object.html[HEAD Object] or link:../s3/get-object.html[GET Object] request. The response includes the StorageGRID-specific `x-ntap-sg-cgr-replication-status` response header, which will have one of the following values:
+* Use an S3 link:../s3/head-object.html[HeadObject] or link:../s3/get-object.html[GetObject] request. The response includes the StorageGRID-specific `x-ntap-sg-cgr-replication-status` response header, which will have one of the following values:
 +
 [cols="1a,2a" options="header"]
 

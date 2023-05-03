@@ -115,11 +115,11 @@ A successful response lists the lifecycle configuration you just applied.
 
 == Validate that bucket lifecycle expiration applies to object
 
-You can determine if an expiration rule in the lifecycle configuration applies to a specific object when issuing a PUT Object, HEAD Object, or GET Object request. If a rule applies, the response includes an `Expiration` parameter that indicates when the object expires and which expiration rule was matched.
+You can determine if an expiration rule in the lifecycle configuration applies to a specific object when issuing a PutObject, HeadObject, or GetObject request. If a rule applies, the response includes an `Expiration` parameter that indicates when the object expires and which expiration rule was matched.
 
 NOTE: Because bucket lifecycle overrides ILM, the `expiry-date` shown is the actual date the object will be deleted. For details, see link:../ilm/how-object-retention-is-determined.html[How object retention is determined].
 
-For example, this PUT Object request was issued on 22 Jun 2020 and places an object in the `testbucket` bucket.
+For example, this PutObject request was issued on 22 Jun 2020 and places an object in the `testbucket` bucket.
 
 ----
 aws s3api --endpoint-url <StorageGRID endpoint> put-object
@@ -136,7 +136,7 @@ The success response indicates that the object will expire in 100 days (01 Oct 2
 }
 ----
 
-For example, this HEAD Object request was used to get metadata for the same object in the testbucket bucket.
+For example, this HeadObject request was used to get metadata for the same object in the testbucket bucket.
 
 ----
 aws s3api --endpoint-url <StorageGRID endpoint> head-object

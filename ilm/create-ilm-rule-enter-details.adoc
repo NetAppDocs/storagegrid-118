@@ -37,7 +37,7 @@ If *matches all* is selected (default), the rule applies to all S3 buckets or Sw
 +
 If you select *Yes*, "`Noncurrent time`" will be automatically selected for Reference time in link:create-ilm-rule-define-placements.html[Step 2 of the Create an ILM rule wizard].
 +
-NOTE: Noncurrent time applies only to S3 objects in versioning-enabled buckets. See link:../s3/operations-on-buckets.html[Operations on buckets, PUT Bucket versioning] and link:managing-objects-with-s3-object-lock.html[Manage objects with S3 Object Lock].
+NOTE: Noncurrent time applies only to S3 objects in versioning-enabled buckets. See link:../s3/operations-on-buckets.html[Operations on buckets, PutBucketVersioning] and link:managing-objects-with-s3-object-lock.html[Manage objects with S3 Object Lock].
 +
 You can use this option to reduce the storage impact of versioned objects by filtering for noncurrent object versions. See link:example-4-ilm-rules-and-policy-for-s3-versioned-objects.html[Example 4: ILM rules and policy for S3 versioned objects].
 

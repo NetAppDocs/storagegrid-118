@@ -13,28 +13,28 @@ Several bucket operations and object operations are tracked in the StorageGRID a
 
 == Bucket operations tracked in the audit logs
 
-* DELETE Bucket
-* DELETE Bucket tagging
+* DeleteBucket
+* DeleteBucketTagging
 * DeleteObjects
-* ListObjects (List Objects)
+* ListObjects
 * ListObjectVersions
-* GET Bucket tagging
-* HEAD Bucket
-* PUT Bucket
+* GetBucketTagging
+* HeadBucket
+* CreateBucket
 * PUT Bucket compliance
-* PUT Bucket tagging
-* PUT Bucket versioning
+* PutBucketTagging
+* PutBucketVersioning
 
 == Object operations tracked in the audit logs
 
-* Complete Multipart Upload
-* Upload Part (when the ILM rule uses the Balanced or Strict ingest behaviors)
-* Upload Part - Copy (when the ILM rule uses the Balanced or Strict ingest behaviors)
-* DELETE Object
-* GET Object
-* HEAD Object
-* POST Object restore
-* PUT Object
+* CompleteMultipartUpload
+* UploadPart (when the ILM rule uses the Balanced or Strict ingest behaviors)
+* UploadPartCopy (when the ILM rule uses the Balanced or Strict ingest behaviors)
+* DeleteObject
+* GetObject
+* HeadObject
+* RestoreObject
+* PutObject
 * CopyObject
 
 .Related information
