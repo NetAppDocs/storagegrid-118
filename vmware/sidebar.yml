@@ -1,14 +1,12 @@
 section: vmware
 title: Install VMware
 entries:
-  - title: Overview
+  - title: Quick start
     pdf-filename: Install VMware for StorageGRID
     url: "/vmware/index.html"
   - title: Plan and prepare for VMware installation
     entries:
-    - title: Before you install (VMware)
-      url: "/vmware/planning-and-preparation.html"
-    - title: Required materials
+    - title: Required information and materials
       url: "/vmware/required-materials.html"
     - title: Download and extract the StorageGRID installation files
       url: "/vmware/downloading-and-extracting-storagegrid-installation-files.html"

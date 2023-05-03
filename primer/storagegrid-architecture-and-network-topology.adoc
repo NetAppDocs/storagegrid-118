@@ -11,7 +11,7 @@ summary: 'A StorageGRID system consists of multiple types of grid nodes at one o
 [.lead]
 A StorageGRID system consists of multiple types of grid nodes at one or more data center sites.
 
-For additional information about StorageGRID network topology, requirements, and grid communications, see the link:../network/index.html[Networking guidelines]. 
+For additional information about StorageGRID network topology, requirements, and grid communications, see the link:../network/index.html[Networking guidelines].
 
 == Deployment topologies
 
@@ -55,15 +55,28 @@ The basic building block of a StorageGRID system is the grid node. Nodes contain
 
 The StorageGRID system uses four types of grid nodes:
 
-* *Admin Nodes* provide management services such as system configuration, monitoring, and logging. When you sign in to the Grid Manager, you are connecting to an Admin Node. Each grid must have one primary Admin Node and might have additional non-primary Admin Nodes for redundancy. You can connect to any Admin Node, and each Admin Node displays a similar view of the StorageGRID system. However, maintenance procedures must be performed using the primary Admin Node.
+* *Admin Nodes* and *primary Admin Nodes* provide management services such as system configuration, monitoring, and logging. When you sign in to the Grid Manager, you are connecting to an Admin Node. Each grid must have one primary Admin Node and might have additional non-primary Admin Nodes for redundancy. You can connect to any Admin Node, and each Admin Node displays a similar view of the StorageGRID system. However, maintenance procedures must be performed using the primary Admin Node.
 +
 Admin Nodes can also be used to load balance S3 and Swift client traffic.
++
+See link:../admin/what-admin-node-is.html[What is an Admin Node?]
 
-* *Storage Nodes* manage and store object data and metadata. Each StorageGRID system must have at least three Storage Nodes. If you have multiple sites, each site within your StorageGRID system must also have three Storage Nodes.
+* *Storage Nodes* manage and store object data and metadata. Each StorageGRID system must have at least three Storage Nodes. If you have multiple sites, each site within your StorageGRID system must also have at least three Storage Nodes.
++
+See link:../admin/what-storage-node-is.html[What is a Storage Node?]
+
 * *Gateway Nodes (optional)* provide a load-balancing interface that client applications can use to connect to StorageGRID. A load balancer seamlessly directs clients to an optimal Storage Node, so that the failure of nodes or even an entire site is transparent. You can use a combination of Gateway Nodes and Admin Nodes for load balancing, or you can implement a third-party HTTP load balancer.
+
 * *Archive Nodes (deprecated)* provide an optional interface through which object data can be archived to tape.
 
-To learn more, see link:../admin/index.html[Administer StorageGRID].
+=== StorageGRID appliance nodes
+
+StorageGRID hardware appliances are specially designed for use in a StorageGRID system. Some appliances can be used as Storage Nodes. Other appliances can be used as Admin Nodes or Gateway Nodes. You can combine appliance nodes with software-based nodes or deploy fully engineered, all-appliance grids that have no dependencies on external hypervisors, storage, or compute hardware.
+
+See the following for more information:
+
+* https://review.docs.netapp.com/us-en/storagegrid-appliances_main/[StorageGRID Appliance Documentation^].
+* https://hwu.netapp.com[NetApp Hardware Universe^] 
 
 === Software-based nodes
 
@@ -85,33 +98,6 @@ See the following for more information:
 * link:../ubuntu/index.html[Install Ubuntu or Debian]
 
 Use the https://imt.netapp.com/matrix/#welcome[NetApp Interoperability Matrix Tool (IMT)^] to get a list of supported versions.
-
-=== StorageGRID appliance nodes
-
-StorageGRID hardware appliances are specially designed for use in a StorageGRID system. Some appliances can be used as Storage Nodes. Other appliances can be used as Admin Nodes or Gateway Nodes. You can combine appliance nodes with software-based nodes or deploy fully engineered, all-appliance grids that have no dependencies on external hypervisors, storage, or compute hardware.
-
-The following types of StorageGRID appliances are available:
-
-* The *SGF6112 storage appliance* is an all-flash 1-rack-unit (1U) server that features 12 NVMe (nonvolatile memory express) SSD drives with integrated compute and storage controllers.
-* The *SG100 and SG1000 services appliances* are 1-rack-unit (1U) servers that can each operate as the primary Admin Node, a non-primary Admin Node, or a Gateway Node. Both appliances can operate as Gateway Nodes and Admin Nodes (primary and non-primary) at the same time.
-* The *SG6000 storage appliance* operates as a Storage Node and combines the 1U SG6000-CN compute controller with a 2U or 4U storage controller shelf. The SG6000 is available in two models:
- ** *SGF6024*: Combines the SG6000-CN compute controller with a 2U storage controller shelf that includes 24 solid state drives (SSDs) and redundant storage controllers.
- ** *SG6060*: Combines the SG6000-CN compute controller with a 4U enclosure that includes 58 NL-SAS drives, 2 SSDs, and redundant storage controllers. Each SG6060 appliance supports one or two 60-drive expansion shelves, providing up to 178 drives dedicated to object storage.
-* The *SG5700 storage appliance* is an integrated storage and computing platform that operates as a Storage Node. The SG5700 is available in two models:
- ** *SG5712*: a 2U enclosure that includes 12 NL-SAS drives and integrated storage and compute controllers.
- ** *SG5760*: a 4U enclosure that includes 60 NL-SAS drives and integrated storage and compute controllers.
-
-See the following for more information:
-
-* https://hwu.netapp.com[NetApp Hardware Universe^] 
-
-* https://review.docs.netapp.com/us-en/storagegrid-appliances_main/installconfig/hardware-description-sg6100.html[SGF6112 storage appliance^]
-
-* https://review.docs.netapp.com/us-en/storagegrid-appliances_main/installconfig/hardware-description-sg100-and-1000.html[SG100 and SG1000 services appliances^]
-
-* https://review.docs.netapp.com/us-en/storagegrid-appliances_main/installconfig/hardware-description-sg6000.html[SG6000 storage appliances^]
-
-* https://review.docs.netapp.com/us-en/storagegrid-appliances_main/installconfig/hardware-description-sg5700.html[SG5700 storage appliances^]
 
 === Primary services for Admin Nodes
 
