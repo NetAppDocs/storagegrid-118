@@ -2,43 +2,45 @@
 permalink: ubuntu/required-materials.html
 sidebar: sidebar
 keywords: installation materials ubuntu debian
-summary: 'Before you install StorageGRID, you must gather and prepare required materials.'
+summary: 'Before you install StorageGRID, gather and prepare the required information and materials.'
 ---
-= Required materials
+= Required information and materials
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Before you install StorageGRID, you must gather and prepare required materials.
+Before you install StorageGRID, gather and prepare the required information and materials.
 
-[options="header"]
-|===
-| Item| Notes
-a|
-NetApp StorageGRID license
-a|
-You must have a valid, digitally signed NetApp license.
+== Required information
 
-*Note*: A non-production license, which can be used for testing and proof of concept grids, is included in the StorageGRID installation archive.
+Network plan:: Which networks you intend to attach to each StorageGRID node. StorageGRID supports multiple networks for traffic separation, security, and administrative convenience.
++
+See the StorageGRID link:../network/index.html[Networking guidelines].
 
-a|StorageGRID installation archive
-a|You must link:downloading-and-extracting-storagegrid-installation-files.html[download the StorageGRID installation archive and extract the files].
+Network information:: Unless you are using DHCP, IP addresses to assign to each grid node and the IP addresses of the DNS and NTP servers.
 
-a|Service laptop
-a|The StorageGRID system is installed through a service laptop.
+Servers for grid nodes:: Identify a set of servers (physical, virtual, or both) that, in aggregate, provide sufficient resources to support the number and type of StorageGRID nodes you plan to deploy.
 
+Node migration (if needed):: Understand the link:node-container-migration-requirements.html[requirements for node migration], if you want to perform scheduled maintenance on physical hosts without any service interruption.
+
+Related information:: https://imt.netapp.com/matrix/#welcome[NetApp Interoperability Matrix Tool^]
+
+== Required materials
+
+NetApp StorageGRID license:: You must have a valid, digitally signed NetApp license.
+
+NOTE: A non-production license, which can be used for testing and proof of concept grids, is included in the StorageGRID installation archive.
+
+StorageGRID installation archive:: link:downloading-and-extracting-storagegrid-installation-files.html[Download the StorageGRID installation archive and extract the files].
+
+Service laptop:: The StorageGRID system is installed through a service laptop.
++
 The service laptop must have:
 
 * Network port
 * SSH client (for example, PuTTY)
 * link:../admin/web-browser-requirements.html[Supported web browser]
 
-a|StorageGRID documentation
-a|
+StorageGRID documentation:: 
 * link:../release-notes/index.html[Release notes]
 * link:../admin/index.html[Instructions for administering StorageGRID]
-|===
-
-.Related information
-
-https://imt.netapp.com/matrix/#welcome[NetApp Interoperability Matrix Tool^]

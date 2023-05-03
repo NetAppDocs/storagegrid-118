@@ -36,6 +36,10 @@ NOTE: The example playbook does not include the steps required to create network
 
 You can automate all of the steps for preparing the hosts and deploying virtual grid nodes.
 
+=== Example Ansible role and playbook
+
+Example Ansible role and playbook are supplied with the installation archive in the `/extras` folder. The Ansible playbook shows how the `storagegrid` role prepares the hosts and installs StorageGRID onto the target servers. You can customize the role or playbook as necessary.
+
 == Automate the configuration of StorageGRID
 
 After deploying the grid nodes, you can automate the configuration of the StorageGRID system.

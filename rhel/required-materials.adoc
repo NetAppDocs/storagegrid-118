@@ -21,7 +21,7 @@ Network information:: Unless you are using DHCP, IP addresses to assign to each 
 
 Servers for grid nodes:: Identify a set of servers (physical, virtual, or both) that, in aggregate, provide sufficient resources to support the number and type of StorageGRID nodes you plan to deploy.
 
-Scheduled maintenance (if needed):: Understand the link:node-container-migration-requirements.html[requirements for node migration], if you want to perform scheduled maintenance on physical hosts without any service interruption.
+Node migration (if needed):: Understand the link:node-container-migration-requirements.html[requirements for node migration], if you want to perform scheduled maintenance on physical hosts without any service interruption.
 
 Related information:: https://imt.netapp.com/matrix/#welcome[NetApp Interoperability Matrix Tool^]
 
