@@ -13,7 +13,7 @@ This section describes how StorageGRID supports operations for multipart uploads
 
 The following conditions and notes apply to all multipart upload operations:
 
-* You should not exceed 1,000 concurrent multipart uploads to a single bucket because the results of List Multipart Uploads queries for that bucket might return incomplete results.
+* You should not exceed 1,000 concurrent multipart uploads to a single bucket because the results of ListMultipartUploads queries for that bucket might return incomplete results.
 * StorageGRID enforces AWS size limits for multipart parts. S3 clients must follow these guidelines:
  ** Each part in a multipart upload must be between 5 MiB (5,242,880 bytes) and 5 GiB (5,368,709,120 bytes).
  ** The last part can be smaller than 5 MiB (5,242,880 bytes).
@@ -29,8 +29,8 @@ The following conditions and notes apply to all multipart upload operations:
 |===
 | Operation| Implementation
 
-| List Multipart Uploads
-| See link:list-multipart-uploads.html[List Multipart Uploads]
+| ListMultipartUploads
+| See link:list-multipart-uploads.html[ListMultipartUploads]
 
 | CreateMultipartUpload
 | See link:initiate-multipart-upload.html[CreateMultipartUpload]

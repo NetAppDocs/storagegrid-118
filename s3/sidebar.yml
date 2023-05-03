@@ -57,7 +57,7 @@ entries:
     - title: Operations for multipart uploads
       url: "/s3/operations-for-multipart-uploads.html"
       entries:
-      - title: List Multipart Uploads
+      - title: ListMultipartUploads
         url: "/s3/list-multipart-uploads.html"
       - title: CreateMultipartUpload
         url: "/s3/initiate-multipart-upload.html"

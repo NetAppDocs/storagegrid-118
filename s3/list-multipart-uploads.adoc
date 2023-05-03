@@ -9,7 +9,7 @@ summary: 'The ListMultipartUploads operation lists in-progress multipart uploads
 :imagesdir: ../media/
 
 [.lead]
-The List Multipart Uploads operation lists in-progress multipart uploads for a bucket.
+The ListMultipartUploads operation lists in-progress multipart uploads for a bucket.
 
 The following request parameters are supported:
 

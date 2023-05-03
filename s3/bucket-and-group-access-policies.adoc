@@ -352,7 +352,7 @@ a|
 s3:ListAllMyBuckets
 a|
 
-* GET Service
+* ListBuckets
 * GET Storage Usage
 
 a|

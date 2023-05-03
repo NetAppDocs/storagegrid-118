@@ -559,7 +559,7 @@ StorageGRID supports all <<common-params, common parameters and headers>> for th
 None
 
 .StorageGRID documentation
-link:operations-on-the-service.html[Operations on the service > GET Service]
+link:operations-on-the-service.html[Operations on the service > ListBuckets]
 
 
 //ListMultipartUploads
@@ -579,7 +579,7 @@ StorageGRID supports all <<common-params, common parameters and headers>> for th
 None
 
 .StorageGRID documentation
-link:list-multipart-uploads.html[List Multipart Uploads]
+link:list-multipart-uploads.html[ListMultipartUploads]
 
 
 // ListObjects
@@ -656,7 +656,7 @@ StorageGRID supports all <<common-params, common parameters and headers>> for th
 None
 
 .StorageGRID documentation
-link:list-multipart-uploads.html[List Multipart Uploads]
+link:list-multipart-uploads.html[ListMultipartUploads]
 
 // PutBucketCors
 == https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutBucketCors.html[PutBucketCors^]
