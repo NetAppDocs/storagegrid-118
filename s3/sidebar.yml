@@ -75,7 +75,7 @@ entries:
     entries:
       - title: Overview
         pdf-filename: StorageGRID custom operations
-        url: "s3/custom-operations-on-buckets.html"
+        url: "/s3/custom-operations-on-buckets.html"
       - title: GET Bucket consistency
         url: "/s3/get-bucket-consistency-request.html"
       - title: PUT Bucket consistency
