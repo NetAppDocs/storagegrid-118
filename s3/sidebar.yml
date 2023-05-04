@@ -42,31 +42,33 @@ entries:
         url: "/s3/use-s3-select.html"
       - title: Use server-side encryption
         url: "/s3/using-server-side-encryption.html"
+      - title: CopyObject
+        url: "/s3/put-object-copy.html"
       - title: GetObject
         url: "/s3/get-object.html"
       - title: HeadObject
         url: "/s3/head-object.html"
-      - title: RestoreObject
-        url: "/s3/post-object-restore.html"
       - title: PutObject
         url: "/s3/put-object.html"
-      - title: CopyObject
-        url: "/s3/put-object-copy.html"
+      - title: RestoreObject
+        url: "/s3/post-object-restore.html"
       - title: SelectObjectContent
         url: "/s3/select-object-content.html"
     - title: Operations for multipart uploads
-      url: "/s3/operations-for-multipart-uploads.html"
       entries:
-      - title: ListMultipartUploads
-        url: "/s3/list-multipart-uploads.html"
+      - title: Overview
+        pdf-filename: Operations for multipart uploads
+        url: "/s3/operations-for-multipart-uploads.html"
+      - title: CompleteMultipartUpload
+        url: "/s3/complete-multipart-upload.html"
       - title: CreateMultipartUpload
         url: "/s3/initiate-multipart-upload.html"
+      - title: ListMultipartUploads
+        url: "/s3/list-multipart-uploads.html"
       - title: UploadPart
         url: "/s3/upload-part.html"
       - title: UploadPartCopy
         url: "/s3/upload-part-copy.html"
-      - title: CompleteMultipartUpload
-        url: "/s3/complete-multipart-upload.html"
     - title: Error responses
       url: "/s3/error-responses.html"
   - title: StorageGRID S3 requests

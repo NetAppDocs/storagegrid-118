@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: operations, multipart uploads, uploads, rest API
 summary: 'This section describes how StorageGRID supports operations for multipart uploads.'
 ---
-= Operations for multipart uploads
+= Operations for multipart uploads: Overview
 :icons: font
 :imagesdir: ../media/
 
@@ -29,26 +29,30 @@ The following conditions and notes apply to all multipart upload operations:
 |===
 | Operation| Implementation
 
+
+| AbortMultipartUpload
+| Implemented with all Amazon S3 REST API behavior. Subject to change without notice.
+
+| CompleteMultipartUpload
+| See link:complete-multipart-upload.html[CompleteMultipartUpload]
+
+| CreateMultipartUpload
+
+(previously named Initiate Multipart Upload)
+
+| See link:initiate-multipart-upload.html[CreateMultipartUpload]
+
 | ListMultipartUploads
 | See link:list-multipart-uploads.html[ListMultipartUploads]
 
-| CreateMultipartUpload
-| See link:initiate-multipart-upload.html[CreateMultipartUpload]
+| ListParts
+| Implemented with all Amazon S3 REST API behavior. Subject to change without notice.
 
 | UploadPart
 | See link:upload-part.html[UploadPart]
 
 | UploadPartCopy
 | See link:upload-part-copy.html[UploadPartCopy]
-
-| CompleteMultipartUpload
-| See link:complete-multipart-upload.html[CompleteMultipartUpload]
-
-| AbortMultipartUpload
-| Implemented with all Amazon S3 REST API behavior. Subject to change without notice.
-
-| ListParts
-| Implemented with all Amazon S3 REST API behavior. Subject to change without notice.
 
 |===
 .Related information

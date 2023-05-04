@@ -69,23 +69,6 @@ You must enable S3 Object Lock when you create the bucket. You can't add or disa
 | DeleteBucketTagging
 | This operation uses the `tagging` subresource to remove all tags from a bucket.
 
-| ListObjects and ListObjectsV2
-
-(GET Bucket)
-
-
-| This operation returns some or all (up to 1,000) of the objects in a bucket. The Storage Class for objects can have either of two values, even if the object was ingested with the `REDUCED_REDUNDANCY` storage class option:
-
-* `STANDARD`, which indicates the object is stored in a storage pool consisting of Storage Nodes.
-* `GLACIER`, which indicates that the object has been moved to the external bucket specified by the Cloud Storage Pool.
-
-If the bucket contains large numbers of deleted keys that have the same prefix, the response might include some `CommonPrefixes` that don't contain keys.
-
-| ListObjectVersions
-
-(GET Bucket Object versions)
-| With READ access on a bucket, this operation with the `versions` subresource lists metadata of all of the versions of objects in the bucket.
-
 | GetBucketAcl
 | This operation returns a positive response and the ID, DisplayName, and Permission of the bucket owner, indicating that the owner has full access to the bucket.
 
@@ -97,7 +80,7 @@ If the bucket contains large numbers of deleted keys that have the same prefix, 
 
 | GetBucketLifecycleConfiguration
 
-(GET Bucket lifecyclen)
+(previously named GET Bucket lifecycle)
 
 | This operation returns the lifecycle configuration for the bucket. See link:create-s3-lifecycle-configuration.html[Create S3 lifecycle configuration].
 
@@ -106,7 +89,7 @@ If the bucket contains large numbers of deleted keys that have the same prefix, 
 
 | GetBucketNotificationConfiguration 
 
-(GET Bucket notification) 
+(previously named GET Bucket notification) 
 
 | This operation returns the notification configuration attached to the bucket.
 
@@ -139,7 +122,22 @@ This operation returns:
 * `x-ntap-sg-bucket-id`: The UUID of the bucket in UUID format.
 * `x-ntap-sg-trace-id`: The unique trace ID of the associated request.
 
+| ListObjects and ListObjectsV2
 
+(previously named GET Bucket)
+
+| This operation returns some or all (up to 1,000) of the objects in a bucket. The Storage Class for objects can have either of two values, even if the object was ingested with the `REDUCED_REDUNDANCY` storage class option:
+
+* `STANDARD`, which indicates the object is stored in a storage pool consisting of Storage Nodes.
+* `GLACIER`, which indicates that the object has been moved to the external bucket specified by the Cloud Storage Pool.
+
+If the bucket contains large numbers of deleted keys that have the same prefix, the response might include some `CommonPrefixes` that don't contain keys.
+
+| ListObjectVersions
+
+(previously named GET Bucket Object versions)
+
+| With READ access on a bucket, this operation with the `versions` subresource lists metadata of all of the versions of objects in the bucket.
 
 | PutBucketCors
 | This operation sets the CORS configuration for a bucket so that the bucket can service cross-origin requests. Cross-origin resource sharing (CORS) is a security mechanism that allows client web applications in one domain to access resources in a different domain. For example, suppose you use an S3 bucket named `images` to store graphics. By setting the CORS configuration for the `images` bucket, you can allow the images in that bucket to be displayed on the website `+http://www.example.com+`.
@@ -151,7 +149,7 @@ Bucket default encryption configuration is ignored if the object upload request 
 
 | PutBucketLifecycleConfiguration 
 
-(PUT Bucket lifecycle)
+(previously named PUT Bucket lifecycle)
 
 | This operation creates a new lifecycle configuration for the bucket or replaces an existing lifecycle configuration. StorageGRID supports up to 1,000 lifecycle rules in a lifecycle configuration. Each rule can include the following XML elements:
 
@@ -173,7 +171,7 @@ See link:create-s3-lifecycle-configuration.html[Create S3 lifecycle configuratio
 
 | PutBucketNotificationConfiguration 
 
-(PUT Bucket notification)
+(previously named PUT Bucket notification)
 | This operation configures notifications for the bucket using the notification configuration XML included in the request body. You should be aware of the following implementation details:
 
 * StorageGRID supports Simple Notification Service (SNS) topics as destinations. Simple Queue Service (SQS) or Amazon Lambda endpoints aren't supported.

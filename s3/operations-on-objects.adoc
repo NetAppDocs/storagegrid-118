@@ -47,7 +47,7 @@ See link:../s3/use-s3-api-for-s3-object-lock.html[Use S3 REST API to configure S
 
 | DeleteObjects
 
-(DELETE Multiple Objects)
+(previously named DELETE Multiple Objects)
 
 | Multi-Factor Authentication (MFA) and the response header `x-amz-mfa` aren't supported.
 
@@ -91,7 +91,9 @@ If the `versionId` query parameter is not specified in the request, the operatio
 | link:put-object.html[PutObject]
 
 | CopyObject
-(PUT Object - Copy)
+
+(previously named PUT Object - Copy)
+
 | link:put-object-copy.html[CopyObject]
 
 | PutObjectLegalHold

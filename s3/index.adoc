@@ -78,7 +78,7 @@ https://datatracker.ietf.org/doc/html/rfc2616[IETF RFC 2616: Hypertext Transfer 
 |11.3
 |
 * Added support for server-side encryption of object data with customer-provided keys (SSE-C).
-* Added support for DELETE, GET, and PutBucketLifecycleConfiguration operations (Expiration action only) and for the `x-amz-expiration` response header.
+* Added support for bucket lifecycle operations (Expiration action only) and for the `x-amz-expiration` response header.
 * Updated PutObject, CopyObject, and MultipartUpload to describe the impact of ILM rules that use synchronous placement at ingest.
 * TLS 1.1 ciphers are no longer supported.
 
