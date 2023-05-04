@@ -90,8 +90,10 @@ entries:
       - title: GET Storage Usage
         url: "/s3/get-storage-usage-request.html"
       - title: Deprecated bucket requests for legacy Compliance
-        url: "/s3/deprecated-bucket-requests-for-legacy-compliance.html"
         entries:
+        - title: Overview
+          pdf-filename: Deprecated bucket requests for legacy Compliance
+          url: "/s3/deprecated-bucket-requests-for-legacy-compliance.html"        
         - title: Deprecated - PUT Bucket request modifications for compliance
           url: "/s3/deprecated-put-bucket-request-modifications-for-compliance.html"
         - title: Deprecated - GET Bucket compliance request
