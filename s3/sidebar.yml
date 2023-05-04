@@ -71,8 +71,11 @@ entries:
         url: "/s3/upload-part-copy.html"
     - title: Error responses
       url: "/s3/error-responses.html"
-  - title: StorageGRID S3 requests
+  - title: StorageGRID custom operations
     entries:
+      - title: Overview
+        pdf-filename: StorageGRID custom operations
+        url: "s3/custom-operations-on-buckets.html"
       - title: GET Bucket consistency
         url: "/s3/get-bucket-consistency-request.html"
       - title: PUT Bucket consistency
