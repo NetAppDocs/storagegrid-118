@@ -11,11 +11,6 @@ summary: 'All successful storage DELETE, GET, HEAD, POST, and PUT operations are
 [.lead]
 All successful storage DELETE, GET, HEAD, POST, and PUT operations are tracked in the StorageGRID audit log. Failures and info, auth, or OPTIONS requests are not logged.
 
-.Learn more
-* link:../audit/accessing-audit-log-file.html[Access audit log file]
-* link:../audit/client-write-audit-messages.html[Client read audit messages] 
-* link:../audit/client-read-audit-messages.html[Client read audit messages]
-
 == Account operations
 
 * link:account-operations.html[GET account]
@@ -34,3 +29,8 @@ All successful storage DELETE, GET, HEAD, POST, and PUT operations are tracked i
 * link:object-operations.html[GET object]
 * link:object-operations.html[HEAD object]
 * link:object-operations.html[PUT object]
+
+.Related information
+* link:../audit/accessing-audit-log-file.html[Access audit log file]
+* link:../audit/client-write-audit-messages.html[Client write audit messages] 
+* link:../audit/client-read-audit-messages.html[Client read audit messages]
