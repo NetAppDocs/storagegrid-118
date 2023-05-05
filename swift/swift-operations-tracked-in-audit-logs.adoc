@@ -2,14 +2,14 @@
 permalink: swift/swift-operations-tracked-in-audit-logs.html
 sidebar: sidebar
 keywords: swift options request
-summary: 'All successful storage DELETE, GET, HEAD, POST, and PUT operations are tracked in the StorageGRID audit log. Failures aren't logged, nor are info, auth, or OPTIONS requests.'
+summary: 'All successful storage DELETE, GET, HEAD, POST, and PUT operations are tracked in the StorageGRID audit log. Failures and info, auth, or OPTIONS requests are not logged.'
 ---
 = Swift operations tracked in the audit logs
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-All successful storage DELETE, GET, HEAD, POST, and PUT operations are tracked in the link:../audit/audit-messages-main.html[StorageGRID audit log]. Failures aren't logged, nor are info, auth, or OPTIONS requests.
+All successful storage DELETE, GET, HEAD, POST, and PUT operations are tracked in the link:../audit/audit-messages-main.html[StorageGRID audit log]. Failures and info, auth, or OPTIONS requests are not logged.
 
 Information is tracked for the following Swift operations.
 
