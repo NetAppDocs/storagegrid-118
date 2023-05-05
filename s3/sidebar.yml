@@ -115,9 +115,5 @@ entries:
     url: "/s3/configuring-security-for-rest-api.html"
   - title: Benefits of active, idle, and concurrent HTTP connections
     url: "/s3/benefits-of-active-idle-and-concurrent-http-connections.html"
-  - title: Monitor and audit operations
-    entries:
-    - title: Object ingest and retrieval rates
-      url: "/s3/monitoring-object-ingest-and-retrieval-rates.html"
-    - title: S3 operations tracked in audit logs
-      url: "/s3/s3-operations-tracked-in-audit-logs.html"
+  - title: S3 operations tracked in audit logs
+    url: "/s3/s3-operations-tracked-in-audit-logs.html"

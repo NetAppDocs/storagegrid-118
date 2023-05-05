@@ -39,6 +39,9 @@ A busy system generates large amounts of information. The following list provide
 | link:monitoring-tenant-activity.html[Tenant activity]
 | Weekly
 
+| link:monitoring-object-ingest-and-retrieval-rates.html[Object ingest and retrieval rates]
+| Weekly
+
 | link:monitoring-load-balancing-operations.html[Load balancing operations]
 | After the initial configuration and after any configuration changes
 
