@@ -9,7 +9,10 @@ summary: 'All successful storage DELETE, GET, HEAD, POST, and PUT operations are
 :imagesdir: ../media/
 
 [.lead]
-All successful storage DELETE, GET, HEAD, POST, and PUT operations are tracked in the link:../audit/audit-messages-main.html[StorageGRID audit log]. Failures and info, auth, or OPTIONS requests are not logged.
+All successful storage DELETE, GET, HEAD, POST, and PUT operations are tracked in the StorageGRID audit log. Failures and info, auth, or OPTIONS requests are not logged.
+
+Go to link:../audit/accessing-audit-log-file.html[Access audit log file] to learn how to access the audit log. Go to link:../audit/client-write-audit-messages.html and link:../audit/client-read-audit-messages.html to learn about the specific messages used for Swift client write and read operations.
+
 
 Information is tracked for the following Swift operations.
 
