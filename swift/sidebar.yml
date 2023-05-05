@@ -32,5 +32,5 @@ entries:
     url: "/swift/storagegrid-swift-rest-api-operations.html"
   - title: Configure security for REST API
     url: "/swift/configuring-security-for-rest-api.html"
-  - title: Monitor and audit operations
-    url: "/swift/monitoring-and-auditing-operations.html"
+  - title: Swift operations tracked in the audit logs
+    url: "/swift/swift-operations-tracked-in-audit-logs.html"
