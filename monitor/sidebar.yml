@@ -46,7 +46,7 @@ entries:
     - title: Monitor tenant activity
       url: "/monitor/monitoring-tenant-activity.html"
     - title: Monitor object ingest and retrieval rates
-      url: "/s3/monitoring-object-ingest-and-retrieval-rates.html"
+      url: "/monitor/monitoring-object-ingest-and-retrieval-rates.html"
     - title: Monitor load balancing operations
       url: "/monitor/monitoring-load-balancing-operations.html"      
     - title: Monitor grid federation connections
