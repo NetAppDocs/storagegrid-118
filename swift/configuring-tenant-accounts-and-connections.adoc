@@ -207,4 +207,4 @@ delete test_container
 
 link:configuring-tenant-accounts-and-connections.html[Create and configure Swift tenant accounts]
 
-link:../admin/configuring-security-for-clients.html[Configure security for clients]
+link:../admin/security-for-clients.html[Security for S3 and Swift clients]

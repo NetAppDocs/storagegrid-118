@@ -199,8 +199,8 @@ entries:
     - title: Overview
       pdf-filename: Configure S3 and Swift client connections
       url: "/admin/configuring-client-connections.html"
-    - title: Configure security for S3 or Swift clients
-      url: "/admin/configuring-security-for-clients.html"      
+    - title: Security for S3 or Swift clients
+      url: "/admin/security-for-clients.html"      
     - title: Use S3 setup wizard
       entries:
       - title: S3 setup wizard considerations and requirements

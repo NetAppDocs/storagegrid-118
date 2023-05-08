@@ -1,10 +1,10 @@
 ---
-permalink: admin/configuring-security-for-clients.html
+permalink: admin/security-for-clients.html
 sidebar: sidebar
 keywords: security, S3, swift, client application, TLS
 summary: 'StorageGRID tenant accounts use S3 or Swift client applications to save object data to StorageGRID. You should review the security measures implemented for client applications..'
 ---
-= Configure security for S3 or Swift clients
+= Security for S3 or Swift clients
 :icons: font
 :imagesdir: ../media/
 
@@ -64,9 +64,9 @@ In all cases, client applications can make TLS connections using either a custom
 
 * When client applications connect to the Load Balancer service, they use the certificate that was configured for the load balancer endpoint. Each load balancer endpoint has its own certificate&#8212;either a custom server certificate uploaded by the grid administrator or a certificate that the grid administrator generated in StorageGRID when configuring the endpoint.
 +
-See link:configuring-load-balancer-endpoints.html[Configuring load balancer endpoints].
+See link:managing-load-balancing.html.html[Considerations for load balancing].
 
-* When client applications connect directly to a Storage Node, they use either the system-generated server certificates that were generated for Storage Nodes when the StorageGRID system was installed (which are signed by the system certificate authority), or a single custom server certificate that is supplied for the grid by a grid administrator. See link:configuring-custom-server-certificate-for-storage-node.html[adding a single custom server certificate].
+* When client applications connect directly to a Storage Node, they use either the system-generated server certificates that were generated for Storage Nodes when the StorageGRID system was installed (which are signed by the system certificate authority), or a single custom server certificate that is supplied for the grid by a grid administrator. See link:configuring-custom-server-certificate-for-storage-node.html[add a custom S3 or Swift API certificate].
 
 Clients should be configured to trust the certificate authority that signed whichever certificate they use to establish TLS connections.
 
