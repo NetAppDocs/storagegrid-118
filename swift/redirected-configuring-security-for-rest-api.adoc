@@ -1,0 +1,4 @@
+---
+permalink: swift/configuring-security-for-rest-api.html
+redirect: admin/configuring-security-for-clients.html
+---
