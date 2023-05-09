@@ -22,7 +22,7 @@ The StorageGRID Compliance feature that was available in previous StorageGRID ve
 ====
 
 
-You have the s3:PutBucketCompliance permission, or be account root, to complete this operation.
+You must have the s3:PutBucketCompliance permission, or be account root, to complete this operation.
 
 You must specify a value for every field of the compliance settings when issuing a PUT Bucket compliance request.
 
