@@ -11,7 +11,7 @@ summary: 'The GET Bucket last access time request allows you to determine if las
 [.lead]
 The PUT Bucket last access time request allows you to enable or disable last access time updates for individual buckets. Disabling last access time updates improves performance, and is the default setting for all buckets created with version 10.3.0, or later.
 
-You have the s3:PutBucketLastAccessTime permission for a bucket, or be account root, to complete this operation.
+You must have the s3:PutBucketLastAccessTime permission for a bucket, or be account root, to complete this operation.
 
 NOTE: Starting with StorageGRID version 10.3, updates to last access time are disabled by default for all new buckets. If you have buckets that were created using an earlier version of StorageGRID and you want to match the new default behavior, you must explicitly disable last access time updates for each of those earlier buckets. You can enable or disable updates to last access time using the PUT Bucket last access time request, the *S3* > *Buckets* > *Change Last Access Setting* checkbox in the Tenant Manager, or the Tenant Management API.
 

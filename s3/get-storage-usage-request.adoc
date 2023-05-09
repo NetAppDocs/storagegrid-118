@@ -15,7 +15,7 @@ The amount of storage used by an account and its buckets can be obtained by a mo
 
 By default, StorageGRID attempts to retrieve usage information using strong-global consistency. If strong-global consistency can't be achieved, StorageGRID attempts to retrieve the usage information at a strong-site consistency.
 
-You have the s3:ListAllMyBuckets permission, or be account root, to complete this operation.
+You must have the s3:ListAllMyBuckets permission, or be account root, to complete this operation.
 
 == Request example
 

@@ -21,7 +21,7 @@ The StorageGRID Compliance feature that was available in previous StorageGRID ve
 
 ====
 
-You have the s3:GetBucketCompliance permission, or be account root, to complete this operation.
+You must have the s3:GetBucketCompliance permission, or be account root, to complete this operation.
 
 == Request example
 
