@@ -15,7 +15,7 @@ You can use the Swift CLI to test your connection to the StorageGRID system and 
 * You have downloaded and installed the Swift command-line client: https://platform.swiftstack.com/docs/integration/python-swiftclient.html[SwiftStack: python-swiftclient^]
 
 * Optionally, you have link:../admin/configuring-load-balancer-endpoints.html[created a load balancer endpoint]. Otherwise, you know the IP address of the Storage Node you want to connect to and the port number to use. See link:../admin/summary-ip-addresses-and-ports-for-client-connections.html[IP addresses and ports for client connections].
-* You have link:../admin/creating-tenant-account[created a Swift tenant account].
+* You have link:../admin/creating-tenant-account.html[created a Swift tenant account].
 * You have signed in to the tenant account and created  at least one group and user. See link:../tenant/creating-groups-for-swift-tenant.html[Create groups for a Swift tenant].
 +
 IMPORTANT: Swift tenant users must have the Administrator group permission to authenticate into the Swift REST API.

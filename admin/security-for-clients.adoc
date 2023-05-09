@@ -64,7 +64,7 @@ In all cases, client applications can make TLS connections using either a custom
 
 * When client applications connect to the Load Balancer service, they use the certificate that was configured for the load balancer endpoint. Each load balancer endpoint has its own certificate&#8212;either a custom server certificate uploaded by the grid administrator or a certificate that the grid administrator generated in StorageGRID when configuring the endpoint.
 +
-See link:managing-load-balancing.html.html[Considerations for load balancing].
+See link:managing-load-balancing.html[Considerations for load balancing].
 
 * When client applications connect directly to a Storage Node, they use either the system-generated server certificates that were generated for Storage Nodes when the StorageGRID system was installed (which are signed by the system certificate authority), or a single custom server certificate that is supplied for the grid by a grid administrator. See link:configuring-custom-server-certificate-for-storage-node.html[add a custom S3 or Swift API certificate].
 
