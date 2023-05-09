@@ -11,7 +11,7 @@ entries:
       url: "/swift/how-storagegrid-implements-swift-rest-api.html"
     - title: Recommendations for implementing Swift REST API
       url: "/swift/recommendations-for-implementing-swift-rest-api.html"
-  - title: Configure tenant accounts and connections
+  - title: Test Swift REST API connection
     url: "/swift/configuring-tenant-accounts-and-connections.html"
   - title: Swift REST API supported operations
     url: "/swift/swift-rest-api-supported-operations.html"
