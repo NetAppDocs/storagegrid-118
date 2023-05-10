@@ -19,9 +19,10 @@ See the following for more information:
 
 * link:../admin/configuring-s3-api-endpoint-domain-names.html[Configure S3 endpoint domain names]
 
-The ListObjects (GET Bucket) and ListObjectVersions (GET Bucket object versions) operations support StorageGRID consistency controls.
+The ListObjects (GET Bucket) and ListObjectVersions (GET Bucket object versions) operations support StorageGRID link:consistency-controls.html[consistency controls].
 
-You can check whether updates to last access time are enabled or disabled for individual buckets.
+You can check whether updates to last access time are enabled or disabled for individual buckets. See 
+link:get-bucket-last-access-time-request.html[GET Bucket last access time].
 
 The following table describes how StorageGRID implements S3 REST API bucket operations. To perform any of these operations, the necessary access credentials must be provided for the account.
 
@@ -201,7 +202,8 @@ not included
 `urn:sgws:s3:::bucket_name`
 
 | PutBucketPolicy
-| This operation sets the policy attached to the bucket.
+| This operation sets the policy attached to the bucket. See link:bucket-and-group-access-policies.html[Use bucket and group access policies].
+
 
 | PutBucketReplication
 | This operation configures link:../tenant/understanding-cloudmirror-replication-service.html[StorageGRID CloudMirror replication] for the bucket using the replication configuration XML provided in the request body. For CloudMirror replication, you should be aware of the following implementation details:
@@ -241,14 +243,5 @@ If the default retention period is modified, the retain-until-date of existing o
 See link:../s3/use-s3-api-for-s3-object-lock.html[Use S3 REST API to configure S3 Object Lock] for detailed information.
 |===
 
-.Related information
-
-link:consistency-controls.html[Consistency controls]
-
-link:get-bucket-last-access-time-request.html[GET Bucket last access time]
-
-link:bucket-and-group-access-policies.html[Use bucket and group access policies]
-
-link:s3-operations-tracked-in-audit-logs.html[S3 operations tracked in audit logs]
 
 
