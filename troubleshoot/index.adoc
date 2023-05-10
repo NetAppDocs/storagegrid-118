@@ -74,7 +74,7 @@ After you have defined the problem and have assessed its risk and impact, collec
 
 [cols="1a,2a,1a" options="header"]
 |===
-| Type of data to collect| Why collect this dat| Instructions
+| Type of data to collect| Why collect this data| Instructions
 |
 Create timeline of recent changes
 |
