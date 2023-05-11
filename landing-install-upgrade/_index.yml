@@ -52,3 +52,5 @@ indexpage:
         url: ../upgrade/how-your-system-is-affected-during-upgrade.html
       - title: Upgrade quick start
         url: ../upgrade/upgrade-workflow.html
+      - title: Install hotfix
+        url: ../maintain/storagegrid-hotfix-procedure.html

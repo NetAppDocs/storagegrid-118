@@ -48,9 +48,7 @@ sidebar:
       - section: monitor
       - section: troubleshoot
       - section: audit
-    - title: Expand your grid
-      entries:
-      - section: expand
+    - section: expand
     - title: Maintain your grid
       entries:
       - title: Overview
@@ -73,6 +71,8 @@ sidebar:
         url: "/maintain/grid-node-recovery-procedures.html"
       - title: Warnings and considerations for grid node recovery
         url: "/maintain/warnings-and-considerations-for-grid-node-recovery.html"
+      - title: Gather required materials for grid node recovery
+        url: "/maintain/gathering-required-materials-for-grid-node-recovery.html"
       - title: Select node recovery procedure
         url: "/maintain/selecting-node-recovery-procedure.html"
       - title: Recover from Storage Node failures
