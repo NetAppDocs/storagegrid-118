@@ -13,6 +13,8 @@ You can use the dashboard to monitor system activities at a glance. You can crea
 
 NOTE: To change units for the storage values displayed in the Grid Manager, select the user drop-down in the upper right of the Grid Manager, then select *User preferences*.
 
+This example dashboard might look different than yours.
+
 image::../media/grid_manager_dashboard.png[Grid Manager dashboard]
 
 == View the dashboard

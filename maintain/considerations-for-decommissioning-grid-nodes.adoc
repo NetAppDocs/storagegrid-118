@@ -2,14 +2,14 @@
 permalink: maintain/considerations-for-decommissioning-grid-nodes.html
 sidebar: sidebar
 keywords: storagegrid, decommission
-summary: 'Before you start this procedure to decommission one or more nodes, you must understand the implications of removing each type of node. Upon the successful decommissioning of a node, its services will be disabled and the node will be automatically shut down.'
+summary: 'Before you start this procedure to decommission one or more nodes, understand the implications of removing each type of node. Upon the successful decommissioning of a node, its services will be disabled and the node will be automatically shut down.'
 ---
 = General considerations for grid node decommission
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Before you start this procedure to decommission one or more nodes, you must understand the implications of removing each type of node. Upon the successful decommissioning of a node, its services will be disabled and the node will be automatically shut down.
+Before you start this procedure to decommission one or more nodes, understand the implications of removing each type of node. Upon the successful decommissioning of a node, its services will be disabled and the node will be automatically shut down.
 
 You can't decommission a node if doing so will leave StorageGRID in an invalid state. The following rules are enforced:
 
@@ -22,6 +22,44 @@ You can't decommission a node if doing so will leave StorageGRID in an invalid s
 * You can't decommission a connected node if your grid includes any disconnected nodes (nodes whose health is Unknown or Administratively Down). You must decommission or recover the disconnected nodes first.
 * If your grid contains multiple disconnected nodes, the software requires you to decommission them all at the same time, which increases the potential for unexpected results.
 * If a disconnected node can't be removed (for example, a Storage Node that is required for the ADC quorum), no other disconnected node can be removed.
-* If you want to replace an older appliance with a newer appliance, consider https://review.docs.netapp.com/us-en/storagegrid-appliances_main/commonhardware/how-appliance-node-cloning-works.html[cloning the appliance node^] instead of decommissioning the old node and adding the new node in an expansion.
 
 IMPORTANT: Don't remove a grid node's virtual machine or other resources until instructed to do so in decommission procedures.
+
+[cols="2a,1a,3a" options="header"]
+|===
+| Node type| Can decommission?| Rules and guidelines
+
+| Primary Admin Node
+| No
+|
+
+|Archive node
+| No
+|
+
+| Admin or Gateway Node
+| No
+| Can't decommission if one of the node's network interfaces is part of a high availability (HA) group
+
+| Storage Node
+| No
+| Can't decommission if the node's removal would affect the ADC quorum
+
+| Storage Node
+| No
+| Can't decommission if the node is required for the active ILM policy
+
+| 10 Storage Nodes
+| Yes, maximum number allowed
+| This is the maximum number of Storage Nodes for a single Decommission Node procedure.
+
+| Any connected node 
+| Possibly
+| Can't decommission if your grid includes any disconnected nodes (nodes whose health is Unknown or Administratively Down). Decommission or recover the disconnected nodes first.
+
+| Multiple disconnected nodes
+| Possibly
+| You must decommission them all at the same time, which increases the potential for unexpected results.
+
+*Note*: If a disconnected node can't be removed (for example, a Storage Node that is required for the ADC quorum), no other disconnected node can be removed.
+|===
