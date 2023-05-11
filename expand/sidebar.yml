@@ -56,5 +56,5 @@ entries:
       url: "/expand/copying-audit-logs.html"
     - title: Rebalance erasure-coded data after adding Storage Nodes
       url: "/expand/rebalancing-erasure-coded-data-after-adding-storage-nodes.html"
-  - title: Contact technical support
+  - title: Troubleshoot expansion
     url: "/expand/contacting-technical-support.html"

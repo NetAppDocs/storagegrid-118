@@ -20,7 +20,7 @@ You must access the deployment environment and collect information about the VMw
 You must collect information about your VMware environment, including the following:
 
 * The username and password for a VMware vSphere account that has appropriate permissions to complete the deployment.
-* Host, datastore, and network configuration information for each StorageGRID grid node virtual machine.
+* Host, datastore, and network configuration information for each StorageGRID node virtual machine.
 
 IMPORTANT: VMware live vMotion causes the virtual machine clock time to jump and is not supported for grid nodes of any type. Though rare, incorrect clock times can result in loss of data or configuration updates.
 

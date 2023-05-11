@@ -81,7 +81,7 @@ In this example, validation passed.
 +
 image::../media/change_ip_tool_validate_sample_passed_messages.gif[screenshot described by surrounding text]
 
-. Once validation passes, select *10* to apply the new network configuration.
+. After validation passes, select *10* to apply the new network configuration.
 . Select *stage* to apply the changes the next time the nodes are restarted.
 +
 IMPORTANT: You must select *stage*. Don't perform a rolling restart, either manually or by selecting *apply* instead of *stage*; the grid will not start up successfully.
@@ -89,12 +89,12 @@ IMPORTANT: You must select *stage*. Don't perform a rolling restart, either manu
 . After your changes are complete, select *0* to exit the Change IP tool.
 . Shut down all nodes simultaneously.
 +
-IMPORTANT: The entire grid must be shut down at once, so that all nodes are down at the same time.
+IMPORTANT: The entire grid must be shut down, so that all nodes are down at the same time.
 
 . Make the physical or virtual networking changes that are required.
 . Verify that all grid nodes are down.
 . Power on all nodes.
-. Once the grid starts up successfully:
+. After the grid starts up successfully:
  .. If you added new NTP servers, delete the old NTP server values.
  .. If you added new DNS servers, delete the old DNS server values.
 . Download the new Recovery Package from the Grid Manager.

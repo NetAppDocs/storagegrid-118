@@ -17,7 +17,7 @@ Optionally, you can remap node ports or increase CPU or memory settings for the 
 
 .Before you begin
 
-* You have reviewed how to link:planning-and-preparation.html[plan and prepare for installation], and you understand the requirements for software, CPU and RAM, and storage and performance.
+* You have reviewed how to link:index.html[plan and prepare for installation], and you understand the requirements for software, CPU and RAM, and storage and performance.
 
 * You are familiar with VMware vSphere Hypervisor and have experience deploying virtual machines in this environment.
 +

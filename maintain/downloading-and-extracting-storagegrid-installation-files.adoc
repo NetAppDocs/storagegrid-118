@@ -2,14 +2,14 @@
 permalink: maintain/downloading-and-extracting-storagegrid-installation-files.html
 sidebar: sidebar
 keywords: storagegrid, installation files, download
-summary: 'Before you can recover StorageGRID grid nodes, you must download the software and extract the files.'
+summary: 'Before you can recover StorageGRID nodes, you must download the software and extract the files.'
 ---
 = Download and extract StorageGRID installation files
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Before you can recover StorageGRID grid nodes, you must download the software and extract the files.
+Before you can recover StorageGRID nodes, you must download the software and extract the files.
 
 You must use the version of StorageGRID that is currently running on the grid.
 

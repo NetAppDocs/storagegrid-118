@@ -11,11 +11,7 @@ summary: 'If you encounter a problem when using a StorageGRID system, refer to t
 [.lead]
 If you encounter a problem when using a StorageGRID system, refer to the tips and guidelines in this section for help in determining and resolving the issue.
 
-== Overview of problem determination
-
-If you encounter a problem when link:../admin/index.html[administering a StorageGRID system], you can use the process outlined in this figure to identify and analyze the issue. Often, you can resolve problems on your own; however, you might need to escalate some issues to technical support.
-
-image::../media/problem_determination_methodology.gif[Flowchart showing major steps in problem determination procedure]
+Often, you can resolve problems on your own; however, you might need to escalate some issues to technical support.
 
 == [[define_problem]]Define the problem
 
@@ -25,7 +21,7 @@ This table provides examples of the types of information that you might collect 
 
 [cols="1a,1a" options="header"]
 |===
-| Question| Sample response
+| Question| Example response
 
 |What is the StorageGRID system doing or not doing? What are its symptoms?
 |Client applications are reporting that objects can't be ingested into StorageGRID.
@@ -57,7 +53,7 @@ This table summarizes the impact the example problem is having on system operati
 
 [cols="1a,1a" options="header"]
 |===
-| Question| Sample response
+| Question| Example response
 
 |Can the StorageGRID system ingest content?
 |No.
@@ -78,7 +74,7 @@ After you have defined the problem and have assessed its risk and impact, collec
 
 [cols="1a,2a,1a" options="header"]
 |===
-| Type of data to collect| Why collect this dat| Instructions
+| Type of data to collect| Why collect this data| Instructions
 |
 Create timeline of recent changes
 |
