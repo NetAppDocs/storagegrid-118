@@ -21,12 +21,12 @@ The reason you are performing the expansion determines how many new nodes of eac
 
 Using the table, follow the steps for the type of expansion you're performing.
 
-[cols="1a,2a,2a,2a" options="header"]
+[cols="1a,1a,2a,2a" options="header"]
 |===
 | Step| Add storage volumes| Add grid nodes| Add a new site
 
 | 1
-| link:adding-storage-volumes-to-storage-nodes.html[Add storage volumes to Storage Nodes]
+| link:adding-storage-volumes-to-storage-nodes.html[Add storage volumes to Storage Nodes] (No additional steps required.)
 | link:adding-grid-nodes-to-existing-site-or-adding-new-site.html[Add grid nodes to existing site or add new site]
 | link:adding-grid-nodes-to-existing-site-or-adding-new-site.html[Add grid nodes to existing site or add new site]
 
@@ -36,13 +36,7 @@ Using the table, follow the steps for the type of expansion you're performing.
 
 | 3
 |
-2+| Deploy grid nodes:
-
-link:deploying-new-grid-nodes.html#appliances-deploying-storage-gateway-or-non-primary-admin-nodes[Appliances]
-
-link:deploying-new-grid-nodes.html#vmware-deploy-grid-nodes[VMware]
-
-link:deploying-new-grid-nodes.html#linux-deploy-grid-nodes[Linux]
+2+| Deploy grid nodes for: link:deploying-new-grid-nodes.html#appliances-deploying-storage-gateway-or-non-primary-admin-nodes[Appliances], link:deploying-new-grid-nodes.html#vmware-deploy-grid-nodes[VMware], or link:deploying-new-grid-nodes.html#linux-deploy-grid-nodes[Linux]
 
 *Note*: "Linux" refers to a Red Hat Enterprise Linux, Ubuntu, CentOS, or Debian deployment. Use the https://imt.netapp.com/matrix/#welcome[NetApp Interoperability Matrix Tool (IMT)^] to get a list of supported versions.
 

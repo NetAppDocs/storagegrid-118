@@ -49,7 +49,7 @@ NOTE: If one or more copies of the object also exist on Storage Nodes within Sto
 
 . *Object retrieved*
 +
-Once an object has been restored, the client application can issue a GET Object request to retrieve the restored object.
+After an object has been restored, the client application can issue a GET Object request to retrieve the restored object.
 
 == Azure: Lifecycle of a Cloud Storage Pool object
 
@@ -82,7 +82,7 @@ NOTE: If one or more copies of the object also exist on Storage Nodes within Sto
 
 . *Object retrieved*
 +
-Once an object has been restored to the Azure Cloud Storage Pool, the client application can issue a GET Object request to retrieve the restored object.
+After an object has been restored to the Azure Cloud Storage Pool, the client application can issue a GET Object request to retrieve the restored object.
 
 .Related information
 

@@ -111,7 +111,7 @@ In this example, validation passed.
 +
 image::../media/change_ip_tool_validate_sample_passed_messages.gif[screenshot described by surrounding text]
 
-. Once validation passes, choose one of the following options:
+. After validation passes, choose one of the following options:
  ** *8*: Save unapplied changes.
 +
 This option allows you to quit the Change IP tool and start it again later, without losing any unapplied changes.
