@@ -106,6 +106,3 @@ If you are using link:../admin/grid-federation-overview.html[grid federation] an
 
 NOTE: StorageGRID does not support the `x-amz-replication-status` header.
 
-.Related information
-
-link:s3-operations-tracked-in-audit-logs.html[S3 operations tracked in audit logs]

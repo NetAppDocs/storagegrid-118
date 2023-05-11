@@ -26,12 +26,10 @@ If you specified SSE-C encryption for the CreateMultipartUpload request, you mus
 * `x-amz-server-side-encryption-customer-key`: Specify the same encryption key that you provided in the CreateMultipartUpload request.
 * `x-amz-server-side-encryption-customer-key-MD5`: Specify the same MD5 digest that you provided in the CreateMultipartUpload request.
 
-IMPORTANT: The encryption keys you provide are never stored. If you lose an encryption key, you lose the corresponding object. Before using customer-provided keys to secure object data, review the considerations in "`Use server-side encryption.`"
+IMPORTANT: The encryption keys you provide are never stored. If you lose an encryption key, you lose the corresponding object. Before using customer-provided keys to secure object data, review the considerations in link:using-server-side-encryption.html[Use server-side encryption].
 
 == Versioning
 
 Multipart upload consists of separate operations for initiating the upload, listing uploads, uploading parts, assembling the uploaded parts, and completing the upload. Objects are created (and versioned if applicable) when the CompleteMultipartUpload operation is performed.
 
-.Related information
 
-link:using-server-side-encryption.html[Use server-side encryption]

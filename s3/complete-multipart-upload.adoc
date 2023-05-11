@@ -17,7 +17,7 @@ Conflicting client requests, such as two clients writing to the same key, are re
 
 == Request headers
 
-The `x-amz-storage-class` request header is supported, and affects how many object copies StorageGRID creates if the matching ILM rule specifies an Ingest Behavior of Dual commit or Balanced.
+The `x-amz-storage-class` request header is supported, and affects how many object copies StorageGRID creates if the matching ILM rule specifies the Dual commit or Balanced link:../ilm/data-protection-options-for-ingest.html[ingest option].
 
 * `STANDARD`
 +
@@ -51,6 +51,3 @@ If this occurs, an alarm is raised in the Grid Manager on Total Events (SMTT). T
 
 A tenant can trigger the failed replication or notification by updating the object's metadata or tags. A tenant can resubmit the existing values to avoid making unwanted changes.
 
-.Related information
-
-link:../ilm/index.html[Manage objects with ILM]

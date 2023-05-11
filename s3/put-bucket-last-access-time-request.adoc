@@ -13,7 +13,7 @@ The PUT Bucket last access time request allows you to enable or disable last acc
 
 You must have the s3:PutBucketLastAccessTime permission for a bucket, or be account root, to complete this operation.
 
-NOTE: Starting with StorageGRID version 10.3, updates to last access time are disabled by default for all new buckets. If you have buckets that were created using an earlier version of StorageGRID and you want to match the new default behavior, you must explicitly disable last access time updates for each of those earlier buckets. You can enable or disable updates to last access time using the PUT Bucket last access time request, the *S3* > *Buckets* > *Change Last Access Setting* checkbox in the Tenant Manager, or the Tenant Management API.
+NOTE: Starting with StorageGRID version 10.3, updates to last access time are disabled by default for all new buckets. If you have buckets that were created using an earlier version of StorageGRID and you want to match the new default behavior, you must explicitly disable last access time updates for each of those earlier buckets. You can enable or disable updates to last access time using the PUT Bucket last access time request or from the details page for a bucket in the Tenant Manager. See link:../tenant/enabling-or-disabling-last-access-time-updates.html[Enable or disable last access time updates].
 
 If last access time updates are disabled for a bucket, the following behavior is applied to operations on the bucket:
 
@@ -43,7 +43,3 @@ Date: _date_
 Authorization: _authorization string_
 Host: _host_
 ----
-
-.Related information
-
-link:../tenant/index.html[Use a tenant account]
