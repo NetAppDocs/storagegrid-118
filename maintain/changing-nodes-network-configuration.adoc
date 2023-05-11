@@ -148,7 +148,7 @@ Updating grid network configuration on Name
 ----
 
 +
-After applying or staging changes, a new Recovery Package is generated as a result of the grid configuration change.
+After you apply or stage changes, a new Recovery Package is generated as a result of the grid configuration change.
 
 . If you selected *stage*, follow these steps after provisioning is complete:
  .. Make the physical or virtual networking changes that are required.

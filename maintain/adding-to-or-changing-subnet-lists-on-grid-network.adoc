@@ -100,7 +100,7 @@ IMPORTANT: If you use the *stage* option, restart the node as soon as possible a
 If you were unaware that the proposed changes require nodes to be restarted, you can defer the changes to minimize user impact. Selecting *cancel* returns you to the main menu and preserves your changes so you can apply them later.
 
 +
-After applying or staging changes, a new Recovery Package is generated as a result of the grid configuration change.
+After you apply or stage changes, a new Recovery Package is generated as a result of the grid configuration change.
 . If configuration is stopped due to errors, the following options are available:
  ** To terminate the IP change procedure and return to the main menu, enter *a*.
  ** To retry the operation that failed, enter *r*.

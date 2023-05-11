@@ -19,14 +19,14 @@ A StorageGRID expansion allows you to add:
 
 The reason you are performing the expansion determines how many new nodes of each type you must add and the location of those new nodes. For example, there are different node requirements if you are performing an expansion to increase storage capacity, add metadata capacity, or add redundancy or new capabilities. 
 
-Using the table, follow the steps for the type of expansion you're performing.
+Follow the steps for the type of expansion you're performing:
 
 [cols="1a,1a,2a,2a" options="header"]
 |===
 | Step| Add storage volumes| Add grid nodes| Add a new site
 
 | 1
-| link:adding-storage-volumes-to-storage-nodes.html[Add storage volumes to Storage Nodes] (No additional steps required.)
+| link:adding-storage-volumes-to-storage-nodes.html[Add storage volumes to Storage Nodes] (No additional steps required)
 | link:adding-grid-nodes-to-existing-site-or-adding-new-site.html[Add grid nodes to existing site or add new site]
 | link:adding-grid-nodes-to-existing-site-or-adding-new-site.html[Add grid nodes to existing site or add new site]
 
