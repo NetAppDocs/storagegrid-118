@@ -27,6 +27,8 @@ sidebar:
       - section: ubuntu
       - section: vmware
       - section: upgrade
+      - title: Install StorageGRID hotfix
+        url: "/maintain/storagegrid-hotfix-procedure.html"
     - title: Configure and manage
       url: "/landing-configure-manage/index.html"  
       entries:
@@ -46,11 +48,39 @@ sidebar:
       - section: monitor
       - section: troubleshoot
       - section: audit
-    - title: Maintain
-      url: "/landing-maintain/index.html"    
+    - title: Expand your grid
       entries:
       - section: expand
-      - section: maintain   
+    - title: Maintain your grid
+      entries:
+      - title: Overview
+        url: "/maintain/index.html"
+      - title: Download Recovery Package
+        url: "/maintain/downloading-recovery-package.html"
+      - title: Decommission node or site
+        url: "/maintain/decommission-procedure.html"
+      - title: Rename gride, node, or site
+        url: "/maintain/rename-grid-site-node-overview.html"
+      - title: Maintain network
+        url: "/maintain/updating-subnets-for-grid-network.html"
+      - title: Host and middleware procedures
+        url: "/maintain/linux-migrating-grid-node-to-new-host.html"
+      - title: Grid node procedures
+        url: "/maintain/grid-node-procedures.html"
+    - title: Recover nodes 
+      entries:
+      - title: Overview
+        url: "/maintain/grid-node-recovery-procedures.html"
+      - title: Warnings and considerations for grid node recovery
+        url: "/maintain/warnings-and-considerations-for-grid-node-recovery.html"
+      - title: Select node recovery procedure
+        url: "/maintain/selecting-node-recovery-procedure.html"
+      - title: Recover from Storage Node failures
+        entries:
+        - title: Overview
+          url: "/maintain/recovering-from-storage-node-failures.html"
+        - title: Recover Storage Node down more than 15 days
+          url: "/maintain/recovering-storage-node-that-has-been-down-more-than-15-days.html"
     - title: Enable StorageGRID
       url: /storagegrid-enable.html
     - title: Other versions

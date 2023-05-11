@@ -78,7 +78,7 @@ entries:
         - title: Workflow
           pdf-filename: Recover from system drive failure
           url: "/maintain/recovering-from-system-drive-failure.html"
-        - title: Review warnings for Storage Node system drive recovery
+        - title: Warnings for Storage Node system drive recovery
           url: "/maintain/reviewing-warnings-for-system-drive-recovery.html"
         - title: Replace the Storage Node
           url: "/maintain/replacing-storage-node.html"

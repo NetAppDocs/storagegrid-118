@@ -4,18 +4,12 @@ sidebar: sidebar
 keywords: recover, appliance storage node failure, workflow
 summary: 'The procedure for recovering a failed StorageGRID appliance Storage Node is the same whether you are recovering from the loss of the system drive or from the loss of storage volumes only.'
 ---
-= Recover appliance Storage Node: Workflow
+= Warnings for recovering appliance Storage Nodes
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
 The procedure for recovering a failed StorageGRID appliance Storage Node is the same whether you are recovering from the loss of the system drive or from the loss of storage volumes only.
-
-As shown in the workflow diagram, you must prepare the appliance and reinstall software, configure the node to rejoin the grid, reformat storage, and restore object data.
-
-image::../media/overview_sga_recovery.gif[Overview flowchart of StorageGRID appliance recovery]
-
-== Cautions and notes for recovering appliance Storage Nodes
 
 CAUTION: If more than one Storage Node has failed (or is offline), contact technical support. Don't perform the following recovery procedure. Data loss could occur.
 
@@ -27,11 +21,4 @@ CAUTION: If ILM rules are configured to store only one replicated copy and the c
 
 NOTE: If you encounter a Services: Status - Cassandra (SVST) alarm during recovery, see link:../maintain/recovering-failed-storage-volumes-and-rebuilding-cassandra-database.html[Recover failed storage volumes and rebuild Cassandra database]. After Cassandra is rebuilt, alarms should clear. If alarms don't clear, contact technical support.
 
-[NOTE]
-====
-For hardware maintenance procedures, such as instructions for replacing a controller or reinstalling SANtricity OS, see the maintenance instructions for your storage appliance.
-
-* https://review.docs.netapp.com/us-en/storagegrid-appliances_main/sg6100/index.html[SGF6112 storage appliances^]
-* https://review.docs.netapp.com/us-en/storagegrid-appliances_main/sg6000/index.html[SG6000 storage appliances^]
-* https://review.docs.netapp.com/us-en/storagegrid-appliances_main/sg5700/index.html[SG5700 storage appliances^]
-====
+NOTE: For hardware maintenance procedures, such as instructions for replacing a controller or reinstalling SANtricity OS, see the https://review.docs.netapp.com/us-en/storagegrid-appliances_main/[maintenance instructions for your storage appliance].
