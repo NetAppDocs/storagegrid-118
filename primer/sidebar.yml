@@ -8,6 +8,15 @@ entries:
     url: "/primer/hybrid-clouds-with-storagegrid.html"
   - title: Architecture and network topology
     url: "/primer/storagegrid-architecture-and-network-topology.html"
+  - title: Nodes and services
+    url: "/primer/nodes-and-services.html"
+    entries: 
+      - title: What is an Admin Node
+        url: "/primer/what-admin-node-is.html"
+      - title: What is a Storage Node
+        url: "/primer/what-storage-node-is.html"
+      - title: What is an Archive Node
+        url: "/primer/what-archive-node-is.html"        
   - title: How StorageGRID manages data  
     entries:
     - title: What is an object

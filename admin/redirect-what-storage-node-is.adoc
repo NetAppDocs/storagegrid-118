@@ -1,0 +1,4 @@
+---
+permalink: admin/what-storage-node-is.html
+redirect: primer/what-storage-node-is.html
+---

@@ -1,0 +1,251 @@
+---
+permalink: primer/nodes-and-services.html
+sidebar: sidebar
+keywords: services, nodes
+summary: 'The basic building block of a StorageGRID system is the grid node. Nodes contain services, which are software modules that provide a set of capabilities to a grid node.'
+---
+= StorageGRID nodes and services
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+The basic building block of a StorageGRID system is the grid node. Nodes contain services, which are software modules that provide a set of capabilities to a grid node.
+
+== Types of grid nodes
+
+The StorageGRID system uses four types of grid nodes:
+
+Admin Nodes and primary Admin Nodes:: Provide management services such as system configuration, monitoring, and logging. When you sign in to the Grid Manager, you are connecting to an Admin Node. Each grid must have one primary Admin Node and might have additional non-primary Admin Nodes for redundancy. You can connect to any Admin Node, and each Admin Node displays a similar view of the StorageGRID system. However, maintenance procedures must be performed using the primary Admin Node.
++
+Admin Nodes can also be used to load balance S3 and Swift client traffic.
++
+See link:what-admin-node-is.html[What is an Admin Node?]
+
+Storage Nodes:: Manage and store object data and metadata. Each StorageGRID system must have at least three Storage Nodes. If you have multiple sites, each site within your StorageGRID system must also have at least three Storage Nodes.
++
+See link:what-storage-node-is.html[What is a Storage Node?]
+
+Gateway Nodes (optional):: Provide a load-balancing interface that client applications can use to connect to StorageGRID. A load balancer seamlessly directs clients to an optimal Storage Node, so that the failure of nodes or even an entire site is transparent. You can use a combination of Gateway Nodes and Admin Nodes for load balancing, or you can implement a third-party HTTP load balancer.
+
+Archive Nodes (deprecated):: Provide an optional interface through which object data can be archived to tape.
+
+== StorageGRID appliance nodes
+
+StorageGRID hardware appliances are specially designed for use in a StorageGRID system. Some appliances can be used as Storage Nodes. Other appliances can be used as Admin Nodes or Gateway Nodes. You can combine appliance nodes with software-based nodes or deploy fully engineered, all-appliance grids that have no dependencies on external hypervisors, storage, or compute hardware.
+
+See the following for more information:
+
+* https://review.docs.netapp.com/us-en/storagegrid-appliances_main/[StorageGRID Appliance Documentation^].
+* https://hwu.netapp.com[NetApp Hardware Universe^] 
+
+== Software-based nodes
+
+Software-based grid nodes can be deployed as virtual machines or within container engines on a Linux host.
+
+[cols="1a,1a" options="header"]
+|===
+| Deployment method | Refer to
+| Virtual machine (VM) in VMware vSphere 
+| link:../vmware/index.html[Install VMware]
+
+| Within a container engine on Red Hat Enterprise Linux or CentOS
+| link:../rhel/index.html[Install Red Hat Enterprise Linux or CentOS]
+
+| Within a container engine on Ubuntu or Debian
+| link:../ubuntu/index.html[Install Ubuntu or Debian]
+
+|===
+
+
+Use the https://imt.netapp.com/matrix/#welcome[NetApp Interoperability Matrix Tool (IMT)^] to get a list of supported versions.
+
+=== Primary services for Admin Nodes
+
+include::../_include/services-admin-node.adoc[]
+
+=== Primary services for Storage Nodes
+
+The following table shows the primary services for Storage Nodes; however, this table does not list all node services.
+
+NOTE: Some services, such as the ADC service and the RSM service, typically exist only on three Storage Nodes at each site.
+
+[cols="1a,2a" options="header"]
+|===
+| Service| Key function
+
+| Account (acct)
+| Manages tenant accounts.
+
+| Administrative Domain Controller (ADC)
+| Maintains topology and grid-wide configuration.
+
+| Cassandra
+| Stores and protects object metadata.
+
+| Cassandra Reaper
+| Performs automatic repairs of object metadata.
+
+| Chunk
+| Manages erasure-coded data and parity fragments.
+
+| Data Mover (dmv)
+| Moves data to Cloud Storage Pools.
+
+| Distributed Data Store (DDS)
+| Monitors object metadata storage.
+
+| Identity (idnt)
+| Federates user identities from LDAP and Active Directory.
+
+| Local Distribution Router (LDR)
+| Processes object storage protocol requests and manages object data on disk.
+
+| Replicated State Machine (RSM)
+| Ensures that S3 platform services requests are sent to their respective endpoints.
+
+| Server Status Monitor (SSM)
+| Monitors the operating system and underlying hardware.
+|===
+
+=== Primary services for Gateway Nodes
+
+The following table shows the primary services for Gateway Nodes; however, this table does not list all node services.
+
+[cols="1a,2a" options="header"]
+|===
+| Service| Key function
+
+| High Availability
+| Manages high availability virtual IP addresses for groups of Admin Nodes and Gateway Nodes.
+
+*Note:* This service is also found on Admin Nodes.
+
+| Load Balancer
+| Provides Layer 7 load balancing of S3 and Swift traffic from clients to Storage Nodes. This is the recommended load balancing mechanism.
+
+*Note:* This service is also found on Admin Nodes.
+
+| Server Status Monitor (SSM)
+| Monitors the operating system and underlying hardware.
+|===
+
+=== Primary services for Archive Nodes
+
+The following table shows the primary services for Archive Nodes (now deprecated); however, this table does not list all node services.
+
+NOTE: Support for Archive Nodes is deprecated and will be removed in a future release.
+
+[cols="1a,2a" options="header"]
+|===
+| Service| Key function
+
+| Archive (ARC)
+| Communicates with a Tivoli Storage Manager (TSM) external tape storage system.
+
+| Server Status Monitor (SSM)
+| Monitors the operating system and underlying hardware.
+|===
+
+=== StorageGRID services
+
+The following is a complete list of StorageGRID services.
+
+* *Account Service Forwarder*
++
+Provides an interface for the Load Balancer service to query the Account Service on remote hosts and provides notifications of Load Balancer Endpoint configuration changes to the Load Balancer service. The Load Balancer service is present on Admin Nodes and Gateway Nodes.
+
+* *ADC service (Administrative Domain Controller)*
++
+Maintains topology information, provides authentication services, and responds to queries from the LDR and CMN services. The ADC service is present on each of the first three Storage Nodes installed at a site.
+
+* *AMS service (Audit Management System)*
++
+Monitors and logs all audited system events and transactions to a text log file. The AMS service is present on Admin Nodes.
+
+* *ARC service (Archive)*
++
+Provides the management interface with which you configure connections to external archival storage, such as the cloud through an S3 interface or tape through TSM middleware. The ARC service is present on Archive Nodes.
+
+* *Cassandra Reaper service*
++
+Performs automatic repairs of object metadata. The Cassandra Reaper service is present on all Storage Nodes.
+
+* *Chunk service*
++
+Manages erasure-coded data and parity fragments. The Chunk service is present on Storage Nodes.
+
+* *CMN service (Configuration Management Node)*
++
+Manages system-wide configurations and grid tasks. Each grid has one CMN service, which is present on the primary Admin Node.
+
+* *DDS service (Distributed Data Store)*
++
+Interfaces with the Cassandra database to manage object metadata. The DDS service is present on Storage Nodes.
+
+* *DMV service (Data Mover)*
++
+Moves data to cloud endpoints. The DMV service is present on Storage Nodes.
+
+* *Dynamic IP service*
++
+Monitors the grid for dynamic IP changes and updates local configurations. The Dynamic IP (dynip) service is present on all nodes.
+
+* *Grafana service*
++
+Used for metrics visualization in the Grid Manager. The Grafana service is present on Admin Nodes.
+
+* *High Availability service*
++
+Manages high availability Virtual IPs on nodes configured on the High Availability Groups page. The High Availability service is present on Admin Nodes and Gateway Nodes. This service is also known as the keepalived service.
+
+* *Identity (idnt) service*
++
+Federates user identities from LDAP and Active Directory. The Identity service (idnt) is present on three Storage Nodes at each site.
+
+* *Lambda Arbitrator service*
++
+Manages S3 Select SelectObjectContent requests.
+
+* *Load Balancer service*
++
+Provides load balancing of S3 and Swift traffic from clients to Storage Nodes. The Load Balancer service can be configured through the Load Balancer Endpoints configuration page. The Load Balancer service is present on Admin Nodes and Gateway Nodes. This service is also known as the nginx-gw service.
+
+* *LDR service (Local Distribution Router)*
++
+Manages the storage and transfer of content within the grid. The LDR service is present on Storage Nodes.
+
+* *MISCd Information Service Control Daemon service*
++
+Provides an interface for querying and managing services on other nodes and for managing environmental configurations on the node such as querying the state of services running on other nodes. The MISCd service is present on all nodes.
+
+* *nginx service*
++
+Acts as an authentication and secure communication mechanism for various grid services (such as Prometheus and Dynamic IP) to be able to talk to services on other nodes over HTTPS APIs. The nginx service is present on all nodes.
+
+* *nginx-gw service*
++
+Powers the Load Balancer service. The nginx-gw service is present on Admin Nodes and Gateway Nodes.
+
+* *NMS service (Network Management System)*
++
+Powers the monitoring, reporting, and configuration options that are displayed through the Grid Manager. The NMS service is present on Admin Nodes.
+
+* *Persistence service*
++
+Manages files on the root disk that need to persist across a reboot. The Persistence service is present on all nodes.
+
+* *Prometheus service*
++
+Collects time series metrics from services on all nodes. The Prometheus service is present on Admin Nodes.
+
+* *RSM service (Replicated State Machine Service)*
++
+Ensures platform service requests are sent to their respective endpoints. The RSM service is present on Storage Nodes that use the ADC service.
+
+* *SSM service (Server Status Monitor)*
++
+Monitors hardware conditions and reports to the NMS service. An instance of the SSM service is present on every grid node.
+
+* *Trace collector service*
++
+Performs trace collection to gather information for use by technical support. The trace collector service uses open source Jaeger software and is present on Admin Nodes.
