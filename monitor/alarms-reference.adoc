@@ -244,7 +244,7 @@ ARC
 a|
 To diagnose and correct this problem, contact technical support.
 
-Once the problem that triggered this alarm is addressed, reset the failures count. Select *SUPPORT* > *Tools* > *Grid topology*. Then select *_site_* > *_grid node_* > *ARC* > *Retrieve* > *Configuration* > *Main*, select *Reset Verification Failure Count* and click *Apply Changes*.
+After the problem that triggered this alarm is addressed, reset the failures count. Select *SUPPORT* > *Tools* > *Grid topology*. Then select *_site_* > *_grid node_* > *ARC* > *Retrieve* > *Configuration* > *Main*, select *Reset Verification Failure Count* and click *Apply Changes*.
 
 a|
 ARVF

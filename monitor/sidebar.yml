@@ -31,7 +31,7 @@ entries:
       url: "/monitor/viewing-platform-services-tab.html"
     - title: View the SANtricity System Manager tab
       url: "/monitor/viewing-santricity-system-manager-tab.html"
-  - title: Information you should monitor regularly
+  - title: Information to monitor regularly
     entries:
     - title: What and when to monitor
       url: "/monitor/information-you-should-monitor-regularly.html"
