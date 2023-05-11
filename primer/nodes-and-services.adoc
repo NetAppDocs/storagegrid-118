@@ -26,10 +26,17 @@ Storage Nodes:: Manage and store object data and metadata. Each StorageGRID syst
 See link:what-storage-node-is.html[What is a Storage Node?]
 
 Gateway Nodes (optional):: Provide a load-balancing interface that client applications can use to connect to StorageGRID. A load balancer seamlessly directs clients to an optimal Storage Node, so that the failure of nodes or even an entire site is transparent. You can use a combination of Gateway Nodes and Admin Nodes for load balancing, or you can implement a third-party HTTP load balancer.
++
+See link:what-gateway-node-is.html[What is a Gateway Node?]
 
 Archive Nodes (deprecated):: Provide an optional interface through which object data can be archived to tape.
++
+See link:what-archive-node-is.html[What is an Archive Node?]
 
-== StorageGRID appliance nodes
+== Appliance and software nodes
+StorageGRID nodes can be deployed on hardware appliances or as software-based nodes.
+
+=== StorageGRID appliance nodes
 
 StorageGRID hardware appliances are specially designed for use in a StorageGRID system. Some appliances can be used as Storage Nodes. Other appliances can be used as Admin Nodes or Gateway Nodes. You can combine appliance nodes with software-based nodes or deploy fully engineered, all-appliance grids that have no dependencies on external hypervisors, storage, or compute hardware.
 
@@ -38,7 +45,7 @@ See the following for more information:
 * https://review.docs.netapp.com/us-en/storagegrid-appliances_main/[StorageGRID Appliance Documentation^].
 * https://hwu.netapp.com[NetApp Hardware Universe^] 
 
-== Software-based nodes
+=== Software-based nodes
 
 Software-based grid nodes can be deployed as virtual machines or within container engines on a Linux host.
 
@@ -56,97 +63,10 @@ Software-based grid nodes can be deployed as virtual machines or within containe
 
 |===
 
-
 Use the https://imt.netapp.com/matrix/#welcome[NetApp Interoperability Matrix Tool (IMT)^] to get a list of supported versions.
 
-=== Primary services for Admin Nodes
 
-include::../_include/services-admin-node.adoc[]
-
-=== Primary services for Storage Nodes
-
-The following table shows the primary services for Storage Nodes; however, this table does not list all node services.
-
-NOTE: Some services, such as the ADC service and the RSM service, typically exist only on three Storage Nodes at each site.
-
-[cols="1a,2a" options="header"]
-|===
-| Service| Key function
-
-| Account (acct)
-| Manages tenant accounts.
-
-| Administrative Domain Controller (ADC)
-| Maintains topology and grid-wide configuration.
-
-| Cassandra
-| Stores and protects object metadata.
-
-| Cassandra Reaper
-| Performs automatic repairs of object metadata.
-
-| Chunk
-| Manages erasure-coded data and parity fragments.
-
-| Data Mover (dmv)
-| Moves data to Cloud Storage Pools.
-
-| Distributed Data Store (DDS)
-| Monitors object metadata storage.
-
-| Identity (idnt)
-| Federates user identities from LDAP and Active Directory.
-
-| Local Distribution Router (LDR)
-| Processes object storage protocol requests and manages object data on disk.
-
-| Replicated State Machine (RSM)
-| Ensures that S3 platform services requests are sent to their respective endpoints.
-
-| Server Status Monitor (SSM)
-| Monitors the operating system and underlying hardware.
-|===
-
-=== Primary services for Gateway Nodes
-
-The following table shows the primary services for Gateway Nodes; however, this table does not list all node services.
-
-[cols="1a,2a" options="header"]
-|===
-| Service| Key function
-
-| High Availability
-| Manages high availability virtual IP addresses for groups of Admin Nodes and Gateway Nodes.
-
-*Note:* This service is also found on Admin Nodes.
-
-| Load Balancer
-| Provides Layer 7 load balancing of S3 and Swift traffic from clients to Storage Nodes. This is the recommended load balancing mechanism.
-
-*Note:* This service is also found on Admin Nodes.
-
-| Server Status Monitor (SSM)
-| Monitors the operating system and underlying hardware.
-|===
-
-=== Primary services for Archive Nodes
-
-The following table shows the primary services for Archive Nodes (now deprecated); however, this table does not list all node services.
-
-NOTE: Support for Archive Nodes is deprecated and will be removed in a future release.
-
-[cols="1a,2a" options="header"]
-|===
-| Service| Key function
-
-| Archive (ARC)
-| Communicates with a Tivoli Storage Manager (TSM) external tape storage system.
-
-| Server Status Monitor (SSM)
-| Monitors the operating system and underlying hardware.
-|===
-
-=== StorageGRID services
+== StorageGRID services
 
 The following is a complete list of StorageGRID services.
 

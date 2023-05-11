@@ -13,6 +13,51 @@ Storage Nodes manage and store object data and metadata. Each StorageGRID system
 
 A Storage Node includes the services and processes required to store, move, verify, and retrieve object data and metadata on disk. You can view detailed information about the Storage Nodes on the *NODES* page.
 
+== Primary services for Storage Nodes
+
+The following table shows the primary services for Storage Nodes; however, this table does not list all node services.
+
+NOTE: Some services, such as the ADC service and the RSM service, typically exist only on three Storage Nodes at each site.
+
+[cols="1a,2a" options="header"]
+|===
+| Service| Key function
+
+| Account (acct)
+| Manages tenant accounts.
+
+| Administrative Domain Controller (ADC)
+| Maintains topology and grid-wide configuration.
+
+| Cassandra
+| Stores and protects object metadata.
+
+| Cassandra Reaper
+| Performs automatic repairs of object metadata.
+
+| Chunk
+| Manages erasure-coded data and parity fragments.
+
+| Data Mover (dmv)
+| Moves data to Cloud Storage Pools.
+
+| Distributed Data Store (DDS)
+| Monitors object metadata storage.
+
+| Identity (idnt)
+| Federates user identities from LDAP and Active Directory.
+
+| Local Distribution Router (LDR)
+| Processes object storage protocol requests and manages object data on disk.
+
+| Replicated State Machine (RSM)
+| Ensures that S3 platform services requests are sent to their respective endpoints.
+
+| Server Status Monitor (SSM)
+| Monitors the operating system and underlying hardware.
+|===
+
+
 == What is the ADC service?
 
 The Administrative Domain Controller (ADC) service authenticates grid nodes and their connections with each other. The ADC service is hosted on each of the first three Storage Nodes at a site.

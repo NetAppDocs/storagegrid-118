@@ -1,0 +1,34 @@
+---
+permalink: primer/what-gateway-node-is.html
+sidebar: sidebar
+keywords: gateway nodes, api gateway
+summary: 'Gateway Nodes can be used to load balance S3 and Swift client traffic.'
+---
+= What is an Gateway Node?
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Gateway Nodes can be used to load balance S3 and Swift client traffic.
+
+== Primary services for Gateway Nodes
+
+The following table shows the primary services for Gateway Nodes; however, this table does not list all node services.
+
+[cols="1a,2a" options="header"]
+|===
+| Service| Key function
+
+| High Availability
+| Manages high availability virtual IP addresses for groups of Admin Nodes and Gateway Nodes.
+
+*Note:* This service is also found on Admin Nodes.
+
+| Load Balancer
+| Provides Layer 7 load balancing of S3 and Swift traffic from clients to Storage Nodes. This is the recommended load balancing mechanism.
+
+*Note:* This service is also found on Admin Nodes.
+
+| Server Status Monitor (SSM)
+| Monitors the operating system and underlying hardware.
+|===
