@@ -345,8 +345,8 @@ sidebar:
           url: "/maintain/starting-software-installation-on-services-appliance-recovery.html"
         - title: Monitor services appliance installation
           url: "/maintain/monitoring-services-appliance-installation.html"
-    - title: How site recovery is performed by technical support
-      url: "/maintain/how-site-recovery-is-performed-by-technical-support.html"
+      - title: How technical support recovers a site
+        url: "/maintain/how-site-recovery-is-performed-by-technical-support.html"
     - title: Enable StorageGRID
       url: /storagegrid-enable.html
     - title: Other versions
