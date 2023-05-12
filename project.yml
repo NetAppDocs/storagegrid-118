@@ -96,12 +96,12 @@ sidebar:
             url: "/maintain/step-5-resolve-node-conflicts.html"
           - title: Monitor decommission
             url: "/maintain/step-6-monitor-decommission.html"
-        - title: Rename grid, node, or site
-          entries:
-          - title: Overview
-            url: "/maintain/rename-grid-site-node-overview.html"
-          - title: Add or update display names
-            url: "/maintain/rename-grid-site-node.html"
+      - title: Rename grid, node, or site
+        entries:
+        - title: Overview
+          url: "/maintain/rename-grid-site-node-overview.html"
+        - title: Add or update display names
+          url: "/maintain/rename-grid-site-node.html"
       - title: Maintain network
         entries:
         - title: Update subnets for Grid Network
