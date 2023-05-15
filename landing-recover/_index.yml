@@ -2,22 +2,12 @@ indexpage:
    tiles:
     - title: Recover nodes
       links:
-        - title: (need to update all links)
-          url: ../maintain/storagegrid-hotfix-procedure.html
-        - title: Rename grid, site, or nodes
-          url: ../maintain/rename-grid-site-node-overview.html
-        - title: Download recovery package
-          url: ../maintain/downloading-recovery-package.html
-    - title: Expand your grid
-      links:
-        - title: Overview
-          url: ../expand/index.html
-        - title: Add storage volumes
-          url: ../expand/adding-storage-volumes-to-storage-nodes.html
-        - title: Add nodes or site
-          url:  ../expand/adding-grid-nodes-to-existing-site-or-adding-new-site.html
-        - title: Rebalance erasure-coded data
-          url:  ../expand/considerations-for-rebalancing-erasure-coded-data.html
+        - title: Get started
+          url: ../maintain/grid-node-recovery-procedures.html
+        - title: Warnings and considerations
+          url: ../maintain/warnings-and-considerations-for-grid-node-recovery.html
+        - title: Gather required materials
+          url: ../maintain/gathering-required-materials-for-grid-node-recovery.html
     - title: Recover failed nodes
       links:
         - title: Overview
@@ -28,19 +18,27 @@ indexpage:
           url: ../maintain/recovering-from-admin-node-failures.html
         - title: Gateway Nodes
           url: ../maintain/recovering-from-gateway-node-failures.html
-    - title: Decommission nodes or sites
+        - title: Archive Nodes
+          url: ../maintain/recovering-from-archive-node-failures.html
+    - title: Procedures for all grid node types
+      links:
+        - title: Replace VMware node
+          url: ../maintain/all-node-types-replacing-vmware-node.html
+        - title: Replace Linux node
+          url: ../maintain/all-node-types-replacing-linux-node.html
+    - title: Replace node with services appliance
       links:
         - title: Overview
-          url: ../maintain/decommission-procedure.html
-        - title: Remove a grid node
-          url: ../maintain/grid-node-decommissioning.html
-        - title: Remove a site
-          url: ../maintain/site-decommissioning.html
-    - title: Other procedures
+          url: ../maintain/replacing-failed-node-with-services-appliance.html
+        - title: Install services appliance (platform change only)
+          url: ../maintain/installing-services-appliance-platform-change-only.html
+        - title: Prepare appliance for reinstallation (platform replacement only)
+          url: ../maintain/preparing-appliance-for-reinstallation-platform-replacement-only.html
+        - title: Start software installation
+          url: ../maintain/starting-software-installation-on-services-appliance-recovery.html
+        - title: Monitor software installation
+          url: ../maintain/monitoring-services-appliance-installation.html
+    - title: Recover a site
       links:
-        - title: Update subnets
-          url: ../maintain/updating-subnets-for-grid-network.html
-        - title: Configure IP addresses
-          url: ../maintain/configuring-ip-addresses.html
-        - title: Grid node procedures
-          url: ../maintain/grid-node-procedures.html
+        - title: How technical support recovers a site
+          url: /maintain/how-site-recovery-is-performed-by-technical-support.html

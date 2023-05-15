@@ -1,33 +1,11 @@
 indexpage:
    tiles:
-    - title: Frequently performed procedures
+    - title: Get started
       links:
-        - title: Apply hotfix
-          url: ../maintain/storagegrid-hotfix-procedure.html
-        - title: Rename grid, site, or nodes
-          url: ../maintain/rename-grid-site-node-overview.html
+        - title: Maintenance overview
+          url: ../maintain/index.html
         - title: Download recovery package
           url: ../maintain/downloading-recovery-package.html
-    - title: Expand your grid
-      links:
-        - title: Overview
-          url: ../expand/index.html
-        - title: Add storage volumes
-          url: ../expand/adding-storage-volumes-to-storage-nodes.html
-        - title: Add nodes or site
-          url:  ../expand/adding-grid-nodes-to-existing-site-or-adding-new-site.html
-        - title: Rebalance erasure-coded data
-          url:  ../expand/considerations-for-rebalancing-erasure-coded-data.html
-    - title: Recover failed nodes
-      links:
-        - title: Overview
-          url: ../maintain/grid-node-recovery-procedures.html
-        - title: Storage Nodes
-          url: ../maintain/recovering-from-storage-node-failures.html
-        - title: Admin Nodes
-          url: ../maintain/recovering-from-admin-node-failures.html
-        - title: Gateway Nodes
-          url: ../maintain/recovering-from-gateway-node-failures.html
     - title: Decommission nodes or sites
       links:
         - title: Overview
@@ -36,21 +14,17 @@ indexpage:
           url: ../maintain/grid-node-decommissioning.html
         - title: Remove a site
           url: ../maintain/site-decommissioning.html
-    - title: Other procedures
+    - title: Additional maintenance tasks
       links:
-        - title: Update subnets
-          url: ../maintain/updating-subnets-for-grid-network.html
-        - title: Configure IP addresses
-          url: ../maintain/configuring-ip-addresses.html
-        - title: Grid node procedures
-          url: ../maintain/grid-node-procedures.html
-    - title: Maintain appliances
+      - title: Rename grid, sites, and nodes
+        url: ../maintain/rename-grid-site-node-overview.html
+      - title: Maintain the network
+        url: ../maintain/updating-subnets-for-grid-network.html
+      - title: Host and middleware procedures
+        url: ../maintain/linux-migrating-grid-node-to-new-host.html
+      - title: Grid node procedures
+        url: ../maintain/grid-node-procedures.html
+    - title: Maintain StorageGRID appliances
       links:
-      - title: SGF6112
-        url: https://review.docs.netapp.com/us-en/storagegrid-appliances_main/sg6100/index.html
-      - title: SG6000
-        url: https://review.docs.netapp.com/us-en/storagegrid-appliances_main//sg6000/index.html
-      - title: SG5700
-        url: https://review.docs.netapp.com/us-en/storagegrid-appliances_main//sg5700/index.html   
-      - title: SG100 and SG1000
-        url: https://review.docs.netapp.com/us-en/storagegrid-appliances_main//sg100-1000/index.html
+      - title: StorageGRID appliances documentation
+        url: https://review.docs.netapp.com/us-en/storagegrid-appliances_main/
