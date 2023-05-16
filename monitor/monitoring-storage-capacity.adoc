@@ -142,7 +142,7 @@ When you add the new nodes, the system automatically rebalances object metadata 
 
 == Monitor space usage forecasts
 
-Monitor space usage forecasts for user data and metadata to estimate when you will need to link:../expand/index.html[expand your grid].
+Monitor space usage forecasts for user data and metadata to estimate when you will need to link:../expand/index.html[expand the grid].
 
 If you notice that the rate of consumption changes over time, select a shorter range from the *Averaged over* pull-down to reflect only the most recent ingest patterns. If you notice seasonal patterns, select a longer range.
 

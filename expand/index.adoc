@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: expand grid
 summary: 'You can expand the capacity or capabilities of your StorageGRID system without interrupting system operations.'
 ---
-= Expand your grid: Overview
+= Expand the grid: Overview
 :icons: font
 :imagesdir: ../media/
 

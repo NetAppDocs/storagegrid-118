@@ -46,4 +46,4 @@ Verify that the proposed topology that will result from the decommissioning proc
 
 link:../ilm/index.html[Manage objects with ILM]
 
-link:../expand/index.html[Expand your grid]
+link:../expand/index.html[Expand the grid]

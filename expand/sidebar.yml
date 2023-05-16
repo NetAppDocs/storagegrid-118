@@ -1,5 +1,5 @@
 section: expand
-title: Expand your grid
+title: Expand the grid
 entries:
   - title: Overview
     pdf-filename: Expand your StorageGRID system
@@ -8,7 +8,7 @@ entries:
     entries:
     - title: Add storage capacity
       entries:
-      - title: Guidelines for adding object capacity
+      - title: 'Guidelines: Add object capacity'
         url: "/expand/guidelines-for-adding-object-capacity.html"
       - title: Add storage capacity for replicated objects
         url: "/expand/adding-storage-capacity-for-replicated-objects.html"

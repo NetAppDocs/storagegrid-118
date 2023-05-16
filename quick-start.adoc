@@ -125,7 +125,7 @@ You can add nodes or sites to expand the capacity or functionality of your syste
 Learn how:
 
 [role="quick-margin-list"]
-* link:../expand/index.html[Expand your grid]
+* link:../expand/index.html[Expand the grid]
 * link:../maintain/index.html[Recover nodes and maintain your grid]
 
 

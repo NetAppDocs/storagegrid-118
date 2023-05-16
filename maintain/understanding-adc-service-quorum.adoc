@@ -22,4 +22,4 @@ If you need to decommission a Storage Node but are unable to because of the ADC 
 
 .Related information
 
-link:../expand/index.html[Expand your grid]
+link:../expand/index.html[Expand the grid]

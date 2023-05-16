@@ -193,7 +193,8 @@ sidebar:
           url: "/maintain/using-donotstart-file.html"
         - title: Troubleshoot Server Manager
           url: "/maintain/accessing-server-manager-log-file.html"
-    - title: Recover nodes 
+    - title: Recover nodes
+      url: "/landing-recover/index.html"
       entries:
       - title: Overview
         url: "/maintain/grid-node-recovery-procedures.html"

@@ -26,13 +26,13 @@ indexpage:
           url: ../monitor/configure-audit-messages.html
         - title: Use external syslog server
           url: ../monitor/considerations-for-external-syslog-server.html
-        - title: Review audit log
+        - title: Review audit logs
           url: ../audit/index.html
         - title: Log files reference
           url: ../monitor/logs-files-reference.html       
     - title: Diagnose and troubleshoot
       links:
-        - title: Review Support metrics
+        - title: Review support metrics
           url: ../monitor/reviewing-support-metrics.html
         - title: Run diagnostics
           url: ../monitor/running-diagnostics.html        
