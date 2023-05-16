@@ -50,5 +50,5 @@ indexpage:
           url: ../expand/rebalancing-erasure-coded-data-after-adding-storage-nodes.html
     - title: Troubleshoot expansion
       links:
-        - title: Collect log files and contact NetApp Technical Support
+        - title: Collect log files and contact technical support
           url: ../expand/contacting-technical-support.html
