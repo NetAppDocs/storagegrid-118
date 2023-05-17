@@ -1,10 +1,10 @@
 ---
 permalink: primer/nodes-and-services.html
 sidebar: sidebar
-keywords: services, nodes
+keywords: services, grid nodes, primary admin, storage, gateway, archive
 summary: 'The basic building block of a StorageGRID system is the grid node. Nodes contain services, which are software modules that provide a set of capabilities to a grid node.'
 ---
-= StorageGRID nodes and services
+= Grid nodes and services: Overview
 :icons: font
 :imagesdir: ../media/
 
@@ -25,7 +25,7 @@ Storage Nodes:: Manage and store object data and metadata. Each StorageGRID syst
 +
 See link:what-storage-node-is.html[What is a Storage Node?]
 
-Gateway Nodes (optional):: Provide a load-balancing interface that client applications can use to connect to StorageGRID. A load balancer seamlessly directs clients to an optimal Storage Node, so that the failure of nodes or even an entire site is transparent. You can use a combination of Gateway Nodes and Admin Nodes for load balancing, or you can implement a third-party HTTP load balancer.
+Gateway Nodes (optional):: Provide a load-balancing interface that client applications can use to connect to StorageGRID. A load balancer seamlessly directs clients to an optimal Storage Node, so that the failure of nodes or even an entire site is transparent.
 +
 See link:what-gateway-node-is.html[What is a Gateway Node?]
 
@@ -33,21 +33,21 @@ Archive Nodes (deprecated):: Provide an optional interface through which object 
 +
 See link:what-archive-node-is.html[What is an Archive Node?]
 
-== Appliance and software nodes
-StorageGRID nodes can be deployed on hardware appliances or as software-based nodes.
+== Hardware and software nodes
+StorageGRID nodes can be deployed as StorageGRID appliance nodes or as software-based nodes.
 
 === StorageGRID appliance nodes
 
 StorageGRID hardware appliances are specially designed for use in a StorageGRID system. Some appliances can be used as Storage Nodes. Other appliances can be used as Admin Nodes or Gateway Nodes. You can combine appliance nodes with software-based nodes or deploy fully engineered, all-appliance grids that have no dependencies on external hypervisors, storage, or compute hardware.
 
-See the following for more information:
+See the following to learn about the available appliances: 
 
 * https://review.docs.netapp.com/us-en/storagegrid-appliances_main/[StorageGRID Appliance Documentation^].
 * https://hwu.netapp.com[NetApp Hardware Universe^] 
 
 === Software-based nodes
 
-Software-based grid nodes can be deployed as virtual machines or within container engines on a Linux host.
+Software-based grid nodes can be deployed as VMware virtual machines or within container engines on a Linux host.
 
 [cols="1a,1a" options="header"]
 |===
@@ -63,7 +63,7 @@ Software-based grid nodes can be deployed as virtual machines or within containe
 
 |===
 
-Use the https://imt.netapp.com/matrix/#welcome[NetApp Interoperability Matrix Tool (IMT)^] to get a list of supported versions.
+Use the https://imt.netapp.com/matrix/#welcome[NetApp Interoperability Matrix Tool (IMT)^] for a list of supported versions.
 
 
 == StorageGRID services

@@ -2,14 +2,14 @@
 permalink: primer/what-gateway-node-is.html
 sidebar: sidebar
 keywords: gateway nodes, api gateway
-summary: 'Gateway Nodes can be used to load balance S3 and Swift client traffic.'
+summary: 'Gateway Nodes provide a load-balancing interface that S3 and Swift client applications can use to connect to StorageGRID. A load balancer seamlessly directs clients to an optimal Storage Node, so that the failure of nodes or even an entire site is transparent.'
 ---
 = What is an Gateway Node?
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Gateway Nodes can be used to load balance S3 and Swift client traffic.
+Gateway Nodes provide a load-balancing interface that S3 and Swift client applications can use to connect to StorageGRID. A load balancer seamlessly directs clients to an optimal Storage Node, so that the failure of nodes or even an entire site is transparent.
 
 == Primary services for Gateway Nodes
 
