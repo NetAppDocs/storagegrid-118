@@ -11,7 +11,7 @@ summary: 'The GET Bucket metadata notification configuration request allows you 
 [.lead]
 The GET Bucket metadata notification configuration request allows you to retrieve the configuration XML used to configure search integration for individual buckets.
 
-You have the s3:GetBucketMetadataNotification permission, or be account root, to complete this operation.
+You must have the s3:GetBucketMetadataNotification permission, or be account root, to complete this operation.
 
 == Request example
 

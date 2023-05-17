@@ -37,10 +37,10 @@ The ILM engine, which is a component of the LDR service, controls erasure coding
 
 image::../media/erasure_coding_data_flow.png[Erasure Coding Data Flow]
 
-. The ILM engine queries the ADC service to determine which DDS service can best perform the erasure coding operation. Once determined, the ILM engine sends an "initiate" request to that service.
+. The ILM engine queries the ADC service to determine which DDS service can best perform the erasure coding operation. When determined, the ILM engine sends an "initiate" request to that service.
 . The DDS service instructs an LDR to erasure code the object data.
 . The source LDR service sends a copy to the LDR service selected for erasure coding.
-. Once broken into the appropriate number of parity and data fragments, the LDR service distributes these fragments across the Storage Nodes (Chunk services) that make up the erasure coding profile's storage pool.
+. After creating the appropriate number of parity and data fragments, the LDR service distributes these fragments across the Storage Nodes (Chunk services) that make up the erasure coding profile's storage pool.
 . The LDR service notifies the ILM engine, confirming that object data is successfully distributed.
 . The ILM engine updates the metadata store with object location metadata.
 

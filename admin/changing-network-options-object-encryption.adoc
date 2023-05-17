@@ -23,7 +23,7 @@ For more details on StorageGRID encryption methods, see link:../admin/reviewing-
 Prevent client modification is a system wide setting. When the *Prevent client modification* option is selected, the following requests are denied.
 
 === S3 REST API
-* Delete Bucket requests
+* DeleteBucket requests
 * Any requests to modify an existing object's data, user-defined metadata, or S3 object tagging
 
 === Swift REST API

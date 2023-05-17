@@ -40,7 +40,7 @@ Unless you require consistency guarantees similar to Amazon S3, you can prevent 
 
 == Specify consistency control for API operation
 
-To set the consistency control for an individual API operation, consistency controls must be supported for the operation, and you must specify the consistency control in the request header. This example sets the consistency control to "`strong-site`" for a GET Object operation.
+To set the consistency control for an individual API operation, consistency controls must be supported for the operation, and you must specify the consistency control in the request header. This example sets the consistency control to "`strong-site`" for a GetObject operation.
 
 [subs="specialcharacters,quotes"]
 ----
@@ -51,11 +51,11 @@ Host: _host_
 Consistency-Control: strong-site
 ----
 
-NOTE: You must use the same consistency control for both the PUT Object and GET Object operations.
+NOTE: You must use the same consistency control for both the PutObject and GetObject operations.
 
 == Specify consistency control for bucket
 
-To set the consistency control for bucket, you can use the StorageGRID PUT Bucket consistency request and the GET Bucket consistency request. Or you can use the Tenant Manager or the Tenant Management API.
+To set the consistency control for bucket, you can use the StorageGRID link:put-bucket-consistency-request.html[PUT Bucket consistency] request. Or you can link:../tenant/changing-consistency-level.html[change a bucket's consistency level] from the Tenant Manager.
 
 When setting the consistency controls for a bucket, be aware of the following:
 
@@ -69,19 +69,20 @@ Both your choice of consistency control and your ILM rule affect how objects are
 
 For example, the consistency control used when an object is stored affects the initial placement of object metadata, while the ingest behavior selected for the ILM rule affects the initial placement of object copies. Because StorageGRID requires access to both an object's metadata and its data to fulfill client requests, selecting matching levels of protection for the consistency level and ingest behavior can provide better initial data protection and more predictable system responses.
 
-The following ingest behaviors are available for ILM rules:
+The following link:../ilm/data-protection-options-for-ingest.html[ingest options] are available for ILM rules:
 
-* *Dual commit*: StorageGRID immediately makes interim copies of the object and returns success to the client. Copies specified in the ILM rule are made when possible.
-* *Strict*: All copies specified in the ILM rule must be made before success is returned to the client.
-* *Balanced*: StorageGRID attempts to make all copies specified in the ILM rule at ingest; if this is not possible, interim copies are made and success is returned to the client. The copies specified in the ILM rule are made when possible.
+Dual commit:: StorageGRID immediately makes interim copies of the object and returns success to the client. Copies specified in the ILM rule are made when possible.
 
-NOTE: Before selecting the ingest behavior for an ILM rule, read the full description of these settings in the instructions for managing objects with information lifecycle management.
+Strict:: All copies specified in the ILM rule must be made before success is returned to the client.
 
-== Example of how the consistency control and ILM rule can interact
+Balanced:: StorageGRID attempts to make all copies specified in the ILM rule at ingest; if this is not possible, interim copies are made and success is returned to the client. The copies specified in the ILM rule are made when possible.
+
+
+=== Example of how the consistency control and ILM rule can interact
 
 Suppose you have a two-site grid with the following ILM rule and the following consistency level setting:
 
-* *ILM rule*: Create two object copies, one at the local site and one at a remote site. The Strict ingest behavior is selected.
+* *ILM rule*: Create two object copies, one at the local site and one at a remote site. Use the Strict ingest behavior.
 * *Consistency level*: "`strong-global`" (Object metadata is immediately distributed to all sites.)
 
 When a client stores an object to the grid, StorageGRID makes both object copies and distributes metadata to both sites before returning success to the client.
@@ -92,10 +93,4 @@ If you instead used the same ILM rule and the "`strong-site`" consistency level,
 
 The inter-relationship between consistency levels and ILM rules can be complex. Contact NetApp if you require assistance.
 
-.Related information
 
-link:../ilm/index.html[Manage objects with ILM]
-
-link:get-bucket-consistency-request.html[GET Bucket consistency]
-
-link:put-bucket-consistency-request.html[PUT Bucket consistency]

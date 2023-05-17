@@ -13,6 +13,7 @@ The steps for deploying new grid nodes in an expansion are the same as the steps
 
 When you expand the grid, the nodes you add don't have to match the existing node types. You can add VMware nodes, Linux container-based nodes, or appliance nodes.
 
+[[vmware-deploy-grid-nodes]]
 == VMware: Deploy grid nodes
 
 You must deploy a virtual machine in VMware vSphere for each VMware node you want to add in the expansion.
@@ -25,8 +26,7 @@ When you deploy the node, you can optionally remap node ports or increase CPU or
 
 . After you have deployed all new VMware nodes, link:performing-expansion.html[perform the expansion procedure].
 
-
-
+[[linux-deploy-grid-nodes]]
 == Linux: Deploy grid nodes
 
 You can deploy grid nodes on new Linux hosts or on existing Linux hosts. If you need additional Linux hosts to support the CPU, RAM, and storage requirements of the StorageGRID nodes you want to add to your grid, you prepare them in the same way you prepared the hosts when you first installed them. Then, you deploy the expansion nodes in the same way you deployed grid nodes during installation.
@@ -60,7 +60,7 @@ CAUTION: In a production deployment, don't run more than one Storage Node on a s
 After deploying all new grid nodes, you can link:performing-expansion.html[perform the expansion].
 
 
-
+[[appliances-deploying-storage-gateway-or-non-primary-admin-nodes]]
 == Appliances: Deploying Storage, Gateway, or non-primary Admin Nodes
 
 To install the StorageGRID software on an appliance node, you use the StorageGRID Appliance Installer, which is included on the appliance. In an expansion, each storage appliance functions as a single Storage Node, and each services appliance functions as a single Gateway Node or non-primary Admin Node. Any appliance can connect to the Grid Network, the Admin Network, and the Client Network.
