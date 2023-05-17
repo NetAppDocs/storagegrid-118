@@ -27,8 +27,8 @@ Follow the steps for the type of expansion you're performing:
 
 | 1
 | link:adding-storage-volumes-to-storage-nodes.html[Add storage volumes to Storage Nodes] (No additional steps required)
-| link:adding-grid-nodes-to-existing-site-or-adding-new-site.html[Add grid nodes to existing site or add new site]
-| link:adding-grid-nodes-to-existing-site-or-adding-new-site.html[Add grid nodes to existing site or add new site]
+| link:adding-grid-nodes-to-existing-site-or-adding-new-site.html[Add grid nodes to existing site]
+| link:adding-grid-nodes-to-existing-site-or-adding-new-site.html[Add new site]
 
 | 2
 |
