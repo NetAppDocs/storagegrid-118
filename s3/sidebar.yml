@@ -95,7 +95,7 @@ entries:
         - title: Overview
           pdf-filename: Deprecated bucket requests for legacy Compliance
           url: "/s3/deprecated-bucket-requests-for-legacy-compliance.html"        
-        - title: Deprecated - PUT Bucket request modifications for compliance
+        - title: Deprecated - CreateBucket request modifications for compliance
           url: "/s3/deprecated-put-bucket-request-modifications-for-compliance.html"
         - title: Deprecated - GET Bucket compliance request
           url: "/s3/deprecated-get-bucket-compliance-request.html"
@@ -109,7 +109,5 @@ entries:
       url: "/s3/example-bucket-policies.html"
     - title: Example group policies
       url: "/s3/example-group-policies.html"      
-  - title: Benefits of active, idle, and concurrent HTTP connections
-    url: "/s3/benefits-of-active-idle-and-concurrent-http-connections.html"
   - title: S3 operations tracked in audit logs
     url: "/s3/s3-operations-tracked-in-audit-logs.html"
