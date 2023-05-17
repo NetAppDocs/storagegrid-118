@@ -91,8 +91,8 @@ To understand what happens when an S3 client deletes objects from a bucket that 
 
 * If an S3 client issues a delete request that does not include a version ID, StorageGRID does not delete any object versions. Instead, it adds a delete marker to the bucket. The delete marker causes StorageGRID to act as if the object was deleted:
 
-** A Get request without a version ID will fail with `404 No Object Found`
-** A Get request with a valid version ID will succeed and return the requested object version.
+** A GetObject request without a version ID will fail with `404 No Object Found`
+** A GetObject request with a valid version ID will succeed and return the requested object version.
 
 When an S3 client deletes an object from a bucket that has cross-grid replication enabled, StorageGRID determines whether to replicate the delete request to the destination, as follows:
 

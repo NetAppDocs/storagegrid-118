@@ -237,8 +237,6 @@ entries:
       url: "/admin/guidelines-for-storagegrid-networks.html"
     - title: View IP addresses
       url: "/admin/viewing-ip-addresses.html"
-    - title: Supported ciphers for outgoing TLS connections
-      url: "/admin/supported-ciphers-for-outgoing-tls-connections.html"
     - title: Configure VLAN interfaces
       url: "/admin/configure-vlan-interfaces.html"  
     - title: Manage traffic classification policies
@@ -253,7 +251,11 @@ entries:
       - title: Delete a traffic classification policy
         url: "/admin/deleting-traffic-classification-policy.html"
       - title: View network traffic metrics
-        url: "/admin/viewing-network-traffic-metrics.html"
+        url: "/admin/viewing-network-traffic-metrics.html"    
+    - title: Supported ciphers for outgoing TLS connections
+      url: "/admin/supported-ciphers-for-outgoing-tls-connections.html"
+    - title: Benefits of active, idle, and concurrent HTTP connections
+      url: "/admin/benefits-of-active-idle-and-concurrent-http-connections.html" 
     - title: Manage link costs
       url: "/admin/manage-link-costs.html"
   - title: Use AutoSupport

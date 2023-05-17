@@ -2,14 +2,14 @@
 permalink: s3/deprecated-put-bucket-request-modifications-for-compliance.html
 sidebar: sidebar
 keywords: S3 REST API, S3 operations, deprecated bucket requests for compliance
-summary: 'The SGCompliance XML element is deprecated. Previously, you could include this StorageGRID custom element in the optional XML request body of PUT Bucket requests to create a Compliant bucket.'
+summary: 'The SGCompliance XML element is deprecated. Previously, you could include this StorageGRID custom element in the optional XML request body of CreateBucket requests to create a Compliant bucket.'
 ---
-= Deprecated: PUT Bucket request modifications for compliance
+= Deprecated: CreateBucket request modifications for compliance
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-The SGCompliance XML element is deprecated. Previously, you could include this StorageGRID custom element in the optional XML request body of PUT Bucket requests to create a Compliant bucket.
+The SGCompliance XML element is deprecated. Previously, you could include this StorageGRID custom element in the optional XML request body of CreateBucket requests to create a Compliant bucket.
 
 [IMPORTANT]
 ====
@@ -21,7 +21,7 @@ The StorageGRID Compliance feature that was available in previous StorageGRID ve
 
 ====
 
-You can no longer create new buckets with Compliance enabled. The following error message is returned if you attempt to use the PUT Bucket request modifications for compliance to create a new Compliant bucket:
+You can no longer create new buckets with Compliance enabled. The following error message is returned if you attempt to use the CreateBucket request modifications for compliance to create a new Compliant bucket:
 
 ----
 The Compliance feature is deprecated.
