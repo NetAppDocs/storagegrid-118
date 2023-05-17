@@ -39,6 +39,6 @@ Unlike manual tiering solutions, FabricPool reduces total cost of ownership by a
 
 * link:../ilm/what-cloud-storage-pool-is.html[What is Cloud Storage Pool?]
 
-* link:../tenant/what-platform-services-are.html[What are platform services?]
+* link:../tenant/what-platform-services-are.html[Manage platform services]
 
 * link:../fabricpool/index.html[Configure StorageGRID for FabricPool]

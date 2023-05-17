@@ -11,7 +11,7 @@ summary: 'The DELETE Bucket metadata notification configuration request allows y
 [.lead]
 The DELETE Bucket metadata notification configuration request allows you to disable the search integration service for individual buckets by deleting the configuration XML.
 
-You have the s3:DeleteBucketMetadataNotification permission for a bucket, or be account root, to complete this operation.
+You must have the s3:DeleteBucketMetadataNotification permission for a bucket, or be account root, to complete this operation.
 
 == Request example
 

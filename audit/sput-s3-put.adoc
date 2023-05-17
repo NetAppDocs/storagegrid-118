@@ -21,7 +21,7 @@ When an S3 client issues a PUT transaction, a request is made to create a new ob
 
 | CMPS
 | Compliance Settings
-| The compliance settings used when creating the bucket, if present in the PUT Bucket request (truncated to the first 1024 characters).
+| The compliance settings used when creating the bucket, if present in the request (truncated to the first 1024 characters).
 
 | CNCH
 | Consistency Control Header
@@ -54,19 +54,19 @@ When an S3 client issues a PUT transaction, a request is made to create a new ob
 
 | LKEN
 | Object Lock Enabled
-| Value of the request header `x-amz-bucket-object-lock-enabled`, if present in the PUT Bucket request.
+| Value of the request header `x-amz-bucket-object-lock-enabled`, if present in the request.
 
 | LKLH
 | Object Lock Legal Hold
-| Value of the request header `x-amz-object-lock-legal-hold`, if present in the PUT Object request.
+| Value of the request header `x-amz-object-lock-legal-hold`, if present in the PutObject request.
 
 | LKMD
 | Object Lock Retention Mode
-| Value of the request header `x-amz-object-lock-mode`, if present in the PUT Object request.
+| Value of the request header `x-amz-object-lock-mode`, if present in the PutObject request.
 
 | LKRU
 | Object Lock Retain Until Date
-| Value of the request header `x-amz-object-lock-retain-until-date`, if present in the PUT Object request.
+| Value of the request header `x-amz-object-lock-retain-until-date`, if present in the PutObject request.
 
 | MTME
 | Last Modified Time
@@ -134,7 +134,7 @@ Empty for anonymous requests.
 
 | ULID
 | Upload ID
-| Included only in SPUT messages for Complete Multipart Upload operations. Indicates that all parts have been uploaded and assembled.
+| Included only in SPUT messages for CompleteMultipartUpload operations. Indicates that all parts have been uploaded and assembled.
 
 | UUID
 | Universally Unique Identifier

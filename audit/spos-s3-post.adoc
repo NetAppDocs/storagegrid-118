@@ -54,7 +54,7 @@ RSLT
 a|
 Result Code
 a|
-Result of the POST Object restore request. Result is always:
+Result of the RestoreObject request. Result is always:
 
 SUCS: Successful
 

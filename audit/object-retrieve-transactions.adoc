@@ -47,7 +47,7 @@ Note that not all audit messages generated during a transaction are listed in th
 
 === SGET: S3 GET
 
-Object retrieval begins when the client sends a GET Object request to an LDR service. The message contains the bucket from which to retrieve the object and the object's S3 Key, which is used to identify the object.
+Object retrieval begins when the client sends a GetObject request to an LDR service. The message contains the bucket from which to retrieve the object and the object's S3 Key, which is used to identify the object.
 
 [subs="specialcharacters,quotes"]
 ----
@@ -56,7 +56,7 @@ Object retrieval begins when the client sends a GET Object request to an LDR ser
 
 If the bucket policy allows, a client can anonymously retrieve objects, or can retrieve objects from a bucket that is owned by a different tenant account. The audit message contains information about the bucket owner's tenant account so that you can track these anonymous and cross-account requests.
 
-In the following example message, the client sends a GET Object request for an object stored in a bucket that they don't own. The values for SBAI and SBAC record the bucket owner's tenant account ID and name, which differs from the tenant account ID and name of the client recorded in S3AI and SACC.
+In the following example message, the client sends a GetObject request for an object stored in a bucket that they don't own. The values for SBAI and SBAC record the bucket owner's tenant account ID and name, which differs from the tenant account ID and name of the client recorded in S3AI and SACC.
 
 [subs="specialcharacters,quotes"]
 ----

@@ -53,8 +53,8 @@ When an S3 client adds an object to a bucket that has cross-grid replication ena
 
 . StorageGRID automatically replicates the object from the source bucket to the destination bucket. The time to perform this background replication operation depends on several factors, including the number of other replication operations that are pending.
 +
-The S3 client can verify an object's replication status by issuing a GET Object or HEAD Object request. The response includes a StorageGRID-specific `x-ntap-sg-cgr-replication-status` response header, which will have one of the following values:
-The S3 client can verify an object's replication status by issuing a GET Object or HEAD Object request. The response includes a StorageGRID-specific `x-ntap-sg-cgr-replication-status` response header, which will have one of the following values:
+The S3 client can verify an object's replication status by issuing a GetObject or HeadObject request. The response includes a StorageGRID-specific `x-ntap-sg-cgr-replication-status` response header, which will have one of the following values:
+The S3 client can verify an object's replication status by issuing a GetObject or HeadObject request. The response includes a StorageGRID-specific `x-ntap-sg-cgr-replication-status` response header, which will have one of the following values:
 +
 [cols="1a,2a" options="header"]
 |===
@@ -91,8 +91,8 @@ To understand what happens when an S3 client deletes objects from a bucket that 
 
 * If an S3 client issues a delete request that does not include a version ID, StorageGRID does not delete any object versions. Instead, it adds a delete marker to the bucket. The delete marker causes StorageGRID to act as if the object was deleted:
 
-** A GET request without a version ID will fail with `404 No Object Found`
-** A GET request with a valid version ID will succeed and return the requested object version.
+** A GetObject request without a version ID will fail with `404 No Object Found`
+** A GetObject request with a valid version ID will succeed and return the requested object version.
 
 When an S3 client deletes an object from a bucket that has cross-grid replication enabled, StorageGRID determines whether to replicate the delete request to the destination, as follows:
 
@@ -117,7 +117,7 @@ To encrypt individual objects, you can use SSE (server-side encryption with Stor
 
 NOTE: Using SSE-C (server-side encryption with customer-provided keys) is not supported for cross-grid replication. The ingest operation will fail.
 
-To use default encryption for a bucket, use a PUT bucket encryption request and set the `SSEAlgorithm` parameter to `AES256`. Bucket-level encryption applies to any objects ingested without the `x-amz-server-side-encryption` request header. See link:../s3/operations-on-buckets.html[Operations on buckets]. 
+To use default encryption for a bucket, use a PutBucketEncryption request and set the `SSEAlgorithm` parameter to `AES256`. Bucket-level encryption applies to any objects ingested without the `x-amz-server-side-encryption` request header. See link:../s3/operations-on-buckets.html[Operations on buckets]. 
 
 To use grid-level encryption, set the *Stored object encryption* option to *AES-256*. Grid-level encryption applies to any objects that aren't encrypted at the bucket level or that are ingested without the `x-amz-server-side-encryption` request header. See link:../admin/changing-network-options-object-encryption.html[Configure network and object options].
 
@@ -137,11 +137,11 @@ When determining how to encrypt replicated objects, StorageGRID applies these ru
 . If the destination bucket does not have an encryption setting, use the destination's grid-wide encryption setting, if configured.
 . If a grid-wide setting is not present, don't encrypt the destination object.
 
-=== PUT Object tagging and DELETE Object tagging aren't supported
+=== PutObjectTagging and DeleteObjectTagging aren't supported
 
-PUT Object tagging and DELETE Object tagging requests aren't supported for objects in buckets that have cross-grid replication enabled.
+PutObjectTagging and DeleteObjectTagging requests aren't supported for objects in buckets that have cross-grid replication enabled.
 
-If an S3 client issues a PUT Object tagging or DELETE Object tagging request, `501 Not Implemented` is returned. The message is `Put(Delete) ObjectTagging is not available for buckets that have cross-grid replication configured`.
+If an S3 client issues a PutObjectTagging or DeleteObjectTagging request, `501 Not Implemented` is returned. The message is `Put(Delete) ObjectTagging is not available for buckets that have cross-grid replication configured`.
 
 === How segmented objects are replicated
 
