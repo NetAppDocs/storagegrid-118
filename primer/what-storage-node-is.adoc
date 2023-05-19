@@ -2,16 +2,31 @@
 permalink: primer/what-storage-node-is.html
 sidebar: sidebar
 keywords: what is a storage node, how many storage nodes
-summary: 'Storage Nodes manage and store object data and metadata. Each StorageGRID system must have at least three Storage Nodes. If you have multiple sites, each site within your StorageGRID system must also have three Storage Nodes.'
+summary: 'Storage Nodes manage and store object data and metadata. Storage Nodes include the services and processes required to store, move, verify, and retrieve object data and metadata on disk.'
 ---
 = What is a Storage Node?
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Storage Nodes manage and store object data and metadata. Each StorageGRID system must have at least three Storage Nodes. If you have multiple sites, each site within your StorageGRID system must also have three Storage Nodes.
+Storage Nodes manage and store object data and metadata. Storage Nodes include the services and processes required to store, move, verify, and retrieve object data and metadata on disk.
 
-Storage Nodes include the services and processes required to store, move, verify, and retrieve object data and metadata on disk.
+Each StorageGRID system must have at least three Storage Nodes. If you have multiple sites, each site within your StorageGRID system must also have three Storage Nodes.
+
+
+
+== Types of Storage Nodes
+All Storage Nodes installed before StorageGRID 11.8 store both objects and the metadata for those objects. Starting in StorageGRID 11.8, you can choose the Storage Node type when you install a new node, as follows:
+
+Object and metadata Storage Nodes::
+By default, all new Storage Nodes installed in StorageGRID 11.8 will store both objects and metadata.
+
+Metadata-only Storage Nodes::
+As required, you can specify that a new Storage Node be used exclusively for metadata.
++
+TIP: You can only select the Storage Node type when installing the node initially. You can't change the type for an existing node. 
+
+Installing a metadata-only node is typically not required. However, using a Storage Node exclusively for metadata can make sense if your grid stores a very large number of small objects. Installing dedicated metadata capacity provides a better balance between the space needed for a very large number of small objects and the space needed for the metadata for all those objects.
 
 == Primary services for Storage Nodes
 
@@ -70,19 +85,12 @@ In general, all grid nodes maintain a connection to at least one ADC service. Th
 
 The connection of each grid node lets the ADC service gather topology information. This grid node information includes the CPU load, available disk space (if it has storage), supported services, and the grid node's site ID. Other services ask the ADC service for topology information through topology queries. The ADC service responds to each query with the latest information received from the StorageGRID system.
 
-=== View ADC information
-You can view ADC information for a Storage Node on the Grid Topology page (*SUPPORT* > *Grid topology*).
 
 == [[dds]]What is the DDS service?
 
 Each Storage Node includes the Distributed Data Store (DDS) service. This service interfaces with the Cassandra database to perform background tasks on the object metadata stored in the StorageGRID system.
 
 The DDS service tracks the total number of objects ingested into the StorageGRID system as well as the total number of objects ingested through each of the system's supported interfaces (S3 or Swift). 
-
-=== View DDS information
-You can view the total objects count for the grid on the StorageGRID dashboard, or you can go to the Nodes page > Objects tab to see the total objects for each Storage Node.
-
-The Objects tab also shows information about the metadata store queries performed by the DDS service on each Storage Node, including average query time, the number of successful and timed-out queries, and the number of queries that failed because of consistency failures. Consistency level failures result if an insufficient number of metadata stores is available when the query is performed through the specific DDS service.
 
 == [[ldr]]What is the LDR service?
 
@@ -113,13 +121,5 @@ To ensure even space usage for replicated copies, object data for a given object
 StorageGRID stores object metadata in a Cassandra database, which interfaces with the LDR service.
 
 To ensure redundancy and thus protection against loss, three copies of object metadata are maintained at each site. This replication is non-configurable and performed automatically. For details, see link:../admin/managing-object-metadata-storage.html[Manage object metadata storage].
-
-=== View LDR information
-
-You can see the object stores for a Storage Node on the Nodes page > Storage tab.
-
-You can review query information to monitor the health of the metadata store, which impacts the system's ingest and retrieval performance. For example, if the latency for an average query is slow and the number of failed queries due to timeouts is high, the metadata store might be encountering a higher load or performing another operation. LDR queries include queries for object location during retrieve and archive operations. You can identify the average time that it takes to run a query, the number of successful and timed-out queries that failed because of a timeout issue, and the number of queries that failed because of consistency failures. Consistency level failures result from an insufficient number of available metadata stores at the time a query is performed through the specific LDR service.
-
-ILM metrics allow you to monitor the rate at which objects are evaluated for ILM implementation. You can view these metrics on the dashboard or on the Node page > ILM tab for each Storage Node.
 
 
