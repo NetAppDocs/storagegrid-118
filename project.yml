@@ -48,10 +48,7 @@ sidebar:
       - section: monitor
       - section: troubleshoot
       - section: audit
-    - title: Expand a grid
-      url: "/landing-expand/index.html"
-      entries:
-      - section: expand
+    - section: expand
     - title: Maintain your grid
       url: "/landing-maintain/index.html"
       entries:
