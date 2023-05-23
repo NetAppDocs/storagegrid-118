@@ -34,21 +34,11 @@ indexpage:
           url: ../expand/deploying-new-grid-nodes.html
         - title: Perform expansion
           url: ../expand/performing-expansion.html
-    - title: Configure expanded system
+    - title: Configure and troubleshoot
       links:
         - title: Configuration steps
           url: ../expand/configuring-expanded-storagegrid-system.html
-        - title: Verify Storage Node is active
-          url: ../expand/verifying-storage-node-is-active.html
-        - title: Copy Admin Node database
-          url: ../expand/copying-admin-node-database.html
-        - title: Copy Prometheus metrics
-          url: ../expand/copying-prometheus-metrics.html
-        - title: Copy audit logs
-          url: ../expand/copying-audit-logs.html
         - title: Rebalance erasure-coded data after adding Storage Nodes
           url: ../expand/rebalancing-erasure-coded-data-after-adding-storage-nodes.html
-    - title: Troubleshoot expansion
-      links:
-        - title: Collect log files and contact technical support
+        - title: 'If needed: Collect log files and contact technical support'
           url: ../expand/contacting-technical-support.html

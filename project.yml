@@ -20,7 +20,7 @@ sidebar:
       - section: network
       - title: Quick start
         url: /quick-start.html      
-    - title: Install and upgrade
+    - title: Install or upgrade
       url: "/landing-install-upgrade/index.html"  
       entries:
       - title: Install appliances
@@ -323,12 +323,12 @@ sidebar:
           url: "/maintain/selecting-start-recovery-to-configure-archive-node.html"
         - title: Reset Archive Node connection to the cloud
           url: "/maintain/resetting-archive-node-connection-to-cloud.html"
-      - title: 'All grid node types: Replace VMware node'
+      - title: Replace VMware node
         url: "/maintain/all-node-types-replacing-vmware-node.html"
-      - title: 'All grid node types: Replace Linux node'
+      - title: Replace Linux node
         entries:
         - title: Overview
-          pdf-filename: 'All grid node types: Replace Linux node'
+          pdf-filename: 'Replace Linux node (all grid node types)'
           url: "/maintain/all-node-types-replacing-linux-node.html"
         - title: Deploy new Linux hosts
           url: "/maintain/deploying-new-linux-hosts.html"

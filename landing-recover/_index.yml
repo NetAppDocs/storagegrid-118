@@ -1,8 +1,8 @@
 indexpage:
    tiles:
-    - title: Recover nodes
+    - title: Get started
       links:
-        - title: Get started
+        - title: 'Overview: Grid node recovery'
           url: ../maintain/grid-node-recovery-procedures.html
         - title: Warnings and considerations
           url: ../maintain/warnings-and-considerations-for-grid-node-recovery.html
@@ -20,24 +20,14 @@ indexpage:
           url: ../maintain/recovering-from-gateway-node-failures.html
         - title: Archive Nodes
           url: ../maintain/recovering-from-archive-node-failures.html
-    - title: Procedures for all grid node types
+    - title: Replace node
       links:
         - title: Replace VMware node
           url: ../maintain/all-node-types-replacing-vmware-node.html
         - title: Replace Linux node
           url: ../maintain/all-node-types-replacing-linux-node.html
-    - title: Replace node with services appliance
-      links:
-        - title: Overview
-          url: ../maintain/replacing-failed-node-with-services-appliance.html
-        - title: Install services appliance (platform change only)
+        - title: Replace Linux or VMware node with services appliance
           url: ../maintain/installing-services-appliance-platform-change-only.html
-        - title: Prepare appliance for reinstallation (platform replacement only)
-          url: ../maintain/preparing-appliance-for-reinstallation-platform-replacement-only.html
-        - title: Start software installation
-          url: ../maintain/starting-software-installation-on-services-appliance-recovery.html
-        - title: Monitor software installation
-          url: ../maintain/monitoring-services-appliance-installation.html
     - title: Recover a site
       links:
         - title: How technical support recovers a site
