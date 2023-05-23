@@ -40,5 +40,5 @@ indexpage:
           url: ../expand/configuring-expanded-storagegrid-system.html
         - title: Rebalance erasure-coded data after adding Storage Nodes
           url: ../expand/rebalancing-erasure-coded-data-after-adding-storage-nodes.html
-        - title: 'If needed: Collect log files and contact technical support'
+        - title: 'Troubleshoot: Collect log files and contact technical support'
           url: ../expand/contacting-technical-support.html

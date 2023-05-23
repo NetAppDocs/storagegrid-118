@@ -20,7 +20,7 @@ sidebar:
       - section: network
       - title: Quick start
         url: /quick-start.html      
-    - title: Install or upgrade
+    - title: Install, upgrade, hotfix
       url: "/landing-install-upgrade/index.html"  
       entries:
       - title: Install appliances
