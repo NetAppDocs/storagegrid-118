@@ -22,10 +22,10 @@ indexpage:
           url: ../maintain/recovering-from-archive-node-failures.html
     - title: Replace node
       links:
-        - title: Replace VMware node
-          url: ../maintain/all-node-types-replacing-vmware-node.html
         - title: Replace Linux node
           url: ../maintain/all-node-types-replacing-linux-node.html
+        - title: Replace VMware node
+          url: ../maintain/all-node-types-replacing-vmware-node.html
         - title: Replace Linux or VMware node with services appliance
           url: ../maintain/installing-services-appliance-platform-change-only.html
     - title: Recover a site

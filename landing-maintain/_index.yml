@@ -16,7 +16,7 @@ indexpage:
           url: ../maintain/site-decommissioning.html
     - title: Additional maintenance tasks
       links:
-      - title: Rename grid, sites, and nodes
+      - title: Rename grid, site, or node
         url: ../maintain/rename-grid-site-node-overview.html
       - title: Maintain the network
         url: ../maintain/updating-subnets-for-grid-network.html

@@ -1,7 +1,7 @@
 settings:
   name: "StorageGRID 11.8"
   internal:
-    pdf_enabled: true
+    pdf_enabled: false
     termcheck_enabled: false
   prod:
     pdf_enabled: false
@@ -99,7 +99,7 @@ sidebar:
             url: "/maintain/step-5-resolve-node-conflicts.html"
           - title: Monitor decommission
             url: "/maintain/step-6-monitor-decommission.html"
-      - title: Rename grid, node, or site
+      - title: Rename grid, site, or node
         entries:
         - title: Overview
           url: "/maintain/rename-grid-site-node-overview.html"
@@ -323,8 +323,6 @@ sidebar:
           url: "/maintain/selecting-start-recovery-to-configure-archive-node.html"
         - title: Reset Archive Node connection to the cloud
           url: "/maintain/resetting-archive-node-connection-to-cloud.html"
-      - title: Replace VMware node
-        url: "/maintain/all-node-types-replacing-vmware-node.html"
       - title: Replace Linux node
         entries:
         - title: Overview
@@ -336,6 +334,8 @@ sidebar:
           url: "/maintain/restoring-existing-nodes.html"
         - title: 'What&#8217;s next: Perform additional recovery steps, if required'
           url: "/maintain/whats-next-performing-additional-recovery-steps-if-required.html"
+      - title: Replace VMware node
+        url: "/maintain/all-node-types-replacing-vmware-node.html"
       - title: Replace failed node with services appliance
         entries:
         - title: Overview
