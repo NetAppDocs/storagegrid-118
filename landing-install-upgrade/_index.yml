@@ -18,6 +18,14 @@ indexpage:
           url: ../ubuntu/required-materials.html
         - title: VMware
           url: ../vmware/required-materials.html
+    - title: Automate installation
+      links:
+        - title: Red Hat Enterprise Linux or Centos
+          url: ../rhel/automating-installation.html
+        - title: Ubuntu or Debian
+          url: ../ubuntu/automating-installation.html
+        - title: VMware
+          url: ../vmware/automating-grid-node-deployment-in-vmware-vsphere.html
     - title: Deploy nodes
       links:          
         - title: Red Hat Enterprise Linux or Centos
@@ -34,15 +42,7 @@ indexpage:
           url:  ../ubuntu/navigating-to-grid-manager.html
         - title: VMware
           url:  ../vmware/navigating-to-grid-manager.html
-    - title: Automate installation
-      links:
-        - title: Red Hat Enterprise Linux or Centos
-          url: ../rhel/automating-installation.html
-        - title: Ubuntu or Debian
-          url: ../ubuntu/automating-installation.html
-        - title: VMware
-          url: ../vmware/automating-grid-node-deployment-in-vmware-vsphere.html
-    - title: Upgrade
+    - title: Upgrade or hotfix
       links:
       - title: What's new
         url: ../upgrade/whats-new.html
@@ -52,5 +52,5 @@ indexpage:
         url: ../upgrade/how-your-system-is-affected-during-upgrade.html
       - title: Upgrade quick start
         url: ../upgrade/upgrade-workflow.html
-      - title: Install hotfix
+      - title: Apply hotfix
         url: ../maintain/storagegrid-hotfix-procedure.html

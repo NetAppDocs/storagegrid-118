@@ -13,7 +13,7 @@ indexpage:
         url: /network/index.html
       - title: StorageGRID quick start
         url: /quick-start.html
-    - title: Install & upgrade
+    - title: Install and upgrade
       links:
       - title: StorageGRID appliances
         url: https://review.docs.netapp.com/us-en/storagegrid-appliances_main/installconfig/index.html    
@@ -43,7 +43,7 @@ indexpage:
         url: /s3/index.html
       - title: Use Swift REST API (deprecated)
         url: /swift/index.html
-    - title: Monitor & troubleshoot
+    - title: Monitor and troubleshoot
       links:
       - title: Monitor your grid
         url: /monitor/index.html
@@ -59,7 +59,7 @@ indexpage:
         url: /maintain/index.html
       - title: StorageGRID appliances
         url: https://review.docs.netapp.com/us-en/storagegrid-appliances_main/installconfig/index.html
-    - title: Demos & tutorials
+    - title: Demos and tutorials
       links:
       - title: Learn how to enable StorageGRID
         url: https://docs.netapp.com/us-en/storagegrid-enable/index.html
