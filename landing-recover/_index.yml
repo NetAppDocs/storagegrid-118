@@ -28,6 +28,8 @@ indexpage:
           url: ../maintain/all-node-types-replacing-vmware-node.html
         - title: Replace Linux or VMware node with services appliance
           url: ../maintain/installing-services-appliance-platform-change-only.html
+        - title: Clone appliance node
+          url: https://review.docs.netapp.com/us-en/storagegrid-appliances_main/commonhardware/how-appliance-node-cloning-works.html
     - title: Recover a site
       links:
         - title: How technical support recovers a site

@@ -18,7 +18,7 @@ indexpage:
       links:
       - title: Rename grid, site, or node
         url: ../maintain/rename-grid-site-node-overview.html
-      - title: Maintain the network
+      - title: Maintain networks
         url: ../maintain/updating-subnets-for-grid-network.html
       - title: Host and middleware procedures
         url: ../maintain/linux-migrating-grid-node-to-new-host.html
