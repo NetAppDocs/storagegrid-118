@@ -11,7 +11,7 @@ summary: 'The steps for deploying new grid nodes in an expansion are the same as
 [.lead]
 The steps for deploying new grid nodes in an expansion are the same as the steps used when the grid was first installed. You must deploy all new grid nodes before you can perform the expansion.
 
-When you expand the grid, the nodes you add don't have to match the existing node types. You can add VMware nodes, Linux container-based nodes, or appliance nodes.
+When you expand a grid, the nodes you add don't have to match the existing node types. You can add VMware nodes, Linux container-based nodes, or appliance nodes.
 
 [[vmware-deploy-grid-nodes]]
 == VMware: Deploy grid nodes

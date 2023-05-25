@@ -294,7 +294,7 @@ TIP: You can't change the bucket name after creating the bucket.
 
 . Select the *Region* for this bucket.
 +
-Use the default region (us-east-1) unless you expect to use ILM in the future to filter objects based on the bucket's region.
+Use the default region (`us-east-1`) unless you expect to use ILM in the future to filter objects based on the bucket's region.
 
 . Select *Create and Continue* to create the tenant and bucket and to go to the download data step 
 --

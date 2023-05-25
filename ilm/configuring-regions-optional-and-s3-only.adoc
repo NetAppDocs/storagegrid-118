@@ -23,12 +23,12 @@ NOTE: You can't change the region for a bucket after the bucket has been created
 
 When creating an S3 bucket, you can specify that the bucket be created in a specific region. Specifying a region allows the bucket to be geographically close to its users, which can help optimize latency, minimize costs, and address regulatory requirements.
 
-When you create an ILM rule, you might want to use the region associated with an S3 bucket as an advanced filter. For example, you can design a rule that applies only to objects in S3 buckets created in the us-west-2 region. You can then specify that copies of those objects be placed on Storage Nodes at a data center site within that region to optimize latency.
+When you create an ILM rule, you might want to use the region associated with an S3 bucket as an advanced filter. For example, you can design a rule that applies only to objects in S3 buckets created in the `us-west-2` region. You can then specify that copies of those objects be placed on Storage Nodes at a data center site within that region to optimize latency.
 
 When configuring regions, follow these guidelines:
 
-* By default, all buckets are considered to belong to the us-east-1 region.
-* You must create the regions using the Grid Manager before you can specify a non-default region when creating buckets using the Tenant Manager or Tenant Management API or with the LocationConstraint request element for S3 CreateBucket API requests. An error occurs if a CreateBucket request uses a region that has not been defined in StorageGRID.
+* By default, all buckets are considered to belong to the `us-east-1` region.
+* You must create the regions using the Grid Manager before you can specify a non-default region when creating buckets using the Tenant Manager or Tenant Management API or with the LocationConstraint request element for S3 PUT Bucket API requests. An error occurs if a PUT Bucket request uses a region that has not been defined in StorageGRID.
 * You must use the exact region name when you create the S3 bucket. Region names are case sensitive. Valid characters are numbers, letters, and hyphens.
 +
 NOTE: EU is not considered to be an alias for eu-west-1. If you want to use the EU or eu-west-1 region, you must use the exact name.
@@ -44,8 +44,6 @@ An invalid region can result if you use a region as an advanced filter in an ILM
 . Select *ILM* > *Regions*.
 +
 The Regions page appears, with the currently defined regions listed. *Region 1* shows the default region, `us-east-1`, which can't be modified or removed.
-+
-//image::../media/ilm_regions.gif[Regions page]
 
 . To add a region:
  .. Select the insert icon image:../media/icon_plus_sign_black_on_white.gif[insert icon] to the right of the last entry.

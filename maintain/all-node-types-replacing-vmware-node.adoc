@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: replace VMware node
 summary: 'When you recover a failed StorageGRID node that was hosted on VMware, you remove the failed node and deploy a recovery node.'
 ---
-= All grid node types: Replace VMware node
+= Replace VMware node
 :icons: font
 :imagesdir: ../media/
 

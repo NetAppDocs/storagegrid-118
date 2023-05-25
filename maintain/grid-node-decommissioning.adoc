@@ -23,6 +23,4 @@ Use the node decommission procedure when any of the following are true:
 * You no longer require a non-primary Admin Node.
 * Your grid includes a disconnected node that you can't recover or bring back online.
 
-The flowchart shows the high-level steps for decommissioning grid nodes.
-
-image::../media/overview_decommission_nodes.png[high-level flowchart of decommissioning steps]
+// replace workflow with table/steps?
