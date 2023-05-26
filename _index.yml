@@ -12,7 +12,7 @@ indexpage:
       - title: Networking guidelines
         url: /network/index.html
       - title: StorageGRID quick start
-        url: /quick-start.html
+        url: /primer/quick-start.html
     - title: Install and upgrade
       links:
       - title: StorageGRID appliances
