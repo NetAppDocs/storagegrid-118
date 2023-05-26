@@ -25,6 +25,8 @@ indexpage:
         url: /vmware/index.html
       - title: Upgrade to new version
         url: /upgrade/index.html
+      - title: Apply hotfix
+        url: /maintain//applying-hotfix.html
     - title: Configure the grid
       links:
       - title: Administer StorageGRID
@@ -51,14 +53,16 @@ indexpage:
         url: /troubleshoot/index.html
       - title: Review audit logs
         url: /audit/index.html
-    - title: Maintain your grid
+    - title: Expand and maintain your grid
       links:        
-      - title: Add nodes and sites
+      - title: Add volumes, nodes, and sites
         url: /expand/index.html
-      - title: Recover and maintain
+      - title: Maintain your grid
         url: /maintain/index.html
-      - title: StorageGRID appliances
-        url: https://review.docs.netapp.com/us-en/storagegrid-appliances_main/installconfig/index.html
+      - title: Recover or replace nodes
+        url: /maintain/grid-node-recovery-procedures.html
+      - title: Maintain StorageGRID appliances
+        url: https://review.docs.netapp.com/us-en/storagegrid-appliances_main/commonhardware/index.html
     - title: Demos and tutorials
       links:
       - title: Learn how to enable StorageGRID
@@ -87,3 +91,9 @@ indexpage:
         url:  https://docs.netapp.com/us-en/storagegrid-116/index.html
       - title: StorageGRID 11.5 documentation
         url: https://docs.netapp.com/us-en/storagegrid-115/index.html
+      - title: StorageGRID 11.4 documentation
+        url: https://docs.netapp.com/sgws-114/index.jsp
+      - title: StorageGRID 11.3 documentation
+        url: https://docs.netapp.com/sgws-113/index.jsp
+      - title: StorageGRID 11.2 documentation
+        url: https://docs.netapp.com/sgws-112/index.jsp

@@ -20,7 +20,7 @@ sidebar:
       - section: network
       - title: Quick start
         url: "/primer/quick-start.html"
-    - title: Install, upgrade, hotfix
+    - title: Install, upgrade, and hotfix
       url: "/landing-install-upgrade/index.html"  
       entries:
       - title: Install appliances
