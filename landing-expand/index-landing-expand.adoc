@@ -8,3 +8,6 @@ summary: You can add nodes or sites to expand the capacity or functionality of y
 :hardbreaks:
 :linkattrs:
 :imagesdir: ./media/
+
+[.lead]
+You can add nodes or sites to expand the capacity or functionality of your system.
