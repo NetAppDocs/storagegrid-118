@@ -26,7 +26,7 @@ indexpage:
       - title: Upgrade to new version
         url: /upgrade/index.html
       - title: Apply hotfix
-        url: /maintain//applying-hotfix.html
+        url: /maintain/storagegrid-hotfix-procedure.html
     - title: Configure the grid
       links:
       - title: Administer StorageGRID
