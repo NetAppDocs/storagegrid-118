@@ -9,6 +9,3 @@ summary: 'You can expand the capacity or capabilities of your StorageGRID system
 :hardbreaks:
 :linkattrs:
 :imagesdir: ./media/
-
-[.lead]
-You can expand the capacity or capabilities of your StorageGRID system without interrupting system operations.
