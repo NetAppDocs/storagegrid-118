@@ -30,7 +30,6 @@ sidebar:
       - section: vmware
       - section: upgrade
       - title: Apply StorageGRID hotfix
-#        url: "/maintain/storagegrid-hotfix-procedure.html"
         entries:
         - title: 'Hotfix: Overview'
           url: "/maintain/storagegrid-hotfix-procedure.html"
