@@ -31,19 +31,19 @@ sidebar:
       - section: upgrade
       - title: Apply StorageGRID hotfix
         url: "/maintain/storagegrid-hotfix-procedure.html"
-        entries:
-        - title: 'Hotfix: Overview'
-          url: "/maintain/storagegrid-hotfix-procedure.html"
-        - title: How your system is affected when you apply a hotfix
-          url: "/maintain/how-your-system-is-affected-when-you-apply-hotfix.html"
-        - title: Obtain required materials for hotfix
-          url: "/maintain/obtaining-required-materials-for-hotfix.html"
-        - title: Download hotfix file
-          url: "/maintain/downloading-hotfix-file.html"
-        - title: Check system's condition before applying hotfix
-          url: "/maintain/checking-systems-condition-before-applying-hotfix.html"
-        - title: Apply hotfix
-          url: "/maintain/applying-hotfix.html"
+#        entries:
+#        - title: 'Hotfix: Overview'
+#          url: "/maintain/storagegrid-hotfix-procedure.html"
+#        - title: How your system is affected when you apply a hotfix
+#          url: "/maintain/how-your-system-is-affected-when-you-apply-hotfix.html"
+#        - title: Obtain required materials for hotfix
+#          url: "/maintain/obtaining-required-materials-for-hotfix.html"
+#        - title: Download hotfix file
+#          url: "/maintain/downloading-hotfix-file.html"
+#        - title: Check system's condition before applying hotfix
+#          url: "/maintain/checking-systems-condition-before-applying-hotfix.html"
+#        - title: Apply hotfix
+#          url: "/maintain/applying-hotfix.html"
     - title: Configure and manage
       url: "/landing-configure-manage/index.html"  
       entries:
