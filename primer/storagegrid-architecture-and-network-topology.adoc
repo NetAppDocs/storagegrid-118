@@ -97,7 +97,7 @@ See the following for more information:
 
 * link:../ubuntu/index.html[Install Ubuntu or Debian]
 
-Use the https://imt.netapp.com/matrix/#welcome[NetApp Interoperability Matrix Tool (IMT)^] to get a list of supported versions.
+For a list of supported versions, see the https://imt.netapp.com/matrix/#welcome[NetApp Interoperability Matrix Tool (IMT)^].
 
 === Primary services for Admin Nodes
 

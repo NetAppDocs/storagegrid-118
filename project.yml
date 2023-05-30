@@ -19,8 +19,8 @@ sidebar:
       - section: primer
       - section: network
       - title: Quick start
-        url: /quick-start.html      
-    - title: Install, upgrade, hotfix
+        url: "/primer/quick-start.html"
+    - title: Install, upgrade, and hotfix
       url: "/landing-install-upgrade/index.html"  
       entries:
       - title: Install appliances
@@ -30,7 +30,6 @@ sidebar:
       - section: vmware
       - section: upgrade
       - title: Apply StorageGRID hotfix
-        url: "/maintain/storagegrid-hotfix-procedure.html"
         entries:
         - title: 'Hotfix: Overview'
           url: "/maintain/storagegrid-hotfix-procedure.html"
@@ -118,7 +117,7 @@ sidebar:
           url: "/maintain/rename-grid-site-node-overview.html"
         - title: Add or update display names
           url: "/maintain/rename-grid-site-node.html"
-      - title: Maintain network
+      - title: Maintain networks
         entries:
         - title: Update subnets for Grid Network
           url: "/maintain/updating-subnets-for-grid-network.html"
@@ -136,11 +135,11 @@ sidebar:
             url: "/maintain/changing-ip-addresses-and-mtu-values-for-all-nodes-in-grid.html"
         - title: Add interfaces to existing node
           entries:
-          - title: Linux-Add Admin or Client interfaces
+          - title: 'Linux: Add Admin or Client interfaces'
             url: "/maintain/linux-adding-interfaces-to-existing-node.html"
-          - title: Linux-Add trunk or access interfaces
+          - title: 'Linux: Add trunk or access interfaces'
             url: "/maintain/linux-adding-trunk-or-access-interfaces-to-node.html"
-          - title: VMware-Add trunk or access interfaces
+          - title: 'VMware: Add trunk or access interfaces'
             url: "/maintain/vmware-adding-trunk-or-access-interfaces-to-node.html"
         - title: Configure DNS servers
           url: "/maintain/configuring-dns-servers.html"
@@ -152,11 +151,11 @@ sidebar:
           url: "/maintain/restoring-network-connectivity-for-isolated-nodes.html"
       - title: Host and middleware procedures
         entries:
-        - title: Linux-Migrate grid node to new host
+        - title: 'Linux: Migrate grid node to new host'
           url: "/maintain/linux-migrating-grid-node-to-new-host.html"
         - title: Archive Node maintenance for TSM middleware
           url: "/maintain/archive-node-maintenance-for-tsm-middleware.html"
-        - title: VMware-Configure virtual machine for automatic restart
+        - title: 'VMware: Configure virtual machine for automatic restart'
           url: "/maintain/vmware-configuring-virtual-machine-for-automatic-restart.html"
       - title: Grid node procedures
         entries:

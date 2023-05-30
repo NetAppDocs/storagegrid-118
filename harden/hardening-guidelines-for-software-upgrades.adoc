@@ -25,16 +25,16 @@ Consult the https://imt.netapp.com/matrix/#welcome[NetApp Interoperability Matri
 
 External services can have vulnerabilities that affect StorageGRID indirectly. You should ensure that the services that StorageGRID depends on are kept up to date. These services include LDAP, KMS (or KMIP server), DNS, and NTP.
 
-Use the https://imt.netapp.com/matrix/#welcome[NetApp Interoperability Matrix Tool^] to get a list of supported versions.
+For a list of supported versions, see the https://imt.netapp.com/matrix/#welcome[NetApp Interoperability Matrix Tool^].
 
 == Upgrades to hypervisors
 
 If your StorageGRID nodes are running on VMware or another hypervisor, you must ensure that the hypervisor software and firmware are up to date.
 
-Use the https://imt.netapp.com/matrix/#welcome[NetApp Interoperability Matrix Tool^] to get a list of supported versions.
+For a list of supported versions, see the https://imt.netapp.com/matrix/#welcome[NetApp Interoperability Matrix Tool^].
 
 == *Upgrades to Linux nodes*
 
 If your StorageGRID nodes are using Linux host platforms, you must ensure that security updates and kernel updates are applied to the host OS. Additionally, you must apply firmware updates to vulnerable hardware when these updates become available.
 
-Use the https://imt.netapp.com/matrix/#welcome[NetApp Interoperability Matrix Tool^] to get a list of supported versions.
+For a list of supported versions, see the https://imt.netapp.com/matrix/#welcome[NetApp Interoperability Matrix Tool^].

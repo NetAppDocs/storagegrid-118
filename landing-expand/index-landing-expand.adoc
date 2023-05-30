@@ -2,7 +2,8 @@
 layout: landing-page
 sidebar: sidebar
 permalink: landing-expand/index-landing-expand.html
-summary: You can add nodes or sites to expand the capacity or functionality of your system.
+keywords: expand grid
+summary: 'You can expand the capacity or capabilities of your StorageGRID system without interrupting system operations.'
 ---
 = Expand a grid
 :hardbreaks:

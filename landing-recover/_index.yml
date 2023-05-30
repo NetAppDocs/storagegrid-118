@@ -33,4 +33,4 @@ indexpage:
     - title: Recover a site
       links:
         - title: How technical support recovers a site
-          url: /maintain/how-site-recovery-is-performed-by-technical-support.html
+          url: ../maintain/how-site-recovery-is-performed-by-technical-support.html
