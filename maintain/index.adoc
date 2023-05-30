@@ -4,14 +4,14 @@ sidebar: sidebar
 keywords: maintain overview, maintenance overview, about maintain, about maintenance
 summary: 'Grid maintenance tasks include decommissioning a node or site, renaming a grid, node or site, and maintaining the network. You can also perform host and middleware procedures and grid node procedures.'
 ---
-= Recover and maintain: Overview
+= Maintain your grid: Overview
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Grid maintenance tasks include decommissioning a node or site, renaming a grid, node or site, and maintaining the network. You can also perform host and middleware procedures and grid node procedures.
+Grid maintenance tasks include decommissioning a node or site, renaming a grid, node or site, and maintaining networks. You can also perform host and middleware procedures and grid node procedures.
 
-NOTE: In these instructions, "Linux" refers to a Red Hat® Enterprise Linux®, Ubuntu®, CentOS, or Debian® deployment. Use the https://imt.netapp.com/matrix/#welcome[NetApp Interoperability Matrix Tool^] to get a list of supported versions. 
+NOTE: In these instructions, "Linux" refers to a Red Hat® Enterprise Linux®, Ubuntu®, CentOS, or Debian® deployment. For a list of supported versions, see the https://imt.netapp.com/matrix/#welcome[NetApp Interoperability Matrix Tool^].
 
 == Before you begin
 

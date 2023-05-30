@@ -13,7 +13,7 @@ indexpage:
         url: /network/index.html
       - title: StorageGRID quick start
         url: /primer/quick-start.html
-    - title: Install and upgrade
+    - title: Install, upgrade, and hotfix
       links:
       - title: StorageGRID appliances
         url: https://review.docs.netapp.com/us-en/storagegrid-appliances_main/installconfig/index.html    
