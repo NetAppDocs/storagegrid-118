@@ -1,5 +1,6 @@
 ---
 permalink: monitor/applying-hotfixes-or-upgrading-software-if-necessary.html
+redirect: landing-install-upgrade/index.html
 sidebar: sidebar
 keywords: how to apply software upgrade, how to apply hotfix
 summary: 'If a hotfix or a new version of StorageGRID software is available, you should assess whether the update is appropriate for your system, and install it if required.'

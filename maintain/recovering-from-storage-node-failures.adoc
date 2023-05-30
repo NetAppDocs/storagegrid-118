@@ -33,7 +33,7 @@ Technical support can determine when it is safe to begin recovery of a second St
 | More than one Storage Node at a site has failed or an entire site has failed. 
 | Contact technical support. It might be necessary to perform a site recovery procedure. 
 
-| Technical support will assess your situation and develop a recovery plan. See link:how-site-recovery-is-performed-by-technical-support.html[How site recovery is performed by technical support].
+| Technical support will assess your situation and develop a recovery plan. See link:how-site-recovery-is-performed-by-technical-support.html[How technical support recovers a site].
 
 | A Storage Node has been offline for more than 15 days.
 | link:recovering-storage-node-that-has-been-down-more-than-15-days.html[Recover Storage Node down more than 15 days]

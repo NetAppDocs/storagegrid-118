@@ -24,7 +24,7 @@ For details on these steps, see link:../admin/configuring-client-connections.htm
  .. Enter configuration mode: `aws configure`
  .. Enter the access key ID for the account you created.
  .. Enter the secret access key for the account you created.
- .. Enter the default region to use, for example, us-east-1.
+ .. Enter the default region to use. For example, `us-east-1`.
  .. Enter the default output format to use, or press *Enter* to select JSON.
 . Create a bucket.
 +

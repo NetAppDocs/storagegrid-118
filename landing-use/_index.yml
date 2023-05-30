@@ -1,6 +1,6 @@
 indexpage:
    tiles:
-    - title: Get started with tenants
+    - title: Learn about tenants
       links:
         - title: What is a tenant?
           url: ../tenant/index.html

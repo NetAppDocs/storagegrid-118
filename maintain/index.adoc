@@ -2,23 +2,21 @@
 permalink: maintain/index.html
 sidebar: sidebar
 keywords: maintain overview, maintenance overview, about maintain, about maintenance
-summary: 'Use these instructions to maintain your StorageGRID system and to recover from failures.'
+summary: 'Grid maintenance tasks include decommissioning a node or site, renaming a grid, node or site, and maintaining the network. You can also perform host and middleware procedures and grid node procedures.'
 ---
-= Recover and maintain: Overview
+= Maintain your grid: Overview
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Use these instructions to maintain your StorageGRID system and to recover from failures.
+Grid maintenance tasks include decommissioning a node or site, renaming a grid, node or site, and maintaining networks. You can also perform host and middleware procedures and grid node procedures.
 
-== About these instructions
-These instructions describe how to apply a software hotfix, recover grid nodes, recover a failed site, decommission grid nodes or an entire site, perform network maintenance, perform host-level and middleware maintenance procedures, and perform grid node procedures.
-
-NOTE: In these instructions, "`Linux`" refers to a Red Hat® Enterprise Linux®, Ubuntu®, CentOS, or Debian® deployment. Use the https://imt.netapp.com/matrix/#welcome[NetApp Interoperability Matrix Tool^] to get a list of supported versions. 
+NOTE: In these instructions, "Linux" refers to a Red Hat® Enterprise Linux®, Ubuntu®, CentOS, or Debian® deployment. For a list of supported versions, see the https://imt.netapp.com/matrix/#welcome[NetApp Interoperability Matrix Tool^].
 
 == Before you begin
 
 * You have a broad understanding of the StorageGRID system. 
+
 * You have reviewed your StorageGRID system's topology and you understand the grid configuration.
 
 * You understand that you must follow all instructions exactly and heed all warnings.
@@ -27,12 +25,4 @@ NOTE: In these instructions, "`Linux`" refers to a Red Hat® Enterprise Linux®,
 
 == Maintenance procedures for appliances
 
-For hardware procedures, see the maintenance instructions for your StorageGRID appliance.
-
-* https://review.docs.netapp.com/us-en/storagegrid-appliances_main/sg6100/index.html[Maintain SGF6112 appliance^]
-
-* https://review.docs.netapp.com/us-en/storagegrid-appliances_main/sg100-1000/index.html[Maintain SG100 and SG1000 appliances^]
-
-* https://review.docs.netapp.com/us-en/storagegrid-appliances_main/sg6000/index.html[Maintain SG6000 appliance^]
-
-* https://review.docs.netapp.com/us-en/storagegrid-appliances_main/sg5700/index.html[Maintain SG5700 appliance^]
+For hardware procedures, see the https://review.docs.netapp.com/us-en/storagegrid-appliances_main/[maintenance instructions for your StorageGRID appliance].
