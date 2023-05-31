@@ -2,14 +2,14 @@
 permalink: vmware/software-requirements.html
 sidebar: sidebar
 keywords: software requirements
-summary: 'You can use a virtual machine to host any type of StorageGRID grid node. One virtual machine is required for each grid node installed on the VMware server.'
+summary: 'You can use a virtual machine to host any type of StorageGRID node. One virtual machine is required for each grid node installed on the VMware server.'
 ---
 = Software requirements
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You can use a virtual machine to host any type of StorageGRID grid node. One virtual machine is required for each grid node installed on the VMware server.
+You can use a virtual machine to host any type of StorageGRID node. One virtual machine is required for each grid node installed on the VMware server.
 
 == VMware vSphere Hypervisor
 
@@ -28,7 +28,7 @@ CAUTION: You must properly configure the network time protocol (NTP) on each ESX
 
 == VMware configuration requirements
 
-You must install and configure VMware vSphere and vCenter before deploying StorageGRID grid nodes.
+You must install and configure VMware vSphere and vCenter before deploying StorageGRID nodes.
 
 For supported versions of VMware vSphere Hypervisor and VMware vCenter Server software, see the https://imt.netapp.com/matrix/#welcome[NetApp Interoperability Matrix Tool^].
 

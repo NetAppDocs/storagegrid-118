@@ -211,7 +211,7 @@ NOTE: When link:../maintain/configuring-ntp-servers.html[specifying the external
 
 == Linux: Network connectivity issues
 
-You might see issues with network connectivity for StorageGRID grid nodes hosted on Linux hosts.
+You might see issues with network connectivity for StorageGRID nodes hosted on Linux hosts.
 
 === MAC address cloning
 

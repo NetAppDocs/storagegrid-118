@@ -30,11 +30,11 @@ To encrypt an object with a unique key managed by StorageGRID, you use the follo
 
 The SSE request header is supported by the following object operations:
 
-* link:put-object.html[PUT Object]
+* link:put-object.html[PutObject]
 
-* link:put-object-copy.html[PUT Object - Copy]
+* link:put-object-copy.html[CopyObject]
 
-* link:initiate-multipart-upload.html[Initiate Multipart Upload]
+* link:initiate-multipart-upload.html[CreateMultipartUpload]
 
 
 == Use SSE-C
@@ -60,19 +60,19 @@ Specify the MD5 digest of the encryption key according to RFC 1321, which is use
 The SSE-C request headers are supported by the following object operations:
 
 
-* link:get-object.html[GET Object]
+* link:get-object.html[GetObject]
 
-* link:head-object.html[HEAD Object]
+* link:head-object.html[HeadObject]
 
-* link:put-object.html[PUT Object]
+* link:put-object.html[PutObject]
 
-* link:put-object-copy.html[PUT Object - Copy]
+* link:put-object-copy.html[CopyObject]
 
-* link:initiate-multipart-upload.html[Initiate Multipart Upload]
+* link:initiate-multipart-upload.html[CreateMultipartUpload]
 
-* link:upload-part.html[Upload Part]
+* link:upload-part.html[UploadPart]
 
-* link:upload-part-copy.html[Upload Part - Copy]
+* link:upload-part-copy.html[UploadPartCopy]
 
 == Considerations for using server-side encryption with customer-provided keys (SSE-C)
 
@@ -92,6 +92,5 @@ IMPORTANT: The encryption keys you provide are never stored. If you lose an encr
 * If cross-grid replication or CloudMirror replication is configured for the bucket, you can't ingest SSE-C objects. The ingest operation will fail.
 
 .Related information
-
 
 https://docs.aws.amazon.com/AmazonS3/latest/dev/ServerSideEncryptionCustomerKeys.html[Amazon S3 Developer Guide: Protecting Data Using Server-Side Encryption with Customer-Provided Encryption Keys (SSE-C)^]

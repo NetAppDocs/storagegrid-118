@@ -18,7 +18,7 @@ You can create custom alert rules to define your own conditions for triggering a
 
 * You are familiar with the link:commonly-used-prometheus-metrics.html[commonly used Prometheus metrics]
 
-* You understand the https://prometheus.io/docs/querying/basics/[syntax of Prometheus queries^]
+* You understand the https://prometheus.io/docs/prometheus/latest/querying/basics/[syntax of Prometheus queries^]
 
 * Optionally, you have watched the video: https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=61acb7ba-7683-488a-a689-afb7010088f3[Video: Using metrics to create custom alerts in StorageGRID 11.7^]
 +

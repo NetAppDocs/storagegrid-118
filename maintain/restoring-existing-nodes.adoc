@@ -39,7 +39,7 @@ See the installation instructions for more information about the location of the
 
 .Steps
 
-. At the command line of the recovered host, list all currently configured StorageGRID grid nodes:``sudo storagegrid node list``
+. At the command line of the recovered host, list all currently configured StorageGRID nodes:``sudo storagegrid node list``
 +
 If no grid nodes are configured, there will be no output. If some grid nodes are configured, expect output in the following format:
 +

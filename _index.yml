@@ -13,8 +13,10 @@ indexpage:
         url: /network/index.html
       - title: StorageGRID quick start
         url: /primer/quick-start.html
-    - title: Install & upgrade
+    - title: Install, upgrade, and hotfix
       links:
+      - title: StorageGRID appliances
+        url: https://review.docs.netapp.com/us-en/storagegrid-appliances_main/installconfig/index.html    
       - title: Red Hat Enterprise Linux or CentOS
         url: /rhel/index.html
       - title: Ubuntu or Debian
@@ -23,6 +25,8 @@ indexpage:
         url: /vmware/index.html
       - title: Upgrade to new version
         url: /upgrade/index.html
+      - title: Apply hotfix
+        url: /maintain/storagegrid-hotfix-procedure.html
     - title: Configure the grid
       links:
       - title: Administer StorageGRID
@@ -41,7 +45,7 @@ indexpage:
         url: /s3/index.html
       - title: Use Swift REST API (deprecated)
         url: /swift/index.html
-    - title: Monitor & troubleshoot
+    - title: Monitor and troubleshoot
       links:
       - title: Monitor your grid
         url: /monitor/index.html
@@ -49,17 +53,17 @@ indexpage:
         url: /troubleshoot/index.html
       - title: Review audit logs
         url: /audit/index.html
-    - title: Maintain your grid
+    - title: Expand and maintain your grid
       links:        
-      - title: Add nodes and sites
+      - title: Add volumes, nodes, and sites
         url: /expand/index.html
-      - title: Recover and maintain
+      - title: Maintain your grid
         url: /maintain/index.html
-    - title: StorageGRID appliances
-      links:
-      - title: StorageGRID appliances
-        url:  https://docs.netapp.com/us-en/storagegrid-appliances/index.html
-    - title: Demos & tutorials
+      - title: Recover or replace nodes
+        url: /maintain/grid-node-recovery-procedures.html
+      - title: Maintain StorageGRID appliances
+        url: https://review.docs.netapp.com/us-en/storagegrid-appliances_main/commonhardware/index.html
+    - title: Demos and tutorials
       links:
       - title: Learn how to enable StorageGRID
         url: https://docs.netapp.com/us-en/storagegrid-enable/index.html
@@ -79,7 +83,7 @@ indexpage:
         url: https://netapp.com/blog/
       - title: NetApp community
         url: https://community.netapp.com/
-    - title: Earlier versions
+    - title: Other versions
       links:
       - title: StorageGRID 11.7 documentation
         url:  https://docs.netapp.com/us-en/storagegrid-117/index.html
@@ -87,3 +91,9 @@ indexpage:
         url:  https://docs.netapp.com/us-en/storagegrid-116/index.html
       - title: StorageGRID 11.5 documentation
         url: https://docs.netapp.com/us-en/storagegrid-115/index.html
+      - title: StorageGRID 11.4 documentation
+        url: https://docs.netapp.com/sgws-114/index.jsp
+      - title: StorageGRID 11.3 documentation
+        url: https://docs.netapp.com/sgws-113/index.jsp
+      - title: StorageGRID 11.2 documentation
+        url: https://docs.netapp.com/sgws-112/index.jsp

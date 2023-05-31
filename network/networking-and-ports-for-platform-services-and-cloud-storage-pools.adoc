@@ -13,7 +13,7 @@ If you plan to use StorageGRID platform services or Cloud Storage Pools, you mus
 
 == Networking for platform services
 
-As described in link:../admin/manage-platform-services-for-tenants.html[Manage platform services for tenants] and link:../tenant/what-platform-services-are.html[What are platform services?], platform services include external services that provide search integration, event notification, and CloudMirror replication.
+As described in link:../admin/manage-platform-services-for-tenants.html[Manage platform services for tenants] and link:../tenant/what-platform-services-are.html[Manage platform services], platform services include external services that provide search integration, event notification, and CloudMirror replication.
 
 Platform services require access from Storage Nodes that host the StorageGRID ADC service to the external service endpoints. Examples for providing access include:
 

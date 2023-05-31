@@ -61,6 +61,6 @@ For a non-AWS target, enter the URL of the system hosting the bucket, including 
 
 . Select *Apply Changes*.
 +
-The specified configuration settings are validated and applied to your StorageGRID system. Once configured, the target can't be changed.
+The specified configuration settings are validated and applied to your StorageGRID system. After the settings are applied, the target can't be changed.
 
 

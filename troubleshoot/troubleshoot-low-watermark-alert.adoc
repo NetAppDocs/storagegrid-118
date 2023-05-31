@@ -117,7 +117,7 @@ The last column shows the maximum optimized value of the Soft Read-Only Watermar
 
 . If at least one volume on every online Storage Node has more space available than maximum optimized watermark for that node, go to <<Use optimized watermarks>> to start using the optimized watermarks. 
 +
-Otherwise, expand your grid as soon as possible. Either link:../expand/adding-storage-volumes-to-storage-nodes.html[add storage volumes] to an existing node or link:../expand/adding-grid-nodes-to-existing-site-or-adding-new-site.html[add new Storage Nodes]. Then, go to <<Use optimized watermarks>> to update watermark settings. 
+Otherwise, expand the grid as soon as possible. Either link:../expand/adding-storage-volumes-to-storage-nodes.html[add storage volumes] to an existing node or link:../expand/adding-grid-nodes-to-existing-site-or-adding-new-site.html[add new Storage Nodes]. Then, go to <<Use optimized watermarks>> to update watermark settings. 
 
 . If you need to continue using custom values for the storage volume watermarks, link:../monitor/silencing-alert-notifications.html[silence] or link:../monitor/disabling-alert-rules.html[disable] the *Low read-only watermark override* alert.
 +

@@ -52,7 +52,7 @@ In contrast, search integration requests are sent when objects are deleted becau
 |Object size
 |The maximum size for objects that can be replicated to a destination bucket by the CloudMirror replication service is 5 TiB, which is the same as the maximum _supported_ object size.
 
-*Note*: The maximum _recommended_ size for a single PUT Object operation is 5 GiB (5,368,709,120 bytes). If you have objects that are larger than 5 GiB, use multipart upload instead. 
+*Note*: The maximum _recommended_ size for a single PutObject operation is 5 GiB (5,368,709,120 bytes). If you have objects that are larger than 5 GiB, use multipart upload instead. 
 
 |Bucket versioning and version IDs
 |If the source S3 bucket in StorageGRID has versioning enabled, you should also enable versioning for the destination bucket.
@@ -62,9 +62,9 @@ When using versioning, note that the ordering of object versions in the destinat
 *Note*: Version IDs for the source bucket in StorageGRID aren't related to the version IDs for the destination bucket.
 
 |Tagging for object versions
-|The CloudMirror service does not replicate any PUT Object tagging or DELETE Object tagging requests that supply a version ID, due to limitations in the S3 protocol. Because version IDs for the source and destination aren't related, there is no way to ensure that a tag update to a specific version ID will be replicated.
+|The CloudMirror service does not replicate any PutObjectTagging or DeleteObjectTagging requests that supply a version ID, due to limitations in the S3 protocol. Because version IDs for the source and destination aren't related, there is no way to ensure that a tag update to a specific version ID will be replicated.
 
-In contrast, the CloudMirror service does replicate PUT Object tagging requests or DELETE Object tagging requests that don't specify a version ID. These requests update the tags for the latest key (or the latest version if the bucket is versioned). Normal ingests with tags (not tagging updates) are also replicated.
+In contrast, the CloudMirror service does replicate PutObjectTagging requests or DeleteObjectTagging requests that don't specify a version ID. These requests update the tags for the latest key (or the latest version if the bucket is versioned). Normal ingests with tags (not tagging updates) are also replicated.
 
 |Multipart uploads and `ETag` values
 |When mirroring objects that were uploaded using a multipart upload, the CloudMirror service does not preserve the parts. As a result, the `ETag` value for the mirrored object will be different than the `ETag` value of the original object.
@@ -73,6 +73,6 @@ In contrast, the CloudMirror service does replicate PUT Object tagging requests 
 |The CloudMirror service does not support objects that are encrypted with SSE-C. If you attempt to ingest an object into the source bucket for CloudMirror replication and the request includes the SSE-C request headers, the operation fails.
 
 |Bucket with S3 Object Lock enabled
-|If the destination S3 bucket for CloudMirror replication has S3 Object Lock enabled, the attempt to configure bucket replication (PUT Bucket replication) will fail with an AccessDenied error.
+|If the destination S3 bucket for CloudMirror replication has S3 Object Lock enabled, the attempt to configure bucket replication (PutBucketReplication) will fail with an AccessDenied error.
 
 |===

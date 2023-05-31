@@ -11,7 +11,7 @@ summary: 'The PUT Bucket metadata notification configuration request allows you 
 [.lead]
 The PUT Bucket metadata notification configuration request allows you to enable the search integration service for individual buckets. The metadata notification configuration XML that you supply in the request body specifies the objects whose metadata is sent to the destination search index.
 
-You have the s3:PutBucketMetadataNotification permission for a bucket, or be account root, to complete this operation.
+You must have the s3:PutBucketMetadataNotification permission for a bucket, or be account root, to complete this operation.
 
 == Request
 

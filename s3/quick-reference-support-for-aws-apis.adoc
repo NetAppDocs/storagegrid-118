@@ -71,7 +71,7 @@ StorageGRID supports these request body XML tags:
 * `PartNumber`
 
 .StorageGRID documentation
-link:complete-multipart-upload.html[Complete Multipart Upload]
+link:complete-multipart-upload.html[CompleteMultipartUpload]
 
 
 //CopyObject
@@ -105,7 +105,7 @@ StorageGRID supports all <<common-params, common parameters and headers>> for th
 None
 
 .StorageGRID documentation
-link:put-object-copy.html[PUT Object-Copy]
+link:put-object-copy.html[CopyObject]
 
 
 //CreateBucket
@@ -149,7 +149,7 @@ StorageGRID supports all <<common-params, common parameters and headers>> for th
 None
 
 .StorageGRID documentation
-link:initiate-multipart-upload.html[Initiate Multipart Upload]
+link:initiate-multipart-upload.html[CreateMultipartUpload]
 
 
 //DeleteBucket
@@ -269,7 +269,7 @@ StorageGRID supports all <<common-params, common parameters and headers>> for th
 StorageGRID supports all request body parameters defined by the Amazon S3 REST API at the time of implementation.
 
 .StorageGRID documentation
-link:operations-on-objects.html[Operations on objects] (DELETE Multiple Objects)
+link:operations-on-objects.html[Operations on objects]
 
 
 //DeleteObjectTagging
@@ -334,7 +334,7 @@ None
 
 .StorageGRID documentation
 
-* link:operations-on-buckets.html[Operations on buckets] (GET Bucket lifecycle)
+* link:operations-on-buckets.html[Operations on buckets]
 * link:create-s3-lifecycle-configuration.html[Create S3 lifecycle configuration]
 
 
@@ -361,7 +361,7 @@ StorageGRID supports all <<common-params, common parameters and headers>> for th
 None
 
 .StorageGRID documentation
-link:operations-on-buckets.html[Operations on buckets] (GET Bucket notification)
+link:operations-on-buckets.html[Operations on buckets]
 
 
 //GetBucketPolicy
@@ -446,7 +446,7 @@ And these additional request headers:
 None
 
 .StorageGRID documentation
-link:get-object.html[GET Object]
+link:get-object.html[GetObject]
 
 
 //GetObjectAcl
@@ -546,7 +546,7 @@ StorageGRID supports all <<common-params, common parameters and headers>> for th
 None
 
 .StorageGRID documentation
-link:head-object.html[HEAD Object]
+link:head-object.html[HeadObject]
 
 
 // ListBuckets
@@ -559,7 +559,7 @@ StorageGRID supports all <<common-params, common parameters and headers>> for th
 None
 
 .StorageGRID documentation
-link:operations-on-the-service.html[Operations on the service > GET Service]
+link:operations-on-the-service.html[Operations on the service > ListBuckets]
 
 
 //ListMultipartUploads
@@ -579,7 +579,7 @@ StorageGRID supports all <<common-params, common parameters and headers>> for th
 None
 
 .StorageGRID documentation
-link:list-multipart-uploads.html[List Multipart Uploads]
+link:list-multipart-uploads.html[ListMultipartUploads]
 
 
 // ListObjects
@@ -598,7 +598,7 @@ StorageGRID supports all <<common-params, common parameters and headers>> for th
 None
 
 .StorageGRID documentation
-link:operations-on-buckets.html[Operations on buckets] (GET Bucket)
+link:operations-on-buckets.html[Operations on buckets]
 
 
 // ListObjectsV2
@@ -619,7 +619,7 @@ StorageGRID supports all <<common-params, common parameters and headers>> for th
 None
 
 .StorageGRID documentation
-link:operations-on-buckets.html[Operations on buckets] (GET Bucket)
+link:operations-on-buckets.html[Operations on buckets]
 
 
 // ListObjectVersions
@@ -639,7 +639,7 @@ StorageGRID supports all <<common-params, common parameters and headers>> for th
 None
 
 .StorageGRID documentation
-link:operations-on-buckets.html[Operations on buckets] (GET Bucket Object versions)
+link:operations-on-buckets.html[Operations on buckets]
 
 
 // ListParts
@@ -656,7 +656,7 @@ StorageGRID supports all <<common-params, common parameters and headers>> for th
 None
 
 .StorageGRID documentation
-link:list-multipart-uploads.html[List Multipart Uploads]
+link:list-multipart-uploads.html[ListMultipartUploads]
 
 // PutBucketCors
 == https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutBucketCors.html[PutBucketCors^]
@@ -720,7 +720,7 @@ StorageGRID supports these request body XML tags:
 * `Status`	
 
 .StorageGRID documentation
-* link:operations-on-buckets.html[Operations on buckets] (PUT Bucket lifecycle)
+* link:operations-on-buckets.html[Operations on buckets]
 * link:create-s3-lifecycle-configuration.html[Create S3 lifecycle configuration]
 
 
@@ -747,7 +747,7 @@ StorageGRID supports these request body XML tags:
 * `Topic`		
 
 .StorageGRID documentation
-link:operations-on-buckets.html[Operations on buckets] (PUT Bucket notification)
+link:operations-on-buckets.html[Operations on buckets]
 
 
 //PutBucketPolicy
@@ -834,7 +834,7 @@ StorageGRID supports all <<common-params, common parameters and headers>> for th
 * Binary data of the object
 
 .StorageGRID documentation
-link:put-object.html[PUT Object]
+link:put-object.html[PutObject]
 
 
 //PutObjectLegalHold
@@ -891,6 +891,15 @@ StorageGRID supports all request body parameters defined by the Amazon S3 REST A
 link:operations-on-objects.html[Operations on objects]
 
 
+//RestoreObject
+== https://docs.aws.amazon.com/AmazonS3/latest/API/API_RestoreObject.html[RestoreObject^]
+
+.URI query parameters and request headers
+StorageGRID supports all <<common-params, common parameters and headers>> for this request.
+
+.Request body
+For details about the supported body fields, see link:post-object-restore.html[RestoreObject].
+
 // SelectObjectContent
 == https://docs.aws.amazon.com/AmazonS3/latest/API/API_SelectObjectContent.html[SelectObjectContent^]
 
@@ -901,7 +910,7 @@ StorageGRID supports all <<common-params, common parameters and headers>> for th
 For details about the supported body fields, see the following:
 
 * link:use-s3-select.html[Use S3 Select]
-* link:select-object-content.html[Select Object Content]
+* link:select-object-content.html[SelectObjectContent]
 
 
 // UploadPart
@@ -923,7 +932,7 @@ And these additional request headers:
 * Binary data of the part
 
 .StorageGRID documentation
-link:upload-part.html[Upload Part]
+link:upload-part.html[UploadPart]
 
 
 // UploadPartCopy
@@ -954,7 +963,7 @@ And these additional request headers:
 None
 
 .StorageGRID documentation
-link:upload-part-copy.html[Upload Part - Copy]
+link:upload-part-copy.html[UploadPartCopy]
 
 
 

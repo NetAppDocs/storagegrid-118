@@ -1,14 +1,12 @@
 section: rhel
 title: Install Red Hat Enterprise Linux or CentOS
 entries:
-  - title: Overview
+  - title: Quick start
     pdf-filename: Install Red Hat Enterprise Linux or CentOS for StorageGRID
     url: "/rhel/index.html"
   - title: Plan and prepare for Red Hat or CentOS installation
     entries:
-    - title: Before you install (Red Hat or CentOS)
-      url: "/rhel/planning-and-preparation.html"
-    - title: Required materials
+    - title: Required information and materials
       url: "/rhel/required-materials.html"
     - title: Download and extract StorageGRID installation files
       url: "/rhel/downloading-and-extracting-storagegrid-installation-files.html"
@@ -18,8 +16,6 @@ entries:
       url: "/rhel/storage-and-performance-requirements.html"
     - title: Node container migration requirements
       url: "/rhel/node-container-migration-requirements.html"
-    - title: Deployment tools
-      url: "/rhel/deployment-tools.html"
     - title: Prepare the hosts (Red Hat or CentOS)
       entries:
       - title: How host-wide settings change

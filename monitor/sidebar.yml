@@ -31,7 +31,7 @@ entries:
       url: "/monitor/viewing-platform-services-tab.html"
     - title: View the SANtricity System Manager tab
       url: "/monitor/viewing-santricity-system-manager-tab.html"
-  - title: Information you should monitor regularly
+  - title: Information to monitor regularly
     entries:
     - title: What and when to monitor
       url: "/monitor/information-you-should-monitor-regularly.html"
@@ -45,12 +45,12 @@ entries:
       url: "/monitor/monitoring-network-connections-and-performance.html"
     - title: Monitor tenant activity
       url: "/monitor/monitoring-tenant-activity.html"
+    - title: Monitor S3 and Swift client operations
+      url: "/monitor/monitoring-object-ingest-and-retrieval-rates.html"
     - title: Monitor load balancing operations
       url: "/monitor/monitoring-load-balancing-operations.html"      
     - title: Monitor grid federation connections
       url: "/monitor/grid-federation-monitor-connections.html"   
-    - title: Apply hotfixes or upgrade software if necessary
-      url: "/monitor/applying-hotfixes-or-upgrading-software-if-necessary.html"
     - title: Monitor archival capacity
       url: "/monitor/monitoring-archival-capacity.html"      
   - title: Alerts and alarms

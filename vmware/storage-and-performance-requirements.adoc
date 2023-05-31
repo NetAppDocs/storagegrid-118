@@ -33,7 +33,7 @@ Other types of nodes, such as Admin Nodes or Gateway Nodes, can be deployed on t
 
 == Storage requirements by node type
 
-In a production environment, the virtual machines for StorageGRID grid nodes must meet different requirements, depending on the types of nodes.
+In a production environment, the virtual machines for StorageGRID nodes must meet different requirements, depending on the types of nodes.
 
 NOTE: Disk snapshots can't be used to restore grid nodes. Instead, refer to the link:../maintain/grid-node-recovery-procedures.html[grid node recovery] procedures for each type of node.
 

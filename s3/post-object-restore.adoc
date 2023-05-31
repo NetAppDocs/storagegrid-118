@@ -1,33 +1,33 @@
 ---
 permalink: s3/post-object-restore.html
 sidebar: sidebar
-keywords: post, post object restore, object
-summary: 'You can use the S3 POST Object restore request to restore an object that is stored in a Cloud Storage Pool.'
+keywords: post, RestoreObject, object
+summary: 'You can use the S3 RestoreObject request to restore an object that is stored in a Cloud Storage Pool.'
 ---
-= POST Object restore
+= RestoreObject
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You can use the S3 POST Object restore request to restore an object that is stored in a Cloud Storage Pool.
+You can use the S3 RestoreObject request to restore an object that is stored in a Cloud Storage Pool.
 
 == Supported request type
 
-StorageGRID only supports POST Object restore requests to restore an object. It does not support the `SELECT` type of restoration. Select requests return `XNotImplemented`.
+StorageGRID only supports RestoreObject requests to restore an object. It does not support the `SELECT` type of restoration. Select requests return `XNotImplemented`.
 
 == Versioning
 
 Optionally, specify `versionId` to restore a specific version of an object in a versioned bucket. If you don't specify `versionId`, the most recent version of the object is restored
 
-== Behavior of POST Object restore on Cloud Storage Pool objects
+== Behavior of RestoreObject on Cloud Storage Pool objects
 
-If an object has been stored in a Cloud Storage Pool (see the instructions for managing objects with information lifecycle management), a POST Object restore request has the following behavior, based on the state of the object. See "`HEAD Object`" for more details.
+If an object has been stored in a link:../ilm/what-cloud-storage-pool-is.html[Cloud Storage Pool], a RestoreObject request has the following behavior, based on the state of the object. See link:head-object.html[HeadObject] for more details.
 
-NOTE: If an object is stored in a Cloud Storage Pool and one or more copies of the object also exist on the grid, there is no need to restore the object by issuing a POST Object restore request. Instead, the local copy can be retrieved directly, using a GET Object request.
+NOTE: If an object is stored in a Cloud Storage Pool and one or more copies of the object also exist on the grid, there is no need to restore the object by issuing a RestoreObject request. Instead, the local copy can be retrieved directly, using a GetObject request.
 
 [cols="1a,2a" options="header"]
 |===
-| State of object| Behavior of POST Object restore
+| State of object| Behavior of RestoreObject
 
 | Object ingested into StorageGRID but not yet evaluated by ILM, or object is not in a Cloud Storage Pool
 
@@ -53,13 +53,6 @@ Optionally, use the `Tier` request element to determine how long the restore job
 
 | `200 OK`
 
-*Note:* If an object has been restored to a retrievable state, you can change its `expiry-date` by reissuing the POST Object restore request with a new value for `Days`. The restoration date is updated relative to the time of the request.
+*Note:* If an object has been restored to a retrievable state, you can change its `expiry-date` by reissuing the RestoreObject request with a new value for `Days`. The restoration date is updated relative to the time of the request.
 
 |===
-.Related information
-
-link:../ilm/index.html[Manage objects with ILM]
-
-link:head-object.html[HEAD Object]
-
-link:s3-operations-tracked-in-audit-logs.html[S3 operations tracked in audit logs]

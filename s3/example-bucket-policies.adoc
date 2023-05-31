@@ -22,7 +22,7 @@ A bucket policy can be configured using the AWS CLI as per the following command
 
 == Example: Allow everyone read-only access to a bucket
 
-In this example, everyone, including anonymous, is allowed to list objects in the bucket and perform Get Object operations on all objects in the bucket. All other operations will be denied. Note that this policy might not be particularly useful because no one except the account root has permissions to write to the bucket.
+In this example, everyone, including anonymous, is allowed to list objects in the bucket and perform GetObject operations on all objects in the bucket. All other operations will be denied. Note that this policy might not be particularly useful because no one except the account root has permissions to write to the bucket.
 
 ----
 {
@@ -85,7 +85,7 @@ NOTE: In StorageGRID, objects created by a non-owner account (including anonymou
 
 == Example: Allow everyone read-only access to a bucket and full access by specified group
 
-In this example, everyone including anonymous, is allowed to List the bucket and perform GET Object operations on all objects in the bucket, while only users belonging the group `Marketing` in the specified account are allowed full access.
+In this example, everyone including anonymous, is allowed to List the bucket and perform GetObject operations on all objects in the bucket, while only users belonging the group `Marketing` in the specified account are allowed full access.
 
 ----
 {

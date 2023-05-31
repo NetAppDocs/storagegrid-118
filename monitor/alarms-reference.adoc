@@ -244,7 +244,7 @@ ARC
 a|
 To diagnose and correct this problem, contact technical support.
 
-Once the problem that triggered this alarm is addressed, reset the failures count. Select *SUPPORT* > *Tools* > *Grid topology*. Then select *_site_* > *_grid node_* > *ARC* > *Retrieve* > *Configuration* > *Main*, select *Reset Verification Failure Count* and click *Apply Changes*.
+After the problem that triggered this alarm is addressed, reset the failures count. Select *SUPPORT* > *Tools* > *Grid topology*. Then select *_site_* > *_grid node_* > *ARC* > *Retrieve* > *Configuration* > *Main*, select *Reset Verification Failure Count* and click *Apply Changes*.
 
 a|
 ARVF
@@ -426,7 +426,7 @@ DDS
 a|
 This alarm is triggered when the Metadata Effective Space (CEMS) reaches 70% full (minor alarm), 90% full (major alarm), and 100% full (critical alarm).
 
-If this alarm reaches the 90% threshold, a warning appears on the dashboard in the Grid Manager. You must perform an expansion procedure to add new Storage Nodes as soon as possible. See link:../expand/index.html[Expand your grid].
+If this alarm reaches the 90% threshold, a warning appears on the dashboard in the Grid Manager. You must perform an expansion procedure to add new Storage Nodes as soon as possible. See link:../expand/index.html[Expand a grid].
 
 If this alarm reaches the 100% threshold, you must stop ingesting objects and add Storage Nodes immediately. Cassandra requires a certain amount of space to perform essential operations such as compaction and repair. These operations will be impacted if object metadata uses more than 100% of the allowed space. Undesirable results can occur.
 
