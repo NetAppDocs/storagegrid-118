@@ -67,7 +67,7 @@ The following is a complete list of StorageGRID services.
 
 | Account Service Forwarder
 | Provides an interface for the Load Balancer service to query the Account Service on remote hosts and provides notifications of Load Balancer Endpoint configuration changes to the Load Balancer service.
-| Load Balancer service is present on Admin Nodes and Gateway Nodes
+| Load Balancer service on Admin Nodes and Gateway Nodes
 
 | ADC (Administrative Domain Controller)
 | Maintains topology information, provides authentication services, and responds to queries from the LDR and CMN services.
