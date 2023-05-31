@@ -22,7 +22,7 @@ entries:
         url: "/ilm/why-you-should-not-use-single-copy-replication.html"
       - title: What is erasure coding
         url: "/ilm/what-erasure-coding-is.html"
-      - title: What are erasure coding schemes?
+      - title: What are erasure coding schemes
         url: "/ilm/what-erasure-coding-schemes-are.html"
       - title: Advantages, disadvantages, and requirements for erasure coding
         url: "/ilm/advantages-disadvantages-and-requirements-for-ec.html"
