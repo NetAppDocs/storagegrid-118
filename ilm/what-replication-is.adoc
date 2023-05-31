@@ -23,8 +23,8 @@ NOTE: StorageGRID can store only one replicated copy of an object on any given S
 
 .Related information
 
-* link:what-erasure-coding-is.html[What is erasure coding?]
+* link:what-erasure-coding-is.html[What is erasure coding]
 
-* link:what-storage-pool-is.html[What is a storage pool?]
+* link:what-storage-pool-is.html[What is a storage pool]
 
 * link:using-multiple-storage-pools-for-cross-site-replication.html[Enable site-loss protection using replication and erasure coding]
