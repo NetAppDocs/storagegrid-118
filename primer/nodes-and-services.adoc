@@ -15,7 +15,7 @@ The basic building block of a StorageGRID system is the grid node. Nodes contain
 
 The StorageGRID system uses four types of grid nodes:
 
-Admin Nodes and primary Admin Nodes:: Provide management services such as system configuration, monitoring, and logging. When you sign in to the Grid Manager, you are connecting to an Admin Node. Each grid must have one primary Admin Node and might have additional non-primary Admin Nodes for redundancy. You can connect to any Admin Node, and each Admin Node displays a similar view of the StorageGRID system. However, maintenance procedures must be performed using the primary Admin Node.
+Admin Nodes:: Provide management services such as system configuration, monitoring, and logging. When you sign in to the Grid Manager, you are connecting to an Admin Node. Each grid must have one primary Admin Node and might have additional non-primary Admin Nodes for redundancy. You can connect to any Admin Node, and each Admin Node displays a similar view of the StorageGRID system. However, maintenance procedures must be performed using the primary Admin Node.
 +
 Admin Nodes can also be used to load balance S3 and Swift client traffic.
 +

@@ -16,7 +16,7 @@ Each StorageGRID system must have at least three Storage Nodes. If you have mult
 
 
 == Types of Storage Nodes
-All Storage Nodes installed before StorageGRID 11.8 store both objects and the metadata for those objects. Starting in StorageGRID 11.8, you can choose the Storage Node type when you install a new node, as follows:
+All Storage Nodes that were installed before StorageGRID 11.8 store both objects and the metadata for those objects. Starting in StorageGRID 11.8, you can choose the Storage Node type when you install a new node, as follows:
 
 Object and metadata Storage Nodes::
 By default, all new Storage Nodes installed in StorageGRID 11.8 will store both objects and metadata.
@@ -24,7 +24,7 @@ By default, all new Storage Nodes installed in StorageGRID 11.8 will store both 
 Metadata-only Storage Nodes::
 As required, you can specify that a new Storage Node be used exclusively for metadata.
 +
-TIP: You can only select the Storage Node type when installing the node initially. You can't change the type for an existing node. 
+TIP: You can only select the Storage Node type when installing the node initially. You can't change the type after the node has been installed.
 
 Installing a metadata-only node is typically not required. However, using a Storage Node exclusively for metadata can make sense if your grid stores a very large number of small objects. Installing dedicated metadata capacity provides a better balance between the space needed for a very large number of small objects and the space needed for the metadata for all those objects.
 
@@ -73,7 +73,11 @@ NOTE: Some services, such as the ADC service and the RSM service, typically exis
 |===
 
 
-== [[adc]]What is the ADC service?
+// Start snippet: collapsible block (open on page load)
+.[[adc]]What is the ADC service?
+[%collapsible]
+====
+
 
 The Administrative Domain Controller (ADC) service authenticates grid nodes and their connections with each other. The ADC service is hosted on each of the first three Storage Nodes at a site.
 
@@ -85,14 +89,22 @@ In general, all grid nodes maintain a connection to at least one ADC service. Th
 
 The connection of each grid node lets the ADC service gather topology information. This grid node information includes the CPU load, available disk space (if it has storage), supported services, and the grid node's site ID. Other services ask the ADC service for topology information through topology queries. The ADC service responds to each query with the latest information received from the StorageGRID system.
 
+====
 
-== [[dds]]What is the DDS service?
+
+.[[dds]]What is the DDS service?
+[%collapsible]
+====
 
 Each Storage Node includes the Distributed Data Store (DDS) service. This service interfaces with the Cassandra database to perform background tasks on the object metadata stored in the StorageGRID system.
 
 The DDS service tracks the total number of objects ingested into the StorageGRID system as well as the total number of objects ingested through each of the system's supported interfaces (S3 or Swift). 
 
-== [[ldr]]What is the LDR service?
+====
+
+.[[ldr]]What is the LDR service?
+[%collapsible]
+====
 
 Each Storage Node includes the Local Distribution Router (LDR) service. This service handles content transport functions, including data storage, routing, and request handling. The LDR service does most of the StorageGRID system's hard work by handling data transfer loads and data traffic functions.
 
@@ -108,18 +120,20 @@ The LDR service handles the following tasks:
 
 The LDR service also maps each S3 and Swift object to its unique UUID.
 
-=== Object stores
+Object stores::
 
 The underlying data storage of an LDR service is divided into a fixed number of object stores (also known as storage volumes). Each object store is a separate mount point.
-
++
 The object stores in a Storage Node are identified by a hexadecimal number from 0000 to 002F, which is known as the volume ID. Space is reserved in the first object store (volume 0) for object metadata in a Cassandra database; any remaining space on that volume is used for object data. All other object stores are used exclusively for object data, which includes replicated copies and erasure-coded fragments.
-
++
 To ensure even space usage for replicated copies, object data for a given object is stored to one object store based on available storage space. When an object store fills to capacity, the remaining object stores continue to store objects until there is no more room on the Storage Node.
 
-=== Metadata protection
+Metadata protection::
 
 StorageGRID stores object metadata in a Cassandra database, which interfaces with the LDR service.
-
++
 To ensure redundancy and thus protection against loss, three copies of object metadata are maintained at each site. This replication is non-configurable and performed automatically. For details, see link:../admin/managing-object-metadata-storage.html[Manage object metadata storage].
+
+====
 
 
