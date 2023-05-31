@@ -20,7 +20,7 @@ entries:
         url: "/ilm/what-replication-is.html"
       - title: Why you should not use single-copy replication
         url: "/ilm/why-you-should-not-use-single-copy-replication.html"
-      - title: What is erasure coding?
+      - title: What is erasure coding
         url: "/ilm/what-erasure-coding-is.html"
       - title: What are erasure coding schemes?
         url: "/ilm/what-erasure-coding-schemes-are.html"
@@ -34,7 +34,7 @@ entries:
     url: "/ilm/creating-and-assigning-storage-grades.html"
   - title: Use storage pools
     entries:
-    - title: What is a storage pool?
+    - title: What is a storage pool
       url: "/ilm/what-storage-pool-is.html"
     - title: Guidelines for creating storage pools
       url: "/ilm/guidelines-for-creating-storage-pools.html"
@@ -50,7 +50,7 @@ entries:
       url: "/ilm/removing-storage-pool.html"
   - title: Use Cloud Storage Pools
     entries:
-    - title: What is a Cloud Storage Pool?
+    - title: What is a Cloud Storage Pool
       url: "/ilm/what-cloud-storage-pool-is.html"
     - title: Lifecycle of Cloud Storage Pool object
       url: "/ilm/lifecycle-of-cloud-storage-pool-object.html"

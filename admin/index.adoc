@@ -12,9 +12,13 @@ summary: 'Use these instructions to configure and administer a StorageGRID syste
 Use these instructions to configure and administer a StorageGRID system.
 
 == About these instructions
-These instructions describe how to use the Grid Manager to set up groups and users, create tenant accounts to allow S3 and Swift client applications to store and retrieve objects, configure and manage StorageGRID networks, configure AutoSupport, manage node settings, and more.
+The primary tasks for configuring and administering StorageGRID allow you to:
 
-These instructions are for technical personnel who will be configuring, administering, and supporting a StorageGRID system after it has been installed.
+* Use the Grid Manager to set up groups and users
+* Create tenant accounts to allow S3 and Swift client applications to store and retrieve objects
+* Configure and manage StorageGRID networks
+* Configure AutoSupport
+* Manage node settings
 
 == Before you begin
 * You have a general understanding of the StorageGRID system.

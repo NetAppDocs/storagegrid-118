@@ -40,6 +40,3 @@ image::../media/dashboard_health_panel_license_status.png[Dashboard Health Statu
 This date is read from the current license file and might be out of date if you extended or renewed the support service contract after obtaining the license file. To update this value, see link:updating-storagegrid-license-information.html[Update StorageGRID license information]. You can also view the actual contract end date using Active IQ.
 
 * Contents of the license text file
-+
-NOTE: For licenses issued before StorageGRID 10.3, the licensed storage capacity is not included in the license file, and a "See License Agreement" message is displayed instead of a value.
-
