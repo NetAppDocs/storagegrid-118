@@ -123,7 +123,7 @@ The following is a complete list of StorageGRID services.
 
 | Load Balancer (nginx-gw)
 | Provides load balancing of S3 and Swift traffic from clients to Storage Nodes. The Load Balancer service can be configured through the Load Balancer Endpoints configuration page. This service is also known as the nginx-gw service.
-| The Load Balancer service is present on Admin Nodes and Gateway Nodes. 
+| Admin and Gateway Nodes
 
 | LDR (Local Distribution Router)
 | Manages the storage and transfer of content within the grid.
