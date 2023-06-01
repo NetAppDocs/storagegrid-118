@@ -25,16 +25,8 @@ This release of StorageGRID introduces the following features and functional cha
 
 == Other enhancements
 
-=== Lisa's other enhancements
-
-
-=== Kathy's other enhancements
-
-==== Grid Manager changes
-* The *Management API stack trace* security option lets you control whether a stack trace is returned in Grid Manager and Tenant Manager API error responses. See link:../admin/admin/changing-browser-session-timeout-interface.html[Change interface settings].
-
-
-=== Kevin's other enhancements
+=== Grid Manager changes
+* The *Management API stack trace* security option lets you control whether a stack trace is returned in Grid Manager and Tenant Manager API error responses. See link:../admin/changing-browser-session-timeout-interface.html[Change interface settings].
 
 
 === New alerts
