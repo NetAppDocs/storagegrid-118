@@ -29,7 +29,7 @@ By default, Cloud Storage Pools use the following ports:
 
 You can specify a different port when you create or edit a Cloud Storage Pool.
 
-If you use a non-transparent proxy server, you must also link:../admin/configuring-storage-proxy-settings.html[configure a Storage proxy] to allow messages to be sent to external endpoints, such as an endpoint on the internet.
+If you use a non-transparent proxy server, you must also link:../admin/configuring-storage-proxy-settings.html[configure a storage proxy] to allow messages to be sent to external endpoints, such as an endpoint on the internet.
 
 == Considerations for costs
 

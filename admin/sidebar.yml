@@ -156,9 +156,9 @@ entries:
         url: "/admin/kms-removing.html"
     - title: Manage proxy settings
       entries:
-      - title: Configure Storage proxy settings
+      - title: Configure storage proxy settings
         url: "/admin/configuring-storage-proxy-settings.html"
-      - title: Configure Admin proxy settings
+      - title: Configure admin proxy settings
         url: "/admin/configuring-admin-proxy-settings.html"
     - title: Control firewalls     
       entries:
