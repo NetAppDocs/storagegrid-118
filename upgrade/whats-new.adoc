@@ -30,12 +30,19 @@ This release of StorageGRID introduces the following features and functional cha
 
 === Kathy's other enhancements
 
+==== Grid Manager changes
+* The *Management API stack trace* security option lets you control whether a stack trace is returned in Grid Manager and Tenant Manager API error responses. See link:../admin/admin/changing-browser-session-timeout-interface.html[Change interface settings].
+
 
 === Kevin's other enhancements
 
 
 === New alerts
 The following new alerts were added for StorageGRID 11.8:
+
+* Appliance DAS drive locator light on
+* Reboot required to disable FIPS
+* Reboot required to enable FIPS
 
 
 === Documentation changes
