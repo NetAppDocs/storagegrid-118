@@ -24,53 +24,53 @@ The table summarizes the capabilities of primary and non-primary Admin Nodes.
 | Primary Admin Node
 | Non-primary Admin Node
 
-| Includes the <<ams,AMS>> service?
+| Includes the <<ams,AMS>> service
 | Yes
 | Yes
 
-| Includes the <<cmn,CMN>> service?
+| Includes the <<cmn,CMN>> service
 | Yes
 | No
 
-| Includes the <<nms,NMS>> service?
+| Includes the <<nms,NMS>> service
+| Yes
+| Yes
+
+| Includes the <<prometheus,Prometheus>> service
+| Yes
+| Yes
+
+| Includes the <<ssm,SSM>> service
+| Yes
+| Yes
+
+| Includes the <<load-balancer,Load Balancer>> and <<high-availability,High Availability>> services
+| Yes
+| Yes
+
+| Supports the <<mgmt-api,Management Application Program Interface>> (mgmt-api)
+| Yes
+| Yes
+
+| Can be used for all network-related maintenance tasks, for example IP address change and updating NTP servers
 | Yes
 | No
 
-| Includes the <<prometheus,Prometheus>> service?
-| Yes
-| Yes
-
-| Includes the <<ssm,SSM>> service?
-| Yes
-| Yes
-
-| Includes the <<load-balancer,Load Balancer>> and <<high-availability,High Availability>> services?
-| Yes
-| Load balancer supported
-
-| Supports the <<mgmt-api,Management Application Program Interface>> (mgmt-api)?
+| Can perform EC rebalance after Storage Node expansion
 | Yes
 | No
 
-| Can be used for all network-related maintenance tasks, for example IP address change and updating NTP servers?
+| Can be used to run the repair data script to repair EC or replicate data after Storage Node recovery
 | Yes
 | No
 
-| Can perform EC rebalance after Storage Node expansion?
+| Can collect log files and system data from one or more nodes
 | Yes
 | No
 
-| Includes the repair data script to repair EC or replicate data after storage node recovery? 
-| Yes
-| No
-
-| Can collect log files and system data from one or more nodes?
-| Yes
-| Yes
-
-| Acts as the <<preferred-sender,preferred sender>> for alert notifications, AutoSupport messages, and SNMP traps and informs?
-| Yes
-| No, but can be a standby sender.
+| Sends alert notifications, AutoSupport messages, and SNMP traps and informs
+| Yes. Acts as the <<preferred-sender,preferred sender>>.
+| Yes. Acts as a standby sender.
 |===
 
 
