@@ -30,7 +30,7 @@ The right side of the dashboard contains the following information:
 
 * The total number of objects for the tenant.
 +
-For an S3 account, if no objects have been ingested and you have the Root access permission, getting started guidelines appear instead of the total number of objects.
+For an S3 account, if no objects have been ingested and you have the link:tenant-management-permissions.html[Root access permission], getting started guidelines appear instead of the total number of objects.
 
 * Tenant details, including the tenant account name and ID and whether the tenant can use link:what-platform-services-are.html[platform services], link:../admin/using-identity-federation.html[its own identity source], link:grid-federation-account-clone.html[grid federation], or  link:../admin/manage-s3-select-for-tenant-accounts.html[S3 Select] (only the permissions that are enabled are listed).
 

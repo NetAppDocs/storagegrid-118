@@ -153,7 +153,7 @@ If strict hostname validation is required, you can use a script to generate the 
 
 .Before you begin
 
-* You have specific access permissions.
+* You have link:admin-group-permissions.html[specific access permissions].
 * You have the `Passwords.txt` file.
 
 .About this task

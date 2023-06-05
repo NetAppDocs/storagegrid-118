@@ -17,7 +17,7 @@ NOTE: Support for Swift client applications has been deprecated and will be remo
 
 * You are signed in to the Grid Manager using a link:../admin/web-browser-requirements.html[supported web browser].
 
-* You have the Root access permission.
+* You have the link:admin-group-permissions.html[Root access permission].
 
 * You have reviewed the link:managing-load-balancing.html[considerations for load balancing].
 

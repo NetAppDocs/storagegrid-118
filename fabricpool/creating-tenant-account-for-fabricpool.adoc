@@ -18,7 +18,7 @@ For details about this task, see link:../admin/creating-tenant-account.html[Crea
 
 .Before you begin
 * You are signed in to the Grid Manager using a link:../admin/web-browser-requirements.html[supported web browser].
-* You have specific access permissions.
+* You have link:../admin/admin-group-permissions.html[specific access permissions].
 
 .Steps
 . Select *TENANTS*.

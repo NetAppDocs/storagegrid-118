@@ -13,7 +13,7 @@ If you are currently using the *Cloud Tiering - Simple Storage Service (S3)* fea
 
 .Before you begin
 * You are signed in to the Grid Manager using a link:../admin/web-browser-requirements.html[supported web browser].
-* You have specific access permissions.
+* You have link:admin-group-permissions.html[specific access permissions].
 * You have already stored objects in the S3 bucket configured for Cloud Tiering.
 
 NOTE: Before migrating object data, contact your NetApp account representative to understand and manage any associated costs.
