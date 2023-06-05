@@ -60,9 +60,9 @@ The table summarizes the capabilities of primary and non-primary Admin Nodes.
 | Yes
 | No
 
-| Can be used to run the repair data script to repair EC or replicate data after Storage Node recovery
+| Can be used for the volume restoration procedure.
 | Yes
-| No
+| Yes. Note that the repair data script is not included on non-primary Admin Nodes.
 
 | Can collect log files and system data from one or more nodes
 | Yes
