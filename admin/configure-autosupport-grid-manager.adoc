@@ -15,7 +15,7 @@ You can enable the AutoSupport feature and the individual AutoSupport options wh
 .Before you begin
 
 * You are signed in to the Grid Manager using a link:../admin/web-browser-requirements.html[supported web browser].
-* You have the Root access or Other grid configuration permission.
+* You have the link:admin-group-permissions.html[Root access or Other grid configuration permission].
 * If you will use HTTPS for sending AutoSupport messages, you have provided outbound internet access to the primary Admin Node, either directly or link:configuring-admin-proxy-settings.html[using a proxy server] (inbound connections not required).
 * If HTTP is selected on the StorageGRID AutoSupport page, you have configured a proxy server to forward AutoSupport messages as HTTPS. NetApp's AutoSupport servers will reject messages sent using HTTP.
 

@@ -14,7 +14,7 @@ You can allow new S3 tenant accounts to use a grid federation connection between
 .Before you begin
 
 * You are signed in to the Grid Manager on either grid using a link:../admin/web-browser-requirements.html[supported web browser].
-* You have the Root access permission for the grid you are signed in to. 
+* You have the link:admin-group-permissions.html[Root access permission] for the grid you are signed in to. 
 * You have link:grid-federation-create-connection.html[created a grid federation connection] between two grids.
 * You have reviewed the workflows for link:grid-federation-what-is-account-clone.html[account clone] and link:grid-federation-what-is-cross-grid-replication.html[cross-grid replication].
 * As required, you have already configured single sign-on (SSO) or identify federation for both grids in the connection. See link:grid-federation-what-is-account-clone.html[What is account clone].
@@ -103,7 +103,7 @@ Before removing a tenant's permission to use a grid federation connection, note 
 .Before you begin
 
 * You are using a link:../admin/web-browser-requirements.html[supported web browser].
-* You have the Root access permission for both grids. 
+* You have the link:admin-group-permissions.html[Root access permission] for both grids. 
 
 
 === Disable replication for tenant buckets

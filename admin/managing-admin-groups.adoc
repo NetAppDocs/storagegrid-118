@@ -15,7 +15,7 @@ You can create admin groups to manage the security permissions for one or more a
 
 * You are signed in to the Grid Manager using a link:../admin/web-browser-requirements.html[supported web browser].
 
-* You have specific access permissions.
+* You have link:admin-group-permissions.html[specific access permissions].
 
 * If you plan to import a federated group, you have configured identity federation and the federated group already exists in the configured identity source.
 

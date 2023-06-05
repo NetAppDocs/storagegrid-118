@@ -13,7 +13,7 @@ If you are using platform services or Cloud Storage Pools, you can configure a n
 
 .Before you begin
 
-* You have specific access permissions.
+* You have link:admin-group-permissions.html[specific access permissions].
 * You are signed in to the Grid Manager using a link:../admin/web-browser-requirements.html[supported web browser].
 
 .About this task

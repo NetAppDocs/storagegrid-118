@@ -14,7 +14,7 @@ You can configure the retrieve settings for an Archive Node to set the state to 
 .Before you begin
 
 * You are signed in to the Grid Manager using a link:../admin/web-browser-requirements.html[supported web browser].
-* You have specific access permissions.
+* You have link:admin-group-permissions.html[specific access permissions].
 
 .Steps
 
