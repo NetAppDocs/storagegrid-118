@@ -2,26 +2,26 @@
 permalink: admin/changing-browser-session-timeout-interface.html
 sidebar: sidebar
 keywords: security, browser inactivity timeout, management API stack track
-summary: 'The interface security settings let you control whether users are signed out if they are inactive for more than a certain amount of time and whether a stack trace is included in API error responses.'
+summary: 'The interface security settings let you control whether users are signed out if they are inactive for more than the specified amount of time and whether a stack trace is included in API error responses.'
 ---
 = Change interface security settings
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-The interface security settings let you control whether users are signed out if they are inactive for more than a certain amount of time and whether a stack trace is included in API error responses.
+The interface security settings let you control whether users are signed out if they are inactive for more than the specified amount of time and whether a stack trace is included in API error responses.
 
 .Before you begin
 
 * You are signed in to the Grid Manager using a link:../admin/web-browser-requirements.html[supported web browser].
-* You have Root access permission.
+* You have link:admin-group-permissions.html[Root access permission].
 
 .About this task
 
-The *Security settings* > *Interface* tab includes the *Browser inactivity timeout* and *Management API stack trace* settings.
+The *Security settings* page includes the *Browser inactivity timeout* and *Management API stack trace* settings.
 
 Browser inactivity timeout::
-Indicates how long a user's browser can be inactive before the user is signed out. The default is 15 minutes, but you can increase or decrease this timeout period as required.
+Indicates how long a user's browser can be inactive before the user is signed out. The default is 15 minutes.
 +
 Browser inactivity timeout is also controlled by the following:
 +
@@ -49,7 +49,7 @@ This option is disabled by default, but you might want to enable this functional
 
 .. Select *Save*.
 +
-The new setting doesn't affect currently signed in users. Users must sign in again or refresh their browsers for the new timeout setting to take effect.
+The new setting doesn't affect users who are currently signed in. Users must sign in again or refresh their browsers for the new timeout setting to take effect.
 
 . To change the setting for Management API stack trace:
 
