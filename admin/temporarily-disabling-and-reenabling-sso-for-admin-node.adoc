@@ -13,7 +13,7 @@ You might not be able to sign in to the Grid Manager if the single sign-on (SSO)
 
 .Before you begin
 
-* You have specific access permissions.
+* You have link:admin-group-permissions.html[specific access permissions].
 * You have the `Passwords.txt` file.
 * You know the password for the local root user.
 

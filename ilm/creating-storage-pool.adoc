@@ -18,7 +18,7 @@ If you want to create Cloud Storage Pools to store object data outside of your S
 .Before you begin
 
 * You are signed in to the Grid Manager using a link:../admin/web-browser-requirements.html[supported web browser].
-* You have specific access permissions.
+* You have link:../admin/admin-group-permissions.html[specific access permissions].
 * You have reviewed the guidelines for creating storage pools.
 
 .About this task

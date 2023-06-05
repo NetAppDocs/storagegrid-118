@@ -137,7 +137,7 @@ Charts display a graphical representation of attribute data values. You can repo
 
 .Before you begin
 * You must be signed in to the Grid Manager using a link:../admin/web-browser-requirements.html[supported web browser].
-* You must have specific access permissions.
+* You have link:../admin/admin-group-permissions.html[specific access permissions].
 
 .Steps
 . Select *SUPPORT* > *Tools* > *Grid topology*.

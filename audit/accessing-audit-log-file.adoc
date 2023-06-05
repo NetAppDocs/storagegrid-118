@@ -13,7 +13,7 @@ The audit share contains the active `audit.log` file and any compressed audit lo
 
 .Before you begin
 
-* You must have specific access permissions.
+* You have link:../admin/admin-group-permissions.html[specific access permissions].
 * You must have the `Passwords.txt` file.
 * You must know the IP address of an Admin Node.
 

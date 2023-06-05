@@ -15,7 +15,7 @@ You can view local and federated users. You can also create local users and assi
 
 * You are signed in to the Grid Manager using a link:../admin/web-browser-requirements.html[supported web browser].
 
-* You have specific access permissions.
+* You have link:admin-group-permissions.html[specific access permissions].
 
 
 == Create a local user
