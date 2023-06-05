@@ -14,7 +14,7 @@ You can create custom alert rules to define your own conditions for triggering a
 .Before you begin
 * You are signed in to the Grid Manager using a link:../admin/web-browser-requirements.html[supported web browser]
 
-* You have the Manage alerts or Root access permission
+* You have the link:../admin/admin-group-permissions.html[Manage alerts or Root access permission]
 
 * You are familiar with the link:commonly-used-prometheus-metrics.html[commonly used Prometheus metrics]
 

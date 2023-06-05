@@ -16,7 +16,7 @@ You can use the FabricPool setup wizard to configure StorageGRID as the object s
 +
 NOTE: If you want to configure StorageGRID for use with any other S3 client application, go to link:../admin/use-s3-setup-wizard.html[Use S3 setup wizard].
 
-* You have the Root access permission.
+* You have the link:../admin/admin-group-permissions.html[Root access permission].
 
 == Access the wizard
 

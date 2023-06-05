@@ -14,7 +14,7 @@ All S3 and Swift client activity is associated with StorageGRID tenant accounts.
 .Before you begin
 
 * You are signed in to the Grid Manager using a link:../admin/web-browser-requirements.html[supported web browser].
-* You have the Root access or Tenant accounts permission.
+* You have the link:../admin/admin-group-permissions.html[Root access or Tenant accounts permission].
 
 
 == View all tenants 

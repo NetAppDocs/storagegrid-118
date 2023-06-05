@@ -19,7 +19,7 @@ To use the FabricPool setup wizard to complete this task, go to link:use-fabricp
 .Before you begin
 
 * You are signed in to the Grid Manager using a link:../admin/web-browser-requirements.html[supported web browser].
-* You have the Root access permission.
+* You have the link:../admin/admin-group-permissions.html[Root access permission].
 * You have reviewed the general link:../admin/managing-load-balancing.html[considerations for load balancing] as well as the link:best-practices-for-load-balancing.html[best practices for load balancing for FabricPool].
 
 .Steps

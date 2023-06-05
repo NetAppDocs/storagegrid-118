@@ -26,7 +26,7 @@ You use PingFederate to create a service provider (SP) connection for each Admin
 * You have the
 https://docs.pingidentity.com/bundle/pingfederate-103/page/kfj1564002962494.html[Administrator's Reference Guide^] for PingFederate Server. The PingFederate documentation provides detailed step-by-step instructions and explanations.
 
-* You have the Admin permission for PingFederate Server.
+* You have the link:admin-group-permissions.html[Admin permission] for PingFederate Server.
 
 .About this task
 These instructions summarize how to configure PingFederate Server version 10.3 as an SSO provider for StorageGRID. If you are using another version of PingFederate, you might need to adapt these instructions. Refer to the PingFederate Server documentation for detailed instructions for your release.
