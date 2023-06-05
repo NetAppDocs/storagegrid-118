@@ -16,7 +16,7 @@ The steps for creating a tenant account vary based on whether link:using-identit
 .Before you begin
 
 * You are signed in to the Grid Manager using a link:../admin/web-browser-requirements.html[supported web browser].
-* You have the Root access or Tenant accounts permission.
+* You have the link:admin-group-permissions.html[Root access or Tenant accounts permission].
 * If the tenant account will use the identity source that was configured for the Grid Manager, and you want to grant Root access permission for the tenant account to a federated group, you have imported that federated group into the Grid Manager. You don't need to assign any Grid Manager permissions to this admin group. See  link:managing-admin-groups.html[Manage admin groups].
 * If you want to allow an S3 tenant to clone account data and replicate bucket objects to another grid using a grid federation connection:
 

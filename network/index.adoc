@@ -35,6 +35,10 @@ Before you configure networking, become familiar with StorageGRID architecture a
 
 After you determine which StorageGRID networks you want to use and how those networks will be configured, you can install and configure the StorageGRID nodes by following the appropriate instructions.
 
+.Install appliance nodes
+
+* https://review.docs.netapp.com/us-en/storagegrid-appliances_main/installconfig/index.html[Install appliance hardware^]
+
 .Install software-based nodes
 
 * link:../rhel/index.html[Install Red Hat Enterprise Linux or CentOS]
@@ -42,10 +46,6 @@ After you determine which StorageGRID networks you want to use and how those net
 * link:../ubuntu/index.html[Install Ubuntu or Debian]
 
 * link:../vmware/index.html[Install VMware]
-
-.Install appliance nodes
-
-* https://review.docs.netapp.com/us-en/storagegrid-appliances_main/installconfig/index.html[Install appliance hardware^]
 
 .Configure and administer StorageGRID software
 

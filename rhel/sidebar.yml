@@ -30,6 +30,8 @@ entries:
         url: "/rhel/configuring-docker-storage-volume.html"               
       - title: Install StorageGRID host services
         url: "/rhel/installing-storagegrid-webscale-host-service.html"
+  - title: Automate the installation (Red Hat or CentOS)
+    url: "/rhel/automating-installation.html"
   - title: Deploy virtual grid nodes (Red Hat or CentOS)
     entries:
     - title: Create node configuration files for Red Hat or CentOS deployments
@@ -64,8 +66,6 @@ entries:
       url: "/rhel/reviewing-your-configuration-and-completing-installation.html"
     - title: Post-installation guidelines
       url: "/rhel/post-installation-guidelines.html"
-  - title: Automate the installation (Red Hat or CentOS)
-    url: "/rhel/automating-installation.html"
   - title: Overview of the installation REST API
     url: "/rhel/overview-of-installation-rest-api.html"
   - title: Where to go next

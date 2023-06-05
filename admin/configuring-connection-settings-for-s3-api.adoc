@@ -24,7 +24,7 @@ Additionally, you should remove Archive Nodes from the active ILM policy in Stor
 .Before you begin
 
 * You are signed in to the Grid Manager using a link:../admin/web-browser-requirements.html[supported web browser].
-* You have specific access permissions.
+* You have link:admin-group-permissions.html[specific access permissions].
 * You have created a bucket on the target archival storage system:
  ** The bucket is dedicated to a single Archive Node. It can't be used by other Archive Nodes or other applications.
  ** The bucket has the appropriate region selected for your location.

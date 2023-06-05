@@ -159,7 +159,7 @@ Clearing the cache removes outdated resources used by the previous version of St
 If the StorageGRID system includes multiple Admin Nodes, you can use another Admin Node to check the status of an unavailable Admin Node.
 
 .Before you begin
-You must have specific access permissions.
+You have link:../admin/admin-group-permissions.html[specific access permissions].
 
 .Steps
 . From an available Admin Node, sign in to the Grid Manager using a link:../admin/web-browser-requirements.html[supported web browser].

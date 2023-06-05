@@ -59,7 +59,7 @@ You can determine if objects are permanently unavailable by making a request usi
 
 .Before you begin
 
-* You have specific access permissions.
+* You have link:../admin/admin-group-permissions.html[specific access permissions].
 * You have the `Passwords.txt` file.
 * You have the IP address of an Admin Node.
 

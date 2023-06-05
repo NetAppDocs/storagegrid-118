@@ -16,7 +16,7 @@ NOTE: If you need to change the terms of your license or you want to merge, spli
 .Before you begin
 
 * You have a new license file to apply to your StorageGRID system.
-* You have specific access permissions.
+* You have link:admin-group-permissions.html[specific access permissions].
 * You have the provisioning passphrase.
 
 .Steps

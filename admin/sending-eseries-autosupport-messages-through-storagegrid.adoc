@@ -15,7 +15,7 @@ See https://docs.netapp.com/us-en/e-series-santricity/sm-support/autosupport-fea
 
 .Before you begin
 * You are signed into the Grid Manager using a link:../admin/web-browser-requirements.html[supported web browser].
-* You have the Storage appliance administrator permission or Root access permission.
+* You have the link:admin-group-permissions.html[Storage appliance administrator or Root access permission].
 * You have configured SANtricity AutoSupport:
 ** For SG6000 and SG5700 appliances, https://review.docs.netapp.com/us-en/storagegrid-appliances_main/installconfig/accessing-and-configuring-santricity-system-manager.html[configure AutoSupport in SANtricity System Manager^]
 
@@ -25,7 +25,7 @@ NOTE: You must have SANtricity firmware 8.70 or higher to access SANtricity Syst
 
 E-Series AutoSupport messages contain details of the storage hardware and are more specific than other AutoSupport messages sent by the StorageGRID system.
 
-You can configure a special proxy server address in SANtricity System Manager to transmit AutoSupport messages through a StorageGRID Admin Node without the use of the appliance's management port. AutoSupport messages transmitted in this way are sent by the link:../primer/what-admin-node-is.html[preferred sender Admin Node], and they use any link:../admin/configuring-admin-proxy-settings.html[Admin proxy settings] that have been configured in the Grid Manager.
+You can configure a special proxy server address in SANtricity System Manager to transmit AutoSupport messages through a StorageGRID Admin Node without the use of the appliance's management port. AutoSupport messages transmitted in this way are sent by the link:../primer/what-admin-node-is.html[preferred sender Admin Node], and they use any link:../admin/configuring-admin-proxy-settings.html[admin proxy settings] that have been configured in the Grid Manager.
 
 NOTE: This procedure is only for configuring a StorageGRID proxy server for E-Series AutoSupport messages. For additional details on E-Series AutoSupport configuration, see the https://mysupport.netapp.com/info/web/ECMP1658252.html[NetApp E-Series and SANtricity Documentation^].
 

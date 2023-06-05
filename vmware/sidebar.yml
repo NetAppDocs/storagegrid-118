@@ -16,6 +16,8 @@ entries:
       url: "/vmware/cpu-and-ram-requirements.html"
     - title: Storage and performance requirements
       url: "/vmware/storage-and-performance-requirements.html"
+  - title: Automate the installation (VMware)
+    url: "/vmware/automating-grid-node-deployment-in-vmware-vsphere.html"
   - title: Deploy virtual machine grid nodes (VMware)
     entries:
     - title: Collect information about your deployment environment
@@ -46,8 +48,6 @@ entries:
       url: "/vmware/reviewing-your-configuration-and-completing-installation.html"
     - title: Post-installation guidelines
       url: "/vmware/post-installation-guidelines.html"
-  - title: Automate the installation (VMware)
-    url: "/vmware/automating-grid-node-deployment-in-vmware-vsphere.html"
   - title: Overview of the installation REST API
     url: "/vmware/overview-of-installation-rest-api.html"
   - title: Where to go next

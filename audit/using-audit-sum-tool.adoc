@@ -13,7 +13,7 @@ You can use the `audit-sum` tool to count the write, read, head, and delete audi
 
 .Before you begin
 
-* You must have specific access permissions.
+* You have link:../admin/admin-group-permissions.html[specific access permissions].
 * You must have the `Passwords.txt` file.
 * You must know the IP address of the primary Admin Node.
 
