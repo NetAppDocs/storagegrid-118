@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: admin proxy, autosupport, non-transparent proxy
 summary: 'If you send AutoSupport messages using HTTP or HTTPS, you can configure a non-transparent proxy server between Admin Nodes and technical support \(AutoSupport\).'
 ---
-= Configure Admin proxy settings
+= Configure admin proxy
 :icons: font
 :imagesdir: ../media/
 
@@ -18,38 +18,32 @@ If you send AutoSupport messages using HTTP or HTTPS (see link:configure-autosup
 
 .About this task
 
-You can configure the settings for a single Admin proxy.
+You can configure the settings for a single admin proxy.
 
 .Steps
 
 . Select *CONFIGURATION* > *Security* > *Proxy settings*.
-+
-The Admin Proxy Settings page appears. By default, *Storage* is selected in the sidebar menu.
 
-. From the sidebar menu, select *Admin*.
-+
-image::../media/proxy_settings_menu_admin.png[Proxy Settings Menu - Admin]
 
-. Select the *Enable Admin Proxy* checkbox.
-+
-image::../media/proxy_settings_admin.png[screenshot of Admin Proxy Settings dialog box]
+. Select the *Admin* tab
+
+
+. To use an admin proxy, select the checkbox.
+
 
 . Enter the hostname or IP address of the proxy server.
 . Enter the port used to connect to the proxy server.
-. Optionally, enter the proxy username.
+. Optionally, enter a username and password for the proxy server.
 +
-Leave this field blank if your proxy server does not require a username.
+Leave these fields blank if your proxy server does not require a username or does not require a password.
 
-. Optionally, enter the proxy password.
-+
-Leave this field blank if your proxy server does not require a password.
 
 . Select *Save*.
 +
-After the Admin proxy is saved, the proxy server between Admin Nodes and technical support is configured.
+After the admin proxy is saved, the proxy server between Admin Nodes and technical support is configured.
 +
 NOTE: Proxy changes can take up to 10 minutes to take effect.
 
-. If you need to disable the proxy, clear the *Enable Admin Proxy* checkbox, and select *Save*.
+. If you need to disable the admin proxy, clear the checkbox, and select *Save*.
 
 

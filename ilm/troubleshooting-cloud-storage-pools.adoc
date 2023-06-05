@@ -86,12 +86,12 @@ NOTE: Never manually delete objects from a Cloud Storage Pool that might have be
 
 == Error: Proxy encountered an external error while trying to reach the Cloud Storage Pool
 
-You might encounter this error if you have configured a non-transparent Storage proxy between Storage Nodes and the external S3 endpoint used for the Cloud Storage Pool. This error occurs if the external proxy server can't reach the Cloud Storage Pool endpoint. For example, the DNS server might not be able to resolve the hostname or there might be an external networking issue.
+You might encounter this error if you have configured a non-transparent storage proxy between Storage Nodes and the external S3 endpoint used for the Cloud Storage Pool. This error occurs if the external proxy server can't reach the Cloud Storage Pool endpoint. For example, the DNS server might not be able to resolve the hostname or there might be an external networking issue.
 
 Try one or more of these steps to correct the issue:
 
 * Check the settings for the Cloud Storage Pool (*ILM* > *Storage pools*).
-* Check the networking configuration of the Storage proxy server.
+* Check the networking configuration of the storage proxy server.
 
 .Related information
 
