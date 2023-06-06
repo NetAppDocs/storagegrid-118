@@ -60,9 +60,9 @@ The table summarizes the capabilities of primary and non-primary Admin Nodes.
 | Yes
 | No
 
-| Can be used for the volume restoration procedure.
+| Can be used for the volume restoration procedure
 | Yes
-| Yes. Note that the repair data script is not included on non-primary Admin Nodes.
+| Yes
 
 | Can collect log files and system data from one or more nodes
 | Yes
