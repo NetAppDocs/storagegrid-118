@@ -29,7 +29,7 @@ Follow the steps for the type of expansion you're performing:
 .Add storage volumes
 --
 
-Follow the steps for link:adding-storage-volumes-to-storage-nodes.html[adding storage volumes to Storage Nodes].
+. Follow the steps for link:adding-storage-volumes-to-storage-nodes.html[adding storage volumes to Storage Nodes].
 
 --
 //end Add volumes, begin add nodes

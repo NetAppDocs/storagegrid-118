@@ -31,15 +31,15 @@ sidebar:
       - section: upgrade
       - title: Apply StorageGRID hotfix
         entries:
-        - title: Overview
+        - title: 'Hotfix: Overview'
           url: "/maintain/storagegrid-hotfix-procedure.html"
         - title: How your system is affected when you apply a hotfix
           url: "/maintain/how-your-system-is-affected-when-you-apply-hotfix.html"
-        - title: Obtain required materials
+        - title: Obtain required materials for hotfix
           url: "/maintain/obtaining-required-materials-for-hotfix.html"
         - title: Download hotfix file
           url: "/maintain/downloading-hotfix-file.html"
-        - title: Check system's condition
+        - title: Check system's condition before applying hotfix
           url: "/maintain/checking-systems-condition-before-applying-hotfix.html"
         - title: Apply hotfix
           url: "/maintain/applying-hotfix.html"
