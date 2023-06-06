@@ -31,8 +31,6 @@ image::../media/metrics_page.png[Metrics Page]
 +
 The Prometheus interface appears. You can use this interface to execute queries on the available StorageGRID metrics and to graph StorageGRID metrics over time.
 +
-image::../media/metrics_page_prometheus.png[Metrics Page Prometheus]
-+
 NOTE: Metrics that include _private_ in their names are intended for internal use only and are subject to change between StorageGRID releases without notice.
 
 . To access pre-constructed dashboards containing graphs of StorageGRID metrics over time, click the links in the Grafana section.
