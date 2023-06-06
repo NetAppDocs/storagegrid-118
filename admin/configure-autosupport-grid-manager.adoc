@@ -150,5 +150,3 @@ image::../media/autosupport_certificate.png[AutoSupport certificate]
 . Select *Save*.
 +
 All future weekly, event-triggered, and user-triggered AutoSupport messages will be sent to the additional destination.
-
-
