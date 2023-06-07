@@ -244,7 +244,7 @@ sidebar:
           - title: Overview
             pdf-filename: Recover from storage volume failure where system drive is intact
             url: "/maintain/recovering-from-storage-volume-failure-where-system-drive-is-intact.html"
-          - title: Review warnings about storage volume recovery
+          - title: Warnings for storage volume recovery
             url: "/maintain/reviewing-warnings-about-storage-volume-recovery.html"
           - title: Identify and unmount failed storage volumes
             url: "/maintain/identifying-and-unmounting-failed-storage-volumes.html"
