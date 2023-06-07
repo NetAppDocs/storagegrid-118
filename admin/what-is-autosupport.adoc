@@ -36,7 +36,7 @@ You can enable the AutoSupport feature and the individual AutoSupport options wh
 
 NOTE: If you close the message, it will not appear again until your browser cache is cleared, even if AutoSupport remains disabled.
 
-.AutoSupport XML file contents
+.AutoSupport package content
 [%collapsible]
 ====
 [cols="1a,2a,3a" options="header"]
@@ -179,10 +179,6 @@ Table ID
 Table name
 | Grid tasks (maintenance procedures) status file. Provides details of the grid's active, aborted, completed, failed, and pending tasks.
 
-| HEADERS
-| _n/a_
-| _n/a_
-
 | ILM-STATUS.XML
 | Node
 
@@ -206,8 +202,8 @@ Table name
 | ILM active policy file. Contains details about the active ILM policy, such as storage pool ID, ingest behavior, filters, rules, and description.
 
 | LOG.TGZ
-| 
-| Downloadable log file. Contains log files from all nodes.
+| _n/a_
+| Downloadable log file. Contains `bycast-err.log` and `servermanager.log` from each node.
 
 | MANIFEST.XML
 | Collection order
@@ -293,7 +289,7 @@ Index
 Table ID
 
 Table name
-| Service node information file. Contains details such as allocated table space, free table space, reaper metrics of the database, segment repair duration, repair ob duration, auto job restarts, auto job aborts, and more.
+| Service node information file. Contains details such as allocated table space, free table space, reaper metrics of the database, segment repair duration, repair job duration, auto job restarts, auto job aborts, and more.
 
 | STORAGE-GRADES.XML
 | Storage grade ID
