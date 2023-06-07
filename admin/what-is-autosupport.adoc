@@ -36,8 +36,9 @@ You can enable the AutoSupport feature and the individual AutoSupport options wh
 
 NOTE: If you close the message, it will not appear again until your browser cache is cleared, even if AutoSupport remains disabled.
 
-AutoSupoport XML file contents
-
+.AutoSupoport XML file contents
+[%collapsible]
+====
 [cols="1a,2a,3a" options="header"]
 |===
 | File name| Fields| Description
@@ -84,7 +85,7 @@ AutoSupport OnDemand State
 AutoSupport OnDemand Server URL
 
 AutoSupport OnDemand Polling Interval
-| AutoSupport status file. Provides details of protocol used, URL, support address, polling interval, and OnDemand AutoSupport if enabled or disabled.
+| AutoSupport status file. Provides details of protocol used, technical support URL and address, polling interval, and OnDemand AutoSupport if enabled or disabled.
 
 | BUCKETS.XML
 | Bucket ID
@@ -140,7 +141,7 @@ Bucket Tagging Enabled
 Bucket Tagging Configuration
 
 Versioning Configuration
-| Statistics based on the bucket configuration. Provides bucket configuration details that can give you insight into the configurations that are set at the bucket level. Platform services, compliance, and bucket consistency level are examples of bucket configurations.
+| Provides configuration details and statistics at the bucket level. Example of bucket configurations include platform services, compliance, and bucket consistency level.
 
 | GRID-CONFIGURATIONS.XML
 | Attribute ID
@@ -154,7 +155,7 @@ Index
 Table ID
 
 Table Name
-| Grid-wide configuration information file. Contains info about grid certificates, metadata reserved space, grid-wide configuration settings (compliance, S3 Object Lock, object compression, alerts, syslog, ILM configuration), EC profile details, DNS name, NMS name, and more.
+| Grid-wide configuration information file. Contains information about grid certificates, metadata reserved space, grid-wide configuration settings (compliance, S3 Object Lock, object compression, alerts, syslog, and ILM configuration), EC profile details, DNS name, NMS name, and more.
 
 | GRID-SPEC.XML
 | Grid specifications, raw XML
@@ -224,7 +225,7 @@ The status of this data item
 The description of the error
 
 The AutoSupport content type for this data
-| Contains the  AutoSupport metadata and brief descriptions of all the AutoSupport XML files.
+| Contains AutoSupport metadata and brief descriptions of all AutoSupport XML files.
 
 | NMS-ENTITIES.XML
 | Attribute index
@@ -274,7 +275,7 @@ Index
 Table ID
 
 Table name
-| Server configurations and events file. Contains platform type, operating system, installed memory, available memory, storage connectivity, storage appliance chassis serial number, storage controller failed drive count, compute controller chassis temperature, compute hardware, compute controller serial number, power supply, drive size, drive type, and more for each node.
+| Server configurations and events file. Contains these details for each node: platform type, operating system, installed memory, available memory, storage connectivity, storage appliance chassis serial number, storage controller failed drive count, compute controller chassis temperature, compute hardware, compute controller serial number, power supply, drive size, drive type, and more.
 
 | SERVICE-STATUS.XML
 | Node
@@ -302,7 +303,7 @@ Storage grade name
 Storage node ID
 
 Storage node path
-| Storage grade definitions file for each storage node.
+| Storage grade definitions file for each Storage Node.
 
 | SUMMARY-ATTRIBUTES.XML
 | Group OID
@@ -320,7 +321,7 @@ Index
 Table ID
 
 Table name
-| High-level system status data that summarizes StorageGRID usage information. Provides details such as name of grid, names of sites, number of Storage Nodes per grid, number of Storage Nodes per site, license type, license capacity and usage, software support terms, and details of S3 and Swift operations.
+| High-level system status data that summarizes StorageGRID usage information. Provides details such as name of grid, names of sites, number of Storage Nodes per grid and per site, license type, license capacity and usage, software support terms, and details of S3 and Swift operations.
 
 | SYSTEM-ALARMS.XML
 | Node
@@ -368,7 +369,7 @@ Silenced
 Other annotations
 
 Other labels
-| Current system alerts that indicate any potential problems in the StorageGRID system.
+| Current system alerts that indicate potential problems in the StorageGRID system.
 
 | USERAGENTS.XML
 | User agent
@@ -381,32 +382,32 @@ Total bytes ingested
 
 Total bytes retrieved
 
-Put requests
+PUT requests
 
-Get requests
+GET requests
 
-Delete requests
+DELETE requests
 
-Head requests
+HEAD requests
 
-Post requests
+POST requests
 
-Options requests
+OPTIONS requests
 
 Average request time (ms)
 
-Average Put request time (ms)
+Average PUT request time (ms)
 
-Average Get request time (ms)
+Average GET request time (ms)
 
-Average Delete request time (ms)
+Average DELETE request time (ms)
 
-Average Head request time (ms)
+Average HEAD request time (ms)
 
-Average Post request time (ms)
+Average POST request time (ms)
 
-Average Options request time (ms)
-| Statistics based on the application user agents. For example, the number of PUT/GET/Delete/HEAD operations per user agent and total bytes size of each operation.
+Average OPTIONS request time (ms)
+| Statistics based on the application user agents. For example, the number of PUT/GET/DELETE/HEAD operations per user agent and total bytes size of each operation.
 
 | X-HEADER-DATA
 | X-Netapp-asup-generated-on
@@ -424,6 +425,7 @@ X-Netapp-asup-system-id
 X-Netapp-asup-model-name
 | AutoSupport header data.
 |===
+====
 
 == What is Active IQ?
 
