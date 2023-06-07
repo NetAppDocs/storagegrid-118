@@ -36,7 +36,7 @@ You can enable the AutoSupport feature and the individual AutoSupport options wh
 
 NOTE: If you close the message, it will not appear again until your browser cache is cleared, even if AutoSupport remains disabled.
 
-.AutoSupoport XML file contents
+.AutoSupport XML file contents
 [%collapsible]
 ====
 [cols="1a,2a,3a" options="header"]
