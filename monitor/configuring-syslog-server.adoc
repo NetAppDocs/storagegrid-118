@@ -2,14 +2,14 @@
 permalink: monitor/configuring-syslog-server.html
 sidebar: sidebar
 keywords: audit messages, syslog server, configure external syslog server
-summary: 'If you want to save audit logs, application logs, and security event logs to a location outside of your grid, use this procedure to configure an external syslog server.'
+summary: 'You can configure an external syslog server to save audit logs, application logs, and security event logs to a location outside of your grid.'
 ---
 = Configure an external syslog server
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-If you want to save audit logs, application logs, and security event logs to a location outside of your grid, use this procedure to configure an external syslog server. 
+You can configure an external syslog server to save audit logs, application logs, and security event logs to a location outside of your grid. 
 
 .Before you begin
 
