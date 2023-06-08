@@ -181,12 +181,11 @@ The custom community string can be a maximum of 32 characters and can't contain 
 
 * If you selected *Trap*, only USM users without authoritative engine IDs are shown.
 * If you selected *Inform*, only USM users with authoritative engine IDs are shown.
-
-If no users are shown:
+* If no users are shown:
 
 . Create and save the trap destination.
 . Go to <<create-usm-users,Create USM users>> and create the user.
-. Return to this tab, select the destination from the table, and select *Edit*.
+. Return to this tab, select the saved destination from the table, and select *Edit*.
 . Select the user.
 
 |===
