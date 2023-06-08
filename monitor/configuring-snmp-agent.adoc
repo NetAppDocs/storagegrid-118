@@ -158,6 +158,7 @@ The custom community string can be a maximum of 32 characters and can't contain 
 .SNMPv3
 --
 
+If you selected SNMPv3 as the version, complete these fields.
 
 [cols="1a,2a" options="header"]
 |===
