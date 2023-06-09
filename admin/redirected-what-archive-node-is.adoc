@@ -1,4 +1,0 @@
----
-permalink: admin/what-archive-node-is.html
-redirect: primer/what-archive-node-is.html
----
