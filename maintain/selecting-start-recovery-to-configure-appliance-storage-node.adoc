@@ -14,7 +14,7 @@ You must select Start Recovery in the Grid Manager to configure an appliance Sto
 .Before you begin
 
 * You are signed in to the Grid Manager using a link:../admin/web-browser-requirements.html[supported web browser].
-* You have the Maintenance or Root access permission.
+* You have the link:../admin/admin-group-permissions.html[Maintenance or Root access permission].
 * You have the provisioning passphrase.
 * You have deployed a recovery appliance Storage Node.
 * You have the start date of any repair jobs for erasure-coded data.

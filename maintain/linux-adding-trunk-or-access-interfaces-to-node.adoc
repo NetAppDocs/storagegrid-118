@@ -20,7 +20,7 @@ You can add extra trunk or access interfaces to a Linux node after it has been i
 ** link:../ubuntu/index.html[Install Ubuntu or Debian]
 
 * You have the `Passwords.txt` file.
-* You have specific access permissions.
+* You have link:../admin/admin-group-permissions.html[specific access permissions].
 
 IMPORTANT: Don't attempt to add interfaces to a node while a software upgrade, recovery procedure, or expansion procedure is active.
 

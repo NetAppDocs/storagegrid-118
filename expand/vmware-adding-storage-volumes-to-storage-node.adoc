@@ -16,7 +16,7 @@ If a Storage Node includes fewer than 16 storage volumes, you can increase its c
 ** link:../vmware/index.html[Install VMware]
 
 * You have the `Passwords.txt` file.
-* You have specific access permissions.
+* You have link:../admin/admin-group-permissions.html[specific access permissions].
 
 CAUTION: Don't attempt to add storage volumes to a Storage Node while a software upgrade, recovery procedure, or another expansion procedure is active.
 

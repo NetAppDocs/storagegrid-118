@@ -19,7 +19,7 @@ When you perform the expansion, the new grid nodes are added to your existing St
 
 * You have deployed all of the grid nodes that are being added in this expansion.
 
-* You have the Maintenance or Root access permission.
+* You have the link:../admin/admin-group-permissions.html[Maintenance or Root access permission].
 * If you are adding Storage Nodes, you have confirmed that all data-repair operations performed as part of a recovery are complete. See link:../maintain/checking-data-repair-jobs.html[Check data repair jobs].
 
 * If you are adding Storage Nodes and you want to assign a custom storage grade to those nodes, you have already link:../ilm/creating-and-assigning-storage-grades.html[created the custom storage grade]. You also have either the Root access permission or both the Maintenance and ILM permissions.
