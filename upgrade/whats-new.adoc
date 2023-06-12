@@ -15,6 +15,9 @@ This release of StorageGRID introduces the following features and functional cha
 
 
 === Lisa's new features
+* S3 Console no longer experimental
+* Assign policy to ILM tags. A tag can have no policy or one policy assigned to it, and there can be multiple tags that reference the same policy. The only way to "activate" a policy is for a tag to have that policy assigned to it.
+* Configurable default consistency level
 
 
 === Kathy's new features
@@ -39,4 +42,4 @@ The following new alerts were added for StorageGRID 11.8:
 
 === Documentation changes
 
-* The documentation for StorageGRID appliances was moved to a new documentation site.
+* The documentation for StorageGRID appliances was moved to a link:https://review.docs.netapp.com/us-en/storagegrid-appliances_main/[new documentation site].
