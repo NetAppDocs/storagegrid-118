@@ -14,7 +14,7 @@ You can configure an external syslog server to save audit logs, application logs
 .Before you begin
 
 * You are signed in to the Grid Manager using a link:../admin/web-browser-requirements.html[supported web browser].
-* You have Maintenance or Root access permissions.
+* You have the link:../admin/admin-group-permissions.html[Maintenance or Root access permission].
 * You have a syslog server with the capacity to receive and store the log files. For more information, see link:../monitor/considerations-for-external-syslog-server.html[Considerations for external syslog server].
 * You have the correct server and client certifications if you plan to use TLS or RELP/TLS.
 

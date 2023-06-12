@@ -12,15 +12,15 @@ summary: 'You can create custom alert rules to define your own conditions for tr
 You can create custom alert rules to define your own conditions for triggering alerts.
 
 .Before you begin
-* You are signed in to the Grid Manager using a link:../admin/web-browser-requirements.html[supported web browser]
+* You are signed in to the Grid Manager using a link:../admin/web-browser-requirements.html[supported web browser].
 
-* You have the link:../admin/admin-group-permissions.html[Manage alerts or Root access permission]
+* You have the link:../admin/admin-group-permissions.html[Manage alerts or Root access permission].
 
-* You are familiar with the link:commonly-used-prometheus-metrics.html[commonly used Prometheus metrics]
+* You are familiar with the link:commonly-used-prometheus-metrics.html[commonly used Prometheus metrics].
 
-* You understand the https://prometheus.io/docs/prometheus/latest/querying/basics/[syntax of Prometheus queries^]
+* You understand the https://prometheus.io/docs/prometheus/latest/querying/basics/[syntax of Prometheus queries^].
 
-* Optionally, you have watched the video: https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=61acb7ba-7683-488a-a689-afb7010088f3[Video: Using metrics to create custom alerts in StorageGRID 11.7^]
+* Optionally, you have watched the video: https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=61acb7ba-7683-488a-a689-afb7010088f3[Video: Using metrics to create custom alerts in StorageGRID 11.7^].
 +
 image::../media/video-screenshot-alert-create-custom-117.png[link="https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=61acb7ba-7683-488a-a689-afb7010088f3" alt="Video: Using metrics to create custom alerts in StorageGRID 11.7", window=_blank]
 
