@@ -77,7 +77,7 @@ Up to five strings are allowed.
 
 == [[select_trap_destination]]Create trap destinations
 
-Use the Trap destinations tab in the Other configurations section to define one or more destinations for StorageGRID trap or inform notifications. When you enable the SNMP agent and select *Save*, StorageGRID starts sending notifications to each defined destination. Notifications are sent when alerts are triggered. Standard notifications are also sent for the supported MIB-II entities (for example, ifDown and coldStart).
+Use the Trap destinations tab in the Other configurations section to define one or more destinations for StorageGRID trap or inform notifications. When you enable the SNMP agent and select *Save*, StorageGRID sends notifications to each defined destination when alerts are triggered. Standard notifications are also sent for the supported MIB-II entities (for example, ifDown and coldStart).
 
 .Steps
 
@@ -106,7 +106,7 @@ If you selected SNMPv1 as the version, complete these fields.
 | Description
 
 | Type 
-| Must be Trap. For SNMPv1, the SNMP agent can only send traps. Informs aren't supported.
+| Must be Trap for SNMPv1.
 
 | Host
 | An IPv4 or IPv6 address or a fully-qualified domain name (FQDN) to receive the trap.
@@ -186,7 +186,7 @@ If you selected SNMPv3 as the version, complete these fields.
 
 . Create and save the trap destination.
 . Go to <<create-usm-users,Create USM users>> and create the user.
-. Return to this tab, select the saved destination from the table, and select *Edit*.
+. Return to the Trap destinations tab, select the saved destination from the table, and select *Edit*.
 . Select the user.
 
 |===
@@ -200,7 +200,7 @@ The trap destination is created and added to the table.
 
 == Create agent addresses
 
-Optionally, use the Agent addresses tab in the Other configurations section to specify one or more "`listening addresses.`" These are the StorageGRID addresses on which the SNMP agent can receive queries. Each agent address includes an internet protocol, a transport protocol, a StorageGRID network, and optionally a port.
+Optionally, use the Agent addresses tab in the Other configurations section to specify one or more "`listening addresses.`" These are the StorageGRID addresses on which the SNMP agent can receive queries.
 
 If you don't configure an agent address, the default listening address is UDP port 161 on all StorageGRID networks.
 
@@ -225,14 +225,14 @@ By default, SNMP uses IPv4.
 By default, SNMP uses UDP.
 
 | StorageGRID network
-| Which StorageGRID network the query will be received on.
+| Which StorageGRID network the agent will listen on.
 
-* Grid, Admin, and Client Networks: StorageGRID should listen for SNMP queries on all three networks.
+* Grid, Admin, and Client Networks: The SNMP agent will listen for queries on all three networks.
 * Grid Network
 * Admin Network
 * Client Network
 +
-*Note*: To ensure that client communications with StorageGRID remain secure, you should not create an agent address for the Client Network.
+*Note*: If you use the Client Network for insecure data and you create an agent address for the Client Network, be aware that SNMP traffic will also be insecure.
 
 | Port
 | Optionally, the port number that the SNMP agent should listen on.
@@ -276,7 +276,7 @@ Usernames can have a maximum of 32 characters and can't contain whitespace chara
 | Authoritative engine ID
 | If this user will be used in an inform destination, the authoritative engine ID for this user.
 
-The authoritative engine ID is a 5-byte to 32-byte hex value, with no spaces or punctuation. This value is required for USM users that will be selected in trap destinations for informs. This value is not allowed for USM users that will be selected in trap destinations for traps.
+The authoritative engine ID is a 10-byte to 64-byte hex value, with no spaces or punctuation. This value is required for USM users that will be selected in trap destinations for informs. This value is not allowed for USM users that will be selected in trap destinations for traps.
 
 *Note*: This field is not shown if you selected *Read-only MIB access* because USM users who have read-only MIB access can't have engine IDs.
 
