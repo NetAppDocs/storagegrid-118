@@ -53,11 +53,11 @@ m| .1.3.6.1.4.1.789.28669
 | The MIB Module for NetApp StorageGRID entities.
 |===
 
-== MIB Objects
+== MIB objects
 
 [cols="1a,1a,2a" options="header"]
 |===
-| Object Name| Object ID (OID)| Description
+| Object name| Object ID (OID)| Description
 
 m| activeAlertCount
 m| .1.3.6.1.4.1. +
@@ -95,7 +95,7 @@ m| .1.3.6.1.4.1. +
 | Date and time the alert was triggered.
 |===
 
-== Notification Types (Traps)
+== Notification types (Traps)
 
 All notifications include the following variables as varbinds:
 
@@ -107,7 +107,7 @@ All notifications include the following variables as varbinds:
 
 [cols="1a,1a,2a" options="header"]
 |===
-| Notification Type| Object ID (OID)| Description
+| Notification type| Object ID (OID)| Description
 
 m| activeMinorAlert
 m| .1.3.6.1.4.1. +
