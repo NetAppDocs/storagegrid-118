@@ -75,7 +75,7 @@ The table summarizes the capabilities of primary and non-primary Admin Nodes.
 
 
 
-== [[preferred-sender]]What is the preferred sender?
+== [[preferred-sender]]Preferred sender Admin Node
 
 If your StorageGRID deployment includes multiple Admin Nodes, the primary Admin Node is the preferred sender for alert notifications, AutoSupport messages, SNMP traps and informs, and legacy alarm notifications. 
 

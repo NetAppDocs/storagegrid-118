@@ -276,7 +276,7 @@ Usernames can have a maximum of 32 characters and can't contain whitespace chara
 | Authoritative engine ID
 | If this user will be used in an inform destination, the authoritative engine ID for this user.
 
-The authoritative engine ID is a 10-byte to 64-byte hex value, with no spaces or punctuation. This value is required for USM users that will be selected in trap destinations for informs. This value is not allowed for USM users that will be selected in trap destinations for traps.
+Enter 10 to 64 hex characters (5 to 32 bytes) with no spaces. This value is required for USM users that will be selected in trap destinations for informs. This value is not allowed for USM users that will be selected in trap destinations for traps.
 
 *Note*: This field is not shown if you selected *Read-only MIB access* because USM users who have read-only MIB access can't have engine IDs.
 
