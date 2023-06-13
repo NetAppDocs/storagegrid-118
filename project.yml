@@ -222,7 +222,7 @@ sidebar:
           url: "/maintain/recovering-storage-node-that-has-been-down-more-than-15-days.html"
         - title: Recover appliance Storage Node
           entries:
-          - title: Workflow
+          - title: Warnings for recovering appliance Storage Nodes
             pdf-filename: Recover appliance Storage Node
             url: "/maintain/recovering-storagegrid-appliance-storage-node.html"
           - title: Prepare appliance Storage Node for reinstallation
@@ -241,10 +241,10 @@ sidebar:
             url: "/maintain/checking-storage-state-after-recovering-sga.html"
         - title: Recover from storage volume failure where system drive is intact
           entries:
-          - title: Workflow
+          - title: Overview
             pdf-filename: Recover from storage volume failure where system drive is intact
             url: "/maintain/recovering-from-storage-volume-failure-where-system-drive-is-intact.html"
-          - title: Review warnings about storage volume recovery
+          - title: Warnings for storage volume recovery
             url: "/maintain/reviewing-warnings-about-storage-volume-recovery.html"
           - title: Identify and unmount failed storage volumes
             url: "/maintain/identifying-and-unmounting-failed-storage-volumes.html"
