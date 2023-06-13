@@ -50,10 +50,10 @@ The System location can be any information that is useful for identifying where 
 | Enable SNMP agent notifications
 | * If selected, the StorageGRID SNMP agent sends trap and inform notifications.
 
-* If not selected, the SNMP agent supports read-only MIB access, but it does not send any SNMP notifications.
+* If not selected, the SNMP agent supports read-only MIB access, but it doesn't send any SNMP notifications.
 
 | Enable authentication traps
-| If selected, the StorageGRID SNMP agent will send an authentication trap if it receives an improperly authenticated protocol message.
+| If selected, the StorageGRID SNMP agent sends authentication traps if it receives improperly authenticated protocol messages.
 
 |===
 
