@@ -25,7 +25,7 @@ The SNMP agent page appears.
 
 . To disable the SNMP agent on all grid nodes, clear the *Enable SNMP* checkbox, and select *Save*.
 +
-If you later re-enable the SNMP agent, any previous SNMP configuration settings are retained.
+If you re-enable the SNMP agent, any previous SNMP configuration settings are retained.
 
 . Optionally, update the information in the Basic configuration section:
 
