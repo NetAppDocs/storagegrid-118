@@ -36,6 +36,8 @@ You can enable the AutoSupport feature and the individual AutoSupport options wh
 
 NOTE: If you close the message, it will not appear again until your browser cache is cleared, even if AutoSupport remains disabled.
 
+The AutoSupport package includes an XML file that contains StorageGRID information. For details, expand the *AutoSupport package content* section:
+
 .AutoSupport package content
 [%collapsible]
 ====
