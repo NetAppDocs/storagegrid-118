@@ -39,7 +39,7 @@ NOTE: If you close the message, it will not appear again until your browser cach
 .AutoSupport package content
 [%collapsible]
 ====
-[cols="1a,2a,3a" options="header"]
+[cols="2a,2a,3a" options="header"]
 |===
 | File name| Fields| Description
 
@@ -208,19 +208,19 @@ Table name
 | MANIFEST.XML
 | Collection order
 
-The AutoSupport content filename for this data
+AutoSupport content filename for this data
 
-The description of this data item
+Description of this data item
 
 Number of bytes collected
 
 Time spent collecting
 
-The status of this data item
+Status of this data item
 
-The description of the error
+Description of the error
 
-The AutoSupport content type for this data
+AutoSupport content type for this data
 | Contains AutoSupport metadata and brief descriptions of all AutoSupport XML files.
 
 | NMS-ENTITIES.XML
@@ -448,7 +448,7 @@ You can use any combination of the following options to send AutoSupport message
 
 == [[hardware_autosupport]] AutoSupport for appliances
 
-AutoSupport for appliances reports StorageGRID hardware issues, while StorageGRID AutoSupport reports StorageGRID software issues (except for SGF6112 where StorageGRID AutoSupport reports both hardware and software issues). You must configure AutoSupport on each appliance, except for the SGF6112 which does not require additional configuration. AutoSupport is implemented differently for services and storage appliances.
+AutoSupport for appliances reports StorageGRID hardware issues, while StorageGRID AutoSupport reports StorageGRID software issues (except for the SGF6112, where StorageGRID AutoSupport reports both hardware and software issues). You must configure AutoSupport on each appliance, except for the SGF6112 which does not require additional configuration. AutoSupport is implemented differently for services and storage appliances.
 
 You must enable AutoSupport in SANtricity for each storage appliance. You can configure SANtricity AutoSupport during initial appliance setup or after an appliance has been installed:
 
