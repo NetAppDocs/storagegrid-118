@@ -2,25 +2,30 @@
 permalink: maintain/grid-node-decommissioning.html
 sidebar: sidebar
 keywords: storagegrid, decommission
-summary: 'You can use the node decommission procedure to remove one or more Storage Nodes, Gateway Nodes, or non-primary Admin Nodes at one or more sites. You cannot decommission the primary Admin Node or an Archive Node.'
+summary: 'You can use the node decommission procedure to remove one or more Storage Nodes, Gateway Nodes, non-primary Admin Nodes, or Archive Nodes at one or more sites. You cannot decommission the primary Admin Node.'
 ---
 = Grid node decommission: Overview
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You can use the node decommission procedure to remove one or more Storage Nodes, Gateway Nodes, or non-primary Admin Nodes at one or more sites. You can't decommission the primary Admin Node or an Archive Node.
+You can use the node decommission procedure to remove one or more Storage Nodes, Gateway Nodes, non-primary Admin Nodes, or Archive Nodes at one or more sites. You can't decommission the primary Admin Node.
 
-In general, you should decommission grid nodes only while they are connected to the StorageGRID system and all nodes are in normal health (have green icons on the *NODES* pages and on the *Decommission Nodes* page). However, if required, you can decommission a grid node that is disconnected. Before removing a disconnected node, make sure you understand the implications and restrictions of that process.
+In general, you should decommission grid nodes only while they are connected to the StorageGRID system and all nodes are in normal health (have green icons on the *NODES* pages and on the *Decommission Nodes* page). 
 
-TIP: If you want to replace an older appliance with a newer appliance, consider https://review.docs.netapp.com/us-en/storagegrid-appliances_main/commonhardware/how-appliance-node-cloning-works.html[cloning the appliance node^] instead of decommissioning the old node and adding the new node in an expansion.
+In some cases, you might need to decommission a grid node that is disconnected. For example, you can only decommission an Archive Node if it is disconnected. Before removing a disconnected node, make sure you understand the implications and restrictions of that process.
+
 
 Use the node decommission procedure when any of the following are true:
 
 * You have added a larger Storage Node to the system and you want to remove one or more smaller Storage Nodes, while at the same time preserving objects.
++
+TIP: If you want to replace an older appliance with a newer appliance, consider https://review.docs.netapp.com/us-en/storagegrid-appliances_main/commonhardware/how-appliance-node-cloning-works.html[cloning the appliance node^] instead of decommissioning the old node and adding the new node in an expansion.
+
 * You require less total storage.
 * You no longer require a Gateway Node.
 * You no longer require a non-primary Admin Node.
 * Your grid includes a disconnected node that you can't recover or bring back online.
+* Your grid includes an Archive Node that you are no longer using.
 
 // replace workflow with table/steps?

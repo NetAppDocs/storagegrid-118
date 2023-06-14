@@ -81,11 +81,11 @@ sidebar:
           - title: Considerations for grid node decommission
             url: "/maintain/considerations-for-decommissioning-grid-nodes.html"
           - title: Gather required materials
-            url: /maintain/gathering-required-materials-node-decom.html
+            url: "/maintain/gathering-required-materials-node-decom.html"
           - title: Access Decommission Nodes page
             url: "/maintain/accessing-decommission-nodes-page.html"
           - title: Decommission disconnected grid nodes
-            url: /maintain/decommissioning-disconnected-grid-nodes.html"
+            url: "/maintain/decommissioning-disconnected-grid-nodes.html"
           - title: Decommission connected grid nodes
             url: "/maintain/decommissioning-connected-grid-nodes.html"
           - title: Pause and resume decommission process for Storage Nodes
@@ -123,7 +123,7 @@ sidebar:
         - title: Configure IP addresses
           entries:
           - title: Overview
-            url: /maintain/configuring-ip-addresses.html
+            url: "/maintain/configuring-ip-addresses.html"
           - title: Change node network configuration
             url: "/maintain/changing-nodes-network-configuration.html"
           - title: Add to or change subnet lists on Admin Network
@@ -363,11 +363,11 @@ sidebar:
       - title: How technical support recovers a site
         url: "/maintain/how-site-recovery-is-performed-by-technical-support.html"
     - title: Enable StorageGRID
-      url: /storagegrid-enable.html
+      url: "/storagegrid-enable.html"
     - title: Other versions
-      url: /earlier-versions.html
+      url: "/earlier-versions.html"
     - title: Legal notices
-      url: /legal-notices.html
+      url: "/legal-notices.html"
 product-family:
   name: StorageGRID documentation
   repo: storagegrid-family

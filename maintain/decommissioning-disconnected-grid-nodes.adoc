@@ -55,6 +55,15 @@ Before decommissioning a disconnected *Admin Node* or *Gateway Node*, note the f
 * When you decommission a disconnected Admin Node, you will lose the audit logs from that node; however, these logs should also exist on the primary Admin Node.
 * You can safely decommission a Gateway Node while it is disconnected.
 
+Before decommissioning a disconnected *Archive Node*, confirm that the Archive Node is no longer being used in any rules in any active ILM policy:
+
+. Go to the *ILM* > *Storage pools* page.
+. From the list of storage pools, select any storage pools that contain only Archive Nodes. 
+. Select the *ILM usage* tab. 
+. If any ILM rules are listed, look at the *Used in active policy* column to determine if the Archive Node storage pool is being used.
+. If the storage pool is being used, create a new ILM policy that no longer uses that rule.
+
+
 .Steps
 
 . Attempt to bring any disconnected grid nodes back online or to recover them.

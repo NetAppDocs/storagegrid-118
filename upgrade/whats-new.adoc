@@ -21,7 +21,7 @@ This release of StorageGRID introduces the following features and functional cha
 
 
 === Kathy's new features
-
+* Archive Nodes were deprecated in StorageGRID 11.7. You can now use the Decommission Nodes procedure to remove any unused Archive Nodes that are disconnected from the grid. See link:../maintain/decommissioning-disconnected-grid-nodes.html[Decommission disconnected grid nodes].
 
 === Kevin's new features
 

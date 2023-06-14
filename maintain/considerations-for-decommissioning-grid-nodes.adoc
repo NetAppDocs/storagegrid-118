@@ -2,14 +2,14 @@
 permalink: maintain/considerations-for-decommissioning-grid-nodes.html
 sidebar: sidebar
 keywords: storagegrid, decommission
-summary: 'Before you start this procedure to decommission one or more nodes, understand the implications of removing each type of node. When a node is decommissioned, its services are disabled and the node automatically shut down.'
+summary: 'Before you start this procedure to decommission one or more nodes, review the implications of removing each type of node. When a node is decommissioned, its services are disabled and the node automatically shut down.'
 ---
 = General considerations for grid node decommission
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Before you start this procedure to decommission one or more nodes, understand the implications of removing each type of node. When a node is decommissioned, its services are disabled and the node automatically shut down.
+Before you start this procedure to decommission one or more nodes, review the implications of removing each type of node. When a node is decommissioned, its services are disabled and the node automatically shut down.
 
 IMPORTANT: Don't remove a grid node's virtual machine or other resources until instructed to do so in decommission procedures.
 
@@ -23,9 +23,9 @@ You can't decommission a node if doing so will leave StorageGRID in an invalid s
 | No
 |
 
-|Archive node
-| No
-|
+| Archive Node
+| Yes
+| Node must be disconnected before you can decommission it.
 
 | Admin or Gateway Node
 | No
@@ -39,9 +39,9 @@ You can't decommission a node if doing so will leave StorageGRID in an invalid s
 | No
 | Can't decommission if the node is required for the active ILM policy
 
-| 10 Storage Nodes
-| Yes, maximum number allowed
-| This is the maximum number of Storage Nodes for a single Decommission Node procedure.
+| More than 10 Storage Nodes in one procedure
+| No 
+| Ten is the maximum number of Storage Nodes you can decommission in a single Decommission Node procedure.
 
 | Any connected node 
 | Possibly
