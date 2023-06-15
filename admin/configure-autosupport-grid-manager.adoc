@@ -2,7 +2,7 @@
 permalink: admin/configure-autosupport-grid-manager.html
 sidebar: sidebar
 keywords: how to configure autosupport, what is autosupport-on-demand
-summary: 'You can enable the AutoSupport feature and the individual AutoSupport options when you first install StorageGRID, or you can enable them later.'
+summary: 'By default, the AutoSupport feature is enabled when you first install StorageGRID. As needed, you can change the AutoSupport configuration.'
 ---
 = Configure AutoSupport
 :icons: font
@@ -10,52 +10,67 @@ summary: 'You can enable the AutoSupport feature and the individual AutoSupport 
 
 
 [.lead]
-You can enable the AutoSupport feature and the individual AutoSupport options when you first install StorageGRID, or you can enable them later.
+By default, the AutoSupport feature is enabled when you first install StorageGRID. As needed, you can change the AutoSupport configuration.
+
+You should configure StorageGRID AutoSupport only on the primary Admin Node. However, you must link:what-is-autosupport.html#autosupport-for-appliances[configure hardware autosupport] on each appliance.
 
 .Before you begin
 
 * You are signed in to the Grid Manager using a link:../admin/web-browser-requirements.html[supported web browser].
 * You have the link:admin-group-permissions.html[Root access or Other grid configuration permission].
-* If you will use HTTPS for sending AutoSupport messages, you have provided outbound internet access to the primary Admin Node, either directly or link:configuring-admin-proxy-settings.html[using a proxy server] (inbound connections not required).
-* If HTTP is selected on the StorageGRID AutoSupport page, you have configured a proxy server to forward AutoSupport messages as HTTPS. NetApp's AutoSupport servers will reject messages sent using HTTP.
+* If you will use HTTPS for sending AutoSupport packages, you have provided outbound internet access to the primary Admin Node, either directly or link:configuring-admin-proxy-settings.html[using a proxy server] (inbound connections not required).
+* If HTTP is selected on the StorageGRID AutoSupport page, you have configured a proxy server to forward AutoSupport packages as HTTPS. NetApp's AutoSupport servers will reject packages sent using HTTP.
 
-* If you will use SMTP as the protocol for AutoSupport messages, you have configured an SMTP mail server. The same mail server configuration is used for alarm email notifications (legacy system).
+* If you will use SMTP as the protocol for AutoSupport packages, you have configured an SMTP mail server. The same mail server configuration is used for alarm email notifications (legacy system).
 
-== Specify the protocol for AutoSupport messages
+.About this task
 
-You can use any of the following protocols for sending AutoSupport messages:
+Protocols for sending AutoSupport packages:: You can choose one of three protocols for sending AutoSupport packages:
++
+* HTTPS
+* HTTP
+* SMTP
++
+If you use SMTP as the protocol for AutoSupport packages, you must configure an SMTP mail server.
+
+AutoSupport options:: You can use any combination of the following options to send AutoSupport packages to technical support:
++
+* *Weekly*: Automatically send AutoSupport packages once per week. Default setting: Enabled.
+* *Event-triggered*: Automatically send AutoSupport packages every hour or when significant system events occur. Default setting: Enabled.
+* *On Demand*: Allow technical support to request that your StorageGRID system send AutoSupport packages automatically, which is useful when they are actively working an issue (requires HTTPS AutoSupport transmission protocol). Default setting: Disabled.
+* *User-triggered*: Manually send AutoSupport packages at any time.
+
+== Specify the protocol for AutoSupport packages
+
+You can use any of the following protocols for sending AutoSupport packages:
 
 * *HTTPS*: This is the default and recommended setting for new installations. This protocol uses port 443. If you want to <<Enable AutoSupport on Demand,enable the AutoSupport on Demand feature>>, you must use HTTPS.
-* *HTTP*: If you select HTTP, you must configure a proxy server to forward AutoSupport messages as HTTPS. NetApp's AutoSupport servers reject messages sent using HTTP. This protocol uses port 80. 
-* *SMTP*: Use this option if you want AutoSupport messages to be emailed. If you use SMTP as the protocol for AutoSupport messages, you must configure an SMTP mail server on the Legacy Email Setup page (*SUPPORT* > *Alarms (legacy)* > *Legacy email setup*).
+* *HTTP*: If you select HTTP, you must configure a proxy server to forward AutoSupport packages as HTTPS. NetApp's AutoSupport servers reject packages sent using HTTP. This protocol uses port 80. 
+* *SMTP*: Use this option if you want AutoSupport packages to be emailed. If you use SMTP as the protocol for AutoSupport packages, you must configure an SMTP mail server on the Legacy Email Setup page (*SUPPORT* > *Alarms (legacy)* > *Legacy email setup*).
 
-The protocol you set is used for sending all types of AutoSupport messages.
+The protocol you set is used for sending all types of AutoSupport packages.
 
 .Steps
 
-. Select *SUPPORT* > *Tools* > *AutoSupport*.
-+
-The AutoSupport page appears, and the *Settings* tab is selected.
+. Select *SUPPORT* > *Tools* > *AutoSupport*. The AutoSupport page appears, and the Settings tab is selected.
 
-. Select the protocol you want to use to send AutoSupport messages.
+. Select the protocol you want to use to send AutoSupport packages.
 
 . If you selected *HTTPS*, select whether to use a TLS certificate to secure the connection to the NetApp Support server.
- ** *Use NetApp support certificate* (default): Certificate validation ensures that the transmission of AutoSupport messages is secure. The NetApp support certificate is already installed with the StorageGRID software.
+ ** *Use NetApp support certificate* (default): Certificate validation ensures that the transmission of AutoSupport packages is secure. The NetApp support certificate is already installed with the StorageGRID software.
  ** *Do not verify certificate*: Select this option only when you have a good reason not to use certificate validation, such as when there is a temporary problem with a certificate.
 
 . Select *Save*.
 +
-All weekly, user-triggered, and event-triggered messages are sent using the selected protocol.
+All weekly, user-triggered, and event-triggered packages are sent using the selected protocol.
 
-== Disable weekly AutoSupport messages
+== Disable weekly AutoSupport
 
-By default, the StorageGRID system is configured to send an AutoSupport message to NetApp Support once a week.
+By default, the StorageGRID system is configured to send an AutoSupport package to NetApp Support once a week.
 
-To determine when the weekly AutoSupport message will be sent, go to the *AutoSupport* > *Results* tab. In *Weekly AutoSupport* section, look at the value for *Next Scheduled Time*. 
+To determine when the weekly AutoSupport package will be sent, go to the *AutoSupport* > *Results* tab. In the *Weekly AutoSupport* section, look at the value for *Next Scheduled Time*. 
 
-image::../media/autosupport_weekly_next_scheduled_time.png[Weekly AutoSupport next scheduled time]
-
-You can disable the automatic sending of weekly AutoSupport messages at any time.
+You can disable the automatic sending of weekly AutoSupport packages at any time.
 
 .Steps
 
@@ -63,11 +78,11 @@ You can disable the automatic sending of weekly AutoSupport messages at any time
 . Clear the *Enable Weekly AutoSupport* checkbox.
 . Select *Save*.
 
-== Disable event-triggered AutoSupport messages
+== Disable event-triggered AutoSupport
 
-By default, the StorageGRID system is configured to send an AutoSupport message to NetApp Support when an important alert or other significant system event occurs.
+By default, the StorageGRID system is configured to send an AutoSupport package to NetApp Support every hour or when an important alert or other significant system event occurs.
 
-You can disable event-triggered AutoSupport messages at any time.
+You can disable event-triggered AutoSupport at any time.
 
 .Steps
 
@@ -75,12 +90,11 @@ You can disable event-triggered AutoSupport messages at any time.
 . Clear the *Enable Event-Triggered AutoSupport* checkbox.
 . Select *Save*.
 
-
 == Enable AutoSupport on Demand
 
 AutoSupport on Demand can assist in solving issues that technical support is actively working on. 
 
-By default, AutoSupport on Demand is disabled. Enabling this feature allows technical support to request that your StorageGRID system send AutoSupport messages automatically. Technical support can also set the polling time interval for AutoSupport on Demand queries.
+By default, AutoSupport on Demand is disabled. Enabling this feature allows technical support to request that your StorageGRID system send AutoSupport packages automatically. Technical support can also set the polling time interval for AutoSupport on Demand queries.
 
 Technical support can't enable or disable AutoSupport on Demand.
 
@@ -108,12 +122,11 @@ As required, you can optionally disable the check for software updates. For exam
 
 == Add an additional AutoSupport destination
 
-When you enable AutoSupport, heath and status messages are sent to NetApp Support. You can specify one additional destinations for all AutoSupport messages.
+When you enable AutoSupport, heath and status packages are sent to NetApp Support. You can specify one additional destinations for all AutoSupport packages.
 
-To verify or change the protocol used to send AutoSupport messages, see the instructions to <<Specify the protocol for AutoSupport messages>>.
+To verify or change the protocol used to send AutoSupport packages, see the instructions to <<Specify the protocol for AutoSupport packages>>.
 
-NOTE: You can't use the SMTP protocol to send AutoSupport messages to an additional destination.
-
+NOTE: You can't use the SMTP protocol to send AutoSupport packages to an additional destination.
 
 .Steps
 
@@ -131,7 +144,7 @@ Port:: The port used to connect to an additional AutoSupport destination server.
 
 Certification Validation:: Whether a TLS certificate is used to secure the connection to the additional destination.
 +
-* Select *Do not verify certificate* to send your AutoSupport messages without certificate validation.
+* Select *Do not verify certificate* to send your AutoSupport packages without certificate validation.
 +
 Select this choice only when you have a good reason not to use certificate validation, such as when there is a temporary problem with a certificate.
 
@@ -149,4 +162,4 @@ image::../media/autosupport_certificate.png[AutoSupport certificate]
 
 . Select *Save*.
 +
-All future weekly, event-triggered, and user-triggered AutoSupport messages will be sent to the additional destination.
+All future weekly, event-triggered, and user-triggered AutoSupport packages will be sent to the additional destination.

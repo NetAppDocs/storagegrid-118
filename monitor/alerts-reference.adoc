@@ -275,7 +275,7 @@ Some of the default alerts use link:commonly-used-prometheus-metrics.html[Promet
 | Alert name| Description
 
 | AutoSupport message failed to send
-| The most recent AutoSupport message failed to send.
+| The most recent AutoSupport package failed to send.
 
 | Email notification failure
 | The email notification for an alert could not be sent.

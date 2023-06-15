@@ -439,7 +439,7 @@ If you want StorageGRID to send email notifications when a legacy alarm is trigg
 .About this task
 Use these settings to define the SMTP server used for legacy alarm email notifications and AutoSupport email messages. These settings aren't used for alert notifications.
 
-NOTE: If you use SMTP as the protocol for AutoSupport messages, you might have already configured an SMTP mail server. The same SMTP server is used for alarm email notifications, so you can skip this procedure. See the link:../admin/index.html[instructions for administering StorageGRID].
+NOTE: If you use SMTP as the protocol for AutoSupport packages, you might have already configured an SMTP mail server. The same SMTP server is used for alarm email notifications, so you can skip this procedure. See the link:../admin/index.html[instructions for administering StorageGRID].
 
 SMTP is the only protocol supported for sending email.
 
@@ -447,7 +447,7 @@ SMTP is the only protocol supported for sending email.
 . Select *SUPPORT* > *Alarms (legacy)* > *Legacy email setup*.
 . From the Email menu, select *Server*.
 +
-The Email Server page appears. This page is also used to configure the email server for AutoSupport messages.
+The Email Server page appears. This page is also used to configure the email server for AutoSupport packages.
 +
 image::../media/email_server_settings.png[Email Server Settings]
 

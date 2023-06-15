@@ -169,7 +169,7 @@ If enterprise networking policies restrict access to any of these ports, you can
 | TCP
 | Storage Nodes
 | Primary Admin Node
-| Used by StorageGRID appliances for forwarding AutoSupport messages from E-Series SANtricity System Manager to the primary Admin Node.
+| Used by StorageGRID appliances for forwarding AutoSupport packages from E-Series SANtricity System Manager to the primary Admin Node.
 
 | 10342
 | TCP
