@@ -2,20 +2,28 @@
 permalink: admin/what-is-autosupport.html
 sidebar: sidebar
 keywords: autosupport, technical support, storagegrid health, system status, Active IQ
-summary: 'The AutoSupport feature enables StorageGRID to send health and status packages to the NetApp Support Site.'
+summary: 'The AutoSupport feature enables StorageGRID to send health and status packages to NetApp Support.'
 ---
 = Use AutoSupport: Overview
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-The AutoSupport feature enables StorageGRID to send health and status packages to the NetApp Support Site.
+The AutoSupport feature enables StorageGRID to send health and status packages to NetApp Support.
 
 Using AutoSupport can significantly speed up problem determination and resolution. Technical support can also monitor the storage needs of your system and help you determine if you need to add new nodes or sites. Optionally, you can configure AutoSupport packages to be sent to one additional destination.
 
-By default, AutoSupport is enabled when you first install StorageGRID. You can link:configure-autosupport-grid-manager.html[change the default AutoSupport configuration] if needed.
+StorageGRID has two types of AutoSupport:
 
-NOTE: If AutoSupport is not enabled, a message appears on the Grid Manager dashboard. The message includes a link to the AutoSupport configuration page. If you close the message, it will not appear again until your browser cache is cleared, even if AutoSupport remains disabled.
+StorageGRID AutoSupport:: Reports StorageGRID software issues. Enabled by default when you first install StorageGRID. You can link:configure-autosupport-grid-manager.html[change the default AutoSupport configuration] if needed.
+
+Appliance hardware AutoSupport:: Reports StorageGRID appliance issues. You must link:configure-autosupport-grid-manager.html#autosupport-for-appliances[configure hardware AutoSupport on each appliance].
+
+NOTE: If StorageGRID AutoSupport is not enabled, a message appears on the Grid Manager dashboard. The message includes a link to the AutoSupport configuration page. If you close the message, it will not appear again until your browser cache is cleared, even if AutoSupport remains disabled.
+
+== What is Active IQ?
+
+include::../_include/autosupport-activeiq.adoc[]
 
 == Information included in AutoSupport packages
 
@@ -34,11 +42,8 @@ AutoSupport packages include information such as the following:
 * Provisioned grid specification file
 * Diagnostic metrics
 
-For more information about the details included in an AutoSupport package, expand *AutoSupport package content*:
+An AutoSupport package contains the following XML files and details.
 
-.AutoSupport package content
-[%collapsible]
-====
 [cols="2a,2a,3a" options="header"]
 |===
 | File name| Fields| Description
@@ -421,27 +426,3 @@ X-Netapp-asup-system-id
 X-Netapp-asup-model-name
 | AutoSupport header data.
 |===
-====
-
-== What is Active IQ?
-
-include::../_include/autosupport-activeiq.adoc[]
-
-== AutoSupport for appliances
-
-AutoSupport for appliances reports StorageGRID hardware issues, while StorageGRID AutoSupport reports StorageGRID software issues (except for the SGF6112, where StorageGRID AutoSupport reports both hardware and software issues). You must configure AutoSupport on each appliance, except for the SGF6112 which does not require additional configuration. AutoSupport is implemented differently for services and storage appliances.
-
-You must enable AutoSupport in SANtricity for each storage appliance. You can configure SANtricity AutoSupport during initial appliance setup or after an appliance has been installed:
-
-* For SG6000 and SG5700 appliances, https://review.docs.netapp.com/us-en/storagegrid-appliances_main/installconfig/accessing-and-configuring-santricity-system-manager.html[configure AutoSupport in SANtricity System Manager^]
-
-AutoSupport packages from E-Series appliances can be included in StorageGRID AutoSupport if you configure AutoSupport delivery by proxy in link:../admin/sending-eseries-autosupport-messages-through-storagegrid.html[SANtricity System Manager].
-
-StorageGRID AutoSupport does not report hardware issues, such as DIMM or host interface card (HIC) faults. However, some component failures might trigger link:../monitor/alerts-reference.html[hardware alerts]. For StorageGRID appliances with a baseboard management controller (BMC), such as the SG100, SG1000, SG6060, or SGF6024, you can configure email and SNMP traps to report hardware failures:
-
-* https://review.docs.netapp.com/us-en/storagegrid-appliances_main/installconfig/setting-up-email-notifications-for-alerts.html[Set up email notifications for alerts^]
-* https://review.docs.netapp.com/us-en/storagegrid-appliances_main/installconfig/configuring-snmp-settings-for-bmc.html[Configure SNMP settings^] for the SG6000-CN controller or the SG100 and SG1000 services appliances
-
-.Related information
-
-https://mysupport.netapp.com/site/global/dashboard[NetApp Support^]
