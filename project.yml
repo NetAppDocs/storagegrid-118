@@ -83,8 +83,9 @@ sidebar:
           - title: Considerations for Admin or Gateway Node decommission
             url: "/maintain/considerations-for-decommissioning-admin-or-gateway-nodes.html"
           - title: Considerations for Storage Node decommission
-            url: "/maintain/considerations-for-decommissioning-storage-nodes.html"
             entries:
+            - title: General considerations
+              url: "/maintain/considerations-for-decommissioning-storage-nodes.html"
             - title: Understand the ADC quorum
               url: "/maintain/understanding-adc-service-quorum.html"
             - title: Review ILM policy and storage configuration
