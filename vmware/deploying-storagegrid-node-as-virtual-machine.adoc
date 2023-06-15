@@ -152,7 +152,7 @@ IMPORTANT: If you are recovering a grid node, you must enter the name of the nod
 .. Use the *Temporary installation password* drop-down to specify a temporary installation password, so that you can access the VM console or use SSH before the new node joins the grid.
 
 *** *Use node name*: The value you provided for the *Node name* field is used as the temporary installation password.
-*** *Use custom password*: The custom password you specify in the *Custom password* field is used as the temporary installation password.
+*** *Use custom password*: The custom password you specify in the *Custom password* field (below)s used as the temporary installation password.
 *** *Disable password*: No temporary installation password will be used. You won't be able to access the VM to debug installation issues.
 
 .. In the *Grid Network (eth0)* section, select STATIC or DHCP for the *Grid network IP configuration*.
