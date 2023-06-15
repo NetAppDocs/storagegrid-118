@@ -1,4 +1,0 @@
----
-permalink: s3/support-for-storagegrid-platform-services.html
-redirect: admin/manage-platform-services-for-tenants.html
----

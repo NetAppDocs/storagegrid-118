@@ -1,4 +1,0 @@
----
-permalink: s3/monitoring-object-ingest-and-retrieval-rates.html
-redirect: monitor/monitoring-object-ingest-and-retrieval-rates.html
----
