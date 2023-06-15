@@ -22,6 +22,8 @@ This release of StorageGRID introduces the following features and functional cha
 
 === Kathy's new features
 
+* When you link:../vmware/deploying-storagegrid-node-as-virtual-machine.html[deploy a StorageGRID node as a virtual machine], you are now prompted to set a temporary installation password, so that you can access the VM console or use SSH before the new node joins the grid. You can use the node name as the password, set a custom password, or disable the password. 
+
 
 === Kevin's new features
 
