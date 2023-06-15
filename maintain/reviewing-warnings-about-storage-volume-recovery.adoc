@@ -4,12 +4,12 @@ sidebar: sidebar
 keywords: storagegrid, recover, volume warning
 summary: 'Before recovering failed storage volumes for a Storage Node, you must review the following warnings.'
 ---
-= Review warnings about storage volume recovery
+= Warnings for storage volume recovery
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Before recovering failed storage volumes for a Storage Node, you must review the following warnings.
+Before recovering failed storage volumes for a Storage Node, review the following warnings.
 
 The storage volumes (or rangedbs) in a Storage Node are identified by a hexadecimal number, which is known as the volume ID. For example, 0000 is the first volume and 000F is the sixteenth volume. The first object store (volume 0) on each Storage Node uses up to 4 TB of space for object metadata and Cassandra database operations; any remaining space on that volume is used for object data. All other storage volumes are used exclusively for object data.
 
