@@ -70,23 +70,21 @@ sidebar:
         url: "/maintain/index.html"
       - title: Download Recovery Package
         url: "/maintain/downloading-recovery-package.html"
-      - title: Decommission node or site
+      - title: Decommission nodes or site
         entries:
         - title: Overview
           url: "/maintain/decommission-procedure.html"
-        - title: Decommission node
+        - title: Decommission nodes
           entries:
           - title: Overview
             url: "/maintain/grid-node-decommissioning.html"
-          - title: Considerations for grid node decommission
-            url: "/maintain/considerations-for-decommissioning-grid-nodes.html"
-          - title: Considerations for Admin or Gateway Node decommission
+          - title: Considerations for Admin, Gateway, or Archive Nodes
             url: "/maintain/considerations-for-decommissioning-admin-or-gateway-nodes.html"
-          - title: Considerations for Storage Node decommission
+          - title: Considerations for Storage Nodes
             entries:
             - title: General considerations
               url: "/maintain/considerations-for-decommissioning-storage-nodes.html"
-            - title: Understand the ADC quorum
+            - title: ADC quorum
               url: "/maintain/understanding-adc-service-quorum.html"
             - title: Review ILM policy and storage configuration
               url: "/maintain/reviewing-ilm-policy-and-storage-configuration.html"

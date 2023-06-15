@@ -11,11 +11,6 @@ summary: 'You can use the node decommission procedure to remove one or more Stor
 [.lead]
 You can use the node decommission procedure to remove one or more Storage Nodes, Gateway Nodes, non-primary Admin Nodes, or Archive Nodes at one or more sites. You can't decommission the primary Admin Node.
 
-In general, you should decommission grid nodes only while they are connected to the StorageGRID system and all nodes are in normal health (have green icons on the *NODES* pages and on the *Decommission Nodes* page). 
-
-In some cases, you might need to decommission a grid node that is disconnected. For example, you can only decommission an Archive Node if it is disconnected. Before removing a disconnected node, make sure you understand the implications and restrictions of that process.
-
-
 Use the node decommission procedure when any of the following are true:
 
 * You have added a larger Storage Node to the system and you want to remove one or more smaller Storage Nodes, while at the same time preserving objects.
@@ -28,4 +23,18 @@ TIP: If you want to replace an older appliance with a newer appliance, consider 
 * Your grid includes a disconnected node that you can't recover or bring back online.
 * Your grid includes an Archive Node that you are no longer using.
 
-// replace workflow with table/steps?
+
+== Considerations for decommissioning grid nodes
+
+You can decommission connected grid nodes or disconnected grid nodes. 
+
+Decommission connected nodes::
+In general, you should decommission grid nodes only when they are connected to the StorageGRID system and only when all nodes are in normal health (have green icons on the *NODES* pages and on the *Decommission Nodes* page). For instructions, see link:decommissioning-connected-grid-nodes.html[connected grid nodes].
+
+Decommission disconnected nodes:: 
+In some cases, you might need to decommission a grid node that is disconnected. For example, you can only decommission an Archive Node if it is disconnected. For instructions, see link:decommissioning-disconnected-grid-nodes.html[disconnected grid nodes].
+
+Before you start this procedure to decommission one or more nodes, review the implications of removing each type of node. When a node is decommissioned, its services are disabled and the node automatically shut down.
+
+WARNING: Don't remove a grid node's virtual machine or other resources until instructed to do so in decommission procedures.
+
