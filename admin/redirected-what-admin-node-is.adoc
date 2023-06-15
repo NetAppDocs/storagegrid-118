@@ -1,4 +1,0 @@
----
-permalink: admin/what-admin-node-is.html
-redirect: primer/what-admin-node-is.html
----

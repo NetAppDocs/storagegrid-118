@@ -55,8 +55,6 @@ Software-based grid nodes can be deployed as VMware virtual machines or within c
 
 * Within a container engine on Ubuntu or Debian: See link:../ubuntu/index.html[Install Ubuntu or Debian].
 
-|===
-
 Use the https://imt.netapp.com/matrix/#welcome[NetApp Interoperability Matrix Tool (IMT)^] to determine the supported versions.
 
 
