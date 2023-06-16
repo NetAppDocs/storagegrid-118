@@ -1,15 +1,17 @@
 ---
 permalink: maintain/grid-node-decommissioning.html
 sidebar: sidebar
-keywords: storagegrid, decommission
-summary: 'You can use the node decommission procedure to remove one or more Storage Nodes, Gateway Nodes, non-primary Admin Nodes, or Archive Nodes at one or more sites. You cannot decommission the primary Admin Node.'
+keywords: storagegrid, decommission, remove grid node
+summary: 'You can use the node decommission procedure to remove one or more grid nodes at one or more sites. You cannot decommission the primary Admin Node.'
 ---
 = Grid node decommission: Overview
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You can use the node decommission procedure to remove one or more Storage Nodes, Gateway Nodes, non-primary Admin Nodes, or Archive Nodes at one or more sites. You can't decommission the primary Admin Node.
+You can use the node decommission procedure to remove one or more grid nodes at one or more sites. You can't decommission the primary Admin Node.
+
+== When to decommission a node
 
 Use the node decommission procedure when any of the following are true:
 
@@ -23,7 +25,7 @@ TIP: If you want to replace an older appliance with a newer appliance, https://r
 * Your grid includes a disconnected node that you can't recover or bring back online.
 * Your grid includes an Archive Node that you are no longer using.
 
-== Types of decommission procedures
+== How to decommission a node
 
 You can decommission connected grid nodes or disconnected grid nodes. 
 
@@ -37,11 +39,11 @@ In some cases, you might need to decommission a grid node that is not currently 
 +
 For instructions, see link:decommissioning-disconnected-grid-nodes.html[Decommission disconnected grid nodes].
 
-Before performing either procedure, review the considerations for each  each type of node:
+== What to consider before decommissioning a node
+
+Before performing either procedure, review the considerations for each type of node:
 
 * link:considerations-for-decommissioning-admin-or-gateway-nodes.html[Considerations for Admin, Gateway, or Archive Node decommission]
 
 * link:considerations-for-decommissioning-storage-nodes.html[Considerations for Storage Node decommission]
-
-CAUTION: Don't remove a grid node's virtual machine or other resources until instructed to do so in decommission procedures.
 
