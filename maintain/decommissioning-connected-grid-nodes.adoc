@@ -53,7 +53,11 @@ NOTE: If one or more volumes go offline while a decommission is in progress, the
 
 * If you previously decommissioned a disconnected Storage Node, the data repair jobs have all completed successfully. See link:checking-data-repair-jobs.html[Check data repair jobs].
 
-IMPORTANT: Don't remove a grid node's virtual machine or other resources until instructed to do so in this procedure.
+CAUTION: Don't remove a grid node's virtual machine or other resources until instructed to do so in this procedure.
+
+.About this task
+
+When a node is decommissioned, its services are disabled and the node automatically shut down.
 
 .Steps
 
@@ -62,17 +66,17 @@ IMPORTANT: Don't remove a grid node's virtual machine or other resources until i
 +
 The *Start Decommission* button is enabled.
 
-. Click *Start Decommission*.
+. Select *Start Decommission*.
 
-. Review the list of nodes in the confirmation dialog, and click *OK*.
+. Review the list of nodes in the confirmation dialog, and select *OK*.
 +
-The node decommission procedure starts, and the progress is displayed for each node. During the procedure, a new Recovery Package is generated to show the grid configuration change.
+The node decommission procedure starts, and the progress is displayed for each node.
 +
 image::../media/decommission_nodes_procedure_in_progress.png[screenshot of node decommissioning in progress]
 +
-IMPORTANT: Don't take a Storage Node offline after the decommission procedure has started. Changing the state might result in some content not being copied to other locations.
+CAUTION: Don't take a Storage Node offline after the decommission procedure has started. Changing the state might result in some content not being copied to other locations.
 
-. As soon as the new Recovery Package is available, click the link or select *MAINTENANCE* > *System* > *Recovery package* to access the Recovery Package page. Then, download the `.zip` file.
+. As soon as the new Recovery Package is available, select the Recovery Package link in the banner or select *MAINTENANCE* > *System* > *Recovery package* to access the Recovery Package page. Then, download the `.zip` file.
 +
 See the instructions for link:downloading-recovery-package.html[downloading the Recovery Package].
 +
@@ -80,20 +84,25 @@ NOTE: Download the Recovery Package as soon as possible to ensure you can recove
 
 . Periodically monitor the Decommission Nodes page to ensure that all selected nodes are decommissioned successfully.
 +
-Storage Nodes can take days or weeks to decommission. When all tasks are complete, the node selection list is redisplayed with a success message.
-+
-image::../media/decommission_nodes_procedure_complete.png[screenshot showing that decommission is complete]
+TIP: Storage Nodes can take days or weeks to decommission.
++ 
+When all tasks are complete, the node selection list is redisplayed with a success message.
 
-. Follow the appropriate step for your platform. For example:
- ** *Linux*: You might want to detach the volumes and delete the node configuration files you created during installation.
- ** *VMware*: You might want to use the vCenter "`Delete from Disk`" option to delete the virtual machine. You might also need to delete any data disks that are independent of the virtual machine.
- ** *StorageGRID appliance*: The appliance node automatically reverts to an undeployed state where you can access the StorageGRID Appliance Installer. You can power off the appliance or add it to another StorageGRID system.
-
+.After you finish
 Complete these steps after you complete the node decommission procedure:
 
-* Ensure that the drives of the decommissioned grid node are wiped clean. Use a commercially available data wiping tool or service to permanently and securely remove data from the drives.
-* If you decommissioned an appliance node and the data on the appliance was protected using node encryption, use the StorageGRID Appliance Installer to clear the key management server configuration (Clear KMS).You must clear the KMS configuration if you want to add the appliance to another grid. For instructions, see https://review.docs.netapp.com/us-en/storagegrid-appliances_main/commonhardware/monitoring-node-encryption-in-maintenance-mode.html[Monitor node encryption in maintenance mode^].
+. Follow the appropriate step for your platform. For example:
 
-.Related information
+ ** *Linux*: You might want to detach the volumes and delete the node configuration files you created during installation. See 
+link:../rhel/index.html[Install Red Hat Enterprise Linux or CentOS] and 
+link:../ubuntu/index.html[Install Ubuntu or Debian].
 
-link:../rhel/index.html[Install Red Hat Enterprise Linux or CentOS]
+ ** *VMware*: You might want to use the vCenter "`Delete from Disk`" option to delete the virtual machine. You might also need to delete any data disks that are independent of the virtual machine.
+
+ ** *StorageGRID appliance*: The appliance node automatically reverts to an undeployed state where you can access the StorageGRID Appliance Installer. You can power off the appliance or add it to another StorageGRID system.
+
+. Ensure that the drives of the decommissioned grid node are wiped clean. Use a commercially available data wiping tool or service to permanently and securely remove data from the drives.
+
+. If you decommissioned an appliance node and the data on the appliance was protected using node encryption, use the StorageGRID Appliance Installer to clear the key management server configuration (Clear KMS).You must clear the KMS configuration if you want to add the appliance to another grid. For instructions, see https://review.docs.netapp.com/us-en/storagegrid-appliances_main/commonhardware/monitoring-node-encryption-in-maintenance-mode.html[Monitor node encryption in maintenance mode^].
+
+

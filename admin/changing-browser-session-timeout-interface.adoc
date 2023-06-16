@@ -57,6 +57,6 @@ The new setting doesn't affect users who are currently signed in. Users must sig
 
 .. Select the checkbox to return a stack trace in Grid Manager and Tenant Manager API error responses.
 +
-WARNING: Leave stack trace disabled in production environments to avoid revealing internal software details when API errors occur. 
+CAUTION: Leave stack trace disabled in production environments to avoid revealing internal software details when API errors occur. 
 
 .. Select *Save*.

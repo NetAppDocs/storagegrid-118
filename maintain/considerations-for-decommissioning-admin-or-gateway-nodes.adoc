@@ -17,7 +17,7 @@ Review the considerations for decommissioning an Admin Node, Gateway Node, or Ar
 
 * You can't decommission an Admin Node if one of its network interfaces is part of a high availability (HA) group. You must first remove the network interfaces from the HA group. See the instructions for link:../admin/managing-high-availability-groups.html[managing HA groups].
 
-* As required, you can safely change the ILM policy while decommissioning an Admin Node.
+* As required, you can safely change an ILM policy while decommissioning an Admin Node.
 
 * If you decommission an Admin Node and single sign-on (SSO) is enabled for your StorageGRID system, you must remember to remove the node's relying party trust from Active Directory Federation Services (AD FS).
 
@@ -29,7 +29,7 @@ Review the considerations for decommissioning an Admin Node, Gateway Node, or Ar
 
 * You can't decommission a Gateway Node if one of its network interfaces is part of a high availability (HA) group. You must first remove the network interfaces from the HA group. See the instructions for link:../admin/managing-high-availability-groups.html[managing HA groups].
 
-* As required, you can safely change the ILM policy while decommissioning a Gateway Node.
+* As required, you can safely change an ILM policy while decommissioning a Gateway Node.
 
 * If you use link:../admin/grid-federation-overview.html[grid federation], ensure that the IP address of the node you are decommissioning was not specified for a grid federation connection.
 
@@ -41,7 +41,7 @@ NOTE: Support for Archive Nodes and the Cloud Tiering - Simple Storage Service (
 
 You can't decommission an Archive Node if it is still connected to the grid. You must ensure that the node is no longer being used and then use the decommission procedure for disconnected nodes.
 
-TIP: If the Archive Node is still in use, make sure your schedule includes enough time to move any existing data to other StorageGRID nodes or a Cloud Storage Pool. Moving data from an Archive Node might take several weeks or months.
+TIP: If the Archive Node is still in use, make sure your schedule includes enough time to move any existing data to Storage Nodes or a Cloud Storage Pool. Moving the data from an Archive Node might take several weeks or months.
 
 .Steps
 
