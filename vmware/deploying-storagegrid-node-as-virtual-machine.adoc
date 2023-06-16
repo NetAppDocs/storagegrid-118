@@ -150,10 +150,14 @@ Determine which StorageGRID networks the node will use by selecting a destinatio
 IMPORTANT: If you are recovering a grid node, you must enter the name of the node you are recovering.
 
 .. Use the *Temporary installation password* drop-down to specify a temporary installation password, so that you can access the VM console or use SSH before the new node joins the grid.
++
+NOTE: The temporary installation password is only used during node installation. After a node has been added to the grid, you can access it using the link:../admin/change-node-console.html[node console password], which is listed in the `Passwords.txt` file in the Recovery Package. 
 
 *** *Use node name*: The value you provided for the *Node name* field is used as the temporary installation password.
-*** *Use custom password*: The custom password you specify in the *Custom password* field (below)s used as the temporary installation password.
-*** *Disable password*: No temporary installation password will be used. You won't be able to access the VM to debug installation issues.
+*** *Use custom password*: A custom password is used as the temporary installation password.
+*** *Disable password*: No temporary installation password will be used. If you need to access the VM to debug installation issues, see link:troubleshooting-installation-issues.html[Troubleshoot installation issues].
+
+.. If you selected *Use custom password*, specify the temporary installation password you want to use in the *Custom password* field. 
 
 .. In the *Grid Network (eth0)* section, select STATIC or DHCP for the *Grid network IP configuration*.
   *** If you select STATIC, enter the *Grid network IP*, *Grid network mask*, *Grid network gateway*, and *Grid network MTU*.
