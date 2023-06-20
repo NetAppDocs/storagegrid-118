@@ -17,30 +17,15 @@ StorageGRID has two types of AutoSupport:
 
 StorageGRID AutoSupport:: Reports StorageGRID software issues. Enabled by default when you first install StorageGRID. You can link:configure-autosupport-grid-manager.html[change the default AutoSupport configuration] if needed.
 
-Appliance hardware AutoSupport:: Reports StorageGRID appliance issues. You must link:configure-autosupport-grid-manager.html#autosupport-for-appliances[configure hardware AutoSupport on each appliance].
-
 NOTE: If StorageGRID AutoSupport is not enabled, a message appears on the Grid Manager dashboard. The message includes a link to the AutoSupport configuration page. If you close the message, it will not appear again until your browser cache is cleared, even if AutoSupport remains disabled.
+
+Appliance hardware AutoSupport:: Reports StorageGRID appliance issues. You must link:configure-autosupport-grid-manager.html#autosupport-for-appliances[configure hardware AutoSupport on each appliance].
 
 == What is Active IQ?
 
 include::../_include/autosupport-activeiq.adoc[]
 
-== Information included in AutoSupport packages
-
-AutoSupport packages include information such as the following:
-
-* StorageGRID software version
-* Operating system version
-* System-level and location-level attribute information
-* Recent alerts and alarms (legacy system)
-* Current status of all grid tasks, including historical data
-* Admin Node database usage
-* Number of lost or missing objects
-* Grid configuration settings
-* NMS entities
-* Active ILM policy
-* Provisioned grid specification file
-* Diagnostic metrics
+== Information included in AutoSupport package
 
 An AutoSupport package contains the following XML files and details.
 
@@ -111,7 +96,7 @@ Value +
 Index +
 Table ID +
 Table Name
-| Grid-wide configuration information file. Contains information about grid certificates, metadata reserved space, grid-wide configuration settings (compliance, S3 Object Lock, object compression, alerts, syslog, and ILM configuration), EC profile details, DNS name, NMS name, and more.
+| Grid-wide configuration information file. Contains information about grid certificates, metadata reserved space, grid-wide configuration settings (compliance, S3 Object Lock, object compression, alerts, syslog, and ILM configuration), erasure coding profile details, DNS name, NMS name, and more.
 
 | GRID-SPEC.XML
 | Grid specifications, raw XML
@@ -126,7 +111,7 @@ Value +
 Index +
 Table ID +
 Table name
-| Grid tasks (maintenance procedures) status file. Provides details of the grid's active, aborted, completed, failed, and pending tasks.
+| Grid tasks (maintenance procedures) status file. Provides details of the grid's active, terminated, completed, failed, and pending tasks.
 
 | ILM-STATUS.XML
 | Node +
@@ -165,7 +150,7 @@ Node ID +
 Device model ID +
 Device model version +
 Entity name
-| Group and service entities in the NMS tree. Provides grid topology details. The node can be determined based on the services running on the node.
+| Group and service entities in the link:../primer/nodes-and-services.html#storagegrid-services[NMS tree]. Provides grid topology details. The node can be determined based on the services running on the node.
 
 | OBJECTS-STATUS.XML
 | Node +
@@ -198,7 +183,7 @@ Value +
 Index +
 Table ID +
 Table name
-| Service node information file. Contains details such as allocated table space, free table space, reaper metrics of the database, segment repair duration, repair job duration, auto job restarts, auto job aborts, and more.
+| Service node information file. Contains details such as allocated table space, free table space, Reaper metrics of the database, segment repair duration, repair job duration, auto job restarts, auto job termination, and more.
 
 | STORAGE-GRADES.XML
 | Storage grade ID +
