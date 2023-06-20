@@ -141,7 +141,7 @@ entries:
       url: "/monitor/reviewing-audit-messages.html"
     - title: Collect log files and system data
       url: "/monitor/collecting-log-files-and-system-data.html"
-    - title: Manually trigger an AutoSupport message
+    - title: Manually trigger an AutoSupport package
       url: "/monitor/manually-triggering-autosupport-message.html"
     - title: View the Grid Topology tree
       url: "/monitor/viewing-grid-topology-tree.html"

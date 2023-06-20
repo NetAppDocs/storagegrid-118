@@ -2,14 +2,14 @@
 permalink: admin/configuring-admin-proxy-settings.html
 sidebar: sidebar
 keywords: admin proxy, autosupport, non-transparent proxy
-summary: 'If you send AutoSupport messages using HTTP or HTTPS, you can configure a non-transparent proxy server between Admin Nodes and technical support \(AutoSupport\).'
+summary: 'If you send AutoSupport packages using HTTP or HTTPS, you can configure a non-transparent proxy server between Admin Nodes and technical support \(AutoSupport\).'
 ---
 = Configure admin proxy
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-If you send AutoSupport messages using HTTP or HTTPS (see link:configure-autosupport-grid-manager.html[Configure AutoSupport]), you can configure a non-transparent proxy server between Admin Nodes and technical support (AutoSupport). 
+If you send AutoSupport packages using HTTP or HTTPS (see link:configure-autosupport-grid-manager.html[Configure AutoSupport]), you can configure a non-transparent proxy server between Admin Nodes and technical support (AutoSupport). 
 
 .Before you begin
 
