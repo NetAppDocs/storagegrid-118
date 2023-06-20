@@ -21,7 +21,7 @@ Using SANtricity System Manager, you can do the following:
 +
 NOTE: To use SANtricity System Manager to configure a proxy for E-Series AutoSupport, see link:../admin/sending-eseries-autosupport-messages-through-storagegrid.html[Send E-Series AutoSupport packages through StorageGRID].
 
-To access SANtricity System Manager through Grid Manager, you must have the Storage appliance administrator permission or Root access permission.
+To access SANtricity System Manager through Grid Manager, you must have the link:../admin/admin-group-permissions.html[Storage appliance administrator or Root access permission].
 
 NOTE: You must have SANtricity firmware 8.70 or higher to access SANtricity System Manager using the Grid Manager.
 
