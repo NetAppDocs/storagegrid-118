@@ -265,11 +265,11 @@ entries:
       url: "/admin/what-is-autosupport.html"
     - title: Configure AutoSupport
       url: "/admin/configure-autosupport-grid-manager.html"
-    - title: Manually trigger an AutoSupport message
+    - title: Manually trigger an AutoSupport package
       url: "/admin/manually-triggering-autosupport-message.html"
-    - title: Troubleshoot AutoSupport messages
+    - title: Troubleshoot AutoSupport packages
       url: "/admin/troubleshooting-autosupport-messages.html"
-    - title: Send E-Series AutoSupport messages through StorageGRID
+    - title: Send E-Series AutoSupport packages through StorageGRID
       url: "/admin/sending-eseries-autosupport-messages-through-storagegrid.html"
   - title: Manage Storage Nodes
     entries:
