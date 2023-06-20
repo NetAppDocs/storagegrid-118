@@ -1,8 +1,22 @@
 //This is the shared introduction for restoring object data in the Storage Node maintenance procedures//
 
+== Which procedure should I use?
+
+Whenever possible, restore object data using the *Volume restoration* page in the Grid Manager.
+
+* If the volumes are listed at *MAINTENANCE* > *Volume restoration* > *Nodes to restore*, restore object data using the link:../maintain/restoring-volume.html[Volume restoration page in the Grid Manager].
+
+* If the volumes aren't listed at *MAINTENANCE* > *Volume restoration* > *Nodes to restore*, follow the steps below for using the `repair-data` script to restore object data.
++
+If the recovered Storage Node contains fewer volumes than the node it is replacing, you must use the `repair-data` script.
+
+NOTE: The repair-data script is deprecated and will be removed in a future release. When possible, use the link:../maintain/restoring-volume.html[Volume restoration procedure in the Grid Manager].
+
+== Use the `repair-data` script to restore object data
+
 .Before you begin
 
-* You must have confirmed that the recovered Storage Node has a Connection State of *Connected* image:../media/icon_alert_green_checkmark.png[icon alert green check mark] on the *NODES* > *Overview* tab in the Grid Manager.
+* You have confirmed that the recovered Storage Node has a Connection State of *Connected* image:../media/icon_alert_green_checkmark.png[icon alert green check mark] on the *NODES* > *Overview* tab in the Grid Manager.
 
 .About this task
 
@@ -15,7 +29,6 @@ Note the following:
 * If the only remaining copy of an object is in a Cloud Storage Pool, StorageGRID must issue multiple requests to the Cloud Storage Pool endpoint to restore object data. Before performing this procedure, contact technical support for help in estimating the recovery time frame and the associated costs.
 
 * If the only remaining copy of an object is on an Archive Node, object data is retrieved from the Archive Node. Restoring object data to a Storage Node from an Archive Node takes longer than restoring copies from other Storage Nodes because of the latency associated with retrievals from external archival storage systems. 
-
 
 == About the `repair-data` script
 
