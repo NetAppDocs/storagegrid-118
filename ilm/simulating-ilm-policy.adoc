@@ -35,7 +35,7 @@ When simulating a policy, the following considerations apply:
 
 . link:creating-proposed-ilm-policy.html[Create a proposed policy].
 
-. Using an S3 or Swift client or the link:../tenant/use-s3-console.html[experimental S3 Console], which is available in Tenant Manager for each tenant, ingest the objects required to test each rule.
+. Using an S3 or Swift client or the link:../tenant/use-s3-console.html[S3 Console], which is available in Tenant Manager for each tenant, ingest the objects required to test each rule.
 . On the ILM policy page, Proposed policy tab, select *Simulate*.
 . In the *Object* field, enter the S3 `bucket/object-key` or the Swift `container/object-name` for a test object. For example, `bucket-01/filename.png`.
 . Optionally, enter a version ID for the object in the *Version ID* field.
