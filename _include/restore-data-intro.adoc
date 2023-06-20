@@ -19,12 +19,13 @@ Note the following:
 
 == About the `repair-data` script
 
-To restore object data, you run the `repair-data` script. This script begins the process of restoring object data and works with ILM scanning to ensure that ILM rules are met. 
+To restore object data, you run the `repair-data` script. This script begins the process of restoring object data and works with ILM scanning to ensure that ILM rules are met.
 
 Select *Replicated data* or *Erasure-coded (EC) data* below to learn the different options for the `repair-data` script, based on whether you are restoring replicated data or erasure-coded data. If you need to restore both types of data, you must run both sets of commands.
 
 NOTE: For more information about the `repair-data` script, enter `repair-data --help` from the command line of the primary Admin Node.
 
+NOTE: The repair-data script is deprecated and will be removed in a future release. When possible, use the link:../maintain/restoring-volume.html[Volume restoration procedure in the Grid Manager].
 
 // start tabbed area
 

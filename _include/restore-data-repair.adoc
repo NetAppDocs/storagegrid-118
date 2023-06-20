@@ -20,6 +20,8 @@ If only some volumes have failed, go to <<Repair data if only some volumes have 
 
 IMPORTANT: You can't run `repair-data` operations for more than one node at the same time. To recover multiple nodes, contact technical support.
 
+NOTE: The repair-data script is deprecated and will be removed in a future release. When possible, use the link:../maintain/restoring-volume.html[Volume restoration procedure in the Grid Manager].
+
 // start tabbed area
 
 [role="tabbed-block"]
