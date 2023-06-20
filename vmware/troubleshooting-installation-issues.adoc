@@ -49,6 +49,6 @@ If you opted to disable the temporary installation password, you must perform ad
 
 You can do either of the following:
 
-* Start over. Redeploy the VM but specify a temporary installation password so you can access the console or use SSH to debug installation issues. 
+* Redeploy the VM but specify a temporary installation password so you can access the console or use SSH to debug installation issues. 
 
-* Use vCenter to set the password. Go to *VM*,  select the *Configure* tab, and select *vApp Options*.
+* Use vCenter to set the password. Go to *VM*,  select the *Configure* tab, and select *vApp Options*. Then, reboot the VM to apply the new password.
