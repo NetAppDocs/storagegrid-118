@@ -57,7 +57,7 @@ Software-based grid nodes can be deployed as VMware virtual machines or within c
 
 Use the https://imt.netapp.com/matrix/#welcome[NetApp Interoperability Matrix Tool (IMT)^] to determine the supported versions.
 
-
+[[storagegrid-services]]
 == StorageGRID services
 
 The following is a complete list of StorageGRID services.

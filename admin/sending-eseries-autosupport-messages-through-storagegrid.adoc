@@ -2,14 +2,14 @@
 permalink: admin/sending-eseries-autosupport-messages-through-storagegrid.html
 sidebar: sidebar
 keywords: eseries, santricity, system manager, asup, autosupport, technical support, appliance
-summary: 'You can send E-Series SANtricity System Manager AutoSupport messages to technical support through a StorageGRID Admin Node rather than the storage appliance management port.'
+summary: 'You can send E-Series SANtricity System Manager AutoSupport packages to technical support through a StorageGRID Admin Node rather than the storage appliance management port.'
 ---
-= Send E-Series AutoSupport messages through StorageGRID
+= Send E-Series AutoSupport packages through StorageGRID
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You can send E-Series SANtricity System Manager AutoSupport messages to technical support through a StorageGRID Admin Node rather than the storage appliance management port.
+You can send E-Series SANtricity System Manager AutoSupport packages to technical support through a StorageGRID Admin Node rather than the storage appliance management port.
 
 See https://docs.netapp.com/us-en/e-series-santricity/sm-support/autosupport-feature-overview.html[E-Series hardware AutoSupport^] for more information about using AutoSupport with E-Series appliances.
 
@@ -23,11 +23,11 @@ NOTE: You must have SANtricity firmware 8.70 or higher to access SANtricity Syst
 
 .About this task
 
-E-Series AutoSupport messages contain details of the storage hardware and are more specific than other AutoSupport messages sent by the StorageGRID system.
+E-Series AutoSupport packages contain details of the storage hardware and are more specific than other AutoSupport packages sent by the StorageGRID system.
 
-You can configure a special proxy server address in SANtricity System Manager to transmit AutoSupport messages through a StorageGRID Admin Node without the use of the appliance's management port. AutoSupport messages transmitted in this way are sent by the link:../primer/what-admin-node-is.html[preferred sender Admin Node], and they use any link:../admin/configuring-admin-proxy-settings.html[admin proxy settings] that have been configured in the Grid Manager.
+You can configure a special proxy server address in SANtricity System Manager to transmit AutoSupport packages through a StorageGRID Admin Node without the use of the appliance's management port. AutoSupport packages transmitted in this way are sent by the link:../primer/what-admin-node-is.html[preferred sender Admin Node], and they use any link:../admin/configuring-admin-proxy-settings.html[admin proxy settings] that have been configured in the Grid Manager.
 
-NOTE: This procedure is only for configuring a StorageGRID proxy server for E-Series AutoSupport messages. For additional details on E-Series AutoSupport configuration, see the https://mysupport.netapp.com/info/web/ECMP1658252.html[NetApp E-Series and SANtricity Documentation^].
+NOTE: This procedure is only for configuring a StorageGRID proxy server for E-Series AutoSupport packages. For additional details on E-Series AutoSupport configuration, see the https://mysupport.netapp.com/info/web/ECMP1658252.html[NetApp E-Series and SANtricity Documentation^].
 
 .Steps
 . In the Grid Manager, select *NODES*.
@@ -57,11 +57,11 @@ NOTE: The certificate that enables HTTPS is pre-installed.
 . Select *via Proxy server*.
 . Enter `tunnel-host` for the *Host address*.
 +
-`tunnel-host` is the special address to use an Admin Node to send E-Series AutoSupport messages.
+`tunnel-host` is the special address to use an Admin Node to send E-Series AutoSupport packages.
 
 . Enter `10225` for the *Port number*.
 +
-`10225` is the port number on the StorageGRID proxy server that receives AutoSupport messages from the E-Series controller in the appliance.
+`10225` is the port number on the StorageGRID proxy server that receives AutoSupport packages from the E-Series controller in the appliance.
 
 . Select *Test Configuration* to test the routing and configuration of your AutoSupport proxy server.
 +

@@ -68,7 +68,7 @@ The table summarizes the capabilities of primary and non-primary Admin Nodes.
 | Yes
 | No
 
-| Sends alert notifications, AutoSupport messages, and SNMP traps and informs
+| Sends alert notifications, AutoSupport packages, and SNMP traps and informs
 | Yes. Acts as the <<preferred-sender,preferred sender>>.
 | Yes. Acts as a standby sender.
 |===
@@ -77,7 +77,7 @@ The table summarizes the capabilities of primary and non-primary Admin Nodes.
 
 == [[preferred-sender]]Preferred sender Admin Node
 
-If your StorageGRID deployment includes multiple Admin Nodes, the primary Admin Node is the preferred sender for alert notifications, AutoSupport messages, SNMP traps and informs, and legacy alarm notifications. 
+If your StorageGRID deployment includes multiple Admin Nodes, the primary Admin Node is the preferred sender for alert notifications, AutoSupport packages, SNMP traps and informs, and legacy alarm notifications. 
 
 Under normal system operations, only the preferred sender sends notifications. However, all other Admin Nodes monitor the preferred sender. If a problem is detected, other Admin Nodes act as _standby senders_.
 
@@ -87,7 +87,7 @@ Multiple notifications might sent in these cases:
 
 * If standby sender detects problems with the preferred sender and starts sending notifications, the preferred sender might regain its ability to send notifications. If this occurs, duplicate notifications might be sent. The standby sender will stop sending notifications when it no longer detects errors on the preferred sender.
 +
-NOTE: When you test AutoSupport messages, all Admin Nodes send the test email. When you test alert notifications, you must sign in to every Admin Node to verify connectivity.
+NOTE: When you test AutoSupport packages, all Admin Nodes send the test. When you test alert notifications, you must sign in to every Admin Node to verify connectivity.
 
 == Primary services for Admin Nodes
 

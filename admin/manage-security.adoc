@@ -26,7 +26,7 @@ NOTE: To use encryption key management, you must enable the *Node Encryption* se
 
 == Manage proxy settings
 
-If you are using S3 platform services or Cloud Storage Pools, you can configure a link:configuring-storage-proxy-settings.html[storage proxy server] between Storage Nodes and the external S3 endpoints. If you send AutoSupport messages using HTTPS or HTTP, you can configure an link:configuring-admin-proxy-settings.html[admin proxy server] between Admin Nodes and technical support.
+If you are using S3 platform services or Cloud Storage Pools, you can configure a link:configuring-storage-proxy-settings.html[storage proxy server] between Storage Nodes and the external S3 endpoints. If you send AutoSupport packages using HTTPS or HTTP, you can configure an link:configuring-admin-proxy-settings.html[admin proxy server] between Admin Nodes and technical support.
 
 == Control firewalls
 

@@ -154,7 +154,7 @@ Technical support might ask you to collect data or review specific information t
 |
 
 * link:../monitor/collecting-log-files-and-system-data.html[Collect log files and system data]
-* link:../monitor/manually-triggering-autosupport-message.html[Manually trigger an AutoSupport message]
+* link:../monitor/manually-triggering-autosupport-message.html[Manually trigger an AutoSupport package]
 * link:../monitor/reviewing-support-metrics.html[Review support metrics]
 
 |===
