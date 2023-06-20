@@ -40,5 +40,3 @@ NOTE: Users who have the Manage objects with S3 Console permission but who don't
 . Paste the access key ID and secret access key into the fields. Otherwise, select *Upload access keys* and select your `.csv` file.
 . Select *Sign in*.
 . Manage objects as needed.
-
-image::../media/s3_console_example.png[S3 Console example]
