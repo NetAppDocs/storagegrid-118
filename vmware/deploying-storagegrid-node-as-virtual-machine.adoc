@@ -144,15 +144,25 @@ Determine which StorageGRID networks the node will use by selecting a destinatio
  ** If you use the Admin Network, select a different destination network in the vSphere environment. If you don't use the Admin Network, select the same destination you selected for the Grid Network.
  ** If you use the Client Network, select a different destination network in the vSphere environment. If you don't use the Client Network, select the same destination you selected for the Grid Network.
 
-. Under *Customize Template*, configure the required StorageGRID node properties.
- .. Enter the *Node name*.
+. For *Customize Template*, configure the required StorageGRID node properties.
+.. Enter the *Node name*.
 +
 IMPORTANT: If you are recovering a grid node, you must enter the name of the node you are recovering.
 
- .. In the *Grid Network (eth0)* section, select STATIC or DHCP for the *Grid network IP configuration*.
+.. Use the *Temporary installation password* drop-down to specify a temporary installation password, so that you can access the VM console or use SSH before the new node joins the grid.
++
+NOTE: The temporary installation password is only used during node installation. After a node has been added to the grid, you can access it using the link:../admin/change-node-console.html[node console password], which is listed in the `Passwords.txt` file in the Recovery Package. 
+
+*** *Use node name*: The value you provided for the *Node name* field is used as the temporary installation password.
+*** *Use custom password*: A custom password is used as the temporary installation password.
+*** *Disable password*: No temporary installation password will be used. If you need to access the VM to debug installation issues, see link:troubleshooting-installation-issues.html[Troubleshoot installation issues].
+
+.. If you selected *Use custom password*, specify the temporary installation password you want to use in the *Custom password* field. 
+
+.. In the *Grid Network (eth0)* section, select STATIC or DHCP for the *Grid network IP configuration*.
   *** If you select STATIC, enter the *Grid network IP*, *Grid network mask*, *Grid network gateway*, and *Grid network MTU*.
   *** If you select DHCP, the *Grid network IP*, *Grid network mask*, and *Grid network gateway* are automatically assigned.
- .. In the *Primary Admin IP* field, enter the IP address of the primary Admin Node for the Grid Network.
+.. In the *Primary Admin IP* field, enter the IP address of the primary Admin Node for the Grid Network.
 +
 NOTE: This step does not apply if the node you are deploying is the primary Admin Node.
 +

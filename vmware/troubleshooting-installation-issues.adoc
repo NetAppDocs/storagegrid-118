@@ -40,3 +40,15 @@ If you are certain that the VM host has sufficient resources for each grid node,
  .. Select *Memory*, and then use the Reservation slider to adjust the MB reserved for this virtual machine.
 . Click *OK*.
 . Repeat as required for other virtual machines hosted on the same VM host.
+
+== Temporary installation password was disabled
+
+When you deploy a VMware node, you can optionally specify a temporary installation password. You must have this password to access the VM console or use SSH before the new node joins the grid.
+
+If you opted to disable the temporary installation password, you must perform additional steps to debug installation issues.
+
+You can do either of the following:
+
+* Redeploy the VM but specify a temporary installation password so you can access the console or use SSH to debug installation issues. 
+
+* Use vCenter to set the password. Go to *VM*,  select the *Configure* tab, and select *vApp Options*. Then, reboot the VM to apply the new password.
