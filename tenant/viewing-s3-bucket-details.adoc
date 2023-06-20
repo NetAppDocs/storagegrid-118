@@ -66,7 +66,7 @@ The bucket details page appears. From this page, you can perform the following t
 * Configure bucket access, such as link:configuring-cross-origin-resource-sharing-cors.html[cross-origin resource sharing (CORS)]
 * link:what-platform-services-are.html[Manage platform services] (if allowed for the tenant), including CloudMirror replication, event notifications, and search integration
 * Enable and link:grid-federation-manage-cross-grid-replication.html[manage cross-grid replication] (if allowed for the tenant) to replicate objects ingested into this bucket to another StorageGRID system
-* Access the link:use-s3-console.html[Experimental S3 Console] to manage the objects in the bucket
+* Access the link:use-s3-console.html[S3 Console] to manage the objects in the bucket
 * link:deleting-s3-bucket-objects.html[Delete all objects in a bucket]
 * link:deleting-s3-bucket.html[Delete a bucket] that is already empty
 
