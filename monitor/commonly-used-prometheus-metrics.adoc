@@ -148,7 +148,7 @@ storagegrid_storage_status:: The current status of the storage services. Attribu
 * 30 = Volume(s) Unavailable
 * 40 = Error
 
-storagegrid_storage_utilization_data_bytes:: An estimate of the total size of replicated and erasure coded object data on the Storage Node.
+storagegrid_storage_utilization_data_bytes:: An estimate of the total size of replicated and erasure-coded object data on the Storage Node.
 
 storagegrid_storage_utilization_metadata_allowed_bytes:: The total space on volume 0 of each Storage Node that is allowed for object metadata. This value is always less than the actual space reserved for metadata on a node, because a portion of the reserved space is required for essential database operations (such as compaction and repair) and future hardware and software upgrades.The allowed space for object metadata controls overall object capacity.
 

@@ -44,7 +44,7 @@ You can track repairs of replicated data with this command:
 `repair-data show-replicated-repair-status`
 
 --
-.Erasure coded (EC) data
+.Erasure-coded (EC) data
 --
 
 Two commands are available for restoring erasure-coded data, based on whether you need to repair the entire node or only certain volumes on the node:

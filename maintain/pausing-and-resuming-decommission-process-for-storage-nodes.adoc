@@ -29,7 +29,7 @@ The Decommission page appears.
 The Decommission Nodes page appears. When the decommission procedure reaches either of the following stages, the *Pause* button is enabled.
 
  ** Evaluating ILM
- ** Decommissioning Erasure Coded data
+ ** Decommissioning erasure-coded data
 
 . Select *Pause* to suspend the procedure.
 +

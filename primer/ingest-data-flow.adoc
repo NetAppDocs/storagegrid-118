@@ -19,7 +19,7 @@ image::../media/ingest_data_flow.png[Ingest with synchronous placement]
 
 . The client application creates the object and sends it to the StorageGRID system through an HTTP PUT request.
 . The object is evaluated against the system's ILM policy.
-. The LDR service saves the object data as a replicated copy or as an erasure coded copy. (The diagram shows a simplified version of storing a replicated copy to disk.)
+. The LDR service saves the object data as a replicated copy or as an erasure-coded copy. (The diagram shows a simplified version of storing a replicated copy to disk.)
 . The LDR service sends the object metadata to the metadata store.
 . The metadata store saves the object metadata to disk.
 . The metadata store propagates copies of object metadata to other Storage Nodes. These copies are also saved to disk.

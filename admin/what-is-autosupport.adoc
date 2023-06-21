@@ -96,7 +96,7 @@ Value +
 Index +
 Table ID +
 Table Name
-| Grid-wide configuration information file. Contains information about grid certificates, metadata reserved space, grid-wide configuration settings (compliance, S3 Object Lock, object compression, alerts, syslog, and ILM configuration), erasure coding profile details, DNS name, link:../primer/nodes-and-services.html#storagegrid-services[NMS name], and more.
+| Grid-wide configuration information file. Contains information about grid certificates, metadata reserved space, grid-wide configuration settings (compliance, S3 Object Lock, object compression, alerts, syslog, and ILM configuration), erasure-coding profile details, DNS name, link:../primer/nodes-and-services.html#storagegrid-services[NMS name], and more.
 
 | GRID-SPEC.XML
 | Grid specifications, raw XML
