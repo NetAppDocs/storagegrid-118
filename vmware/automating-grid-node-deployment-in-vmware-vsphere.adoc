@@ -257,7 +257,7 @@ This example takes traffic that is sent to port 443 to pass an internal firewall
 
 * *TEMPORARY_PASSWORD_TYPE*: The type of temporary installation password to be used when accessing the VM console or using SSH before the node joins the grid. 
 + 
-TIP: If all or most of the nodes use the same type of temporary installation password, specify the type in the global parameter section. Then, optionally use a different setting for individual nodes. For example, if you select *Use Custom Password* globally, you can use *CUSTOM_TEMPORARY_PASSWORD=<password>* to set a password for each node.
+TIP: If all or most of the nodes use the same type of temporary installation password, specify the type in the global parameter section. Then, optionally use a different setting for an individual node. For example, if you select *Use Custom Password* globally, you can use *CUSTOM_TEMPORARY_PASSWORD=<password>* to set the password for each node.
 +
 *TEMPORARY_PASSWORD_TYPE* can be one of the following:
 
