@@ -42,7 +42,7 @@ If a grid node can be decommissioned, this column includes a green check mark, a
 | Description
 | Steps to resolve
 
-| No, node type decommissioning is not supported.
+| No, _node type_ decommissioning is not supported.
 | You can't decommission the primary Admin Node.
 | None.
 
@@ -56,7 +56,9 @@ The *Health* column includes one of these icons for grid nodes that are disconne
  ** image:../media/icon_alarm_gray_administratively_down.png[gray questionmark icon] (gray): Administratively Down
  ** image:../media/icon_alarm_blue_unknown.png[blue question mark icon] (blue): Unknown
 
-| Go to the <<decommission_procedure_choices,step that lists the decommission procedure choices>>.
+| You must bring all disconnected nodes back online or link:decommissioning-disconnected-grid-nodes.html[decommission all disconnected nodes] before you can remove a connected node.
+
+*Note*: If your grid contains multiple disconnected nodes, the software requires you to decommission them all at the same time, which increases the potential for unexpected results.
 
 | No, one or more required nodes is currently disconnected and must be recovered.
 
@@ -93,19 +95,7 @@ Learn about link:../ilm/manage-erasure-coding-profiles.html[deactivating an eras
 
 | No, you can't decommission an Archive Node unless the node is disconnected.
 | If an Archive Node is still connected, you can't remove it.
-| Power off the Archive Node and then remove it. 
-|===
-
-. [[decommission_procedure_choices]]If decommissioning is possible for the node, determine which procedure you need to perform:
-+
-[cols="1a,1a" options="header"]
-|===
-| If your grid includes...| Go to...
-| Any disconnected grid nodes
-| link:decommissioning-disconnected-grid-nodes.html[Decommission disconnected grid nodes]
-
-| Only connected grid nodes
-| link:decommissioning-connected-grid-nodes.html[Decommission connected grid nodes]
+| Power off the Archive Node and then link:decommissioning-disconnected-grid-nodes.html[decommission the disconnected node]. 
 |===
 
 

@@ -72,13 +72,11 @@ The *Start Decommission* button is enabled.
 +
 The node decommission procedure starts, and the progress is displayed for each node.
 +
-image::../media/decommission_nodes_procedure_in_progress.png[screenshot of node decommissioning in progress]
-+
 CAUTION: Don't take a Storage Node offline after the decommission procedure has started. Changing the state might result in some content not being copied to other locations.
 
 . As soon as the new Recovery Package is available, select the Recovery Package link in the banner or select *MAINTENANCE* > *System* > *Recovery package* to access the Recovery Package page. Then, download the `.zip` file.
 +
-See the instructions for link:downloading-recovery-package.html[downloading the Recovery Package].
+See link:downloading-recovery-package.html[downloading the Recovery Package].
 +
 NOTE: Download the Recovery Package as soon as possible to ensure you can recover your grid if something goes wrong during the decommission procedure.
 

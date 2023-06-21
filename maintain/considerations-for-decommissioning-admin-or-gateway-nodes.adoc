@@ -11,7 +11,7 @@ summary: 'Review the considerations for decommissioning an Admin Node, Gateway N
 [.lead]
 Review the considerations for decommissioning an Admin Node, Gateway Node, or Archive Node.
 
-== Considerations for decommissioning an Admin Node
+== Considerations for Admin Node
 
 * You can't decommission the primary Admin Node.
 
@@ -25,7 +25,7 @@ Review the considerations for decommissioning an Admin Node, Gateway Node, or Ar
 
 * When you decommission a disconnected Admin Node, you will lose the audit logs from that node; however, these logs should also exist on the primary Admin Node.
 
-== Considerations for decommissioning a Gateway Node
+== Considerations for Gateway Node
 
 * You can't decommission a Gateway Node if one of its network interfaces is part of a high availability (HA) group. You must first remove the network interfaces from the HA group. See the instructions for link:../admin/managing-high-availability-groups.html[managing HA groups].
 
@@ -35,13 +35,13 @@ Review the considerations for decommissioning an Admin Node, Gateway Node, or Ar
 
 * You can safely decommission a Gateway Node while it is disconnected.
 
-== Considerations for decommissioning an Archive Node
+== Considerations for Archive Node
 
-NOTE: Support for Archive Nodes and the Cloud Tiering - Simple Storage Service (S3) option was deprecated in StorageGRID 11.7. Archive Node support will be removed completely in a future release. 
+NOTE: Support for Archive Nodes and the Cloud Tiering - Simple Storage Service (S3) option has been deprecated. Archive Node support will be removed completely in a future release. 
 
-You can't decommission an Archive Node if it is still connected to the grid. You must ensure that the node is no longer being used and then use the decommission procedure for disconnected nodes.
+* You can't decommission an Archive Node if it is still connected to the grid. You must ensure that the node is no longer being used and then use the decommission procedure for disconnected nodes.
 
-TIP: If the Archive Node is still in use, make sure your schedule includes enough time to move any existing data to Storage Nodes or a Cloud Storage Pool. Moving the data from an Archive Node might take several weeks or months.
+* If the Archive Node is still in use, make sure your schedule includes enough time to move any existing data to Storage Nodes or a Cloud Storage Pool. Moving the data from an Archive Node might take several days or weeks.
 
 .Steps
 
@@ -55,7 +55,7 @@ TIP: If the Archive Node is still in use, make sure your schedule includes enoug
 .. If any ILM rules are listed, look at the *Used in active policy* column to determine if the Archive Node storage pool is being used in an active policy.
 .. If the storage pool is being used, link:../ilm/creating-ilm-policy.html[create a new ILM policy] that no longer uses an Archive Node.
 .. Activate the new policy.
-.. Wait for all objects to be moved from the Archive Node storage pool. This might take several weeks or months.
+.. Wait for all objects to be moved from the Archive Node storage pool. This might take several days or weeks.
 
 . After you are certain all objects have been moved from the Archive Node, power down the node.
 . Perform the link:decommissioning-disconnected-grid-nodes.html[decommission procedure for disconnected nodes].

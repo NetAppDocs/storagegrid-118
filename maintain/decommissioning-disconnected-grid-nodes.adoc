@@ -71,8 +71,6 @@ IMPORTANT: The Recovery Package file must be secured because it contains encrypt
 . Periodically monitor the Decommission page to ensure that all selected nodes are decommissioned successfully.
 +
 Storage Nodes can take days or weeks to decommission. When all tasks are complete, the node selection list is redisplayed with a success message. If you decommissioned a disconnected Storage Node, an information message indicates that the repair jobs have been started.
-+
-image::../media/decommission_nodes_data_repair.png[screenshot showing that repair jobs have started]
 
 . After the nodes have shut down automatically as part of the decommission procedure, remove any remaining virtual machines or other resources that are associated with the decommissioned node.
 +
