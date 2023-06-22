@@ -23,7 +23,7 @@ The affected CBID.
 a|
 ECPR
 a|
-erasure-coding profile
+Erasure-Coding Profile
 a|
 For erasure-coded object data. The ID of the erasure-coding profile used.
 a|

@@ -25,16 +25,6 @@ You can view the details of an erasure-coding profile to determine its status, t
 . Select *ILM* > *Erasure coding*.
 
 . Select the profile. The detail page for the profile appears.
-+
-The details page contains the following information:
-
-Status:: Whether the profile is activated or deactivated.
-Storage pool:: The storage pool used for the profile.
-Scheme:: The erasure-coding scheme used for the profile.
-Sites:: The number of sites included in the storage pool.
-Storage overhead:: The additional storage required for parity fragments relative to the object's data size, based on the erasure-coding scheme.
-Storage Node redundancy:: The number of Storage Nodes that can be lost while still maintaining the ability to retrieve erasure coding objects.
-Site redundancy:: Whether the erasure-coding scheme allows the object to be retrieved if a site is lost.
 
 . Optionally, view the ILM rules tab for a list of ILM policies that use each rule.
 
@@ -71,7 +61,7 @@ You can deactivate an erasure-coding profile if you no longer plan to use it and
 * You have confirmed that no erasure-coded data repair operations or decommission procedures are in process. An error message is returned if you attempt to deactivate an erasure-coding profile while either of these operations are in progress.
 
 .About this task
-When you deactivate an erasure-coding profile, the profile still appears on the Erasure-coding profiles page, but its status is *Deactivated*.
+When you deactivate an erasure-coding profile, the profile still appears on the Erasure-Coding Profiles page, but its status is *Deactivated*.
 
 image::../media/deactivated_ec_profile.png[Deactivated EC Profile]
 
@@ -153,7 +143,7 @@ link:working-with-ilm-rules-and-ilm-policies.html[Work with ILM rules and ILM po
 
 |===
 
- .. Refresh the Erasure-coding profiles page to ensure that the profile is not used in an ILM rule.
+ .. Refresh the Erasure-Coding Profiles page to ensure that the profile is not used in an ILM rule.
 . If the profile is not used in an ILM rule, select the radio button and select *Deactivate*.
 +
 The Deactivate EC Profile dialog box appears.
