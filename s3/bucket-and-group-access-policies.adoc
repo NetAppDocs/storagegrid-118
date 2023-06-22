@@ -36,25 +36,25 @@ Each policy element is used for a specific function:
 [cols="1a,2a" options="header"]
 |===
 | Element| Description
-|Sid
-|The Sid element is optional. The Sid is only intended as a description for the user. It is stored but not interpreted by the StorageGRID system.
+| Sid
+| The Sid element is optional. The Sid is only intended as a description for the user. It is stored but not interpreted by the StorageGRID system.
 
-|Effect
-|Use the Effect element to establish whether the specified operations are allowed or denied. You must identify operations you allow (or deny) on buckets or objects using the supported Action element keywords.
+| Effect
+| Use the Effect element to establish whether the specified operations are allowed or denied. You must identify operations you allow (or deny) on buckets or objects using the supported Action element keywords.
 
-|Principal/NotPrincipal
-|You can allow users, groups, and accounts to access specific resources and perform specific actions. If no S3 signature is included in the request, anonymous access is allowed by specifying the wildcard character (*) as the principal. By default, only the account root has access to resources owned by the account.
+| Principal/NotPrincipal
+| You can allow users, groups, and accounts to access specific resources and perform specific actions. If no S3 signature is included in the request, anonymous access is allowed by specifying the wildcard character (*) as the principal. By default, only the account root has access to resources owned by the account.
 
 You only need to specify the Principal element in a bucket policy. For group policies, the group to which the policy is attached is the implicit Principal element.
 
-|Resource/NotResource
-|The Resource element identifies buckets and objects. You can allow or deny permissions to buckets and objects using the Amazon Resource Name (ARN) to identify the resource.
+| Resource/NotResource
+| The Resource element identifies buckets and objects. You can allow or deny permissions to buckets and objects using the Amazon Resource Name (ARN) to identify the resource.
 
-|Action/NotAction
-|The Action and Effect elements are the two components of permissions. When a group requests a resource, they are either granted or denied access to the resource. Access is denied unless you specifically assign permissions, but you can use explicit deny to override a permission granted by another policy.
+| Action/NotAction
+| The Action and Effect elements are the two components of permissions. When a group requests a resource, they are either granted or denied access to the resource. Access is denied unless you specifically assign permissions, but you can use explicit deny to override a permission granted by another policy.
 
-|Condition
-|The Condition element is optional. Conditions allow you to build expressions to determine when a policy should be applied.
+| Condition
+| The Condition element is optional. Conditions allow you to build expressions to determine when a policy should be applied.
 |===
 In the Action element, you can use the wildcard character (*) to specify all operations, or a subset of operations. For example, this Action matches permissions such as s3:GetObject, s3:PutObject, and s3:DeleteObject.
 
@@ -218,8 +218,7 @@ In a policy, the Action element is used to allow/deny permissions to a resource.
 
 The tables lists the permissions that apply to buckets and the permissions that apply to objects.
 
-NOTE: Amazon S3 now uses the s3:PutReplicationConfiguration permission for both the PutBucketReplication and DeleteBucketReplication actions. StorageGRID uses separate permissions for each action, which matches the original Amazon S3
-specification.
+NOTE: Amazon S3 now uses the s3:PutReplicationConfiguration permission for both the PutBucketReplication and DeleteBucketReplication actions. StorageGRID uses separate permissions for each action, which matches the original Amazon S3 specification.
 
 NOTE: A delete is performed when a put is used to overwrite an existing value.
 
@@ -228,255 +227,174 @@ NOTE: A delete is performed when a put is used to overwrite an existing value.
 [cols="2a,2a,1a" options="header"]
 |===
 | Permissions| S3 REST API operations| Custom for StorageGRID
-a|
-s3:CreateBucket
-a|
-CreateBucket
-a|
+| s3:CreateBucket
+| CreateBucket
+| Yes.
 
-a|
-s3:DeleteBucket
-a|
-DeleteBucket
-a|
+*Note*: Use in group policy only.
 
-a|
-s3:DeleteBucketMetadataNotification
-a|
-DELETE Bucket metadata notification configuration
-a|
-Yes
-a|
-s3:DeleteBucketPolicy
-a|
-DeleteBucketPolicy
-a|
+| s3:DeleteBucket
+| DeleteBucket
+| 
 
-a|
-s3:DeleteReplicationConfiguration
-a|
-DeleteBucketReplication
-a|
-Yes, separate permissions for PUT and DELETE*
-a|
-s3:GetBucketAcl
-a|
-GetBucketAcl
-a|
+| s3:DeleteBucketMetadataNotification
+| DELETE Bucket metadata notification configuration
+| Yes
 
-a|
-s3:GetBucketCompliance
-a|
-GET Bucket compliance (deprecated)
-a|
-Yes
-a|
-s3:GetBucketConsistency
-a|
-GET Bucket consistency
-a|
-Yes
-a|
-s3:GetBucketCORS
-a|
-GetBucketCors
-a|
+| s3:DeleteBucketPolicy
+| DeleteBucketPolicy
+| 
 
-a|
-s3:GetEncryptionConfiguration
-a|
-GetBucketEncryption
-a|
+| s3:DeleteReplicationConfiguration
+| DeleteBucketReplication
+| Yes, separate permissions for PUT and DELETE
 
-a|
-s3:GetBucketLastAccessTime
-a|
-GET Bucket last access time
-a|
-Yes
-a|
-s3:GetBucketLocation
-a|
-GetBucketLocation
-a|
+| s3:GetBucketAcl
+| GetBucketAcl
+| 
 
-a|
-s3:GetBucketMetadataNotification
-a|
-GET Bucket metadata notification configuration
-a|
-Yes
-a|
-s3:GetBucketNotification
-a|
-GetBucketNotificationConfiguration
-a|
+| s3:GetBucketCompliance
+| GET Bucket compliance (deprecated)
+| Yes
 
-a|
-s3:GetBucketObjectLockConfiguration
-a|
-GetObjectLockConfiguration
-a|
+| s3:GetBucketConsistency
+| GET Bucket consistency
+| Yes
 
-a|
-s3:GetBucketPolicy
-a|
-GetBucketPolicy
-a|
+| s3:GetBucketCORS
+| GetBucketCors
+| 
 
-a|
-s3:GetBucketTagging
-a|
-GetBucketTagging
-a|
+| s3:GetEncryptionConfiguration
+| GetBucketEncryption
+| 
 
-a|
-s3:GetBucketVersioning
-a|
-GetBucketVersioning
-a|
+| s3:GetBucketLastAccessTime
+| GET Bucket last access time
+| Yes
 
-a|
-s3:GetLifecycleConfiguration
-a|
-GetBucketLifecycleConfiguration
-a|
+| s3:GetBucketLocation
+| GetBucketLocation
+| 
 
-a|
-s3:GetReplicationConfiguration
-a|
-GetBucketReplication
-a|
+| s3:GetBucketMetadataNotification
+| GET Bucket metadata notification configuration
+| Yes
 
-a|
-s3:ListAllMyBuckets
-a|
+| s3:GetBucketNotification
+| GetBucketNotificationConfiguration
+| 
 
+| s3:GetBucketObjectLockConfiguration
+| GetObjectLockConfiguration
+| 
+
+| s3:GetBucketPolicy
+| GetBucketPolicy
+| 
+
+| s3:GetBucketTagging
+| GetBucketTagging
+| 
+
+| s3:GetBucketVersioning
+| GetBucketVersioning
+| 
+
+| s3:GetLifecycleConfiguration
+| GetBucketLifecycleConfiguration
+| 
+
+| s3:GetReplicationConfiguration
+| GetBucketReplication
+| 
+
+| s3:ListAllMyBuckets
+| 
 * ListBuckets
 * GET Storage Usage
+| Yes, for GET Storage Usage.
 
-a|
-Yes, for GET Storage Usage
-a|
-s3:ListBucket
-a|
+*Note*: Use in group policy only.
 
+| s3:ListBucket
+| 
 * ListObjects
 * HeadBucket
 * RestoreObject
+| 
 
-a|
-
-a|
-s3:ListBucketMultipartUploads
-a|
-
+| s3:ListBucketMultipartUploads
+| 
 * ListMultipartUploads
 * RestoreObject
+| 
 
-a|
+| s3:ListBucketVersions
+| GET Bucket versions
+| 
 
-a|
-s3:ListBucketVersions
-a|
-GET Bucket versions
-a|
+| s3:PutBucketCompliance
+| PUT Bucket compliance (deprecated)
+| Yes
 
-a|
-s3:PutBucketCompliance
-a|
-PUT Bucket compliance (deprecated)
-a|
-Yes
-a|
-s3:PutBucketConsistency
-a|
-PUT Bucket consistency
-a|
-Yes
-a|
-s3:PutBucketCORS
-a|
+| s3:PutBucketConsistency
+| PUT Bucket consistency
+| Yes
 
+| s3:PutBucketCORS
+| 
 * DeleteBucketCors†
 * PutBucketCors
+| 
 
-a|
-
-a|
-s3:PutEncryptionConfiguration
-a|
-
+| s3:PutEncryptionConfiguration
+| 
 * DeleteBucketEncryption
 * PutBucketEncryption
+| 
 
-a|
+| s3:PutBucketLastAccessTime
+| PUT Bucket last access time
+| Yes
 
-a|
-s3:PutBucketLastAccessTime
-a|
-PUT Bucket last access time
-a|
-Yes
-a|
-s3:PutBucketMetadataNotification
-a|
-PUT Bucket metadata notification configuration
-a|
-Yes
-a|
-s3:PutBucketNotification
-a|
-PutBucketNotificationConfiguration
-a|
+| s3:PutBucketMetadataNotification
+| PUT Bucket metadata notification configuration
+| Yes
 
-a|
-s3:PutBucketObjectLockConfiguration
-a|
+| s3:PutBucketNotification
+| PutBucketNotificationConfiguration
+| 
+
+| s3:PutBucketObjectLockConfiguration
+| 
 * CreateBucket with the `x-amz-bucket-object-lock-enabled: true` request header (also requires the s3:CreateBucket permission)
 * PutObjectLockConfiguration
-a|
+| 
 
-a|
-s3:PutBucketPolicy
-a|
-PutBucketPolicy
-a|
+| s3:PutBucketPolicy
+| PutBucketPolicy
+| 
 
-a|
-s3:PutBucketTagging
-a|
-
+| s3:PutBucketTagging
+| 
 * DeleteBucketTagging†
 * PutBucketTagging
+| 
 
-a|
+| s3:PutBucketVersioning
+| PutBucketVersioning
+| 
 
-a|
-s3:PutBucketVersioning
-a|
-PutBucketVersioning
-a|
-
-a|
-s3:PutLifecycleConfiguration
-a|
-
+| s3:PutLifecycleConfiguration
+| 
 * DeleteBucketLifecycle†
 * PutBucketLifecycleConfiguration
+| 
 
-a|
-
-a|
-s3:PutReplicationConfiguration
-a|
-PutBucketReplication
-a|
-Yes, separate permissions for PUT and DELETE*
-a|
-* Amazon S3 now uses the s3:PutReplicationConfiguration permission for both the PUT and DeleteBucketReplication actions. StorageGRID uses separate permissions for each action, which matches the original Amazon S3 specification.
-a|
-† A DELETE is performed when a PUT is used to overwrite an existing value.
+| s3:PutReplicationConfiguration
+| PutBucketReplication
+| Yes, separate permissions for PUT and DELETE
 |===
 
 === Permissions that apply to objects
@@ -484,110 +402,77 @@ a|
 [cols="2a,2a,1a" options="header"]
 |===
 | Permissions| S3 REST API operations| Custom for StorageGRID
-a|
-s3:AbortMultipartUpload
-a|
 
+| s3:AbortMultipartUpload
+| 
 * AbortMultipartUpload
 * RestoreObject
+| 
 
-a|
-
-a|s3:BypassGovernanceRetention
-a|
+| s3:BypassGovernanceRetention
+| 
 * DeleteObject
 * DeleteObjects
 * PutObjectRetention
-a|
+| 
 
-
-
-
-a|
-s3:DeleteObject
-a|
-
+| s3:DeleteObject
+| 
 * DeleteObject
 * DeleteObjects
 * RestoreObject
+| 
 
-a|
+| s3:DeleteObjectTagging
+| DeleteObjectTagging
+| 
 
-a|
-s3:DeleteObjectTagging
-a|
-DeleteObjectTagging
-a|
+| s3:DeleteObjectVersionTagging
+| DeleteObjectTagging (a specific version of the object)
+| 
 
-a|
-s3:DeleteObjectVersionTagging
-a|
-DeleteObjectTagging (a specific version of the object)
-a|
+| s3:DeleteObjectVersion
+| DeleteObject (a specific version of the object)
+| 
 
-a|
-s3:DeleteObjectVersion
-a|
-DeleteObject (a specific version of the object)
-a|
-
-a|
-s3:GetObject
-a|
-
+| s3:GetObject
+| 
 * GetObject
 * HeadObject
 * RestoreObject
 * SelectObjectContent
+| 
 
-a|
+| s3:GetObjectAcl
+| GetObjectAcl
+| 
 
-a|
-s3:GetObjectAcl
-a|
-GetObjectAcl
-a|
+| s3:GetObjectLegalHold
+| GetObjectLegalHold
+| 
 
-a|
-s3:GetObjectLegalHold
-a|
-GetObjectLegalHold
-a|
+| s3:GetObjectRetention
+| GetObjectRetention
+| 
 
-a|
-s3:GetObjectRetention
-a|
-GetObjectRetention
-a|
+| s3:GetObjectTagging
+| GetObjectTagging
+| 
 
-a|
-s3:GetObjectTagging
-a|
-GetObjectTagging
-a|
+| s3:GetObjectVersionTagging
+| GetObjectTagging (a specific version of the object)
+| 
 
-a|
-s3:GetObjectVersionTagging
-a|
-GetObjectTagging (a specific version of the object)
-a|
+| s3:GetObjectVersion
+| GetObject (a specific version of the object)
+| 
 
-a|
-s3:GetObjectVersion
-a|
-GetObject (a specific version of the object)
-a|
+| s3:ListMultipartUploadParts
+| ListParts, RestoreObject
+| 
 
-a|
-s3:ListMultipartUploadParts
-a|
-ListParts, RestoreObject
-a|
-
-a|
-s3:PutObject
-a|
-
+| s3:PutObject
+| 
 * PutObject
 * CopyObject
 * RestoreObject
@@ -595,51 +480,36 @@ a|
 * CompleteMultipartUpload
 * UploadPart
 * UploadPartCopy
+| 
 
-a|
+| s3:PutObjectLegalHold
+| PutObjectLegalHold
+| 
 
-a|
-s3:PutObjectLegalHold
-a|
-PutObjectLegalHold
-a|
+| s3:PutObjectRetention
+| PutObjectRetention
+| 
 
-a|
-s3:PutObjectRetention
-a|
-PutObjectRetention
-a|
+| s3:PutObjectTagging
+| PutObjectTagging
+| 
 
-a|
-s3:PutObjectTagging
-a|
-PutObjectTagging
-a|
+| s3:PutObjectVersionTagging
+| PutObjectTagging (a specific version of the object)
+| 
 
-a|
-s3:PutObjectVersionTagging
-a|
-PutObjectTagging (a specific version of the object)
-a|
-
-a|
-s3:PutOverwriteObject
-a|
-
+| s3:PutOverwriteObject
+| 
 * PutObject
 * CopyObject
 * PutObjectTagging
 * DeleteObjectTagging
 * CompleteMultipartUpload
+| Yes
 
-a|
-Yes
-a|
-s3:RestoreObject
-a|
-RestoreObject
-a|
-
+| s3:RestoreObject
+| RestoreObject
+| 
 |===
 
 == Use PutOverwriteObject permission
@@ -696,70 +566,54 @@ Condition operators are categorized as follows:
 [cols="1a,2a" options="header"]
 |===
 | Condition operators| Description
-a|
-StringEquals
-a|
-Compares a key to a string value based on exact matching (case sensitive).
-a|
-StringNotEquals
-a|
-Compares a key to a string value based on negated matching (case sensitive).
-a|
-StringEqualsIgnoreCase
-a|
-Compares a key to a string value based on exact matching (ignores case).
-a|
-StringNotEqualsIgnoreCase
-a|
-Compares a key to a string value based on negated matching (ignores case).
-a|
-StringLike
-a|
-Compares a key to a string value based on exact matching (case sensitive). Can include * and ? wildcard characters.
-a|
-StringNotLike
-a|
-Compares a key to a string value based on negated matching (case sensitive). Can include * and ? wildcard characters.
-a|
-NumericEquals
-a|
-Compares a key to a numeric value based on exact matching.
-a|
-NumericNotEquals
-a|
-Compares a key to a numeric value based on negated matching.
-a|
-NumericGreaterThan
-a|
-Compares a key to a numeric value based on "`greater than`" matching.
-a|
-NumericGreaterThanEquals
-a|
-Compares a key to a numeric value based on "`greater than or equals`" matching.
-a|
-NumericLessThan
-a|
-Compares a key to a numeric value based on "`less than`" matching.
-a|
-NumericLessThanEquals
-a|
-Compares a key to a numeric value based on "`less than or equals`" matching.
-a|
-Bool
-a|
-Compares a key to a Boolean value based on "`true or false`" matching.
-a|
-IpAddress
-a|
-Compares a key to an IP address or range of IP addresses.
-a|
-NotIpAddress
-a|
-Compares a key to an IP address or range of IP addresses based on negated matching.
-a|
-Null
-a|
-Checks if a condition key is present in the current request context.
+
+| StringEquals
+| Compares a key to a string value based on exact matching (case sensitive).
+
+| StringNotEquals
+| Compares a key to a string value based on negated matching (case sensitive).
+
+| StringEqualsIgnoreCase
+| Compares a key to a string value based on exact matching (ignores case).
+
+| StringNotEqualsIgnoreCase
+| Compares a key to a string value based on negated matching (ignores case).
+
+| StringLike
+| Compares a key to a string value based on exact matching (case sensitive). Can include * and ? wildcard characters.
+
+| StringNotLike
+| Compares a key to a string value based on negated matching (case sensitive). Can include * and ? wildcard characters.
+
+| NumericEquals
+| Compares a key to a numeric value based on exact matching.
+
+| NumericNotEquals
+| Compares a key to a numeric value based on negated matching.
+
+| NumericGreaterThan
+| Compares a key to a numeric value based on "`greater than`" matching.
+
+| NumericGreaterThanEquals
+| Compares a key to a numeric value based on "`greater than or equals`" matching.
+
+| NumericLessThan
+| Compares a key to a numeric value based on "`less than`" matching.
+
+| NumericLessThanEquals
+| Compares a key to a numeric value based on "`less than or equals`" matching.
+
+| Bool
+| Compares a key to a Boolean value based on "`true or false`" matching.
+
+| IpAddress
+| Compares a key to an IP address or range of IP addresses.
+
+| NotIpAddress
+| Compares a key to an IP address or range of IP addresses based on negated matching.
+
+| Null
+| Checks if a condition key is present in the current request context.
 |===
 
 === Supported condition keys
@@ -767,70 +621,51 @@ Checks if a condition key is present in the current request context.
 [cols="1a,1a,2a" options="header"]
 |===
 | Category| Applicable condition keys| Description
-a|
-IP operators
-a|
-aws:SourceIp
-a|
-Will compare to the IP address from which the request was sent. Can be used for bucket or object operations.
+
+| IP operators
+| aws:SourceIp
+| Will compare to the IP address from which the request was sent. Can be used for bucket or object operations.
 
 *Note:* If the S3 request was sent through the Load Balancer service on Admin Nodes and Gateways Nodes, this will compare to the IP address upstream of the Load Balancer service.
 
 *Note*: If a third-party, non-transparent load balancer is used, this will compare to the IP address of that load balancer. Any `X-Forwarded-For` header will be ignored because its validity can't be ascertained.
 
-a|
-Resource/Identity
-a|
-aws:username
-a|
-Will compare to the sender's username from which the request was sent. Can be used for bucket or object operations.
+| Resource/Identity
+| aws:username
+| Will compare to the sender's username from which the request was sent. Can be used for bucket or object operations.
 
-a|
+| 
 s3:ListBucket and
 
 s3:ListBucketVersions permissions
+| s3:delimiter
+| Will compare to the delimiter parameter specified in a ListObjects or ListObjectVersions request.
 
-a|
-s3:delimiter
-a|
-Will compare to the delimiter parameter specified in a ListObjects or ListObjectVersions request.
-
-a|
+| 
 s3:ListBucket and
 
 s3:ListBucketVersions permissions
-a|
-s3:max-keys
-a|
-Will compare to the max-keys parameter specified in a ListObjects or ListObjectVersions request.
+| s3:max-keys
+| Will compare to the max-keys parameter specified in a ListObjects or ListObjectVersions request.
 
-a|
+| 
 s3:ListBucket and
 
 s3:ListBucketVersions permissions
-a|
-s3:prefix
-a|
-Will compare to the prefix parameter specified in a ListObjects or ListObjectVersions request.
+| s3:prefix
+| Will compare to the prefix parameter specified in a ListObjects or ListObjectVersions request.
 
-a|
-s3:PutObject
-a|
-s3:object-lock-remaining-retention-days
-a|    
-Compares to the retain-until-date specified in the `x-amz-object-lock-retain-until-date` request header or computed from the bucket default retention period to make sure that these values are within the allowable range for the following requests:
+| s3:PutObject
+| s3:object-lock-remaining-retention-days
+| Compares to the retain-until-date specified in the `x-amz-object-lock-retain-until-date` request header or computed from the bucket default retention period to make sure that these values are within the allowable range for the following requests:
 
 * PutObject
 * CopyObject
 * CreateMultipartUpload
 
-a|
-s3:PutObjectRetention
-a|
-s3:object-lock-remaining-retention-days
-a|    
-Compares to the retain-until-date specified in the PutObjectRetention request to ensure that it is within the allowable range.
-
+| s3:PutObjectRetention
+| s3:object-lock-remaining-retention-days
+| Compares to the retain-until-date specified in the PutObjectRetention request to ensure that it is within the allowable range.
 |===
 
 == Specify variables in a policy
@@ -858,34 +693,27 @@ In this example, the variable `${aws:username}` is part of the condition value i
 [cols="1a,2a" options="header"]
 |===
 | Variable| Description
-a|
-`${aws:SourceIp}`
-a|
-Uses the SourceIp key as the provided variable.
-a|
-`${aws:username}`
-a|
-Uses the username key as the provided variable.
-a|
-`${s3:prefix}`
-a|
-Uses the service-specific prefix key as the provided variable.
-a|
-`${s3:max-keys}`
-a|
-Uses the service-specific max-keys key as the provided variable.
-a|
-`${*}`
-a|
-Special character. Uses the character as a literal * character.
-a|
-`${?}`
-a|
-Special character. Uses the character as a literal ? character.
-a|
-`${$}`
-a|
-Special character. Uses the character as a literal $ character.
+
+| `${aws:SourceIp}`
+| Uses the SourceIp key as the provided variable.
+
+| `${aws:username}`
+| Uses the username key as the provided variable.
+
+| `${s3:prefix}`
+| Uses the service-specific prefix key as the provided variable.
+
+| `${s3:max-keys}`
+| Uses the service-specific max-keys key as the provided variable.
+
+| `${*}`
+| Special character. Uses the character as a literal * character.
+
+| `${?}`
+| Special character. Uses the character as a literal ? character.
+
+| `${$}`
+| Special character. Uses the character as a literal $ character.
 |===
 
 == Create policies requiring special handling
@@ -895,86 +723,56 @@ Sometimes a policy can grant permissions that are dangerous for security or dang
 [cols="2a,1a,2a,2a" options="header"]
 |===
 | Policy description| Policy type| Amazon behavior| StorageGRID behavior
-a|
-Deny self any permissions to the root account
-a|
-Bucket
-a|
-Valid and enforced, but root user account retains permission for all S3 bucket policy operations
-a|
-Same
-a|
-Deny self any permissions to user/group
-a|
-Group
-a|
-Valid and enforced
-a|
-Same
-a|
-Allow a foreign account group any permission
-a|
-Bucket
-a|
-Invalid principal
-a|
-Valid, but permissions for all S3 bucket policy operations return a 405 Method Not Allowed error when allowed by a policy
-a|
-Allow a foreign account root or user any permission
-a|
-Bucket
-a|
-Valid, but permissions for all S3 bucket policy operations return a 405 Method Not Allowed error when allowed by a policy
-a|
-Same
-a|
-Allow everyone permissions to all actions
-a|
-Bucket
-a|
-Valid, but permissions for all S3 bucket policy operations return a 405 Method Not Allowed error for the foreign account root and users
-a|
-Same
-a|
-Deny everyone permissions to all actions
-a|
-Bucket
-a|
-Valid and enforced, but root user account retains permission for all S3 bucket policy operations
-a|
-Same
-a|
-Principal is a non-existent user or group
-a|
-Bucket
-a|
-Invalid principal
-a|
-Valid
-a|
-Resource is a non-existent S3 bucket
-a|
-Group
-a|
-Valid
-a|
-Same
-a|
-Principal is a local group
-a|
-Bucket
-a|
-Invalid principal
-a|
-Valid
-a|
-Policy grants a non-owner account (including anonymous accounts) permissions to put objects.
-a|
-Bucket
-a|
-Valid. Objects are owned by the creator account, and the bucket policy does not apply. The creator account must grant access permissions for the object using object ACLs.
-a|
-Valid. Objects are owned by the bucket owner account. Bucket policy applies.
+
+| Deny self any permissions to the root account
+| Bucket
+| Valid and enforced, but root user account retains permission for all S3 bucket policy operations
+| Same
+
+| Deny self any permissions to user/group
+| Group
+| Valid and enforced
+| Same
+
+| Allow a foreign account group any permission
+| Bucket
+| Invalid principal
+| Valid, but permissions for all S3 bucket policy operations return a 405 Method Not Allowed error when allowed by a policy
+
+| Allow a foreign account root or user any permission
+| Bucket
+| Valid, but permissions for all S3 bucket policy operations return a 405 Method Not Allowed error when allowed by a policy
+| Same
+
+| Allow everyone permissions to all actions
+| Bucket
+| Valid, but permissions for all S3 bucket policy operations return a 405 Method Not Allowed error for the foreign account root and users
+| Same
+
+| Deny everyone permissions to all actions
+| Bucket
+| Valid and enforced, but root user account retains permission for all S3 bucket policy operations
+| Same
+
+| Principal is a non-existent user or group
+| Bucket
+| Invalid principal
+| Valid
+
+| Resource is a non-existent S3 bucket
+| Group
+| Valid
+| Same
+
+| Principal is a local group
+| Bucket
+| Invalid principal
+| Valid
+
+| Policy grants a non-owner account (including anonymous accounts) permissions to put objects.
+| Bucket
+| Valid. Objects are owned by the creator account, and the bucket policy does not apply. The creator account must grant access permissions for the object using object ACLs.
+| Valid. Objects are owned by the bucket owner account. Bucket policy applies.
 |===
 
 == Write-once-read-many (WORM) protection
