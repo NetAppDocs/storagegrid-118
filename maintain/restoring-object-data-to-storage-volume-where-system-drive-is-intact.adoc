@@ -11,18 +11,6 @@ summary: 'After recovering a storage volume on a Storage Node where the system d
 [.lead]
 After recovering a storage volume on a Storage Node where the system drive is intact, you can restore the replicated or erasure-coded object data that was lost when the storage volume failed.
 
-== Which procedure should I use?
-
-Whenever possible, restore object data using the *Volume restoration* page in the Grid Manager.
-
-* If the volumes are listed at *MAINTENANCE* > *Volume restoration* > *Nodes to restore*, restore object data using the link:../maintain/restoring-volume.html[Volume restoration page in the Grid Manager].
-
-* If the volumes aren't listed at *MAINTENANCE* > *Volume restoration* > *Nodes to restore*, follow the steps below for using the `repair-data` script to restore object data.
-+
-If the recovered Storage Node contains fewer volumes than the node it is replacing, you must use the `repair-data` script.
-
-== Use the `repair-data` script to restore object data
-
 include::../_include/restore-data-intro.adoc[]
 include::../_include/restore-data-repair.adoc[]
 
