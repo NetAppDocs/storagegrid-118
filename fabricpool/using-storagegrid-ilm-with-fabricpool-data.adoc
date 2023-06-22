@@ -93,6 +93,6 @@ Store objects by replicating 2 copies at Denver.
 
 When this policy is activated, StorageGRID places object data as follows:
 
-* The data tiered from FabricPool in `fabricpool-bucket` will be erasure coded using the 2+1 erasure-coding scheme. Two data fragments and one parity fragment will be placed on three different Storage Nodes.
+* The data tiered from FabricPool in `fabricpool-bucket` will be erasure-coded using the 2+1 erasure-coding scheme. Two data fragments and one parity fragment will be placed on three different Storage Nodes.
 * All objects in all other buckets will be replicated. Two copies will be created and placed on two different Storage Nodes.
 * The erasure-coded and replicated copies will be maintained in StorageGRID until they are deleted in ONTAP. StorageGRID ILM will never delete these items.

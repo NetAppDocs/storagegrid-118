@@ -54,14 +54,10 @@ NOTE: Erasure-coding profile names must be unique. A validation error occurs if 
 
 You can deactivate an erasure-coding profile if you no longer plan to use it and if the profile is not currently used in any ILM rules.
 
-.Before you begin
-
-* You are signed in to the Grid Manager using a link:../admin/web-browser-requirements.html[supported web browser].
-* You have the link:../admin/admin-group-permissions.html[required access permissions].
-* You have confirmed that no erasure-coded data repair operations or decommission procedures are in process. An error message is returned if you attempt to deactivate an erasure-coding profile while either of these operations are in progress.
+TIP: Confirm that no erasure-coded data repair operations or decommission procedures are in process. An error message is returned if you attempt to deactivate an erasure-coding profile while either of these operations are in progress.
 
 .About this task
-When you deactivate an erasure-coding profile, the profile still appears on the Erasure-Coding Profiles page, but its status is *Deactivated*.
+When you deactivate an erasure-coding profile, the profile still appears on the Erasure-Coding Profiles page, but its status is Deactivated.
 
 image::../media/deactivated_ec_profile.png[Deactivated EC Profile]
 
@@ -78,7 +74,7 @@ StorageGRID prevents you from deactivating an erasure-coding profile if either o
 
 . Review the *Status* column to confirm that the erasure-coding profile you want to deactivate is not used in any ILM rules.
 +
-You can't deactivate an erasure-coding profile if it is used in any ILM rule. In the example, the *2+1 Data Center 1* profile is used in at least one ILM rule.
+You can't deactivate an erasure-coding profile if it is used in any ILM rule. In the example, the 2+1 Data Center 1 profile is used in at least one ILM rule.
 +
 image::../media/ec_profile_used_in_ilm_rule.png[EC Profile Used in ILM Rule]
 
@@ -149,5 +145,5 @@ link:working-with-ilm-rules-and-ilm-policies.html[Work with ILM rules and ILM po
 The Deactivate EC Profile dialog box appears.
 
 . If you are sure you want to deactivate the profile, select *Deactivate*.
- ** If StorageGRID is able to deactivate the erasure-coding profile, its status is *Deactivated*. You can no longer select this profile for any ILM rule.
+ ** If StorageGRID is able to deactivate the erasure-coding profile, its status is Deactivated. You can no longer select this profile for any ILM rule.
  ** If StorageGRID is not able to deactivate the profile, an error message appears. For example, an error message appears if object data is still associated with this profile. You might need to wait several weeks before trying the deactivation process again.
