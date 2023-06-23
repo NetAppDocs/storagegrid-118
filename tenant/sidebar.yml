@@ -85,7 +85,7 @@ entries:
       url: "/tenant/deleting-s3-bucket-objects.html"
     - title: Delete bucket
       url: "/tenant/deleting-s3-bucket.html"
-    - title: Use Experimental S3 Console    
+    - title: Use S3 Console    
       url: "/tenant/use-s3-console.html"     
   - title: Manage S3 platform services
     entries:
