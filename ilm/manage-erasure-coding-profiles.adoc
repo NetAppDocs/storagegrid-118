@@ -26,9 +26,9 @@ You can view the details of an erasure-coding profile to determine its status, t
 
 . Select the profile. The detail page for the profile appears.
 
-. Optionally, view the ILM rules tab for a list of ILM policies that use each rule.
+. Optionally, view the ILM rules tab for a list of ILM rules that use the profile, and the ILM policies that use those rules.
 
-. Optionally, view the Storage Nodes for details about each Storage Node, such as the site where it's located and the storage usage.
+. Optionally, view the Storage Nodes tab for details about each Storage Node in the profile's storage pool, such as the site where it's located and the storage usage.
 
 == Rename an erasure-coding profile
 
@@ -70,7 +70,7 @@ StorageGRID prevents you from deactivating an erasure-coding profile if either o
 
 .Steps
 
-. Select *ILM* > *Erasure Coding*.
+. Select *ILM* > *Erasure coding*.
 
 . Review the *Status* column to confirm that the erasure-coding profile you want to deactivate is not used in any ILM rules.
 +
@@ -142,7 +142,7 @@ link:working-with-ilm-rules-and-ilm-policies.html[Work with ILM rules and ILM po
  .. Refresh the Erasure-Coding Profiles page to ensure that the profile is not used in an ILM rule.
 . If the profile is not used in an ILM rule, select the radio button and select *Deactivate*.
 +
-The Deactivate EC Profile dialog box appears.
+The Deactivate erasure-coding profile dialog box appears.
 
 . If you are sure you want to deactivate the profile, select *Deactivate*.
  ** If StorageGRID is able to deactivate the erasure-coding profile, its status is Deactivated. You can no longer select this profile for any ILM rule.
