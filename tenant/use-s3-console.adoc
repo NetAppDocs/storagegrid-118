@@ -36,4 +36,4 @@ NOTE: Tenants should only use S3 Console when performing functions for a small n
 . Select the S3 Console tab.
 . Paste the access key ID and secret access key into the fields. Otherwise, select *Upload access keys* and select your `.csv` file.
 . Select *Sign in*.
-. Manage objects as needed.
+. The table of bucket objects appears. You can manage objects as needed.
