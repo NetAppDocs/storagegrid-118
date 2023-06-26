@@ -140,9 +140,10 @@ link:working-with-ilm-rules-and-ilm-policies.html[Work with ILM rules and ILM po
 |===
 
  .. Refresh the Erasure-Coding Profiles page to ensure that the profile isn't used in an ILM rule.
+
 . If the profile isn't used in an ILM rule, select the radio button and select *Deactivate*. The Deactivate erasure-coding profile dialog box appears.
 +
-TIP: You can select more than one profile at a time to deactivate, as long as each profile isn't used in any rule.
+TIP: You can select multiple profiles to deactivate at the same time, as long as each profile isn't used in any rule.
 
 . If you are sure you want to deactivate the profile, select *Deactivate*.
  ** If StorageGRID is able to deactivate the erasure-coding profile, its status is Deactivated. You can no longer select this profile for any ILM rule.
