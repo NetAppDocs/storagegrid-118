@@ -1,7 +1,7 @@
 ---
 permalink: ilm/manage-erasure-coding-profiles.html
 sidebar: sidebar
-keywords: rename erasure-coding profile, ec profile
+keywords: rename erasure coding profile, ec profile
 summary: 'You can view the details for an erasure-coding profile and rename a profile if needed. You can deactivate an erasure-coding profile if it isn't currently used in any ILM rules.'
 ---
 = Manage erasure-coding profiles
@@ -136,7 +136,6 @@ link:working-with-ilm-rules-and-ilm-policies.html[Work with ILM rules and ILM po
 . Edit or delete the rule. If you edit the rule, remove all placements that use the erasure-coding profile. (The rule will now appear as a historical rule in the historical policy.)
 . Continue with this procedure.
 | link:working-with-ilm-rules-and-ilm-policies.html[Work with ILM rules and ILM policies]
-
 |===
 
  .. Refresh the Erasure-Coding Profiles page to ensure that the profile isn't used in an ILM rule.
