@@ -53,6 +53,6 @@ Users who don't have this permission don't see the *Buckets* menu option.
 
 Users who don't have this permission don't see the *Platform services endpoints* menu option.
 
-| Manage objects with S3 Console
+| Use S3 Console tab
 | When combined with the Manage all buckets permission, allows users to view the objects for a bucket from the S3 Console tab on the Buckets page.
 |===
