@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, decommission admin node, gateway node, archive node
 summary: 'Review the considerations for decommissioning an Admin Node, Gateway Node, or Archive Node.'
 ---
-= Considerations for Admin, Gateway, or Archive Node decommission
+= Considerations for decommissioning Admin, Gateway, or Archive Nodes
 :icons: font
 :imagesdir: ../media/
 
