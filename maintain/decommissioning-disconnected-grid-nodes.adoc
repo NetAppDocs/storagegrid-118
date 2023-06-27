@@ -38,7 +38,7 @@ IMPORTANT: Be careful when decommissioning more than one disconnected grid node 
 
 .Steps
 
-. Attempt to bring any disconnected grid nodes back online or to recover them.
+. Unless you are decommissioning an Archive Node, attempt to bring any disconnected grid nodes back online or to recover them.
 +
 See the recovery procedures for instructions.
 

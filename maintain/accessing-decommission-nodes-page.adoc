@@ -95,7 +95,7 @@ Learn about link:../ilm/manage-erasure-coding-profiles.html[deactivating an eras
 
 | No, you can't decommission an Archive Node unless the node is disconnected.
 | If an Archive Node is still connected, you can't remove it.
-| Power off the Archive Node and then link:decommissioning-disconnected-grid-nodes.html[decommission the disconnected node]. 
+| Complete the steps in link:../maintain/considerations-for-decommissioning-admin-or-gateway-nodes.html#considerations-for-archive-node[Considerations for Archive Node] and then link:decommissioning-disconnected-grid-nodes.html[decommission the disconnected node]. 
 |===
 
 

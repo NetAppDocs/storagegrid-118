@@ -23,7 +23,7 @@ TIP: If you want to replace an older appliance with a newer appliance, https://r
 * You no longer require a Gateway Node.
 * You no longer require a non-primary Admin Node.
 * Your grid includes a disconnected node that you can't recover or bring back online.
-* Your grid includes an Archive Node that you are no longer using.
+* Your grid includes an Archive Node.
 
 == How to decommission a node
 
