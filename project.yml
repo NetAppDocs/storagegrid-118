@@ -134,6 +134,8 @@ sidebar:
           url: "/maintain/rename-grid-site-node-overview.html"
         - title: Add or update display names
           url: "/maintain/rename-grid-site-node.html"
+      - title: Perform rolling reboot 
+        url: "/maintain/rolling-reboot-procedure.html"   
       - title: Maintain networks
         entries:
         - title: Update subnets for Grid Network

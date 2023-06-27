@@ -1,0 +1,106 @@
+---
+permalink: maintain/rolling-reboot-procedure.html
+sidebar: sidebar
+keywords: reboot nodes, rolling reboot procedure
+summary: 'You can perform a rolling reboot to reboot multiple grid nodes without causing a service disruption.'
+---
+= Perform a rolling reboot
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can perform a rolling reboot to reboot multiple grid nodes without causing a service disruption. 
+
+.Before you begin
+
+* From the *primary Admin Node*, you are signed in to the Grid Manager using a link:../admin/web-browser-requirements.html[supported web browser].
++
+NOTE: You can monitor the rolling reboot procedure from any node, but you must be signed in to the primary Admin Node to start this procedure. 
+
+* You have the link:../admin/admin-group-permissions.html[Maintenance or Root access permission].
+
+.About this task
+Use this procedure if you need to reboot multiple StorageGRID nodes at the same time. For example, you might need to use this procedure if you change the FIPS mode for the grid's link:../admin/manage-tls-ssh-policy.html[TLS and SSH security policy]. When the FIPS mode changes, you must reboot all nodes to put the change into effect.
+
+Rebooting grid nodes from this page issues the reboot command on each selected node, which causes each node to shut down and restart. All services are restarted automatically.
+
+When you perform a rolling reboot, you can select all nodes or only some nodes. Nodes of the same type are rebooted sequentially to ensure that at least one instance of object data and related node services remains available. 
+
+TIP: If you only need to reboot one node, you can also go to the Nodes page and link:./monitor/using-task-tab-to-reboot-grid-node.html[use the Tasks tab to reboot the node].
+
+Rolling reboot and primary Admin Node::
+When you reboot the primary Admin Node, your browser temporarily loses access to the Grid Manager, so you can no longer monitor the procedure. For this reason, the primary Admin Node is rebooted last.
+
+Rolling reboot and Storage Nodes:: If you plan to reboot one or more Storage Nodes, note the following:
+
+* If any ILM rule uses the Dual commit ingest option (or if the rule specifies Balanced and it is not possible to immediately create all required copies), StorageGRID immediately commits any newly ingested objects to two Storage Nodes on the same site and evaluates ILM later. If you want to reboot two or more Storage Nodes at a given site, you might not be able to access these objects for the duration of the reboot.
+
+* To ensure you can access all objects while a Storage Node is rebooting, stop ingesting objects at a site for approximately one hour before rebooting the node.
+
+== Select nodes
+
+As your first step, access the Rolling reboot page and select the nodes you want to reboot.
+
+.Steps
+
+. Select *MAINTENANCE* > *Tasks* > *Rolling reboot*.
+
+. Review the connection state and alert icons in the *Node name* column, which indicate if nodes are disconnected from the grid or have critical alerts.
++
+TIP: You can't reboot a node if it is disconnected from the grid. The check boxes are disabled for nodes with these icons: image:../media/icon_alarm_gray_administratively_down.png[gray questionmark icon] or  image:../media/icon_alarm_blue_unknown.png[blue question mark icon].
+
+. Review the alerts listed in the *Alert summary* column, which shows any alerts that are currently affecting each node, which have not been silenced.
++
+TIP: You can also go to the *Nodes* > *Overview* tab to see all current alerts for each node.
+
+//do something here if nodes are disconnected or have high severity alerts?
+
+. Search for and select the nodes you want to reboot.
+
+//can you *Select all nodes*?
+
+. Select *Review selection*. 
+
+== Review selection
+
+In this step, you can determine how long the reboot might take and confirm that you selected the correct nodes.
+
+. On the Review selection page, review the information in the Summary, which indicates how many nodes will be rebooted and the estimated total time for all nodes to reboot.
+
+//filter nodes steps?
+
+. Optionally, to remove a specific node from the reboot list, select *Remove*. 
+
+//Optionally, to add more nodes, go back? will my selections be saved?
+
+. When you are ready to start the rolling reboot procedure for all selected nodes, select *Reboot nodes*.
+
+. If you selected to reboot the primary Admin Node, read the information message, and select *Yes*. 
++
+NOTE: The primary Admin Node will be the last node to reboot. While this node is rebooting, your browser's connection will be lost. When the primary Admin Node is available again, you must reload the Rolling reboot page. 
+
+== Monitor or stop reboot
+You can monitor or stop the rolling reboot procedure from any Admin Node. 
+
+.Steps
+
+. Review the overall progress of the operation, which includes the following information:
+
+** Number of nodes rebooted
+** Number of nodes that failed the reboot operation
+** Number of nodes in process of being rebooted
+** Number of nodes that remain to be rebooted
+
+. Review the table for each type of node.
++
+The tables provide a progress bar of the operation on each node and show the reboot stage for that node, which can be one of these:
+
+* Not started
+* Stopping services
+* Rebooting system
+* Starting services
+* Completed
+
+. Optionally, if you need to stop the rolling reboot procedure, select *Stop reboot*.
++ 
+When you stop the procedure, any nodes that are currently in progress might be rebooted, but they are no longer tracked as part of the procedure. 

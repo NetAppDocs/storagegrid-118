@@ -1,15 +1,15 @@
 ---
 permalink: monitor/using-task-tab-to-reboot-grid-node.html
 sidebar: sidebar
-keywords: task tab
-summary: 'The Task tab allows you to reboot the selected node. The Task tab is shown for all nodes.'
+keywords: Tasks tab
+summary: 'The Tasks tab allows you to reboot the selected node. The Tasks tab is shown for all nodes.'
 ---
-= Use the Task tab to reboot a grid node
+= Use the Tasks tab to reboot a grid node
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-The Task tab allows you to reboot the selected node. The Task tab is shown for all nodes.
+The Tasks tab allows you to reboot the selected node. The Tasks tab is shown for all nodes.
 
 .Before you begin
 * You are signed in to the Grid Manager using a link:../admin/web-browser-requirements.html[supported web browser].
@@ -17,9 +17,9 @@ The Task tab allows you to reboot the selected node. The Task tab is shown for a
 * You have the provisioning passphrase.
 
 .About this task
-You can use the Task tab to reboot a node. For appliance nodes, you can also use the Task tab to place the appliance into maintenance mode.
+You can use the Tasks tab to reboot a node. For appliance nodes, you can also use the Tasks tab to place the appliance into maintenance mode.
 
-* Rebooting a grid node from the Task tab issues the reboot command on the target node. When you reboot a node, the node shuts down and restarts. All services are restarted automatically.
+* Rebooting a grid node from the Tasks tab issues the reboot command on the target node. When you reboot a node, the node shuts down and restarts. All services are restarted automatically.
 +
 If you plan to reboot a Storage Node, note the following:
 
