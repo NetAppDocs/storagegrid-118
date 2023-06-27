@@ -27,8 +27,8 @@ The Decommission Nodes page appears. From this page, you can:
  ** See the health of all grid nodes
  ** Sort the list in ascending or descending order by *Name*, *Site*, *Type*, or *Has ADC*.
  ** Enter search terms to quickly find particular nodes.
-For example, this page shows grid nodes in two data centers. The Decommission Possible column indicates that you can decommission the Gateway Node, one of the five Storage Nodes, and the non-primary Admin Node.
-
++
+In this example, the Decommission Possible column indicates that you can decommission the Gateway Node and one of the four Storage Nodes.
 +
 image::../media/decommission_nodes_page_all_connected.png[Decommission Nodes page]
 
@@ -42,8 +42,8 @@ If a grid node can be decommissioned, this column includes a green check mark, a
 | Description
 | Steps to resolve
 
-| No, node type decommissioning is not supported.
-| You can't decommission the primary Admin Node or an Archive Node.
+| No, _node type_ decommissioning is not supported.
+| You can't decommission the primary Admin Node.
 | None.
 
 | No, at least one grid node is disconnected.
@@ -56,7 +56,9 @@ The *Health* column includes one of these icons for grid nodes that are disconne
  ** image:../media/icon_alarm_gray_administratively_down.png[gray questionmark icon] (gray): Administratively Down
  ** image:../media/icon_alarm_blue_unknown.png[blue question mark icon] (blue): Unknown
 
-| Go to the <<decommission_procedure_choices,step that lists the decommission procedure choices>>.
+| You must bring all disconnected nodes back online or link:decommissioning-disconnected-grid-nodes.html[decommission all disconnected nodes] before you can remove a connected node.
+
+*Note*: If your grid contains multiple disconnected nodes, the software requires you to decommission them all at the same time, which increases the potential for unexpected results.
 
 | No, one or more required nodes is currently disconnected and must be recovered.
 
@@ -68,9 +70,9 @@ The *Health* column includes one of these icons for grid nodes that are disconne
   *** If the Health of a required node is Administratively Down, bring the node back online.
   *** If the health of a required node is Unknown, perform a node recovery procedure to recover the required node.
 
-| No, member of HA group(s): _x_. Before you can decommission this node, you must remove it from all HA groups.
+| No, member of HA group(s): _group name_. Before you can decommission this node, you must remove it from all HA groups.
 | You can't decommission an Admin Node or a Gateway Node if a node interface belongs to a high availability (HA) group.
-| Edit the HA group to remove the node's interface or remove the entire HA group. See the instructions for link:../admin/index.html[administering StorageGRID].
+| Edit the HA group to remove the node's interface or remove the entire HA group. See link:../admin/configure-high-availability-group.html[Configure high availability groups].
 
 | No, site _x_ requires a minimum of _n_ Storage Nodes with ADC services.
 | *Storage Nodes only.* You can't decommission a Storage Node if insufficient nodes would remain at the site to support ADC quorum requirements.
@@ -89,19 +91,11 @@ For example, if an erasure-coding profile exists for 4+2 erasure coding, at leas
 
 *Note:* An error message appears if you attempt to deactivate an erasure-coding profile and object data is still associated with the profile. You might need to wait several weeks before trying the deactivation process again.
 
-Learn about deactivating an erasure-coding profile in the instructions for link:../ilm/index.html[managing objects with ILM].
-|===
+Learn about link:../ilm/manage-erasure-coding-profiles.html[deactivating an erasure-coding profile].
 
-. [[decommission_procedure_choices]]If decommissioning is possible for the node, determine which procedure you need to perform:
-+
-[cols="1a,1a" options="header"]
-|===
-| If your grid includes...| Go to...
-| Any disconnected grid nodes
-| link:decommissioning-disconnected-grid-nodes.html[Decommission disconnected grid nodes]
-
-| Only connected grid nodes
-| link:decommissioning-connected-grid-nodes.html[Decommission connected grid nodes]
+| No, you can't decommission an Archive Node unless the node is disconnected.
+| If an Archive Node is still connected, you can't remove it.
+| Complete the steps in link:../maintain/considerations-for-decommissioning-admin-or-gateway-nodes.html#considerations-for-archive-node[Considerations for Archive Node] and then link:decommissioning-disconnected-grid-nodes.html[decommission the disconnected node]. 
 |===
 
 
