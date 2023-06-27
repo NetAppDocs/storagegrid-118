@@ -36,6 +36,7 @@ This release of StorageGRID introduces the following features and functional cha
 === New alerts
 The following new alerts were added for StorageGRID 11.8:
 
+* Appliance DAS drive exceeding limit for data written per day
 * Appliance DAS drive locator light on
 * Reboot required to disable FIPS
 * Reboot required to enable FIPS
