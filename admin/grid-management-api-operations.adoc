@@ -34,7 +34,7 @@ See "`Protecting against Cross-Site Request Forgery`" for information about impr
 * *deactivated-features*: Operations to view features that might have been deactivated.
 * *dns-servers*: Operations to list and change configured external DNS servers.
 * *endpoint-domain-names*: Operations to list and change S3 endpoint domain names.
-* *erasure-coding*: Operations on erasure coding profiles.
+* *erasure-coding*: Operations on erasure-coding profiles.
 * *expansion*: Operations on expansion (procedure-level).
 * *expansion-nodes*: Operations on expansion (node-level).
 * *expansion-sites*: Operations on expansion (site-level).
