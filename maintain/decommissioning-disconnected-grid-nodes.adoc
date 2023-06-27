@@ -13,7 +13,7 @@ You might need to decommission a node that is not currently connected to the gri
 
 .Before you begin
 
-* You understand the requirements and link:link:grid-node-decommissioning.html[considerations for decommissioning grid nodes].
+* You understand the considerations for decommissioning link:considerations-for-decommissioning-admin-or-gateway-nodes.html[Admin, Gateway, and Archive Nodes] and the considerations for decommissioning link:considerations-for-decommissioning-storage-nodes.html[Storage Nodes].
 * You have obtained all prerequisite items.
 * You have ensured that no data repair jobs are active. See link:checking-data-repair-jobs.html[Check data repair jobs].
 * You have confirmed that Storage Node recovery is not in progress anywhere in the grid. If it is, you must wait until any Cassandra rebuild performed as part of the recovery is complete. You can then proceed with decommissioning.
