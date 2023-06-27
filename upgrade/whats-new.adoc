@@ -23,8 +23,7 @@ This release of StorageGRID introduces the following features and functional cha
 === Kathy's new features
 * Archive Nodes were deprecated in StorageGRID 11.7. You can now use the Decommission Nodes procedure to remove any unused Archive Nodes that are disconnected from the grid. See link:../maintain/decommissioning-disconnected-grid-nodes.html[Decommission disconnected grid nodes].
 
-* When you link:../vmware/deploying-storagegrid-node-as-virtual-machine.html[deploy a StorageGRID node as a virtual machine], you are now prompted to set a temporary installation password, so that you can access the VM console or use SSH before the new node joins the grid. You can use the node name as the password, set a custom password, or disable the password. 
-
+* When you link:../vmware/deploying-storagegrid-node-as-virtual-machine.html[deploy a StorageGRID node as a virtual machine] or use VMware vSphere to link:../vmware/automating-grid-node-deployment-in-vmware-vsphere.html[automate grid node deployment], you are now prompted to set a temporary installation password. This password is used only if you need to access the VM console or use SSH before the new node joins the grid.
 
 === Kevin's new features
 

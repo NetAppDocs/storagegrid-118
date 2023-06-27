@@ -31,7 +31,7 @@ image::../media/video-screenshot-ilm-rules-117.png[link="https://netapp.hosted.p
 When creating ILM rules:
 
 * Consider the StorageGRID system's topology and storage configurations.
-* Consider what types of object copies you want to make (replicated or erasure coded) and the number of copies of each object that are required.
+* Consider what types of object copies you want to make (replicated or erasure-coded) and the number of copies of each object that are required.
 * Determine what types of object metadata are used in the applications that connect to the StorageGRID system. ILM rules filter objects based on their metadata.
 * Consider where you want object copies to be placed over time.
 * Decide which ingest option to use (Balanced, Strict, or Dual commit).

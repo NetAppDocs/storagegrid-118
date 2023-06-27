@@ -13,7 +13,7 @@ Erasure coding is one of two methods StorageGRID uses to store object data. When
 
 When an object is accessed, it is reassembled using the stored fragments. If a data or a parity fragment becomes corrupt or lost, the erasure-coding algorithm can recreate that fragment using a subset of the remaining data and parity fragments.
 
-As you create ILM rules, StorageGRID creates erasure coding profiles that support those rules. You can view a list of erasure coding profiles, link:manage-erasure-coding-profiles.html#rename-an-erasure-coding-profile[rename an erasure coding profile], or link:manage-erasure-coding-profiles.html#deactivate-an-erasure-coding-profile[deactivate an erasure coding profile if it is not currently used in any ILM rules].
+As you create ILM rules, StorageGRID creates erasure-coding profiles that support those rules. You can view a list of erasure-coding profiles, link:manage-erasure-coding-profiles.html#rename-an-erasure-coding-profile[rename an erasure-coding profile], or link:manage-erasure-coding-profiles.html#deactivate-an-erasure-coding-profile[deactivate an erasure-coding profile if it is not currently used in any ILM rules].
 
 The following example illustrates the use of an erasure-coding algorithm on an object's data. In this example, the ILM rule uses a 4+2 erasure-coding scheme. Each object is sliced into four equal data fragments, and two parity fragments are computed from the object data. Each of the six fragments is stored on a different node across three data center sites to provide data protection for node failures or site loss.
 
@@ -33,8 +33,8 @@ image::../media/ec_unrecoverable_4_plus_2.png[Erasure Coding Unrecoverable 4 Plu
 
 * link:what-storage-pool-is.html[What is a storage pool]
 
-* link:what-erasure-coding-schemes-are.html[What are erasure coding schemes]
+* link:what-erasure-coding-schemes-are.html[What are erasure-coding schemes]
 
-* link:manage-erasure-coding-profiles.html#rename-an-erasure-coding-profile[Rename an erasure coding profile]
+* link:manage-erasure-coding-profiles.html#rename-an-erasure-coding-profile[Rename an erasure-coding profile]
 
-* link:manage-erasure-coding-profiles.html#deactivate-an-erasure-coding-profile[Deactivate an erasure coding profile]
+* link:manage-erasure-coding-profiles.html#deactivate-an-erasure-coding-profile[Deactivate an erasure-coding profile]

@@ -2,14 +2,14 @@
 permalink: ilm/create-ilm-rule-define-placements.html
 sidebar: sidebar
 keywords: ilm rule step 2, define placements
-summary: 'Step 3 \(Define placements\) of the Create ILM Rule wizard allows you to define the placement instructions that determine how long objects are stored, the type of copies \(replicated or erasure coded\), the storage location, and the number of copies.'
+summary: 'Step 3 \(Define placements\) of the Create ILM Rule wizard allows you to define the placement instructions that determine how long objects are stored, the type of copies \(replicated or erasure-coded\), the storage location, and the number of copies.'
 ---
 = Step 2 of 3: Define placements
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-The *Define placements* step of the Create ILM Rule wizard allows you to define the placement instructions that determine how long objects are stored, the type of copies (replicated or erasure coded), the storage location, and the number of copies.
+The *Define placements* step of the Create ILM Rule wizard allows you to define the placement instructions that determine how long objects are stored, the type of copies (replicated or erasure-coded), the storage location, and the number of copies.
 
 .About this task
 
@@ -86,7 +86,7 @@ IMPORTANT: Erasure coding is best suited for objects greater than 1 MB. Don't us
 
 .. Select the storage pool you want to add and the erasure-coding scheme you want to use.
 +
-The storage location for an erasure-coded copy includes the name of the erasure coding scheme, followed by the name of the storage pool.
+The storage location for an erasure-coded copy includes the name of the erasure-coding scheme, followed by the name of the storage pool.
 
 . Optionally:
 .. Select *Add other type or location* to create additional copies at different locations.
@@ -106,7 +106,7 @@ When using Cloud Storage Pools, keep these rules in mind:
 
   *** You can't store more than one object copy in any Cloud Storage Pool at the same time. An error message appears if multiple placements that use a Cloud Storage Pool have overlapping dates or if multiple lines in the same placement use a Cloud Storage Pool.
 
-  *** You can store an object in a Cloud Storage Pool at the same time that object is being stored as replicated or erasure coded copies in StorageGRID. However, you must include more than one line in the placement instruction for the time period, so you can specify the number and types of copies for each location.
+  *** You can store an object in a Cloud Storage Pool at the same time that object is being stored as replicated or erasure-coded copies in StorageGRID. However, you must include more than one line in the placement instruction for the time period, so you can specify the number and types of copies for each location.
 
 . In the Retention diagram, confirm your placement instructions.
 +
@@ -117,7 +117,7 @@ Each line in the diagram shows where and when object copies will be placed. The 
 |image:../media/retention_diag_replicated_copy_color.png[Color for replicated copy]
 |Replicated copy
 
-|image:../media/retention_diag_ec_copy_color.png[Color for erasure coded copy]
+|image:../media/retention_diag_ec_copy_color.png[Color for erasure-coded copy]
 |Erasure-coded copy
 
 |image:../media/retention_diag_csp_copy_color.png[Color for Cloud Storage Pool copy]

@@ -37,7 +37,7 @@ This command repairs the replicated data on a Storage Node named SG-DC-SN3:
 NOTE: As object data is restored, the *Objects Lost* alert is triggered if the StorageGRID system can't locate replicated object data. Alerts might be triggered on Storage Nodes throughout the system. You should determine the cause of the loss and if recovery is possible. See link:../troubleshoot/investigating-lost-objects.html[Investigate lost objects].
 
 --
-.Erasure coded (EC) data
+.Erasure-coded (EC) data
 --
 
 If your grid contains erasure-coded data, use the `repair-data start-ec-node-repair` command with the `--nodes` option, where `--nodes` is the hostname (system name), to repair the entire Storage Node.
@@ -90,7 +90,7 @@ If your grid contains replicated data, use the `start-replicated-volume-repair` 
 NOTE: As object data is restored, the *Objects Lost* alert is triggered if the StorageGRID system can't locate replicated object data. Alerts might be triggered on Storage Nodes throughout the system. Note the alert description and recommended actions to determine the cause of the loss and if recovery is possible.
 
 --
-.Erasure coded (EC) data
+.Erasure-coded (EC) data
 --
 
 If your grid contains erasure-coded data, use the `start-ec-volume-repair` command with the `--nodes` option to identify the node (where `--nodes` is the hostname of the node). Then add either the `--volumes` or `--volume-range` option, as shown in the following examples.

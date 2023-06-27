@@ -32,7 +32,7 @@ NOTE: High-risk objects are objects that are at risk of being completely lost. T
   ** *Scan Period -- Estimated (XSCM)*: Use this attribute to estimate when a policy change will be applied to previously ingested objects. If the *Repairs Attempted* attribute does not increase for a period longer than the current scan period, it is probable that replicated repairs are done. Note that the scan period can change. The *Scan Period -- Estimated (XSCM)* attribute applies to the entire grid and is the maximum of all node scan periods. You can query the *Scan Period -- Estimated* attribute history for the grid to determine an appropriate time frame.
  
 --
-.Erasure coded (EC) data
+.Erasure-coded (EC) data
 --
 
 To monitor the repair of erasure-coded data and retry any requests that might have failed:

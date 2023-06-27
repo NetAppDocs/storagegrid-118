@@ -325,7 +325,7 @@ If you can't resolve the problem on your own, contact technical support. Before 
 |Summarize how your StorageGRID system is configured. For example, list the following:
 
 * Does the grid use storage compression, storage encryption, or compliance?
-* Does ILM make replicated or erasure coded objects? Does ILM ensure site redundancy? Do ILM rules use the Balanced, Strict, or Dual Commit ingest behaviors?
+* Does ILM make replicated or erasure-coded objects? Does ILM ensure site redundancy? Do ILM rules use the Balanced, Strict, or Dual Commit ingest behaviors?
 
 |
 |Log files and system data

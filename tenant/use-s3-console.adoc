@@ -25,7 +25,7 @@ NOTE: Tenants should only use S3 Console when performing functions for a small n
 .Before you begin
 
 * You are signed in to the Tenant Manager using a link:../admin/web-browser-requirements.html[supported web browser].
-* You belong to a user group that has the Root access permission or that has both the Manage all buckets and Manage objects with S3 Console link:tenant-management-permissions.html[permissions].
+* You belong to a user group that has the Root access permission or that has both the Manage all buckets and Use S3 Console tab link:tenant-management-permissions.html[permissions].
 * You have created a bucket.
 * An S3 Group or Bucket policy has been configured for the user.
 * You know the user's access key ID and secret access key. Optionally, you have a `.csv` file containing this information. See the link:creating-your-own-s3-access-keys.html[instructions for creating access keys].
@@ -36,4 +36,4 @@ NOTE: Tenants should only use S3 Console when performing functions for a small n
 . Select the S3 Console tab.
 . Paste the access key ID and secret access key into the fields. Otherwise, select *Upload access keys* and select your `.csv` file.
 . Select *Sign in*.
-. Manage objects as needed.
+. The table of bucket objects appears. You can manage objects as needed.
