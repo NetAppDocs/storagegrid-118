@@ -51,4 +51,8 @@ You can do either of the following:
 
 * Redeploy the VM but specify a temporary installation password so you can access the console or use SSH to debug installation issues. 
 
-* Use vCenter to set the password. Go to *VM*,  select the *Configure* tab, and select *vApp Options*. Then, reboot the VM to apply the new password.
+* Use vCenter to set the password:
+
+. Go to *VM*, select the *Configure* tab, and select *vApp Options*. 
+. Update *CUSTOM_TEMPORARY_PASSWORD* with the custom password value or update *TEMPORARY_PASSWORD_TYPE* with the *Use node name* value.
+. Reboot the VM to apply the new password.
