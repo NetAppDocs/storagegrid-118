@@ -2,14 +2,14 @@
 permalink: audit/llst-location-lost.html
 sidebar: sidebar
 keywords: storagegrid, audit, message, LLST, Location Lost
-summary: 'This message is generated whenever a location for an object copy \(replicated or erasure coded\) cannot be found.'
+summary: 'This message is generated whenever a location for an object copy \(replicated or erasure-coded\) cannot be found.'
 ---
 = LLST: Location Lost
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-This message is generated whenever a location for an object copy (replicated or erasure coded) can't be found.
+This message is generated whenever a location for an object copy (replicated or erasure-coded) can't be found.
 
 [cols="1a,1a,4a" options="header"]
 |===
@@ -23,9 +23,9 @@ The affected CBID.
 a|
 ECPR
 a|
-Erasure Coding Profile
+Erasure-Coding Profile
 a|
-For erasure-coded object data. The ID of the erasure coding profile used.
+For erasure-coded object data. The ID of the erasure-coding profile used.
 a|
 LTYP
 a|

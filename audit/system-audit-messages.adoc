@@ -16,12 +16,12 @@ The audit messages belonging to the system audit category are used for events re
 | Code| Message title and description| See
 
 | ECMC
-| Missing Erasure Coded Data Fragment: Indicates that a missing erasure coded data fragment has been detected.
-| link:ecmc-missing-erasure-coded-data-fragment.html[ECMC: Missing Erasure Coded Data Fragment]
+| Missing Erasure-Coded Data Fragment: Indicates that a missing erasure-coded data fragment has been detected.
+| link:ecmc-missing-erasure-coded-data-fragment.html[ECMC: Missing Erasure-Coded Data Fragment]
 
 | ECOC
-| Corrupt Erasure Coded Data Fragment: Indicates that a corrupt erasure coded data fragment has been detected.
-| link:ecoc-corrupt-erasure-coded-data-fragment.html[ECOC: Corrupt Erasure Coded Data Fragment]
+| Corrupt Erasure-Coded Data Fragment: Indicates that a corrupt erasure-coded data fragment has been detected.
+| link:ecoc-corrupt-erasure-coded-data-fragment.html[ECOC: Corrupt Erasure-Coded Data Fragment]
 
 | ETAF
 | Security Authentication Failed: A connection attempt using Transport Layer Security (TLS) failed.

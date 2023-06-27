@@ -68,7 +68,7 @@ Locations
 |
 The storage location of object data within the StorageGRID system. The value for LOCS is "" if the object has no locations (for example, it has been deleted).
 
-CLEC: for erasure-coded objects, the erasure coding profile ID and the erasure coding group ID that is applied to the object's data.
+CLEC: for erasure-coded objects, the erasure-coding profile ID and the erasure coding group ID that is applied to the object's data.
 
 CLDI: for replicated objects, the LDR node ID and the volume ID of the object's location.
 
