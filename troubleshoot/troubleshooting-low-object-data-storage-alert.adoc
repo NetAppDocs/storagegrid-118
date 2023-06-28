@@ -17,7 +17,7 @@ The *Low object data storage* alert monitors how much space is available for sto
 * You have link:../admin/admin-group-permissions.html[specific access permissions].
 
 .About this task
-The *Low object data storage* alert is triggered when the total amount of replicated and erasure coded object data on a Storage Node meets one of the conditions configured in the alert rule.
+The *Low object data storage* alert is triggered when the total amount of replicated and erasure-coded object data on a Storage Node meets one of the conditions configured in the alert rule.
 
 By default, a major alert is triggered when this condition evaluates as true:
 
@@ -28,7 +28,7 @@ By default, a major alert is triggered when this condition evaluates as true:
 
 In this condition:
 
-* `storagegrid_storage_utilization_data_bytes` is an estimate of the total size of replicated and erasure coded object data for a Storage Node.
+* `storagegrid_storage_utilization_data_bytes` is an estimate of the total size of replicated and erasure-coded object data for a Storage Node.
 * `storagegrid_storage_utilization_usable_space_bytes` is the total amount of object storage space remaining for a Storage Node.
 
 If a major or minor *Low object data storage* alert is triggered, you should perform an expansion procedure as soon as possible.

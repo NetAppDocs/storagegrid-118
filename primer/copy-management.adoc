@@ -1,15 +1,15 @@
 ---
 permalink: primer/copy-management.html
 sidebar: sidebar
-keywords: object data, ilm policy, ilm rules, replicated copy, replication, erasure coded copy, ec, cloud storage pool
-summary: 'Object data is managed by the active ILM policy and its ILM rules. ILM rules make replicated or erasure coded copies to protect object data from loss.'
+keywords: object data, ilm policy, ilm rules, replicated copy, replication, erasure-coded copy, ec, cloud storage pool
+summary: 'Object data is managed by the active ILM policy and its ILM rules. ILM rules make replicated or erasure-coded copies to protect object data from loss.'
 ---
 = Copy management
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Object data is managed by the active ILM policy and its ILM rules. ILM rules make replicated or erasure coded copies to protect object data from loss.
+Object data is managed by the active ILM policy and its ILM rules. ILM rules make replicated or erasure-coded copies to protect object data from loss.
 
 Different types or locations of object copies might be required at different times in the object's life. ILM rules are periodically evaluated to ensure that objects are placed as required.
 
@@ -31,16 +31,16 @@ image::../media/replication_data_flow.png[diagram showing the process described 
 
 == Content protection: erasure coding
 
-If an ILM rule includes instructions to make erasure coded copies of object data, the applicable erasure coding scheme breaks object data into data and parity fragments and distributes these fragments across the Storage Nodes configured in the erasure coding profile.
+If an ILM rule includes instructions to make erasure-coded copies of object data, the applicable erasure-coding scheme breaks object data into data and parity fragments and distributes these fragments across the Storage Nodes configured in the erasure-coding profile.
 
-The ILM engine, which is a component of the LDR service, controls erasure coding and ensures that the erasure coding profile is applied to object data.
+The ILM engine, which is a component of the LDR service, controls erasure coding and ensures that the erasure-coding profile is applied to object data.
 
 image::../media/erasure_coding_data_flow.png[Erasure Coding Data Flow]
 
 . The ILM engine queries the ADC service to determine which DDS service can best perform the erasure coding operation. When determined, the ILM engine sends an "initiate" request to that service.
 . The DDS service instructs an LDR to erasure code the object data.
 . The source LDR service sends a copy to the LDR service selected for erasure coding.
-. After creating the appropriate number of parity and data fragments, the LDR service distributes these fragments across the Storage Nodes (Chunk services) that make up the erasure coding profile's storage pool.
+. After creating the appropriate number of parity and data fragments, the LDR service distributes these fragments across the Storage Nodes (Chunk services) that make up the erasure-coding profile's storage pool.
 . The LDR service notifies the ILM engine, confirming that object data is successfully distributed.
 . The ILM engine updates the metadata store with object location metadata.
 

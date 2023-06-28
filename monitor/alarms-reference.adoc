@@ -513,7 +513,7 @@ Corrupt Fragments Detected
 a|
 LDR
 a|
-An alarm is triggered when the background verification process detects a corrupt erasure coded fragment. If a corrupt fragment is detected, an attempt is made to rebuild the fragment. Reset the Corrupt Fragments Detected and Copies Lost attributes to zero and monitor them to see if counts go up again. If counts do go up, there might be a problem with the Storage Node's underlying storage. A copy of erasure coded object data is not considered missing until such time that the number of lost or corrupt fragments breaches the erasure code's fault tolerance; therefore, it is possible to have corrupt fragment and to still be able to retrieve the object.
+An alarm is triggered when the background verification process detects a corrupt erasure-coded fragment. If a corrupt fragment is detected, an attempt is made to rebuild the fragment. Reset the Corrupt Fragments Detected and Copies Lost attributes to zero and monitor them to see if counts go up again. If counts do go up, there might be a problem with the Storage Node's underlying storage. A copy of erasure-coded object data is not considered missing until such time that the number of lost or corrupt fragments breaches the erasure code's fault tolerance; therefore, it is possible to have corrupt fragment and to still be able to retrieve the object.
 
 If the problem persists, contact technical support.
 
@@ -524,7 +524,7 @@ Verification Status
 a|
 LDR
 a|
-This alarm indicates the current status of the background verification process for erasure coded object data on this Storage Node.
+This alarm indicates the current status of the background verification process for erasure-coded object data on this Storage Node.
 
 A major alarm is triggered if there is an error in the background verification process.
 

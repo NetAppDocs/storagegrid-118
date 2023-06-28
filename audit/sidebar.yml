@@ -99,9 +99,9 @@ entries:
         url: "/audit/ebdl-empty-bucket-delete.html"        
       - title: 'EBKR: Empty Bucket Request'
         url: "/audit/ebkr-empty-bucket-request.html"
-      - title: 'ECMC: Missing Erasure Coded Data Fragment'
+      - title: 'ECMC: Missing Erasure-Coded Data Fragment'
         url: "/audit/ecmc-missing-erasure-coded-data-fragment.html"
-      - title: 'ECOC: Corrupt Erasure Coded Data Fragment'
+      - title: 'ECOC: Corrupt Erasure-Coded Data Fragment'
         url: "/audit/ecoc-corrupt-erasure-coded-data-fragment.html"
       - title: 'ETAF: Security Authentication Failed'
         url: "/audit/etaf-security-authentication-failed.html"

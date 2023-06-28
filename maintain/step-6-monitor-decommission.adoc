@@ -73,7 +73,7 @@ If you are monitoring the progress of a connected site decommission, refer to th
 |Marking LDR Decommissioned
 |Minutes
 
-|Decommissioning Replicated and Erasure Coded Data
+|Decommissioning Replicated and Erasure-Coded Data
 |Hours, days, or weeks based on the amount of data
 
 *Note*: If you need to perform other maintenance activities, you can pause the site decommission during this stage.
@@ -130,7 +130,7 @@ If you are monitoring the progress of a disconnected site decommission, refer to
 image::../media/decommission_site_step_6_repair_cassandra.png[Decommission Site Step 6 Repair Cassandra]
 
  ** During the *Deactivate EC Profiles & Delete Storage Pools* step, the following ILM changes are made:
-  *** Any erasure coding profiles that referred to the site are deactivated.
+  *** Any erasure-coding profiles that referred to the site are deactivated.
   *** Any Storage Pools that referred to the site are deleted.
 +
 IMPORTANT: The All Storage Nodes storage pool (StorageGRID 11.6 and earlier) is also removed because it uses the All Sites site.
