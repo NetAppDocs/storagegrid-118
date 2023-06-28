@@ -172,11 +172,11 @@ sidebar:
           url: "/maintain/vmware-configuring-virtual-machine-for-automatic-restart.html"
       - title: Grid node procedures
         entries:
+        - title: Overview
+          pdf-filename: Grid node procedures
+          url: "/maintain/grid-node-procedures.html"
         - title: Node service procedures
           entries:
-          - title: Overview
-            pdf-filename: Node service procedures
-            url: "/maintain/grid-node-procedures.html"
           - title: View Server Manager status and version
             url: "/maintain/viewing-server-manager-status-and-version.html"
           - title: View current status of all services
@@ -199,11 +199,8 @@ sidebar:
             url: "/maintain/using-donotstart-file.html"
           - title: Troubleshoot Server Manager
             url: "/maintain/accessing-server-manager-log-file.html"
-        - title: 'Node reboot, shut down, or power procedures'
+        - title: 'Node reboot, shut down, and power procedures'
           entries:
-          - title: Overview
-            pdf-filename: 'Node reboot, shut down, or power procedures'
-            url: "/maintain/rebooting-grid-node.html"
           - title: Perform rolling reboot 
             url: "/maintain/rolling-reboot-procedure.html"               
           - title: Reboot grid node from Tasks tab
@@ -216,8 +213,10 @@ sidebar:
             url: "/maintain/powering-down-host.html"
           - title: Power off and on all nodes in grid
             url: "/maintain/powering-off-and-on-all-nodes-in-grid.html"
-        - title: Place appliance into maintenance mode
+        - title: Maintenance mode procedure
           url: "/maintain/placing-appliance-into-maintenance-mode.html"
+        - title: Port remap procedures
+          entries: 
         - title: Remove port remaps
           url: "/maintain/removing-port-remaps.html"
         - title: Remove port remaps on bare metal hosts
