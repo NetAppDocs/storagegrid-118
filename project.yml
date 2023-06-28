@@ -175,7 +175,8 @@ sidebar:
         - title: Node service procedures
           entries:
           - title: Overview
-          - url: "/maintain/grid-node-procedures.html"
+            pdf-filename: Node service procedures
+            url: "/maintain/grid-node-procedures.html"
           - title: View Server Manager status and version
             url: "/maintain/viewing-server-manager-status-and-version.html"
           - title: View current status of all services
