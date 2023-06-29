@@ -24,10 +24,6 @@ Node reboot, shut down, and power procedures::
 
 You use these procedures to reboot one or more nodes, to shut down and restart nodes, or to power nodes off and power them back on. 
 
-Maintenance mode procedure::
-
-You must place an appliance node into maintenance mode before performing some maintenance procedures.
-
 Port remap procedures::
 
 You can use the port remap procedures to remove the port remaps from a node, for example, if you want to configure a load balancer endpoint using a port that was previously remapped.
