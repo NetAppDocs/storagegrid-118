@@ -135,7 +135,7 @@ sidebar:
         - title: Overview
           pdf-filename: Grid node procedures
           url: "/maintain/grid-node-procedures.html"
-        - title: Server manager procedures
+        - title: Server Manager procedures
           entries:
           - title: View Server Manager status and version
             url: "/maintain/viewing-server-manager-status-and-version.html"
