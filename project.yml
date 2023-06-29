@@ -130,10 +130,10 @@ sidebar:
           url: "/maintain/rename-grid-site-node-overview.html"
         - title: Add or update display names
           url: "/maintain/rename-grid-site-node.html"
-      - title: Grid node procedures
+      - title: Node procedures
         entries:
         - title: Overview
-          pdf-filename: Grid node procedures
+          pdf-filename: Node procedures
           url: "/maintain/grid-node-procedures.html"
         - title: Server Manager procedures
           entries:
@@ -179,7 +179,7 @@ sidebar:
             url: "/maintain/removing-port-remaps.html"
           - title: Remove port remaps on bare metal hosts
             url: "/maintain/removing-port-remaps-on-bare-metal-hosts.html"
-      - title: Maintain networks
+      - title: Network procedures
         entries:
         - title: Update subnets for Grid Network
           url: "/maintain/updating-subnets-for-grid-network.html"

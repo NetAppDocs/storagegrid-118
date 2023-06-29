@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, grid node procedure
 summary: 'You might need to perform maintenance procedures related to specific grid nodes or node services.'
 ---
-= Grid node procedures: Overview
+= Node procedures: Overview
 :icons: font
 :imagesdir: ../media/
 
