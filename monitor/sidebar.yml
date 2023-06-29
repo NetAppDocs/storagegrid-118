@@ -19,7 +19,7 @@ entries:
       url: "/monitor/viewing-network-tab.html"
     - title: View the Storage tab
       url: "/monitor/viewing-storage-tab.html"
-    - title: Use the Tasks tab to reboot a grid node
+    - title: Use the Tasks tab
       url: "/monitor/using-task-tab-to-reboot-grid-node.html"
     - title: View the Objects tab
       url: "/monitor/viewing-objects-tab.html"
