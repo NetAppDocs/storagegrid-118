@@ -28,7 +28,7 @@ The following example illustrates how the API version is bumped based on the typ
 
 When you install StorageGRID software for the first time, only the most recent version of the API is enabled. However, when you upgrade to a new feature release of StorageGRID, you continue to have access to the older API version for at least one StorageGRID feature release.
 
-NOTE: You can use the API to configure the supported versions. See the *config* section of the Swagger API documentation for more information. You should deactivate support for the older version after updating all API clients to use the newer version.
+NOTE: You can use the API to configure the supported versions. See the *config* section of the Swagger API documentation for the Grid Management API for more information. You should deactivate support for the older version after updating all API clients to use the newer version.
 
 Outdated requests are marked as deprecated in the following ways:
 
