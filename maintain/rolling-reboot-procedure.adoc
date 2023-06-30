@@ -19,8 +19,6 @@ NOTE: You can monitor the rolling reboot procedure from any Admin Node, but you 
 
 * You have the link:../admin/admin-group-permissions.html[Maintenance or Root access permission].
 
-* You have the provisioning passphrase.
-
 * If you are rebooting the primary Admin Node or any Storage Node, you have reviewed the following considerations:
 
 ** When you reboot the primary Admin Node, your browser temporarily loses access to the Grid Manager, so you can no longer monitor the procedure. For this reason, the primary Admin Node is rebooted last.
@@ -46,7 +44,6 @@ The rolling reboot procedure can reboot multiple nodes at the same time, with th
 * Storage Nodes and Archive Nodes will not be rebooted at the same time.
 
 Instead, these nodes are rebooted sequentially to ensure that HA groups, object data, and critical node services always remain available. 
-
 
 
 == Perform a rolling reboot 
