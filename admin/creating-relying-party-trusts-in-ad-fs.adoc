@@ -68,10 +68,14 @@ The list of relying party trusts appears.
  .. On the Select Rule Template page, select *Send LDAP Attributes as Claims* from the list, and select *Next*.
  .. On the Configure Rule page, enter a display name for this rule.
 +
-For example, *ObjectGUID to Name ID*.
+For example, *ObjectGUID to Name ID* or *UPN to Name ID*.
 
- .. For the Attribute Store, select *Active Directory*.
- .. In the LDAP Attribute column of the Mapping table, type *objectGUID*.
+.. For the Attribute Store, select *Active Directory*.
+.. In the LDAP Attribute column of the Mapping table, type either of the following:
+ 
+*** *objectGUID* 
+*** *UPN* (universal principal name)
+
  .. In the Outgoing Claim Type column of the Mapping table, select *Name ID* from the drop-down list.
  .. Select *Finish*, and select *OK*.
 . Confirm that the metadata was imported successfully.
@@ -110,10 +114,13 @@ NOTE: When entering the display name, use the Relying Party Identifier for the A
  .. On the Select Rule Template page, select *Send LDAP Attributes as Claims* from the list, and select *Next*.
  .. On the Configure Rule page, enter a display name for this rule.
 +
-For example, *ObjectGUID to Name ID*.
+For example, *ObjectGUID to Name ID* or *UPN to Name ID*.
 
  .. For the Attribute Store, select *Active Directory*.
- .. In the LDAP Attribute column of the Mapping table, type *objectGUID*.
+ .. In the LDAP Attribute column of the Mapping table, type either of the following:
+ *** *objectGUID*
+ *** *UPN* (universal principal name)
+
  .. In the Outgoing Claim Type column of the Mapping table, select *Name ID* from the drop-down list.
  .. Select *Finish*, and select *OK*.
 . Confirm that the metadata was imported successfully.
@@ -162,10 +169,13 @@ NOTE: If the dialog box does not appear, right-click the trust, and select *Edit
  .. On the Select Rule Template page, select *Send LDAP Attributes as Claims* from the list, and select *Next*.
  .. On the Configure Rule page, enter a display name for this rule.
 +
-For example, *ObjectGUID to Name ID*.
+For example, *ObjectGUID to Name ID* or *UPN to Name ID*.
 
  .. For the Attribute Store, select *Active Directory*.
- .. In the LDAP Attribute column of the Mapping table, type *objectGUID*.
+ .. In the LDAP Attribute column of the Mapping table, type either of the following:
+ 
+*** *objectGUID* 
+*** *UPN* (universal principal name)
  .. In the Outgoing Claim Type column of the Mapping table, select *Name ID* from the drop-down list.
  .. Select *Finish*, and select *OK*.
 . Right-click the relying party trust to open its properties.
