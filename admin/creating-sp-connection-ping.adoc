@@ -130,7 +130,7 @@ The Partner's Entity ID and the Connection Name are set to the StorageGRID SP co
 . On the LDAP Directory Search tab: 
 * Enter the *Base DN*, which should exactly match the value you entered in StorageGRID for the LDAP server. 
 * For the Search Scope, select *Subtree*.
-* For the Root Object Class, search for and add either of these attributes: *objectGUID* or *UPN* (universal principal name).
+* For the Root Object Class, search for and add either of these attributes: *objectGUID* or *User Principal Name* (UPN).
 
 . On the LDAP Binary Attribute Encoding Types tab, select *Base64* for the *objectGUID* attribute.
 
