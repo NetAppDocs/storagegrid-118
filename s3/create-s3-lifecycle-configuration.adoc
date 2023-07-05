@@ -158,4 +158,4 @@ The success response includes the object's metadata and indicates that the objec
 }
 ----
 
-NOTE: For versioning-enabled buckets, this header applies only to current versions of objects.
+NOTE: For versioning-enabled buckets, the `x-amz-expiration` response header applies only to current versions of objects.
