@@ -157,3 +157,5 @@ The success response includes the object's metadata and indicates that the objec
       "Metadata": {}
 }
 ----
+
+NOTE: For versioning-enabled buckets, this header applies only to current versions of objects.
