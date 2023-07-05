@@ -21,7 +21,7 @@ image:../media/grid-federation-cgr-workflow.png[Cross-grid replication workflow]
 
 If a tenant account has the *Use grid federation connection* permission to use one or more link:grid-federation-overview.html[grid federation connections], a tenant user with Root access permission can create identical buckets in the corresponding tenant accounts on each grid. These buckets:
 
-* Must have the same name and region
+* Must have the same name but can have different regions
 * Must have versioning enabled
 * Must have S3 Object Lock disabled
 * Must be empty
