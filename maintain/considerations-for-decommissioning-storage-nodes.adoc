@@ -1,15 +1,33 @@
 ---
 permalink: maintain/considerations-for-decommissioning-storage-nodes.html
 sidebar: sidebar
-keywords: storagegrid, decommission
-summary: 'If you plan to decommission a Storage Node, you must understand how StorageGRID manages the object data and metadata on that node.'
+keywords: storage node decommission, considerations, appliance node clone
+summary: 'Before decommissioning a Storage Node, consider whether you can clone the node instead. Then, if you do decide to decommission the node, review how StorageGRID manages objects and metadata during the decommission procedure.'
 ---
 = Considerations for decommissioning Storage Nodes
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-If you plan to decommission a Storage Node, you must understand how StorageGRID manages the object data and metadata on that node.
+Before decommissioning a Storage Node, consider whether you can clone the node instead. Then, if you do decide to decommission the node, review how StorageGRID manages objects and metadata during the decommission procedure.
+
+== When to clone a node instead of decommissioning it
+
+If you want to replace an older appliance Storage Node with a newer or larger appliance, consider cloning the appliance node instead of adding a new appliance in an expansion and then decommissioning the old appliance. 
+
+Appliance node cloning lets you easily replace an existing appliance node with a compatible appliance at the same StorageGRID site. The cloning process transfers all data to the new appliance, places the new appliance in service, and leaves the old appliance in a pre-install state.
+
+You can clone an appliance node if you need to:
+
+* Replace an appliance that is reaching end-of-life.
+
+* Upgrade an existing node to take advantage of improved appliance technology.
+
+* Increase grid storage capacity without changing the number of Storage Nodes in your StorageGRID system.
+
+* Improve storage efficiency, such as by changing the RAID mode.
+
+See https://review.docs.netapp.com/us-en/storagegrid-appliances_main/commonhardware/how-appliance-node-cloning-works.html[Appliance node cloning: Overview^] for details.
 
 == Considerations for connected Storage Nodes
 
