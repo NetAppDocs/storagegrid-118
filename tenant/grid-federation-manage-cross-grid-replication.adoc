@@ -46,7 +46,9 @@ NOTE: If you are unable to sign in to the tenant's destination grid as a local u
 .. Select *Create bucket*.
 .. Select *Finish*.
 
-. Repeat these steps to create an identical bucket for the same tenant account on the other grid in the grid federation connection. 
+. Repeat these steps to create an identical bucket for the same tenant account on the other grid in the grid federation connection.
++
+TIP: As required, each bucket can use a different region.  
 
 === Enable cross-grid replication
 
