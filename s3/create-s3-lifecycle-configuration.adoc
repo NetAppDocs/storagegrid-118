@@ -14,7 +14,6 @@ You can create an S3 lifecycle configuration to control when specific objects ar
 The simple example in this section illustrates how an S3 lifecycle configuration can control when certain objects are deleted (expired) from specific S3 buckets. The example in this section is for illustration purposes only. For complete details on creating S3 lifecycle configurations, see https://docs.aws.amazon.com/AmazonS3/latest/dev/object-lifecycle-mgmt.html[Amazon Simple Storage Service Developer Guide: Object lifecycle management^]. Note that StorageGRID only supports Expiration actions; it does not support Transition actions.
 
 == What lifecycle configuration is
-
 A lifecycle configuration is a set of rules that are applied to the objects in specific S3 buckets. Each rule specifies which objects are affected and when those objects will expire (on a specific date or after some number of days).
 
 StorageGRID supports up to 1,000 lifecycle rules in a lifecycle configuration. Each rule can include the following XML elements:
@@ -38,7 +37,6 @@ StorageGRID supports the use of the following bucket operations to manage lifecy
 * PutBucketLifecycleConfiguration
 
 == Create lifecycle configuration
-
 As the first step in creating a lifecycle configuration, you create a JSON file that includes one or more rules. For example, this JSON file includes three rules, as follows:
 
 . Rule 1 applies only to objects that match the prefix `category1`/ and that have a `key2` value of `tag2`. The `Expiration` parameter specifies that objects matching the filter will expire at midnight on 22 August 2020.
@@ -94,7 +92,6 @@ IMPORTANT: Rules that specify a number of days are relative to when the object w
 ----
 
 == Apply lifecycle configuration to bucket
-
 After you have created the lifecycle configuration file, you apply it to a bucket by issuing a PutBucketLifecycleConfiguration request.
 
 This request applies the lifecycle configuration in the example file to objects in a bucket named `testbucket`.
@@ -114,7 +111,6 @@ aws s3api --endpoint-url <StorageGRID endpoint> get-bucket-lifecycle-configurati
 A successful response lists the lifecycle configuration you just applied.
 
 == Validate that bucket lifecycle expiration applies to object
-
 You can determine if an expiration rule in the lifecycle configuration applies to a specific object when issuing a PutObject, HeadObject, or GetObject request. If a rule applies, the response includes an `Expiration` parameter that indicates when the object expires and which expiration rule was matched.
 
 NOTE: Because bucket lifecycle overrides ILM, the `expiry-date` shown is the actual date the object will be deleted. For details, see link:../ilm/how-object-retention-is-determined.html[How object retention is determined].
