@@ -13,7 +13,7 @@ An information lifecycle management (ILM) policy is an ordered set of ILM rules 
 
 When you create an ILM policy, you start by selecting and arranging the ILM rules. Then, you verify the behavior of your proposed policy by simulating it against previously ingested objects. When you are satisfied that the proposed policy is functioning as intended, you can activate it.
 
-To provide different quality-of-service options to tenants, you can have more than one active policy at a time. You use ILM policy tags that identify each policy, then tag a bucket to apply a policy to the bucket. 
+To provide different quality-of-service options to tenants, you can have more than one active policy at a time by using link:use-ilm-policy-tags.html[ILM policy tags]. You assign each ILM policy to a tag, then tenants tag an S3 bucket or Swift container to apply a policy to the bucket or container. 
 
 CAUTION: An ILM policy that has been incorrectly configured can result in unrecoverable data loss. Before activating an ILM policy, carefully review the ILM policy and its ILM rules, and then simulate the ILM policy. Always confirm that the ILM policy will work as intended.
 
@@ -21,7 +21,9 @@ CAUTION: An ILM policy that has been incorrectly configured can result in unreco
 == Default ILM policy
  
 When you install StorageGRID and add sites, a default ILM policy is automatically created. If your grid contains one site, the default policy contains a default rule that replicates two copies of each object at that site. If your grid contains more than one site, the default rule replicates one copy of each object at each site.
- 
+
+In case you want to have multiple active policies at the same time, a link:use-ilm-policy-tags.html[default ILM policy tag] is automatically created when you install StorageGRID.
+
 If the default policy does not meet your storage requirements, you can create your own rules and policy. See link:what-ilm-rule-is.html[What an ILM rule is] and link:creating-proposed-ilm-policy.html[Creating a proposed ILM policy].
 
 == How does an ILM policy evaluate objects?
@@ -32,7 +34,7 @@ When clients save objects to StorageGRID, the objects are evaluated against the 
 
 . If the filters for the first rule in the policy match an object, the object is ingested according to that rule's ingest behavior and stored according to that rule's placement instructions.
 . If the filters for the first rule don't match the object, the object is evaluated against each subsequent rule in the policy until a match is made.
-. If no rules match an object, the ingest behavior and placement instructions for the default rule in the policy are applied. The default rule is the last rule in a policy. The default rule must apply to all tenants, all buckets, and all object versions and can't use any advanced filters.
+. If no rules match an object, the ingest behavior and placement instructions for the default rule in the policy are applied. The default rule is the last rule in a policy. The default rule must apply to all tenants, all buckets or containers, and all object versions and can't use any advanced filters.
 
 == Example ILM policy
 
@@ -55,7 +57,7 @@ image::../media/ilm_policy_and_rules.png[ILM Policy and Rules]
 
 == What are proposed, active, and historical policies?
 
-Every StorageGRID system must have at least one active ILM policy. If you have more than one active ILM policy, you create a tag for each policy and assign a policy to each tag. You then apply tags to buckets. A default tag is automatically applied to a bucket if no other tag is assigned.
+Every StorageGRID system must have at least one active ILM policy. If you have more than one active ILM policy, you create a link:use-ilm-policy-tags.html[tag for each policy] and assign a policy to each tag. Tenants then apply tags to buckets or containers. A default tag is automatically applied to a bucket (container) if no other tag is assigned.
 
 A StorageGRID system might also have one proposed ILM policy and any number of historical policies.
 
@@ -63,7 +65,7 @@ When you first create an ILM policy, you create a proposed policy by selecting o
 
 When you activate one ILM policy, StorageGRID uses that policy to manage all objects, including existing objects and newly ingested objects. Existing objects might be moved to new locations when the ILM rules in the new policy are implemented.
 
-If you activate more than one ILM policy at a time and apply policy tags to buckets, the objects in each bucket are managed according to the policy assigned to the tag.
+If you activate more than one ILM policy at a time, and tenants apply policy tags to buckets or containers, the objects in each bucket (container) are managed according to the policy assigned to the tag.
 
 Historical ILM policies can't be deleted.
 
