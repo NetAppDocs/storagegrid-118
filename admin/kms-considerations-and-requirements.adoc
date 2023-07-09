@@ -11,20 +11,24 @@ summary: 'Before configuring an external key management server \(KMS\), you must
 [.lead]
 Before configuring an external key management server (KMS), you must understand the considerations and requirements.
 
-== What are the KMIP requirements?
+== Which version of KMIP is supported?
 
 StorageGRID supports KMIP version 1.4.
 
 http://docs.oasis-open.org/kmip/spec/v1.4/os/kmip-spec-v1.4-os.html[Key Management Interoperability Protocol Specification Version 1.4^]
 
-Communications between the appliance nodes and the configured KMS use secure TLS connections. StorageGRID supports the following TLS v1.2 ciphers for KMIP:
+== What are the network considerations?
 
-* TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
-* TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384
+The network firewall settings must allow each appliance node to communicate through the port used for Key Management Interoperability Protocol (KMIP) communications. The default KMIP port is 5696.
 
 You must ensure that each appliance node that uses node encryption has network access to the KMS or KMS cluster you configured for the site.
 
-The network firewall settings must allow each appliance node to communicate through the port used for Key Management Interoperability Protocol (KMIP) communications. The default KMIP port is 5696.
+== Which versions of TLS are supported?
+
+Communications between the appliance nodes and the configured KMS use secure TLS connections. StorageGRID can support either the TLS 1.2 or TLS 1.3 protocol when it makes KMIP connections to a KMS or KMS cluster, based on what the KMS supports and which link:manage-tls-ssh-policy.html[TLS and SSH policy] you are using.
+
+StorageGRID negotiates the protocol and cipher (TLS 1.2) or cipher suite (TLS 1.3) with the KMS when it makes the connection. To see which protocol versions and ciphers/cipher suites are available, review the `tlsOutbound` section of the grid's active TLS and SSH policy (*CONFIGURATION* > *Security* *Security settings*).
+
 
 == Which appliances are supported?
 
