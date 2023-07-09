@@ -27,6 +27,8 @@ This release of StorageGRID introduces the following features and functional cha
 
 * When configuring single sign-on (SSO) for Active Directory Federation Service (AD FS) or PingFederate, you can now map the user principal name to `Name ID` in the claims rule or to `sAMAccountName=${username}` in the adapter instance.
 
+* StorageGRID can now support either the TLS 1.2 or TLS 1.3 protocol when it makes KMIP connections between appliance nodes and a KMS or KMS cluster. The protocols and ciphers/cipher suites available depend on which TLS and SSH policy you are using. See link:../admin/kms-considerations-and-requirements.html[Considerations and requirements for using a key management server].
+
 === Kevin's new features
 
 
