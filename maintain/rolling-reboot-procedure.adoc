@@ -15,7 +15,7 @@ You can perform a rolling reboot to reboot multiple grid nodes without causing a
 
 * You are signed in to the Grid Manager on the primary Admin Node, and you are using a link:../admin/web-browser-requirements.html[supported web browser].
 +
-NOTE: You can monitor the rolling reboot procedure from any Admin Node, but you must be signed in to the primary Admin Node to start this procedure. 
+NOTE: You must be signed in to the primary Admin Node to perform this procedure. 
 
 * You have the link:../admin/admin-group-permissions.html[Maintenance or Root access permission].
 
@@ -30,7 +30,6 @@ Use this procedure if you need to reboot multiple nodes at the same time. For ex
 
 TIP: If you only need to reboot one node, you can link:../maintain/rebooting-grid-node-from-grid-manager.html[reboot the node from the Tasks tab].
 
-
 When StorageGRID reboots grid nodes, it issues the `reboot` command on each node, which causes the node to shut down and restart. All services are restarted automatically. 
 
 * Rebooting a VMware node reboots the virtual machine.
@@ -44,7 +43,6 @@ The rolling reboot procedure can reboot multiple nodes at the same time, with th
 * Storage Nodes and Archive Nodes will not be rebooted at the same time.
 
 Instead, these nodes are rebooted sequentially to ensure that HA groups, object data, and critical node services always remain available. 
-
 
 == Perform a rolling reboot 
 You select the nodes you want to reboot, review your selections, start the reboot procedure, and monitor the progress.
@@ -90,14 +88,13 @@ In this step, you can determine how long the total reboot procedure might take a
 NOTE: The primary Admin Node will be the last node to reboot. While this node is rebooting, your browser's connection will be lost. When the primary Admin Node is available again, you must reload the Rolling reboot page. 
 
 === Monitor a rolling reboot
-While the rolling reboot procedure is running, you can monitor it from any Admin Node.
+While the rolling reboot procedure is running, you can monitor it from the primary Admin Node.
 
 .Steps
 
 . Review the overall progress of the operation, which includes the following information:
 
 ** Number of nodes rebooted
-** Number of nodes that failed the reboot operation
 ** Number of nodes in process of being rebooted
 ** Number of nodes that remain to be rebooted
 
@@ -112,7 +109,7 @@ The tables provide a progress bar of the operation on each node and show the reb
 * Completed
 
 == Stop the rolling reboot procedure
-You can stop the rolling reboot procedure from any Admin Node. When you stop the procedure, any nodes that have the status "`Stopping services,`" "`Rebooting system,`" or "`Starting services`" will complete the reboot operation. However, these nodes will no longer be tracked as part of the procedure. 
+You can stop the rolling reboot procedure from the primary Admin Node. When you stop the procedure, any nodes that have the status "`Stopping services,`" "`Rebooting system,`" or "`Starting services`" will complete the reboot operation. However, these nodes will no longer be tracked as part of the procedure. 
 
 .Steps
 
