@@ -22,19 +22,22 @@ This release of StorageGRID introduces the following features and functional cha
 
 
 === Kathy's new features
+* You can use the link:../maintain/rolling-reboot-procedure.html[rolling reboot procedure] (*Maintenance* > *Rolling reboot*) to reboot multiple grid nodes without causing a service disruption.
+
+* The *Management API stack trace* option (*Configuration* > *Security settings*) lets you control whether a stack trace is returned in Grid Manager and Tenant Manager API error responses. See link:../admin/changing-browser-session-timeout-interface.html[Change interface security settings].
+
 * Archive Nodes were deprecated in StorageGRID 11.7. You can now use the Decommission Nodes procedure to remove any unused Archive Nodes that are disconnected from the grid. See link:../maintain/decommissioning-disconnected-grid-nodes.html[Decommission disconnected grid nodes].
 
 * When you link:../vmware/deploying-storagegrid-node-as-virtual-machine.html[deploy a StorageGRID node as a virtual machine] or use VMware vSphere to link:../vmware/automating-grid-node-deployment-in-vmware-vsphere.html[automate grid node deployment], you are now prompted to set a temporary installation password. This password is used only if you need to access the VM console or use SSH before the new node joins the grid.
 
 * When configuring single sign-on (SSO) for Active Directory Federation Service (AD FS) or PingFederate, you can now map the user principal name to `Name ID` in the claims rule or to `sAMAccountName=${username}` in the adapter instance.
 
+* StorageGRID can now support either the TLS 1.2 or TLS 1.3 protocol when it makes KMIP connections between appliance nodes and a KMS or KMS cluster. The protocols and ciphers/cipher suites available depend on which TLS and SSH policy you are using. See link:../admin/kms-considerations-and-requirements.html[Considerations and requirements for using a key management server].
+
+
 === Kevin's new features
 
 
-== Other enhancements
-
-=== Grid Manager changes
-* The *Management API stack trace* option (*Configuration* > *Security settings*) lets you control whether a stack trace is returned in Grid Manager and Tenant Manager API error responses. See link:../admin/changing-browser-session-timeout-interface.html[Change interface security settings].
 
 
 === New alerts

@@ -130,7 +130,56 @@ sidebar:
           url: "/maintain/rename-grid-site-node-overview.html"
         - title: Add or update display names
           url: "/maintain/rename-grid-site-node.html"
-      - title: Maintain networks
+      - title: Node procedures
+        entries:
+        - title: Overview
+          pdf-filename: Node procedures
+          url: "/maintain/grid-node-procedures.html"
+        - title: Server Manager procedures
+          entries:
+          - title: View Server Manager status and version
+            url: "/maintain/viewing-server-manager-status-and-version.html"
+          - title: View current status of all services
+            url: "/maintain/viewing-current-status-of-all-services.html"
+          - title: Start Server Manager and all services
+            url: "/maintain/starting-server-manager-and-all-services.html"
+          - title: Restart Server Manager and all services
+            url: "/maintain/restarting-server-manager-and-all-services.html"
+          - title: Stop Server Manager and all services
+            url: "/maintain/stopping-server-manager-and-all-services.html"
+          - title: View current status of service
+            url: "/maintain/viewing-current-status-of-service.html"
+          - title: Stop service
+            url: "/maintain/stopping-service.html"
+          - title: Force service to terminate
+            url: "/maintain/forcing-service-to-terminate.html"
+          - title: Start or restart service
+            url: "/maintain/starting-or-restarting-service.html"
+          - title: Use a DoNotStart file
+            url: "/maintain/using-donotstart-file.html"
+          - title: Troubleshoot Server Manager
+            url: "/maintain/accessing-server-manager-log-file.html"
+        - title: 'Reboot, shutdown, and power procedures'
+          entries:
+          - title: Perform rolling reboot 
+            url: "/maintain/rolling-reboot-procedure.html"               
+          - title: Reboot node from Tasks tab
+            url: "/maintain/rebooting-grid-node-from-grid-manager.html"
+          - title: Reboot node from command shell
+            url: "/maintain/rebooting-grid-node-from-command-shell.html"
+          - title: Shut down node
+            url: "/maintain/shutting-down-grid-node.html"
+          - title: Power down host
+            url: "/maintain/powering-down-host.html"
+          - title: Power off and power on all nodes
+            url: "/maintain/powering-off-and-on-all-nodes-in-grid.html"
+        - title: Port remap procedures
+          entries: 
+          - title: Remove port remaps
+            url: "/maintain/removing-port-remaps.html"
+          - title: Remove port remaps on bare metal hosts
+            url: "/maintain/removing-port-remaps-on-bare-metal-hosts.html"
+      - title: Network procedures
         entries:
         - title: Update subnets for Grid Network
           url: "/maintain/updating-subnets-for-grid-network.html"
@@ -170,53 +219,6 @@ sidebar:
           url: "/maintain/archive-node-maintenance-for-tsm-middleware.html"
         - title: 'VMware: Configure virtual machine for automatic restart'
           url: "/maintain/vmware-configuring-virtual-machine-for-automatic-restart.html"
-      - title: Grid node procedures
-        entries:
-        - title: Overview
-          url: "/maintain/grid-node-procedures.html"
-        - title: View Server Manager status and version
-          url: "/maintain/viewing-server-manager-status-and-version.html"
-        - title: View current status of all services
-          url: "/maintain/viewing-current-status-of-all-services.html"
-        - title: Start Server Manager and all services
-          url: "/maintain/starting-server-manager-and-all-services.htm"
-        - title: Restart Server Manager and all services
-          url: "/maintain/restarting-server-manager-and-all-services.html"
-        - title: Stop Server Manager and all services
-          url: "/maintain/stopping-server-manager-and-all-services.html"
-        - title: View current status of service
-          url: "/maintain/viewing-current-status-of-service.html"
-        - title: Stop service
-          url: "/maintain/stopping-service.html"
-        - title: Place appliance into maintenance mode
-          url: "/maintain/placing-appliance-into-maintenance-mode.html"
-        - title: Force service to terminate
-          url: "/maintain/forcing-service-to-terminate.html"
-        - title: Start or restart service
-          url: "/maintain/starting-or-restarting-service.html"
-        - title: Remove port remaps
-          url: "/maintain/removing-port-remaps.html"
-        - title: Remove port remaps on bare metal hosts
-          url: "/maintain/removing-port-remaps-on-bare-metal-hosts.html"
-        - title: Reboot grid node
-          entries:
-          - title: Overview
-            pdf-filename: Reboot grid node
-            url: "/maintain/rebooting-grid-node.html"
-          - title: Reboot grid node from Grid Manager
-            url: "/maintain/rebooting-grid-node-from-grid-manager.html"
-          - title: Reboot grid node from command shell
-            url: "/maintain/rebooting-grid-node-from-command-shell.html"
-        - title: Shut down grid node
-          url: "/maintain/shutting-down-grid-node.html"
-        - title: Power down host
-          url: "/maintain/powering-down-host.html"
-        - title: Power off and on all nodes in grid
-          url: "/maintain/powering-off-and-on-all-nodes-in-grid.html"
-        - title: Use a DoNotStart file
-          url: "/maintain/using-donotstart-file.html"
-        - title: Troubleshoot Server Manager
-          url: "/maintain/accessing-server-manager-log-file.html"
     - title: Recover or replace nodes
       url: "/landing-recover/index.html"
       entries:
