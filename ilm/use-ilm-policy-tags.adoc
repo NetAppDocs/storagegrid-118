@@ -26,16 +26,31 @@ For example, you might have three tags named Gold, Silver, and Bronze. You can a
 +
 CAUTION: Always confirm that an ILM policy will work as intended.
 
-.Steps
+== Create ILM policy tag
 
 To create a tag and assign a policy to the tag:
 
 . Select *ILM* > *Policy tags*.
-
 . Select *Create*.
-
 . In the Create policy tag dialog box, type a tag name and, optionally, a description for the tag.
-
 . Select *Create tag*.
-
 . In the ILM policy tags table, use the pull-down to select a policy to assign to the tag.
+
+== Edit ILM policy tag
+
+To edit the name or description for an existing tag:
+
+. Select *ILM* > *Policy tags*.
+. Select the checkbox for the tag, then select *Edit*.
+. Change the tag name and description as needed
+. Select *Save*.
+
+== Remove ILM policy tag
+
+When you remove a policy tag, any buckets that are assigned that tag will be tagged with the Default policy tag.
+
+To remove a tag:
+
+. Select *ILM* > *Policy tags*.
+. Select the checkbox for the tag, then select *Remove*. A confirmation dialog box appears.
+. Select *Yes* to delete the tag.
