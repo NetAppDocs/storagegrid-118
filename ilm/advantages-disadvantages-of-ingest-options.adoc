@@ -51,13 +51,13 @@ For example, the ingest behavior selected for an ILM rule affects the initial pl
 
 Here is a brief summary of the consistency controls that are available in StorageGRID:
 
-* *all*: All nodes receive object metadata immediately or the request will fail.
-* *strong-global*: Object metadata is immediately distributed to all sites. Guarantees read-after-write consistency for all client requests across all sites.
-* *strong-site*: Object metadata is immediately distributed to other nodes at the site. Guarantees read-after-write consistency for all client requests within a site.
-* *read-after-new-write*: Provides read-after-write consistency for new objects and eventual consistency for object updates. Offers high availability and data protection guarantees. Recommended for most cases.
-* *available*: Provides eventual consistency for both new objects and object updates. For S3 buckets, use only as required (for example, for a bucket that contains log values that are rarely read, or for HEAD or GET operations on keys that don't exist). Not supported for S3 FabricPool buckets.
+* *All*: All nodes receive object metadata immediately or the request will fail.
+* *Strong-global*: Object metadata is immediately distributed to all sites. Guarantees read-after-write consistency for all client requests across all sites.
+* *Strong-site*: Object metadata is immediately distributed to other nodes at the site. Guarantees read-after-write consistency for all client requests within a site.
+* *Read-after-new-write*: Provides read-after-write consistency for new objects and eventual consistency for object updates. Offers high availability and data protection guarantees. Recommended for most cases.
+* *Available*: Provides eventual consistency for both new objects and object updates. For S3 buckets, use only as required (for example, for a bucket that contains log values that are rarely read, or for HEAD or GET operations on keys that don't exist). Not supported for S3 FabricPool buckets.
 
-NOTE: Before selecting a consistency control, read the full description of consistency controls in the instructions for link:../s3/consistency-controls.html[Use S3 REST API]. You should understand the benefits and limitations before changing the default value.
+NOTE: Before selecting a consistency control, link:../s3/consistency-controls.html[read the full description of consistency controls]. You should understand the benefits and limitations before changing the default value.
 
 == Example of how the consistency control and ILM rule can interact
 
@@ -77,5 +77,3 @@ The inter-relationship between consistency controls and ILM rules can be complex
 .Related information
 
 * link:example-5-ilm-rules-and-policy-for-strict-ingest-behavior.html[Example 5: ILM rules and policy for Strict ingest behavior]
-
-
