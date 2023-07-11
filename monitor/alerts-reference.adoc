@@ -176,7 +176,7 @@ Some of the default alerts use link:commonly-used-prometheus-metrics.html[Promet
 | Alert name| Description
 
 | FabricPool bucket has unsupported bucket consistency setting
-| A FabricPool bucket uses the Available consistency level, which is not supported.
+| A FabricPool bucket uses the Available consistency control, which is not supported.
 |===
 
 == Cassandra alerts

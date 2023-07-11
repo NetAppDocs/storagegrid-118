@@ -44,7 +44,7 @@ S3 tenant users with the appropriate permissions can perform the following tasks
 
 * Create buckets
 * Enable S3 Object Lock for a new bucket (assumes that S3 Object Lock is enabled for the StorageGRID system)
-* Update consistency level settings
+* Update consistency control settings
 * Enable and disable last access time updates
 * Enable or suspend object versioning
 * Update S3 Object Lock default retention

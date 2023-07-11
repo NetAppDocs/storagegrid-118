@@ -2,14 +2,14 @@
 permalink: swift/put-container-consistency-request.html
 sidebar: sidebar
 keywords: put container consistency request
-summary: 'The PUT container consistency request allows you to specify the consistency level to apply to operations performed on a container. By default, new containers are created using the "read-after-new-write" consistency level.'
+summary: 'The PUT container consistency request allows you to specify the consistency control to apply to operations performed on a container. By default, new containers are created using the "read-after-new-write" consistency control.'
 ---
 = PUT container consistency request
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-The PUT container consistency request allows you to specify the consistency level to apply to operations performed on a container. By default, new containers are created using the "`read-after-new-write`" consistency level.
+The PUT container consistency request allows you to specify the consistency control to apply to operations performed on a container. By default, new containers are created using the "`read-after-new-write`" consistency control.
 
 == Request
 
@@ -41,7 +41,7 @@ m| Host
 
 Both your choice of consistency control and your ILM rule affect how objects are protected. These settings can interact.
 
-For example, the consistency control used when an object is stored affects the initial placement of object metadata, while the ingest behavior selected for the ILM rule affects the initial placement of object copies. Because StorageGRID requires access to both an object's metadata and its data to fulfill client requests, selecting matching levels of protection for the consistency level and ingest behavior can provide better initial data protection and more predictable system responses.
+For example, the consistency control used when an object is stored affects the initial placement of object metadata, while the ingest behavior selected for the ILM rule affects the initial placement of object copies. Because StorageGRID requires access to both an object's metadata and its data to fulfill client requests, selecting matching levels of protection for the consistency control and ingest behavior can provide better initial data protection and more predictable system responses.
 
 The following ingest behaviors are available for ILM rules:
 
@@ -53,18 +53,18 @@ NOTE: Before selecting the ingest behavior for an ILM rule, read the full descri
 
 == Example of how consistency control and ILM rule can interact
 
-Suppose you have a two-site grid with the following ILM rule and the following consistency level setting:
+Suppose you have a two-site grid with the following ILM rule and the following consistency control setting:
 
 * *ILM rule*: Create two object copies, one at the local site and one at a remote site. The Strict ingest behavior is selected.
-* *Consistency level*: "`strong-global`" (Object metadata is immediately distributed to all sites.)
+* **: "`strong-global`" (Object metadata is immediately distributed to all sites.)
 
 When a client stores an object to the grid, StorageGRID makes both object copies and distributes metadata to both sites before returning success to the client.
 
 The object is fully protected against loss at the time of the ingest successful message. For example, if the local site is lost shortly after ingest, copies of both the object data and the object metadata still exist at the remote site. The object is fully retrievable.
 
-If you instead used the same ILM rule and the "`strong-site`" consistency level, the client might receive a success message after object data is replicated to the remote site but before object metadata is distributed there. In this case, the level of protection of object metadata does not match the level of protection for object data. If the local site is lost shortly after ingest, object metadata is lost. The object can't be retrieved.
+If you instead used the same ILM rule and the "`strong-site`" consistency control, the client might receive a success message after object data is replicated to the remote site but before object metadata is distributed there. In this case, the level of protection of object metadata does not match the level of protection for object data. If the local site is lost shortly after ingest, object metadata is lost. The object can't be retrieved.
 
-The inter-relationship between consistency levels and ILM rules can be complex. Contact NetApp if you require assistance.
+The inter-relationship between consistency controls and ILM rules can be complex. Contact NetApp if you require assistance.
 
 == Request example
 

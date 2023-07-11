@@ -26,7 +26,7 @@ You should be aware of changes to the StorageGRID system's support for the Swift
 |Minor editorial changes.
 
 |11.5
-|Removed Weak consistency control. The Available consistency level will be used instead.
+|Removed Weak consistency control. The Available consistency control will be used instead.
 
 |11.4
 |Added support for TLS 1.3. Added description of interrelationship between ILM and consistency setting.

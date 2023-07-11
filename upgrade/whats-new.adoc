@@ -17,7 +17,7 @@ This release of StorageGRID introduces the following features and functional cha
 === Lisa's new features
 * S3 Console no longer experimental
 * Assign policy to ILM tags.
-* Configurable default consistency level
+* Configurable default consistency control
 
 
 === Kathy's new features

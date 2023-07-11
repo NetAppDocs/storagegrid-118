@@ -107,7 +107,7 @@ As required, you can change the consistency guarantees for bucket policy updates
 
 In this case, you can either set the `Consistency-Control` header in the PutBucketPolicy request, or you can use the PUT Bucket consistency request. When changing the consistency control for this request, you must use the value *all*, which provides the highest guarantee of read-after-write consistency. If you specify any other consistency control value in a header for the PUT Bucket consistency request, the request will be rejected. If you specify any other value for a PutBucketPolicy request, the value will be ignored. When a bucket policy becomes consistent, the changes can take an additional 8 seconds to take effect, because of policy caching.
 
-NOTE: If you set the consistency level to *all* to force a new bucket policy to become effective sooner, be sure to set the bucket-level control back to its original value when you are done. Otherwise, all future bucket requests will use the *all* setting.
+NOTE: If you set the consistency control to *all* to force a new bucket policy to become effective sooner, be sure to set the bucket-level control back to its original value when you are done. Otherwise, all future bucket requests will use the *all* setting.
 
 == Use ARN in policy statements
 

@@ -2,14 +2,14 @@
 permalink: s3/get-bucket-consistency-request.html
 sidebar: sidebar
 keywords: S3 REST API, S3 operations, GET bucket consistency
-summary: 'The GET Bucket consistency request allows you to determine the consistency level being applied to a particular bucket.'
+summary: 'The GET Bucket consistency request allows you to determine the consistency control being applied to a particular bucket.'
 ---
 = GET Bucket consistency
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-The GET Bucket consistency request allows you to determine the consistency level being applied to a particular bucket.
+The GET Bucket consistency request allows you to determine the consistency control being applied to a particular bucket.
 
 The default consistency controls are set to guarantee read-after-write for newly created objects.
 

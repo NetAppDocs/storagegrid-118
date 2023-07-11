@@ -2,14 +2,14 @@
 permalink: s3/put-bucket-consistency-request.html
 sidebar: sidebar
 keywords: S3 REST API, S3 operations, PUT bucket consistency request
-summary: 'The PUT Bucket consistency request allows you to specify the consistency level to apply to operations performed on a bucket.'
+summary: 'The PUT Bucket consistency request allows you to specify the consistency control to apply to operations performed on a bucket.'
 ---
 = PUT Bucket consistency
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-The PUT Bucket consistency request allows you to specify the consistency level to apply to operations performed on a bucket.
+The PUT Bucket consistency request allows you to specify the consistency control to apply to operations performed on a bucket.
 
 The default consistency controls are set to guarantee read-after-write for newly created objects.
 
