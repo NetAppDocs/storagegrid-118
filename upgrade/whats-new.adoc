@@ -20,7 +20,7 @@ This release of StorageGRID introduces the following features and functional cha
 * Can have multiple ILM policies active at one time
 
 === Configurable default consistency control
-You can change the default link:../s3/consistency-controls.html[consistency control]. To make the change, use the grid-config endpoint of the link:../admin/using-grid-management-api.html[Grid Management private API]. The new default will be applied to buckets created after the change.  
+You can change the link:../s3/consistency-controls.html[grid-wide default consistency control]. To make the change, use the grid-config endpoint of the link:../admin/using-grid-management-api.html[Grid Management private API]. The new default will be applied to buckets created after the change.  
 
 === Kathy's new features
 * Archive Nodes were deprecated in StorageGRID 11.7. You can now use the Decommission Nodes procedure to remove any unused Archive Nodes that are disconnected from the grid. See link:../maintain/decommissioning-disconnected-grid-nodes.html[Decommission disconnected grid nodes].
