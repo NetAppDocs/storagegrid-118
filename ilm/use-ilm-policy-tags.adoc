@@ -36,13 +36,22 @@ To create a tag and assign a policy to the tag:
 . Select *Create tag*.
 . In the ILM policy tags table, use the pull-down to select a policy to assign to the tag.
 
+== View ILM policy tag details
+
+To view the details for a tag:
+
+. Select *ILM* > *Policy tags*.
+. Select the name of the policy from the table. The details page for the tag appears.
+
 == Edit ILM policy tag
 
-To edit the name or description for an existing tag:
+To edit the description for an existing tag:
 
 . Select *ILM* > *Policy tags*.
 . Select the checkbox for the tag, then select *Edit*.
-. Change the tag name and description as needed
++
+Alternatively, select the name of the tag. The details page for the tag appears, and you can select *Edit* on that page. 
+. Change the tag description as needed
 . Select *Save*.
 
 == Remove ILM policy tag
@@ -53,4 +62,6 @@ To remove a tag:
 
 . Select *ILM* > *Policy tags*.
 . Select the checkbox for the tag, then select *Remove*. A confirmation dialog box appears.
++
+Alternatively, select the name of the tag. The details page for the tag appears, and you can select *Remove* on that page. 
 . Select *Yes* to delete the tag.
