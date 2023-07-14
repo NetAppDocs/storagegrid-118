@@ -110,7 +110,7 @@ Object existence check reads the metadata for every object stored in StorageGRID
 
 === Run object existence check
 
-You create and run one object existence check job at a time. When you create a job, you select the  Storage Nodes and volumes you want to verify. You also select the consistency control for the job.
+You create and run one object existence check job at a time. When you create a job, you select the  Storage Nodes and volumes you want to verify. You also select the consistency setting for the job.
 
 .Before you begin
 
@@ -129,7 +129,7 @@ Object existence check does not provide useful information while these procedure
 
 .About this task
 
-An object existence check job can take days or weeks to complete, depending on the number of objects in the grid, the selected storage nodes and volumes, and the selected consistency control. You can run only one job at a time, but you can select multiple Storage Nodes and volumes at the same time.
+An object existence check job can take days or weeks to complete, depending on the number of objects in the grid, the selected storage nodes and volumes, and the selected consistency setting. You can run only one job at a time, but you can select multiple Storage Nodes and volumes at the same time.
 
 .Steps
 
@@ -146,15 +146,15 @@ You can't select nodes that aren't connected to the grid.
 +
 To select all volumes for each node you selected, select the *Storage volume* checkbox in the column header.
 .	Select *Continue*.
-.	Select the consistency control for the job.
+.	Select the consistency setting for the job.
 +
-The consistency control determines how many copies of object metadata are used for the object existence check.
+The consistency setting determines how many copies of object metadata are used for the object existence check.
 +
 * *Strong-site*: Two copies of metadata at a single site.
 * *Strong-global*: Two copies of metadata at each site.
 * *All* (default): All three copies of metadata at each site.
 +
-For more information about consistency control, see the descriptions in the wizard.
+For more information about consistency settings, see the descriptions in the wizard.
 +
 . Select *Continue*.
 .	Review and verify your selections. You can select *Previous* to go to a previous step in the wizard to update your selections.
@@ -188,7 +188,7 @@ image::../media/oec_active.png[OEC active job]
 +
 This procedure is similar to the one for link:../troubleshoot/investigating-lost-objects.html[investigating lost objects], although for object copies you search for `LLST` instead of `OLST`.
 
-.	If you selected the strong-site or strong-global consistency control for the job, wait approximately three weeks for metadata consistency and then rerun the job on the same volumes again.
+.	If you selected the strong-site or strong-global consistency setting for the job, wait approximately three weeks for metadata consistency and then rerun the job on the same volumes again.
 +
 When StorageGRID has had time to achieve metadata consistency for the nodes and volumes included in the job, rerunning the job could clear erroneously reported missing object copies or cause additional object copies to be checked if they were missed.
 +
@@ -200,10 +200,10 @@ When StorageGRID has had time to achieve metadata consistency for the nodes and 
 +
 image::../media/oec_rerun.png[OEC rerun ]
 +
-.. In the Rerun jobs wizard, review the selected nodes and volumes and the consistency control.
+.. In the Rerun jobs wizard, review the selected nodes and volumes and the consistency setting.
 .. When you are ready to rerun the jobs, select *Rerun*.
 
-The Active job tab appears. All the jobs you selected are rerun as one job at a consistency control of strong-site. A *Related jobs* field in the Details section lists the job IDs for the original jobs.
+The Active job tab appears. All the jobs you selected are rerun as one job at a consistency setting of strong-site. A *Related jobs* field in the Details section lists the job IDs for the original jobs.
 
 .After you finish
 

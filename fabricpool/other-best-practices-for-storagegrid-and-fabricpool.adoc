@@ -27,8 +27,8 @@ When configuring StorageGRID, you can optionally enable the link:../admin/changi
 
 When configuring StorageGRID, don't enable the link:../admin/configuring-stored-object-compression.html[global option to compress stored objects]. The data that is tiered from FabricPool to StorageGRID is already compressed. Using the StorageGRID option will not further reduce an object's size.
 
-== Bucket consistency control
-For FabricPool buckets, the recommended bucket consistency control is *Read-after-new-write*, which is the default setting for a new bucket. Don't edit FabricPool buckets to use *Available* or any other consistency control.
+== Bucket consistency setting
+For FabricPool buckets, the recommended bucket consistency setting is *Read-after-new-write*, which is the default setting for a new bucket. Don't edit FabricPool buckets to use *Available* or any other consistency setting.
 
 == FabricPool tiering
 

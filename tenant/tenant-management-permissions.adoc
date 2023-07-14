@@ -44,7 +44,7 @@ You can assign the following permissions to a group. Note that S3 tenants and Sw
 +
 Users who don't have this permission don't see the *Buckets* menu option.
 
-* Swift tenants: Allows Swift users to control the consistency control for Swift containers using the Tenant Management API.
+* Swift tenants: Allows Swift users to control the consistency setting for Swift containers using the Tenant Management API.
 
 *Note:* You can only assign the Manage all buckets permission to Swift groups from the Tenant Management API. You can't assign this permission to Swift groups using the Tenant Manager.
 

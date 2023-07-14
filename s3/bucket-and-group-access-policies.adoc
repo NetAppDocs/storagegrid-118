@@ -99,15 +99,15 @@ In the following example, the statement is using the Effect, Principal, Action, 
 The bucket policy has a size limit of 20,480 bytes, and the group policy has a size limit of 5,120 bytes.
 
 
-== Consistency control settings for policies
+== Consistency settings for policies
 
 By default, any updates you make to group policies are eventually consistent. When a group policy becomes consistent, the changes can take an additional 15 minutes to take effect, because of policy caching. By default, any updates you make to bucket policies are also eventually consistent.
 
 As required, you can change the consistency guarantees for bucket policy updates. For example, you might want a change to a bucket policy to become effective as soon as possible for security reasons.
 
-In this case, you can either set the `Consistency-Control` header in the PutBucketPolicy request, or you can use the PUT Bucket consistency request. When changing the consistency control for this request, you must use the value *All*, which provides the highest guarantee of read-after-write consistency. If you specify any other consistency control value in a header for the PUT Bucket consistency request, the request will be rejected. If you specify any other value for a PutBucketPolicy request, the value will be ignored. When a bucket policy becomes consistent, the changes can take an additional 8 seconds to take effect, because of policy caching.
+In this case, you can either set the `Consistency-Control` header in the PutBucketPolicy request, or you can use the PUT Bucket consistency request. When changing the consistency setting for this request, you must use the value *All*, which provides the highest guarantee of read-after-write consistency. If you specify any other consistency setting in a header for the PUT Bucket consistency request, the request will be rejected. If you specify any other value for a PutBucketPolicy request, the value will be ignored. When a bucket policy becomes consistent, the changes can take an additional 8 seconds to take effect, because of policy caching.
 
-NOTE: If you set the consistency control to *All* to force a new bucket policy to become effective sooner, be sure to set the bucket-level control back to its original value when you are done. Otherwise, all future bucket requests will use the *All* setting.
+NOTE: If you set the consistency setting to *All* to force a new bucket policy to become effective sooner, be sure to set the bucket-level control back to its original value when you are done. Otherwise, all future bucket requests will use the *All* setting.
 
 == Use ARN in policy statements
 

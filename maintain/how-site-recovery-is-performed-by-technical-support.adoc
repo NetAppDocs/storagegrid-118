@@ -21,7 +21,7 @@ StorageGRID systems are resilient to a wide variety of failures, and you can suc
 +
 CAUTION: If a site contains the only copy of an object and the site is lost, the object is lost.
 
-* *Bucket (or container) consistency*: The consistency control applied to a bucket (or container) affects whether StorageGRID fully replicates object metadata to all nodes and sites before telling a client that object ingest was successful. If your consistency control allows for eventual consistency, some object metadata might have been lost in the site failure. This can affect the amount of recoverable data and potentially the details of the recovery procedure.
+* *Bucket (or container) consistency*: The consistency setting applied to a bucket (or container) affects whether StorageGRID fully replicates object metadata to all nodes and sites before telling a client that object ingest was successful. If your consistency setting allows for eventual consistency, some object metadata might have been lost in the site failure. This can affect the amount of recoverable data and potentially the details of the recovery procedure.
 * *History of recent changes*: The details of your recovery procedure can be affected by whether any maintenance procedures were in progress at the time of the failure or whether any recent changes were made to your ILM policy. Technical support must assess the recent history of your grid as well as its current situation before beginning a site recovery.
 
 CAUTION: Site recovery can only be performed by technical support.

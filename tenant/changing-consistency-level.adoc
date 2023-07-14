@@ -1,15 +1,15 @@
 ---
 permalink: tenant/changing-consistency-level.html
 sidebar: sidebar
-keywords: how to change bucket consistency control, read after new write, read-after-new-write, strong site, strong-site, strong global, strong-global
-summary: 'If you are using an S3 tenant, you can change the consistency control for operations performed on the objects in S3 buckets.'
+keywords: how to change bucket consistency setting, read after new write, read-after-new-write, strong site, strong-site, strong global, strong-global
+summary: 'If you are using an S3 tenant, you can change the consistency setting for operations performed on the objects in S3 buckets.'
 ---
-= Change a bucket's consistency control
+= Change a bucket's consistency setting
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-If you are using an S3 tenant, you can change the consistency control for operations performed on the objects in S3 buckets.
+If you are using an S3 tenant, you can change the consistency setting for operations performed on the objects in S3 buckets.
 
 .Before you begin
 * You are signed in to the Tenant Manager using a link:../admin/web-browser-requirements.html[supported web browser].
@@ -17,11 +17,11 @@ If you are using an S3 tenant, you can change the consistency control for operat
 
 .About this task
 
-Consistency controls provide a balance between the availability of the objects and the consistency of those objects across different Storage Nodes and sites. In general, you should use the *Read-after-new-write* consistency control for your buckets.
+Consistency settings provide a balance between the availability of the objects and the consistency of those objects across different Storage Nodes and sites. In general, you should use the *Read-after-new-write* consistency setting for your buckets.
 
-If the *Read-after-new-write* consistency control does not meet the client application's requirements, you can change the consistency control by setting the bucket consistency control or by using the `Consistency-Control` header. The `Consistency-Control` header overrides the bucket consistency control.
+If the *Read-after-new-write* consistency setting does not meet the client application's requirements, you can change the consistency setting by setting the bucket consistency setting or by using the `Consistency-Control` header. The `Consistency-Control` header overrides the bucket consistency setting.
 
-NOTE: When you change a bucket's consistency control, only those objects that are ingested after the change are guaranteed to meet the revised level.
+NOTE: When you change a bucket's consistency setting, only those objects that are ingested after the change are guaranteed to meet the revised level.
 
 .Steps
 . Select *View buckets* from the dashboard, or select *STORAGE (S3)* > *Buckets*.
@@ -31,7 +31,7 @@ The bucket details page appears.
 
 . From the *Bucket options* tab, select the ** accordion.
 
-. Select a consistency control for operations performed on the objects in this bucket.
+. Select a consistency setting for operations performed on the objects in this bucket.
 +
 * *All*: Provides the highest level of consistency. All nodes receive the data immediately, or the request will fail.
 

@@ -19,8 +19,8 @@ This release of StorageGRID introduces the following features and functional cha
 * Assign policy to ILM tags
 * Can have multiple ILM policies active at one time
 
-=== Configurable default consistency control
-You can change the link:../s3/consistency-controls.html[grid-wide default consistency control]. To make the change, use the grid-config endpoint of the link:../admin/using-grid-management-api.html[Grid Management private API]. The new default will be applied to buckets created after the change.  
+=== Configurable default consistency setting
+You can change the link:../s3/consistency-controls.html[grid-wide default consistency setting]. To make the change, use the grid-config endpoint of the link:../admin/using-grid-management-api.html[Grid Management private API]. The new default will be applied to buckets created after the change.  
 
 === Kathy's new features
 * You can use the link:../maintain/rolling-reboot-procedure.html[rolling reboot procedure] (*Maintenance* > *Rolling reboot*) to reboot multiple grid nodes without causing a service disruption.

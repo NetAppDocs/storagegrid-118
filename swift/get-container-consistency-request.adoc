@@ -2,14 +2,14 @@
 permalink: swift/get-container-consistency-request.html
 sidebar: sidebar
 keywords: get container consistency request
-summary: 'Consistency controls provide a balance between the availability of the objects and the consistency of those objects across different Storage Nodes and sites. The GET container consistency request allows you to determine the consistency control being applied to a particular container.'
+summary: 'Consistency settings provide a balance between the availability of the objects and the consistency of those objects across different Storage Nodes and sites. The GET container consistency request allows you to determine the consistency setting being applied to a particular container.'
 ---
 = GET container consistency request
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Consistency controls provide a balance between the availability of the objects and the consistency of those objects across different Storage Nodes and sites. The GET container consistency request allows you to determine the consistency control being applied to a particular container.
+Consistency settings provide a balance between the availability of the objects and the consistency of those objects across different Storage Nodes and sites. The GET container consistency request allows you to determine the consistency setting being applied to a particular container.
 
 == Request
 
@@ -53,7 +53,7 @@ m| Content-Length
 | The length of the response body.
 
 m| x-ntap-sg-consistency
-| The consistency control level being applied to the container. The following values are supported:
+| The consistency setting level being applied to the container. The following values are supported:
 
 *All*: All nodes receive the data immediately or the request will fail.
 
