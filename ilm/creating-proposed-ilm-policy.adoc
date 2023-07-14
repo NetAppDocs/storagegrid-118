@@ -2,14 +2,14 @@
 permalink: ilm/creating-proposed-ilm-policy.html
 sidebar: sidebar
 keywords: how to create ILM policy, proposed policy
-summary: 'You can create a proposed ILM policy from scratch, or you can clone the current active policy if you want to start with the same set of rules.'
+summary: 'You can create a proposed ILM policy from scratch, or you can clone an active policy if you want to start with the same set of rules.'
 ---
 = Create a proposed ILM policy
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You can create a proposed ILM policy from scratch, or you can clone the current active policy if you want to start with the same set of rules.
+You can create a proposed ILM policy from scratch, or you can clone an active policy if you want to start with the same set of rules.
 
 Before creating your own policy, verify that the link:creating-ilm-policy.html#default-ilm-policy[default ILM policy] does not meet your storage requirements.
 
