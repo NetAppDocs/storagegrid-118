@@ -39,13 +39,12 @@ To create a tag:
 
 Assigning a policy to a tag activates the policy. You should always simulate a policy before activating it to ensure it works as expected.
 
-To assign a policy to a tag and activate the policy:
+To assign a policy to a tag:
 
 . Select *ILM* > *Policy tags*.
-. Select the checkbox for the tag. In the assigned policy pull-down, select the policy you want to assign to the tag.
 . In the ILM policy tags table, use the pull-down to select a policy to assign to the tag.
-. If warnings appear in the Policy limitations column, select *View policy details* to review the policy.
-. Select *Activate assigned policies*.
+. If warnings appear in the Policy limitations column, select *View policy details* to review the policy. Then take the recommended action.
+. Select *Activate assigned policies*. Or, select *Clear changes* to remove the policy assignment.
 
 == View ILM policy tag details
 
