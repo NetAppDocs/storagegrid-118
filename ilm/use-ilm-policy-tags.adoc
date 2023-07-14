@@ -1,0 +1,67 @@
+---
+permalink: ilm/use-ilm-policy-tags.html
+sidebar: sidebar
+keywords: ILM policy tag
+summary: 'To provide different quality-of-service options to tenants, you can have more than one active policy at a time. You create ILM policy tags and assign each ILM policy to a tag. Then tenants tag a bucket to apply a policy to the objects in the bucket.'
+---
+= Use ILM policy tags
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+To provide different quality-of-service options to tenants, you can have more than one active policy at a time. You create ILM policy tags and assign each ILM policy to a tag. Then tenants tag a bucket to apply a policy to the objects in the bucket.
+
+A default ILM policy tag is automatically created when you install StorageGRID. Every grid must have one active policy that is assigned to the Default tag. The default policy applies to all objects in untagged S3 buckets or Swift containers.
+
+If you activate more than one ILM policy at a time and tenants apply policy tags to buckets, the objects in each bucket are managed according to the policy assigned to the tag.
+
+For example, you might have three tags named Gold, Silver, and Bronze. You can assign an ILM policy to each tag, based on how long and where that policy stores objects. Tenants can choose which policy to use by tagging their buckets. A bucket tagged Gold is managed by the Gold policy and receives the Gold level of data protection and performance.
+
+.Before you begin
+
+* You are signed in to the Grid Manager using a link:../admin/web-browser-requirements.html[supported web browser].
+* You have the link:../admin/admin-group-permissions.html[required access permissions].
+* You have link:ilm/creating-proposed-ilm-policy.html[created at least one proposed policy] to assign to the tags you'll create.
+* You have reviewed the ILM policy and its ILM rules and simulated the ILM policy.
++
+CAUTION: Always confirm that an ILM policy will work as intended.
+
+== Create ILM policy tag
+
+To create a tag and assign a policy to the tag:
+
+. Select *ILM* > *Policy tags*.
+. Select *Create*.
+. In the Create policy tag dialog box, type a tag name and, optionally, a description for the tag.
+. Select *Create tag*.
+. In the ILM policy tags table, use the pull-down to select a policy to assign to the tag.
+
+== View ILM policy tag details
+
+To view the details for a tag:
+
+. Select *ILM* > *Policy tags*.
+. Select the name of the policy from the table. The details page for the tag appears.
+
+== Edit ILM policy tag
+
+To edit the description for an existing tag:
+
+. Select *ILM* > *Policy tags*.
+. Select the checkbox for the tag, then select *Edit*.
++
+Alternatively, select the name of the tag. The details page for the tag appears, and you can select *Edit* on that page. 
+. Change the tag description as needed
+. Select *Save*.
+
+== Remove ILM policy tag
+
+When you remove a policy tag, any buckets that are assigned that tag will be tagged with the Default policy tag.
+
+To remove a tag:
+
+. Select *ILM* > *Policy tags*.
+. Select the checkbox for the tag, then select *Remove*. A confirmation dialog box appears.
++
+Alternatively, select the name of the tag. The details page for the tag appears, and you can select *Remove* on that page. 
+. Select *Yes* to delete the tag.

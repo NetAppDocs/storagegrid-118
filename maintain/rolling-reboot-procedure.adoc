@@ -55,7 +55,7 @@ As your first step, access the Rolling reboot page and select the nodes you want
 
 . Review the connection state and alert icons in the *Node name* column.
 +
-TIP: You can't reboot a node if it is disconnected from the grid. The check boxes are disabled for nodes with these icons: image:../media/icon_alarm_gray_administratively_down.png[gray question mark icon] or  image:../media/icon_alarm_blue_unknown.png[blue question mark icon].
+TIP: You can't reboot a node if it is disconnected from the grid. The checkboxes are disabled for nodes with these icons: image:../media/icon_alarm_gray_administratively_down.png[gray question mark icon] or  image:../media/icon_alarm_blue_unknown.png[blue question mark icon].
 
 . If any nodes have active alerts, review the list of alerts in the *Alert summary* column.
 +
@@ -63,7 +63,7 @@ TIP: To see all current alerts for a node, you can also select the link:../monit
 
 . Optionally, perform the recommended actions to resolve any current alerts.
 
-. Optionally, if all nodes are connected and you want to reboot all of them, select the check box in the table header and select *Select all*. Otherwise, select each node you want to reboot.
+. Optionally, if all nodes are connected and you want to reboot all of them, select the checkbox in the table header and select *Select all*. Otherwise, select each node you want to reboot.
 +
 You can use the table's filter options to view subsets of nodes. For example, you can view and select only Storage Nodes or all nodes at a certain site.
 

@@ -94,6 +94,8 @@ entries:
       url: "/ilm/creating-ilm-policy.html"
     - title: Create proposed ILM policy
       url: "/ilm/creating-proposed-ilm-policy.html"
+    - title: Use ILM policy tags
+      url: "/ilm/use-ilm-policy-tags.html"
     - title: Simulate ILM policy
       url: "/ilm/simulating-ilm-policy.html"
     - title: Activate ILM policy
