@@ -33,7 +33,9 @@ When you activate an ILM policy, the system distributes the new policy to all no
 +
 A warning message is displayed, prompting you to confirm that you want to activate the policy.
 
-. When you have reviewed the details of the warning message and are sure the policy would manage data as expected, select *Activate policies*.
+. When you have reviewed the details of the warning message and are sure the policy would manage data as expected:
+.. Type *yes* in the text box.
+.. Select *Activate policies*.
 
 .Result
 
