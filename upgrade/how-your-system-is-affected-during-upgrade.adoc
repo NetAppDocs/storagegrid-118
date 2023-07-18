@@ -27,6 +27,7 @@ To allow for continued availability, ensure that your ILM policy contains rules 
 During the StorageGRID 11.8 upgrade:
 
 * All StorageGRID appliance nodes are automatically upgraded to StorageGRID Appliance Installer firmware version n.n.
+* SGF6112, SG110, and SG1100 appliances were delivered with StorageGRID 11.8 compatible BIOS firmware.
 * SG6060 and SGF6024 appliances are automatically upgraded to BIOS firmware version 3B07.EX and BMC firmware version n.n.n.
 * SG100 and SG1000 appliances are automatically upgraded to BIOS firmware version 3B12.EC and BMC firmware version n.n.n.
 

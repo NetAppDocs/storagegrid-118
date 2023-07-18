@@ -72,6 +72,13 @@ This LED is on when cached data needs to be written to the drives. You must wait
 
 --
 
+.SG110 or SG1100
+--
+
+.. Turn off the power to the appliance.
+.. Wait for the blue power LED to turn off.
+--
+
 .SG100 or SG1000
 --
 
@@ -89,5 +96,7 @@ https://review.docs.netapp.com/us-en/storagegrid-appliances_main/sg6100/index.ht
 https://review.docs.netapp.com/us-en/storagegrid-appliances_main/sg6000/index.html[SG6000 storage appliances^]
 
 https://review.docs.netapp.com/us-en/storagegrid-appliances_main/sg5700/index.html[SG5700 storage appliances^]
+
+https://review.docs.netapp.com/us-en/storagegrid-appliances_main/sg110-1100/index.html[SG110 and SG1100 services appliances^]
 
 https://review.docs.netapp.com/us-en/storagegrid-appliances_main/sg100-1000/index.html[SG100 and SG1000 services appliances^]
