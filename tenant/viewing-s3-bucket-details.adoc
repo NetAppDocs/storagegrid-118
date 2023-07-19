@@ -62,7 +62,7 @@ This column appears only if S3 Object Lock is enabled for the grid. This column 
 +
 The bucket details page appears. From this page, you can perform the following tasks:
 
-* Configure and manage bucket options, such as link:changing-consistency-level.html[consistency level], link:enabling-or-disabling-last-access-time-updates.html[last access time updates], link:changing-bucket-versioning.html[object versioning], link:using-s3-object-lock.html[S3 Object Lock] and link:update-default-retention-settings.html[default bucket retention]
+* Configure and manage bucket options, such as link:changing-consistency-level.html[consistency setting], link:enabling-or-disabling-last-access-time-updates.html[last access time updates], link:changing-bucket-versioning.html[object versioning], link:using-s3-object-lock.html[S3 Object Lock] and link:update-default-retention-settings.html[default bucket retention]
 * Configure bucket access, such as link:configuring-cross-origin-resource-sharing-cors.html[cross-origin resource sharing (CORS)]
 * link:what-platform-services-are.html[Manage platform services] (if allowed for the tenant), including CloudMirror replication, event notifications, and search integration
 * Enable and link:grid-federation-manage-cross-grid-replication.html[manage cross-grid replication] (if allowed for the tenant) to replicate objects ingested into this bucket to another StorageGRID system
