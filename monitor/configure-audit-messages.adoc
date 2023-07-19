@@ -1,15 +1,15 @@
 ---
 permalink: monitor/configure-audit-messages.html
 sidebar: sidebar
-keywords: audit messages, configure syslog server, configure external syslog server. log destinations
-summary: 'All StorageGRID nodes generate audit messages to track system activity and events. You can adjust audit levels to increase or decrease the type and number of audit messages recorded.'
+keywords: audit messages, audit level, configure external syslog server, log destinations
+summary: 'You can adjust audit levels to increase or decrease the type and number of audit messages recorded. Optionally, you can define any HTTP request headers you want to include in client read and write audit messages. You can also configure an external syslog server and change the destination of audit information.'
 ---
 = Configure audit messages and log destinations
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Audit messages and logs record system activities and security events, and are essential tools for monitoring and troubleshooting. You can adjust audit levels to increase or decrease the type and number of audit messages recorded. Optionally, you can define any HTTP request headers you want to include in client read and write audit messages. You can also configure an external syslog server and change the destination of audit information.
+You can adjust audit levels to increase or decrease the type and number of audit messages recorded. Optionally, you can define any HTTP request headers you want to include in client read and write audit messages. You can also configure an external syslog server and change the destination of audit information.
 
 For more information about audit messages, see link:../audit/index.html[Review audit logs].
 
@@ -20,9 +20,11 @@ For more information about audit messages, see link:../audit/index.html[Review a
 
 .About this task
 
+Audit messages and logs record system activities and security events, and are essential tools for monitoring and troubleshooting. 
+
 All StorageGRID nodes generate audit messages and logs to track system activity and events. By default, audit information is sent to the audit log on Admin Nodes. You can adjust audit levels to increase or decrease the type and number of audit messages recorded in the audit log. Optionally, you can configure audit information to be stored temporarily on the originating nodes for manual collection. 
 
-IMPORTANT: If you have a large grid, use multiple types of S3 applications, or want to retain all audit data, configure an external syslog server and save audit information remotely. Using an external server minimizes the performance impact of audit message logging without reducing the completeness of of audit data. See link:../monitor/considerations-for-external-syslog-server.html[Considerations for external syslog server] for details.
+TIP: If you have a large grid, use multiple types of S3 applications, or want to retain all audit data, configure an external syslog server and save audit information remotely. Using an external server minimizes the performance impact of audit message logging without reducing the completeness of of audit data. See link:../monitor/considerations-for-external-syslog-server.html[Considerations for external syslog server] for details.
 
 == Change audit message levels in the audit log
 
@@ -96,9 +98,9 @@ NOTE: Audit protocol request headers are logged only if the audit level for *Cli
 
 . Select *Save*
 +
-A green banner displays indicating your configuration has been saved successfully.
+A green banner indicates your configuration has been saved.
 
-== Use an external syslog server
+== Configure external syslog server
 
 You can configure an external syslog server if you want to save audit information remotely. 
 
@@ -114,26 +116,28 @@ NOTE: Some destination are available only if you are using an external syslog se
 
 NOTE: For more information about StorageGRID software logs, see link:../monitor/storagegrid-software-logs.html#[StorageGRID software logs].
 
-. On the Audit and syslog server page, select the destination for audit information from the listed options: 
+. On the Audit and syslog server page, select the destination for audit information.
++
+TIP"  *Local nodes only* and *External syslog server* typically provide better performance. 
 +
 [cols="1a,2a" options="header"]
 
 |===
 | Option| Description
 
-| Default (Admin nodes/local nodes)
-| Audit messages are sent to the audit log (`audit.log`) on the Admin Node, and security event logs and application logs are stored on the nodes where they were generated (also referred to as "the local node").
+| Local nodes only
+| Audit messages are not saved to Admin Nodes, and other logs are saved only on the nodes that generated them. 
+
+*Note*: StorageGRID periodically removes these local logs in a rotation to free up space. When the log file for a node reaches 1 GB, the existing file is saved, and a new log file is started. The rotation limit for the log is 21 files. When the 22nd version of the log file is created, the oldest log file is deleted. On average about 20 GB of log data is stored on each node.
+
+| Admin Nodes/local nodes
+| Audit messages are sent to the audit log (`audit.log`) on Admin Nodes, and security event logs and application logs are stored on the nodes where they were generated (also referred to as "the local node").
 
 | External syslog server
 | Audit information is sent to an external syslog server and saved on the local node. The type of information sent depends upon how you configured the external syslog server. This option is enabled only after you have configured an external syslog server. 
 
 | Admin Node and external syslog server
-| Audit messages are sent to the audit log (`audit.log`) on the Admin Node, and audit information is sent to the external syslog server and saved on the local node. The type of information sent depends upon how you configured the external syslog server. This option is enabled only after you have configured an external syslog server.
-
-| Local nodes only
-| No audit information is sent to an Admin Node or remote syslog server. Audit information is saved only on the nodes that generated it. 
-
-*Note*: StorageGRID periodically removes these local logs in a rotation to free up space. When the log file for a node reaches 1 GB, the existing file is saved, and a new log file is started. The rotation limit for the log is 21 files. When the 22nd version of the log file is created, the oldest log file is deleted. On average about 20 GB of log data is stored on each node.
+| Audit messages are sent to the audit log (`audit.log`) on Admin Nodes, and audit information is sent to the external syslog server and saved on the local node. The type of information sent depends upon how you configured the external syslog server. This option is enabled only after you have configured an external syslog server.
 
 |===
 +

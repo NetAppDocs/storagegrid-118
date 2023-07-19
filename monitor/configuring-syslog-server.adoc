@@ -300,9 +300,9 @@ protocols.
 
 . Select *Stop and finish*.
 +
-You are returned to the *Audit and syslog server* page. A green banner appears notifying you that your syslog server configuration has been saved successfully. 
+You are returned to the *Audit and syslog server* page. A green banner indicates that the syslog server configuration has been saved. 
 +
-NOTE: Your StorageGRID audit information is not sent to the external syslog server until you select a destination that includes the external syslog server. 
+NOTE: StorageGRID audit information is not sent to the external syslog server until you select a destination that includes the external syslog server. 
 
 == Select audit information destinations
 You can specify where security event logs, application logs, and audit message logs are sent. 
@@ -311,26 +311,29 @@ NOTE: For more information about StorageGRID software logs, see link:../monitor/
 
 .Steps
 
-. On the Audit and syslog server page, select the destination for audit information from the listed options: 
+. On the Audit and syslog server page, select the destination for audit information.
++
+TIP"  *Local nodes only* and *External syslog server* typically provide better performance. 
 +
 [cols="1a,2a" options="header"]
 
 |===
 | Option| Description
 
-| Default (Admin nodes/local nodes)
-| Audit messages are sent to the audit log (`audit.log`) on the Admin Node, and security event logs and application logs are stored on the nodes where they were generated (also referred to as "the local node").
-
-| External syslog server
-| Audit information is sent to an external syslog server and saved on the local node. The type of information sent depends upon how you configured the external syslog server. This option is enabled only after you have configured an external syslog server.
-
-| Admin Node and external syslog server
-| Audit messages are sent to the audit log (`audit.log`) on the Admin Node, and audit information is sent to the external syslog server and saved on the local node. The type of information sent depends upon how you configured the external syslog server. This option is enabled only after you have configured an external syslog server.
-
 | Local nodes only
-| No audit information is sent to an Admin Node or remote syslog server. Audit information is saved only on the nodes that generated it. 
+| Audit messages are not saved to Admin Nodes, and other logs are saved only on the nodes that generated them. 
 
 *Note*: StorageGRID periodically removes these local logs in a rotation to free up space. When the log file for a node reaches 1 GB, the existing file is saved, and a new log file is started. The rotation limit for the log is 21 files. When the 22nd version of the log file is created, the oldest log file is deleted. On average about 20 GB of log data is stored on each node.
+
+| Admin Nodes/local nodes
+| Audit messages are sent to the audit log (`audit.log`) on Admin Nodes, and security event logs and application logs are stored on the nodes where they were generated (also referred to as "the local node").
+
+| External syslog server
+| Audit information is sent to an external syslog server and saved on the local node. The type of information sent depends upon how you configured the external syslog server. This option is enabled only after you have configured an external syslog server. 
+
+| Admin Node and external syslog server
+| Audit messages are sent to the audit log (`audit.log`) on Admin Nodes, and audit information is sent to the external syslog server and saved on the local node. The type of information sent depends upon how you configured the external syslog server. This option is enabled only after you have configured an external syslog server.
+
 |===
 +
 NOTE: Audit information generated on every local node is stored in `/var/local/log/localaudit.log`
@@ -343,7 +346,7 @@ IMPORTANT: You must confirm that the external syslog server can receive test Sto
 
 . Select *OK* to confirm that you want to change the destination for audit information.
 +
-A green banner appears notifying you that your audit configuration has been saved successfully. 
+A green banner indicates that your audit configuration has been saved. 
 +
 New logs are sent to the destinations you selected. Existing logs remain in their current location.
 
