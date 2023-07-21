@@ -2,23 +2,23 @@
 permalink: tenant/use-s3-console.html
 sidebar: sidebar
 keywords: how to use s3 console
-summary: 'You can use S3 Console to view the objects in an S3 bucket.'
+summary: 'You can use S3 Console to view and manage the objects in an S3 bucket.'
 ---
 = Use S3 Console
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You can use S3 Console to view the objects in an S3 bucket.
+You can use S3 Console to view and manage the objects in an S3 bucket.
 
-You can also use S3 Console to do the following:
+S3 Console allows you to:
 
 *	Upload, download, rename, copy, move, and delete objects
 *	View, revert, download, and delete object versions
 * Search for objects by prefix
 * Manage object tags
 * View object metadata
-*	View, create, copy, move, and delete folders
+*	View, create, rename, copy, move, and delete folders
 
 NOTE: Tenants should only use S3 Console when performing functions for a small number of objects, such as when uploading objects to simulate a new ILM policy, troubleshooting ingest issues, or using proof-of-concept or non-production grids.
 
@@ -37,3 +37,11 @@ NOTE: Tenants should only use S3 Console when performing functions for a small n
 . Paste the access key ID and secret access key into the fields. Otherwise, select *Upload access keys* and select your `.csv` file.
 . Select *Sign in*.
 . The table of bucket objects appears. You can manage objects as needed.
+
+Note the following requirements and outcomes:
+
+Operation on a folder:: You must perform the same operation on each object in the folder. For example, to rename a folder, you must rename every object in that folder.
+
+Bucket versioning enabled:: When you delete an object, a delete marker for the object is created. See link:deleting-s3-bucket-objects.html[Delete objects in bucket] and link:../ilm/how-objects-are-deleted.html#delete-s3-versioned-objects[How S3 versioned objects are deleted].
+
+Bucket versioning not enabled:: When you delete an object, the deletion is permanent.
