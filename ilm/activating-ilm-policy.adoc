@@ -29,6 +29,24 @@ When you activate an ILM policy, the system distributes the new policy to all no
 
 .Steps
 
+Follow the steps based on whether you're using link:use-ilm-policy-tags.html[ILM policy tags].
+
+//tabbed blocks start here
+
+[role="tabbed-block"]
+====
+
+.Using ILM policy tags
+--
+. Select *ILM* > *Policy tags*.
+. In the ILM policy tags table, use the pull-down to select a policy to assign to the tag.
+. If warnings appear in the Policy limitations column, select *View policy details* to review the policy. Then take the recommended action.
+. Select *Activate assigned policies*. Or, select *Clear changes* to remove the policy assignment.
+
+//end ILM policy tags, begin no tags used
+--
+.No ILM policy tags
+--
 . When you are ready to activate a policy, select *ILM* > *Policies*. On the Policies tab, select the checkbox for the policy you want to activate, then select *Activate*.
 +
 A warning message is displayed, prompting you to confirm that you want to activate the policy.
@@ -36,6 +54,10 @@ A warning message is displayed, prompting you to confirm that you want to activa
 . When you have reviewed the details of the warning message and are sure the policy would manage data as expected:
 .. Type *yes* in the text box.
 .. Select *Activate policies*.
+--
+
+====
+//end tabbed block
 
 .Result
 
