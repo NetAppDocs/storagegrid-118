@@ -106,11 +106,11 @@ entries:
       url: "/monitor/logs-for-third-party-software.html"
     - title: About the bycast.log
       url: "/monitor/about-bycast-log.html"
-  - title: Configure audit messages and log destinations
+  - title: Configure audit messages
     entries:      
     - title: Considerations for external syslog server
       url: "/monitor/considerations-for-external-syslog-server.html"  
-    - title: Configure audit destinations 
+    - title: Configure audit messages and external syslog server
       url: "/monitor/configure-audit-messages.html" 
   - title: Use SNMP monitoring
     entries:

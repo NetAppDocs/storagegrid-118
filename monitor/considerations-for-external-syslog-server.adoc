@@ -17,9 +17,9 @@ The types of audit information you can send to the external syslog server includ
 *	Security-related events such as logins and escalations to root
 *	Application logs that might be requested if it is necessary to open a support case to troubleshoot an issue you have encountered
 
-== Why use an external syslog server
+== When to use an external syslog server
 
-Sending audit information to an external syslog server enables you to:
+An external syslog server is especially useful if you have a large grid, use multiple types of S3 applications, or want to retain all audit data. Sending audit information to an external syslog server enables you to:
 
 * Collect and manage audit information such as audit messages, application logs, and security events more efficiently.
 
@@ -28,6 +28,20 @@ Sending audit information to an external syslog server enables you to:
 CAUTION: When logs are sent to an external syslog server, single logs greater than 8,192 bytes are truncated at the end of the message to conform with common limitations in external syslog server implementations. 
 +
 NOTE: To maximize the options for full data recovery in the event of a failure of the external syslog server, up to 20 GB of local logs of audit records (`localaudit.log`) are maintained on each node.
+
+== How to configure an external syslog server
+
+To learn how to configure an external syslog server, see link:../monitor/configure-audit-messages.html[Configure audit messages and external syslog server].
+
+If you plan to configure use the TLS or RELP/TLS protocol, you must have the following certificates:
+
+** *Server CA certificates*: One or more trusted CA certificates for verifying the external syslog server in PEM encoding. If omitted, the default Grid CA certificate will be used.
+
+** *Client certificate*: The client certificate for authentication to the external syslog server in PEM encoding.
+
+** *Client private key*: Private key for the client certificate in PEM encoding.
++
+NOTE: If you use a client certificate you must also use a client private key. If you provide an encrypted private key, you must also provide the passphrase. There is no significant security benefit from using an encrypted private key because the key and passphrase must be stored; using an unencrypted private key, if available, is recommended for simplicity.
 
 == How to estimate the size of the external syslog server
 Normally, your grid is sized to achieve a required throughput, defined in terms of S3 operations per second or bytes per second. For example, you might have a requirement that your grid handle 1,000 S3 operations per second, or 2,000 MB per second, of object ingests and retrievals. You should size your external syslog server according to your grid's data requirements.
@@ -168,5 +182,3 @@ Application Log Average Size = (P x (240 + (0.4 x K))) + ((1 - P) x (185 + (0.9 
 ----
 
 So, for example, if your grid is sized for 1,000 S3 operations per second, your workload is 50% PUTs, and your S3 account names, bucket names, and object names average 90 bytes, your external syslog server should be sized to support 2,250 application logs per second and should be able to receive and will be receive (and typically store) application data at a rate of 0.6 MB per second.
-
-To learn how to configure an external syslog server, see link:../monitor/configure-audit-messages.html[Configure audit messages and log destinations].

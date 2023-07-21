@@ -2,14 +2,16 @@
 permalink: monitor/configure-audit-messages.html
 sidebar: sidebar
 keywords: audit messages, audit level, external syslog server, log destinations
-summary: 'You can configure a number of settings related to audit messages. You can adjust the number of audit messages recorded; define any HTTP request headers you want to include in client read and write audit messages; and specify where audit logs, security event logs, and StorageGRID software logs are sent..'
+summary: 'You can configure a number of settings related to audit messages. You can adjust the number of audit messages recorded; define any HTTP request headers you want to include in client read and write audit messages; configure an external syslog server; and specify where audit logs, security event logs, and StorageGRID software logs are sent.'
 ---
-= Configure audit messages and log destinations
+= Configure audit messages and external syslog server
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You can configure a number of settings related to audit messages. You can adjust the number of audit messages recorded; define any HTTP request headers you want to include in client read and write audit messages; and specify where audit logs, security event logs, and StorageGRID software logs are sent.
+You can configure a number of settings related to audit messages. You can adjust the number of audit messages recorded; define any HTTP request headers you want to include in client read and write audit messages; configure an external syslog server; and specify where audit logs, security event logs, and StorageGRID software logs are sent.
+
+Audit messages and logs record system activities and security events, and are essential tools for monitoring and troubleshooting. All StorageGRID nodes generate audit messages and logs to track system activity and events.
 
 Optionally, you can configure an external syslog server to save audit information remotely. Using an external server minimizes the performance impact of audit message logging without reducing the completeness of audit data. An external syslog server is especially useful if you have a large grid, use multiple types of S3 applications, or want to retain all audit data. See link:../monitor/considerations-for-external-syslog-server.html[Considerations for external syslog server] for details.
 
@@ -20,22 +22,7 @@ Optionally, you can configure an external syslog server to save audit informatio
 
 * If you plan to configure an external syslog server, you have reviewed the link:../monitor/considerations-for-external-syslog-server.html[considerations for using an external syslog server] and ensured that the server has enough capacity to receive and store the log files.
 
-* If you plan to configure an external syslog server using TLS or RELP/TLS protocol, you have the following certificates:
-
-** *Server CA certificates*: One or more trusted CA certificates for verifying the external syslog server in PEM encoding. If omitted, the default Grid CA certificate will be used.
-
-** *Client certificate*: The client certificate for authentication to the external syslog server in PEM encoding.
-
-** *Client private key*: Private key for the client certificate in PEM encoding.
-+
-NOTE: If you use a client certificate you must also use a client private key. If you provide an encrypted private key, you must also provide the passphrase. There is no significant security benefit from using an encrypted private key because the key and passphrase must be stored; using an unencrypted private key, if available, is recommended for simplicity.
-
-.About this task
-
-Audit messages and logs record system activities and security events, and are essential tools for monitoring and troubleshooting. 
-
-All StorageGRID nodes generate audit messages and logs to track system activity and events. By default, audit information is sent to the audit log on Admin Nodes.
-
+* If you plan to configure an external syslog server using TLS or RELP/TLS protocol, you have the required server CA and client certificates and the client private key. 
 
 == Change audit message levels
 
@@ -101,7 +88,7 @@ NOTE: If you don't require a detailed record of client read operations for your 
 +
 A green banner indicates your configuration has been saved.
 
-== Define HTTP request headers (optional)
+== Define HTTP request headers
 You can optionally define any HTTP request headers you want to include in client read and write audit messages. These protocol headers apply to S3 and Swift requests only.
 
 .Steps
@@ -121,7 +108,7 @@ NOTE: Audit protocol request headers are logged only if the audit level for *Cli
 A green banner indicates your configuration has been saved.
 
 
-== [[use-external-syslog-server]]Use external syslog server
+== [[use-external-syslog-server]]Use an external syslog server
 
 You can optionally configure an external syslog server to save audit logs, application logs, and security event logs to a location outside of your grid. 
 
@@ -398,13 +385,13 @@ TIP:  *Local nodes only* and *External syslog server* typically provide better p
 *Note*: StorageGRID periodically removes local logs in a rotation to free up space. When the log file for a node reaches 1 GB, the existing file is saved, and a new log file is started. The rotation limit for the log is 21 files. When the 22nd version of the log file is created, the oldest log file is deleted. On average about 20 GB of log data is stored on each node.
 
 | Admin Nodes/local nodes
-| Audit messages are sent to the audit log (`audit.log`) on Admin Nodes, and security event logs and application logs are stored on the nodes that generated them.
+| Audit messages are sent to the audit log (`/var/local/audit/export/audit.log`) on Admin Nodes, and security event logs and application logs are stored on the nodes that generated them.
 
 | External syslog server
 | Audit information is sent to an external syslog server and saved on the local nodes. The type of information sent depends upon how you configured the external syslog server. This option is enabled only after you have configured an external syslog server. 
 
 | Admin Node and external syslog server
-| Audit messages are sent to the audit log (`audit.log`) on Admin Nodes, and audit information is sent to the external syslog server and saved on the local node. The type of information sent depends upon how you configured the external syslog server. This option is enabled only after you have configured an external syslog server.
+| Audit messages are sent to the audit log (`/var/local/audit/export/audit.log`) on Admin Nodes, and audit information is sent to the external syslog server and saved on the local node. The type of information sent depends upon how you configured the external syslog server. This option is enabled only after you have configured an external syslog server.
 
 |===
 
