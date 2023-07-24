@@ -92,7 +92,7 @@ entries:
     entries:
     - title: Overview
       url: "/ilm/creating-ilm-policy.html"
-    - title: Create proposed ILM policy
+    - title: Create ILM policy
       url: "/ilm/creating-proposed-ilm-policy.html"
     - title: Use ILM policy tags
       url: "/ilm/use-ilm-policy-tags.html"

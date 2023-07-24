@@ -2,14 +2,20 @@
 permalink: ilm/creating-proposed-ilm-policy.html
 sidebar: sidebar
 keywords: how to create ILM policy, proposed policy
-summary: 'You can create a proposed ILM policy from scratch, or you can clone an active policy if you want to start with the same set of rules.'
+summary: 'To create an ILM policy, you can start with a blank policy, or you can clone a policy to start with the same set of rules.'
 ---
-= Create a proposed ILM policy
+= Create an ILM policy
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You can create a proposed ILM policy from scratch, or you can clone an active policy if you want to start with the same set of rules.
+To create an ILM policy, you can start with a blank policy, or you can clone a policy to start with the same set of rules.
+
+When you create an ILM policy, follow this workflow:
+
+. Select and arrange ILM rules.
+. Verify the behavior of your policy by link:simulating-ilm-policy.html[simulating it against previously ingested objects].
+. When you are satisfied that the proposed policy is functioning as intended, link:activating-ilm-policy.html[activate the policy].
 
 Before creating your own policy, verify that the link:creating-ilm-policy.html#default-ilm-policy[default ILM policy] does not meet your storage requirements.
 
