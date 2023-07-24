@@ -91,11 +91,14 @@ entries:
   - title: Create ILM policy
     entries:
     - title: Overview
-      url: "/ilm/creating-ilm-policy.html"
-    - title: Create ILM policy
+      url: "/ilm/ilm-policy-overview.html"
+    - title: Create one ILM policy
       url: "/ilm/creating-proposed-ilm-policy.html"
-    - title: Use ILM policy tags
-      url: "/ilm/use-ilm-policy-tags.html"
+    - title: Create multiple ILM policies
+      url: "/ilm/creating-multiple-ilm-policies.html"
+      entries:
+      - title: Use ILM policy tags
+        url: "/ilm/use-ilm-policy-tags.html"
     - title: Simulate ILM policy
       url: "/ilm/simulating-ilm-policy.html"
     - title: Activate ILM policy
