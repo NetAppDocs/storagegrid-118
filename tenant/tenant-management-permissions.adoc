@@ -38,13 +38,27 @@ You can assign the following permissions to a group. Note that S3 tenants and Sw
 | Manage your own S3 credentials
 | Allows users to create and remove their own S3 access keys. Users who don't have this permission don't see the *STORAGE (S3)* > *My S3 access keys* menu option.
 
-| Manage all buckets
+| View all buckets
 |
-* S3 tenants: Allows users to use the Tenant Manager and the Tenant Management API to create and delete S3 buckets and to manage the settings for all S3 buckets in the tenant account, regardless of S3 bucket or group policies.
+*S3 tenants*: Allows users to view all buckets and bucket configurations.
 +
 Users who don't have this permission don't see the *Buckets* menu option.
 
-* Swift tenants: Allows Swift users to control the consistency setting for Swift containers using the Tenant Management API.
+*Note:* This permission does not affect S3 access permissions used by S3 clients or S3 Console.
+
+*Swift tenants*: Allows Swift users to view all containers and container configurations using the Tenant Management API.
+
+*Note:* You can only assign the View all buckets permission to Swift groups from the Tenant Management API. You can't assign this permission to Swift groups using the Tenant Manager.
+
+| Manage all buckets
+|
+*S3 tenants*: Allows users to use the Tenant Manager and the Tenant Management API to create and delete S3 buckets and to manage the settings for all S3 buckets in the tenant account, regardless of S3 bucket or group policies.
++
+Users who don't have this permission don't see the *Buckets* menu option.
+
+*Note:* This permission does not affect S3 access permissions used by S3 clients or S3 Console.
+
+*Swift tenants*: Allows Swift users to control the consistency setting for Swift containers using the Tenant Management API.
 
 *Note:* You can only assign the Manage all buckets permission to Swift groups from the Tenant Management API. You can't assign this permission to Swift groups using the Tenant Manager.
 
@@ -54,5 +68,5 @@ Users who don't have this permission don't see the *Buckets* menu option.
 Users who don't have this permission don't see the *Platform services endpoints* menu option.
 
 | Use S3 Console tab
-| When combined with the Manage all buckets permission, allows users to view the objects for a bucket from the S3 Console tab on the Buckets page.
+| When combined with the Manage all buckets permission, allows users to view and manage the objects for a bucket from the S3 Console tab on the Buckets page.
 |===
