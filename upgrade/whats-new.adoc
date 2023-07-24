@@ -15,10 +15,11 @@ This release of StorageGRID introduces the following features and functional cha
 
 
 === Lisa's new features
-* S3 Console no longer experimental
+* S3 Console no longer experimental (additional functionality described in Use S3 Console)
 * Assign policy to ILM tags
 * Can have multiple ILM policies active at one time
-* Configurable default consistency level
+* Configurable default consistency setting
+* New tenant permission: View all buckets
 
 === Configurable default consistency setting
 You can change the link:../s3/consistency-controls.html[grid-wide default consistency setting]. To make the change, use the grid-config endpoint of the link:../admin/using-grid-management-api.html[Grid Management private API]. The new default will be applied to buckets created after the change.  

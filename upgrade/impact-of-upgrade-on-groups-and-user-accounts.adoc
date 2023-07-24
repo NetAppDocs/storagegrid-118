@@ -14,14 +14,14 @@ You must understand the impact of the StorageGRID upgrade, so that you can updat
 
 == Changes to group permissions and options
 
-After upgrading to StorageGRID 11.7, optionally assign the following new permission to tenant user groups.
+After upgrading to StorageGRID 11.8, optionally assign the following new permissions to tenant user groups.
 
 [cols="1a,2a" options="header"]
 |===
 | Permission | Description
 
-| 
-| 
+| View all buckets
+| Allows users to view all buckets and bucket configurations.
 
 |===
 
