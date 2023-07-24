@@ -38,10 +38,10 @@ NOTE: Tenants should only use S3 Console when performing functions for a small n
 . Select *Sign in*.
 . The table of bucket objects appears. You can manage objects as needed.
 
-Note the following requirements and outcomes:
+.Results
 
-Operation on a folder:: You must perform the same operation on each object in the folder. For example, to rename a folder, you must rename every object in that folder.
+Note the following outcomes:
 
-Bucket versioning enabled:: When you delete an object, a delete marker for the object is created. See link:deleting-s3-bucket-objects.html[Delete objects in bucket] and link:../ilm/how-objects-are-deleted.html#delete-s3-versioned-objects[How S3 versioned objects are deleted].
+Operations on folders:: When you move, copy, or rename a folder, all objects in the folder are updated one at a time, which might take time.
 
-Bucket versioning not enabled:: When you delete an object, the deletion is permanent.
+Bucket versioning disabled:: When you overwrite or delete an object in a bucket with versioning disabled, the operation is permanent. See link:changing-bucket-versioning.html[Change object versioning for a bucket].
