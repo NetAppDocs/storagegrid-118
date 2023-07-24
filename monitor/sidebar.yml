@@ -106,7 +106,7 @@ entries:
       url: "/monitor/logs-for-third-party-software.html"
     - title: About the bycast.log
       url: "/monitor/about-bycast-log.html"
-  - title: Configure audit messages
+  - title: Configure audit message and log destinations
     entries:      
     - title: Considerations for external syslog server
       url: "/monitor/considerations-for-external-syslog-server.html"  
