@@ -62,6 +62,7 @@ The amount of time required to free space after an object is deleted depends on 
 * Whether object copies are synchronously removed or are queued for removal later (for client delete requests).
 * Other factors such as the number of objects in the grid or the availability of grid resources when object copies are queued for removal (for both client deletes and other methods).
 
+[[delete-s3-versioned-objects]]
 == How S3 versioned objects are deleted
 
 When versioning is enabled for an S3 bucket, StorageGRID follows Amazon S3 behavior when responding to delete requests, whether those requests come from an S3 client, the expiration of an S3 bucket lifecycle, or the requirements of the ILM policy.
