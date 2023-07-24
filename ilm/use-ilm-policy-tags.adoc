@@ -37,7 +37,7 @@ To create a tag:
 
 == Assign ILM policy to tag
 
-Assigning a policy to a tag activates the policy. You should always simulate a policy before activating it to ensure it works as expected.
+When you want to assign a policy to a tag, you have to activate the policy for the assignment to be saved. You should always simulate a policy before activating it to ensure it works as expected.
 
 To assign a policy to a tag:
 
