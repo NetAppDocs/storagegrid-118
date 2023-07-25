@@ -18,10 +18,11 @@ After upgrading to StorageGRID 11.8, optionally assign the following new permiss
 
 [cols="1a,2a" options="header"]
 |===
-| Permission | Description
+| Permission | Description| Details
 
 | View all buckets
 | Allows users to view all buckets and bucket configurations.
+| The Manage all buckets permission supersedes the View all buckets permission.
 
 |===
 

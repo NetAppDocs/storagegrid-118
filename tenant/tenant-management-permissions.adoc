@@ -62,6 +62,6 @@ You can only assign these permissions to Swift groups from the Tenant Management
 | Users who don't have this permission don't see the *Platform services endpoints* menu option.
 
 | Use S3 Console tab
-| When combined with the Manage all buckets permission, allows users to view and manage the objects for a bucket from the S3 Console tab on the Buckets page.
+| When combined with the View all buckets or Manage all buckets permission, allows users to view and manage the objects for a bucket from the S3 Console tab on the Buckets page.
 | 
 |===
