@@ -22,51 +22,46 @@ NOTE: If a user belongs to multiple groups and any group is set to Read-only, th
 
 You can assign the following permissions to a group. Note that S3 tenants and Swift tenants have different group permissions.
 
-[cols="1a,3a" options="header"]
+[cols="1a,2a,3a" options="header"]
 |===
-| Permission| Description
+| Permission| Description| Details
+
 | Root access
 | Provides full access to the Tenant Manager and the Tenant Management API.
-
-*Note:* Swift users must have Root access permission to sign in to the tenant account.
+| Swift users must have Root access permission to sign in to the tenant account.
 
 | Administrator
 | Swift tenants only. Provides full access to the Swift containers and objects for this tenant account
-
-*Note:* Swift users must have the Swift Administrator permission to perform any operations with the Swift REST API.
+| Swift users must have the Swift Administrator permission to perform any operations with the Swift REST API.
 
 | Manage your own S3 credentials
-| Allows users to create and remove their own S3 access keys. Users who don't have this permission don't see the *STORAGE (S3)* > *My S3 access keys* menu option.
+| Allows users to create and remove their own S3 access keys.
+| Users who don't have this permission don't see the *STORAGE (S3)* > *My S3 access keys* menu option.
 
 | View all buckets
-|
+| 
 *S3 tenants*: Allows users to view all buckets and bucket configurations.
 
-Users who don't have this permission don't see the *Buckets* menu option.
-
-*Note:* This permission does not affect S3 access permissions used by S3 clients or S3 Console.
-
 *Swift tenants*: Allows Swift users to view all containers and container configurations using the Tenant Management API.
+.2+| 
+Users who don't have either the View all buckets or the Manage all buckets permission don't see the *Buckets* menu option.
 
-*Note:* You can only assign the View all buckets permission to Swift groups from the Tenant Management API. You can't assign this permission to Swift groups using the Tenant Manager.
+Each of these permissions supersedes or is superseded by the other. These permissions don't affect S3 group policy permissions or S3 access permissions used by S3 clients or S3 Console.
+
+You can only assign these permissions to Swift groups from the Tenant Management API. You can't assign these permissions to Swift groups using the Tenant Manager.
 
 | Manage all buckets
 |
 *S3 tenants*: Allows users to use the Tenant Manager and the Tenant Management API to create and delete S3 buckets and to manage the settings for all S3 buckets in the tenant account, regardless of S3 bucket or group policies.
 
-Users who don't have this permission don't see the *Buckets* menu option.
-
-*Note:* This permission does not affect S3 access permissions used by S3 clients or S3 Console.
-
 *Swift tenants*: Allows Swift users to control the consistency setting for Swift containers using the Tenant Management API.
-
-*Note:* You can only assign the Manage all buckets permission to Swift groups from the Tenant Management API. You can't assign this permission to Swift groups using the Tenant Manager.
+| 
 
 | Manage endpoints
 | Allows users to use the Tenant Manager or the Tenant Management API to create or edit platform service endpoints, which are used as the destination for StorageGRID platform services.
-
-Users who don't have this permission don't see the *Platform services endpoints* menu option.
+| Users who don't have this permission don't see the *Platform services endpoints* menu option.
 
 | Use S3 Console tab
 | When combined with the Manage all buckets permission, allows users to view and manage the objects for a bucket from the S3 Console tab on the Buckets page.
+| 
 |===
