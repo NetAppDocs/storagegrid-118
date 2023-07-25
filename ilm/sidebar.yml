@@ -94,13 +94,12 @@ entries:
       url: "/ilm/ilm-policy-overview.html"
     - title: Create ILM policies
       url: "/ilm/creating-ilm-policy.html"
-      entries:
-      - title: Use ILM policy tags
-        url: "/ilm/use-ilm-policy-tags.html"
-      - title: Simulate ILM policy
-        url: "/ilm/simulating-ilm-policy.html"
-      - title: Activate ILM policy
-        url: "/ilm/activating-ilm-policy.html"
+    - title: Use ILM policy tags
+      url: "/ilm/use-ilm-policy-tags.html"
+    - title: Simulate ILM policy
+      url: "/ilm/simulating-ilm-policy.html"
+    - title: Activate ILM policy
+      url: "/ilm/activating-ilm-policy.html"
     - title: Verify ILM policy with object metadata lookup
       url: "/ilm/verifying-ilm-policy-with-object-metadata-lookup.html"
   - title: Work with ILM policies and rules
