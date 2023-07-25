@@ -22,7 +22,7 @@ NOTE: If a user belongs to multiple groups and any group is set to Read-only, th
 
 You can assign the following permissions to a group. Note that S3 tenants and Swift tenants have different group permissions.
 
-[cols="1a,2a,3a" options="header"]
+[cols="1a,3a,3a" options="header"]
 |===
 | Permission| Description| Details
 
@@ -43,7 +43,7 @@ You can assign the following permissions to a group. Note that S3 tenants and Sw
 *S3 tenants*: Allows users to view all buckets and bucket configurations.
 
 *Swift tenants*: Allows Swift users to view all containers and container configurations using the Tenant Management API.
-.2+| 
+| 
 Users who don't have either the View all buckets or the Manage all buckets permission don't see the *Buckets* menu option.
 
 Each of these permissions supersedes or is superseded by the other. These permissions don't affect S3 group policy permissions or S3 access permissions used by S3 clients or S3 Console.
@@ -56,6 +56,11 @@ You can only assign these permissions to Swift groups from the Tenant Management
 
 *Swift tenants*: Allows Swift users to control the consistency setting for Swift containers using the Tenant Management API.
 | 
+Users who don't have either the View all buckets or the Manage all buckets permission don't see the *Buckets* menu option.
+
+Each of these permissions supersedes or is superseded by the other. These permissions don't affect S3 group policy permissions or S3 access permissions used by S3 clients or S3 Console.
+
+You can only assign these permissions to Swift groups from the Tenant Management API. You can't assign these permissions to Swift groups using the Tenant Manager.
 
 | Manage endpoints
 | Allows users to use the Tenant Manager or the Tenant Management API to create or edit platform service endpoints, which are used as the destination for StorageGRID platform services.
