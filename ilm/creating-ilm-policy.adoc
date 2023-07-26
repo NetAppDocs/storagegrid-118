@@ -19,23 +19,6 @@ Having multiple active ILM policies allows you to apply the appropriate ILM rule
 
 Before creating your own policy, verify that the link:creating-ilm-policy.html#default-ilm-policy[default ILM policy] does not meet your storage requirements.
 
-Follow the appropriate workflow for creating one or many ILM policies:
-
-* One policy
-+
-. Select and arrange link:access-create-ilm-rule-wizard.html[ILM rules].
-. Verify the behavior of your policy by link:simulating-ilm-policy.html[simulating it against previously ingested objects].
-. When you are satisfied that the policy is functioning as intended, link:activating-ilm-policy.html[activate the policy].
-. If needed, create more policies, link:use-ilm-policy-tags.html[create ILM policy tags] and apply a policy to each tag.
-. Simulate each policy.
-
-* Multiple policies
-+
-. Select and arrange link:access-create-ilm-rule-wizard.html[ILM rules] for each policy.
-. Verify the behavior of each policy by link:simulating-ilm-policy.html[simulating it against previously ingested objects].
-. When you are satisfied that each policy is functioning as intended, link:use-ilm-policy-tags.html[create ILM policy tags] and apply a policy to each tag.
-//. link:activating-ilm-policy.html[Activate the policies from the ILM policy tags page].
-
 IMPORTANT: Only use the system-provided policy, Baseline 2 copies policy, in test systems. For StorageGRID 11.6 and earlier, the default rule in this policy uses the All Storage Nodes storage pool, which contains all sites. If your StorageGRID system has more than one site, two copies of an object might be placed on the same site.
 
 NOTE: If the link:enabling-s3-object-lock-globally.html[global S3 Object Lock setting has been enabled], you must ensure that the ILM policy is compliant with the requirements of buckets that have S3 Object Lock enabled. In this section, follow the instructions that mention having S3 Object Lock enabled.
@@ -230,28 +213,40 @@ When you activate an ILM policy, the system distributes the new policy to all no
 
 Follow the appropriate steps for activating one policy or multiple policies:
 
-//tabbed block starts here
-+
+//tabbed blocks start here
+
 [role="tabbed-block"]
 ====
-
-.One policy
+.Activate one policy
 --
+. When you are ready to activate a policy, select *ILM* > *Policies*.
+. On the Policies tab, select the checkbox for the policy you want to activate, then select *Activate*.
++
+A warning message is displayed, prompting you to confirm that you want to activate the policy.
 
-. link:simulating-ilm-policy.html[Simulate an ILM policy]. You should always simulate a policy before activating it to ensure it works as expected.
+. When you have reviewed the details of the warning message and are sure the policy would manage data as expected:
+.. Type *yes* in the text box.
+.. Select *Activate policy*.
 
+.Activate multiple policies
 --
-//end One policy, begin Multiple policies
+Before you can activate multiple policies, you must create tags and assign a policy to each tag.
 
-.Multiple policies
---
-
-.. 
-
+. Select *ILM* > *Policy tags*.
+. Select *Create*.
+. In the Create policy tag dialog box, type a tag name and, optionally, a description for the tag.
+. Select *Create tag*.
+. In the ILM policy tags table, use the pull-down to select a policy to assign to the tag.
+. If warnings appear in the Policy limitations column, select *View policy details* to review the policy. Then take the recommended action.
+. Select *Activate assigned policies*. Or, select *Clear changes* to remove the policy assignment.
 --
 ====
-//end tabbed blocks
+//end tabbed block
 
- If you create more than one policy, create ILM policy tags and assign a policy to each tag.
-+
-NOTE: Before you can activate multiple policies, you must create tags and assign a policy to each tag.
+.Result
+
+When a new ILM policy has been activated, the Policy state for the policy is changed to Active.
+
+.Related information
+
+link:example-6-changing-ilm-policy.html[Example 6: Changing an ILM policy]

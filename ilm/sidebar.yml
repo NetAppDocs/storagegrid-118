@@ -95,7 +95,7 @@ entries:
     - title: Create ILM policies
       url: "/ilm/creating-ilm-policy.html"
     - title: Example ILM policy simulations
-      url: "simulating-ilm-policy-examples.html"
+      url: "/ilm/simulating-ilm-policy-examples.html"
     - title: Activate ILM policy
       url: "/ilm/activating-ilm-policy.html"
     - title: Manage ILM policy tags
