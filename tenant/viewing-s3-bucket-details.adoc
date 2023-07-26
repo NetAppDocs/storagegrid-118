@@ -14,7 +14,7 @@ You can view the buckets in your tenant account.
 .Before you begin
 
 * You are signed in to the Tenant Manager using a link:../admin/web-browser-requirements.html[supported web browser].
-
+* You belong to a user group that has the link:tenant-management-permissions.html[Root access, Manage all buckets, or View all buckets permission]. These permissions override the permission settings in group or bucket policies.
 
 .Steps
 
@@ -60,7 +60,7 @@ This column appears only if S3 Object Lock is enabled for the grid. This column 
 
 . To view details for a specific bucket, select the bucket name from the table.
 +
-The bucket details page appears. From this page, you can perform the following tasks:
+The bucket details page appears. From this page, you can perform the following tasks if you have the required permissions:
 
 * Configure and manage bucket options, such as link:changing-consistency-level.html[consistency setting], link:enabling-or-disabling-last-access-time-updates.html[last access time updates], link:changing-bucket-versioning.html[object versioning], link:using-s3-object-lock.html[S3 Object Lock] and link:update-default-retention-settings.html[default bucket retention]
 * Configure bucket access, such as link:configuring-cross-origin-resource-sharing-cors.html[cross-origin resource sharing (CORS)]
