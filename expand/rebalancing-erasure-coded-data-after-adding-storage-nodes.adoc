@@ -35,9 +35,13 @@ You can rerun the procedure after all volumes are back online.
 +
 NOTE: S3 and Swift API operations to upload objects (or object parts) might fail during the EC rebalance procedure if they require more than 24 hours to complete. Long-duration PUT operations will fail if the applicable ILM rule uses Balanced or Strict placement on ingest. The following error will be reported: `500 Internal Server Error`.
 
-* The EC rebalance procedure is considered complete when either of the following is true:
+* The EC rebalance procedure is considered complete when any of the following is true:
 
-** The Site Imbalance metric reaches 0.02 (2%). This metric measures the standard deviation of per node storage consumption and total usage, and it can range from 0.5 to 0. Zero means erasure-coding data usage is completely balanced across all Storage Nodes at the site. 
+** It can't move any more erasure-coded data.
+
+** The Site Imbalance metric reaches 0.02 (2%). This metric measures the standard deviation of per node EC data against total EC data, and it can range from 0.5 to 0. Zero means erasure-coding data usage is completely balanced across all Storage Nodes at the site. 
+
+
 
 ** The procedure has been running continuously for 30 days. 
 
