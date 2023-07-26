@@ -2,15 +2,14 @@
 permalink: ilm/index.html
 sidebar: sidebar
 keywords: information lifecycle management overview, about information lifecycle management, ilm overview, about ilm
-summary: 'The ILM rules in an ILM policy instruct StorageGRID how to create and distribute copies of object data and how to manage those copies over time.'
+summary: 'The information lifecycle management \(ILM\) rules in an ILM policy instruct StorageGRID how to create and distribute copies of object data and how to manage those copies over time.'
 ---
-= Manage objects with ILM: Overview
+= Manage objects with ILM
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-
-The ILM rules in an ILM policy instruct StorageGRID how to create and distribute copies of object data and how to manage those copies over time.
+The information lifecycle management (ILM) rules in an ILM policy instruct StorageGRID how to create and distribute copies of object data and how to manage those copies over time.
 
 == About these instructions
 

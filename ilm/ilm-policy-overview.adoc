@@ -17,6 +17,10 @@ CAUTION: An ILM policy that has been incorrectly configured can result in unreco
 
 You can have one or more active ILM policies at a time.
 
+//Having one active ILM policy allows you to apply the same ILM rules to all tenants and buckets.
+
+//Having multiple active ILM policies allows you to apply the appropriate ILM rules to specific tenants and buckets to fulfill multiple quality-of-service requirements.
+
 One policy:: Use one policy if you want to apply the same ILM rules to all objects in all buckets or containers. The ILM rules can contain filters to manage different buckets or tenants.
 +
 However, if a tenant's requirements change, you must edit, simulate, and re-activate the existing ILM policy, which could result in object moves that could take many days, which can cause system latency.

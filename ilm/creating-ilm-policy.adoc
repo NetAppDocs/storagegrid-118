@@ -17,14 +17,24 @@ Having multiple active ILM policies allows you to apply the appropriate ILM rule
 
 .About this task
 
-When you create an ILM policy, follow this workflow:
+Before creating your own policy, verify that the link:creating-ilm-policy.html#default-ilm-policy[default ILM policy] does not meet your storage requirements.
 
+Follow the appropriate workflow for creating one or many ILM policies:
+
+* One policy
++
 . Select and arrange link:access-create-ilm-rule-wizard.html[ILM rules].
-. If you are creating more than one ILM policy, link:use-ilm-policy-tags.html[create ILM policy tags] and apply a policy to each tag.
 . Verify the behavior of your policy by link:simulating-ilm-policy.html[simulating it against previously ingested objects].
 . When you are satisfied that the policy is functioning as intended, link:activating-ilm-policy.html[activate the policy].
+. If needed, create more policies, link:use-ilm-policy-tags.html[create ILM policy tags] and apply a policy to each tag.
+. Simulate each policy.
 
-Before creating your own policy, verify that the link:creating-ilm-policy.html#default-ilm-policy[default ILM policy] does not meet your storage requirements.
+* Multiple policies
++
+. Select and arrange link:access-create-ilm-rule-wizard.html[ILM rules] for each policy.
+. Verify the behavior of each policy by link:simulating-ilm-policy.html[simulating it against previously ingested objects].
+. When you are satisfied that each policy is functioning as intended, link:use-ilm-policy-tags.html[create ILM policy tags] and apply a policy to each tag.
+//. link:activating-ilm-policy.html[Activate the policies from the ILM policy tags page].
 
 IMPORTANT: Only use the system-provided policy, Baseline 2 copies policy, in test systems. For StorageGRID 11.6 and earlier, the default rule in this policy uses the All Storage Nodes storage pool, which contains all sites. If your StorageGRID system has more than one site, two copies of an object might be placed on the same site.
 
@@ -168,8 +178,80 @@ IMPORTANT: You must confirm that the ILM rules are in the correct order. When th
 
 . When you are done, select *Save*.
 
-. Repeat these steps to create additional ILM policies. If you create more than one policy, link:use-ilm-policy-tags.html[create ILM policy tags and assign a policy to each tag].
-+
-NOTE: You must use tags before you can activate multiple policies.
+. Repeat these steps to create additional ILM policies.
 
-. Go to link:simulating-ilm-policy.html[Simulate an ILM policy]. You should always simulate a policy before activating it to ensure it works as expected.
+. link:simulating-ilm-policy.html[Simulate an ILM policy]. You should always simulate a policy before activating it to ensure it works as expected.
+
+== Simulate a policy
+
+Simulate a policy on test objects before activating the policy and applying it to your production data.
+
+.Before you begin
+
+* You know the S3 bucket/object-key or the Swift container/object-name for each object you want to test.
+
+.Steps
+
+. Using an S3 or Swift client or the link:../tenant/use-s3-console.html[S3 Console], ingest the objects required to test each rule.
+. On the ILM policies page, select the checkbox for the policy, then select *Simulate*.
+. In the *Object* field, enter the S3 `bucket/object-key` or the Swift `container/object-name` for a test object. For example, `bucket-01/filename.png`.
+. If S3 versioning is enabled, optionally enter a version ID for the object in the *Version ID* field.
+. Select *Simulate*.
+. In the Simulation results section, confirm that each object was matched by the correct rule.
+. To determine which storage pool or erasure-coding profile is in effect, select the name of the matched rule to go to the rule details page.
+
+CAUTION: Review any changes to the placement of existing replicated and erasure-coded objects. Changing an existing object's location might result in temporary resource issues when the new placements are evaluated and implemented.
+
+.Results
+
+The Simulate proposed policy window retains the objects you tested until you select either *Clear all* or the remove icon image:../media/icon-x-to-remove.png[Remove icon] for each object in the Simulation results list.
+
+For more information about how to structure and correct ILM policy simulations, see link:simulating-ilm-policy-examples.html[Example ILM policy simulations].
+
+== Activate a policy
+
+When you activate a new ILM policy, the ILM rules in the policy determine which existing objects and newly ingested objects are managed by that policy.
+
+Before you activate a new policy:
+
+. Simulate the policy to confirm that it behaves as you expect.
+. Review any changes to the placement of existing replicated and erasure-coded objects. Changing an existing object's location might result in temporary resource issues when the new placements are evaluated and implemented.
+
+CAUTION: Errors in an ILM policy can cause unrecoverable data loss.
+
+.About this task
+
+When you activate an ILM policy, the system distributes the new policy to all nodes. However, the new active policy might not actually take effect until all grid nodes are available to receive the new policy. In some cases, the system waits to implement a new active policy to ensure that grid objects aren't accidentally removed.
+
+* If you make policy changes that increase data redundancy or durability, those changes are implemented immediately. For example, if you activate a new policy that includes a three-copies rule instead of a two-copies rule, that policy will be implemented right away because it increases data redundancy.
+* If you make policy changes that could decrease data redundancy or durability, those changes will not be implemented until all grid nodes are available. For example, if you activate a new policy that uses a two-copies rule instead of a three-copies rule, the new policy will appear in the Active policy tab but it will not take effect until all nodes are online and available.
+
+.Steps
+
+Follow the appropriate steps for activating one policy or multiple policies:
+
+//tabbed block starts here
++
+[role="tabbed-block"]
+====
+
+.One policy
+--
+
+. link:simulating-ilm-policy.html[Simulate an ILM policy]. You should always simulate a policy before activating it to ensure it works as expected.
+
+--
+//end One policy, begin Multiple policies
+
+.Multiple policies
+--
+
+.. 
+
+--
+====
+//end tabbed blocks
+
+ If you create more than one policy, create ILM policy tags and assign a policy to each tag.
++
+NOTE: Before you can activate multiple policies, you must create tags and assign a policy to each tag.

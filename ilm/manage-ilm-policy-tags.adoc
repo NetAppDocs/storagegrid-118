@@ -1,10 +1,10 @@
 ---
-permalink: ilm/use-ilm-policy-tags.html
+permalink: ilm/manage-ilm-policy-tags.html
 sidebar: sidebar
 keywords: ILM policy tag
 summary: 'To provide different quality-of-service options to tenants, you can have more than one active policy at a time. You create ILM policy tags and assign each ILM policy to a tag. Then tenants tag a bucket to apply a policy to the objects in the bucket.'
 ---
-= Use ILM policy tags
+= Manage ILM policy tags
 :icons: font
 :imagesdir: ../media/
 
