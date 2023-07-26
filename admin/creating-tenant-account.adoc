@@ -80,7 +80,7 @@ include::../_include/tenant-account-permissions.adoc[]
 
 . If you selected *Use grid federation connection*, select one of the available grid federation connections.
 +
-image:../media/grid-federation-select-tenant-permission.png[Grid federation select tenant permission]
+image::../media/grid-federation-select-tenant-permission.png[Grid federation select tenant permission]
 . Select *Continue*.
 
 == Define root access and create tenant
