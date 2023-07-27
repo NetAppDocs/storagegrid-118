@@ -15,7 +15,7 @@ Having one active ILM policy allows you to apply the same ILM rules to all tenan
 
 Having multiple active ILM policies allows you to apply the appropriate ILM rules to specific tenants and buckets to fulfill multiple quality-of-service requirements.
 
-== Create ILM policies
+== Create an ILM policy
 
 .About this task
 
