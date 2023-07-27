@@ -17,19 +17,17 @@ CAUTION: An ILM policy that has been incorrectly configured can result in unreco
 
 You can have one or more active ILM policies at a time.
 
-//Having one active ILM policy allows you to apply the same ILM rules to all tenants and buckets.
-
-//Having multiple active ILM policies allows you to apply the appropriate ILM rules to specific tenants and buckets to fulfill multiple quality-of-service requirements.
-
 One policy:: Use one policy if you want to apply the same ILM rules to all objects in all buckets or containers. The ILM rules can contain filters to manage different buckets or tenants.
 +
-However, if a tenant's requirements change, you must edit, simulate, and re-activate the existing ILM policy, which could result in object moves that could take many days, which can cause system latency.
+If a tenant's requirements change, you must edit, simulate, and re-activate the existing ILM policy, which could result in object moves that could take many days and cause system latency.
 
-Multiple policies:: Use multiple policies to manage different tenants, objects, and quality-of-service requirements or to more easily change their handling.
+Multiple policies:: To provide different quality-of-service options to tenants, you can have more than one active policy at a time. Each policy can manage specific tenants, buckets, and objects. When you apply or change one policy for a specific set of tenants or objects, the policies applied to other tenants and objects are not affected.
+
+ILM policy tags:: If you want to have multiple active policies at a time, use ILM policy tags. You assign each ILM policy to a tag, then tenants tag a bucket to apply the policy to that bucket.
 +
-When you apply or change one policy for a specific set of tenants or objects, the policies applied to other tenants and objects are not affected.
+For example, you might have three tags named Gold, Silver, and Bronze. You can assign an ILM policy to each tag, based on how long and where that policy stores objects. Tenants can choose which policy to use by tagging their buckets. A bucket tagged Gold is managed by the Gold policy and receives the Gold level of data protection and performance.
 +
-[[ilm-policy-tags]]If you want to have multiple active policies at a time, use link:use-ilm-policy-tags.html[ILM policy tags]. You assign each ILM policy to a tag, then tenants tag an S3 bucket or Swift container to apply the policy to that bucket or container. A default ILM policy tag is automatically created when you install StorageGRID.
+A default ILM policy tag is automatically created when you install StorageGRID. Every grid must have one active policy that is assigned to the Default tag. The default policy applies to all objects in untagged S3 buckets or Swift containers.
 
 [[default-ilm-policy]]
 == Default ILM policy
@@ -72,7 +70,7 @@ image::../media/ilm_policy_and_rules.png[ILM Policy and Rules]
 
 == What are active and inactive policies?
 
-Every StorageGRID system must have at least one active ILM policy. If you have more than one active ILM policy, you link:use-ilm-policy-tags.html[create policy tags] and assign a policy to each tag. Tenants then apply tags to buckets or containers. A <<ilm-policy-tags,default tag>> is automatically applied to a bucket (container) if no other tag is assigned.
+Every StorageGRID system must have at least one active ILM policy. If you have more than one active ILM policy, you create ILM policy tags and assign a policy to each tag. Tenants then apply tags to buckets or containers. A default tag is automatically applied to a bucket (container) if no other tag is assigned.
 
 When you first create an ILM policy, you select one or more ILM rules and arrange them in a specific order. After you have simulated the policy to confirm its behavior, you activate it.
 
