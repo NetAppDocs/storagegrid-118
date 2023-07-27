@@ -41,6 +41,6 @@ NOTE: Tenants should only use S3 Console when performing functions for a small n
 
 Note the following outcomes:
 
-Operations on folders:: When you move, copy, or rename a folder, all objects in the folder are updated one at a time, which might take time.
+* *Operations on folders*: When you move, copy, or rename a folder, all objects in the folder are updated one at a time, which might take time.
 
-Bucket versioning disabled:: When you overwrite or delete an object in a bucket with versioning disabled, the operation is permanent. See link:changing-bucket-versioning.html[Change object versioning for a bucket].
+* *Permanent deletion when bucket versioning is disabled*: When you overwrite or delete an object in a bucket with versioning disabled, the operation is permanent. See link:changing-bucket-versioning.html[Change object versioning for a bucket].
