@@ -40,7 +40,7 @@ You can use one or more storage pools or a different Cloud Storage Pool.
 +
 For Step 2 of the Create ILM rule wizard, select the new location from the *copies at* field.
 
-. link:creating-proposed-ilm-policy.html[Create a new proposed ILM policy] and replace each of the old rules with a cloned rule.
+. link:creating-ilm-policy.html[Create a new ILM policy] and replace each of the old rules with a cloned rule.
 
 . Activate the new policy.
 

@@ -165,6 +165,7 @@ IMPORTANT: You must confirm that the ILM rules are in the correct order. When th
 
 . link:simulating-ilm-policy.html[Simulate an ILM policy]. You should always simulate a policy before activating it to ensure it works as expected.
 
+[[simulate-ilm-policy]]
 == Simulate a policy
 
 Simulate a policy on test objects before activating the policy and applying it to your production data.
@@ -189,8 +190,11 @@ CAUTION: Review any changes to the placement of existing replicated and erasure-
 
 The Simulate proposed policy window retains the objects you tested until you select either *Clear all* or the remove icon image:../media/icon-x-to-remove.png[Remove icon] for each object in the Simulation results list.
 
-For more information about how to structure and correct ILM policy simulations, see link:simulating-ilm-policy-examples.html[Example ILM policy simulations].
+.Related information
 
+link:simulating-ilm-policy-examples.html[Example ILM policy simulations]
+
+[[activate-ilm-policy]]
 == Activate a policy
 
 When you activate a new ILM policy, the ILM rules in the policy determine which existing objects and newly ingested objects are managed by that policy.
@@ -209,6 +213,14 @@ When you activate an ILM policy, the system distributes the new policy to all no
 * If you make policy changes that increase data redundancy or durability, those changes are implemented immediately. For example, if you activate a new policy that includes a three-copies rule instead of a two-copies rule, that policy will be implemented right away because it increases data redundancy.
 * If you make policy changes that could decrease data redundancy or durability, those changes will not be implemented until all grid nodes are available. For example, if you activate a new policy that uses a two-copies rule instead of a three-copies rule, the new policy will appear in the Active policy tab but it will not take effect until all nodes are online and available.
 
+// To provide different quality-of-service options to tenants, you can have more than one active policy at a time. You create ILM policy tags and assign each ILM policy to a tag. Then tenants tag a bucket to apply a policy to the objects in the bucket.
+
+//A default ILM policy tag is automatically created when you install StorageGRID. Every grid must have one active policy that is assigned to the Default tag. The default policy applies to all objects in untagged S3 buckets or Swift containers.
+
+//If you activate more than one ILM policy at a time and tenants apply policy tags to buckets, the objects in each bucket are managed according to the policy assigned to the tag.
+
+//For example, you might have three tags named Gold, Silver, and Bronze. You can assign an ILM policy to each tag, based on how long and where that policy stores objects. Tenants can choose which policy to use by tagging their buckets. A bucket tagged Gold is managed by the Gold policy and receives the Gold level of data protection and performance.
+
 .Steps
 
 Follow the appropriate steps for activating one policy or multiple policies:
@@ -219,6 +231,10 @@ Follow the appropriate steps for activating one policy or multiple policies:
 ====
 .Activate one policy
 --
+Follow these steps if you will have only one active policy.
+
+If you already have one or more active policies and you are activating more policies, follow the steps for activating multiple policies.
+
 . When you are ready to activate a policy, select *ILM* > *Policies*.
 . On the Policies tab, select the checkbox for the policy you want to activate, then select *Activate*.
 +
@@ -227,7 +243,7 @@ A warning message is displayed, prompting you to confirm that you want to activa
 . When you have reviewed the details of the warning message and are sure the policy would manage data as expected:
 .. Type *yes* in the text box.
 .. Select *Activate policy*.
-
+--
 .Activate multiple policies
 --
 Before you can activate multiple policies, you must create tags and assign a policy to each tag.

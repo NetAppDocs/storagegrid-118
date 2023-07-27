@@ -24,16 +24,12 @@ You can have one or more active ILM policies at a time.
 One policy:: Use one policy if you want to apply the same ILM rules to all objects in all buckets or containers. The ILM rules can contain filters to manage different buckets or tenants.
 +
 However, if a tenant's requirements change, you must edit, simulate, and re-activate the existing ILM policy, which could result in object moves that could take many days, which can cause system latency.
-+
-See link:creating-one-ilm-policy.html[Create one ILM policy]
 
 Multiple policies:: Use multiple policies to manage different tenants, objects, and quality-of-service requirements or to more easily change their handling.
 +
 When you apply or change one policy for a specific set of tenants or objects, the policies applied to other tenants and objects are not affected.
 +
 [[ilm-policy-tags]]If you want to have multiple active policies at a time, use link:use-ilm-policy-tags.html[ILM policy tags]. You assign each ILM policy to a tag, then tenants tag an S3 bucket or Swift container to apply the policy to that bucket or container. A default ILM policy tag is automatically created when you install StorageGRID.
-+
-See link:creating-multiple-ilm-policies.html[Create multiple ILM policies]
 
 [[default-ilm-policy]]
 == Default ILM policy
@@ -43,7 +39,7 @@ When you install StorageGRID and add sites, a default ILM policy is automaticall
 * If your grid contains one site, the default policy contains a default rule that replicates two copies of each object at that site.
 * If your grid contains more than one site, the default rule replicates one copy of each object at each site.
 
-If the default policy does not meet your storage requirements, you can create your own rules and policy. See link:what-ilm-rule-is.html[Create an ILM rule] and link:creating-proposed-ilm-policy.html[Create an ILM policy].
+If the default policy does not meet your storage requirements, you can create your own rules and policy. See link:what-ilm-rule-is.html[Create an ILM rule] and link:creating-ilm-policy.html[Create an ILM policy].
 
 == How does an ILM policy evaluate objects?
 

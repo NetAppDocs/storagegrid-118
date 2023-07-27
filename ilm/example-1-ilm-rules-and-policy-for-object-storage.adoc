@@ -77,5 +77,5 @@ image::../media/policy_1_configured_policy.png[ILM policy for example 1]
 
 .Related information
 
-* link:creating-ilm-policy.html[Create an ILM policy: Overview]
-* link:creating-proposed-ilm-policy.html[Create a proposed ILM policy]
+* link:ilm-policy-overview.html[ILM policies: Overview]
+* link:creating-ilm-policy.html[Create ILM policies]

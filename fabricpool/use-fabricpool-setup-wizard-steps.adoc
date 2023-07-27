@@ -406,7 +406,7 @@ The placement instruction starts when objects are initially saved to the bucket.
 
 == Step 7 of 9: Review and activate ILM policy
 
-After the FabricPool setup wizard creates the ILM rule for FabricPool use, it creates a proposed ILM policy. You must carefully review this policy before activating it. 
+After the FabricPool setup wizard creates the ILM rule for FabricPool use, it creates a proposed ILM policy. You must carefully simulate and review this policy before activating it. 
 
 For details about this step, see link:../ilm/creating-ilm-policy.html[Create ILM policy] and link:best-practices-ilm.html[Best practices for using ILM with FabricPool data].
 
@@ -449,7 +449,7 @@ The wizard can now clone your active policy to create a new proposed policy. The
 
 |===
 +
-See link:../ilm/creating-proposed-ilm-policy.html[Create proposed ILM policy] if you need more detailed instructions.
+See link:../ilm/creating-ilm-policy.html[Create ILM policies] if you need more detailed instructions.
 
 
 . Review the order of the rules in the new policy. 

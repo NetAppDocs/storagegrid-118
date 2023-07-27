@@ -96,8 +96,6 @@ entries:
       url: "/ilm/creating-ilm-policy.html"
     - title: Example ILM policy simulations
       url: "/ilm/simulating-ilm-policy-examples.html"
-    - title: Activate ILM policy
-      url: "/ilm/activating-ilm-policy.html"
     - title: Manage ILM policy tags
       url: "/ilm/manage-ilm-policy-tags.html"
     - title: Verify ILM policy with object metadata lookup

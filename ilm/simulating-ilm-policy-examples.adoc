@@ -11,7 +11,7 @@ summary: 'The examples of ILM policy simulations provide guidelines for structur
 [.lead]
 The examples of ILM policy simulations provide guidelines for structuring and modifying simulations for your environment.
 
-== Example 1: Verify rules when simulating a proposed ILM policy
+== Example 1: Verify rules when simulating an ILM policy
 
 This example describes how to verify rules when simulating a proposed policy.
 
@@ -31,7 +31,7 @@ In this example:
 * `bucket-b/test object greater than 1 MB.pdf` is in `bucket-b`, so it did not match the first rule. Instead, it was correctly matched by the second rule, which filters on objects greater than 1 MB.
 * `bucket-b/test object less than 1 MB.pdf` did not match the filters in the first two rules, so it will be placed by the default rule, which includes no filters.
 
-== Example 2: Reorder rules when simulating a proposed ILM policy
+== Example 2: Reorder rules when simulating an ILM policy
 
 This example shows how you can reorder rules to change the results when simulating a policy.
 
@@ -64,7 +64,7 @@ image::../media/simulate_reorder_rules_correct_result.png[Example 2: Reordering 
 +
 NOTE: If you stay on the Proposed policy tab, you can re-simulate a policy after making changes without needing to re-enter the names of the test objects.
 
-== Example 3: Correct a rule when simulating a proposed ILM policy
+== Example 3: Correct a rule when simulating an ILM policy
 
 This example shows how to simulate a policy, correct a rule in the policy, and continue the simulation.
 
