@@ -58,7 +58,7 @@ You can only assign this permission to Swift groups from the Tenant Management A
 | 
 Users who don't have either the View all buckets or the Manage all buckets permission don't see the *Buckets* menu option.
 
-This permission is superseded by the View all buckets permission. It does not affect S3 bucket or group polices used by S3 clients or S3 Console.
+This permission supersedes the View all buckets permission. It does not affect S3 bucket or group polices used by S3 clients or S3 Console.
 
 You can only assign this permission to Swift groups from the Tenant Management API. You can't assign this permission to Swift groups using the Tenant Manager.
 
