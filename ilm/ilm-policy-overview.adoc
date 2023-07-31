@@ -20,9 +20,13 @@ You can have one or more active ILM policies at a time.
 One policy:: Use one policy if you want to apply the same ILM rules to all objects in all buckets or containers. The ILM rules can contain filters to manage different buckets or tenants.
 +
 If a tenant's requirements change, you must edit, simulate, and re-activate the existing ILM policy, which could result in object moves that could take many days and cause system latency.
++
+If your grid will use a simple data protection scheme with few tenant-specific and bucket-specific rules, use a single active ILM policy.
 
 Multiple policies:: To provide different quality-of-service options to tenants, you can have more than one active policy at a time. Each policy can manage specific tenants, buckets, and objects. When you apply or change one policy for a specific set of tenants or objects, the policies applied to other tenants and objects are not affected.
-
++ 
+If you want to allow tenants to easily switch between multiple data protection policies on a per-bucket basis, use multiple ILM policies with policy tags.
+ 
 ILM policy tags:: If you want to have multiple active policies at a time, use ILM policy tags. You assign each ILM policy to a tag, then tenants tag a bucket to apply the policy to that bucket.
 +
 For example, you might have three tags named Gold, Silver, and Bronze. You can assign an ILM policy to each tag, based on how long and where that policy stores objects. Tenants can choose which policy to use by tagging their buckets. A bucket tagged Gold is managed by the Gold policy and receives the Gold level of data protection and performance.
