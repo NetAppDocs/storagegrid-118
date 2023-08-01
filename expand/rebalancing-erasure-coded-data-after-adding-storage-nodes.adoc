@@ -41,9 +41,7 @@ NOTE: S3 and Swift API operations to upload objects (or object parts) might fail
 
 ** The Site Imbalance metric reaches 0.02 (2%). This metric measures the standard deviation of per node EC data against total EC data, and it can range from 0.5 to 0. Zero means erasure-coding data usage is completely balanced across all Storage Nodes at the site. 
 
-
-
-** The procedure has been running continuously for 30 days. 
+** The procedure has been running for 30 days. 
 
 .Steps
 
@@ -126,4 +124,3 @@ Erasure-coded data should now be more balanced among the Storage Nodes at the si
 NOTE: When you terminate an EC rebalance procedure, any data fragments that have already been moved remain in their new locations. Data is not moved back to the original location.
 
 . If you are using erasure coding at more than one site, run this procedure for all other affected sites.
-
