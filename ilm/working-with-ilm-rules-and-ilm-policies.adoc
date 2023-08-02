@@ -18,13 +18,13 @@ As your storage requirements change, you might need put a different policy in pl
 
 == View ILM policies
 
-To view active, proposed, and historical ILM policies:
+To view active and inactive ILM policies and policy activation history:
 
 . Select *ILM* > *Policies*.
 
-. As needed, select *Active policy*, *Proposed policy*, or *Policy history* to view the details for each. In each tab, you can select *Policy rules* and *Retention diagram*.
+. Select *Policies* to view a list of active and inactive policies. The table lists the name of each policy, the tags the policy is assigned to, and whether the policy is active or inactive.
 
-image::../media/ilm_policy_active_proposed_history_tabs.png[ILM Policy Tabs]
+. Select *Activation history* to view a list of activation start and end dates for policies.
 
 == Clone a historical ILM policy
 
