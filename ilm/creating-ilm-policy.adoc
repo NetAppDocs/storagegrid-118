@@ -246,6 +246,8 @@ Before you can activate multiple policies, you must create tags and assign a pol
 . In the ILM policy tags table, use the pull-down to select a policy to assign to the tag.
 . If warnings appear in the Policy limitations column, select *View policy details* to review the policy. Then take the recommended action.
 . Select *Activate assigned policies*. Or, select *Clear changes* to remove the policy assignment.
+. In the Activate policies with new tags dialog box, review the descriptions of how each tag, policy, and rule will manage objects. Make changes as needed to ensure the policies will manage objects as expected.
+. When you are sure you want to activate the policies, type *yes* in the text box, then select *Activate policies*.
 --
 ====
 //end tabbed block
