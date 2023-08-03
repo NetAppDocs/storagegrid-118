@@ -198,7 +198,7 @@ link:simulating-ilm-policy-examples.html[Example ILM policy simulations]
 [[activate-ilm-policy]]
 == Activate a policy
 
-When you activate a new ILM policy, the ILM rules in the policy determine which existing objects and newly ingested objects are managed by that policy.
+When you activate a single new ILM policy, existing objects and newly ingested objects are managed by that policy. When you activate multiple policies, ILM policy tags assigned to buckets determine the objects to be managed.
 
 Before you activate a new policy:
 
@@ -227,11 +227,17 @@ Follow the steps for activating one policy or multiple policies:
 Follow these steps if you will have only one active policy. If you already have one or more active policies and you are activating additional policies, follow the steps for activating multiple policies.
 
 . When you are ready to activate a policy, select *ILM* > *Policies*.
-. On the Policies tab, select the checkbox for the policy you want to activate, then select *Activate*.
 +
-A warning message is displayed, prompting you to confirm that you want to activate the policy.
+Alternatively, you can activate a single policy from the *ILM* > *Policy tags* page.
 
-. When you have reviewed the details of the warning message and are sure the policy would manage data as expected:
+. On the Policies tab, select the checkbox for the policy you want to activate, then select *Activate*.
+
+. Follow the appropriate step:
++
+* If a warning message prompts you to confirm that you want to activate the policy, select *OK*.
+* If a warning message containing details about the policy appears:
++
+.. Review the details to ensure the policy would manage data as expected.
 .. Type *yes* in the text box.
 .. Select *Activate policy*.
 --
@@ -244,7 +250,8 @@ Before you can activate multiple policies, you must create tags and assign a pol
 . In the Create policy tag dialog box, type a tag name and, optionally, a description for the tag.
 . Select *Create tag*.
 . In the ILM policy tags table, use the pull-down to select a policy to assign to the tag.
-. If warnings appear in the Policy limitations column, select *View policy details* to review the policy. Then take the recommended action.
+. If warnings appear in the Policy limitations column, select *View policy details* to review the policy.
+. Ensure each policy would manage data as expected.
 . Select *Activate assigned policies*. Or, select *Clear changes* to remove the policy assignment.
 . In the Activate policies with new tags dialog box, review the descriptions of how each tag, policy, and rule will manage objects. Make changes as needed to ensure the policies will manage objects as expected.
 . When you are sure you want to activate the policies, type *yes* in the text box, then select *Activate policies*.
