@@ -259,10 +259,6 @@ Before you can activate multiple policies, you must create tags and assign a pol
 ====
 //end tabbed block
 
-.Result
-
-When a new ILM policy has been activated, the Policy state for the policy is changed to Active.
-
 .Related information
 
 link:example-6-changing-ilm-policy.html[Example 6: Changing an ILM policy]
