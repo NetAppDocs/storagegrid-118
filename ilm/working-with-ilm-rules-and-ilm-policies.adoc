@@ -24,6 +24,8 @@ To view active and inactive ILM policies and policy activation history:
 
 . Select *Policies* to view a list of active and inactive policies. The table lists the name of each policy, the tags the policy is assigned to, and whether the policy is active or inactive.
 
+. Select a policy name to view the details for the policy.
+
 . Select *Activation history* to view a list of activation start and end dates for policies.
 
 == Edit an ILM policy
@@ -50,6 +52,8 @@ To clone an ILM policy:
 
 . Create a new policy starting with the policy you've cloned by following the instructions in link:creating-ilm-policy.html[Create ILM policies].
 
+//if a rule in your "snapshot" no longer exists or has been edited, verify that the edits work for your current situation. banner will appear 
+
 CAUTION: An ILM policy that has been incorrectly configured can result in unrecoverable data loss. Before activating an ILM policy, carefully review the ILM policy and its ILM rules, and then simulate the ILM policy. Always confirm that the ILM policy will work as intended. 
 
 == Remove an ILM policy
@@ -73,9 +77,7 @@ Additionally, you can use the details page to clone, edit, or remove a rule.
 
 == Clone an ILM rule
 
-You can't edit a rule if it is being used in an active ILM policy. Instead, you can clone a rule and make any required changes to the cloned copy. Then, if required, you can remove the original rule from the policy and replace it with the modified version. You can't clone an ILM rule if it was created using StorageGRID version 10.2 or earlier.
-
-Before adding a cloned rule to the active ILM policy, be aware that a change to an object's placement instructions might cause an increased load on the system.
+You can't edit a rule if it is used in any ILM policy. Instead, you can clone a rule and make any required changes to the cloned copy. Then, if required, you can remove the original rule from the policy and replace it with the modified version. You can't clone an ILM rule if it was created using StorageGRID version 10.2 or earlier.
 
 .Steps
 
@@ -89,7 +91,7 @@ When cloning an ILM rule, you must enter a new name.
 
 You might need to edit an ILM rule to change a filter or placement instruction.
 
-You can't edit a rule if it is being used in an active ILM policy. Instead, you can clone these rules and make any required changes to the cloned copy. You also can't edit the system-provided rule, Make 2 Copies.
+You can't edit a rule if it is used in any ILM policy. Instead, you can clone the rule and make any required changes to the cloned copy. You also can't edit the system-provided rule, Make 2 Copies.
 
 NOTE: Before adding an edited rule to the active ILM policy, be aware that a change to an object's placement instructions might cause an increased load on the system.
 
@@ -97,11 +99,11 @@ NOTE: Before adding an edited rule to the active ILM policy, be aware that a cha
 . Select *ILM* > *Rules*.
 . Confirm that the rule you want to edit is not used in an active ILM policy.
 . If the rule you want to edit is not in use, select the checkbox for the rule and select *Actions* > *Edit*. Alternatively, select the name of the rule, then select *Edit* on the rule details page. 
-. Complete the pages of the Edit ILM rule wizard. As necessary, follow the steps for link:create-ilm-rule-enter-details.html[creating an ILM rule] and link:create-ilm-rule-enter-details.html#use-advanced-filters-in-ilm-rules[using advanced filters in ILM rules].
+. Complete the steps of the Edit ILM rule wizard. As necessary, follow the steps for link:create-ilm-rule-enter-details.html[creating an ILM rule] and link:create-ilm-rule-enter-details.html#use-advanced-filters-in-ilm-rules[using advanced filters in ILM rules].
 +
 When editing an ILM rule, you can't change its name.
 +
-NOTE: If you edit a rule that is used in a historical policy, the image:../media/icon_ilm_rule_historical.png[Icon ILM Rule Historical] icon appears for the rule when you view the policy, which indicates that the rule has become a historical rule.
+NOTE: If you edit a rule if it is used in any ILM policy, the image:../media/icon_ilm_rule_historical.png[Icon ILM Rule Historical] icon appears for the rule when you view the policy, which indicates that the rule has become a historical rule.
 
 == Remove an ILM rule
 
@@ -123,8 +125,12 @@ To remove an ILM rule that is not currently used:
 . Select *Yes* to confirm that you want to remove the ILM rule.
 +
 The ILM rule is removed.
-+
-NOTE: If you remove a rule that is used in a historical policy, the image:../media/icon_ilm_rule_historical.png[Icon ILM Rule Historical] icon appears for the rule when you view the policy, which indicates that the rule has become a historical rule.
+//+
+//NOTE: If you remove a rule from a policy that is inactive, the image:../media/icon_ilm_rule_historical.png[Icon ILM Rule Removed] icon appears for the rule when you view the policy details.
+
+//snapshot of policy at a given time
+//the clock icon means the rule that you're viewing in the historical snapshot has been removed/edited
+//might inactivate, delete, edit policy
 
 == View ILM metrics
 
