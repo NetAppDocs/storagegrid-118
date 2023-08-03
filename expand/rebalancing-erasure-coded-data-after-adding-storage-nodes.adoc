@@ -27,11 +27,21 @@ Before starting the procedure, note the following:
 
 * The EC rebalance procedure temporarily reserves a large amount of storage. Storage alerts might be triggered, but will resolve when the rebalance is complete. If there is not enough storage for the reservation, the EC rebalance procedure will fail. Storage reservations are released when the EC rebalance procedure completes, whether the procedure failed or succeeded.
 
-* If a volume goes offline or experiences an error while an EC rebalance is in process, the rebalance process terminates partially completed with no loss of data. The EC rebalance procedure can be resumed at the point where it terminated when all volumes are online without error.
+* If a volume goes offline while the EC rebalance procedure is in process, the rebalance procedure will terminate. Any data fragments that were already moved will remain in their new locations, and no data will be lost.
++
+You can rerun the procedure after all volumes are back online.  
 
 * When the EC rebalance procedure is running, the performance of ILM operations and S3 and Swift client operations might be impacted. 
 +
-NOTE: S3 and Swift API operations to upload objects (or object parts) might fail during the EC rebalancing procedure if they require more than 24 hours to complete. Long-duration PUT operations will fail if the applicable ILM rule uses Balanced or Strict placement on ingest. The following error will be reported: `500 Internal Server Error`.
+NOTE: S3 and Swift API operations to upload objects (or object parts) might fail during the EC rebalance procedure if they require more than 24 hours to complete. Long-duration PUT operations will fail if the applicable ILM rule uses Balanced or Strict placement on ingest. The following error will be reported: `500 Internal Server Error`.
+
+* The EC rebalance procedure is considered complete when any of the following is true:
+
+** It can't move any more erasure-coded data.
+
+** The Site Imbalance metric reaches 0.02 (2%). This metric measures the standard deviation of per node EC data against total EC data, and it can range from 0.5 to 0. Zero means erasure-coding data usage is completely balanced across all Storage Nodes at the site. 
+
+** The procedure has been running for 30 days. 
 
 .Steps
 
@@ -59,7 +69,7 @@ The EC rebalance procedure starts, and a job ID is returned.
 
 . Copy the job ID.
 
-. Monitor the status of the EC rebalance procedure.
+. [[view-status]]Monitor the status of the EC rebalance procedure.
 
  ** To view the status of a single EC rebalance procedure:
 +
@@ -81,28 +91,18 @@ To get help on the rebalance-data command:
 
 . Perform additional steps, based on the status returned:
 
-** If the status is `In progress`, the EC rebalance operation is still running. You should periodically monitor the procedure until it completes.
+** If `State` is `In progress`, the EC rebalance operation is still running. You should periodically monitor the procedure until it completes.
 +
-To view the estimated time to completion and the completion percentage for the current job:
+Use the `Site Imbalance` value to assess how unbalanced erasure-code data usage is across the Storage Nodes at the site. This value can range from 0.5 to 0, with 0 indicating that erasure-coding data usage is completely balanced across all Storage Nodes at the site.
++ 
+The EC rebalance job is considered complete and will stop when this value reaches 0.02 (on average, all nodes are balanced within 2% of each other).
 
-.. Select *SUPPORT* > *Tools* > *Metrics*. 
-.. Select *EC Overview* in the Grafana section.
-.. Look at the *Grid EC Job Estimated Time to Completion* and *Grid EC Job Percentage Completed* dashboards.
-
-
-** If the status is `Success`, optionally <<review_object_storage,review object storage>> to see the updated details for the site.
+** If `State` is `Success`, optionally <<review_object_storage,review object storage>> to see the updated details for the site.
 +
 Erasure-coded data should now be more balanced among the Storage Nodes at the site.
-+
-[TIP]
-====
-If the following message appears, run the EC rebalance procedure again until all erasure-coded data has been rebalanced:
 
-`The moves in this rebalance job have been limited. To rebalance additional data, start EC rebalance again for the same site.`
 
-====
-
-** If the status is `Failure`:
+** If `State` is `Failure`:
 
 .. Confirm that all Storage Nodes at the site are connected to the grid.
 .. Check for and resolve any alerts that might be affecting these Storage Nodes.
@@ -111,7 +111,7 @@ If the following message appears, run the EC rebalance procedure again until all
 +
 `rebalance-data start –-job-id _job-id_`
  
-.. If the status of the EC rebalance procedure is still `Failure`, contact technical support.
+.. <<view-status,View the status>> of the new procedure. If `State` is still `Failure`, contact technical support.
 
 . If the EC rebalance procedure is generating too much load (for example, ingest operations are affected), pause the procedure.
 +
@@ -121,7 +121,6 @@ If the following message appears, run the EC rebalance procedure again until all
 +
 `rebalance-data terminate --job-id _job-id_`
 +
-NOTE: When you terminate an EC rebalance procedure, any data fragments that have already been moved remain in the new location. Data is not moved back to the original location.
+NOTE: When you terminate an EC rebalance procedure, any data fragments that have already been moved remain in their new locations. Data is not moved back to the original location.
 
 . If you are using erasure coding at more than one site, run this procedure for all other affected sites.
-
