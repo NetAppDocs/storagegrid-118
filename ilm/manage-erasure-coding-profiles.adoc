@@ -81,7 +81,7 @@ image::../media/ec_profile_used_in_ilm_rule.png[EC Profile Used in ILM Rule]
 . If the profile is used in an ILM rule, follow these steps:
 .. Select *ILM* > *Rules*.
 .. Select each rule and review the retention diagram to determine if the rule uses the erasure-coding profile you want to deactivate.
-.. If the ILM rule uses the erasure-coding profile you want to deactivate, determine if the rule is used in either the active ILM policy or a proposed policy.
+.. If the ILM rule uses the erasure-coding profile you want to deactivate, determine if the rule is used in any ILM policy.
 .. Complete the additional steps in the table, based on where the erasure-coding profile is used.
 +
 [cols="2a,4a,1a" options="header"]
@@ -118,12 +118,12 @@ link:creating-ilm-policy.html[Create an ILM policy]
 
 link:working-with-ilm-rules-and-ilm-policies.html[Work with ILM rules and ILM policies]
 
-| In an ILM rule that is currently in a proposed ILM policy
+| In an ILM rule that is currently in an ILM policy
 | 
-. Edit the proposed policy.
+. Edit the policy.
 . Remove the ILM rule that uses the erasure-coding profile.
 . Add one or more new ILM rules to ensure all objects are protected.
-. Save the proposed policy.
+. Save the policy.
 . Edit or delete the rule you removed from the policy. If you edit the rule, remove all placements that use the erasure-coding profile.
 . Continue with this procedure.
 | 

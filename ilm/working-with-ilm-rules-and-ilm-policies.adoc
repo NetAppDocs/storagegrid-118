@@ -25,8 +25,10 @@ To view active and inactive ILM policies and policy activation history:
 . Select *Policies* to view a list of active and inactive policies. The table lists the name of each policy, the tags the policy is assigned to, and whether the policy is active or inactive.
 
 . Select a policy name to view the details for the policy.
++
+NOTE: If you view the details for a policy whose status is Edited or Deleted, a message appears explaining that you are viewing the version of the policy that was active for the specified time span and has since been edited or deleted.
 
-. Select *Activation history* to view a list of activation start and end dates for policies.
+. Select *Activation history* to view a list of activation start and end dates for policies. 
 
 == Edit an ILM policy
 
@@ -51,8 +53,6 @@ To clone an ILM policy:
 . Select the checkbox for the policy you want to clone, then select *Clone*.
 
 . Create a new policy starting with the policy you've cloned by following the instructions in link:creating-ilm-policy.html[Create ILM policies].
-
-//if a rule in your "snapshot" no longer exists or has been edited, verify that the edits work for your current situation. banner will appear 
 
 CAUTION: An ILM policy that has been incorrectly configured can result in unrecoverable data loss. Before activating an ILM policy, carefully review the ILM policy and its ILM rules, and then simulate the ILM policy. Always confirm that the ILM policy will work as intended. 
 
@@ -125,12 +125,8 @@ To remove an ILM rule that is not currently used:
 . Select *Yes* to confirm that you want to remove the ILM rule.
 +
 The ILM rule is removed.
-//+
-//NOTE: If you remove a rule from a policy that is inactive, the image:../media/icon_ilm_rule_historical.png[Icon ILM Rule Removed] icon appears for the rule when you view the policy details.
-
-//snapshot of policy at a given time
-//the clock icon means the rule that you're viewing in the historical snapshot has been removed/edited
-//might inactivate, delete, edit policy
++
+NOTE: If you remove a rule from a policy that is inactive, the image:../media/icon_clock.png[Icon Clock] icon appears for the rule when you view the policy details.
 
 == View ILM metrics
 
