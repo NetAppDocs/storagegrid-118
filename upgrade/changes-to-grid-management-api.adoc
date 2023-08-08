@@ -15,11 +15,11 @@ IMPORTANT: You can continue to use deprecated versions of the management API wit
 
 To learn more, go to link:../admin/using-grid-management-api.html[Use the Grid Management API].
 
-== `ilm-policies-v4` API removed
+== Changes for `ilm-policies` API
 
-The removal of the `ilm-policies-v4` API results in the following changes:
+The `ilm-policies` API for StorageGRID 11.8 contains the following differences from the API for StorageGRID 11.7 and earlier:
 
 * Historical policies are no longer returned. A new, separate API for getting historical policy and tag data has been added at `/grid/ilm-history`.
 * Properties removed: `proposed`, `historical`, `historicalRules`, `activationTime`.
 * Properties added: `active` (boolean), `activatedBy` (array of tag UUIDs that the policy is assigned to).
-* The optional type query parameter now takes values `inactive` and `active.` The previous values in v3 were `proposed`, `active`, and `historical`.
+* The optional type query parameter for `GET ilm-policies` now takes the values `inactive` and `active.` The previous values were `proposed`, `active`, and `historical`.
