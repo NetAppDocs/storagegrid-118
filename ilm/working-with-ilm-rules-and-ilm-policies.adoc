@@ -25,10 +25,10 @@ To view active and inactive ILM policies and policy activation history:
 . Select *Policies* to view a list of active and inactive policies. The table lists the name of each policy, the tags the policy is assigned to, and whether the policy is active or inactive.
 
 . Select a policy name to view the details for the policy.
-+
-NOTE: If you view the details for a policy whose status is Edited or Deleted, a message appears explaining that you are viewing the version of the policy that was active for the specified time span and has since been edited or deleted.
 
 . Select *Activation history* to view a list of activation start and end dates for policies. 
++
+NOTE: If you view the details for a policy whose status is Edited or Deleted, a message appears explaining that you are viewing the version of the policy that was active for the specified time span and has since been edited or deleted.
 
 == Edit an ILM policy
 
@@ -102,8 +102,6 @@ NOTE: Before adding an edited rule to the active ILM policy, be aware that a cha
 . Complete the steps of the Edit ILM rule wizard. As necessary, follow the steps for link:create-ilm-rule-enter-details.html[creating an ILM rule] and link:create-ilm-rule-enter-details.html#use-advanced-filters-in-ilm-rules[using advanced filters in ILM rules].
 +
 When editing an ILM rule, you can't change its name.
-+
-NOTE: If you edit a rule if it is used in any ILM policy, the image:../media/icon_ilm_rule_historical.png[Icon ILM Rule Historical] icon appears for the rule when you view the policy, which indicates that the rule has become a historical rule.
 
 == Remove an ILM rule
 
@@ -125,8 +123,6 @@ To remove an ILM rule that is not currently used:
 . Select *Yes* to confirm that you want to remove the ILM rule.
 +
 The ILM rule is removed.
-+
-NOTE: If you remove a rule from a policy that is inactive, the image:../media/icon_clock.png[Icon Clock] icon appears for the rule when you view the policy details.
 
 == View ILM metrics
 
