@@ -17,7 +17,7 @@ To learn more, go to link:../admin/using-grid-management-api.html[Use the Grid M
 
 == Changes for `ilm-policies` API v4
 
-The version 4 `ilm-policies` API, effective starting with StorageGRID 11.8, contains the following differences from the version 3:
+Effective starting with StorageGRID 11.8, version 4 of the `ilm-policies` API contains the following differences from the version 3:
 
 * Historical policies are no longer returned. A new, separate API for getting historical policy and tag data has been added at `/grid/ilm-history`.
 * Properties removed: `proposed`, `historical`, `historicalRules`, `activationTime`.
