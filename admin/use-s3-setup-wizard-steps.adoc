@@ -352,7 +352,7 @@ CAUTION: Don't close this page until you have copied both access keys. The keys 
 
 == Step 5 of 6: Review ILM rule and ILM policy for S3
 
-Information lifecycle management (ILM) rules control the placement, duration, and ingest behavior of all objects in your StorageGRID system. The ILM policy included with StorageGRID makes two replicated copies of all objects. This policy is in effect until you create a new proposed policy and activate it.
+Information lifecycle management (ILM) rules control the placement, duration, and ingest behavior of all objects in your StorageGRID system. The ILM policy included with StorageGRID makes two replicated copies of all objects. This policy is in effect until you activate at least one new policy.
 
 .Steps
 
