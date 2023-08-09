@@ -11,7 +11,7 @@ summary: 'You can use the following example rules and policy to ensure that imag
 [.lead]
 You can use the following example rules and policy to ensure that images greater than 1 MB are erasure-coded and that two copies are made of smaller images.
 
-CAUTION: The following ILM rules and policy are only examples. There are many ways to configure ILM rules. Before activating a new policy, simulate the proposed policy to confirm it will work as intended to protect content from loss.
+CAUTION: The following ILM rules and policy are only examples. There are many ways to configure ILM rules. Before activating a new policy, simulate it to confirm it will work as intended to protect content from loss.
 
 == ILM rule 1 for example 3: Use EC for image files greater than 1 MB
 
