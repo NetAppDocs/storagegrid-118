@@ -13,7 +13,7 @@ From Step 3 (Revise ILM Policy) of the Decommission Site wizard, you can determi
 
 .Before you begin
 
-You have a good understanding of how to link:../ilm/index.html[manage objects with ILM]. and you are familiar with creating storage pools, erasure-coding profiles, ILM rules, and simulating and activating an ILM policy.
+You have a good understanding of how to link:../ilm/index.html[manage objects with ILM], and you are familiar with creating storage pools, erasure-coding profiles, ILM rules, and simulating and activating an ILM policy.
 
 .About this task
 
