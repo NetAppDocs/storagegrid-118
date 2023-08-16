@@ -33,6 +33,13 @@ For example, you might have three tags named Gold, Silver, and Bronze. You can a
 +
 A default ILM policy tag is automatically created when you install StorageGRID. Every grid must have one active policy that is assigned to the Default tag. The default policy applies to all objects in untagged S3 buckets or Swift containers.
 
+The following diagram illustrates the difference between the ILM policy feature for StorageGRID 11.7 and earlier and StorageGRID 11.8. In particular, it shows:
+
+* A single policy (before StorageGRID 11.8) with filters for tenants and buckets applied to the rules in the policy.
+* Multple policies (StorageGRID 11.8)
+
+image::../media/ilm-policies-tags-conceptual-without-buckets.png[Multiple ILM policies diagram]
+
 [[default-ilm-policy]]
 == Default ILM policy
  
@@ -41,7 +48,7 @@ When you install StorageGRID and add sites, a default ILM policy is automaticall
 * If your grid contains one site, the default policy contains a default rule that replicates two copies of each object at that site.
 * If your grid contains more than one site, the default rule replicates one copy of each object at each site.
 
-If the default policy does not meet your storage requirements, you can create your own rules and policy. See link:what-ilm-rule-is.html[Create an ILM rule] and link:creating-ilm-policy.html[Create an ILM policy].
+If the default policy does not meet your storage requirements, you can create your own rules and policy. See link:what-ilm-rule-is.html[Create an ILM rule] and link:creating-ilm-policy.html[Create an ILM policy]. Each policy is assigned to a tag. Tenants can have their buckets managed by the appropriate policy by applying a tag to their buckets.
 
 == How does an ILM policy evaluate objects?
 
