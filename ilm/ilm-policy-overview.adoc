@@ -36,7 +36,7 @@ A default ILM policy tag is automatically created when you install StorageGRID. 
 The following diagram illustrates the difference between the ILM policy feature for StorageGRID 11.7 and earlier and StorageGRID 11.8. In particular, it shows:
 
 * A single policy (before StorageGRID 11.8) with filters for tenants and buckets applied to the rules in the policy.
-* Multple policies (StorageGRID 11.8)
+* Multiple policies (StorageGRID 11.8) assigned to tags that tenants can apply to buckets.
 
 image::../media/ilm-policies-tags-conceptual-without-buckets.png[Multiple ILM policies diagram]
 
