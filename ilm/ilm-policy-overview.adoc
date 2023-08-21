@@ -29,6 +29,8 @@ If you want to allow tenants to easily switch between multiple data protection p
  
 ILM policy tags:: If you want to have multiple active policies at a time, use ILM policy tags. You assign each ILM policy to a tag, then tenants tag a bucket to apply the policy to that bucket.
 +
+A default ILM policy tag is automatically created when you install StorageGRID. Every grid must have one active policy that is assigned to the Default tag. The default policy applies to all objects in untagged S3 buckets or Swift containers.
++
 For example, you might have three tags named Gold, Silver, and Bronze. You can assign an ILM policy to each tag, based on how long and where that policy stores objects. Tenants can choose which policy to use by tagging their buckets. A bucket tagged Gold is managed by the Gold policy and receives the Gold level of data protection and performance.
 +
 A default ILM policy tag is automatically created when you install StorageGRID. Every grid must have one active policy that is assigned to the Default tag. The default policy applies to all objects in untagged S3 buckets or Swift containers.
@@ -50,7 +52,7 @@ When you install StorageGRID and add sites, a default ILM policy is automaticall
 * If your grid contains one site, the default policy contains a default rule that replicates two copies of each object at that site.
 * If your grid contains more than one site, the default rule replicates one copy of each object at each site.
 
-If the default policy does not meet your storage requirements, you can create your own rules and policy. See link:what-ilm-rule-is.html[Create an ILM rule] and link:creating-ilm-policy.html[Create an ILM policy]. Each policy is assigned to a tag. Tenants can have their buckets managed by the appropriate policy by applying a tag to their buckets.
+If the default policy does not meet your storage requirements, you can create your own rules and policy. See link:what-ilm-rule-is.html[Create an ILM rule] and link:creating-ilm-policy.html[Create an ILM policy].
 
 == How does an ILM policy evaluate objects?
 
