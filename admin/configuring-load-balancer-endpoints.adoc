@@ -57,7 +57,7 @@ Each load balancer endpoint specifies a port, a client type (S3 or Swift), and a
 
 .Steps
 
-. Select the appropriate instructions to enter details for the type of endpoint you're creating.
+. Select the appropriate instructions to enter details for the type of endpoint you want to create.
 
 // start tabbed area
 
