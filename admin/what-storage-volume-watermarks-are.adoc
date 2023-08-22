@@ -59,16 +59,12 @@ You can view the current storage watermark settings in the Grid Manager.
 
 .Steps
 
-. Select *SUPPORT * > *Other* > *Storage watermarks*. 
+. Select *SUPPORT* > *Other* > *Storage watermarks*. 
 .	On the Storage Watermarks page, look at the Use optimized values checkbox.
 
 * If the checkbox is selected, all three watermarks are optimized for every storage volume on every Storage Node, based on the size of the Storage Node and the relative capacity of the volume.
 +
 This is the default and recommended setting. Do not update these values. Optionally, you can <<view-optimized-storage-watermarks,View optimized storage watermarks>>.
-
-* If the watermark overrides are *0*, all three watermarks are optimized for every storage volume on every Storage Node, based on the size of the Storage Node and the relative capacity of the volume.  
-+
-This is the default and recommended setting. You should not update these values. As required, you can optionally <<view-optimized-storage-watermarks,View optimized storage watermarks>>.
 
 *	If the Use optimized values checkbox is unselected, custom (non-optimized) watermarks are being used. Using custom watermark settings is not recommended. Use the instructions for link:../troubleshoot/troubleshoot-low-watermark-alert.html[troubleshooting Low read-only watermark override alerts] to determine if you can or should adjust the settings.
 +

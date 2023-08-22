@@ -127,5 +127,6 @@ NOTE: The same custom watermark values are applied to every storage volume on ev
 
 . Go to *SUPPORT* > *Other* > *Storage watermarks*.
 . Select the *Use optimized values* checkbox.
+. Select *Save*.
 
 Optimized storage volume watermark settings are now in effect for each storage volume, based on the size of the Storage Node and the relative capacity of the volume.
