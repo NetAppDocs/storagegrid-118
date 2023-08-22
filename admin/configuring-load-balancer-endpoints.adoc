@@ -2,14 +2,14 @@
 permalink: admin/configuring-load-balancer-endpoints.html
 sidebar: sidebar
 keywords: how to configure load balancer endpoint, how to attach certificate to load balancer endpoint
-summary: 'Load balancer endpoints determine the ports and network protocols S3 and Swift clients can use when connecting to the StorageGRID load balancer on Gateway and Admin Nodes. You can also use preset endpoints to access the Grid Manager, Tenant Manager, or both.'
+summary: 'Load balancer endpoints determine the ports and network protocols S3 and Swift clients can use when connecting to the StorageGRID load balancer on Gateway and Admin Nodes. You can also use endpoints to access the Grid Manager, Tenant Manager, or both.'
 ---
 = Configure load balancer endpoints
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Load balancer endpoints determine the ports and network protocols S3 and Swift clients can use when connecting to the StorageGRID load balancer on Gateway and Admin Nodes. You can also use preset endpoints to access the Grid Manager, Tenant Manager, or both.
+Load balancer endpoints determine the ports and network protocols S3 and Swift clients can use when connecting to the StorageGRID load balancer on Gateway and Admin Nodes. You can also use endpoints to access the Grid Manager, Tenant Manager, or both.
 
 NOTE: Support for Swift client applications has been deprecated and will be removed in a future release.
 
@@ -106,7 +106,7 @@ If you enter *80* or *8443*, the endpoint is configured only on Gateway Nodes, u
 * Tenant Manager: *9443*
 * Both Grid Manager and Tenant Manager: *443*
 
-*Note*:  You can use these preset ports or other available ports.
+*Note*:  You can use these default ports or other available ports.
 
 | Interface type
 | Select the radio button for the StorageGRID interface you will access using this endpoint.
