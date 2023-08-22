@@ -100,11 +100,13 @@ If you enter *80* or *8443*, the endpoint is configured only on Gateway Nodes, u
 | A descriptive name for the endpoint, which will appear in the table on the Load balancer endpoints page.
 
 | Port
-| The StorageGRID port you want to use to access the Grid Manager, Tenant Manager, or both:
+| The StorageGRID port you want to use to access the Grid Manager, Tenant Manager, or both.
 
 * Grid Manager: *8443*
 * Tenant Manager: *9443*
 * Both Grid Manager and Tenant Manager: *443*
+
+*Note*:  You can use these preset ports or other available ports.
 
 | Interface type
 | Select the radio button for the StorageGRID interface you will access using this endpoint.
