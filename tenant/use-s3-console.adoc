@@ -16,6 +16,9 @@ S3 Console allows you to:
 *	Upload, download, rename, copy, move, and delete objects
 *	View, revert, download, and delete object versions
 * Search for objects by prefix
++
+NOTE: The prefix search feature only searches for objects that begin with a specific word. The search does not include objects that contain the word. This rule also applies to objects within folders. For example, a search for `folder1/folder2/somefile-` would return objects that are within the `folder1/folder2/` folder and begin with the word `somefile-`.
+
 * Manage object tags
 * View object metadata
 *	View, create, rename, copy, move, and delete folders
@@ -35,7 +38,9 @@ NOTE: Tenants should only use S3 Console when performing functions for a small n
 . Select the S3 Console tab.
 . Paste the access key ID and secret access key into the fields. Otherwise, select *Upload access keys* and select your `.csv` file.
 . Select *Sign in*.
-. The table of bucket objects appears. You can manage objects as needed.
+. The table of bucket objects appears. You can manage objects as needed. 
++
+In addition to the operations you can perform with the S3 Console menu, you can drag and drop files from your computer's file manager to S3 Console (for Windows, the file manager is File Explorer and for Mac, it's Finder).
 
 .Results
 
