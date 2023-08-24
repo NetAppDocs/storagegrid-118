@@ -92,3 +92,5 @@ image::../media/identity_federation_test_connection.png[Identity federation prom
 * A "`Test connection successful`" message appears if the connection settings are valid. Select *Save* to save the configuration.
 +
 * An error message appears if the connection settings, bind username format, or test username and password are invalid. Resolve any issues and test the connection again.
+
+NOTE: If a user's password is changed, you must update it on this page.
