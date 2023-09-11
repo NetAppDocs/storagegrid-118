@@ -11,8 +11,6 @@ summary: 'Before installing StorageGRID software, verify and configure the hardw
 [.lead]
 Before installing StorageGRID software, verify and configure the hardware so that it is ready to support the StorageGRID system.
 
-For information about supported servers, see the https://imt.netapp.com/matrix/#welcome[NetApp Interoperability Matrix Tool^].
-
 Each StorageGRID node requires the following minimum resources:
 
 * CPU cores: 8 per node
@@ -29,3 +27,5 @@ If you are using virtual machines as hosts and have control over the size and nu
 For production deployments, you should not run multiple Storage Nodes on the same physical storage hardware or virtual host. Each Storage Node in a single StorageGRID deployment should be in its own isolated failure domain. You can maximize the durability and availability of object data if you ensure that a single hardware failure can only impact a single Storage Node.
 
 See also link:storage-and-performance-requirements.html[Storage and performance requirements].
+
+// 2023 AUG 31, SGRIDDOC-17
