@@ -22,6 +22,8 @@ One policy:: Use one policy if you want to apply the same ILM rules to all objec
 If a tenant's requirements change, you must edit, simulate, and re-activate the existing ILM policy, which could result in object moves that could take many days and cause system latency.
 +
 If your grid will use a simple data protection scheme with few tenant-specific and bucket-specific rules, use a single active ILM policy.
++
+image::../media/ilm-policies-single.png[Single ILM policies diagram]
 
 Multiple policies:: To provide different quality-of-service options to tenants, you can have more than one active policy at a time. Each policy can manage specific tenants, buckets, and objects. When you apply or change one policy for a specific set of tenants or objects, the policies applied to other tenants and objects are not affected.
 + 
@@ -32,15 +34,6 @@ ILM policy tags:: If you want to have multiple active policies at a time, use IL
 For example, you might have three tags named Gold, Silver, and Bronze. You can assign an ILM policy to each tag, based on how long and where that policy stores objects. Tenants can choose which policy to use by tagging their buckets. A bucket tagged Gold is managed by the Gold policy and receives the Gold level of data protection and performance.
 +
 A default ILM policy tag is automatically created when you install StorageGRID. Every grid must have one active policy that is assigned to the Default tag. The default policy applies to all objects in untagged S3 buckets or Swift containers.
-
-//need to work with Markus, Kiyomi, and Ben to determine the best way to explain and draw these concepts
-The following diagrams illustrate these concepts:
-
-* A single policy with filters for tenants and buckets applied to the rules in the policy.
-+
-image::../media/ilm-policies-single.png[Single ILM policies diagram]
-
-* Multiple policies assigned to tags that tenants can apply to buckets.
 +
 image::../media/ilm-policies-tags-conceptual.png[Multiple ILM policies diagram]
 
