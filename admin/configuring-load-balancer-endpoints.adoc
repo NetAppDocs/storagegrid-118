@@ -2,14 +2,14 @@
 permalink: admin/configuring-load-balancer-endpoints.html
 sidebar: sidebar
 keywords: how to configure load balancer endpoint, how to attach certificate to load balancer endpoint
-summary: 'Load balancer endpoints determine the ports and network protocols S3 and Swift clients can use when connecting to the StorageGRID load balancer on Gateway and Admin Nodes. '
+summary: 'Load balancer endpoints determine the ports and network protocols S3 and Swift clients can use when connecting to the StorageGRID load balancer on Gateway and Admin Nodes. You can also use endpoints to access the Grid Manager, Tenant Manager, or both.'
 ---
 = Configure load balancer endpoints
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Load balancer endpoints determine the ports and network protocols S3 and Swift clients can use when connecting to the StorageGRID load balancer on Gateway and Admin Nodes.
+Load balancer endpoints determine the ports and network protocols S3 and Swift clients can use when connecting to the StorageGRID load balancer on Gateway and Admin Nodes. You can also use endpoints to access the Grid Manager, Tenant Manager, or both.
 
 NOTE: Support for Swift client applications has been deprecated and will be removed in a future release.
 
@@ -40,7 +40,6 @@ NOTE: Changes to an endpoint certificate can take up to 15 minutes to be applied
 ** If you want to use the StorageGRID S3 and Swift API certificate (which can also be used for connections directly to Storage Nodes), you have already replaced the default certificate with a custom certificate signed by an external certificate authority. See 
 link:../admin/configuring-custom-server-certificate-for-storage-node.html[Configure S3 and Swift API certificates].
 
-
 == Create a load balancer endpoint
 
 Each load balancer endpoint specifies a port, a client type (S3 or Swift), and a network protocol (HTTP or HTTPS).
@@ -50,38 +49,76 @@ Each load balancer endpoint specifies a port, a client type (S3 or Swift), and a
 .Steps
 
 . Select *CONFIGURATION* > *Network* > *Load balancer endpoints*.
-
+. To create an endpoint for an S3 or Swift client, select the *S3 or Swift client* tab.
+. To create an endpoint for access to the Grid Manager, Tenant Manager, or both, select the *Management interface* tab.
 . Select *Create*.
 
 === Enter endpoint details
 
 .Steps
 
-. Enter details for the endpoint.
-+
+. Select the appropriate instructions to enter details for the type of endpoint you want to create.
+
+// start tabbed area
+
+[role="tabbed-block"]
+====
+
+.S3 or Swift client
+--
 [cols="1a,3a" options="header"]
 |===
 | Field| Description
 
-|Name
-|A descriptive name for the endpoint, which will appear in the table on the Load balancer endpoints page.
+| Name
+| A descriptive name for the endpoint, which will appear in the table on the Load balancer endpoints page.
 
-|Port
-|The StorageGRID port you want to use for load balancing. This field defaults to 10433 for the first endpoint you create, but you can enter any unused external port between 1 and 65535. 
+| Port
+| The StorageGRID port you want to use for load balancing. This field defaults to 10433 for the first endpoint you create, but you can enter any unused external port from 1 to 65535.
 
-If you enter *80* or *443*, the endpoint is configured only on Gateway Nodes. These ports are reserved on Admin Nodes.
+If you enter *80* or *8443*, the endpoint is configured only on Gateway Nodes, unless you have freed up port 8443. Then you can use port 8443 as an S3 endpoint, and the port will be configured on both Gateway and Admin Nodes.
 
-|Client type
-|The type of client application that will use this endpoint, either *S3* or *Swift*.
+| Client type
+| The type of client application that will use this endpoint, either *S3* or *Swift*.
 
-|Network protocol
-|The network protocol that clients will use when connecting to this endpoint.
+| Network protocol
+| The network protocol that clients will use when connecting to this endpoint.
 
 *  Select *HTTPS* for secure, TLS encrypted communication (recommended). You must attach a security certificate before you can save the endpoint.
 
 * Select *HTTP* for less secure, unencrypted communication. Use HTTP only for a non-production grid.
 |===
 
+--
+.Management interface
+--
+[cols="1a,3a" options="header"]
+|===
+| Field| Description
+
+| Name
+| A descriptive name for the endpoint, which will appear in the table on the Load balancer endpoints page.
+
+| Port
+| The StorageGRID port you want to use to access the Grid Manager, Tenant Manager, or both.
+
+* Grid Manager: *8443*
+* Tenant Manager: *9443*
+* Both Grid Manager and Tenant Manager: *443*
+
+*Note*:  You can use these preset ports or other available ports.
+
+| Interface type
+| Select the radio button for the StorageGRID interface you will access using this endpoint.
+
+| Untrusted Client Network
+| Select *Yes* if this endpoint should be accessible to untrusted Client Networks. Otherwise, select *No*.
+|===
+--
+====
+// end tabbed area
+
+[start=2]
 . Select *Continue*.
 
 === Select a binding mode
@@ -91,20 +128,24 @@ If you enter *80* or *443*, the endpoint is configured only on Gateway Nodes. Th
 . Select a binding mode for the endpoint to control how the endpoint is accessed&#8212;using any IP address or using specific IP addresses and network interfaces.
 +
 include::../_include/load-balancer-endpoint-binding-mode.adoc[]
-
 +
-NOTE: If more than one endpoint uses the same port, StorageGRID uses this priority order to decide which endpoint to use: *Virtual IPs of HA groups* > *Node interfaces* > *Node type* > *Global*. 
+If more than one endpoint uses the same port, StorageGRID uses this priority order to decide which endpoint to use: *Virtual IPs of HA groups* > *Node interfaces* > *Node type* > *Global*. 
++
+If you are creating Management interface endpoints, only Admin Nodes are allowed.
 
 . If you selected *Virtual IPs of HA groups*, select one or more HA groups.
 
 . If you selected *Node interfaces*, select one or more node interfaces for each Admin Node or Gateway Node that you want to associate with this endpoint.
++
+If you are creating Management interface endpoints, select VIPs associated only with Admin Nodes.
 
 . If you selected *Node type*, select either Admin Nodes, which includes both the primary Admin Node and any non-primary Admin Nodes, or Gateway Nodes.
 
-
-=== Control tenant access
+=== Control tenant access (Client endpoint only)
 
 .Steps
+
+This step applies only to creating a client endpoint.
 
 . For the *Tenant access* step, select one of the following:
 +
@@ -112,19 +153,17 @@ NOTE: If more than one endpoint uses the same port, StorageGRID uses this priori
 |===
 |Field| Description
 
-|Allow all tenants (default)
-|All tenant accounts can use this endpoint to access their buckets. 
+| Allow all tenants (default)
+| All tenant accounts can use this endpoint to access their buckets. 
 
 You must select this option if you have not yet created any tenant accounts. After you add tenant accounts, you can edit the load balancer endpoint to allow or block specific accounts. 
 
-|Allow selected tenants
-|Only the selected tenant accounts can use this endpoint to access their buckets.
+| Allow selected tenants
+| Only the selected tenant accounts can use this endpoint to access their buckets.
 
-|Block selected tenants
-|The selected tenant accounts can't use this endpoint to access their buckets. All other tenants can use this endpoint.
-
+| Block selected tenants
+| The selected tenant accounts can't use this endpoint to access their buckets. All other tenants can use this endpoint.
 |===
-
 
 . If you are creating an *HTTP* endpoint, you don't need to attach a certificate. Select *Create* to add the new load balancer endpoint. Then, go to <<after-you-finish,After you finish>>. Otherwise, select *Continue* to attach the certificate.
 
@@ -145,6 +184,8 @@ The certificate secures the connections between S3 and Swift clients and the Loa
 +
 You can't select this option unless you have replaced the default S3 and Swift API certificate, which is signed by the grid CA, with a custom certificate signed by an external certificate authority. See
 link:../admin/configuring-custom-server-certificate-for-storage-node.html[Configure S3 and Swift API certificates].
+
+* *Use management interface certificate*. Select this option if you want to use the global management interface certificate, which can also be used for direct connections to Admin Nodes.
 
 . If you aren't using the StorageGRID S3 and Swift certificate, upload or generate the certificate.
 //tabbed blocks start here
@@ -174,7 +215,7 @@ For example: `storagegrid_certificate.pem`
 * Select *Copy certificate PEM* or *Copy CA bundle PEM* to copy the certificate contents for pasting elsewhere.
 
 .. Select *Create*. +
-The load balancer endpoint is created. The custom certificate is used for all subsequent new connections between S3 and Swift clients and the endpoint.
+The load balancer endpoint is created. The custom certificate is used for all subsequent new connections between S3 and Swift clients or the management interface and the endpoint.
 
 --
 //end Upload, begin Generate
@@ -210,7 +251,6 @@ If no value is entered in this field, the generated certificate uses the first d
 These extensions define the purpose of the key contained in the certificate.
 
 *Note*: Leave this checkbox selected unless you experience connection problems with older clients when certificates include these extensions.
-
 |===
 
 .. Select *Generate*.
@@ -226,10 +266,8 @@ For example: `storagegrid_certificate.pem`
 
 .. Select *Create*.
 +
-The load balancer endpoint is created. The custom certificate is used for all subsequent new connections between S3 and Swift clients and this endpoint.
-
+The load balancer endpoint is created. The custom certificate is used for all subsequent new connections between S3 and Swift clients or the management interface and this endpoint.
 --
-
 ====
 //end tabbed blocks
 
@@ -253,13 +291,11 @@ You must also ensure that the DNS record references all required endpoint domain
 ** Fully qualified domain name or IP address
 ** Any required certificate details
 
-
 == View and edit load balancer endpoints
 
 You can view details for existing load balancer endpoints, including the certificate metadata for a secured endpoint. You can also change an endpoint's name or binding mode and update any associated certificates.
 
-You can't change the service type (S3 or Swift), the port, or the protocol (HTTP or HTTPS).
-
+You can't change the service type (S3 or Swift) or the protocol (HTTP or HTTPS).
 
 * To view basic information for all load balancer endpoints, review the table on the Load balancer endpoints page. 
 +
@@ -271,73 +307,81 @@ image::../media/load_balancer_endpoint_details.png[Load balancer endpoint detail
 
 * To edit an endpoint, use the *Actions* menu on the Load balancer endpoints page or the details page for a specific endpoint.
 +
+NOTE: If you lose access to Grid Manager while editing the port of a management interface endpoint, update the URL.
++
 TIP: After editing an endpoint, you might need to wait up to 15 minutes for your changes to be applied to all nodes.
 +
 [cols="1a, 2a,2a" options="header"]
 |===
 |Task | Actions menu | Details page
 
+| Edit endpoint name
 
-|Edit endpoint name
-
-|.. Select the checkbox for the endpoint. 
+| .. Select the checkbox for the endpoint. 
 .. Select *Actions* > *Edit endpoint name*.
 .. Enter the new name.
 .. Select *Save*.
 
-|.. Select the endpoint name to display the details.
+| .. Select the endpoint name to display the details.
 .. Select the edit icon image:../media/icon_edit_tm.png[Edit icon].
 .. Enter the new name.
 .. Select *Save*.
 
-|Edit endpoint binding mode
+| Edit endpoint port
 
-|.. Select the checkbox for the endpoint. 
+| .. Select the checkbox for the endpoint.
+.. Select *Actions* > *Edit endpoint port*
+.. Enter a valid port number.
+.. Select *Save*.
+
+| _n/a_
+
+| Edit endpoint binding mode
+
+| .. Select the checkbox for the endpoint. 
 .. Select *Actions* > *Edit endpoint binding mode*.
 .. Update the binding mode as required.
 .. Select *Save changes*.
 
-|.. Select the endpoint name to display the details.
+| .. Select the endpoint name to display the details.
 .. Select *Edit binding mode*.
 .. Update the binding mode as required.
 .. Select *Save changes*.
 
-|Edit endpoint certificate
+| Edit endpoint certificate
 
-|.. Select the checkbox for the endpoint. 
+| .. Select the checkbox for the endpoint. 
 .. Select *Actions* > *Edit endpoint certificate*.
 .. Upload or generate a new custom certificate or begin using the global S3 and Swift certificate, as required.
 .. Select *Save changes*.
 
-|.. Select the endpoint name to display the details.
+| .. Select the endpoint name to display the details.
 .. Select the *Certificate* tab.
 .. Select *Edit certificate*.
 .. Upload or generate a new custom certificate or begin using the global S3 and Swift certificate, as required.
 .. Select *Save changes*.
 
-|Edit tenant access
+| Edit tenant access
 
-|.. Select the checkbox for the endpoint. 
+| .. Select the checkbox for the endpoint. 
 .. Select *Actions* > *Edit tenant access*.
 .. Choose a different access option, select or remove tenants from the list, or do both.
 .. Select *Save changes*.
 
-|.. Select the endpoint name to display the details.
+| .. Select the endpoint name to display the details.
 .. Select the *Tenant access* tab.
 .. Select *Edit tenant access*.
 .. Choose a different access option, select or remove tenants from the list, or do both.
 .. Select *Save changes*.
-
-
 |===
-
-
 
 == Remove load balancer endpoints
 
 You can remove one or more endpoints using the *Actions* menu, or you can remove a single endpoint from the details page.
 
 CAUTION: To prevent client disruptions, update any affected S3 or Swift client applications before you remove a load balancer endpoint. Update each client to connect using a port assigned to another load balancer endpoint. Be sure to update any required certificate information as well.
+
+NOTE: If you lose access to Grid Manager while removing a management interface endpoint, update the URL.
 
 * To remove one or more endpoints:
 
