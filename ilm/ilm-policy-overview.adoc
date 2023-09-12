@@ -29,20 +29,19 @@ If you want to allow tenants to easily switch between multiple data protection p
  
 ILM policy tags:: If you want to have multiple active policies at a time, use ILM policy tags. You assign each ILM policy to a tag, then tenants tag a bucket to apply the policy to that bucket.
 +
-A default ILM policy tag is automatically created when you install StorageGRID. Every grid must have one active policy that is assigned to the Default tag. The default policy applies to all objects in untagged S3 buckets or Swift containers.
-+
 For example, you might have three tags named Gold, Silver, and Bronze. You can assign an ILM policy to each tag, based on how long and where that policy stores objects. Tenants can choose which policy to use by tagging their buckets. A bucket tagged Gold is managed by the Gold policy and receives the Gold level of data protection and performance.
 +
 A default ILM policy tag is automatically created when you install StorageGRID. Every grid must have one active policy that is assigned to the Default tag. The default policy applies to all objects in untagged S3 buckets or Swift containers.
 
 //need to work with Markus, Kiyomi, and Ben to determine the best way to explain and draw these concepts
-The following diagrams illustrate the following concepts:
+The following diagrams illustrate these concepts:
 
 * A single policy with filters for tenants and buckets applied to the rules in the policy.
++
+image::../media/ilm-policies-single.png[Single ILM policies diagram]
+
 * Multiple policies assigned to tags that tenants can apply to buckets.
-
-The second diagram illustrates how tenants can easily apply different tags to each bucket, and how a grid administrator can assign a different policy to a tag.
-
++
 image::../media/ilm-policies-tags-conceptual.png[Multiple ILM policies diagram]
 
 [[default-ilm-policy]]
