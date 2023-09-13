@@ -248,8 +248,12 @@ Before you can activate multiple policies, you must create tags and assign a pol
 . Select *ILM* > *Policy tags*.
 . Select *Create*.
 . In the Create policy tag dialog box, type a tag name and, optionally, a description for the tag.
++
+NOTE: Tag names and descriptions are available to tenants. Do not include sensitive information in these fields.
 . Select *Create tag*.
 . In the ILM policy tags table, use the pull-down to select a policy to assign to the tag.
++
+TIP: When multiple tags are in use, if tenants frequently reassign policy tags to buckets, grid performance might be impacted. If you have untrusted tenants, consider using only the Default tag.
 . If warnings appear in the Policy limitations column, select *View policy details* to review the policy.
 . Ensure each policy would manage data as expected.
 . Select *Activate assigned policies*. Or, select *Clear changes* to remove the policy assignment.
