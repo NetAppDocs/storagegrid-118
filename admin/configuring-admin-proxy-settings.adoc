@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: admin proxy, autosupport, non-transparent proxy
 summary: 'If you send AutoSupport packages using HTTP or HTTPS, you can configure a non-transparent proxy server between Admin Nodes and technical support \(AutoSupport\).'
 ---
-= Configure admin proxy
+= Configure admin proxy settings
 :icons: font
 :imagesdir: ../media/
 
@@ -23,20 +23,20 @@ You can configure the settings for a single admin proxy.
 .Steps
 
 . Select *CONFIGURATION* > *Security* > *Proxy settings*.
++
+The Proxy Settings page appears. By default, Storage is selected in the tab menu.
 
-
-. Select the *Admin* tab
-
-
-. To use an admin proxy, select the checkbox.
-
-
+. Select the *Admin* tab.
+. Select the *Enable Admin Proxy* checkbox.
 . Enter the hostname or IP address of the proxy server.
 . Enter the port used to connect to the proxy server.
 . Optionally, enter a username and password for the proxy server.
 +
-Leave these fields blank if your proxy server does not require a username or does not require a password.
+Leave these fields blank if your proxy server does not require a username or a password.
 
+. Optionally, if you want to setup an HTTPS admin proxy, select the *Use TLS* checkbox and then select *Browse* to upload a valid CA bundle server certificate.
++
+CAUTION: AutoSupport on Demand, Upgrade check, and E-Series AutoSupport aren't supported for an HTTPS-only admin proxy.
 
 . Select *Save*.
 +
