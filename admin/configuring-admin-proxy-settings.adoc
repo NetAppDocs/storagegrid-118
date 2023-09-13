@@ -9,7 +9,9 @@ summary: 'If you send AutoSupport packages using HTTP or HTTPS, you can configur
 :imagesdir: ../media/
 
 [.lead]
-If you send AutoSupport packages using HTTP or HTTPS (see link:configure-autosupport-grid-manager.html[Configure AutoSupport]), you can configure a non-transparent proxy server between Admin Nodes and technical support (AutoSupport). 
+If you send AutoSupport packages using HTTP or HTTPS, you can configure a non-transparent proxy server between Admin Nodes and technical support (AutoSupport).
+
+For more information about AutoSupport, see link:configure-autosupport-grid-manager.html[Configure AutoSupport].
 
 .Before you begin
 
