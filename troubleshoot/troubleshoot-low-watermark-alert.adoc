@@ -27,7 +27,7 @@ Each instance of the alert indicates that the custom value of the *Storage Volum
 
 For example, suppose you previously set the *Storage Volume Soft Read-Only Watermark* to 5 GB. Now suppose that StorageGRID has calculated the following optimized values for the four storage volumes in Storage Node A:
 
-[cols="2a,1a"]
+[cols="2a,2a"]
 |===
 
 | Volume 0
@@ -74,13 +74,11 @@ You can resolve the *Low read-only watermark override* alert by updating custom 
 +
 image::../media/nodes_page_object_data_used_with_alert.png[Nodes page showing object data used for 3 SNs]
 
-. If none of the Storage Nodes are close to full (for example, all *Object data used* values are less than 80%),  you can start using the override settings. Go to <<Use optimized watermarks>>.
-+
-NOTE: There are some exceptions to this general rule. For example, if ILM rules use Strict ingest behavior or if specific storage pools are close to full, you should first perform the steps in <<View optimized storage watermarks>> and <<Determine if you can use optimized watermarks>>.
+. Follow the appropriate step:
+.. If none of the Storage Nodes are close to full (for example, all *Object data used* values are less than 80%), you can start using the override settings. Go to <<use-optimized-watermarks,Use optimized watermarks>>.
+.. If ILM rules use Strict ingest behavior or if specific storage pools are close to full, perform the steps in <<view-optimized-watermarks,View optimized storage watermarks>> and <<determine-optimized-watermarks,Determine if you can use optimized watermarks>>.
 
-. If one more more Storage Nodes are close to full, perform the steps in <<View optimized storage watermarks>> and <<Determine if you can use optimized watermarks>>.
-
-=== View optimized storage watermarks
+=== [[view-optimized-watermarks]]View optimized storage watermarks
 
 StorageGRID uses two Prometheus metrics to show the optimized values it has calculated for the *Storage Volume Soft Read-Only Watermark*. You can view the minimum and maximum optimized values for each Storage Node in your grid.
 
@@ -104,7 +102,7 @@ The last column shows the maximum optimized value of the Soft Read-Only Watermar
 
 . [[maximum_optimized_value]]Note the maximum optimized value for each Storage Node.
 
-=== Determine if you can use optimized watermarks
+=== [[determine-optimized-watermarks]]Determine if you can use optimized watermarks
 
 .Steps
 
@@ -115,25 +113,20 @@ The last column shows the maximum optimized value of the Soft Read-Only Watermar
 .. Scroll down to the Object Stores table.
 .. Compare the *Available* value for each object store (volume) to the maximum optimized watermark you noted for that Storage Node.
 
-. If at least one volume on every online Storage Node has more space available than maximum optimized watermark for that node, go to <<Use optimized watermarks>> to start using the optimized watermarks. 
+. If at least one volume on every online Storage Node has more space available than maximum optimized watermark for that node, go to <<use-optimized-watermarks,Use optimized watermarks>> to start using the optimized watermarks. 
 +
-Otherwise, expand the grid as soon as possible. Either link:../expand/adding-storage-volumes-to-storage-nodes.html[add storage volumes] to an existing node or link:../expand/adding-grid-nodes-to-existing-site-or-adding-new-site.html[add new Storage Nodes]. Then, go to <<Use optimized watermarks>> to update watermark settings. 
+Otherwise, expand the grid as soon as possible. Either link:../expand/adding-storage-volumes-to-storage-nodes.html[add storage volumes] to an existing node or link:../expand/adding-grid-nodes-to-existing-site-or-adding-new-site.html[add new Storage Nodes]. Then, go to <<use-optimized-watermarks,Use optimized watermarks>> to update watermark settings. 
 
 . If you need to continue using custom values for the storage volume watermarks, link:../monitor/silencing-alert-notifications.html[silence] or link:../monitor/disabling-alert-rules.html[disable] the *Low read-only watermark override* alert.
 +
 NOTE: The same custom watermark values are applied to every storage volume on every Storage Node. Using smaller-than-recommended values for storage volume watermarks might cause some storage volumes to become inaccessible (automatically unmounted) when the node reaches capacity. 
 
-=== Use optimized watermarks
+=== [[use-optimized-watermarks]]Use optimized watermarks
 
 .Steps
 
-. Go to *CONFIGURATION* > *System* > *Storage options*.
-. Select *Configuration* from the Storage Options menu.
-. Change all three Watermark Overrides to 0.
-. Select *Apply Changes*.
+. Go to *SUPPORT* > *Other* > *Storage watermarks*.
+. Select the *Use optimized values* checkbox.
+. Select *Save*.
 
 Optimized storage volume watermark settings are now in effect for each storage volume, based on the size of the Storage Node and the relative capacity of the volume.
-
-image::../media/storage-volume-watermark-overrides.png[Storage volume watermark overrides]
-
-
