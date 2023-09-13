@@ -251,7 +251,7 @@ TIP: When multiple tags are in use, if tenants frequently reassign policy tags t
 . Select *Create*.
 . In the Create policy tag dialog box, type a tag name and, optionally, a description for the tag.
 +
-NOTE: Tag names and descriptions are visible to tenants. Choose values that will help tenants make an informed decision when selecting policy tags to assign to their buckets. For example, if the assigned policy will delete objects after a period of time, you could to communicate that in the description. Do not include sensitive information in these fields.
+NOTE: Tag names and descriptions are visible to tenants. Choose values that will help tenants make an informed decision when selecting policy tags to assign to their buckets. For example, if the assigned policy will delete objects after a period of time, you could communicate that in the description. Do not include sensitive information in these fields.
 . Select *Create tag*.
 . In the ILM policy tags table, use the pull-down to select a policy to assign to the tag.
 . If warnings appear in the Policy limitations column, select *View policy details* to review the policy.
