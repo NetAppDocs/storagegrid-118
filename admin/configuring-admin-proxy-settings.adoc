@@ -36,9 +36,15 @@ The Proxy Settings page appears. By default, Storage is selected in the tab menu
 +
 Leave these fields blank if your proxy server does not require a username or a password.
 
-. Optionally, if you want to setup an HTTPS admin proxy, select the *Use TLS* checkbox and then select *Browse* to upload a valid CA bundle server certificate.
+. Select one of the following:
 +
-CAUTION: AutoSupport on Demand, Upgrade check, and E-Series AutoSupport aren't supported for an HTTPS-only admin proxy.
+* If you want to secure the connection to the admin proxy, select *Verify certificate*. Upload a CA bundle to verify the authenticity of SSL certificates presented by the admin proxy server.
++
+CAUTION: AutoSupport on Demand, E-Series AutoSupport through StorageGRID, and Update Path determination on the StorageGRID Upgrade page will not work if a proxy certificate is verified.
++
+After you upload the CA bundle, its metadata appears.
++
+* If you don't want to validate certificates when communicating with the admin proxy server, select *Do not verify certificate*.
 
 . Select *Save*.
 +
@@ -46,6 +52,4 @@ After the admin proxy is saved, the proxy server between Admin Nodes and technic
 +
 NOTE: Proxy changes can take up to 10 minutes to take effect.
 
-. If you need to disable the admin proxy, clear the checkbox, and select *Save*.
-
-
+. If you need to disable the admin proxy, clear the *Enable Admin Proxy* checkbox, and then select *Save*.
