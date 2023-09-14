@@ -17,11 +17,9 @@ CAUTION: An ILM policy that has been incorrectly configured can result in unreco
 
 You can have one or more active ILM policies at a time.
 
-One policy:: Use one policy if you want to apply the same ILM rules to all objects in all buckets or containers. The ILM rules can contain filters to manage different buckets or tenants.
-+
-If a tenant's requirements change, you must edit, simulate, and re-activate the existing ILM policy, which could result in object moves that could take many days and cause system latency.
-+
-If your grid will use a simple data protection scheme with few tenant-specific and bucket-specific rules, use a single active ILM policy.
+One policy:: If your grid will use a simple data protection scheme with few tenant-specific and bucket-specific rules, use a single active ILM policy. The ILM rules can contain filters to manage different buckets or tenants.
+
+When you have only one policy and a tenant's requirements change, you must create a new ILM policy or clone the existing policy to apply changes, simulate, and then activate the new ILM policy. Changes to the ILM policy could result in object moves that could take many days and cause system latency.
 +
 image::../media/ilm-policies-single.png[Single ILM policies diagram]
 
