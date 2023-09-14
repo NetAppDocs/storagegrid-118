@@ -25,7 +25,7 @@ To view the details for a tag:
 
 == Edit ILM policy tag
 
-NOTE: Tag names and descriptions are visible to tenants. Choose values that will help tenants make an informed decision when selecting policy tags to assign to their buckets. For example, if the assigned policy will delete objects after a period of time, you could to communicate that in the description. Do not include sensitive information in these fields.
+NOTE: Tag names and descriptions are visible to tenants. Choose values that will help tenants make an informed decision when selecting policy tags to assign to their buckets. For example, if the assigned policy will delete objects after a period of time, you could communicate that in the description. Do not include sensitive information in these fields.
 
 To edit the description for an existing tag:
 
