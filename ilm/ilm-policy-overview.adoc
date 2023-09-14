@@ -14,25 +14,24 @@ An information lifecycle management (ILM) policy is an ordered set of ILM rules 
 CAUTION: An ILM policy that has been incorrectly configured can result in unrecoverable data loss. Before activating an ILM policy, carefully review the ILM policy and its ILM rules, and then simulate the ILM policy. Always confirm that the ILM policy will work as intended.
 
 == One or many active ILM policies?
-
 You can have one or more active ILM policies at a time.
 
-One policy:: If your grid will use a simple data protection scheme with few tenant-specific and bucket-specific rules, use a single active ILM policy. The ILM rules can contain filters to manage different buckets or tenants.
+=== One policy
+If your grid will use a simple data protection scheme with few tenant-specific and bucket-specific rules, use a single active ILM policy. The ILM rules can contain filters to manage different buckets or tenants.
 
-When you have only one policy and a tenant's requirements change, you must create a new ILM policy or clone the existing policy to apply changes, simulate, and then activate the new ILM policy. Changes to the ILM policy could result in object moves that could take many days and cause system latency.
-+
 image::../media/ilm-policies-single.png[Single ILM policies diagram]
 
-Multiple policies:: To provide different quality-of-service options to tenants, you can have more than one active policy at a time. Each policy can manage specific tenants, buckets, and objects. When you apply or change one policy for a specific set of tenants or objects, the policies applied to other tenants and objects are not affected.
-+ 
-If you want to allow tenants to easily switch between multiple data protection policies on a per-bucket basis, use multiple ILM policies with policy tags.
- 
-ILM policy tags:: If you want to have multiple active policies at a time, use ILM policy tags. You assign each ILM policy to a tag, then tenants tag a bucket to apply the policy to that bucket.
+When you have only one policy and a tenant's requirements change, you must create a new ILM policy or clone the existing policy to apply changes, simulate, and then activate the new ILM policy. Changes to the ILM policy could result in object moves that could take many days and cause system latency.
+
+=== Multiple policies
+To provide different quality-of-service options to tenants, you can have more than one active policy at a time. Each policy can manage specific tenants, buckets, and objects. When you apply or change one policy for a specific set of tenants or objects, the policies applied to other tenants and objects are not affected.
+
+ILM policy tags:: If you want to allow tenants to easily switch between multiple data protection policies on a per-bucket basis, use multiple ILM policies with _ILM policy tags_. You assign each ILM policy to a tag, then tenants tag a bucket to apply the policy to that bucket.
 +
 For example, you might have three tags named Gold, Silver, and Bronze. You can assign an ILM policy to each tag, based on how long and where that policy stores objects. Tenants can choose which policy to use by tagging their buckets. A bucket tagged Gold is managed by the Gold policy and receives the Gold level of data protection and performance.
-+
-A default ILM policy tag is automatically created when you install StorageGRID. Every grid must have one active policy that is assigned to the Default tag. The default policy applies to all objects in untagged S3 buckets or Swift containers.
-+
+
+Default ILM policy tag:: A default ILM policy tag is automatically created when you install StorageGRID. Every grid must have one active policy that is assigned to the Default tag. The default policy applies to all objects in untagged S3 buckets or Swift containers.
+
 image::../media/ilm-policies-tags-conceptual.png[Multiple ILM policies diagram]
 
 [[default-ilm-policy]]
