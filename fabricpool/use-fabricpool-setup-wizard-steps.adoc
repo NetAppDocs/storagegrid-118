@@ -416,52 +416,26 @@ CAUTION: To avoid data loss, do not use an ILM rule that will expire or delete F
 
 .Steps
 
-. Optionally, update the system-generated *Policy name*. By default, the system appends "`+ FabricPool`" to the name of your active or proposed policy, but you can provide your own name.
+. Optionally, update the system-generated *Policy name*. By default, the system appends "`+ FabricPool`" to the name of your active or inactive policy, but you can provide your own name.
 
-. Review the list of rules in the proposed policy.
+. Review the list of rules in the inactive policy.
 
-* If your grid doesn't have a proposed ILM policy, the wizard creates a proposed policy by cloning your active policy and adding the new rule to the top.
+* If your grid doesn't have an inactive ILM policy, the wizard creates an inactive policy by cloning your active policy and adding the new rule to the top.
 
-* If your grid already has a proposed ILM policy and that policy uses the same rules and same order as the active ILM policy, the wizard adds the new rule to the top of the proposed policy.
+* If your grid already has an inactive ILM policy and that policy uses the same rules and same order as the active ILM policy, the wizard adds the new rule to the top of the inactive policy.
 
-* If your proposed policy contains different rules or a different order than the active policy, a message appears. You must manually add the new FabricPool rule to the ILM policy. Follow these steps, based on whether you want to start from the active policy or the proposed policy.
-+
-[cols="1a,3a" options="header"]
-|===
-| Policy to start from
-| Steps
+* If your inactive policy contains different rules or a different order than the active policy, the wizard creates a new inactive policy by cloning your active policy and adding the new rule to the top.
 
-| Active policy 
-| . Select *ILM* > *Policies* from the left menu in Grid Manager.
-. Select the Proposed policy tab.
-. Select *Actions* > *Delete* to remove the existing proposed policy.
-. Return to the FabricPool setup wizard.
-
-The wizard can now clone your active policy to create a new proposed policy. The new FabricPool rule will be added to the top.
-
-| Proposed policy
-| . Select *ILM* > *Policies* from the left menu in Grid Manager.
-. Select the Proposed policy tab.
-. Select *Actions* > *Edit* to edit the existing proposed policy.
-. Add the new FabricPool rule to the top.
-. Activate the updated policy.
-. Go to the <<traffic-classification,traffic classification>> step.
-
-|===
-+
-See link:../ilm/creating-ilm-policy.html[Create ILM policies] if you need more detailed instructions.
-
-
-. Review the order of the rules in the new policy. 
+. Review the order of the rules in the new inactive policy. 
 +
 Because the FabricPool rule is the first rule, any objects in the FabricPool bucket are placed before the other rules in the policy are evaluated. Objects in any other buckets are placed by subsequent rules in the policy.
 
 . Review the retention diagram to learn how different objects will be retained.
 
-.. Select *Expand all* to see a retention diagram for each rule in the proposed policy.
+.. Select *Expand all* to see a retention diagram for each rule in the inactive policy.
 .. Select *Time period* and *Storage pool* to review the retention diagram. Confirm that any rules that apply to the FabricPool bucket or tenant retain objects *forever*.
 
-. When you have reviewed the proposed policy, select *Activate and continue* to activate the policy and go to the traffic classification step.
+. When you have reviewed the inactive policy, select *Activate and continue* to activate the policy and go to the traffic classification step.
 
 CAUTION: Errors in an ILM policy can cause irreparable data loss. Review the policy carefully before activating.
 
