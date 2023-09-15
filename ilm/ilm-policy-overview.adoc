@@ -75,7 +75,7 @@ image::../media/ilm_policy_and_rules.png[ILM Policy and Rules]
 
 == What are active and inactive policies?
 
-Every StorageGRID system must have at least one active ILM policy. If you have more than one active ILM policy, you create ILM policy tags and assign a policy to each tag. Tenants then apply tags to buckets or containers. A default tag is automatically applied to a bucket (container) if no other tag is assigned.
+Every StorageGRID system must have at least one active ILM policy. If you have more than one active ILM policy, you create ILM policy tags and assign a policy to each tag. Tenants then apply tags to buckets or containers. The default policy is applied to all objects in buckets that do not have a policy tag assigned.
 
 When you first create an ILM policy, you select one or more ILM rules and arrange them in a specific order. After you have simulated the policy to confirm its behavior, you activate it.
 
