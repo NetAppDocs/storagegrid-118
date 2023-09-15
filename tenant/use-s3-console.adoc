@@ -37,7 +37,7 @@ NOTE: Tenants should only use S3 Console when performing functions for a small n
 . Select *Sign in*.
 . The table of bucket objects appears. You can manage objects as needed. 
 +
-In addition to the operations you can perform with the S3 Console menu, you can drag and drop files from your computer's file manager to S3 Console.
+In addition to the operations you can perform with the S3 Console menu, you can drag and drop files from your computer's file manager to S3 Console. However, you cannot upload folders.
 
 .Results
 
