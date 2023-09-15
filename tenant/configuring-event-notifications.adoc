@@ -20,7 +20,7 @@ The notifications service is one of the three StorageGRID platform services. You
 
 .About this task
 
-After you configure event notifications, whenever a specified event occurs for an object in the source bucket, a notification is generated and sent to the Simple Notification Service (SNS) topic used as the destination endpoint. To enable notifications for a bucket, you must create and apply valid notification configuration XML. The notification configuration XML must use the URN of an event notifications endpoint for each destination.
+After you configure event notifications, whenever a specified event occurs for an object in the source bucket, a notification is generated and sent to the Simple Notification Service (SNS) or Kafka topic used as the destination endpoint. To enable notifications for a bucket, you must create and apply valid notification configuration XML. The notification configuration XML must use the URN of an event notifications endpoint for each destination.
 
 For general information about event notifications and how to configure them, see Amazon documentation. For information about how StorageGRID implements the S3 bucket notification configuration API, see the instructions for implementing S3 client applications.
 
@@ -121,3 +121,5 @@ link:understanding-notifications-for-buckets.html[Understand notifications for b
 link:../s3/index.html[Use S3 REST API]
 
 link:creating-platform-services-endpoint.html[Create platform services endpoint]
+
+// 2023 SEP 15, SGWS-25330

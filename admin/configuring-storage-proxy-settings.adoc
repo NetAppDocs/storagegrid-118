@@ -11,6 +11,8 @@ summary: 'If you are using platform services or Cloud Storage Pools, you can con
 [.lead]
 If you are using platform services or Cloud Storage Pools, you can configure a non-transparent proxy between Storage Nodes and the external S3 endpoints. For example, you might need a non-transparent proxy to allow platform services messages to be sent to external endpoints, such as an endpoint on the internet.
 
+NOTE: Kafka endpoints do not support storage proxy settings.
+
 .Before you begin
 
 * You have link:admin-group-permissions.html[specific access permissions].
@@ -43,3 +45,4 @@ NOTE: Proxy changes can take up to 10 minutes to take effect.
 
 . If you need to disable a storage proxy, clear the checkbox, and select *Save*.
 
+// 2023 SEP 15, SGWS-25330

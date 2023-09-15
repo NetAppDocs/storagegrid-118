@@ -29,7 +29,7 @@ StorageGRID supports replication endpoints that represent S3 buckets. These buck
 
 == Endpoints for notifications
 
-StorageGRID supports Simple Notification Service (SNS) endpoints. Simple Queue Service (SQS) or AWS Lambda endpoints aren't supported.
+StorageGRID supports Simple Notification Service (SNS) and Kafka endpoints. Simple Queue Service (SQS) or AWS Lambda endpoints aren't supported.
 
 == Endpoints for the search integration service
 
@@ -40,3 +40,5 @@ The search integration endpoint refers to a specific Elasticsearch index and typ
 .Related information
 
 link:../admin/index.html[Administer StorageGRID]
+
+// 15 SEP 2023, SGWS-25330

@@ -32,7 +32,7 @@ The next element of the URN specifies the type of platform service, as follows:
 m|s3
 
 |Notifications
-m|sns
+m|sns or kafka
 
 |Search integration
 m|es
@@ -48,7 +48,7 @@ a|CloudMirror replication
 m|bucket-name
 
 a|Notifications
-m|sns-topic-name
+m|sns-topic-name or kafka-topic-name
 
 |Search integration
 |`domain-name/index-name/type-name`
@@ -67,11 +67,12 @@ For AWS and GCP entities, the complete URN is a valid AWS ARN. For example:
 arn:aws:s3:::bucket-name
 ----
 
-* Notifications:
+* Notifications, for example, for Simple Notification Service (SNS) endpoints:
 +
 ----
-arn:aws:sns:region:account-id:topic-name
+arn:aws:sns:region:account-id:sns-topic-name
 ----
+
 
 * Search integration:
 +
@@ -97,7 +98,7 @@ For a CloudMirror endpoint hosted on StorageGRID, you can specify a valid URN th
 urn:sgws:s3:optional:optional:bucket-name
 ----
 
-* Notifications:
+* Notifications, for example, for Simple Notification Service (SNS) endpoints:
 +
 ----
 urn:mysite:sns:optional:optional:sns-topic-name
@@ -110,3 +111,5 @@ urn:mysite:es:optional:optional:domain-name/index-name/type-name
 ----
 +
 NOTE: For locally-hosted search integration endpoints, the `domain-name` element can be any string as long as the URN of the endpoint is unique.
+
+// 2023 SEP 15, SGWS-25330
