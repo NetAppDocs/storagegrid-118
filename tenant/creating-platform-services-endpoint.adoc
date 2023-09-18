@@ -62,9 +62,21 @@ https://host:port
 http://host:port
 ----
 +
-If you don't specify a port, the following default port is used:
-* For SNS endpoints, port 443 is used for HTTPS URIs and port 80 is used for HTTP URIs.
-* For Kafka endpoints, port 9092 is used for HTTPS and HTTP URIs
+If you don't specify a port, the default port is used.
+
+[role="tabbed-block"]
+====
+.SNS endpoints
+--
+Port 443 is used for HTTPS URIs and port 80 is used for HTTP URIs.
+--
+
+.Kafka endpoints
+--
+Port 9092 is used for HTTPS and HTTP URIs
+--
+====
+
 +
 For example, the URI for a bucket hosted on StorageGRID might be:
 +

@@ -67,12 +67,15 @@ For AWS and GCP entities, the complete URN is a valid AWS ARN. For example:
 arn:aws:s3:::bucket-name
 ----
 
-* Notifications, for example, for Simple Notification Service (SNS) endpoints:
+* Notifications:
++
+For example, specifying a Simple Notification Service (SNS) endpoint:
 +
 ----
 arn:aws:sns:region:account-id:sns-topic-name
 ----
-
++
+For a Kafka endpoint, you can specify a notification using a valid `kafka-topic-name`.
 
 * Search integration:
 +
@@ -98,11 +101,15 @@ For a CloudMirror endpoint hosted on StorageGRID, you can specify a valid URN th
 urn:sgws:s3:optional:optional:bucket-name
 ----
 
-* Notifications, for example, for Simple Notification Service (SNS) endpoints:
+* Notifications:
++
+For example, specifying a Simple Notification Service (SNS) endpoint:
 +
 ----
 urn:mysite:sns:optional:optional:sns-topic-name
 ----
++
+For a Kafka endpoint, you can specify a notification using a valid `kafka-topic-name`.
 
 * Search integration:
 +
