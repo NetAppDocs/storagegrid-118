@@ -63,7 +63,7 @@ http://host:port
 ----
 +
 If you don't specify a port, the default port is used.
-
++
 [role="tabbed-block"]
 ====
 .SNS endpoints
@@ -76,7 +76,6 @@ Port 443 is used for HTTPS URIs and port 80 is used for HTTP URIs.
 Port 9092 is used for HTTPS and HTTP URIs
 --
 ====
-
 +
 For example, the URI for a bucket hosted on StorageGRID might be:
 +
