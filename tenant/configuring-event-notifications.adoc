@@ -9,7 +9,7 @@ summary: 'The notifications service is one of the three StorageGRID platform ser
 :imagesdir: ../media/
 
 [.lead]
-The notifications service is one of the three StorageGRID platform services. You can enable notifications for a bucket to send information about specified events to a destination service or Kafka cluster that supports the AWS Simple Notification Service™ (SNS).
+The notifications service is one of the three StorageGRID platform services. You can enable notifications for a bucket to send information about specified events to a destination Kafka cluster or service that supports the AWS Simple Notification Service™ (SNS).
 
 
 .Before you begin
