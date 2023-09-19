@@ -9,7 +9,8 @@ summary: 'The notifications service is one of the three StorageGRID platform ser
 :imagesdir: ../media/
 
 [.lead]
-The notifications service is one of the three StorageGRID platform services. You can enable notifications for a bucket to send information about specified events to a destination service that supports the AWS Simple Notification Service™ (SNS).
+The notifications service is one of the three StorageGRID platform services. You can enable notifications for a bucket to send information about specified events to a destination service or Kafka cluster that supports the AWS Simple Notification Service™ (SNS).
+
 
 .Before you begin
 
@@ -68,10 +69,15 @@ NOTE: Platform services must be enabled for each tenant account by a StorageGRID
 +
 In the example, an event notification is sent whenever an object is created with the `images/` prefix.
 
- .. Confirm that a notification has been delivered to the destination SNS topic.
+ .. Confirm that a notification has been delivered to the destination SNS or Kafka topic.
 +
-For example, if your destination topic is hosted on the AWS Simple Notification Service (SNS), you could configure the service to send you an email when the notification is delivered.
+For example, if your destination topic is hosted on the AWS Simple Notification Service (SNS) or Kafka topic, you could configure the service to send you an email when the notification is delivered.
 +
+[role="tabbed-block"]
+====
+
+.SNS topic
+--
 ----
 {
    "Records":[
@@ -111,6 +117,16 @@ For example, if your destination topic is hosted on the AWS Simple Notification 
 }
 ----
 
+--
+
+.Kafka topic
+-- 
+----
+Kafka example
+----
+
+--
+====
 +
 If the notification is received at the destination topic, you have successfully configured your source bucket for StorageGRID notifications.
 

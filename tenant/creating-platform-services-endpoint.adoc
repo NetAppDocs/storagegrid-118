@@ -70,7 +70,6 @@ If you don't specify a port, the default port is used.
 --
 Port 443 is used for HTTPS URIs and port 80 is used for HTTP URIs.
 --
-
 .Kafka endpoints
 --
 Port 9092 is used for HTTPS and HTTP URIs
