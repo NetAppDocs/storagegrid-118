@@ -59,7 +59,7 @@ You can set a different audit level for each of the following categories of mess
 
 | crossGridReplication
 | Error
-| link:../tenant/grid-federation-manage-cross-grid-replication.html\enable-cross-grid-replication[Enable Cross-grid replication]
+| link:../tenant/grid-federation-manage-cross-grid-replication.html#enable-cross-grid-replication[Enable Cross-grid replication]
 
 |===
 
