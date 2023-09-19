@@ -2,14 +2,14 @@
 permalink: ilm/working-with-ilm-rules-and-ilm-policies.html
 sidebar: sidebar
 keywords: remove ilm rule, edit ilm rule, clone ilm rule, ilm queue
-summary: 'As your storage requirements change, you might need put a different policy in place or modify the ILM rules associated with the policy. You can view ILM metrics to determine system performance.'
+summary: 'As your storage requirements change, you might need to put a different policy in place or modify the ILM rules associated with the policy. You can view ILM metrics to determine system performance.'
 ---
 = Work with ILM policies and ILM rules
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-As your storage requirements change, you might need put additional policies in place or modify the ILM rules associated with a policy. You can view ILM metrics to determine system performance.
+As your storage requirements change, you might need to put additional policies in place or modify the ILM rules associated with a policy. You can view ILM metrics to determine system performance.
 
 .Before you begin
 
@@ -24,15 +24,15 @@ To view active and inactive ILM policies and policy activation history:
 
 . Select *Policies* to view a list of active and inactive policies. The table lists the name of each policy, the tags the policy is assigned to, and whether the policy is active or inactive.
 
-. Select a policy name to view the details for the policy.
-
 . Select *Activation history* to view a list of activation start and end dates for policies. 
+
+. Select a policy name to view the details for the policy.
 +
 NOTE: If you view the details for a policy whose status is Edited or Deleted, a message appears explaining that you are viewing the version of the policy that was active for the specified time span and has since been edited or deleted.
 
 == Edit an ILM policy
 
-If you want to edit an active policy, ensure that you know how the changes you make will affect object management.
+You can only edit an inactive policy. If you want to edit an active policy, deactivate it or create a clone and edit the clone.
 
 To edit a policy:
 
@@ -43,6 +43,8 @@ To edit a policy:
 . Edit the policy by following the instructions in link:creating-ilm-policy.html[Create ILM policies].
 
 . Simulate the policy before you re-activate it.
+
+CAUTION: An ILM policy that has been incorrectly configured can result in unrecoverable data loss. Before activating an ILM policy, carefully review the ILM policy and its ILM rules, and then simulate the ILM policy. Always confirm that the ILM policy will work as intended.
 
 == Clone an ILM policy
 
@@ -94,9 +96,9 @@ When cloning an ILM rule, you must enter a new name.
 
 You might need to edit an ILM rule to change a filter or placement instruction.
 
-You can't edit a rule if it is used in any ILM policy. Instead, you can <<clone-ilm-rule,clone the rule>> and make any required changes to the cloned copy. You also can't edit the system-provided rule, Make 2 Copies.
+You can't edit a rule if it is used in any ILM policy. Instead, you can <<clone-ilm-rule,clone the rule>> and make any required changes to the cloned copy. Also, you can only edit the system-provided rules, Make 2 Copies (for a single-site grid) or 1 Copy Per Site (for a multi-site grid) for a new installation of StorageGRID 11.8 or later.
 
-NOTE: Before adding an edited rule to the active ILM policy, be aware that a change to an object's placement instructions might cause an increased load on the system.
+CAUTION: An ILM policy that has been incorrectly configured can result in unrecoverable data loss. Before activating an ILM policy, carefully review the ILM policy and its ILM rules, and then simulate the ILM policy. Always confirm that the ILM policy will work as intended.
 
 .Steps
 . Select *ILM* > *Rules*.
@@ -112,11 +114,17 @@ To keep the list of current ILM rules manageable, remove any ILM rules that you 
 
 .Steps
 
-To remove an ILM rule that is currently used in any policy:
+To remove an ILM rule that is currently used in an active policy:
 
 . Clone the policy.
-. Remove the ILM rule from the policy.
+. Remove the ILM rule from the policy clone.
 . Save, simulate, and activate the new policy to make sure objects are protected as expected.
+
+To remove an ILM rule that is currently used in an inactive policy:
+
+. Select the inactive policy.
+. Remove the ILM rule from the policy or remove the policy.
+. On the ILM rules page, select the checkbox for the rule, and then select *Actions* > *Remove*.
 
 To remove an ILM rule that is not currently used:
 
@@ -124,8 +132,6 @@ To remove an ILM rule that is not currently used:
 . Confirm that the rule you want to remove is not used in any policy.
 . If the rule you want to remove is not in use, select the rule and select *Remove*. You can select multiple rules and remove all of them at the same time.
 . Select *Yes* to confirm that you want to remove the ILM rule.
-+
-The ILM rule is removed.
 
 == View ILM metrics
 
