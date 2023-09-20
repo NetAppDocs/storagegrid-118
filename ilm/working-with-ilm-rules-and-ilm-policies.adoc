@@ -30,6 +30,7 @@ To view active and inactive ILM policies and policy activation history:
 +
 NOTE: If you view the details for a policy whose status is Edited or Deleted, a message appears explaining that you are viewing the version of the policy that was active for the specified time span and has since been edited or deleted.
 
+[[edit-ilm-policy]]
 == Edit an ILM policy
 
 You can only edit an inactive policy. If you want to edit an active policy, deactivate it or create a clone and edit the clone.
@@ -58,6 +59,7 @@ To clone an ILM policy:
 
 CAUTION: An ILM policy that has been incorrectly configured can result in unrecoverable data loss. Before activating an ILM policy, carefully review the ILM policy and its ILM rules, and then simulate the ILM policy. Always confirm that the ILM policy will work as intended. 
 
+[[remove-ilm-policy]]
 == Remove an ILM policy
 
 You can only remove an ILM policy if it is inactive. To remove a policy:
@@ -124,8 +126,7 @@ To remove an ILM rule that is currently used in an active policy:
 To remove an ILM rule that is currently used in an inactive policy:
 
 . Select the inactive policy.
-. Remove the ILM rule from the policy or remove the policy.
-. On the ILM rules page, select the checkbox for the rule, and then select *Actions* > *Remove*.
+. Remove the ILM rule from the policy or <<remove-ilm-policy,remove the policy>>.
 . Go to the steps for removing an ILM rule that is not currently used.
 
 To remove an ILM rule that is not currently used:
