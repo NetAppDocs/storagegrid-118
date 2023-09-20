@@ -96,7 +96,7 @@ When cloning an ILM rule, you must enter a new name.
 
 You might need to edit an ILM rule to change a filter or placement instruction.
 
-You can't edit a rule if it is used in any ILM policy. Instead, you can <<clone-ilm-rule,clone the rule>> and make any required changes to the cloned copy. Also, you can only edit the system-provided rules, Make 2 Copies (for a single-site grid) or 1 Copy Per Site (for a multi-site grid) for a new installation of StorageGRID 11.8 or later.
+You can't edit a rule if it is used in any ILM policy. Instead, you can <<clone-ilm-rule,clone the rule>> and make any required changes to the cloned copy.
 
 CAUTION: An ILM policy that has been incorrectly configured can result in unrecoverable data loss. Before activating an ILM policy, carefully review the ILM policy and its ILM rules, and then simulate the ILM policy. Always confirm that the ILM policy will work as intended.
 
@@ -119,12 +119,14 @@ To remove an ILM rule that is currently used in an active policy:
 . Clone the policy.
 . Remove the ILM rule from the policy clone.
 . Save, simulate, and activate the new policy to make sure objects are protected as expected.
+. Go to the steps for removing an ILM rule that is currently used in an inactive policy.
 
 To remove an ILM rule that is currently used in an inactive policy:
 
 . Select the inactive policy.
 . Remove the ILM rule from the policy or remove the policy.
 . On the ILM rules page, select the checkbox for the rule, and then select *Actions* > *Remove*.
+. Go to the steps for removing an ILM rule that is not currently used.
 
 To remove an ILM rule that is not currently used:
 
