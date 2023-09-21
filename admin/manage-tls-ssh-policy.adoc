@@ -49,10 +49,7 @@ image::../media/securitysettings_tls_ssh_policies_current.png[TLS and SSH polici
 | FIPS strict
 | Use this policy if you require Common Criteria certification and need to use the NetApp Cryptographic Security Module 3.0.0 for external client connections to load balancer endpoints, Tenant Manager, and Grid Manager. Using this policy might reduce performance.
 
-*Notes*:
-
-* If you select this policy, all nodes must be link:../maintain/rolling-reboot-procedure.html[rebooted in a rolling fashion] to enable the internal FIPS module. Use *Maintenance* > *Rolling reboot* to initiate and monitor reboots.
-* If you disable the internal FIPS module, you might notice an impact on system performance.
+*Note*: After you select this policy, all nodes must be link:../maintain/rolling-reboot-procedure.html[rebooted in a rolling fashion] to activate the internal FIPS module. Use *Maintenance* > *Rolling reboot* to initiate and monitor reboots.
 
 | Custom
 | Create a custom policy if you need to apply your own ciphers.
