@@ -4,14 +4,14 @@ sidebar: sidebar
 keywords: how to assign ilm policy tag to bucket
 summary: 'Choose an ILM policy tag to assign to a bucket based on your object storage requirements.'
 ---
-= Apply ILM policy to a tag
+= Apply an ILM policy tag to a bucket
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Choose an ILM policy tag to assign to a bucket based on your object storage requirements.
+Choose an ILM policy tag to apply to a bucket based on your object storage requirements.
 
-The ILM policy controls where the object data is stored and whether it is deleted after a certain time period.
+The ILM policy controls where the object data is stored and whether it is deleted after a certain time period. ILM policies are assigned to ILM policy tags when link:../ilm/creating-ilm-policy.html#activate-ilm-policy[multiple ILM policies are activated].
 
 NOTE: Avoid frequently reassigning a bucket's policy tag.
 
