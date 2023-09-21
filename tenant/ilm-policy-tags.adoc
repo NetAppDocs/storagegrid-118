@@ -11,9 +11,9 @@ summary: 'Choose an ILM policy tag to assign to a bucket based on your object st
 [.lead]
 Choose an ILM policy tag to apply to a bucket based on your object storage requirements.
 
-The ILM policy controls where the object data is stored and whether it is deleted after a certain time period. ILM policies are assigned to ILM policy tags when link:../ilm/creating-ilm-policy.html#activate-ilm-policy[multiple ILM policies are activated].
+The ILM policy controls where the object data is stored and whether it is deleted after a certain time period. Your grid administrator creates ILM policies and assigns them to ILM policy tags when using multiple active policies.
 
-NOTE: Avoid frequently reassigning a bucket's policy tag.
+NOTE: Avoid frequently reassigning a bucket's policy tag. Otherwise, performance issues might occur.
 
 .Before you begin
 
@@ -32,12 +32,14 @@ You can also change the ILM policy tag assignment for a bucket that already has 
 +
 IMPORTANT: The Object Count and Space Used values displayed are estimates. These estimates are affected by the timing of ingests, network connectivity, and node status. If buckets have versioning enabled, deleted object versions are included in the object count.
 
-. In the Bucket options tab, expand the ILM policy tag accordion.
+. In the Bucket options tab, expand the ILM policy tag accordion. This accordion only appears if your grid administrator has enabled the use of custom policy tags.
 
 . Read the description of each policy tag to determine which tag should be applied to the bucket.
++
+CAUTION: Changing the ILM policy tag for a bucket will trigger ILM reevaluation of all objects in the bucket. If the new policy retains objects for a limited time, older objects will be deleted.
 
 . Select the radio button for the tag you want to assign to the bucket.
 
-. Select *Save changes*.
+. Select *Save changes*. A new S3 bucket tag will be set on the bucket with the key `NTAP-SG-ILM-BUCKET-TAG` and the value of the ILM policy tag name.
 +
 NOTE: Changing the policy tag assigned to a bucket will have a temporary performance impact while objects are being reevaluated using the new ILM policy.
