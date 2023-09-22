@@ -42,7 +42,7 @@ link:../admin/configuring-custom-server-certificate-for-storage-node.html[Config
 
 == Create a load balancer endpoint
 
-Each load balancer endpoint specifies a port, a client type (S3 or Swift), and a network protocol (HTTP or HTTPS).
+Each S3 or Swift client load balancer endpoint specifies a port, a client type (S3 or Swift), and a network protocol (HTTP or HTTPS). Management interface load balancer endpoints specifies a port, interface type, and untrusted Client Network.
 
 === Access the wizard
 
@@ -53,6 +53,7 @@ Each load balancer endpoint specifies a port, a client type (S3 or Swift), and a
 . To create an endpoint for access to the Grid Manager, Tenant Manager, or both, select the *Management interface* tab.
 . Select *Create*.
 
+[[enter-endpoint-details]]
 === Enter endpoint details
 
 .Steps
@@ -131,21 +132,21 @@ include::../_include/load-balancer-endpoint-binding-mode.adoc[]
 +
 If more than one endpoint uses the same port, StorageGRID uses this priority order to decide which endpoint to use: *Virtual IPs of HA groups* > *Node interfaces* > *Node type* > *Global*. 
 +
-If you are creating Management interface endpoints, only Admin Nodes are allowed.
+If you are creating management interface endpoints, only Admin Nodes are allowed.
 
 . If you selected *Virtual IPs of HA groups*, select one or more HA groups.
++
+If you are creating management interface endpoints, select VIPs associated only with Admin Nodes.
 
 . If you selected *Node interfaces*, select one or more node interfaces for each Admin Node or Gateway Node that you want to associate with this endpoint.
-+
-If you are creating Management interface endpoints, select VIPs associated only with Admin Nodes.
 
 . If you selected *Node type*, select either Admin Nodes, which includes both the primary Admin Node and any non-primary Admin Nodes, or Gateway Nodes.
 
-=== Control tenant access (Client endpoint only)
+=== Control tenant access
+
+NOTE: A management interface endpoint can control tenant access only when the endpoint has the <<enter-endpoint-details,interface type of Tenant Manager>>.
 
 .Steps
-
-This step applies only to creating a client endpoint.
 
 . For the *Tenant access* step, select one of the following:
 +
