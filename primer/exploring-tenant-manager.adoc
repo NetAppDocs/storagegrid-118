@@ -51,7 +51,7 @@ S3 tenant users with the appropriate permissions can perform the following tasks
 * Configure cross-origin resource sharing (CORS)
 * Delete all objects in a bucket
 * Delete empty buckets
-* Use the link:../tenant/use-s3-console.html[experimental S3 Console] to manage bucket objects
+* Use the link:../tenant/use-s3-console.html[S3 Console] to manage bucket objects
 
 If a grid administrator has enabled the use of platform services for the tenant account, an S3 tenant user with the appropriate permissions can also perform these tasks:
 

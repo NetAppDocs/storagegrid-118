@@ -6,7 +6,7 @@
 .Steps
 . Select *SUPPORT* > *Tools* > *AutoSupport*.
 
-. On the *Settings* tab, select *Send User-Triggered AutoSupport*.
+. On the *Actions* tab, select *Send User-Triggered AutoSupport*.
 +
 StorageGRID attempts to send an AutoSupport package to the NetApp Support Site. If the attempt is successful, the *Most Recent Result* and *Last Successful Time* values on the *Results* tab are updated. If there is a problem, the *Most Recent Result* value updates to "Failed," and StorageGRID does not try to send the AutoSupport package again.
 +
