@@ -82,11 +82,11 @@ NOTE: If the delete request includes a version ID, that object version is perman
 +
 See link:../admin/grid-federation-what-is-cross-grid-replication.html[What is cross-grid replication] for details.
 
-.. Optionally, change the setting of the *crossGridReplication* audit category to manage the volume of audit messages:
+.. Optionally, change the setting of the *Cross-grid replication* audit category to manage the volume of audit messages:
 +
-* If *Error* (default), Cross-grid replication requests and PUT audit messages are not included in the audit output.
+* If *Error* (default), only failed Cross-grid replication requests are included in the audit output.
 +
-* If *Normal*, Cross-grid replication requests and PUT audit messages are included which significantly increases the volume of the audit output.
+* If *Normal*, all Cross-grid replication requests are included which significantly increases the volume of the audit output.
 
 .. Review your selections. You aren't able to change these settings unless both buckets are empty.
 
