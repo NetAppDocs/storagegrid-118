@@ -69,13 +69,9 @@ arn:aws:s3:::bucket-name
 
 * Notifications:
 +
-For example, specifying a Simple Notification Service (Amazon SNS) endpoint:
-+
 ----
-arn:aws:sns:region:account-id:sns-topic-name
+arn:aws:sns:region:account-id:topic-name
 ----
-+
-For a Kafka endpoint, you can specify a notification using a valid `kafka-topic-name`.
 
 * Search integration:
 +
@@ -103,13 +99,17 @@ urn:sgws:s3:optional:optional:bucket-name
 
 * Notifications:
 +
-For example, specifying an Amazon SNS endpoint:
+Specify an Amazon SNS endpoint:
 +
 ----
 urn:mysite:sns:optional:optional:sns-topic-name
 ----
 +
-For a Kafka endpoint, you can specify a notification using a valid `kafka-topic-name`.
+Specify a Kafka endpoint:
++
+----
+urn:mysite:kafka:optional:optional:kafka-topic-name
+----
 
 * Search integration:
 +

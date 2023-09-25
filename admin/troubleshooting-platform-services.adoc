@@ -11,6 +11,8 @@ summary: 'The endpoints used in platform services are created and maintained by 
 [.lead]
 The endpoints used in platform services are created and maintained by tenant users in the Tenant Manager; however, if a tenant has issues configuring or using platform services, you might be able to use the Grid Manager to help resolve the issue.
 
+NOTE: When troubleshooting Kafka endpoint errors, verify that the URI hostname and port are correct and that the destination Kafka cluster is configured correctly and can connect to clients outside of storageGRID. 
+
 == Issues with new endpoints
 
 Before a tenant can use platform services, they must create one or more endpoints using the Tenant Manager. Each endpoint represents an external destination for one platform service, such as a StorageGRID S3 bucket, an Amazon Web Services bucket, a Simple Notification Service topic, or an Elasticsearch cluster hosted locally or on AWS. Each endpoint includes both the location of the external resource and the credentials needed to access that resource.
@@ -119,3 +121,4 @@ For additional information see link:../tenant/troubleshooting-platform-services-
 
 * link:../troubleshoot/index.html[Troubleshoot StorageGRID system]
 
+// 2023 SEP 25, SGWS-25330
