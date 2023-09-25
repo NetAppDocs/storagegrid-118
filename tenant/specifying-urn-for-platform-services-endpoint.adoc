@@ -69,7 +69,7 @@ arn:aws:s3:::bucket-name
 
 * Notifications:
 +
-For example, specifying a Simple Notification Service (SNS) endpoint:
+For example, specifying a Simple Notification Service (Amazon SNS) endpoint:
 +
 ----
 arn:aws:sns:region:account-id:sns-topic-name
@@ -103,7 +103,7 @@ urn:sgws:s3:optional:optional:bucket-name
 
 * Notifications:
 +
-For example, specifying a Simple Notification Service (SNS) endpoint:
+For example, specifying an Amazon SNS endpoint:
 +
 ----
 urn:mysite:sns:optional:optional:sns-topic-name

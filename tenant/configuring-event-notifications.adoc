@@ -2,7 +2,7 @@
 permalink: tenant/configuring-event-notifications.html
 sidebar: sidebar
 keywords: how to configure event notifications, bucket notification
-summary: 'The notifications service is one of the three StorageGRID platform services. You can enable notifications for a bucket to send information about specified events to a destination service that supports the AWS Simple Notification Service™ \(SNS\).'
+summary: 'The notifications service is one of the three StorageGRID platform services. You can enable notifications for a bucket to send information about specified events to a destination service that supports the AWS Simple Notification Service™ (SNS).'
 ---
 = Configure event notifications
 :icons: font
@@ -50,6 +50,7 @@ If you enable event notifications for a bucket that contains objects, notificati
    </TopicConfiguration>
  </NotificationConfiguration>
 ----
+
 . In the Tenant Manager select *STORAGE (S3)* > *Buckets*.
 . Select the name of the source bucket.
 +
@@ -57,8 +58,9 @@ The bucket details page appears.
 
 . Select *Platform services* > *Event notifications*.
 . Select the *Enable event notifications* checkbox.
-. Paste the notification configuration XML into the text box, and select *Save changes*.
+. Paste the notification configuration XML into the text box and select *Save changes*.
 +
+The following example shows an XML with the URN of an Amazon SNS endpoint notification.
 image::../media/tenant_bucket_event_notification_configuration.png[screenshot of event notification configuration dialog box]
 +
 NOTE: Platform services must be enabled for each tenant account by a StorageGRID administrator using the Grid Manager or Grid Management API. Contact your StorageGRID administrator if an error occurs when you save the configuration XML.
