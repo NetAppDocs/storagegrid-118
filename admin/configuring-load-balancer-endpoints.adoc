@@ -127,9 +127,9 @@ If you enter *80* or *8443*, the endpoint is configured only on Gateway Nodes, u
 .Steps
 
 . Select a binding mode for the endpoint to control how the endpoint is accessed using any IP address or using specific IP addresses and network interfaces.
-
-Some binding modes are available for either client endpoints and management interface endpoints. All modes for both endpoint types are listed here.
-
++
+Some binding modes are available for either client endpoints or management interface endpoints. All modes for both endpoint types are listed here.
++
 //Some rows of this table are unique for this topic. Be sure to update the common rows for this table and for the (include) for fp or s3 setup wizards table
 +
 [cols="1a,3a" options="header"]
@@ -156,6 +156,7 @@ Endpoints with this binding mode can all use the same port number, as long as th
 | Clients must use the IP address (or corresponding FQDN) of any Admin Node to access this endpoint.
 |===
 +
+
 If more than one endpoint uses the same port, StorageGRID uses this priority order to decide which endpoint to use: *Virtual IPs of HA groups* > *Node interfaces* > *Node type* > *Global*. 
 +
 If you are creating management interface endpoints, only Admin Nodes are allowed.
