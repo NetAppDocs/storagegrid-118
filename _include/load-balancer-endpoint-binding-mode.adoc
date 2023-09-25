@@ -1,6 +1,6 @@
 [cols="1a,3a" options="header"]
 |===
-| Option | Description
+| Mode | Description
 
 | Global (default)
 | Clients can access the endpoint using the IP address of any Gateway Node or Admin Node, the virtual IP (VIP) address of any HA group on any network, or a corresponding FQDN.
@@ -15,9 +15,6 @@ Endpoints with this binding mode can all use the same port number, as long as th
 | Node interfaces
 | Clients must use the IP addresses (or corresponding FQDNs) of selected node interfaces to access this endpoint.
 
-| Node type (client load balancer endpoints only)
-| Based on the type of node you select, clients must use either the IP address (or corresponding FQDN) of any Admin Node or the IP address (or corresponding FQDN) of any Gateway Node to access this endpoint.
-
-| All Admin Nodes (management interface endpoints only)
+| Node type
 | Based on the type of node you select, clients must use either the IP address (or corresponding FQDN) of any Admin Node or the IP address (or corresponding FQDN) of any Gateway Node to access this endpoint.
 |===
