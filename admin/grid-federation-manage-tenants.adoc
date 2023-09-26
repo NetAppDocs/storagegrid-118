@@ -2,14 +2,14 @@
 permalink: admin/grid-federation-manage-tenants.html
 sidebar: sidebar
 keywords: grid federation, manage tenant, use grid federation permission, remove permission, cross grid replication
-summary: 'You can allow new S3 tenant accounts to use a grid federation connection between two StorageGRID systems. When tenants are allowed to use a connection, special steps are required to edit tenant details or to permanently remove tenant permission to use the connection.'
+summary: 'You can allow S3 tenant accounts to use a grid federation connection between two StorageGRID systems. When tenants are allowed to use a connection, special steps are required to edit tenant details or to permanently remove tenant permission to use the connection.'
 ---
 = Manage the permitted tenants for grid federation
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You can allow new S3 tenant accounts to use a grid federation connection between two StorageGRID systems. When tenants are allowed to use a connection, special steps are required to edit tenant details or to permanently remove a tenant's permission to use the connection.
+You can allow S3 tenant accounts to use a grid federation connection between two StorageGRID systems. When tenants are allowed to use a connection, special steps are required to edit tenant details or to permanently remove a tenant's permission to use the connection.
 
 .Before you begin
 
@@ -20,15 +20,13 @@ You can allow new S3 tenant accounts to use a grid federation connection between
 * As required, you have already configured single sign-on (SSO) or identify federation for both grids in the connection. See link:grid-federation-what-is-account-clone.html[What is account clone].
 
 == Create a permitted tenant
-If you want to allow a tenant account to use a grid federation connection for account clone and cross-grid replication, follow the general instructions to link:creating-tenant-account.html[create a new S3 tenant] and note the following:
+If you want to allow a new or existing tenant account to use a grid federation connection for account clone and cross-grid replication, follow the general instructions to link:creating-tenant-account.html[create a new S3 tenant] or link:editing-tenant-account.html[edit a tenant account] and note the following:
 
 * You can create the tenant from either grid in the connection. The grid where a tenant is created is the _tenant's source grid_.
 
 * The status of the connection must be *Connected*.
 
-* You can only select the *Use grid federation connection* permission when you are creating a new S3 tenant; you can't enable this permission when you edit an existing tenant.
-
-* When the new tenant is saved on the first grid, an identical tenant is automatically replicated to the other grid. The grid where the tenant is replicated is the _tenant's destination grid_.
+* When the tenant is created or edited to enable the *Use grid federation connection* permission and then saved on the first grid, an identical tenant is automatically replicated to the other grid. The grid where the tenant is replicated is the _tenant's destination grid_.
 
 * The tenants on both grids will have the same 20-digit account ID, name, description, quota, and permissions. Optionally, you can use the *Description* field to help identify which is the source tenant and which is the destination tenant. For example, this description for a tenant created on Grid 1 will also appear for the tenant replicated to Grid 2: "`This tenant was created on Grid 1.`"
 
@@ -36,7 +34,7 @@ If you want to allow a tenant account to use a grid federation connection for ac
 +
 TIP: Before a local root user can sign in to the replicated tenant on the destination grid, a grid administrator for that grid must link:changing-password-for-tenant-local-root-user.html[change the password for the local root user].
 
-* After the new tenant is available on both grids, tenant users can perform these operations:
+* After the new or edited tenant is available on both grids, tenant users can perform these operations:
 
 ** From the tenant's source grid, create groups and local users, which are automatically cloned to the tenant's destination grid. See link:../tenant/grid-federation-account-clone.html[Clone tenant groups and users].
 
