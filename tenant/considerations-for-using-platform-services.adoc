@@ -54,13 +54,13 @@ a|
 Using Kafka endpoints
 
 a|
-The authentication method used when creating Kafka endpoints requires the following credentials, which are different to those used for other endpoints:
+The authentication of Kafka endpoints uses the following authentication types, which are different to those used for the authentication other endpoints and require username and password credentials:
 
 * SASL/PLAIN
 * SASL/SCRAM-SHA-256
 * SASL/SCRAM-SHA-512
 
-You should also note that Kafka endpoints do not support storage proxy settings.
+You should also note that you cannot configure storage proxy settings for Kafka endpoints.
 
 |===
 

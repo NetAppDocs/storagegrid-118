@@ -11,7 +11,7 @@ summary: 'The endpoints used in platform services are created and maintained by 
 [.lead]
 The endpoints used in platform services are created and maintained by tenant users in the Tenant Manager; however, if a tenant has issues configuring or using platform services, you might be able to use the Grid Manager to help resolve the issue.
 
-NOTE: When troubleshooting Kafka endpoint errors, verify that the URI hostname and port are correct and that the destination Kafka cluster is configured correctly and can connect to clients outside of storageGRID. 
+NOTE: When troubleshooting Kafka endpoint errors, verify that the URI hostname and port are correct and that the destination Kafka cluster is configured correctly and can connect to clients outside of StorageGRID. 
 
 == Issues with new endpoints
 
