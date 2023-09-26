@@ -18,7 +18,7 @@ You can change the enabled/disabled state for a default or custom alert rule.
 .About this task
 When an alert rule is disabled, its expressions aren't evaluated and no alerts are triggered.
 
-IMPORTANT: In general, disabling a default alert rule is not recommended. If an alert rule is disabled, you might not detect an underlying problem until it prevents a critical operation from completing.
+CAUTION: In general, disabling a default alert rule is not recommended. If an alert rule is disabled, you might not detect an underlying problem until it prevents a critical operation from completing.
 
 .Steps
 . Select *ALERTS* > *Rules*.
