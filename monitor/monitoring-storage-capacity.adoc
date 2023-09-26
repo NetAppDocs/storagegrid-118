@@ -136,7 +136,7 @@ NOTE: The total values for a site or the grid don't include nodes that have not 
 
 . If the *Used (%)* value is 70% or higher, expand your StorageGRID system by adding Storage Nodes to each site.
 +
-IMPORTANT: The *Low metadata storage* alert is triggered when the *Used (%)* value reaches certain thresholds. Undesirable results can occur if object metadata uses more than 100% of the allowed space.
+CAUTION: The *Low metadata storage* alert is triggered when the *Used (%)* value reaches certain thresholds. Undesirable results can occur if object metadata uses more than 100% of the allowed space.
 +
 When you add the new nodes, the system automatically rebalances object metadata across all Storage Nodes within the site. See the link:../expand/index.html[instructions for expanding a StorageGRID system].
 

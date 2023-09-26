@@ -18,7 +18,7 @@ You can edit an alert rule to change the trigger conditions, For a custom alert 
 .About this task
 When you edit a default alert rule, you can change the conditions for minor, major, and critical alerts; and the duration. When you edit a custom alert rule, you can also edit the rule's name, description, and recommended actions.
 
-IMPORTANT: Be careful when deciding to edit an alert rule. If you change trigger values, you might not detect an underlying problem until it prevents a critical operation from completing.
+CAUTION: Be careful when deciding to edit an alert rule. If you change trigger values, you might not detect an underlying problem until it prevents a critical operation from completing.
 
 .Steps
 . Select *ALERTS* > *Rules*.
@@ -38,7 +38,7 @@ If an alert rule is disabled, its expressions aren't evaluated and no alerts are
 +
 NOTE: If you disable the alert rule for a current alert, you must wait a few minutes for the alert to no longer appear as an active alert.
 +
-IMPORTANT: In general, disabling a default alert rule is not recommended. If an alert rule is disabled, you might not detect an underlying problem until it prevents a critical operation from completing.
+CAUTION: In general, disabling a default alert rule is not recommended. If an alert rule is disabled, you might not detect an underlying problem until it prevents a critical operation from completing.
 
 . For custom alert rules, update the following information as required.
 +

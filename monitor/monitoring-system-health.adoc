@@ -167,7 +167,7 @@ See link:silencing-alert-notifications.html[Silence alert notifications].
 +
 You must have the link:../admin/admin-group-permissions.html[Manage alerts or Root access permission] to silence an alert rule.
 +
-IMPORTANT: Be careful when deciding to silence an alert rule. If an alert rule is silenced, you might not detect an underlying problem until it prevents a critical operation from completing.
+CAUTION: Be careful when deciding to silence an alert rule. If an alert rule is silenced, you might not detect an underlying problem until it prevents a critical operation from completing.
 
 . To view the current conditions for the alert rule:
  .. From the alert details, select *View conditions*.
@@ -179,6 +179,6 @@ A pop-up appears, listing the Prometheus expression for each defined severity.
 +
 You must have the link:../admin/admin-group-permissions.html[Manage alerts or Root access permission] to edit an alert rule.
 +
-IMPORTANT: Be careful when deciding to edit an alert rule. If you change trigger values, you might not detect an underlying problem until it prevents a critical operation from completing.
+CAUTION: Be careful when deciding to edit an alert rule. If you change trigger values, you might not detect an underlying problem until it prevents a critical operation from completing.
 
 . To close the alert details, select *Close*.

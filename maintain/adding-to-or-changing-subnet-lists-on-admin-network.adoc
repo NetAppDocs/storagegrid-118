@@ -85,7 +85,7 @@ CAUTION: The Admin Network subnet list on the node might contain /32 subnets der
 If you did not specifically assign the NTP and DNS server subnets to a network, StorageGRID creates a host route (/32) for the connection automatically. If, for example, you would rather have a /16 or /24 route for outbound connection to a DNS or NTP server, you should delete the automatically created /32 route and add the routes you want. If you don't delete the automatically created host route, it will be persisted after you apply any changes to the subnet list.
 
 +
-IMPORTANT: Although you can use these automatically discovered host routes, in general you should manually configure the DNS and NTP routes to ensure connectivity.
+NOTE: Although you can use these automatically discovered host routes, in general you should manually configure the DNS and NTP routes to ensure connectivity.
 . Select option *7* to validate all staged changes.
 +
 This validation ensures that the rules for the Grid, Admin, and Client Networks are followed, such as using overlapping subnets.

@@ -17,7 +17,7 @@ Before you upgrade to StorageGRID 11.8, your grid must have StorageGRID 11.7 ins
 
 One possible upgrade path is shown in the <<Example: Upgrade to StorageGRID 11.7 from version 11.5,example>>.
 
-IMPORTANT: NetApp strongly recommends that you apply the latest hotfix for each StorageGRID version before upgrading to the next version and that you also apply the latest hotfix for each new version you install. In some cases, you must apply a hotfix to avoid the risk of data loss. See https://mysupport.netapp.com/site/products/all/details/storagegrid/downloads-tab[NetApp Downloads: StorageGRID^] and the release notes for each hotfix to learn more. 
+CAUTION: NetApp strongly recommends that you apply the latest hotfix for each StorageGRID version before upgrading to the next version and that you also apply the latest hotfix for each new version you install. In some cases, you must apply a hotfix to avoid the risk of data loss. See https://mysupport.netapp.com/site/products/all/details/storagegrid/downloads-tab[NetApp Downloads: StorageGRID^] and the release notes for each hotfix to learn more. 
 
 
 .Steps
