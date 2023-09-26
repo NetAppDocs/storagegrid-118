@@ -39,7 +39,7 @@ Use all three of these headers if the object is encrypted with a unique key that
 * `x-amz-server-side-encryption-customer-key`: Specify your encryption key for the object.
 * `x-amz-server-side-encryption-customer-key-MD5`: Specify the MD5 digest of the object's encryption key.
 
-IMPORTANT: The encryption keys you provide are never stored. If you lose an encryption key, you lose the corresponding object. Before using customer-provided keys to secure object data, review the considerations in link:using-server-side-encryption.html[Use server-side encryption].
+CAUTION: The encryption keys you provide are never stored. If you lose an encryption key, you lose the corresponding object. Before using customer-provided keys to secure object data, review the considerations in link:using-server-side-encryption.html[Use server-side encryption].
 
 == HeadObject responses for Cloud Storage Pool objects
 
