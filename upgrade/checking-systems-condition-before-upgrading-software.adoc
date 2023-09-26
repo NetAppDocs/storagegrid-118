@@ -38,4 +38,4 @@ The following link:../network/internal-grid-node-communications.html#storagegrid
 
 |===
 
-IMPORTANT: If you have opened any custom firewall ports, you are notified during the upgrade precheck. You must contact technical support before proceeding with the upgrade.
+CAUTION: If you have opened any custom firewall ports, you are notified during the upgrade precheck. You must contact technical support before proceeding with the upgrade.

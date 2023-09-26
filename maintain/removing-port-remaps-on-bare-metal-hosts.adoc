@@ -19,7 +19,7 @@ CAUTION: This procedure removes all port remaps. If you need to keep some of the
 
 For information about configuring load balancer endpoints, see the instructions for administering StorageGRID.
 
-IMPORTANT: This procedure can result in temporary loss of service as nodes are restarted.
+NOTE: This procedure can result in temporary loss of service as nodes are restarted.
 
 .Steps
 
