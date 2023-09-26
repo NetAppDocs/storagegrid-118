@@ -68,7 +68,7 @@ If you are creating a tenant that will use a grid federation connection, optiona
 
 . Select *Continue*.
 
-== Select permissions
+== [[admin-tenant-select-permissions]]Select permissions
 
 .Steps
 
