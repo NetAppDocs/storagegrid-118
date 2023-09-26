@@ -72,9 +72,9 @@ You must perform these steps before adding any objects to either bucket.
 
 .. Optionally, change the setting of *Replicate delete markers* to determine what happens on the destination grid if an S3 client issues a delete request to the source grid that doesn't include a version ID:
 
-* If *Yes* (default), a delete marker is added to the source bucket and replicated to the destination bucket.
+* *Yes* (default): A delete marker is added to the source bucket and replicated to the destination bucket.
 
-* If *No*, a delete marker is added to the source bucket but is not replicated to the destination bucket. 
+* *No*: A delete marker is added to the source bucket but is not replicated to the destination bucket. 
 +
 image::../media/grid-federation-cross-grid-replication-client-deletes.png[image showing replicate client delete on both grids]
 +
@@ -84,9 +84,9 @@ See link:../admin/grid-federation-what-is-cross-grid-replication.html[What is cr
 
 .. Optionally, change the setting of the *Cross-grid replication* audit category to manage the volume of audit messages:
 +
-* If *Error* (default), only failed Cross-grid replication requests are included in the audit output.
+* *Error* (default): Only failed Cross-grid replication requests are included in the audit output.
 +
-* If *Normal*, all Cross-grid replication requests are included which significantly increases the volume of the audit output.
+* *Normal*: All Cross-grid replication requests are included, which significantly increases the volume of the audit output.
 
 .. Review your selections. You aren't able to change these settings unless both buckets are empty.
 

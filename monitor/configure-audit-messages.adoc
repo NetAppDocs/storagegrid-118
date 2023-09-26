@@ -63,7 +63,7 @@ You can set a different audit level for each of the following categories of mess
 
 |===
 
-NOTE: These defaults apply if you initially installed StorageGRID using version 10.3 or later. If you initially used an earlier version of StorageGRID, the default for all categories is set to Normal. This does not apply to Cross-grid replication which was introduced in StorageGRID 11.8 with the default set to Error.
+NOTE: These defaults apply if you initially installed StorageGRID using version 10.3 or later. If you initially used an earlier version of StorageGRID, the default for all categories is set to Normal. For StorageGRID 11.8, the default for Cross-grid replication is Error.
 
 NOTE: During upgrades, audit level configurations will not be effective immediately.
 
