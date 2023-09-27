@@ -25,8 +25,8 @@ To ensure that platform services messages can be delivered, you must configure t
 
 By default, platform services messages are sent on the following ports:
 
-* *80*: For endpoint URIs that begin with HTTP
-* *443*: For endpoint URIs that begin with HTTPS
+* *80*: For endpoint URIs that begin with HTTP (most endpoints)
+* *443*: For endpoint URIs that begin with HTTPS (most endpoints)
 * *9092*: For endpoint URIs that begin with HTTP or HTTPS (Kafka endpoints only)
 
 Tenants can specify a different port when they create or edit an endpoint.

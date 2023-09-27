@@ -87,6 +87,7 @@ The bucket details page appears.
 . Paste the notification configuration XML into the text box, and select *Save changes*.
 +
 The following example shows an XML with the URN of an Amazon SNS endpoint notification.
++
 image::../media/tenant_bucket_event_notification_configuration.png[screenshot of event notification configuration dialog box]
 +
 NOTE: Platform services must be enabled for each tenant account by a StorageGRID administrator using the Grid Manager or Grid Management API. Contact your StorageGRID administrator if an error occurs when you save the configuration XML.

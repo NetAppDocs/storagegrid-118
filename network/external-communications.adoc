@@ -276,13 +276,6 @@ NOTE: This list does not include ports that might be configured as link:../admin
 
 *Note*: If you close Grid Manager ports 443 or 8443, any users currently connected on a blocked port, including you, will lose access to Grid Manager unless their IP address has been added to the Privileged address list. See link:../admin/configure-firewall-controls.html[Configure firewall controls] to configure privileged IP addresses.
 
-|9022
-|TCP
-|Kafka
-|Storage Nodes with ADC
-|Kafka cluster
-|Used for platform services messages sent to a Kafka cluster. Tenants can override the default Kafka port setting of 9092 when creating an endpoint.
-
 | 9022
 | TCP
 | SSH
@@ -298,6 +291,13 @@ NOTE: This list does not include ports that might be configured as link:../admin
 | Used by external Grafana services for secure access to the StorageGRID Prometheus service.
 
 *Note:* This port is required only if certificate-based Prometheus access is enabled.
+
+|9092
+|TCP
+|Kafka
+|Storage Nodes with ADC
+|Kafka cluster
+|Used for platform services messages sent to a Kafka cluster. Tenants can override the default Kafka port setting of 9092 when creating an endpoint.
 
 | 9443
 | TCP

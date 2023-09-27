@@ -34,7 +34,7 @@ link:specifying-urn-for-platform-services-endpoint.html[Specify URN for platform
 [role="tabbed-block"]
 ====
 
-.All other endpoints
+.Most endpoints
 --
 *** Access Key: Access key ID and secret access key
 *** Basic HTTP: Username and password
@@ -78,7 +78,7 @@ http://host:port
 
 If you don't specify a port, the following default ports are used:
 
-* Port 443 for HTTPS URIs and port 80 for HTTP URIs.
+* Port 443 for HTTPS URIs and port 80 for HTTP URIs (most endpoints)
 * Port 9092 for HTTPS and HTTP URIs (Kafka endpoints only)
 --
 +
@@ -112,7 +112,7 @@ NOTE: You can't change an endpoint's URN after the endpoint has been created.
 [role="tabbed-block"]
 ====
 
-.All other endpoints
+.Most endpoints
 --
 
 image::../media/endpoint_create_authentication_type.png[Create Endpoint - Authentication Type]
