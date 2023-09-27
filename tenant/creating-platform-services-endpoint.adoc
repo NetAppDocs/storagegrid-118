@@ -167,7 +167,7 @@ The credentials that you supply must have write permissions for the destination 
 
 |SASL/PLAIN
 |Uses a username and password with plain test to authenticate connections to the destination.
-|A
+|
 * Username
 * Password
 
