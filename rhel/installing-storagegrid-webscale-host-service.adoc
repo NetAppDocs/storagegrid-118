@@ -31,6 +31,6 @@ sudo yum --nogpgcheck localinstall /tmp/StorageGRID-Webscale-Images-version-SHA.
 sudo yum --nogpgcheck localinstall /tmp/StorageGRID-Webscale-Service-version-SHA.rpm
 ----
 +
-IMPORTANT: You must install the Images package first, and the Service package second.
+CAUTION: You must install the Images package first, and the Service package second.
 +
 NOTE: If you placed the packages in a directory other than `/tmp`, modify the command to reflect the path you used.

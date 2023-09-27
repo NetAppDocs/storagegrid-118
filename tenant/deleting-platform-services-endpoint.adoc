@@ -26,7 +26,7 @@ image::../media/endpoints_list.png[Endpoints List]
 
 . Select the checkbox for each endpoint you want to delete.
 +
-IMPORTANT: If you delete a platform services endpoint that is in use, the associated platform service will be disabled for any buckets that use the endpoint. Any requests that have not yet been completed will be dropped. Any new requests will continue to be generated until you change your bucket configuration to no longer reference the deleted URN. StorageGRID will report these requests as unrecoverable errors.
+NOTE: If you delete a platform services endpoint that is in use, the associated platform service will be disabled for any buckets that use the endpoint. Any requests that have not yet been completed will be dropped. Any new requests will continue to be generated until you change your bucket configuration to no longer reference the deleted URN. StorageGRID will report these requests as unrecoverable errors.
 
 . Select *Actions* > *Delete endpoint*.
 +

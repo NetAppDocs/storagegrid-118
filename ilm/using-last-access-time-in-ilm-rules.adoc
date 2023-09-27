@@ -23,7 +23,7 @@ Take this latency into account when creating ILM rules based on Last access time
 +
 NOTE: Last access time updates are always enabled for Swift containers, but are disabled by default for S3 buckets.
 +
-IMPORTANT: Be aware that enabling last access time updates can reduce performance, especially in systems with small objects. The performance impact occurs because StorageGRID must update the objects with new timestamps every time the objects are retrieved.
+NOTE: Be aware that enabling last access time updates can reduce performance, especially in systems with small objects. The performance impact occurs because StorageGRID must update the objects with new timestamps every time the objects are retrieved.
 
 The following table summarizes whether the Last access time is updated for all objects in the bucket for different types of requests.
 [cols="1a,1a,1a" options="header"]

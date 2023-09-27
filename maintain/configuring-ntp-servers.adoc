@@ -53,7 +53,7 @@ You should include at least four NTP servers, and you can specify up to six serv
 +
 The page is disabled until the configuration updates are complete.
 +
-IMPORTANT: If all of your NTP servers fail the connection test after you save the new NTP servers, don't proceed. Contact technical support.
+NOTE: If all of your NTP servers fail the connection test after you save the new NTP servers, don't proceed. Contact technical support.
 
 == Resolve NTP server issues
 

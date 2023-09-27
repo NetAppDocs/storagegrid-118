@@ -19,7 +19,7 @@ It might be possible to find and restore objects that have triggered a Lost Obje
 .About this task
 You can follow this procedure to look for replicated copies of the lost object elsewhere in the grid. In most cases, the lost object will not be found. However, in some cases, you might be able to find and restore a lost replicated object if you take prompt action.
 
-IMPORTANT: Contact technical support for assistance with this procedure.
+CAUTION: Contact technical support for assistance with this procedure.
 
 .Steps
 . From an Admin Node, search the audit logs for possible object locations:

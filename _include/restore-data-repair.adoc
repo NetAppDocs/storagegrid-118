@@ -18,7 +18,7 @@ If all storage volumes have failed, repair the entire node. Follow the instructi
 
 If only some volumes have failed, go to <<Repair data if only some volumes have failed>>.
 
-IMPORTANT: You can't run `repair-data` operations for more than one node at the same time. To recover multiple nodes, contact technical support.
+NOTE: You can't run `repair-data` operations for more than one node at the same time. To recover multiple nodes, contact technical support.
 
 // start tabbed area
 
