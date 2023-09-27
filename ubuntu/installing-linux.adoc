@@ -11,7 +11,7 @@ summary: 'You must install Ubuntu or Debian on all grid hosts. For a list of sup
 [.lead]
 You must install Linux on all grid hosts. For a list of supported versions, use the NetApp Interoperability Matrix Tool.
 
-IMPORTANT: Ensure that your operating system is upgraded to Linux kernel 4.15 or higher.
+NOTE: Ensure that your operating system is upgraded to Linux kernel 4.15 or higher.
 
 .Steps
 
@@ -25,4 +25,4 @@ NOTE: Don't install any graphical desktop environments. When installing Ubuntu, 
  .. Remove all swap entries from `/etc/fstab` to persist the settings.
 +
 
-IMPORTANT: Failing to disable swap entirely can severely lower performance.
+NOTE: Failing to disable swap entirely can severely lower performance.

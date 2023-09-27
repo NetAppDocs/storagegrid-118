@@ -18,7 +18,7 @@ You can use the Swift CLI to test your connection to the StorageGRID system and 
 * You have link:../admin/creating-tenant-account.html[created a Swift tenant account].
 * You have signed in to the tenant account and created  at least one group and user. See link:../tenant/creating-groups-for-swift-tenant.html[Create groups for a Swift tenant].
 +
-IMPORTANT: Swift tenant users must have the Administrator group permission to authenticate into the Swift REST API.
+NOTE: Swift tenant users must have the Administrator group permission to authenticate into the Swift REST API.
 
 .About this task
 If you have not configured security, you must add the `--insecure` flag to each of these commands.

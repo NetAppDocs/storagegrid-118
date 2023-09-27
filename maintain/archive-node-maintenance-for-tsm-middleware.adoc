@@ -138,7 +138,7 @@ Recall also that the `Filespace` is the node ID of the Archive Node.
 You will need the CBID of each object stored on the volume and the node ID of the Archive Node to cancel the retrieval request.
 . For each object that is permanently unavailable, cancel the retrieval request and issue a command to inform the StorageGRID system that the object copy was lost:
 +
-IMPORTANT: Use the ADE Console with caution. If the console is used improperly, it is possible to interrupt system operations and corrupt data. Enter commands carefully, and only use the commands documented in this procedure.
+CAUTION: Use the ADE Console with caution. If the console is used improperly, it is possible to interrupt system operations and corrupt data. Enter commands carefully, and only use the commands documented in this procedure.
 
  .. If you aren't already logged in to the Archive Node, log in as follows:
   ... Enter the following command: `ssh admin@_grid_node_IP_`
