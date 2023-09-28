@@ -9,7 +9,7 @@ summary: 'This message is generated when StorageGRID attempts a cross-grid repli
 :imagesdir: ../media/
 
 [.lead]
-This message is generated when StorageGRID attempts a cross-grid replication operation to replicate objects between buckets in a grid federation connection. An audit message is sent only if the request permanently failed (RESULT GERR).
+This message is generated when StorageGRID attempts a cross-grid replication operation to replicate objects between buckets in a grid federation connection.
 
 [cols="1a,1a,4a" options="header"]
 |===
