@@ -55,6 +55,12 @@ If *Uses own identity source* is:
 +
 * Select or clear the *Allow S3 Select* permission as needed. See link:manage-s3-select-for-tenant-accounts.html[Manage S3 Select for tenant accounts].
 
-* To add or remove the *Use grid federation connection* permission, follow these instructions:
-** link:admin/creating-tenant-account.html#admin-tenant-select-permissions[Select tenant permissions]
-** link:grid-federation-manage-tenants.html#remove-grid-federation-permission[Remove tenant's permission to use grid federation]
+* To remove the *Use grid federation connection* permission:
+.. Go to the tenant's details page.
+.. Select the *Grid federation* tab.
+.. Select *Remove permission*.
+
+* To add the *Use grid federation connection* permission:
+.. Select the radio button for the tenant, then select *Action* > *Edit*.
+.. To go to the Select permissions page, select *Continue*.
+.. Select the *Use grid federation connection* checkbox.
