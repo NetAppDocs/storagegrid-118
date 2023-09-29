@@ -363,7 +363,7 @@ See link:../troubleshoot/troubleshooting-syslog-server.html[Troubleshoot an exte
 
 . Check your syslog server to determine if test messages are being received and processed as expected. 
 +
-IMPORTANT: If you are using UDP, check your entire log collection infrastructure. The UDP protocol does not allow for as rigorous error detection as the other
+NOTE: If you are using UDP, check your entire log collection infrastructure. The UDP protocol does not allow for as rigorous error detection as the other
 protocols.
 
 . Select *Stop and finish*.

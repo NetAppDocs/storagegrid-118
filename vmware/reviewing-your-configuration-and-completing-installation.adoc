@@ -28,7 +28,7 @@ When the installation progresses to the point where the grid topology is defined
 
 . Verify that you can extract the contents of the `.zip` file, and then save it in two safe, secure, and separate locations.
 +
-IMPORTANT: The Recovery Package file must be secured because it contains encryption keys and passwords that can be used to obtain data from the StorageGRID system.
+CAUTION: The Recovery Package file must be secured because it contains encryption keys and passwords that can be used to obtain data from the StorageGRID system.
 
 . Select the *I have successfully downloaded and verified the Recovery Package file* checkbox, and click *Next*.
 +

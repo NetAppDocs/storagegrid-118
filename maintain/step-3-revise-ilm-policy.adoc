@@ -2,14 +2,14 @@
 permalink: maintain/step-3-revise-ilm-policy.html
 sidebar: sidebar
 keywords: storagegrid, recover, revise ilm policies
-summary: 'From Step 3 \(Revise ILM Policies\) of the Decommission Site wizard, you can determine if the site is referred to by any active ILM policies.'
+summary: 'From Step 3 \(Revise ILM Policies\) of the Decommission Site wizard, you can determine if the site is referred to by any ILM policy.'
 ---
 = Step 3: Revise ILM Policies
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-From Step 3 (Revise ILM Policies) of the Decommission Site wizard, you can determine if the site is referred to by any active ILM policies.
+From Step 3 (Revise ILM Policies) of the Decommission Site wizard, you can determine if the site is referred to by any ILM policy.
 
 .Before you begin
 
@@ -74,7 +74,7 @@ NOTE: Don't select the *Make 2 Copies* rule because that rule uses the *All Stor
 +
 You can't move the default rule.
 +
-IMPORTANT: You must confirm that the ILM rules are in the correct order. When the policy is activated, new and existing objects are evaluated by the rules in the order listed, starting at the top.
+CAUTION: You must confirm that the ILM rules are in the correct order. When the policy is activated, new and existing objects are evaluated by the rules in the order listed, starting at the top.
 
 .. Save the policy.
 
@@ -87,6 +87,10 @@ CAUTION: When you activate a new ILM policy, StorageGRID uses it to manage all o
 . Activate the new policy.
 +
 If you are performing a connected site decommission, StorageGRID begins to remove object data from the selected site as soon as you activate the new ILM policy. Moving or deleting all object copies might take weeks. Although you can safely start a site decommission while object data still exists at the site, the decommission procedure will complete more quickly and with fewer disruptions and performance impacts if you allow data to be moved from the site before starting the actual decommission procedure (by selecting *Start Decommission* in Step 5 of the wizard).
+
+. Deactivate and delete any old policies that refer to the site being decommissioned.
++
+NOTE: You can't decommission a site if any policy (active or inactive) refers to the site being decommissioned.
 
 . Return to *Step 3 (Revise ILM Policies)* to ensure that no ILM rules in the new active policy refer to the site and the *Next* button is enabled.
 +

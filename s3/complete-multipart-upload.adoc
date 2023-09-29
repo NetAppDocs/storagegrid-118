@@ -29,7 +29,7 @@ Specifies a single-commit ingest operation when the ILM rule uses the Dual commi
 +
 NOTE: If you are ingesting an object into a bucket with S3 Object Lock enabled, the `REDUCED_REDUNDANCY` option is ignored. If you are ingesting an object into a legacy Compliant bucket, the `REDUCED_REDUNDANCY` option returns an error. StorageGRID will always perform a dual-commit ingest to ensure that compliance requirements are satisfied.
 
-IMPORTANT: If a multipart upload is not completed within 15 days, the operation is marked as inactive and all associated data is deleted from the system.
+CAUTION: If a multipart upload is not completed within 15 days, the operation is marked as inactive and all associated data is deleted from the system.
 
 NOTE: The `ETag` value returned is not an MD5 sum of the data, but follows the Amazon S3 API implementation of the `ETag` value for multipart objects.
 
