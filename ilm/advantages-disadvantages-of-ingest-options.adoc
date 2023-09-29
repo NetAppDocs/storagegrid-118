@@ -64,7 +64,7 @@ NOTE: Before selecting a consistency setting, link:../s3/consistency-controls.ht
 Suppose you have a two-site grid with the following ILM rule and the following consistency setting:
 
 * *ILM rule*: Create two object copies, one at the local site and one at a remote site. The Strict ingest behavior is selected.
-* **: "`Strong-global`" (Object metadata is immediately distributed to all sites.)
+* *Consistency setting*: Strong-global (object metadata is immediately distributed to all sites).
 
 When a client stores an object to the grid, StorageGRID makes both object copies and distributes metadata to both sites before returning success to the client.
 
