@@ -99,7 +99,7 @@ urn:sgws:s3:optional:optional:bucket-name
 
 * Notifications:
 +
-Specify an Amazon SNS endpoint:
+Specify an Amazon Simple Notification Service endpoint:
 +
 ----
 urn:mysite:sns:optional:optional:sns-topic-name

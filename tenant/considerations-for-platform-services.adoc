@@ -35,7 +35,7 @@ CloudMirror requests are more likely to be affected by the performance of the de
 StorageGRID makes a best effort attempt to order requests when operations are made across StorageGRID sites. For example, if you write an object initially to site A and then later overwrite the same object at site B, the final object replicated by CloudMirror to the destination bucket is not guaranteed to be the newer object.
 
 |ILM-driven object deletions
-|To match the deletion behavior of the AWS CRR and SNS services, CloudMirror and event notification requests aren't sent when an object in the source bucket is deleted because of StorageGRID ILM rules. For example, no CloudMirror or event notifications requests are sent if an ILM rule deletes an object after 14 days.
+|To match the deletion behavior of the AWS CRR and Amazon Simple Notification Services, CloudMirror and event notification requests aren't sent when an object in the source bucket is deleted because of StorageGRID ILM rules. For example, no CloudMirror or event notifications requests are sent if an ILM rule deletes an object after 14 days.
 
 In contrast, search integration requests are sent when objects are deleted because of ILM.
 |===

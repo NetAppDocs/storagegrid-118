@@ -60,7 +60,7 @@ The authentication of Kafka endpoints uses the following authentication types, w
 * SASL/SCRAM-SHA-256
 * SASL/SCRAM-SHA-512
 
-You should also note that you cannot configure storage proxy settings for Kafka endpoints.
+You should also note that you cannot configure storage proxy settings for Kafka endpoints because they are not available to platform services.
 
 |===
 
