@@ -63,9 +63,11 @@ If you need to edit a tenant that has the *Use grid federation connection* permi
 
 * If a tenant has the *Use grid federation connection* permission, you can edit tenant details from either grid in the connection. However, any changes you make will not be copied to the other grid. If you want to keep the tenant details synchronized between grids, you must make the same edits on both grids.
 
-* *STILL TRUE? Refer to remove-grid-federation-permission* You can't clear the *Use grid federation connection* permission when you are editing a tenant.
+* If you choose the option to clone existing local users and groups, the local users and groups of the source tenant will be cloned to the newly cloned tenant. If you want, you can stop the cloning in progress or retry cloning if the last clone operation wasn't completed.
 
-* *STILL TRUE?* You can't select a different grid federation connection when you are editing a tenant.
+* You can't clear the *Use grid federation connection* permission when you are editing a tenant.
+
+* You can't select a different grid federation connection when you are editing a tenant.
 
 == Delete a permitted tenant
 
@@ -83,7 +85,7 @@ If you need to remove a tenant that has the *Use grid federation connection* per
 +
 To avoid these errors,  remove the tenant's permission to use the grid federation connection before deleting the tenant from this grid.
 
-== [[remove-grid-federation-permission]]Remove Use grid federation connection permission
+== [[remove-grid-federation-connection-permission]]Remove Use grid federation connection permission
 
 To prevent a tenant from using a grid federation connection, you must remove the *Use grid federation connection* permission.
 
@@ -91,22 +93,21 @@ image::../media/grid-federation-remove-permission.png[steps to remove grid feder
 
 Before removing a tenant's permission to use a grid federation connection, note the following:
 
-* *STILL TRUE?* Removing the *Use grid federation connection* permission from a tenant is a permanent action. You can't re-enable the permission for this tenant.
-
 * You can't remove the *Use grid federation connection* permission if any of the tenant's buckets have cross-grid replication enabled. The tenant account must disable cross-grid replication for all of their buckets first. 
 
 * Removing the *Use grid federation connection* permission does not delete any items that have already been replicated between grids. For example, any tenant users, groups, and objects that exist on both grids aren't deleted from either grid when the tenant's permission is removed. If you want to delete these items, you must manually delete them from both grids.
 
+* If you want to re-enable this permission, delete this tenant on the destination grid first; otherwise, re-enabling this permission will result in an error.
+
+NOTE: Enabling the *Use grid federation connection* permission (either at create time or at edit time) makes the current grid the source grid and triggers cloning to the replica grid specified by the grid federation connection you select. If you re-enable this permission on a replica grid, its role changes from destination grid to source grid.
 
 .Before you begin
 
 * You are using a link:../admin/web-browser-requirements.html[supported web browser].
 * You have the link:admin-group-permissions.html[Root access permission] for both grids. 
 
-
 === Disable replication for tenant buckets
 As a first step, disable cross-grid replication for all tenant buckets.
-
 
 .Steps
 
@@ -145,7 +146,6 @@ After cross-grid replication is disabled for tenant buckets, you can remove the 
 .. Select *Remove permission*.
 
 --
-
 ====
 
 . Review the warnings in the confirmation dialog box, and select *Remove*.
@@ -167,7 +167,7 @@ You can do either of the following:
 
 If necessary, you can force the removal of a tenant's permission to use a grid federation connection even if tenant buckets have cross-grid replication enabled. 
 
-Before removing a tenant's permission by force, note the general considerations for <<remove-grid-federation-permission,removing the permission>> as well as these additional considerations:
+Before removing a tenant's permission by force, note the general considerations for <<remove-grid-federation-connection-permission,removing the permission>> as well as these additional considerations:
 
 * If you remove the *Use grid federation connection* permission by force, any objects that are pending replication to the other grid (ingested but not yet replicated) will continue to be replicated. To prevent these in-process objects from reaching the destination bucket, you must remove the tenant's permission on the other grid as well.
 
@@ -184,5 +184,3 @@ Before removing a tenant's permission by force, note the general considerations 
 A success message appears. This tenant can no longer use the grid federation connection.
 
 . As required, go to the other grid and repeat these steps to force-remove the permission for the same tenant account on the other grid. For example, you should repeat these steps on the other grid to prevent in-process objects from reaching the destination bucket.
-
-
