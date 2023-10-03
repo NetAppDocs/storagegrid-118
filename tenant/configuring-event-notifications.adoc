@@ -31,9 +31,10 @@ If you enable event notifications for a bucket that contains objects, notificati
 . Enable notifications for your source bucket:
  * Use a text editor to create the notification configuration XML required to enable event notifications, as specified in the S3 notification API.
  * When configuring the XML, use the URN of an event notifications endpoint as the destination topic.
+
 +
 ----
- <NotificationConfiguration>
+<NotificationConfiguration>
   <TopicConfiguration>
      <Id>Image-created</Id>
      <Filter>
@@ -49,7 +50,6 @@ If you enable event notifications for a bucket that contains objects, notificati
    </TopicConfiguration>
  </NotificationConfiguration>
 ----
-
 . In the Tenant Manager select *STORAGE (S3)* > *Buckets*.
 . Select the name of the source bucket.
 +
