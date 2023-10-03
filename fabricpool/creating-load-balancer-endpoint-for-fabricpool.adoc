@@ -54,7 +54,7 @@ You will provide this number to ONTAP when you attach StorageGRID as a FabricPoo
 
 |===
 
-. For the *Select binding mode* step, specify the binding mode. The binding mode controls how the endpoint is accessed&#8212;using any IP address or using specific IP addresses and network interfaces.
+. For the *Select binding mode* step, specify the binding mode. The binding mode controls how the endpoint is accessed using any IP address or using specific IP addresses and network interfaces.
 +
 include::../_include/load-balancer-endpoint-binding-mode.adoc[]
 

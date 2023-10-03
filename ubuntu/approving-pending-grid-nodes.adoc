@@ -15,7 +15,7 @@ You must approve each grid node before it can join the StorageGRID system.
 
 You have deployed all virtual and StorageGRID appliance grid nodes.
 
-IMPORTANT: It is more efficient to perform one single installation of all the nodes, rather than installing some nodes now and some nodes later.
+NOTE: It is more efficient to perform one single installation of all the nodes, rather than installing some nodes now and some nodes later.
 
 .Steps
 
@@ -38,7 +38,7 @@ System names are required for internal StorageGRID operations and can't be chang
 
  ** *NTP Role*: The Network Time Protocol (NTP) role of the grid node. The options are *Automatic*, *Primary*, and *Client*. Selecting *Automatic* assigns the Primary role to Admin Nodes, Storage Nodes with ADC services, Gateway Nodes, and any grid nodes that have non-static IP addresses. All other grid nodes are assigned the Client role.
 +
-IMPORTANT: Make sure that at least two nodes at each site can access at least four external NTP sources. If only one node at a site can reach the NTP sources, timing issues will occur if that node goes down. In addition, designating two nodes per site as primary NTP sources ensures accurate timing if a site is isolated from the rest of the grid.
+NOTE: Make sure that at least two nodes at each site can access at least four external NTP sources. If only one node at a site can reach the NTP sources, timing issues will occur if that node goes down. In addition, designating two nodes per site as primary NTP sources ensures accurate timing if a site is isolated from the rest of the grid.
 
  ** *ADC service* (Storage Nodes only): Select *Automatic* to let the system determine whether the node requires the Administrative Domain Controller (ADC) service. The ADC service keeps track of the location and availability of grid services. At least three Storage Nodes at each site must include the ADC service. You can't add the ADC service to a node after it is deployed.
 

@@ -16,7 +16,7 @@ Server Manager runs on every grid node to supervise the starting and stopping of
 +
 To perform Server Manager procedures, you typically need to access the node's command line.
 +
-IMPORTANT: You should access Server Manager only if technical support has directed you to do so.
+NOTE: You should access Server Manager only if technical support has directed you to do so.
 +
 NOTE: You must close the current command shell session and log out after you are finished with Server Manager. Enter: `exit`
 
