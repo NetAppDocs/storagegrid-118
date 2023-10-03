@@ -34,7 +34,7 @@ Before starting the site decommission procedure from this page, review the follo
 
 * You must allow adequate time for the decommission procedure to complete.
 +
-IMPORTANT: Moving or deleting object data from a site might take days, weeks, or even months, depending on the amount of data at the site, the load on your system, network latencies, and the nature of the required ILM changes.
+NOTE: Moving or deleting object data from a site might take days, weeks, or even months, depending on the amount of data at the site, the load on your system, network latencies, and the nature of the required ILM changes.
 
 * While the site decommission procedure is running:
  ** You can't create ILM rules that refer to the site being decommissioned. You also can't edit an existing ILM rule to refer to the site.

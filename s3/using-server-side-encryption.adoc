@@ -18,7 +18,7 @@ If you want to use server-side encryption, you can choose either of two mutually
 +
 While StorageGRID manages all object encryption and decryption operations, you must manage the encryption keys you provide.
 +
-IMPORTANT: The encryption keys you provide are never stored. If you lose an encryption key, you lose the corresponding object.
+CAUTION: The encryption keys you provide are never stored. If you lose an encryption key, you lose the corresponding object.
 +
 NOTE: If an object is encrypted with SSE or SSE-C, any bucket-level or grid-level encryption settings are ignored.
 
@@ -80,14 +80,14 @@ Before using SSE-C, be aware of the following considerations:
 
 * You must use https.
 +
-IMPORTANT: StorageGRID rejects any requests made over http when using SSE-C. For security considerations, you should consider any key you send accidentally using http to be compromised. Discard the key, and rotate as appropriate.
+CAUTION: StorageGRID rejects any requests made over http when using SSE-C. For security considerations, you should consider any key you send accidentally using http to be compromised. Discard the key, and rotate as appropriate.
 
 * The ETag in the response is not the MD5 of the object data.
 * You must manage the mapping of encryption keys to objects. StorageGRID does not store encryption keys. You are responsible for tracking the encryption key you provide for each object.
 * If your bucket is versioning-enabled, each object version should have its own encryption key. You are responsible for tracking the encryption key used for each object version.
 * Because you manage encryption keys on the client side, you must also manage any additional safeguards, such as key rotation, on the client side.
 +
-IMPORTANT: The encryption keys you provide are never stored. If you lose an encryption key, you lose the corresponding object.
+CAUTION: The encryption keys you provide are never stored. If you lose an encryption key, you lose the corresponding object.
 
 * If cross-grid replication or CloudMirror replication is configured for the bucket, you can't ingest SSE-C objects. The ingest operation will fail.
 

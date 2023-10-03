@@ -66,7 +66,7 @@ Review the considerations for decommissioning a disconnected Storage Node.
 
 * Never decommission a disconnected node unless you are sure it can't be brought online or recovered.
 +
-IMPORTANT: Don't perform this procedure if you believe it might be possible to recover object data from the node. Instead, contact technical support to determine if node recovery is possible.
+CAUTION: Don't perform this procedure if you believe it might be possible to recover object data from the node. Instead, contact technical support to determine if node recovery is possible.
 
 * When you decommission a disconnected Storage Node, StorageGRID uses data from other Storage Nodes to reconstruct the object data and metadata that was on the disconnected node.
 
