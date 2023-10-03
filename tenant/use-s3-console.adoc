@@ -13,15 +13,12 @@ You can use S3 Console to view and manage the objects in an S3 bucket.
 
 S3 Console allows you to:
 
-*	Upload, download, rename, copy, move, and delete objects
-*	View, revert, download, and delete object versions
+* Upload, download, rename, copy, move, and delete objects
+* View, revert, download, and delete object versions
 * Search for objects by prefix
-+
-NOTE: The prefix search feature only searches for objects that begin with a specific word. The search does not include objects that contain the word. This rule also applies to objects within folders. For example, a search for `folder1/folder2/somefile-` would return objects that are within the `folder1/folder2/` folder and begin with the word `somefile-`.
-
 * Manage object tags
 * View object metadata
-*	View, create, rename, copy, move, and delete folders
+* View, create, rename, copy, move, and delete folders
 
 NOTE: Tenants should only use S3 Console when performing functions for a small number of objects, such as when uploading objects to simulate a new ILM policy, troubleshooting ingest issues, or using proof-of-concept or non-production grids.
 
@@ -39,12 +36,12 @@ NOTE: Tenants should only use S3 Console when performing functions for a small n
 . Paste the access key ID and secret access key into the fields. Otherwise, select *Upload access keys* and select your `.csv` file.
 . Select *Sign in*.
 . The table of bucket objects appears. You can manage objects as needed. 
-+
-In addition to the operations you can perform with the S3 Console menu, you can drag and drop files from your computer's file manager to S3 Console.
 
-.Results
+.Additional information
 
-Note the following outcomes:
+* *Search by prefix*: The prefix search feature only searches for objects that begin with a specific word relative to the current folder. The search does not include objects that contain the word elsewhere. This rule also applies to objects within folders. For example, a search for `folder1/folder2/somefile-` would return objects that are within the `folder1/folder2/` folder and begin with the word `somefile-`.
+
+* *Drag and drop*: You can drag and drop files from your computer's file manager to S3 Console. However, you cannot upload folders.
 
 * *Operations on folders*: When you move, copy, or rename a folder, all objects in the folder are updated one at a time, which might take time.
 

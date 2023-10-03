@@ -25,13 +25,13 @@ If you want to change the IP addresses and MTU for the nodes at one site only, f
 
 . Plan ahead for changes that you need to make outside of the Change IP tool, such as changes to DNS or NTP, and changes to the single sign-on (SSO) configuration, if used.
 +
-IMPORTANT: If the existing NTP servers will not be accessible to the grid on the new IP addresses, add the new NTP servers before you perform the change-ip procedure.
+NOTE: If the existing NTP servers will not be accessible to the grid on the new IP addresses, add the new NTP servers before you perform the change-ip procedure.
 +
-IMPORTANT: If the existing DNS servers will not be accessible to the grid on the new IP addresses, add the new DNS servers before you perform the change-ip procedure.
+NOTE: If the existing DNS servers will not be accessible to the grid on the new IP addresses, add the new DNS servers before you perform the change-ip procedure.
 +
-IMPORTANT: If SSO is enabled for your StorageGRID system and any relying party trusts were configured using Admin Node IP addresses (instead of fully qualified domain names, as recommended), be prepared to update or reconfigure these relying party trusts in Active Directory Federation Services (AD FS) immediately after you change IP addresses. See link:../admin/configuring-sso.html[Configure single sign-on].
+NOTE: If SSO is enabled for your StorageGRID system and any relying party trusts were configured using Admin Node IP addresses (instead of fully qualified domain names, as recommended), be prepared to update or reconfigure these relying party trusts in Active Directory Federation Services (AD FS) immediately after you change IP addresses. See link:../admin/configuring-sso.html[Configure single sign-on].
 +
-IMPORTANT: If necessary, add the new subnet for the new IP addresses.
+NOTE: If necessary, add the new subnet for the new IP addresses.
 
 . Log in to the primary Admin Node:
  .. Enter the following command: `ssh admin@_primary_Admin_Node_IP_`
@@ -84,12 +84,12 @@ image::../media/change_ip_tool_validate_sample_passed_messages.gif[screenshot de
 . After validation passes, select *10* to apply the new network configuration.
 . Select *stage* to apply the changes the next time the nodes are restarted.
 +
-IMPORTANT: You must select *stage*. Don't perform a rolling restart, either manually or by selecting *apply* instead of *stage*; the grid will not start up successfully.
+NOTE: You must select *stage*. Don't perform a rolling restart, either manually or by selecting *apply* instead of *stage*; the grid will not start up successfully.
 
 . After your changes are complete, select *0* to exit the Change IP tool.
 . Shut down all nodes simultaneously.
 +
-IMPORTANT: The entire grid must be shut down, so that all nodes are down at the same time.
+NOTE: The entire grid must be shut down, so that all nodes are down at the same time.
 
 . Make the physical or virtual networking changes that are required.
 . Verify that all grid nodes are down.
