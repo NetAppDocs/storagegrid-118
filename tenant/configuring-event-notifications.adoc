@@ -30,7 +30,7 @@ If you enable event notifications for a bucket that contains objects, notificati
 
 . Enable notifications for your source bucket:
  * Use a text editor to create the notification configuration XML required to enable event notifications, as specified in the S3 notification API.
- * When configuring the XML, use the URN of an event notifications endpoint as the destination topic, as shown in the following example for an Amazon SNS endpoint:
+ * When configuring the XML, use the URN of an event notifications endpoint as the destination topic.
 +
 ----
 <NotificationConfiguration>
@@ -58,8 +58,6 @@ The bucket details page appears.
 . Select *Platform services* > *Event notifications*.
 . Select the *Enable event notifications* checkbox.
 . Paste the notification configuration XML into the text box, and select *Save changes*.
-+
-The following example shows an XML with the URN of an Amazon SNS endpoint notification.
 +
 image::../media/tenant_bucket_event_notification_configuration.png[screenshot of event notification configuration dialog box]
 +
