@@ -44,6 +44,8 @@ For CloudMirror replication, Amazon SNS, and AWS search integration endpoints, y
 --
 .Kafka endpoints
 --
+For Kafka endpoints, you can use the following credentials:
+
 *** SASL/PLAIN: Username and password
 *** SASL/SCRAM-SHA-256: Username and password
 *** SASL/SCRAM-SHA-512: Username and password

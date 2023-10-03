@@ -32,6 +32,7 @@ If you enable event notifications for a bucket that contains objects, notificati
  * Use a text editor to create the notification configuration XML required to enable event notifications, as specified in the S3 notification API.
  * When configuring the XML, use the URN of an event notifications endpoint as the destination topic, as shown in the following example for an Amazon SNS endpoint:
 +
+----
 <NotificationConfiguration>
   <TopicConfiguration>
      <Id>Image-created</Id>
