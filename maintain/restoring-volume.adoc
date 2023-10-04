@@ -73,9 +73,8 @@ When you enable Automatic restore mode, volume restoration automatically starts 
 . When the confirmation dialog box appears, review the details.
 +
 
+[NOTE]
 ====
-NOTE:
-
 * You will not be able to start volume restoration jobs manually on certain nodes.
 * Volume restorations will begin automatically only when no other maintenance procedures are in progress.
 * You can monitor the status of the job from the progress monitoring page.
@@ -97,8 +96,6 @@ Follow these steps to restore a failed volume or node.
 . Select the *Nodes to restore* tab.
 +
 The number on the tab indicates the number of nodes with volumes requiring restoration.
-+
-image::../media/vol-restore-nodes-to-restore.png[Volume restoration - Nodes to restore tab]
 
 . Expand each node to see the volumes in it that need restoration and their status.
  
@@ -121,8 +118,6 @@ If a volume restoration can't be started, the node returns to the *Nodes to rest
 == [[view-restoration-progress]]View restoration progress
 
 The *Restoration progress* tab shows the status of the volume restoration process and information about the volumes for a node being restored.
-
-image::../media/vol-restore-restore-progress.png[Volume restoration - Restoration progress tab]
 
 Data repair rates for replicated and erasure-coded objects in all volumes are estimates summarizing all restorations in process, including those restorations initiated using the `repair-data` script. The percentage of objects in those volumes that are intact and don't require restoration is also indicated.
 
@@ -151,5 +146,3 @@ If multiple restoration jobs have failed, selecting *Retry* starts the most rece
 The *Restoration history* tab shows information about all volume restorations that have successfully completed.
 
 NOTE: Sizes aren't applicable for replicated objects and display only for restorations that contain erasure-coded (EC) data objects.
-
-image::../media/vol-restore-restore-history.png[Volume restoration - Restoration history tab]
