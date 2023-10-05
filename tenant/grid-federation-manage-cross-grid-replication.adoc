@@ -84,9 +84,9 @@ See link:../admin/grid-federation-what-is-cross-grid-replication.html[What is cr
 
 .. Optionally, change the setting of the *Cross-grid replication* audit category to manage the volume of audit messages:
 +
-* *Error* (default): Only failed Cross-grid replication requests are included in the audit output.
+* *Error* (default): Only failed cross-grid replication requests are included in the audit output.
 +
-* *Normal*: All Cross-grid replication requests are included, which significantly increases the volume of the audit output.
+* *Normal*: All cross-grid replication requests are included, which significantly increases the volume of the audit output.
 
 .. Review your selections. You aren't able to change these settings unless both buckets are empty.
 
