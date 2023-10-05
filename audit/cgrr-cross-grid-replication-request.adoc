@@ -19,7 +19,7 @@ This message is generated when StorageGRID attempts a cross-grid replication ope
 | Object Size
 | The size of the object in bytes.
 
-The CSIZ attribute was introduced in StorageGRID 11.8. As a result, Cross-Grid Replication Requests spanning a StorageGRID 11.7 to 11.8 upgrade might have an inaccurate total object size.
+The CSIZ attribute was introduced in StorageGRID 11.8. As a result, cross-grid replication requests spanning a StorageGRID 11.7 to 11.8 upgrade might have an inaccurate total object size.
 
 | S3AI
 | S3 tenant account ID
