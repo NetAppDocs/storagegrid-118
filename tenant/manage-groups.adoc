@@ -2,14 +2,14 @@
 permalink: tenant/manage-groups.html
 sidebar: sidebar
 keywords: how to view and edit tenant groups, manage groups, duplicate group, remove group, edit group
-summary: 'You can view a group; edit a group’s name, permissions, policies, and users; duplicate a group; or delete a group.'
+summary: 'You can view a group; edit a group's name, permissions, policies, and users; duplicate a group; or delete a group.'
 ---
 = Manage groups
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You can view a group; edit a group’s name, permissions, policies, and users; duplicate a group; or delete a group.
+You can view a group; edit a group's name, permissions, policies, and users; duplicate a group; or delete a group.
 
 .Before you begin
 
@@ -26,7 +26,13 @@ You can view and edit the basic information and details for each group.
 
 . Review the information provided on the Groups page, which lists basic information for all local and federated groups for this tenant account.
 +
-If the tenant account has the *Use grid federation connection* permission and you are viewing groups on the tenant's source grid, a blue banner indicates that if you edit or remove a group, your changes will not be synced to the other grid. See link:grid-federation-account-clone.html[Clone tenant groups and users].
+If the tenant account has the *Use grid federation connection* permission and you are viewing groups on the tenant's source grid:
++
+* A  banner message indicates that if you edit or remove a group, your changes will not be synced to the other grid.
++
+* As needed, a banner message indicates if groups were not cloned to the tenant on the destination grid.
++
+See link:grid-federation-account-clone.html[Clone tenant groups and users].
 
 . If you want to change the group's name:
 
@@ -121,4 +127,6 @@ NOTE: If your tenant account has the *Use grid federation connection* permission
 A confirmation dialog box appears.
 
 . Select *Delete group* or *Delete groups*.
+
+== Clone groups
 
