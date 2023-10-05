@@ -63,7 +63,7 @@ If you need to edit a tenant that has the *Use grid federation connection* permi
 
 * If a tenant has the *Use grid federation connection* permission, you can edit tenant details from either grid in the connection. However, any changes you make will not be copied to the other grid. If you want to keep the tenant details synchronized between grids, you must make the same edits on both grids.
 
-* If you choose the option to clone existing local users and groups, the local users and groups of the source tenant will be cloned to the newly cloned tenant. If you want, you can stop the cloning in progress or retry cloning if the last clone operation wasn't completed.
+* If you choose the option to clone existing local users and groups, the local users and groups of the source tenant will be cloned to the newly cloned tenant. If you want, you can stop the cloning in progress or retry cloning if some local users or groups failed to be cloned after the last clone operation was completed.
 
 * You can't clear the *Use grid federation connection* permission when you are editing a tenant.
 
@@ -97,9 +97,9 @@ Before removing a tenant's permission to use a grid federation connection, note 
 
 * Removing the *Use grid federation connection* permission does not delete any items that have already been replicated between grids. For example, any tenant users, groups, and objects that exist on both grids aren't deleted from either grid when the tenant's permission is removed. If you want to delete these items, you must manually delete them from both grids.
 
-* If you want to re-enable this permission, delete this tenant on the destination grid first; otherwise, re-enabling this permission will result in an error.
+* If you want to re-enable this permission with the same grid federation connection, delete this tenant on the destination grid first; otherwise, re-enabling this permission will result in an error.
 
-NOTE: Enabling the *Use grid federation connection* permission (either at create time or at edit time) makes the current grid the source grid and triggers cloning to the replica grid specified by the grid federation connection you select. If you re-enable this permission on a replica grid, its role changes from destination grid to source grid.
+NOTE: Re-enabling the *Use grid federation connection* permission makes the local grid the source grid and triggers cloning to the remote grid specified by the selected grid federation connection. If the tenant account already exists on the remote grid, cloning will result in a conflict error.
 
 .Before you begin
 
