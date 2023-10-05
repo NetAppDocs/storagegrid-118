@@ -79,7 +79,7 @@ If StorageGRID can't achieve the *Strong-global* consistency setting because a d
 
 If you receive this response, you must contact the grid administrator to ensure that the required storage services are made available as soon as possible. If the grid administrator is unable to make enough of the Storage Nodes at each site available, technical support might direct you to retry the failed request by forcing the *Strong-site* consistency setting.
 
-IMPORTANT: Never force the *Strong-site* consistency setting for PUT bucket compliance unless you have been directed to do so by technical support and unless you understand the potential consequences of using this level.
+CAUTION: Never force the *Strong-site* consistency setting for PUT bucket compliance unless you have been directed to do so by technical support and unless you understand the potential consequences of using this level.
 
 When the consistency setting is reduced to *Strong-site*, StorageGRID guarantees that updated compliance settings will have read-after-write consistency only for client requests within a site. This means that the StorageGRID system might temporarily have multiple, inconsistent settings for this bucket until all sites and Storage Nodes are available. The inconsistent settings can result in unexpected and undesired behavior. For example, if you are placing a bucket under a legal hold and you force a lower consistency setting, the bucket's previous compliance settings (that is, legal hold off) might continue to be in effect at some data center sites. As a result, objects that you think are on legal hold might be deleted when their retention period expires, either by the user or by AutoDelete, if enabled.
 

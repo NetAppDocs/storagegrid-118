@@ -25,7 +25,7 @@ The Cloud Storage Pools table lists the existing Cloud Storage Pools.
 . Select *Actions* > *Edit*.
 . As required, change the display name, service endpoint, authentication credentials, or certificate validation method.
 +
-IMPORTANT: You can't change the provider type or the S3 bucket or Azure container for a Cloud Storage Pool.
+NOTE: You can't change the provider type or the S3 bucket or Azure container for a Cloud Storage Pool.
 +
 If you previously uploaded a server or client certificate, you can select *Certificate details* to review the certificate that is currently in use.
 

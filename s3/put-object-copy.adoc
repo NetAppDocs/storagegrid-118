@@ -118,7 +118,7 @@ If you link:using-server-side-encryption.html[use server-side encryption], the r
  ** `x-amz-server-side-encryption-customer-key-MD5`: Specify the MD5 digest of the new encryption key.
  
 +
-IMPORTANT: The encryption keys you provide are never stored. If you lose an encryption key, you lose the corresponding object. Before using customer-provided keys to secure object data, review the considerations for link:using-server-side-encryption.html[using server-side encryption].
+CAUTION: The encryption keys you provide are never stored. If you lose an encryption key, you lose the corresponding object. Before using customer-provided keys to secure object data, review the considerations for link:using-server-side-encryption.html[using server-side encryption].
 
 * If you want to encrypt the target object (the copy) with a unique key managed by StorageGRID (SSE), include this header in the CopyObject request:
  ** `x-amz-server-side-encryption`

@@ -527,7 +527,7 @@ Possible settings for this permission include:
  ** If an existing object is not found, this permission has no effect.
 * When this permission is not present, the effect is the same as if Allow were set.
 
-IMPORTANT: If the current S3 policy allows overwrite, and the PutOverwriteObject permission is set to Deny, the client can't overwrite an object's data, user-defined metadata, or object tagging. In addition, if the *Prevent client modification* checkbox is selected (*CONFIGURATION* > *Security settings* > *Network and objects*), that setting overrides the setting of the PutOverwriteObject permission.
+NOTE: If the current S3 policy allows overwrite, and the PutOverwriteObject permission is set to Deny, the client can't overwrite an object's data, user-defined metadata, or object tagging. In addition, if the *Prevent client modification* checkbox is selected (*CONFIGURATION* > *Security settings* > *Network and objects*), that setting overrides the setting of the PutOverwriteObject permission.
 
 == Specify conditions in a policy
 
@@ -787,9 +787,9 @@ To ensure that overwrites are always denied, you can:
  ** Add a DeleteObject DENY operation to the S3 policy.
  ** Add a PutObject ALLOW operation to the S3 policy.
 
-IMPORTANT: Setting DeleteObject to DENY in an S3 policy does not prevent ILM from deleting objects when a rule such as "`zero copies after 30 days`" exists.
+NOTE: Setting DeleteObject to DENY in an S3 policy does not prevent ILM from deleting objects when a rule such as "`zero copies after 30 days`" exists.
 
-IMPORTANT: Even when all of these rules and policies are applied, they don't guard against concurrent writes (see Situation A). They do guard against sequential completed overwrites (see Situation B).
+NOTE: Even when all of these rules and policies are applied, they don't guard against concurrent writes (see Situation A). They do guard against sequential completed overwrites (see Situation B).
 
 *Situation A*: Concurrent writes (not guarded against)
 

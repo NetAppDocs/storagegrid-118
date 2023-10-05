@@ -32,7 +32,7 @@ NOTE: When StorageGRID decommissions the site, it will automatically deactivate 
 
 ** To delete a rule, select the trash can icon image:../media/icon_trash_can.png[Icon Trash Can] and select *OK*.
 +
-IMPORTANT: You must delete the *Make 2 Copies* rule before you can decommission a site.
+NOTE: You must delete the *Make 2 Copies* rule before you can decommission a site.
 . Confirm that no unused ILM rules refer to the site, and the *Next* button is enabled.
 
 . Select *Next*.

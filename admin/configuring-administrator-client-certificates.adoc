@@ -149,9 +149,9 @@ The new certificate appears on the Client tab.
 . Upload the certificate.pem and private_key.pem files from the <<client_cert_details,client certificate details>> step. There is no need to upload CA bundle.
 .. Select *Upload certificate* and then select *Continue*.
 .. Upload each certificate file (`.pem`).
-.. Select *Create* to save the certificate in the Grid Manager.
+.. Select *Save* to save the certificate in the Grid Manager.
 +
-The new certificate appears on the Client tab.
+The new certificate appears on the Management Interface certificate page.
 
 . <<configure-external-monitoring-tool,Configure an external monitoring tool>>, such as Grafana. 
 
