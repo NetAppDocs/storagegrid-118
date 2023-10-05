@@ -15,6 +15,11 @@ You should be aware of changes to the StorageGRID system's support for the S3 RE
 |===
 | Release| Comments
 
+|11.8
+|
+* Added support for `s3:ExistingObjectTag/<tag-key>` for existing objects that have the specific tag key and value.
+* Added support for `s3:RequestObjectTag/<tag-key>`, which requires a specific tag and key value when the object request includes tagging.
+
 |11.7
 |
 * Added support for using GOVERNANCE mode with S3 Object Lock.
@@ -78,3 +83,5 @@ You should be aware of changes to the StorageGRID system's support for the S3 RE
 |Initial support of the S3 REST API by the StorageGRID system.The currently supported version of the _Simple Storage Service API Reference_ is 2006-03-01.
 
 |===
+
+// 2023 OCT 5, SGWS-27457
