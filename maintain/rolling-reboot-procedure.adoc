@@ -19,8 +19,6 @@ NOTE: You must be signed in to the primary Admin Node to perform this procedure.
 
 * You have the link:../admin/admin-group-permissions.html[Maintenance or Root access permission].
 
-
-
 .About this task
 Use this procedure if you need to reboot multiple nodes at the same time. For example, you can use this procedure after changing the FIPS mode for the grid's link:../admin/manage-tls-ssh-policy.html[TLS and SSH security policy]. When the FIPS mode changes, you must reboot all nodes to put the change into effect.
 

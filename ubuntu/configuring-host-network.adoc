@@ -40,7 +40,7 @@ MAC address cloning causes the container to use the MAC address of the host, and
 
 In certain environments, security can be enhanced through MAC address cloning because it enables you to use a dedicated virtual NIC for the Admin Network, Grid Network, and Client Network. Having the container use the MAC address of the dedicated NIC on the host allows you to avoid using promiscuous mode network configurations.
 
-IMPORTANT: MAC address cloning is intended to be used with virtual server installations and might not function properly with all physical appliance configurations.
+NOTE: MAC address cloning is intended to be used with virtual server installations and might not function properly with all physical appliance configurations.
 
 NOTE: If a node fails to start due to a MAC cloning targeted interface being busy, you might need to set the link to "down" before starting node. Additionally, it is possible that the virtual environment might prevent MAC cloning on a network interface while the link is up. If a node fails to set the MAC address and start due to an interface being busy, setting the link to "down" before starting the node might fix the issue.
 
@@ -54,7 +54,7 @@ There is one key for each network:
 
 Setting the key to "true" causes the container to use the MAC address of the host's NIC. Additionally, the host will then use the MAC address of the specified container network. By default, the container address is a randomly generated address, but if you have set one using the `_NETWORK_MAC` node configuration key, that address is used instead. The host and container will always have different MAC addresses.
 
-IMPORTANT: Enabling MAC cloning on a virtual host without also enabling promiscuous mode on the hypervisor might cause Linux host networking using the host's interface to stop working.
+NOTE: Enabling MAC cloning on a virtual host without also enabling promiscuous mode on the hypervisor might cause Linux host networking using the host's interface to stop working.
 
 === MAC cloning use cases
 

@@ -19,7 +19,7 @@ Before decommissioning a site, you must review how much object data exists at th
 * Perform any required Storage Node expansions before starting the decommission procedure if possible.
 * If you are performing a disconnected site decommission, you must understand how much object data will become permanently inaccessible when you remove the site.
 
-IMPORTANT: If you are performing a disconnected site decommission, ILM can't move or delete object data. Any data that remains at the site will be lost. However, if your ILM policy was designed to protect against the loss of a single site, copies of your object data still exist on the remaining sites. See link:../ilm/using-multiple-storage-pools-for-cross-site-replication.html[Enable site-loss protection].
+CAUTION: If you are performing a disconnected site decommission, ILM can't move or delete object data. Any data that remains at the site will be lost. However, if your ILM policy was designed to protect against the loss of a single site, copies of your object data still exist on the remaining sites. See link:../ilm/using-multiple-storage-pools-for-cross-site-replication.html[Enable site-loss protection].
 
 .Steps
 

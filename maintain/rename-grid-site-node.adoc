@@ -151,7 +151,7 @@ The download starts immediately.
 
 . Copy the `sgws-recovery-package-_id-revision_.zip` file to two safe, secure, and separate locations.
 +
-IMPORTANT:	The Recovery Package file must be secured because it contains encryption keys and passwords that can be used to obtain data from the StorageGRID system.
+CAUTION:	The Recovery Package file must be secured because it contains encryption keys and passwords that can be used to obtain data from the StorageGRID system.
 
 . Select *Finish* to return to the first step.
 
