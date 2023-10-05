@@ -22,7 +22,7 @@ This release of StorageGRID introduces the following features and functional cha
 * New tenant permission: View all buckets
 
 === Configurable default consistency setting
-You can change the link:../s3/consistency-controls.html[grid-wide default consistency setting]. To make the change, use the grid-config endpoint of the link:../admin/using-grid-management-api.html[Grid Management private API]. The new default will be applied to buckets created after the change.  
+You can change the link:../s3/consistency-controls.html[grid-wide default consistency setting] using the Grid Manager (*CONFIGURATION* > *Storage settings* > *Default bucket consistency*) or the grid-config endpoint of the link:../admin/using-grid-management-api.html[Grid Management private API]. The new default will be applied to buckets created after the change.
 
 === Kathy's new features
 
