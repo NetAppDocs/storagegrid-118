@@ -27,7 +27,7 @@ Before you can use cross-grid replication, you must sign in to the corresponding
 * You are using a link:../admin/web-browser-requirements.html[supported web browser].
 * The tenant account has the *Use grid federation connection* permission, and identical tenant accounts exist on both grids. See link:../admin/grid-federation-manage-tenants.html[Manage the permitted tenants for grid federation connection].
 * The tenant user you will be signing in as already exists on both grids and belongs to a user group that has the link:tenant-management-permissions.html[Root access permission].
-* If you will be signing in to the tenant's destination grid as a local user, the root user for the tenant account has set a password for your user account on that grid .
+* If you will be signing in to the tenant's destination grid as a local user, the root user for the tenant account has set a password for your user account on that grid.
 
 === Create two identical buckets
 As a first step, sign in to the corresponding tenant accounts on each grid and create identical buckets.
@@ -72,9 +72,9 @@ You must perform these steps before adding any objects to either bucket.
 
 .. Optionally, change the setting of *Replicate delete markers* to determine what happens on the destination grid if an S3 client issues a delete request to the source grid that doesn't include a version ID:
 
-* If *Yes* (default), a delete marker is added to the source bucket and replicated to the destination bucket.
+* *Yes* (default): A delete marker is added to the source bucket and replicated to the destination bucket.
 
-* If *No*, a delete marker is added to the source bucket but is not replicated to the destination bucket. 
+* *No*: A delete marker is added to the source bucket but is not replicated to the destination bucket. 
 +
 image::../media/grid-federation-cross-grid-replication-client-deletes.png[image showing replicate client delete on both grids]
 +
@@ -82,6 +82,11 @@ NOTE: If the delete request includes a version ID, that object version is perman
 +
 See link:../admin/grid-federation-what-is-cross-grid-replication.html[What is cross-grid replication] for details.
 
+.. Optionally, change the setting of the *Cross-grid replication* audit category to manage the volume of audit messages:
++
+* *Error* (default): Only failed Cross-grid replication requests are included in the audit output.
++
+* *Normal*: All Cross-grid replication requests are included, which significantly increases the volume of the audit output.
 
 .. Review your selections. You aren't able to change these settings unless both buckets are empty.
 
@@ -156,3 +161,5 @@ CAUTION: You can't reenable replication unless both buckets are empty.
 After a few moments, a success message appears. New objects added to this bucket can no longer be automatically replicated to the other grid. *Cross-grid replication* is no longer shown as a Enabled feature on the Buckets page.
 
 . If cross-grid replication was configured to occur in both directions, go to the corresponding bucket on the other grid and stop cross-grid replication in the other direction.
+
+// 2023 SEP 14, SGWS-28029
