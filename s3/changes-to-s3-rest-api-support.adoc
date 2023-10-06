@@ -17,8 +17,8 @@ You should be aware of changes to the StorageGRID system's support for the S3 RE
 
 |11.8
 |
-* Added support for `s3:ExistingObjectTag/<tag-key>` for existing objects that have the specific tag key and value.
-* Added support for `s3:RequestObjectTag/<tag-key>`, which requires a specific tag and key value when the object request includes tagging.
+* Added support for the `s3:ExistingObjectTag/<tag-key>`policy condition key, which requires that existing objects have the specific tag key and value.
+* Added support for the `s3:RequestObjectTag/<tag-key>` policy condition key, which requires a specific tag and key value when the object request includes tagging.
 
 |11.7
 |
