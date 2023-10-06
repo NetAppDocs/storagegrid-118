@@ -13,49 +13,39 @@ This release of StorageGRID introduces the following features and functional cha
 
 == New features
 
-
-=== Lisa's new features
 * S3 Console no longer experimental (additional functionality described in Use S3 Console)
 * Assign policy to ILM tags
 * Can have multiple ILM policies active at one time
-* Configurable default consistency setting
 * New tenant permission: View all buckets
 
 === Configurable default consistency setting
 You can change the link:../s3/consistency-controls.html[grid-wide default consistency setting] using the Grid Manager (*CONFIGURATION* > *Storage settings* > *Default bucket consistency*) or the grid-config endpoint of the link:../admin/using-grid-management-api.html[Grid Management private API]. The new default will be applied to buckets created after the change.
 
-=== Kathy's new features
-
-==== Rolling reboot procedure
+=== Rolling reboot procedure
 You can use the link:../maintain/rolling-reboot-procedure.html[rolling reboot procedure] to reboot multiple grid nodes without causing a service disruption.
 
-==== Management API stack trace
+=== Management API stack trace
 The *Management API stack trace* security setting lets you control whether a stack trace is returned in Grid Manager and Tenant Manager API error responses. See link:../admin/changing-browser-session-timeout-interface.html[Change interface security settings].
 
-==== Archive Nodes can be decommissioned
+=== Archive Nodes can be decommissioned
 You can now use the Decommission Nodes procedure to remove any unused Archive Nodes that are disconnected from the grid. See link:../maintain/decommissioning-disconnected-grid-nodes.html[Decommission disconnected grid nodes].
 
 NOTE: Archive Nodes were deprecated in StorageGRID 11.7. 
 
-==== Temporary installation passwords
+=== Temporary installation passwords
 When you link:../vmware/deploying-storagegrid-node-as-virtual-machine.html[deploy a StorageGRID node as a virtual machine] or use VMware vSphere to link:../vmware/automating-grid-node-deployment-in-vmware-vsphere.html[automate grid node deployment], you are now prompted to set a temporary installation password. This password is used only if you need to access the VM console or use SSH before the new node joins the grid.
 
-==== SSO supports user principal names
+=== SSO supports user principal names
 When configuring single sign-on (SSO) for Active Directory Federation Service (AD FS) or PingFederate, you can now map the user principal name to `Name ID` in the claims rule or to `sAMAccountName=${username}` in the adapter instance.
 
-==== Can use load balancer for management interface traffic
+=== Can use load balancer for management interface traffic
 You can now create load balancer endpoints to manage the management interface workload on Admin Nodes. See link:../admin/managing-load-balancing.html[considerations for load balancing]. As part of this change, you can now use ports 443, 8443, and 9443 when creating HTTPS load balancer endpoints for S3 or Swift client access. 
 
-==== KMIP support for TLS 1.3
+=== KMIP support for TLS 1.3
 StorageGRID can now support either the TLS 1.2 or TLS 1.3 protocol when it makes KMIP connections between appliance nodes and a KMS or KMS cluster. The protocols and ciphers/cipher suites available depend on which TLS and SSH policy you are using. See link:../admin/kms-considerations-and-requirements.html[Considerations and requirements for using a key management server].
 
-==== Changes to EC rebalance procedure
+=== Changes to EC rebalance procedure
 The EC rebalance procedure was updated and is now considered complete when the new Site Imbalance metric reaches 0.02 or when the job has been running continuously for 30 days.
-
-=== Kevin's new features
-
-
-
 
 === New alerts
 The following new alerts were added for StorageGRID 11.8:
@@ -64,7 +54,6 @@ The following new alerts were added for StorageGRID 11.8:
 * Appliance DAS drive locator light on
 * Reboot required to disable FIPS
 * Reboot required to enable FIPS
-
 
 === Documentation changes
 

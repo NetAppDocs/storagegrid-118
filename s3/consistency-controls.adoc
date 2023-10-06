@@ -85,7 +85,7 @@ Strict:: All copies specified in the ILM rule must be made before success is ret
 
 Balanced:: StorageGRID attempts to make all copies specified in the ILM rule at ingest; if this is not possible, interim copies are made and success is returned to the client. The copies specified in the ILM rule are made when possible.
 
-=== Example of how the consistency setting and ILM rule can interact
+== Example of how the consistency setting and ILM rule can interact
 
 Suppose you have a two-site grid with the following ILM rule and the following consistency setting:
 
