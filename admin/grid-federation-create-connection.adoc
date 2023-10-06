@@ -135,7 +135,3 @@ If you edit this connection, a new verification file will be created. The origin
 * link:../monitor/grid-federation-monitor-connections.html[Monitor the connection] as part of your normal StorageGRID monitoring activities.
 
 * link:grid-federation-troubleshoot.html[Troubleshoot the connection], including resolving any alerts and errors related to account clone and cross-grid replication.
-
-
-
-

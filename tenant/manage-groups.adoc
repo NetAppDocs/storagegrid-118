@@ -28,11 +28,11 @@ You can view and edit the basic information and details for each group.
 +
 If the tenant account has the *Use grid federation connection* permission and you are viewing groups on the tenant's source grid:
 +
-* A  banner message indicates that if you edit or remove a group, your changes will not be synced to the other grid.
+* A banner message indicates that if you edit or remove a group, your changes will not be synced to the other grid.
 +
 * As needed, a banner message indicates if groups were not cloned to the tenant on the destination grid.
 +
-See link:grid-federation-account-clone.html[Clone tenant groups and users].
+You can <<clone-groups,clone new groups or retry a group clone>> that failed.
 
 . If you want to change the group's name:
 
@@ -128,5 +128,14 @@ A confirmation dialog box appears.
 
 . Select *Delete group* or *Delete groups*.
 
-== Clone groups
+== [[clone-groups]]Clone groups
 
+To clone new groups or retry a clone that failed:
+
+. Select the checkbox for the groups you want to clone.
+. Select *Actions* > *Clone groups*.
++
+You can view the status of the clone operation from the details page of the group you're cloning.
+. If a "clone failed" message appears, make corrections and try again.
+
+For additional information, see link:grid-federation-account-clone.html[Clone tenant groups and users].
