@@ -128,14 +128,13 @@ A confirmation dialog box appears.
 
 . Select *Delete group* or *Delete groups*.
 
-== [[clone-groups]]Clone groups
+== [[clone-groups]]Retry group clone
 
-To clone new groups or retry a clone that failed:
+To retry a clone that failed:
 
-. Select the checkbox for the groups you want to clone.
-. Select *Actions* > *Clone groups*.
-+
-You can view the status of the clone operation from the details page of the group you're cloning.
-. If a "clone failed" message appears, make corrections and try again.
+.	In the message banner, select *Retry cloning*. The cloning operation is retried.
+.	Alternatively, you can view a list of all groups that weren't cloned. From the Groups page, select each group that indicates _(Cloning failed)_ below the group name. Select *Actions* > *Clone groups*.
+
+You can view the status of the clone operation from the details page of each group you're cloning.
 
 For additional information, see link:grid-federation-account-clone.html[Clone tenant groups and users].

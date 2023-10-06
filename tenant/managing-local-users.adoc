@@ -97,9 +97,7 @@ If your tenant account has the *Use grid federation connection* permission and y
 If the tenant account has the *Use grid federation connection* permission and you are viewing the user on the tenant's source grid:
 
 ** A  banner message indicates that if you edit or remove a user, your changes will not be synced to the other grid.
-** As needed, a banner message indicates if users were not cloned to the tenant on the destination grid.
-+
-You can <<clone-users,clone new users groups or retry a user clone>> that failed.
+** As needed, a banner message indicates if users were not cloned to the tenant on the destination grid. In this case, you can select *Retry cloning* to <<clone-users,try cloning again>>.
 
 . If you want to change the user's full name:
 
@@ -183,14 +181,13 @@ A confirmation dialog box appears.
 
 . Select *Delete user* or *Delete users*.
 
-== [[clone-users]]Clone users
+== [[clone-users]]Retry user clone
 
-To clone new users or retry a clone that failed:
+To retry a clone that failed:
 
-. Select the checkbox for the users you want to clone.
-. Select *Actions* > *Clone users*.
-+
-You can view the status of the clone operation from the details page of the user you're cloning.
-. If a "clone failed" message appears, make corrections and try again.
+.	In the message banner, select Retry cloning. The cloning operation is retried.
+.	Alternatively, you can view a list of all users that weren't cloned. From the Users page, select each user that indicates _(Cloning failed)_ below the user name. Select *Actions* > *Clone users*.
+
+You can view the status of the clone operation from the details page of each user you're cloning.
 
 For additional information, see link:grid-federation-account-clone.html[Clone tenant groups and users].
