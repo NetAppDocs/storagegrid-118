@@ -2,14 +2,14 @@
 permalink: tenant/manage-groups.html
 sidebar: sidebar
 keywords: how to view and edit tenant groups, manage groups, duplicate group, remove group, edit group
-summary: 'You can view a group; edit a group's name, permissions, policies, and users; duplicate a group; or delete a group.'
+summary: 'Manage your tenant groups as needed to view, edit, or duplicate a group, and more.'
 ---
 = Manage groups
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You can view a group; edit a group's name, permissions, policies, and users; duplicate a group; or delete a group.
+Manage your tenant groups as needed to view, edit, or duplicate a group, and more.
 
 .Before you begin
 
