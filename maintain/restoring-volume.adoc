@@ -75,7 +75,7 @@ When you enable Automatic restore mode, volume restoration automatically starts 
 
 [NOTE]
 ====
-* You will not be able to start volume restoration jobs manually on certain nodes.
+* You will not be able to start volume restoration jobs manually on any nodes.
 * Volume restorations will begin automatically only when no other maintenance procedures are in progress.
 * You can monitor the status of the job from the progress monitoring page.
 * StorageGRID automatically retries volume restorations that fail to start.
@@ -93,13 +93,13 @@ Follow these steps to restore a failed volume or node.
 
 . In Grid Manager go to *MAINTENANCE* > *Volume restoration*.
 
-. Select the *Nodes to restore* tab.
+. Select the *Nodes to restore* tab, then slide the toggle to *Manual restore mode*.
 +
 The number on the tab indicates the number of nodes with volumes requiring restoration.
 
 . Expand each node to see the volumes in it that need restoration and their status.
  
-. Correct any issues preventing restoration of each volume that are indicated when you select Waiting for manual steps, if it displays as the volume status.
+. Correct any issues preventing restoration of each volume. Issues will be indicated when you select *Waiting for manual steps*, if it displays as the volume status.
 
 . Select a node to restore where all the volumes indicate a Ready to restore status.
 +
@@ -136,10 +136,6 @@ The Restoration jobs section displays information about volume restorations star
 ** The Status column indicates `failed (attempting retry)`, and will be retried automatically.
 ** If multiple restoration jobs have failed, the most recent job will be retried automatically first.
 ** The *EC repair failure* alert is triggered if the retries continue to fail. Follow the steps in the alert to resolve the issue.
-+
-Correct the issues indicated in the error. Then select *Retry* to re-initiate the volume restoration. 
-+
-If multiple restoration jobs have failed, selecting *Retry* starts the most recently failed job.
 
 == [[view-restoration-history]]View restoration history
 
