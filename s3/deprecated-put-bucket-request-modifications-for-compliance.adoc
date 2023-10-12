@@ -11,7 +11,7 @@ summary: 'The SGCompliance XML element is deprecated. Previously, you could incl
 [.lead]
 The SGCompliance XML element is deprecated. Previously, you could include this StorageGRID custom element in the optional XML request body of CreateBucket requests to create a Compliant bucket.
 
-[IMPORTANT]
+[NOTE]
 ====
 The StorageGRID Compliance feature that was available in previous StorageGRID versions is deprecated and has been replaced by S3 Object Lock. See the following for more details:
 
