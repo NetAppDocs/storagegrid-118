@@ -46,12 +46,12 @@ Each object and object version that is added to the bank-records bucket will use
 | Setting for each object| Example value
 
 | `retain-until-date`
-| `"2030-12-30T23:59:59Z"` (December 30, 2030)
+| "2030-12-30T23:59:59Z" (December 30, 2030)
 
 Each object version has its own `retain-until-date` setting. This setting can be increased, but not decreased.
 
 | `legal hold`
-| `"OFF"` (Not in effect)
+| "OFF" (Not in effect)
 
 A legal hold can be placed or lifted on any object version at any time during the retention period. If an object is under a legal hold, the object can't be deleted even if the `retain-until-date` has been reached.
 |===

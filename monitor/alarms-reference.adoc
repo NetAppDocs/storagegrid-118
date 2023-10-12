@@ -187,14 +187,14 @@ Storage Multipath Connectivity
 a|
 SSM
 a|
-If the multipath state alarm appears as "`Degraded`" (select *SUPPORT* > *Tools* > *Grid topology*, then select *_site_* > *_grid node_* > *SSM* > *Events*), do the following:
+If the multipath state alarm appears as "Degraded" (select *SUPPORT* > *Tools* > *Grid topology*, then select *_site_* > *_grid node_* > *SSM* > *Events*), do the following:
 
 . Plug in or replace the cable that does not display any indicator lights.
 . Wait one to five minutes.
 +
 Don't unplug the other cable until at least five minutes after you plug in the first one. Unplugging too early can cause the root volume to become read-only, which requires that the hardware be restarted.
 
-. Return to the *SSM* > *Resources* page, and verify that the "`Degraded`" Multipath status has changed to "`Nominal`" in the Storage Hardware section.
+. Return to the *SSM* > *Resources* page, and verify that the "Degraded" Multipath status has changed to "Nominal" in the Storage Hardware section.
 
 a|
 ARCE
@@ -1000,7 +1000,7 @@ Status
 a|
 CMN
 a|
-If the value of Status for the active grid task is Error, look up the grid task message. Select *SUPPORT* > *Tools* > *Grid topology*. Then select *_site_* > *_grid node_* > *CMN* > *Grid Tasks* > *Overview* > *Main*. The grid task message displays information about the error (for example, "`check failed on node 12130011`").
+If the value of Status for the active grid task is Error, look up the grid task message. Select *SUPPORT* > *Tools* > *Grid topology*. Then select *_site_* > *_grid node_* > *CMN* > *Grid Tasks* > *Overview* > *Main*. The grid task message displays information about the error (for example, "check failed on node 12130011").
 
 After you have investigated and corrected the problem, restart the grid task. Select *SUPPORT* > *Tools* > *Grid topology*. Then select *_site_* > *_grid node_* > *CMN* > *Grid Tasks* > *Configuration* > *Main*, and select *Actions* > *Run*.
 
@@ -1123,7 +1123,7 @@ Storage Operating System Status
 a|
 SSM
 a|
-An alarm is triggered if SANtricity OS indicates that there is a "`Needs attention`" issue with a component in a StorageGRID appliance.
+An alarm is triggered if SANtricity OS indicates that there is a "Needs attention" issue with a component in a StorageGRID appliance.
 
 Select *NODES*. Then select *appliance Storage Node* > *Hardware*. Scroll down to view the status of each component. In SANtricity OS, check other appliance components to isolate the issue.
 

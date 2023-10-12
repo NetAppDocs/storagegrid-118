@@ -164,7 +164,7 @@ In policy statements, you can use the Resource element to specify the bucket or 
 Use the Principal element to identity the user, group, or tenant account that is allowed/denied access to the resource by the policy statement.
 
 * Each policy statement in a bucket policy must include a Principal element. Policy statements in a group policy don't need the Principal element because the group is understood to be the principal.
-* In a policy, principals are denoted by the element "`Principal,`" or alternatively "`NotPrincipal`" for exclusion.
+* In a policy, principals are denoted by the element "Principal," or alternatively "NotPrincipal" for exclusion.
 * Account-based identities must be specified using an ID or an ARN:
 +
 ----
@@ -592,19 +592,19 @@ Condition operators are categorized as follows:
 | Compares a key to a numeric value based on negated matching.
 
 | NumericGreaterThan
-| Compares a key to a numeric value based on "`greater than`" matching.
+| Compares a key to a numeric value based on "greater than" matching.
 
 | NumericGreaterThanEquals
-| Compares a key to a numeric value based on "`greater than or equals`" matching.
+| Compares a key to a numeric value based on "greater than or equals" matching.
 
 | NumericLessThan
-| Compares a key to a numeric value based on "`less than`" matching.
+| Compares a key to a numeric value based on "less than" matching.
 
 | NumericLessThanEquals
-| Compares a key to a numeric value based on "`less than or equals`" matching.
+| Compares a key to a numeric value based on "less than or equals" matching.
 
 | Bool
-| Compares a key to a Boolean value based on "`true or false`" matching.
+| Compares a key to a Boolean value based on "true or false" matching.
 
 | IpAddress
 | Compares a key to an IP address or range of IP addresses.
@@ -787,7 +787,7 @@ To ensure that overwrites are always denied, you can:
  ** Add a DeleteObject DENY operation to the S3 policy.
  ** Add a PutObject ALLOW operation to the S3 policy.
 
-NOTE: Setting DeleteObject to DENY in an S3 policy does not prevent ILM from deleting objects when a rule such as "`zero copies after 30 days`" exists.
+NOTE: Setting DeleteObject to DENY in an S3 policy does not prevent ILM from deleting objects when a rule such as "zero copies after 30 days" exists.
 
 NOTE: Even when all of these rules and policies are applied, they don't guard against concurrent writes (see Situation A). They do guard against sequential completed overwrites (see Situation B).
 

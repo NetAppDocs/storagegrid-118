@@ -41,7 +41,7 @@ NOTE: Don't set `retinit` to `retinit=create`. Setting `retinit=create` blocks t
 +
 `activate policyset tsm-domain standard`
 +
-Ignore the "`no backup copy group`" warning that appears when you enter the activate command.
+Ignore the "no backup copy group" warning that appears when you enter the activate command.
 
 . Register a node to use the new policy set on the TSM server. On the TSM server, enter (on one line):
 +

@@ -53,7 +53,7 @@ The script will exit without rebuilding Cassandra. Contact technical support.
 +
 NOTE: Selecting *n* exits the script. Either mount the drive (if you think the data on the drive should be retained and the drive was unmounted in error) or remove the drive. Then, run the `reformat_storage_block_devices.rb` command again.
 +
-NOTE: Some StorageGRID recovery procedures use Reaper to handle Cassandra repairs. Repairs occur automatically as soon as the related or required services have started. You might notice script output that mentions "`reaper`" or "`Cassandra repair.`" If you see an error message indicating the repair has failed, run the command indicated in the error message.
+NOTE: Some StorageGRID recovery procedures use Reaper to handle Cassandra repairs. Repairs occur automatically as soon as the related or required services have started. You might notice script output that mentions "reaper" or "Cassandra repair." If you see an error message indicating the repair has failed, run the command indicated in the error message.
 +
 In the following example output, the drive `/dev/sdf` must be reformatted, and Cassandra did not need to be rebuilt:
 +

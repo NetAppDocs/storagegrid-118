@@ -33,20 +33,20 @@ You can set the consistency setting for a bucket or an API operation to one of t
 * *Read-after-new-write*: (Default) Provides read-after-write consistency for new objects and eventual consistency for object updates. Offers high availability and data protection guarantees. Recommended for most cases.
 * *Available*: Provides eventual consistency for both new objects and object updates. For S3 buckets, use only as required (for example, for a bucket that contains log values that are rarely read, or for HEAD or GET operations on keys that don't exist). Not supported for S3 FabricPool buckets.
 
-== Use "`Read-after-new-write`" and "`Available`" consistency settings
+== Use "Read-after-new-write" and "Available" consistency settings
 
-When a HEAD or GET operation uses the "`Read-after-new-write`" consistency setting, StorageGRID performs the lookup in multiple steps, as follows:
+When a HEAD or GET operation uses the "Read-after-new-write" consistency setting, StorageGRID performs the lookup in multiple steps, as follows:
 
 * It first looks up the object using a low consistency.
 * If that lookup fails, it repeats the lookup at the next consistency setting until it reaches a consistency setting equivalent to the behavior for strong-global.
 
-If a HEAD or GET operation uses the "`Read-after-new-write`" consistency setting but the object does not exist, the object lookup will always reach a consistency setting equivalent to the behavior for strong-global. Because this consistency setting requires multiple copies of the object metadata to be available at each site, you can receive a high number of 500 Internal Server errors if two or more Storage Nodes at the same site are unavailable.
+If a HEAD or GET operation uses the "Read-after-new-write" consistency setting but the object does not exist, the object lookup will always reach a consistency setting equivalent to the behavior for strong-global. Because this consistency setting requires multiple copies of the object metadata to be available at each site, you can receive a high number of 500 Internal Server errors if two or more Storage Nodes at the same site are unavailable.
 
-Unless you require consistency guarantees similar to Amazon S3, you can prevent these errors for HEAD and GET operations by setting the consistency setting to "`Available.`" When a HEAD or GET operation uses the "`Available`" consistency setting, StorageGRID provides eventual consistency only. It does not retry a failed operation at increasing consistency settings, so it does not require that multiple copies of the object metadata be available.
+Unless you require consistency guarantees similar to Amazon S3, you can prevent these errors for HEAD and GET operations by setting the consistency setting to "Available." When a HEAD or GET operation uses the "Available" consistency setting, StorageGRID provides eventual consistency only. It does not retry a failed operation at increasing consistency settings, so it does not require that multiple copies of the object metadata be available.
 
 == [[api-operation-consistency-control]]Specify consistency setting for API operation
 
-To set the consistency setting for an individual API operation, consistency settings must be supported for the operation, and you must specify the consistency setting in the request header. This example sets the consistency setting to "`Strong-site`" for a GetObject operation.
+To set the consistency setting for an individual API operation, consistency settings must be supported for the operation, and you must specify the consistency setting in the request header. This example sets the consistency setting to "Strong-site" for a GetObject operation.
 
 [subs="specialcharacters,quotes"]
 ----
@@ -67,7 +67,7 @@ When setting the consistency settings for a bucket, be aware of the following:
 
 * Setting the consistency setting for a bucket determines which consistency setting is used for S3 operations performed on the objects in the bucket or on the bucket configuration. It does not affect operations on the bucket itself.
 * The consistency setting for an individual API operation overrides the consistency setting for the bucket.
-* In general, buckets should use the default consistency setting, "`Read-after-new-write.`" If requests aren't working correctly, change the application client behavior if possible. Or, configure the client to specify the consistency setting for each API request. Set the consistency setting at the bucket level only as a last resort.
+* In general, buckets should use the default consistency setting, "Read-after-new-write." If requests aren't working correctly, change the application client behavior if possible. Or, configure the client to specify the consistency setting for each API request. Set the consistency setting at the bucket level only as a last resort.
 
 == [[how-consistency-controls-and-ILM-rules-interact]]How consistency settings and ILM rules interact to affect data protection
 
@@ -88,12 +88,12 @@ Balanced:: StorageGRID attempts to make all copies specified in the ILM rule at 
 Suppose you have a two-site grid with the following ILM rule and the following consistency setting:
 
 * *ILM rule*: Create two object copies, one at the local site and one at a remote site. Use the Strict ingest behavior.
-* **: "`Strong-global`" (Object metadata is immediately distributed to all sites.)
+* **: "Strong-global" (Object metadata is immediately distributed to all sites.)
 
 When a client stores an object to the grid, StorageGRID makes both object copies and distributes metadata to both sites before returning success to the client.
 
 The object is fully protected against loss at the time of the ingest successful message. For example, if the local site is lost shortly after ingest, copies of both the object data and the object metadata still exist at the remote site. The object is fully retrievable.
 
-If you instead used the same ILM rule and the "`Strong-site`" consistency setting, the client might receive a success message after object data is replicated to the remote site but before object metadata is distributed there. In this case, the level of protection of object metadata does not match the level of protection for object data. If the local site is lost shortly after ingest, object metadata is lost. The object can't be retrieved.
+If you instead used the same ILM rule and the "Strong-site" consistency setting, the client might receive a success message after object data is replicated to the remote site but before object metadata is distributed there. In this case, the level of protection of object metadata does not match the level of protection for object data. If the local site is lost shortly after ingest, object metadata is lost. The object can't be retrieved.
 
 The inter-relationship between consistency settings and ILM rules can be complex. Contact NetApp if you require assistance.

@@ -67,7 +67,7 @@ When the management system queries the StorageGRID MIB, it sends a community str
 
 . For *Read-only community*, optionally enter a community string to allow read-only MIB access on IPv4 and IPv6 agent addresses.
 +
-TIP: To ensure the security of your StorageGRID system, don't use "`public`" as the community string. If you leave this field blank, the SNMP agent uses the grid ID of your StorageGRID system as the community string.
+TIP: To ensure the security of your StorageGRID system, don't use "public" as the community string. If you leave this field blank, the SNMP agent uses the grid ID of your StorageGRID system as the community string.
 +
 Each community string can be a maximum of 32 characters and can't contain whitespace characters. 
 
@@ -83,7 +83,7 @@ Use the Trap destinations tab in the Other configurations section to define one 
 
 . For the *Default trap community* field, optionally enter the default community string you want to use for SNMPv1 or SNMPv2 trap destinations.
 +
-As required, you can provide a different ("`custom`") community string when you define a specific trap destination.
+As required, you can provide a different ("custom") community string when you define a specific trap destination.
 +
 *Default trap community* can be a maximum of 32 characters and can't contain whitespace characters.
 
@@ -200,7 +200,7 @@ The trap destination is created and added to the table.
 
 == Create agent addresses
 
-Optionally, use the Agent addresses tab in the Other configurations section to specify one or more "`listening addresses.`" These are the StorageGRID addresses on which the SNMP agent can receive queries.
+Optionally, use the Agent addresses tab in the Other configurations section to specify one or more "listening addresses." These are the StorageGRID addresses on which the SNMP agent can receive queries.
 
 If you don't configure an agent address, the default listening address is UDP port 161 on all StorageGRID networks.
 

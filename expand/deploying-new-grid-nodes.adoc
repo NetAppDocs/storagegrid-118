@@ -134,7 +134,7 @@ a|
 +
 The node name is assigned to this appliance node in the StorageGRID system. It is shown on the Nodes page (Overview tab) in the Grid Manager. If required, you can change the name when you approve the node.
 
-. In the *Installation* section, confirm that the current state is "`Ready to start installation of _node name_ into grid with primary Admin Node _admin_ip_`" and that the *Start Installation* button is enabled.
+. In the *Installation* section, confirm that the current state is "Ready to start installation of _node name_ into grid with primary Admin Node _admin_ip_" and that the *Start Installation* button is enabled.
 +
 If the *Start Installation* button is not enabled, you might need to change the network configuration or port settings. For instructions, see the maintenance instructions for your appliance.
 
@@ -142,7 +142,7 @@ If the *Start Installation* button is not enabled, you might need to change the 
 +
 image::../media/appliance_installer_home_start_installation_enabled.gif[This image is described by the surrounding text.]
 +
-The Current state changes to "`Installation is in progress,`" and the Monitor Installation page is displayed.
+The Current state changes to "Installation is in progress," and the Monitor Installation page is displayed.
 
 . If your expansion includes multiple appliance nodes, repeat the previous steps for each appliance.
 +
@@ -156,7 +156,7 @@ image::../media/monitor_installation_configure_storage.gif[This image is explain
 +
 The blue status bar indicates which task is currently in progress. Green status bars indicate tasks that have completed successfully.
 +
-NOTE: The installer ensures that tasks completed in a previous install aren't re-run. If you are re-running an installation, any tasks that don't need to be re-run are shown with a green status bar and a status of "`Skipped.`"
+NOTE: The installer ensures that tasks completed in a previous install aren't re-run. If you are re-running an installation, any tasks that don't need to be re-run are shown with a green status bar and a status of "Skipped."
 
 . Review the progress of first two installation stages.
 +
