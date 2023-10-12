@@ -141,4 +141,4 @@ The Restoration jobs section displays information about volume restorations star
 
 The *Restoration history* tab shows information about all volume restorations that have successfully completed.
 
-NOTE: Sizes aren't applicable for replicated objects and display only for restorations that contain erasure-coded (EC) data objects.
+NOTE: Sizes aren't applicable for replicated objects and appear only for restorations that contain erasure-coded (EC) data objects.
