@@ -165,10 +165,9 @@ NOTE: If your tenant account has the *Use grid federation connection* permission
 
 To retry a clone that failed:
 
-.	Select each user that indicates _(Cloning failed)_ below the user name. Select *Actions* > *Clone users*.
+.	Select each user that indicates _(Cloning failed)_ below the user name.
+. Select *Actions* > *Clone users*.
 . View the status of the clone operation from the details page of each user you're cloning.
-
-You can view the status of the clone operation from the details page of each user you're cloning.
 
 For additional information, see link:grid-federation-account-clone.html[Clone tenant groups and users].
 
