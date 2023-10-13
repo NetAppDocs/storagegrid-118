@@ -1,8 +1,8 @@
 ---
 permalink: s3/consistency-controls.html
 sidebar: sidebar
-keywords: consistency settings
-summary: 'consistency settings provide a balance between the availability of the objects and the consistency of those objects across different Storage Nodes and sites. You can change the consistency setting as required by your application.'
+keywords: consistency settings, consistency control
+summary: 'Consistency settings provide a balance between the availability of the objects and the consistency of those objects across different Storage Nodes and sites. You can change the consistency setting as required by your application.'
 ---
 = Consistency settings
 :icons: font
@@ -17,9 +17,11 @@ If you want to perform object operations at a different consistency setting, you
 
 * Specify a consistency setting for <<bucket-consistency-control,each bucket>>.
 * Specify a consistency setting for <<api-operation-consistency-control,each API operation>>.
-* Change the default grid-wide consistency setting by link:../admin/using-grid-management-api.html[using the `grid-config` endpoint of the Grid Management private API].
+* Change the default grid-wide consistency setting by performing one of the following tasks:
+** In the Grid Manager, go to *CONFIGURATION* > *Storage settings* > *Default consistency*.
+** link:../admin/using-grid-management-api.html[Use the `grid-config` endpoint of the Grid Management private API].
 +
-A change to the grid-wide consistency setting applies only to buckets created after the setting was changed. To determine the details of a change, see the audit log located at `/var/local/audit/export` (search for *consistencyLevel*).
+NOTE: A change to the grid-wide consistency setting applies only to buckets created after the setting was changed. To determine the details of a change, see the audit log located at `/var/local/audit/export` (search for *consistencyLevel*).
 
 == Consistency settings
 
@@ -83,7 +85,7 @@ Strict:: All copies specified in the ILM rule must be made before success is ret
 
 Balanced:: StorageGRID attempts to make all copies specified in the ILM rule at ingest; if this is not possible, interim copies are made and success is returned to the client. The copies specified in the ILM rule are made when possible.
 
-=== Example of how the consistency setting and ILM rule can interact
+== Example of how the consistency setting and ILM rule can interact
 
 Suppose you have a two-site grid with the following ILM rule and the following consistency setting:
 
