@@ -95,7 +95,7 @@ Complete these steps after you complete the node decommission procedure:
 link:../rhel/index.html[Install Red Hat Enterprise Linux or CentOS] and 
 link:../ubuntu/index.html[Install Ubuntu or Debian].
 
- ** *VMware*: You might want to use the vCenter "`Delete from Disk`" option to delete the virtual machine. You might also need to delete any data disks that are independent of the virtual machine.
+ ** *VMware*: You might want to use the vCenter "Delete from Disk" option to delete the virtual machine. You might also need to delete any data disks that are independent of the virtual machine.
 
  ** *StorageGRID appliance*: The appliance node automatically reverts to an undeployed state where you can access the StorageGRID Appliance Installer. You can power off the appliance or add it to another StorageGRID system.
 

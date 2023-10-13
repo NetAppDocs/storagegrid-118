@@ -41,7 +41,7 @@ image::../media/ilm_create_ilm_rule_wizard_2.png[Create ILM Rule Wizard Step 2]
 |A time specified in user-defined metadata.
 
 |Noncurrent time
-|"`Noncurrent time`" is automatically selected if you selected *Yes* for the question, "`Apply this rule to older object versions only (in S3 buckets with versioning enabled)?`" in link:create-ilm-rule-enter-details.html[Step 1 of the Create an ILM rule wizard].
+|"Noncurrent time" is automatically selected if you selected *Yes* for the question, "Apply this rule to older object versions only (in S3 buckets with versioning enabled)?" in link:create-ilm-rule-enter-details.html[Step 1 of the Create an ILM rule wizard].
 |===
 +
 NOTE: If you want to create a compliant rule, you must select *Ingest time*. See link:managing-objects-with-s3-object-lock.html[Manage objects with S3 Object Lock].

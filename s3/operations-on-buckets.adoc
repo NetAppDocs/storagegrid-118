@@ -106,7 +106,7 @@ You must enable S3 Object Lock when you create the bucket. You can't add or disa
 | GetBucketVersioning
 | This implementation uses the `versioning` subresource to return the versioning state of a bucket.
 
-* _blank_: Versioning has never been enabled (bucket is "`Unversioned`")
+* _blank_: Versioning has never been enabled (bucket is "Unversioned")
 * Enabled: Versioning is enabled
 * Suspended: Versioning was previously enabled and is suspended
 

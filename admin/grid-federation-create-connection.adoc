@@ -41,7 +41,7 @@ Perform these steps on either of the two StorageGRID systems.
 | Field| Description
 
 |Connection name
-|A unique name to help you recognize this connection, for example, "`Grid 1-Grid 2.`"
+|A unique name to help you recognize this connection, for example, "Grid 1-Grid 2."
 
 |FQDN or IP for this grid
 |One of the following:

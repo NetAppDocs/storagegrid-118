@@ -68,7 +68,7 @@ In this example, all members of the group have read-only access to S3 resources,
 }
 ----
 
-== Example: Allow group members full access to only their "`folder`" in a bucket
+== Example: Allow group members full access to only their "folder" in a bucket
 
 In this example, members of the group are only permitted to list and access their specific folder (key prefix) in the specified bucket. Note that access permissions from other group policies and the bucket policy should be considered when determining the privacy of these folders.
 

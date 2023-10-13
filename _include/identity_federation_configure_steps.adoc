@@ -82,9 +82,9 @@ After entering all values, you must test the connection before you can save the 
 
 . If you did not provide a bind username format:
 +
-* A "`Test connection successful`" message appears if the connection settings are valid. Select *Save* to save the configuration.
+* A "Test connection successful" message appears if the connection settings are valid. Select *Save* to save the configuration.
 +
-* A "`test connection could not be established`" message appears if the connection settings are invalid. Select *Close*. Then, resolve any issues and test the connection again.
+* A "test connection could not be established" message appears if the connection settings are invalid. Select *Close*. Then, resolve any issues and test the connection again.
 
 . If you provided a bind username format, enter the username and password of a valid federated user.
 +
@@ -92,6 +92,6 @@ For example, enter your own username and password. Don't include any special cha
 +
 image::../media/identity_federation_test_connection.png[Identity federation prompt to validate bind username format]
 +
-* A "`Test connection successful`" message appears if the connection settings are valid. Select *Save* to save the configuration.
+* A "Test connection successful" message appears if the connection settings are valid. Select *Save* to save the configuration.
 +
 * An error message appears if the connection settings, bind username format, or test username and password are invalid. Resolve any issues and test the connection again.

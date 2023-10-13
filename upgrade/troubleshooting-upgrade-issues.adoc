@@ -44,7 +44,7 @@ You might experience issues with the Grid Manager or the Tenant Manager during o
 
 === Grid Manager displays multiple error messages during upgrade
 
-If you refresh your browser or navigate to another Grid Manager page while the primary Admin Node is being upgraded, you might see multiple "`503: Service Unavailable`" and "`Problem connecting to the server`" messages. You can safely ignore these messages—they will stop appearing soon as the node is upgraded.
+If you refresh your browser or navigate to another Grid Manager page while the primary Admin Node is being upgraded, you might see multiple "503: Service Unavailable" and "Problem connecting to the server" messages. You can safely ignore these messages—they will stop appearing soon as the node is upgraded.
 
 If these messages appear for more than an hour after you started the upgrade, something might have occurred that prevented the primary Admin Node from being upgraded. If you are unable to resolve the issue on your own, contact technical support.
 
@@ -61,8 +61,8 @@ NOTE: Browser support typically changes for each StorageGRID release.
 +
 Clearing the cache removes outdated resources used by the previous version of StorageGRID software, and permits the user interface to operate correctly again. For instructions, see the documentation for your web browser.
 
-== "`Docker image availability check`" error messages
-When attempting to start the upgrade process, you might receive an error message that states "`The following issues were identified by the Docker image availability check validation suite.`" All issues must be resolved before you can complete the upgrade.
+== "Docker image availability check" error messages
+When attempting to start the upgrade process, you might receive an error message that states "The following issues were identified by the Docker image availability check validation suite." All issues must be resolved before you can complete the upgrade.
 
 Contact technical support if you are unsure of the changes required to resolve the identified issues.
 

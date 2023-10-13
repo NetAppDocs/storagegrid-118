@@ -30,7 +30,7 @@ You must collect information about the VMware network created for the StorageGRI
 
 * The network name.
 * If you aren't using DHCP, the required networking details for each grid node (IP address, gateway, and network mask).
-* If you aren't using DHCP, the IP address of the primary Admin Node on the Grid Network. See "`How grid nodes discover the primary Admin Node`" for more information.
+* If you aren't using DHCP, the IP address of the primary Admin Node on the Grid Network. See "How grid nodes discover the primary Admin Node" for more information.
 
 == Admin Network information
 
@@ -63,7 +63,7 @@ The interfaces you add are displayed on the VLAN interfaces page and on the HA g
 
 You must collect the following information for virtual machine-based Storage Nodes:
 
-* The number and size of storage volumes (storage LUNs) you plan to add. See "`Storage and performance requirements.`"
+* The number and size of storage volumes (storage LUNs) you plan to add. See "Storage and performance requirements."
 
 == Grid configuration information
 

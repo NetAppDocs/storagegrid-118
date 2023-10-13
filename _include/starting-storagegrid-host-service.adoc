@@ -14,7 +14,7 @@ sudo systemctl start storagegrid
 sudo storagegrid node status node-name
 ----
 
-. If any node returns a status of "`Not Running`" or "`Stopped,`" run the following command:
+. If any node returns a status of "Not Running" or "Stopped," run the following command:
 +
 ----
 sudo storagegrid node start node-name
