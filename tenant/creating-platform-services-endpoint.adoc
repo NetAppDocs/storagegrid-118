@@ -121,8 +121,6 @@ NOTE: You can't change an endpoint's URN after the endpoint has been created.
 --
 Enter or upload the credentials for a CloudMirror replication, Amazon SNS, or AWS search integration endpoint.
 
-image::../media/endpoint_create_authentication_type.png[Create Endpoint - Authentication Type]
-
 The credentials that you supply must have write permissions for the destination resource.
 
 [cols="1a,2a,2a" options="header"]
@@ -160,8 +158,6 @@ The credentials that you supply must have write permissions for the destination 
 
 --
 Enter or upload the credentials for a Kafka endpoint.
-
-image::../media/endpoint_create_authentication_type_kafka.png[Create Kafka Endpoint - Authentication Type]
 
 The credentials that you supply must have write permissions for the destination resource.
 
