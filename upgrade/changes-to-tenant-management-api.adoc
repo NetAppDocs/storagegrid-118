@@ -15,4 +15,8 @@ NOTE: You can continue to use deprecated versions of the Tenant Management API w
 
 To learn more, go to link:../tenant/using-tenant-management-api.html[Use the Tenant Management API].
 
+== New endpoint for ILM policy tags
 
+You can use the */org/ilm-policy-tags* API endpoint to get a list of ILM policy tags.
+
+To learn more, go to link:../tenant/understanding-tenant-management-api.html[Understand the Tenant Management API].
