@@ -13,11 +13,11 @@ You should follow these recommendations when implementing the Swift REST API for
 
 == Recommendations for HEADs to non-existent objects
 
-If your application routinely checks to see if an object exists at a path where you don't expect the object to actually exist, you should use the "`Available`" consistency setting. For example, you should use the "`Available`" consistency setting if your application performs a HEAD operation to a location before performing a PUT operation to that location.
+If your application routinely checks to see if an object exists at a path where you don't expect the object to actually exist, you should use the "Available" consistency setting. For example, you should use the "Available" consistency setting if your application performs a HEAD operation to a location before performing a PUT operation to that location.
 
 Otherwise, if the HEAD operation does not find the object, you might receive a high number of 500 Internal Server errors if one or more Storage Nodes are unavailable.
 
-You can set the "`Available`" consistency setting for each container using the link:put-container-consistency-request.html[PUT container consistency request]. You view set the "`Available`" consistency setting for each container using the link:get-container-consistency-request.html[GET container consistency request].
+You can set the "Available" consistency setting for each container using the link:put-container-consistency-request.html[PUT container consistency request]. You view set the "Available" consistency setting for each container using the link:get-container-consistency-request.html[GET container consistency request].
 
 == Recommendations for object names
 
@@ -38,9 +38,9 @@ Instead of this format:
 mycontainer/f8e3-image3132.jpg
 ----
 
-== Recommendations for "`range reads`"
+== Recommendations for "range reads"
 
-If the link:../admin/configuring-stored-object-compression.html[global option to compress stored objects] is enabled, Swift client applications should avoid performing GET object operations that specify a range of bytes be returned. These "`range read`" operations are inefficient because StorageGRID must effectively uncompress the objects to access the requested bytes. GET Object operations that request a small range of bytes from a very large object are especially inefficient; for example, it is very inefficient to read a 10 MB range from a 50 GB compressed object.
+If the link:../admin/configuring-stored-object-compression.html[global option to compress stored objects] is enabled, Swift client applications should avoid performing GET object operations that specify a range of bytes be returned. These "range read" operations are inefficient because StorageGRID must effectively uncompress the objects to access the requested bytes. GET Object operations that request a small range of bytes from a very large object are especially inefficient; for example, it is very inefficient to read a 10 MB range from a 50 GB compressed object.
 
 If ranges are read from compressed objects, client requests can time out.
 

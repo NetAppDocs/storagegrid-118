@@ -40,7 +40,7 @@ NOTE: Moving or deleting object data from a site might take days, weeks, or even
  ** You can't create ILM rules that refer to the site being decommissioned. You also can't edit an existing ILM rule to refer to the site.
  ** You can't perform other maintenance procedures, such as expansion or upgrade.
 +
-NOTE: If you need to perform another maintenance procedure during a connected site decommission, you can pause the procedure while the Storage Nodes are being removed. The *Pause* button is enabled during the "`Decommissioning Replicated and Erasure-Coded Data`" stage.
+NOTE: If you need to perform another maintenance procedure during a connected site decommission, you can pause the procedure while the Storage Nodes are being removed. The *Pause* button is enabled during the "Decommissioning Replicated and Erasure-Coded Data" stage.
 
  ** If you need to recover any node after starting the site decommission procedure, you must contact support.
 

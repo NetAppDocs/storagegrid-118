@@ -105,7 +105,7 @@ The tables provide a progress bar of the operation on each node and show the reb
 * Completed
 
 == Stop the rolling reboot procedure
-You can stop the rolling reboot procedure from the primary Admin Node. When you stop the procedure, any nodes that have the status "`Stopping services,`" "`Rebooting system,`" or "`Starting services`" will complete the reboot operation. However, these nodes will no longer be tracked as part of the procedure. 
+You can stop the rolling reboot procedure from the primary Admin Node. When you stop the procedure, any nodes that have the status "Stopping services," "Rebooting system," or "Starting services" will complete the reboot operation. However, these nodes will no longer be tracked as part of the procedure. 
 
 .Steps
 

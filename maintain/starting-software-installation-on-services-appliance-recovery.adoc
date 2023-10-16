@@ -81,13 +81,13 @@ The StorageGRID Appliance Installer can discover this IP address automatically, 
 |.. Clear the *Enable Admin Node discovery* checkbox.
  .. Enter the IP address manually.
  .. Click *Save*.
- .. Wait while the connection state for the new IP address becomes "`ready.`"
+ .. Wait while the connection state for the new IP address becomes "ready."
 
 |Automatic discovery of all connected primary Admin Nodes
 |.. Select the *Enable Admin Node discovery* checkbox.
  .. From the list of discovered IP addresses, select the primary Admin Node for the grid where this services appliance will be deployed.
  .. Click *Save*.
- .. Wait while the connection state for the new IP address becomes "`ready.`"
+ .. Wait while the connection state for the new IP address becomes "ready."
 |===
 . [[installation_section_step]]In the Installation section, confirm that the current state is Ready to start installation of node name and that the *Start Installation* button is enabled.
 +
@@ -95,6 +95,6 @@ If the *Start Installation* button is not enabled, you might need to change the 
 
 . From the StorageGRID Appliance Installer home page, click *Start Installation*.
 +
-The Current state changes to "`Installation is in progress,`" and the Monitor Installation page is displayed.
+The Current state changes to "Installation is in progress," and the Monitor Installation page is displayed.
 +
 NOTE: If you need to access the Monitor Installation page manually, click *Monitor Installation* from the menu bar.

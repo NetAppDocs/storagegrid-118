@@ -29,7 +29,7 @@ _Company A can accomplish this goal by using the Deactivate Features system in t
 +
 `{ "grid": {"changeTenantRootPassword": true} }`
 +
-When the request is complete, the Change tenant root password feature is disabled. The *Change tenant root password* management permission no longer appears in the user interface, and any API request that attempts to change the root password for a tenant will fail with "`403 Forbidden.`"
+When the request is complete, the Change tenant root password feature is disabled. The *Change tenant root password* management permission no longer appears in the user interface, and any API request that attempts to change the root password for a tenant will fail with "403 Forbidden."
 
 == Reactivate deactivated features
 

@@ -41,7 +41,7 @@ image::../media/change_ip_tool_main_menu.png[screenshot showing welcome screen o
   *** *4*: All nodes at a site
   *** *5*: All nodes in the grid
   *** *0*: Go back
- ** Allow "`all`" to remain selected.
+ ** Allow "all" to remain selected.
 After the selection is made, the main menu screen appears. The Selected nodes field reflects your new selection, and now all operations selected will only be performed on this item.
 . On the main menu, select the option to edit subnets for the Admin Network (option *3*).
 . Choose one of the following:
@@ -53,7 +53,7 @@ NOTE: For all commands, you can enter multiple addresses using this format: `add
 +
 Example: `add 172.14.0.0/16, 172.15.0.0/16, 172.16.0.0/16`
 +
-TIP: You can reduce the amount of typing required by using "`up arrow`" to recall previously typed values to the current input prompt, and then edit them if necessary.
+TIP: You can reduce the amount of typing required by using "up arrow" to recall previously typed values to the current input prompt, and then edit them if necessary.
 
 +
 The example input below shows adding subnets to the Admin Network Subnet List:
