@@ -16,7 +16,7 @@ The StorageGRID system manages objects by applying the active ILM policy. The IL
 
 Object ingest and other object-related activities can exceed the rate at which StorageGRID can evaluate ILM, causing the system to queue objects whose ILM placement instructions can't be fulfilled in near real time. You should monitor whether StorageGRID is keeping up with client actions.
 
-Use the ILM tabs on the Grid Manager dashboard and NODES page to monitor ILM operations:
+Use the ILM tabs on the Grid Manager dashboard and *NODES* page to monitor ILM operations:
 
 . Sign in to the Grid Manager.
 . From the dashboard, select the ILM tab and note the values on the ILM queue (Objects) card and ILM evaluation rate card.
@@ -25,7 +25,7 @@ Temporary spikes in the ILM queue (Objects) card on the dashboard are to be expe
 
 . Additionally, investigate ILM queues using the *NODES* page.
 
-NOTE: The charts on the NODES page will be replaced with the corresponding dashboard cards in a future StorageGRID release.
+NOTE: The charts on the *NODES* page will be replaced with the corresponding dashboard cards in a future StorageGRID release.
 
 .Steps
 . Select *NODES*.
