@@ -71,7 +71,7 @@ Monitor individual grid nodes to check their resource usage levels. If nodes are
 image::../media/nodes_page_hardware_tab_graphs.png[Nodes page Hardware tab]
 
 . To display a different time interval, select one of the controls above the chart or graph. You can display the information available for intervals of 1 hour, 1 day, 1 week, or 1 month. You can also set a custom interval, which allows you to specify date and time ranges.
-. If the node is hosted on a storage appliance or a services appliance, scroll down to view the tables of components. The status of all components should be "`Nominal.`" Investigate components that have any other status.
+. If the node is hosted on a storage appliance or a services appliance, scroll down to view the tables of components. The status of all components should be "Nominal." Investigate components that have any other status.
 
 .Related information
 

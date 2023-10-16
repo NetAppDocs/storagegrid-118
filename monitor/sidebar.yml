@@ -19,17 +19,19 @@ entries:
       url: "/monitor/viewing-network-tab.html"
     - title: View the Storage tab
       url: "/monitor/viewing-storage-tab.html"
-    - title: Use the Tasks tab
-      url: "/monitor/using-task-tab-to-reboot-grid-node.html"
     - title: View the Objects tab
       url: "/monitor/viewing-objects-tab.html"
     - title: View the ILM tab
       url: "/monitor/viewing-ilm-tab.html"
+    - title: Use the Tasks tab
+      url: "/monitor/using-task-tab-to-reboot-grid-node.html"
     - title: View the Load balancer tab
       url: "/monitor/viewing-load-balancer-tab.html"
     - title: View the Platform services tab
       url: "/monitor/viewing-platform-services-tab.html"
-    - title: View the SANtricity System Manager tab
+    - title: View the Manage drives tab (SG6100 series only)
+      url: "/monitor/viewing-manage-drives-tab.html"
+    - title: View the SANtricity tab (E-Series only)
       url: "/monitor/viewing-santricity-system-manager-tab.html"
   - title: Information to monitor regularly
     entries:

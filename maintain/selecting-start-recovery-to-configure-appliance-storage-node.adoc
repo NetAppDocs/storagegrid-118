@@ -34,7 +34,7 @@ image::../media/4b_select_recovery_node.png[screenshot showing the Maintenance >
 
 . Monitor the progress of the recovery in the Recovering Grid Node table.
 +
-When the grid node reaches the "`Waiting for Manual Steps`" stage, go to the next topic and perform the manual steps to remount and reformat appliance storage volumes.
+When the grid node reaches the "Waiting for Manual Steps" stage, go to the next topic and perform the manual steps to remount and reformat appliance storage volumes.
 +
 image::../media/recovery_reset_button.gif[screenshot showing the stage waiting for manual steps]
 +

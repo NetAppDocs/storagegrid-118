@@ -11,7 +11,7 @@ summary: 'The GET Bucket compliance request is deprecated. However, you can cont
 [.lead]
 The GET Bucket compliance request is deprecated. However, you can continue to use this request to determine the compliance settings currently in effect for an existing legacy Compliant bucket.
 
-[IMPORTANT]
+[NOTE]
 ====
 The StorageGRID Compliance feature that was available in previous StorageGRID versions is deprecated and has been replaced by S3 Object Lock. See the following for more details:
 

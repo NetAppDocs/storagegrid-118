@@ -49,7 +49,7 @@ You can create a local group or import a federated group.
 
 .Steps
 . Select *Local group*.
-. Enter a display name for the group, which you can update later as required. For example, "`Maintenance Users`" or "`ILM Administrators.`"
+. Enter a display name for the group, which you can update later as required. For example, "Maintenance Users" or "ILM Administrators."
 . Enter a unique name for the group, which you can't update later. 
 
 . Select *Continue*. 

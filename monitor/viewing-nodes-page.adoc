@@ -56,7 +56,7 @@ Determine if any alerts are affecting this node.
 If one or more alerts are active, link:monitoring-system-health.html#view-current-and-resolved-alerts[Select each alert] and follow the recommended actions.
 |===
 
-If a node is disconnected from the grid, it might have an underlying alert, but only the "`Not connected`" icon appears. To see the active alerts for a node, select the node.
+If a node is disconnected from the grid, it might have an underlying alert, but only the "Not connected" icon appears. To see the active alerts for a node, select the node.
 
 == Alert icons
 

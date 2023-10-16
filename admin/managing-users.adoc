@@ -24,7 +24,7 @@ You can create one or more local users and assign each user to one or more local
 
 You can create local users only. Use the external identity source to manage federated users and groups.
 
-The Grid Manager includes one predefined local user, named "`root.`" You can't remove the root user.
+The Grid Manager includes one predefined local user, named "root." You can't remove the root user.
 
 NOTE: If single sign-on (SSO) is enabled, local users can't sign in to StorageGRID.
 

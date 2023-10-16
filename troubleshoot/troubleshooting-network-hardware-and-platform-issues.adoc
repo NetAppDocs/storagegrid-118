@@ -11,7 +11,7 @@ summary: 'There are several tasks you can perform to help determine the source o
 [.lead]
 There are several tasks you can perform to help determine the source of issues related to StorageGRID network, hardware, and platform issues.
 
-== "`422: Unprocessable Entity`" errors
+== "422: Unprocessable Entity" errors
 
 The error 422: Unprocessable Entity can occur for different reasons. Check the error message to determine what caused your issue.
 
@@ -155,7 +155,7 @@ NOTE: These steps are applicable only for NRER errors caused by FEC mismatch on 
 
 .. Change the FEC settings on the switch ports. The StorageGRID appliance ports will adjust their FEC settings to match, if possible.
 +
-You can't configure FEC settings on StorageGRID appliances. Instead, the appliances attempt to discover and mirror the FEC settings on the switch ports they are connected to. If the links are forced to 25-GbE or 100-GbE network speeds, the switch and NIC might fail to negotiate a common FEC setting. Without a common FEC setting, the network will fall back to "`no-FEC`" mode. When FEC is not enabled, the connections are more susceptible to errors caused by electrical noise.
+You can't configure FEC settings on StorageGRID appliances. Instead, the appliances attempt to discover and mirror the FEC settings on the switch ports they are connected to. If the links are forced to 25-GbE or 100-GbE network speeds, the switch and NIC might fail to negotiate a common FEC setting. Without a common FEC setting, the network will fall back to "no-FEC" mode. When FEC is not enabled, the connections are more susceptible to errors caused by electrical noise.
 +
 NOTE: StorageGRID appliances support Firecode (FC) and Reed Solomon (RS) FEC, as well as no FEC.
 --
@@ -227,7 +227,7 @@ If you don't want to use MAC address cloning and would rather allow all interfac
 
 For more information about using Promiscuous Mode, see the instructions for link:../rhel/configuring-host-network.html[Red Hat Enterprise Linux or CentOS] or link:../ubuntu/configuring-host-network.html[Ubuntu or Debian].
 
-== Linux: Node status is "`orphaned`"
+== Linux: Node status is "orphaned"
 
 A Linux node in an orphaned state usually indicates that either the storagegrid service or the StorageGRID node daemon controlling the node's container died unexpectedly.
 

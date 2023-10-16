@@ -56,7 +56,7 @@ If you remove the default trap community, you must first ensure that any existin
 
 . To update agent addresses, select the Agent addresses tab in the Other configurations section.
 +
-Use this tab to specify one or more "`listening addresses.`" These are the StorageGRID addresses on which the SNMP agent can receive queries.
+Use this tab to specify one or more "listening addresses." These are the StorageGRID addresses on which the SNMP agent can receive queries.
 +
 For details about what to enter, see link:../monitor/configuring-snmp-agent.html#create-agent-addresses[Create agent addresses].
 
