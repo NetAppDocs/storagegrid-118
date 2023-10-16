@@ -17,4 +17,4 @@ To learn more, go to link:../tenant/understanding-tenant-management-api.html[Und
 
 == New endpoints for ILM policy tags
 
-You can use the */org/ilm-policy-tags* and *org/containers/{bucketName}/ilm-policy-tags* API endpoints to perform operations related to ILM policy tags.
+You can use the */org/ilm-policy-tags* and */org/containers/{bucketName}/ilm-policy-tags* API endpoints to perform operations related to ILM policy tags.
