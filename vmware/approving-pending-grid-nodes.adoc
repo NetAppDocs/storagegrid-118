@@ -43,6 +43,10 @@ NOTE: For a VMware node, you can change the name here, but this action will not 
 +
 CAUTION: Make sure that at least two nodes at each site can access at least four external NTP sources. If only one node at a site can reach the NTP sources, timing issues will occur if that node goes down. In addition, designating two nodes per site as primary NTP sources ensures accurate timing if a site is isolated from the rest of the grid.
 
+ ** *Storage Type* (Storage Nodes only): Specify that a new Storage Node be used exclusively for metadata. The options are *Objects and metadata* and *Metadata only*.
++
+NOTE: When installing a grid with metadata-only nodes, the grid must also contain a minimum of nodes for object storage. For a single-site grid, at least two Storage Nodes are configured for objects and metadata. For a multi-site grid, at least one Storage Node per site are configured for objects and metadata.
+
  ** *ADC service* (Storage Nodes only): Select *Automatic* to let the system determine whether the node requires the Administrative Domain Controller (ADC) service. The ADC service keeps track of the location and availability of grid services. At least three Storage Nodes at each site must include the ADC service. You can't add the ADC service to a node after it is deployed.
 
 . In Grid Network, modify settings for the following properties as necessary:
