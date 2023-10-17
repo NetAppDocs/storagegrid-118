@@ -54,13 +54,13 @@ a|
 Using Kafka endpoints
 
 a|
-The authentication of Kafka endpoints uses the following authentication types, which are different to those used for the authentication of other endpoints, such as Amazon SNS, and require username and password credentials:
+The authentication of Kafka endpoints uses the following authentication types. These types are different from those used for the authentication of other endpoints, such as Amazon SNS, and require username and password credentials.
 
 * SASL/PLAIN
 * SASL/SCRAM-SHA-256
 * SASL/SCRAM-SHA-512
 
-You should also note that you cannot configure storage proxy settings for Kafka platform services endpoints.
+NOTE: You can't configure storage proxy settings for Kafka platform services endpoints.
 
 |===
 
