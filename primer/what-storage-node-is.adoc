@@ -16,17 +16,22 @@ Each StorageGRID system must have at least three Storage Nodes. If you have mult
 
 
 == Types of Storage Nodes
-All Storage Nodes that were installed before StorageGRID 11.8 store both objects and the metadata for those objects. Starting in StorageGRID 11.8, you can choose the Storage Node type when you install a new node, as follows:
+All Storage Nodes that were installed before StorageGRID 11.8 store both objects and the metadata for those objects. Starting in StorageGRID 11.8, you can choose the Storage Node type when you install a new node:
 
 Object and metadata Storage Nodes::
 By default, all new Storage Nodes installed in StorageGRID 11.8 will store both objects and metadata.
 
 Metadata-only Storage Nodes::
-As required, you can specify that a new Storage Node be used exclusively for metadata.
+You can specify that a new Storage Node be used to store only metadata.
 +
-TIP: You can only select the Storage Node type when installing the node initially. You can't change the type after the node has been installed.
+NOTE: You can only select the Storage Node type when installing the node initially. You can't change the type after the node has been installed.
 
 Installing a metadata-only node is typically not required. However, using a Storage Node exclusively for metadata can make sense if your grid stores a very large number of small objects. Installing dedicated metadata capacity provides a better balance between the space needed for a very large number of small objects and the space needed for the metadata for all those objects.
+
+When installing a grid with metadata-only nodes, the grid must also contain a minimum number of nodes for object storage:
+
+* For a single-site grid, at least two Storage Nodes are configured for objects and metadata. 
+* For a multi-site grid, at least one Storage Node per site are configured for objects and metadata.
 
 == Primary services for Storage Nodes
 
