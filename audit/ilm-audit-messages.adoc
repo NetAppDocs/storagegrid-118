@@ -9,7 +9,7 @@ summary: 'The audit messages belonging to the ILM audit category are used for ev
 :imagesdir: ../media/
 
 [.lead]
-The audit messages belonging to the ILM audit category are used for  events related to information lifecycle management (ILM) operations.
+The audit messages belonging to the ILM audit category are used for events related to information lifecycle management (ILM) operations.
 
 [cols="1a,3a,1a" options="header"]
 |===

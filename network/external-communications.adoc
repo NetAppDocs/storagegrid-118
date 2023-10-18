@@ -292,6 +292,13 @@ NOTE: This list does not include ports that might be configured as link:../admin
 
 *Note:* This port is required only if certificate-based Prometheus access is enabled.
 
+|9092
+|TCP
+|Kafka
+|Storage Nodes with ADC
+|Kafka cluster
+|Used for platform services messages sent to a Kafka cluster. Tenants can override the default Kafka port setting of 9092 when creating an endpoint.
+
 | 9443
 | TCP
 | HTTPS
@@ -337,3 +344,4 @@ NOTE: This list does not include ports that might be configured as link:../admin
 
 |===
 
+// 2023 SEP 19, SGWS-25330
