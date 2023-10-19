@@ -23,7 +23,7 @@ You must create at least one endpoint of the correct type before you can enable 
 * You have the information about the destination resource:
  ** Host and port for the Uniform Resource Identifier (URI)
 +
-NOTE: If you plan to use a bucket hosted on a StorageGRID system as an endpoint for CloudMirror replication, contact the grid administrator to determine the values you need to enter.
+NOTE: If you plan to use a bucket hosted on a StorageGRID system as an endpoint for CloudMirror replication, contact the grid administrator to determine the values you need to enter. 
 
  ** Unique Resource Name (URN)
 +
