@@ -57,19 +57,13 @@ For Kafka endpoints, you can use the following credentials:
 
 .Steps
 
-. Select *STORAGE (S3)* > *Platform services endpoints*.
-+
-The Platform services endpoints page appears.
-+
-image::../media/endpoints_page_blank.png[Platform Services Endpoints Blank Page]
+. Select *STORAGE (S3)* > *Platform services endpoints*. The Platform services endpoints page appears.
 
 . Select *Create endpoint*.
-+
-image::../media/endpoint_create.png[Create Endpoint]
 
 . Enter a display name to briefly describe the endpoint and its purpose.
 +
-The type of platform service that the endpoint supports is shown beside the endpoint name when it is listed on the Endpoints page, so you don't need to include that information in the name.
+The type of platform service that the endpoint supports is shown beside the endpoint name when it is lisved on the Endpoints page, so you don't need to include that information in the name.
 
 . In the *URI* field, specify the Unique Resource Identifier (URI) of the endpoint.
 +
