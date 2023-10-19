@@ -57,25 +57,35 @@ For Kafka endpoints, you can use the following credentials:
 
 .Steps
 
-. Select *STORAGE (S3)* > *Platform services endpoints*. The Platform services endpoints page appears.
+. Select *STORAGE (S3)* > *Platform services endpoints*.
++
+The Platform services endpoints page appears.
++
+image::../media/endpoints_page_blank.png[Platform Services Endpoints Blank Page]
+
 . Select *Create endpoint*.
++
+image::../media/endpoint_create.png[Create Endpoint]
+
 . Enter a display name to briefly describe the endpoint and its purpose.
 +
 The type of platform service that the endpoint supports is shown beside the endpoint name when it is listed on the Endpoints page, so you don't need to include that information in the name.
 
-. In the *URI* field, specify the Unique Resource Identifier (URI) of the endpoint. Use one of the following formats:
+. In the *URI* field, specify the Unique Resource Identifier (URI) of the endpoint.
 +
+--
+Use one of the following formats:
 
 ----
 https://host:port
 http://host:port
 ----
-+
+
 If you don't specify a port, the following default ports are used:
 
 * Port 443 for HTTPS URIs and port 80 for HTTP URIs (most endpoints)
 * Port 9092 for HTTPS and HTTP URIs (Kafka endpoints only)
-
+--
 +
 For example, the URI for a bucket hosted on StorageGRID might be:
 +
@@ -104,7 +114,6 @@ NOTE: You can't change an endpoint's URN after the endpoint has been created.
 . Select *Continue*.
 . Select a value for *Authentication type*.
 +
-//tabbed block starts here
 [role="tabbed-block"]
 ====
 
@@ -144,7 +153,7 @@ The credentials that you supply must have write permissions for the destination 
 * Client private key passphrase (optional)
 |===
 --
-//end most endpoints, start Kafka endpoints
+
 .Kafka endpoints
 
 --
@@ -154,9 +163,7 @@ The credentials that you supply must have write permissions for the destination 
 
 [cols="1a,2a,2a" options="header"]
 |===
-
 | Authentication type| Description| Credentials
-
 |Anonymous
 |Provides anonymous access to the destination. Only works for endpoints that have security disabled.
 |No authentication.
@@ -178,12 +185,10 @@ The credentials that you supply must have write permissions for the destination 
 |
 * Username
 * Password
-|===
+--
 
 Select *Use delegation taken authentication* if the username and password are derived from a delegation token that was obtained from a Kafka cluster.
---
 ====
-//end of tabbed block
 
 . Select *Continue*.
 . Select a radio button for *Verify server* to choose how TLS connection to the endpoint is verified.
