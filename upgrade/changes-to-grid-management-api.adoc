@@ -23,3 +23,9 @@ Effective starting with StorageGRID 11.8, version 4 of the `ilm-policies` API co
 * Properties removed: `proposed`, `historical`, `historicalRules`, `activationTime`.
 * Properties added: `active` (boolean), `activatedBy` (array of tag UUIDs that the policy is assigned to).
 * The optional type query parameter for `GET ilm-policies` now takes the values `inactive` and `active.` The previous values were `proposed`, `active`, and `historical`.
+
+== New endpoints for drive management
+
+You can use the */grid/drive-details/{nodeId}* API endpoints to perform operations on the drives in specific models of appliance Storage Nodes.
+
+//link to sg6100/manage-drives-tab.html

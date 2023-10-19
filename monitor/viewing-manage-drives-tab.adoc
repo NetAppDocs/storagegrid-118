@@ -21,4 +21,4 @@ Using the Manage drives tab, you can do the following:
 
 To perform troubleshooting and maintenance tasks using the Manage drives tab, you must have the link:../admin/admin-group-permissions.html[Storage appliance administrator or Root access permission].
 
-For information about using the Manage drives tab, see https://review.docs.netapp.com/us-en/storagegrid-appliances_from-main-118appliance-more-manage-drives-28sep2023-lh/sg6100/manage-drives-tab.html[Use the Manage drives tab^].
+For information about using the Manage drives tab, see https://review.docs.netapp.com/us-en/storagegrid-appliances_main/sg6100/manage-drives-tab.html[Use the Manage drives tab^].
