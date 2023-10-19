@@ -27,5 +27,3 @@ Effective starting with StorageGRID 11.8, version 4 of the `ilm-policies` API co
 == New endpoints for drive management
 
 You can use the */grid/drive-details/{nodeId}* API endpoints to perform operations on the drives in specific models of appliance Storage Nodes.
-
-//link to sg6100/manage-drives-tab.html
