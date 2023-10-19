@@ -33,6 +33,8 @@ When installing a grid with metadata-only nodes, the grid must also contain a mi
 * For a single-site grid, at least two Storage Nodes are configured for objects and metadata. 
 * For a multi-site grid, at least one Storage Node per site are configured for objects and metadata.
 
+Storage Nodes display a metadata-only indication for each metadata-only node on all pages that list the Storage Node type. 
+
 == Primary services for Storage Nodes
 
 The following table shows the primary services for Storage Nodes; however, this table does not list all node services.
