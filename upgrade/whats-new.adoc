@@ -47,14 +47,6 @@ StorageGRID can now support either the TLS 1.2 or TLS 1.3 protocol when it makes
 === Changes to EC rebalance procedure
 The EC rebalance procedure was updated and is now considered complete when the new Site Imbalance metric reaches 0.02 or when the job has been running continuously for 30 days.
 
-=== New alerts
-The following new alerts were added for StorageGRID 11.8:
-
-* Appliance DAS drive exceeding limit for data written per day
-* Appliance DAS drive locator light on
-* Reboot required to disable FIPS
-* Reboot required to enable FIPS
-
 === Documentation changes
 
 * The documentation for StorageGRID appliances was moved to a link:https://review.docs.netapp.com/us-en/storagegrid-appliances_main/[new documentation site].

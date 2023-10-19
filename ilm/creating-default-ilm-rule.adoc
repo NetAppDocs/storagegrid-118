@@ -32,7 +32,7 @@ When you create the default rule, keep these requirements in mind:
 NOTE: Don't use a rule that creates erasure-coded copies as the default rule for a policy. Erasure-coding rules should use an advanced filter to prevent smaller objects from being erasure-coded.
 
 * In general, the default rule should retain objects forever.
-* If you are using (or you plan to enable) the global S3 Object Lock setting, the default rule for the active or proposed policy must be compliant.
+* If you are using (or you plan to enable) the global S3 Object Lock setting, the default rule must be compliant.
 
 .Steps
 
