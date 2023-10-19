@@ -90,7 +90,7 @@ Store objects by replicating 2 copies at Denver.
 
 |===
 
-. Create a proposed ILM policy and select the two rules. Because the replication rule does not use any filters, it can be the default (last) rule for the policy.
+. Create an ILM policy and select the two rules. Because the replication rule does not use any filters, it can be the default (last) rule for the policy.
 . Ingest test objects into the grid.
 . Simulate the policy with the test objects to verify the behavior.
 . Activate the policy.
