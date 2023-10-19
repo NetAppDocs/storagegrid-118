@@ -29,8 +29,6 @@ image::../media/5_gmi_installer_grid_nodes_pending.gif[This image is explained b
 
 . Click *Approve*.
 . In General Settings, modify settings for the following properties, as necessary:
-+
-image::../media/6_gmi_installer_node_config_popup.gif[This image is explained by the surrounding text.]
 
  ** *Site*: The system name of the site for this grid node. 
  ** *Name*: The system name for the node. The name defaults to the name you specified when you configured the node. 
