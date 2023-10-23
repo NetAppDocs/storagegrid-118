@@ -19,11 +19,6 @@ Follow this procedure to add grid nodes to existing sites or to add a new site. 
 +
 NOTE: You are prevented from starting an expansion while another expansion, upgrade, recovery, or active decommission procedure is in progress. However, if necessary, you can pause a decommission procedure to start an expansion.
 
-* When expanding a grid with metadata-only Storage Nodes, the grid must also contain a minimum number of nodes for object storage. See link:../primer/what-storage-node-is.html#types-of-storage-nodes[Types of Storage Nodes] for more information about metadata-only Storage Nodes.
-
-** For a single-site grid, at least two Storage Nodes are configured for objects and metadata. 
-** For a multi-site grid, at least one Storage Node per site are configured for objects and metadata.
-
 .Steps
 
 . link:updating-subnets-for-grid-network.html[Update subnets for Grid Network].
