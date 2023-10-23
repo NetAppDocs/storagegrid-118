@@ -33,6 +33,7 @@ See "Protecting against Cross-Site Request Forgery" for information about improv
 * *config*: Operations related to the product release and versions of the Grid Management API. You can list the product release version and the major versions of the Grid Management API supported by that release, and you can disable deprecated versions of the API.
 * *deactivated-features*: Operations to view features that might have been deactivated.
 * *dns-servers*: Operations to list and change configured external DNS servers.
+* *drive-details*: Operations on drives for specific storage appliance models.
 * *endpoint-domain-names*: Operations to list and change S3 endpoint domain names.
 * *erasure-coding*: Operations on erasure-coding profiles.
 * *expansion*: Operations on expansion (procedure-level).
