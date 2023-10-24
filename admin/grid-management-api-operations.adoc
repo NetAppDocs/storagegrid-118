@@ -25,14 +25,15 @@ NOTE: This list only includes operations available in the public API.
 +
 The Grid Management API supports the Bearer Token Authentication Scheme. To sign in, you provide a username and password in the JSON body of the authentication request (that is, `POST /api/v3/authorize`). If the user is successfully authenticated, a security token is returned. This token must be provided in the header of subsequent API requests ("Authorization: Bearer _token_"). The token expires after 16 hours.
 +
-NOTE: If single sign-on is enabled for the StorageGRID system, you must perform different steps to authenticate. See "`Authenticating in to the API if single sign-on is enabled.`"
+NOTE: If single sign-on is enabled for the StorageGRID system, you must perform different steps to authenticate. See "Authenticating in to the API if single sign-on is enabled."
 +
-See "`Protecting against Cross-Site Request Forgery`" for information about improving authentication security.
+See "Protecting against Cross-Site Request Forgery" for information about improving authentication security.
 
 * *client-certificates*: Operations to configure client certificates so that StorageGRID can be accessed securely using external monitoring tools.
 * *config*: Operations related to the product release and versions of the Grid Management API. You can list the product release version and the major versions of the Grid Management API supported by that release, and you can disable deprecated versions of the API.
 * *deactivated-features*: Operations to view features that might have been deactivated.
 * *dns-servers*: Operations to list and change configured external DNS servers.
+* *drive-details*: Operations on drives for specific storage appliance models.
 * *endpoint-domain-names*: Operations to list and change S3 endpoint domain names.
 * *erasure-coding*: Operations on erasure-coding profiles.
 * *expansion*: Operations on expansion (procedure-level).

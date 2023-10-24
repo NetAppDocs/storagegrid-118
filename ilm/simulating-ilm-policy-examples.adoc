@@ -77,7 +77,7 @@ When a test object is not matched by the expected rule in the policy, you must e
 . Select *Finish* to close the Simulate policy dialog. On the details page for the policy, select *Retention diagram*. Then select *Expand all* or *View details* for each rule as needed.
 . Review the rule's tenant account, reference time, and filtering criteria.
 +
-As an example, suppose the metadata for the X-men rule was entered as "`x-men01`" instead of "`x-men.`"
+As an example, suppose the metadata for the X-men rule was entered as "x-men01" instead of "x-men."
 
 . To resolve the error, correct the rule as follows:
 ** If the rule is part of the policy, you can either clone the rule or remove the rule from the policy and then edit it.

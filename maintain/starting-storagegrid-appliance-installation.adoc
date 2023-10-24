@@ -52,18 +52,18 @@ The StorageGRID Appliance Installer can discover this IP address automatically, 
 |.. Clear the *Enable Admin Node discovery* checkbox.
  .. Enter the IP address manually.
  .. Click *Save*.
- .. Wait while the connection state for the new IP address becomes "`ready.`"
+ .. Wait while the connection state for the new IP address becomes "ready."
 
 |Automatic discovery of all connected primary Admin Nodes
 |.. Select the *Enable Admin Node discovery* checkbox.
  .. From the list of discovered IP addresses, select the primary Admin Node for the grid where this appliance Storage Node will be deployed.
  .. Click *Save*.
- .. Wait while the connection state for the new IP address becomes "`ready.`"
+ .. Wait while the connection state for the new IP address becomes "ready."
 
 |===
 
 . In the *Node Name* field, enter the same hostname (system name) that was used for the node you are recovering, and click *Save*.
-. In the Installation section, confirm that the current state is "`Ready to start installation of `_node name_` into grid with Primary Admin Node `_admin_ip_``" and that the *Start Installation* button is enabled.
+. In the Installation section, confirm that the current state is "Ready to start installation of `_node name_` into grid with Primary Admin Node `_admin_ip_`" and that the *Start Installation* button is enabled.
 +
 If the *Start Installation* button is not enabled, you might need to change the network configuration or port settings. For instructions, see the maintenance instructions for your appliance.
 
@@ -71,6 +71,6 @@ If the *Start Installation* button is not enabled, you might need to change the 
 +
 image::../media/appliance_installer_home_start_installation_enabled.gif[This figure is described by the surrounding text.]
 +
-The Current state changes to "`Installation is in progress,`" and the Monitor Installation page is displayed.
+The Current state changes to "Installation is in progress," and the Monitor Installation page is displayed.
 +
 NOTE: If you need to access the Monitor Installation page manually, click *Monitor Installation* from the menu bar. See https://review.docs.netapp.com/us-en/storagegrid-appliances_main/installconfig/monitoring-appliance-installation.html[Monitor appliance installation^].

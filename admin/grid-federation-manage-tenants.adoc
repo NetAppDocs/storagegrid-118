@@ -28,7 +28,7 @@ If you want to allow a new or existing tenant account to use a grid federation c
 
 * When the tenant is created or edited to enable the *Use grid federation connection* permission and then saved on the first grid, an identical tenant is automatically replicated to the other grid. The grid where the tenant is replicated is the _tenant's destination grid_.
 
-* The tenants on both grids will have the same 20-digit account ID, name, description, quota, and permissions. Optionally, you can use the *Description* field to help identify which is the source tenant and which is the destination tenant. For example, this description for a tenant created on Grid 1 will also appear for the tenant replicated to Grid 2: "`This tenant was created on Grid 1.`"
+* The tenants on both grids will have the same 20-digit account ID, name, description, quota, and permissions. Optionally, you can use the *Description* field to help identify which is the source tenant and which is the destination tenant. For example, this description for a tenant created on Grid 1 will also appear for the tenant replicated to Grid 2: "This tenant was created on Grid 1."
 
 * For security reasons, the password for a local root user is not copied to the destination grid.
 +

@@ -42,7 +42,7 @@ Selecting *Test connection* causes StorageGRID to validate that the platform ser
 
 == Resolve endpoint errors
 
-You can use the *Last error* message on the endpoint details page to help determine what is causing the error. Some errors might require you to edit the endpoint to resolve the issue. For example, a CloudMirroring error can occur if StorageGRID is unable to access the destination S3 bucket because it does not have the correct access permissions or the access key has expired. The message is "`Either the endpoint credentials or the destination access needs to be updated,`" and the details are "`AccessDenied`" or "`InvalidAccessKeyId.`"
+You can use the *Last error* message on the endpoint details page to help determine what is causing the error. Some errors might require you to edit the endpoint to resolve the issue. For example, a CloudMirroring error can occur if StorageGRID is unable to access the destination S3 bucket because it does not have the correct access permissions or the access key has expired. The message is "Either the endpoint credentials or the destination access needs to be updated," and the details are "AccessDenied" or "InvalidAccessKeyId."
 
 If you need to edit the endpoint to resolve an error, selecting *Test and save changes* causes StorageGRID to validate the updated endpoint and confirm that it can be reached with the current credentials. The connection to the endpoint is validated from one node at each site.
 
@@ -55,7 +55,7 @@ If you need to edit the endpoint to resolve an error, selecting *Test and save c
 
 == Endpoint credentials with insufficient permissions
 
-When StorageGRID validates a platform services endpoint, it confirms that the endpoint's credentials can be used to contact the destination resource and it does a basic permissions check. However, StorageGRID does not validate all of the permissions required for certain platform services operations. For this reason, if you receive an error when attempting to use a platform service (such as "`403 Forbidden`"), check the permissions associated with the endpoint's credentials.
+When StorageGRID validates a platform services endpoint, it confirms that the endpoint's credentials can be used to contact the destination resource and it does a basic permissions check. However, StorageGRID does not validate all of the permissions required for certain platform services operations. For this reason, if you receive an error when attempting to use a platform service (such as "403 Forbidden"), check the permissions associated with the endpoint's credentials.
 
 .Related information
 

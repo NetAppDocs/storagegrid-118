@@ -113,7 +113,7 @@ image::../media/rhel_install_vlan_diag_2.gif[This image is explained by the surr
 +
 Use the same name for the bond on every host. For example, `bond0`.
 
-. Create VLAN interfaces that use this bond as their associated "`physical device,`" using the standard VLAN interface naming convention `physdev-name.VLAN ID`.
+. Create VLAN interfaces that use this bond as their associated "physical device," using the standard VLAN interface naming convention `physdev-name.VLAN ID`.
 +
 Note that steps 1 and 2 require appropriate configuration on the edge switches terminating the other ends of the network links. The edge switch ports must also be aggregated into a LACP port channel, configured as a trunk, and allowed to pass all required VLANs.
 +
