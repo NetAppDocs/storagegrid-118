@@ -36,6 +36,8 @@ Review the considerations for decommissioning a connected Storage Node.
 * You should not decommission more than 10 Storage Nodes in a single Decommission Node procedure.
 
 * The system must, at all times, include enough Storage Nodes to satisfy operational requirements, including the link:understanding-adc-service-quorum.html[ADC quorum] and the active link:reviewing-ilm-policy-and-storage-configuration.html[ILM policy]. To satisfy this restriction, you might need to add a new Storage Node in an expansion operation before you can decommission an existing Storage Node.
++
+When decommissioning Storage Nodes in a grid with software-based metadata-only nodes, decommissioning all nodes configured to store both objects and metadata removes all object storage from the grid. See link:../primer/what-storage-node-is.html#types-of-storage-nodes[Types of Storage Nodes] for more information about metadata-only Storage Nodes.
 
 * When you remove a Storage Node, large volumes of object data are transferred over the network. Although these transfers should not affect normal system operations, they can affect the total amount of network bandwidth consumed by the StorageGRID system.
 
@@ -70,7 +72,7 @@ CAUTION: Don't perform this procedure if you believe it might be possible to rec
 
 * When you decommission a disconnected Storage Node, StorageGRID uses data from other Storage Nodes to reconstruct the object data and metadata that was on the disconnected node.
 
-* Data loss might occur if you decommission more than one disconnected Storage Node. The system might not be able to reconstruct data if not enough object copies, erasure-coded fragments, or object metadata remain available.
+* Data loss might occur if you decommission more than one disconnected Storage Node. The system might not be able to reconstruct data if not enough object copies, erasure-coded fragments, or object metadata remain available.  When decommissioning Storage Nodes in a grid with software-based metadata-only nodes, decommissioning all nodes configured to store both objects and metadata removes all object storage from the grid. See link:../primer/what-storage-node-is.html#types-of-storage-nodes[Types of Storage Nodes] for more information about metadata-only Storage Nodes.
 +
 CAUTION: If you have more than one disconnected Storage Node that you can't recover, contact technical support to determine the best course of action.
 
