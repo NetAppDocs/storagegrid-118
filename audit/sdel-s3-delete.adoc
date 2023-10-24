@@ -120,7 +120,7 @@ Empty for anonymous requests.
 
 |UUDM
 |Universally Unique Identifier for a delete marker
-|The identifier of an object within the StorageGRID system that was deleted by creating a delete marker.
+|The identifier of a delete marker. Audit log messages specify either UUDM or UUID, where UUDM indicates that the request was made on a delete marker, and UUID indicates an object.
 
 |UUID
 |Universally Unique Identifier
