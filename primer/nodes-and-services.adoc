@@ -57,6 +57,8 @@ Software-based grid nodes can be deployed as VMware virtual machines or within c
 
 Use the https://imt.netapp.com/matrix/#welcome[NetApp Interoperability Matrix Tool (IMT)^] to determine the supported versions.
 
+During initial installation of a new software-based Storage Node you can specify that it only be used to link:../primer/what-storage-node-is.html#types-of-storage-nodes[store metadata].
+
 [[storagegrid-services]]
 == StorageGRID services
 
