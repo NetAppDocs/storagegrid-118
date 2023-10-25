@@ -89,7 +89,7 @@ S3 Subresource
 a|
 The bucket or object subresource being operated on, if applicable.
 
-Set to "`select`" for an S3 Select operation.
+Set to "select" for an S3 Select operation.
 a|
 SACC
 a|

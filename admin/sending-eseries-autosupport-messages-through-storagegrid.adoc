@@ -65,10 +65,10 @@ NOTE: The certificate that enables HTTPS is pre-installed.
 
 . Select *Test Configuration* to test the routing and configuration of your AutoSupport proxy server.
 +
-If correct, a message in a green banner appears: "`Your AutoSupport configuration has been verified.`"
+If correct, a message in a green banner appears: "Your AutoSupport configuration has been verified."
 +
 If the test fails, an error message appears in a red banner. Check your StorageGRID DNS settings and networking, ensure the link:../primer/what-admin-node-is.html[preferred sender Admin Node] can connect to the NetApp Support Site, and try the test again.
 
 . Select *Save*.
 +
-The configuration is saved, and a confirmation message appears: "`AutoSupport delivery method has been configured.`"
+The configuration is saved, and a confirmation message appears: "AutoSupport delivery method has been configured."

@@ -26,7 +26,7 @@ The following request parameters are optional:
 * `Container`
 * `Object`
 
-A successful execution returns the following headers with an "`HTTP/1.1 204 No Content`" response. The OPTIONS request to the storage URL does not require that the target exists.
+A successful execution returns the following headers with an "HTTP/1.1 204 No Content" response. The OPTIONS request to the storage URL does not require that the target exists.
 
 * `Allow` (a list of supported verbs for the given URL, for example, HEAD, GET, OPTIONS, and PUT)
 * `Content-Length`

@@ -33,7 +33,7 @@ However, if you need to recover the primary Admin Node, you must manually instal
 
 The following example illustrates how to apply a hotfix when recovering the primary Admin Node:
 
-. Assume the grid is running a StorageGRID 11._A.B_ version with the latest hotfix. The "`grid version`" is 11._A.B.y_.
+. Assume the grid is running a StorageGRID 11._A.B_ version with the latest hotfix. The "grid version" is 11._A.B.y_.
 . The primary Admin Node fails.
 . You redeploy the primary Admin Node using StorageGRID 11._A.B_, and perform the recovery procedure.
 +

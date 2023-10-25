@@ -19,8 +19,6 @@ NOTE: You must be signed in to the primary Admin Node to perform this procedure.
 
 * You have the link:../admin/admin-group-permissions.html[Maintenance or Root access permission].
 
-
-
 .About this task
 Use this procedure if you need to reboot multiple nodes at the same time. For example, you can use this procedure after changing the FIPS mode for the grid's link:../admin/manage-tls-ssh-policy.html[TLS and SSH security policy]. When the FIPS mode changes, you must reboot all nodes to put the change into effect.
 
@@ -107,7 +105,7 @@ The tables provide a progress bar of the operation on each node and show the reb
 * Completed
 
 == Stop the rolling reboot procedure
-You can stop the rolling reboot procedure from the primary Admin Node. When you stop the procedure, any nodes that have the status "`Stopping services,`" "`Rebooting system,`" or "`Starting services`" will complete the reboot operation. However, these nodes will no longer be tracked as part of the procedure. 
+You can stop the rolling reboot procedure from the primary Admin Node. When you stop the procedure, any nodes that have the status "Stopping services," "Rebooting system," or "Starting services" will complete the reboot operation. However, these nodes will no longer be tracked as part of the procedure. 
 
 .Steps
 

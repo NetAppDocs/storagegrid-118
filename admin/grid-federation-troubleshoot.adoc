@@ -64,7 +64,7 @@ When you edit a grid federation connection, StorageGRID attempts to save a "cand
 === Can't sign in to a cloned tenant account
 
 .Issue
-You can't sign in to a cloned tenant account. The error message on the Tenant Manager sign-in page is "`Your credentials for this account were invalid. Please try again.`"
+You can't sign in to a cloned tenant account. The error message on the Tenant Manager sign-in page is "Your credentials for this account were invalid. Please try again."
 
 .Details
 For security reasons, when a tenant account is cloned from the tenant's source grid to the tenant's destination grid, the password you set for the tenant's local root user is not cloned. Similarly, when a tenant creates local users on its source grid, the local user passwords aren't cloned to the destination grid.
@@ -77,7 +77,7 @@ Before a cloned local user can sign in to the tenant's destination grid, the roo
 === Tenant created without a clone
 
 .Issue
-You see the message "`Tenant created without a clone`" after creating a new tenant with the *Use grid federation connection* permission. 
+You see the message "Tenant created without a clone" after creating a new tenant with the *Use grid federation connection* permission. 
 
 .Details
 This issue can occur if updates to the Connection status are delayed, which might cause an unhealthy connection to be listed as *Connected*.

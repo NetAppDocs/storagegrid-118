@@ -17,7 +17,7 @@ You have the `Passwords.txt` file.
 
 .About this task
 
-When you use these steps to "`administratively stop`" a service, Server Manager will not automatically restart the service. You must either start the single service manually or restart Server Manager.
+When you use these steps to "administratively stop" a service, Server Manager will not automatically restart the service. You must either start the single service manually or restart Server Manager.
 
 If you need to stop the LDR service on a Storage Node, be aware that it might take a while to stop the service if there are active connections.
 

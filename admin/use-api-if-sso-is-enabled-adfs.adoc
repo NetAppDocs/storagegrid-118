@@ -223,7 +223,7 @@ If required, you can sign out of the StorageGRID API by logging out from your or
 
 .Steps
 
-. To generate a signed logout request, pass `cookie "sso=true"` to the SLO API:
+. To generate a signed logout request, pass `cookie "sso=true" to the SLO API:
 +
 [source,bash]
 ----
@@ -269,7 +269,7 @@ Set-Cookie: MSISSignoutProtocol=U2FtbA==; expires=Tue, 20 Nov 2018 22:35:03 GMT;
 
 . Delete the StorageGRID bearer token.
 +
-Deleting the StorageGRID bearer token works the same way as without SSO. If `cookie "sso=true"` is not provided, the user is logged out of StorageGRID without affecting the SSO state.
+Deleting the StorageGRID bearer token works the same way as without SSO. If `cookie "sso=true" is not provided, the user is logged out of StorageGRID without affecting the SSO state.
 +
 [source,bash]
 ----

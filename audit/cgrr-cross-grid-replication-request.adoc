@@ -9,11 +9,17 @@ summary: 'This message is generated when StorageGRID attempts a cross-grid repli
 :imagesdir: ../media/
 
 [.lead]
-This message is generated when StorageGRID attempts a cross-grid replication operation to replicate objects between buckets in a grid federation connection. An audit message is sent only if the request permanently failed (RESULT GERR).
+This message is generated when StorageGRID attempts a cross-grid replication operation to replicate objects between buckets in a grid federation connection.
 
 [cols="1a,1a,4a" options="header"]
 |===
 | Code| Field| Description
+
+| CSIZ
+| Object Size
+| The size of the object in bytes.
+
+The CSIZ attribute was introduced in StorageGRID 11.8. As a result, cross-grid replication requests spanning a StorageGRID 11.7 to 11.8 upgrade might have an inaccurate total object size.
 
 | S3AI
 | S3 tenant account ID
@@ -48,3 +54,5 @@ This message is generated when StorageGRID attempts a cross-grid replication ope
 | Returns successful (SUCS) or general error (GERR).
 
 |===
+
+// 2023 SEP 25, SGWS-27585

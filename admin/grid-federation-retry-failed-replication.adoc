@@ -101,7 +101,7 @@ After generating a list of objects and delete markers that were not replicated t
 
 . Select *Go to private API documentation*.
 +
-NOTE: The StorageGRID API endpoints that are marked "`Private`" are subject to change without notice. StorageGRID private endpoints also ignore the API version of the request.
+NOTE: The StorageGRID API endpoints that are marked "Private" are subject to change without notice. StorageGRID private endpoints also ignore the API version of the request.
 
 . In the *cross-grid-replication-advanced* section, select the following endpoint:
 +

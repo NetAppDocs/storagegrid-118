@@ -75,7 +75,7 @@ Repeat for each drive that you have defined for the tape library, using a separa
 
  * `_SGWSTapePool_` is the name of the Archive Node's tape storage pool. You can select any name for the tape storage pool (as long as the name uses the syntax conventions expected by the TSM server).
  * `_DeviceClassName_` is the name of the device class name for the tape library.
- * `_description_` is a description of the storage pool that can be displayed on the TSM server using the `query stgpool` command. For example: "`Tape storage pool for the Archive Node.`"
+ * `_description_` is a description of the storage pool that can be displayed on the TSM server using the `query stgpool` command. For example: "Tape storage pool for the Archive Node."
  * `_collocate=filespace_` specifies that the TSM server should write objects from the same file space into a single tape.
  * `XX` is one of the following:
   ** The number of empty tapes in the tape library (in the case that the Archive Node is the only application using the library).
@@ -86,7 +86,7 @@ Repeat for each drive that you have defined for the tape library, using a separa
 `define stgpool _SGWSDiskPool_ disk description=_description_ maxsize=_maximum_file_size nextstgpool=SGWSTapePool_ highmig=_percent_high_ lowmig=_percent_low_`
 
  * `_SGWSDiskPool_` is the name of the Archive Node's disk pool. You can select any name for the disk storage pool (as long as the name uses the syntax conventions expected by the TSM).
- * `_description_` is a description of the storage pool that can be displayed on the TSM server using the `query stgpool` command. For example, "`Disk storage pool for the Archive Node.`"
+ * `_description_` is a description of the storage pool that can be displayed on the TSM server using the `query stgpool` command. For example, "Disk storage pool for the Archive Node."
  * `_maximum_file_size_` forces objects larger than this size to be written directly to tape, rather than being cached in the disk pool. It is recommended to set `_maximum_file_size_` to 10 GB.
  * `_nextstgpool=SGWSTapePool_` refers the disk storage pool to the tape storage pool defined for the Archive Node.
  * `_percent_high_` sets the value at which the disk pool begins to migrate its contents to the tape pool. It is recommended to set `_percent_high_` to 0 so that data migration begins immediately

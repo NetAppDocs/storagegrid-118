@@ -16,7 +16,8 @@ You can enable platform services for an S3 tenant account when you create or upd
 For example, tenants might configure the following types of destination endpoints:
 
 * A locally-hosted Elasticsearch cluster
-* A local application that supports receiving Simple Notification Service (Amazon SNS) messages
+* A local application that supports receiving Amazon Simple Notification Service messages
+* A locally-hosted Kafka cluster
 * A locally-hosted S3 bucket on the same or another instance of StorageGRID
 * An external endpoint, such as an endpoint on Amazon Web Services.
 
@@ -24,8 +25,9 @@ To ensure that platform services messages can be delivered, you must configure t
 
 By default, platform services messages are sent on the following ports:
 
-* *80*: For endpoint URIs that begin with http
-* *443*: For endpoint URIs that begin with https
+* *80*: For endpoint URIs that begin with http (most endpoints)
+* *443*: For endpoint URIs that begin with https (most endpoints)
+* *9092*: For endpoint URIs that begin with http or https (Kafka endpoints only)
 
 Tenants can specify a different port when they create or edit an endpoint.
 
@@ -36,3 +38,5 @@ If you use a non-transparent proxy server, you must also link:configuring-storag
 .Related information
 
 * link:../tenant/index.html[Use a tenant account]
+
+// 2023 SEP 15, SGWS-25330

@@ -79,7 +79,7 @@ You might encounter this error when you try to delete a Cloud Storage Pool. You 
 
 Try one or more of these steps to correct the issue:
 
-* Follow the instructions for moving objects back to StorageGRID in "`Lifecycle of a Cloud Storage Pool object.`"
+* Follow the instructions for moving objects back to StorageGRID in "Lifecycle of a Cloud Storage Pool object."
 * If you are certain the remaining objects were not placed in the Cloud Storage Pool by ILM, manually delete the objects from the bucket.
 +
 NOTE: Never manually delete objects from a Cloud Storage Pool that might have been placed there by ILM. If you later attempt to access a manually deleted object from StorageGRID, the deleted object will not be found.
