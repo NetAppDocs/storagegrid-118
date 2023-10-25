@@ -2,14 +2,14 @@
 permalink: monitor/viewing-ilm-tab.html
 sidebar: sidebar
 keywords: ilm tab
-summary: 'The ILM tab provides information about Information Lifecycle Management \(ILM\) operations.'
+summary: 'The ILM tab provides information about information lifecycle management \(ILM\) operations.'
 ---
 = View the ILM tab
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-The ILM tab provides information about Information Lifecycle Management (ILM) operations.
+The ILM tab provides information about information lifecycle management (ILM) operations.
 
 The ILM tab is shown for each Storage Node, each site, and the entire grid. For each site and the grid, the ILM tab shows a graph of the ILM queue over time. For the grid, this tab also provides the estimated time to complete a full ILM scan of all objects.
 

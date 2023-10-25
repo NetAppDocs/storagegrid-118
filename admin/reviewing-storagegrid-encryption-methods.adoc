@@ -92,7 +92,7 @@ https://docs.aws.amazon.com/AmazonS3/latest/dev/UsingClientSideEncryption.html[A
 
 Depending on your requirements, you can use more than one encryption method at a time. For example:
 
-* You can use a KMS to protect appliance nodes and also use the drive security feature in SANtricity System Manager to "`double encrypt`" data on the self-encrypting drives in the same appliances.
+* You can use a KMS to protect appliance nodes and also use the drive security feature in SANtricity System Manager to "double encrypt" data on the self-encrypting drives in the same appliances.
 
 * You can use a KMS to secure data on appliance nodes and also use the Stored object encryption option to encrypt all objects when they are ingested.
 

@@ -24,7 +24,7 @@ NOTE: CloudMirror replication has some important similarities and differences wi
 +
 NOTE: CloudMirror replication is not supported if the source bucket has S3 Object Lock enabled.
 
-Notifications:: Per-bucket event notifications are used to send notifications about specific actions performed on objects to a specified external Amazon Simple Notification Service™ (Amazon SNS).
+Notifications:: Per-bucket event notifications are used to send notifications about specific actions performed on objects to a specified external Kafka cluster or Amazon Simple Notification Service.
 +
 For example, you could configure alerts to be sent to administrators about each object added to a bucket, where the objects represent log files associated with a critical system event.
 +
@@ -55,3 +55,5 @@ Before using platform services, be aware of the following recommendations:
 * link:configuring-storage-proxy-settings.html[Configure Storage proxy settings]
 
 * link:../monitor/index.html[Monitor StorageGRID]
+
+// 2023 SEP 25, SGWS-25330

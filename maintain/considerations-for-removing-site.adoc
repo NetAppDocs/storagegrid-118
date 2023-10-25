@@ -32,7 +32,7 @@ NOTE: If a site contains a mixture of connected (image:../media/icon_alert_green
 +
 When StorageGRID removes a disconnected site, it considers all nodes to be unrecoverable and makes no attempt to preserve data. However, before you can start a disconnected site decommission, you must remove the site from all ILM rules and activate a new ILM policy.
 +
-IMPORTANT: Before performing a disconnected site decommission procedure, you must contact your NetApp account representative. NetApp will review your requirements before enabling all steps in the Decommission Site wizard. You should not attempt a disconnected site decommission if you believe it might be possible to recover the site or to recover object data from the site.
+CAUTION: Before performing a disconnected site decommission procedure, you must contact your NetApp account representative. NetApp will review your requirements before enabling all steps in the Decommission Site wizard. You should not attempt a disconnected site decommission if you believe it might be possible to recover the site or to recover object data from the site.
 
 == General requirements for removing a connected or a disconnected site
 
@@ -59,13 +59,12 @@ NOTE: If you need to perform another maintenance procedure during a connected si
 
 As part of removing a site, you must update your ILM configuration. The Decommission Site wizard guides you through a number of prerequisite steps to ensure the following:
 
-* The site is not referred to by the active ILM policy. If it is, you must create and activate a new ILM policy with new ILM rules.
-* No proposed ILM policy exists. If you have a proposed policy, you must delete it.
-* No ILM rules refer to the site, even if those rules aren't used in the active or proposed policy. You must delete or edit all rules that refer to the site.
+* The site is not referred to by any ILM policy. If it is, you must edit the policies or create and activate policies with new ILM rules.
+* No ILM rules refer to the site, even if those rules aren't used in any policy. You must delete or edit all rules that refer to the site.
 
 When StorageGRID decommissions the site, it will automatically deactivate any unused erasure-coding profiles that refer to the site, and it will automatically delete any unused storage pools that refer to the site. If the All Storage Nodes storage pool exists (StorageGRID 11.6 and earlier), it is removed because it uses all sites.
 
-IMPORTANT: Before you can remove a site, you might be required to create new ILM rules and activate a new ILM policy. These instructions assume that you have a good understanding of how ILM works and that you are familiar with creating storage pools, erasure-coding profiles, ILM rules, and simulating and activating an ILM policy. See link:../ilm/index.html[Manage objects with ILM].
+CAUTION: Before you can remove a site, you might be required to create new ILM rules and activate a new ILM policy. These instructions assume that you have a good understanding of how ILM works and that you are familiar with creating storage pools, erasure-coding profiles, ILM rules, and simulating and activating an ILM policy. See link:../ilm/index.html[Manage objects with ILM].
 
 == Considerations for the object data at a connected site
 
@@ -81,7 +80,7 @@ NOTE: To ensure that adequate capacity is available, you might need to link:../e
 +
 *Example for deleting data*: Suppose you currently use a 3-copy ILM rule to replicate object data across three sites. Before decommissioning a site, you can create an equivalent 2-copy ILM rule to store data at only two sites. When you activate a new ILM policy that uses the 2-copy rule, StorageGRID deletes the copies from the third site because they no longer satisfy ILM requirements. However, the object data will still be protected and the capacity of the two remaining sites will stay the same.
 +
-IMPORTANT: Never create a single-copy ILM rule to accommodate the removal of a site. An ILM rule that creates only one replicated copy for any time period puts data at risk of permanent loss. If only one replicated copy of an object exists, that object is lost if a Storage Node fails or has a significant error. You also temporarily lose access to the object during maintenance procedures such as upgrades.
+CAUTION: Never create a single-copy ILM rule to accommodate the removal of a site. An ILM rule that creates only one replicated copy for any time period puts data at risk of permanent loss. If only one replicated copy of an object exists, that object is lost if a Storage Node fails or has a significant error. You also temporarily lose access to the object during maintenance procedures such as upgrades.
 
 == Additional requirements for a connected site decommission
 
@@ -98,7 +97,7 @@ link:../expand/index.html[expand a grid] to add an equivalent new node at anothe
 * You must provide sufficient space on the remaining sites to accommodate any object data that will be moved because of changes to the active ILM policy. In some cases, you might need to link:../expand/index.html[expand a grid] by adding Storage Nodes, storage volumes, or new sites before you can complete a connected site decommission.
 * You must allow adequate time for the decommission procedure to complete. StorageGRID ILM processes might take days, weeks, or even months to move or delete object data from the site before the site can be decommissioned.
 +
-IMPORTANT: Moving or deleting object data from a site might take days, weeks, or even months, depending on the amount of data at the site, the load on your system, network latencies, and the nature of the required ILM changes.
+NOTE: Moving or deleting object data from a site might take days, weeks, or even months, depending on the amount of data at the site, the load on your system, network latencies, and the nature of the required ILM changes.
 
 * Whenever possible, you should complete Steps 1-4 of the Decommission Site wizard as early as you can. The decommission procedure will complete more quickly and with fewer disruptions and performance impacts if you allow data to be moved from the site before starting the actual decommission procedure (by selecting *Start Decommission* in Step 5 of the wizard).
 
@@ -108,7 +107,7 @@ Before StorageGRID can remove a disconnected site, you must ensure the following
 
 * You have contacted your NetApp account representative. NetApp will review your requirements before enabling all steps in the Decommission Site wizard.
 +
-IMPORTANT: You should not attempt a disconnected site decommission if you believe it might be possible to recover the site or to recover any object data from the site. See 
+CAUTION: You should not attempt a disconnected site decommission if you believe it might be possible to recover the site or to recover any object data from the site. See 
 link:how-site-recovery-is-performed-by-technical-support.html[How technical support recovers a site].
 
 * All nodes at the site must have a Connection State of one of the following:

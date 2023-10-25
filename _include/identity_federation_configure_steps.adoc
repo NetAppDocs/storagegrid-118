@@ -27,19 +27,22 @@ For Active Directory, you can also specify the Down-Level Logon Name or the User
 +
 The specified user must have permission to list groups and users and to access the following attributes:
 
-  *** `sAMAccountName` or `uid`
-  *** `objectGUID`, `entryUUID`, or `nsuniqueid`
-  *** `cn`
-  *** `memberOf` or `isMemberOf`
-  *** *Active Directory*: `objectSid`, `primaryGroupID`, `userAccountControl`, and `userPrincipalName`
-  *** *Azure*: `accountEnabled` and `userPrincipalName`
+*** `sAMAccountName` or `uid`
+*** `objectGUID`, `entryUUID`, or `nsuniqueid`
+*** `cn`
+*** `memberOf` or `isMemberOf`
+*** *Active Directory*: `objectSid`, `primaryGroupID`, `userAccountControl`, and `userPrincipalName`
+*** *Azure*: `accountEnabled` and `userPrincipalName`
 
- ** *Password*: The password associated with the username.
- ** *Group Base DN*: The full path of the distinguished name (DN) for an LDAP subtree you want to search for groups. In the Active Directory example (below), all groups whose Distinguished Name is relative to the base DN (DC=storagegrid,DC=example,DC=com) can be used as federated groups.
+** *Password*: The password associated with the username.
++ 
+NOTE: If you change the password in the future, you must update it on this page.
+
+** *Group Base DN*: The full path of the distinguished name (DN) for an LDAP subtree you want to search for groups. In the Active Directory example (below), all groups whose Distinguished Name is relative to the base DN (DC=storagegrid,DC=example,DC=com) can be used as federated groups.
 +
 NOTE: The *Group unique name* values must be unique within the *Group Base DN* they belong to.
 
- ** *User Base DN*: The full path of the distinguished name (DN) of an LDAP subtree you want to search for users.
+** *User Base DN*: The full path of the distinguished name (DN) of an LDAP subtree you want to search for users.
 +
 NOTE: The *User unique name* values must be unique within the *User Base DN* they belong to.
 
@@ -79,9 +82,9 @@ After entering all values, you must test the connection before you can save the 
 
 . If you did not provide a bind username format:
 +
-* A "`Test connection successful`" message appears if the connection settings are valid. Select *Save* to save the configuration.
+* A "Test connection successful" message appears if the connection settings are valid. Select *Save* to save the configuration.
 +
-* A "`test connection could not be established`" message appears if the connection settings are invalid. Select *Close*. Then, resolve any issues and test the connection again.
+* A "test connection could not be established" message appears if the connection settings are invalid. Select *Close*. Then, resolve any issues and test the connection again.
 
 . If you provided a bind username format, enter the username and password of a valid federated user.
 +
@@ -89,6 +92,6 @@ For example, enter your own username and password. Don't include any special cha
 +
 image::../media/identity_federation_test_connection.png[Identity federation prompt to validate bind username format]
 +
-* A "`Test connection successful`" message appears if the connection settings are valid. Select *Save* to save the configuration.
+* A "Test connection successful" message appears if the connection settings are valid. Select *Save* to save the configuration.
 +
 * An error message appears if the connection settings, bind username format, or test username and password are invalid. Resolve any issues and test the connection again.

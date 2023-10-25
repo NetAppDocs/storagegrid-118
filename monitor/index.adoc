@@ -26,7 +26,7 @@ These instructions describe how to:
 * link:information-you-should-monitor-regularly.html[Monitor these aspects of the system regularly:]
 ** link:monitoring-system-health.html[System health]
 ** link:monitoring-storage-capacity.html[Storage capacity]
-** link:monitoring-information-lifecycle-management.html[Information Lifecycle Management]
+** link:monitoring-information-lifecycle-management.html[Information lifecycle management]
 ** link:monitoring-network-connections-and-performance.html[Networking and system resources]
 ** link:monitoring-tenant-activity.html[Tenant activity]
 ** link:monitoring-load-balancing-operations.html[Load balancing operations]

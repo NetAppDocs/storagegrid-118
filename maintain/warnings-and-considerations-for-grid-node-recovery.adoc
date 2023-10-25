@@ -11,7 +11,7 @@ summary: 'If a grid node fails, you must recover it as soon as possible. You mus
 [.lead]
 If a grid node fails, you must recover it as soon as possible. You must review all warnings and considerations for node recovery before you begin.
 
-IMPORTANT: StorageGRID is a distributed system composed of multiple nodes working with each other. Don't use disk snapshots to restore grid nodes. Instead, refer to the recovery and maintenance procedures for each type of node.
+CAUTION: StorageGRID is a distributed system composed of multiple nodes working with each other. Don't use disk snapshots to restore grid nodes. Instead, refer to the recovery and maintenance procedures for each type of node.
 
 Some of the reasons for recovering a failed grid node as soon as possible include the following:
 

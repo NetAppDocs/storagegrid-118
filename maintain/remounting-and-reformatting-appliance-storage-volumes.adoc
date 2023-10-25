@@ -35,7 +35,7 @@ To complete this procedure, you perform these high-level tasks:
 * Review the script output and resolve any issues.
 * Run the `sn-recovery-postinstall.sh` script. When this script runs, it does the following.
 +
-IMPORTANT: Don't reboot a Storage Node during recovery before running `sn-recovery-postinstall.sh` (step 4) to reformat the failed storage volumes and restore object metadata. Rebooting the Storage Node before `sn-recovery-postinstall.sh` completes causes errors for services that attempt to start and causes StorageGRID appliance nodes to exit maintenance mode.
+CAUTION: Don't reboot a Storage Node during recovery before running `sn-recovery-postinstall.sh` (step 4) to reformat the failed storage volumes and restore object metadata. Rebooting the Storage Node before `sn-recovery-postinstall.sh` completes causes errors for services that attempt to start and causes StorageGRID appliance nodes to exit maintenance mode.
 
  ** Reformats any storage volumes that the `sn-remount-volumes` script could not mount or that were found to be improperly formatted.
 +
@@ -126,7 +126,7 @@ In the example output, one storage volume was remounted successfully and three s
 
 . Review the script output and resolve any issues.
 +
-IMPORTANT: If a storage volume failed the XFS file system consistency check or could not be mounted, carefully review the error messages in the output. You must understand the implications of running the `sn-recovery-postinstall.sh` script on these volumes.
+CAUTION: If a storage volume failed the XFS file system consistency check or could not be mounted, carefully review the error messages in the output. You must understand the implications of running the `sn-recovery-postinstall.sh` script on these volumes.
 
  .. Check to make sure that the results include an entry for all of the volumes you expected. If any volumes aren't listed, rerun the script.
  .. Review the messages for all mounted devices. Make sure there are no errors indicating that a storage volume does not belong to this Storage Node.
@@ -148,7 +148,7 @@ You will use the device name to look up the volume ID, which is required input w
  .. After repairing or replacing all unmountable devices, run the `sn-remount-volumes` script again to confirm that all storage volumes that can be remounted have been remounted.
 
 +
-IMPORTANT: If a storage volume can't be mounted or is improperly formatted, and you continue to the next step, the volume and any data on the volume will be deleted. If you had two copies of object data, you will have only a single copy until you complete the next procedure (restoring object data).
+CAUTION: If a storage volume can't be mounted or is improperly formatted, and you continue to the next step, the volume and any data on the volume will be deleted. If you had two copies of object data, you will have only a single copy until you complete the next procedure (restoring object data).
 
 +
 CAUTION: Don't run the `sn-recovery-postinstall.sh` script if you believe that the data remaining on a failed storage volume can't be rebuilt from elsewhere in the grid (for example, if your ILM policy uses a rule that makes only one copy or if volumes have failed on multiple nodes). Instead, contact technical support to determine how to recover your data.
@@ -168,7 +168,7 @@ Be aware of the following:
 NOTE: The RSM service is present on Storage Nodes that include the ADC service.
 
 +
-NOTE: Some StorageGRID recovery procedures use Reaper to handle Cassandra repairs. Repairs occur automatically as soon as the related or required services have started. You might notice script output that mentions "`reaper`" or "`Cassandra repair.`" If you see an error message indicating the repair has failed, run the command indicated in the error message.
+NOTE: Some StorageGRID recovery procedures use Reaper to handle Cassandra repairs. Repairs occur automatically as soon as the related or required services have started. You might notice script output that mentions "reaper" or "Cassandra repair." If you see an error message indicating the repair has failed, run the command indicated in the error message.
 
 . As the `sn-recovery-postinstall.sh` script runs, monitor the Recovery page in the Grid Manager.
 +

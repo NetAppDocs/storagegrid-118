@@ -19,7 +19,7 @@ The following conditions apply to all object operations:
  ** PutObjectLegalHold
  ** PutObjectRetention
  ** SelectObjectContent
-* Conflicting client requests, such as two clients writing to the same key, are resolved on a "latest-wins" basis. The timing for the "`latest-wins`" evaluation is based on when the StorageGRID system completes a given request, and not on when S3 clients begin an operation.
+* Conflicting client requests, such as two clients writing to the same key, are resolved on a "latest-wins" basis. The timing for the "latest-wins" evaluation is based on when the StorageGRID system completes a given request, and not on when S3 clients begin an operation.
 * All objects in a StorageGRID bucket are owned by the bucket owner, including objects created by an anonymous user, or by another account.
 * Data objects ingested to the StorageGRID system through Swift can't be accessed through S3.
 
@@ -60,7 +60,7 @@ See link:../s3/use-s3-api-for-s3-object-lock.html[Use S3 REST API to configure S
 
 Versioning::
 
-If the `versionId` query parameter is not specified in the request, the operation deletes all tags from the most recent version of the object in a versioned bucket. If the current version of the object is a delete marker, a "`MethodNotAllowed`" status is returned with the `x-amz-delete-marker` response header set to `true`.
+If the `versionId` query parameter is not specified in the request, the operation deletes all tags from the most recent version of the object in a versioned bucket. If the current version of the object is a delete marker, a "MethodNotAllowed" status is returned with the `x-amz-delete-marker` response header set to `true`.
 
 | GetObject
 | link:get-object.html[GetObject]
@@ -79,7 +79,7 @@ If the `versionId` query parameter is not specified in the request, the operatio
 
 Versioning::
 
-If the `versionId` query parameter is not specified in the request, the operation returns all tags from the most recent version of the object in a versioned bucket. If the current version of the object is a delete marker, a "`MethodNotAllowed`" status is returned with the `x-amz-delete-marker` response header set to `true`.
+If the `versionId` query parameter is not specified in the request, the operation returns all tags from the most recent version of the object in a versioned bucket. If the current version of the object is a delete marker, a "MethodNotAllowed" status is returned with the `x-amz-delete-marker` response header set to `true`.
 
 | HeadObject
 | link:head-object.html[HeadObject]
@@ -117,11 +117,11 @@ This means that if the ILM rule uses the Strict option for ingest behavior, no a
 
 Resolving conflicts::
 
-Conflicting client requests, such as two clients writing to the same key, are resolved on a "`latest-wins`" basis. The timing for the "`latest-wins`" evaluation is based on when the StorageGRID system completes a given request, and not on when S3 clients begin an operation.
+Conflicting client requests, such as two clients writing to the same key, are resolved on a "latest-wins" basis. The timing for the "latest-wins" evaluation is based on when the StorageGRID system completes a given request, and not on when S3 clients begin an operation.
 
 Versioning::
 
-If the `versionId` query parameter is not specified in the request, the operation add tags to the most recent version of the object in a versioned bucket. If the current version of the object is a delete marker, a "`MethodNotAllowed`" status is returned with the `x-amz-delete-marker` response header set to `true`.
+If the `versionId` query parameter is not specified in the request, the operation add tags to the most recent version of the object in a versioned bucket. If the current version of the object is a delete marker, a "MethodNotAllowed" status is returned with the `x-amz-delete-marker` response header set to `true`.
 
 | SelectObjectContent
 | link:select-object-content.html[SelectObjectContent]
