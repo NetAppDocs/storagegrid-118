@@ -123,7 +123,7 @@ NOTE: If possible, you should approve all pending grid notes and perform a singl
 +
 After a few minutes, this page updates to display the status of the expansion procedure. When tasks that affect individual grid nodes are in progress, the Grid Node Status section lists the current status for each grid node.
 +
-NOTE: During the "`Installing grid nodes`" step for a new appliance, the StorageGRID Appliance Installer shows installation moving from Stage 3 to Stage 4, Finalize Installation. When Stage 4 completes, the controller is rebooted.
+NOTE: During the "Installing grid nodes" step for a new appliance, the StorageGRID Appliance Installer shows installation moving from Stage 3 to Stage 4, Finalize Installation. When Stage 4 completes, the controller is rebooted.
 +
 image::../media/grid_expansion_progress.png[This image is explained by the surrounding text.]
 +
@@ -150,7 +150,7 @@ CAUTION: Don't reboot any Storage Nodes during either the "Expanding the Cassand
 .Adding Storage Nodes
 --
 
-If you are adding Storage Nodes to an existing site, review the percentage shown in the  "`Starting Cassandra and streaming data`" status message.
+If you are adding Storage Nodes to an existing site, review the percentage shown in the  "Starting Cassandra and streaming data" status message.
 
 image::../media/grid_expansion_starting_cassandra.png[Grid Expansion > Starting Cassandra and streaming data]
 

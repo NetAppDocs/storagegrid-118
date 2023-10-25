@@ -50,7 +50,18 @@ To match the deletion behavior of the AWS CRR and SNS services, CloudMirror and 
 
 In contrast, search integration requests are sent when objects are deleted because of ILM.
 
-[cols="1a,3a" options="header"]
+a|
+Using Kafka endpoints
+
+a|
+The authentication of Kafka endpoints uses the following authentication types. These types are different from those used for the authentication of other endpoints, such as Amazon SNS, and require username and password credentials.
+
+* SASL/PLAIN
+* SASL/SCRAM-SHA-256
+* SASL/SCRAM-SHA-512
+
+NOTE: You can't configure storage proxy settings for Kafka platform services endpoints.
+
 |===
 
 == Considerations for using CloudMirror replication service
@@ -106,3 +117,5 @@ a|
 If the destination S3 bucket for CloudMirror replication has S3 Object Lock enabled, the attempt to configure bucket replication (PutBucketReplication) will fail with an AccessDenied error.
 
 |===
+
+// 2023 SEP 25, SGWS-25330

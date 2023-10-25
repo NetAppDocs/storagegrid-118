@@ -16,7 +16,7 @@ entries:
         url: "/ilm/advantages-disadvantages-of-ingest-options.html"
     - title: How objects are stored (replication or erasure coding)
       entries:
-      - title: What is replication?
+      - title: What is replication
         url: "/ilm/what-replication-is.html"
       - title: Why you should not use single-copy replication
         url: "/ilm/why-you-should-not-use-single-copy-replication.html"

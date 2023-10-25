@@ -35,4 +35,4 @@ If the cookie is present, all requests that can modify the state of the system (
 
 See the online API documentation for additional examples and details.
 
-NOTE: Requests that have a CSRF token cookie set will also enforce the `"Content-Type: application/json"` header for any request that expects a JSON request body as an additional protection against CSRF attacks.
+NOTE: Requests that have a CSRF token cookie set will also enforce the "Content-Type: application/json" header for any request that expects a JSON request body as an additional protection against CSRF attacks.

@@ -35,4 +35,4 @@ If the cookie is present, all requests that can modify the state of the system (
 
 To configure CSRF protection, use the link:../admin/using-grid-management-api.html[Grid Management API] or link:../tenant/understanding-tenant-management-api.html[Tenant Management API].
 
-NOTE: Requests that have a CSRF token cookie set will also enforce the `"Content-Type: application/json"` header for any request that expects a JSON request body as an additional protection against CSRF attacks.
+NOTE: Requests that have a CSRF token cookie set will also enforce the "Content-Type: application/json" header for any request that expects a JSON request body as an additional protection against CSRF attacks.

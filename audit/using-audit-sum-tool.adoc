@@ -21,7 +21,7 @@ You can use the `audit-sum` tool to count the write, read, head, and delete audi
 
 The `audit-sum` tool, available on the primary Admin Node, summarizes how many write, read, and delete operations were logged and how long these operations took.
 
-IMPORTANT: The `audit-sum` tool is primarily intended for use by technical support during troubleshooting operations. Processing `audit-sum` queries can consume a large amount of CPU power, which might impact StorageGRID operations.
+NOTE: The `audit-sum` tool is primarily intended for use by technical support during troubleshooting operations. Processing `audit-sum` queries can consume a large amount of CPU power, which might impact StorageGRID operations.
 
 This example shows typical output from the `audit-sum` tool. This example shows how long protocol operations took.
 

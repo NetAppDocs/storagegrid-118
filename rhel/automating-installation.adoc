@@ -22,7 +22,7 @@ The StorageGRID host service is installed by a package and driven by configurati
 * link:creating-node-configuration-files.html[Create the configuration files] interactively during a manual installation.
 * Prepare the configuration files ahead of time (or programmatically) to enable automated installation using standard orchestration frameworks, as describe in this article.
 +
-StorageGRID provides optional Python scripts for automating the configuration of StorageGRID appliances and the entire StorageGRID system (the "`grid`"). You can use these scripts directly, or you can inspect them to learn how to use the link:overview-of-installation-rest-api.html[StorageGRID installation REST API] in grid deployment and configuration tools you develop yourself.
+StorageGRID provides optional Python scripts for automating the configuration of StorageGRID appliances and the entire StorageGRID system (the "grid"). You can use these scripts directly, or you can inspect them to learn how to use the link:overview-of-installation-rest-api.html[StorageGRID installation REST API] in grid deployment and configuration tools you develop yourself.
 
 == Automate the installation and configuration of the StorageGRID host service
 
@@ -94,7 +94,7 @@ For example:
 
 A Recovery Package `.zip` file is generated during the configuration process, and it is downloaded to the directory where you are running the installation and configuration process. You must back up the Recovery Package file so that you can recover the StorageGRID system if one or more grid nodes fails. For example, copy it to a secure, backed up network location and to a secure cloud storage location.
 
-IMPORTANT: The Recovery Package file must be secured because it contains encryption keys and passwords that can be used to obtain data from the StorageGRID system.
+CAUTION: The Recovery Package file must be secured because it contains encryption keys and passwords that can be used to obtain data from the StorageGRID system.
 
 If you specified that random passwords be generated, open the `Passwords.txt` file and look for the passwords required to access your StorageGRID system.
 

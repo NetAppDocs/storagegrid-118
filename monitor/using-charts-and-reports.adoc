@@ -72,7 +72,7 @@ The lines and colors used to draw charts have specific meaning.
 |Reported attribute values are plotted using dark green lines.
 
 |image:../media/light_green_chart_line.gif[screenshot showing shading that indicates data binning]
-|Light green shading around dark green lines indicates that the actual values in that time range vary and have been "`binned`" for faster plotting. The dark line represents the weighted average. The range in light green indicates the maximum and minimum values within the bin. Light brown shading is used for area graphs to indicate volumetric data.
+|Light green shading around dark green lines indicates that the actual values in that time range vary and have been "binned" for faster plotting. The dark line represents the weighted average. The range in light green indicates the maximum and minimum values within the bin. Light brown shading is used for area graphs to indicate volumetric data.
 
 |image:../media/no_data_plotted_chart.gif[screenshot showing blank areas on plot line]
 |Blank areas (no data plotted) indicate that the attribute values were unavailable. The background can be blue, gray, or a mixture of gray and blue, depending on the state of the service reporting the attribute.
