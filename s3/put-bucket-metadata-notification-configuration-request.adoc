@@ -191,7 +191,7 @@ This example shows an example of the JSON that could be generated when an object
   "accountId": "86928401983529626822",
   "size": 38,
   "md5": "3d6c7634a85436eee06d43415012855",
-  "region":"us-east-1"
+  "region":"us-east-1",
   "metadata": {
     "age": "25"
   },
