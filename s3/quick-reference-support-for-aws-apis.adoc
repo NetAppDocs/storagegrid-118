@@ -699,7 +699,8 @@ StorageGRID supports all <<common-params, common parameters and headers>> for th
 StorageGRID supports these request body XML tags:
 
 * `NewerNoncurrentVersions`
-* `LifecycleConfiguration`						
+* `LifecycleConfiguration`
+* `ExpiredObjectDeleteMarker`						
 * `Rule`							
 * `Expiration`						
 * `Days`				
@@ -709,14 +710,9 @@ StorageGRID supports these request body XML tags:
 * `Tag`		
 * `Key`	
 * `Value`	
-* `Prefix`			
-* `Tag`			
-* `Key`		
-* `Value`		
 * `ID`				
 * `NoncurrentVersionExpiration`				
-* `NoncurrentDays`							
-* `Prefix`				
+* `NoncurrentDays`									
 * `Status`	
 
 .StorageGRID documentation
@@ -965,29 +961,4 @@ None
 .StorageGRID documentation
 link:upload-part-copy.html[UploadPartCopy]
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// 2023 OCT 26, SGWS-27431
