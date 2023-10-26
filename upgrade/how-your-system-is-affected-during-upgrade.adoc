@@ -30,6 +30,9 @@ During the StorageGRID 11.8 upgrade:
 * SG6060 and SGF6024 appliances are automatically upgraded to BIOS firmware version 3B07.EX and BMC firmware version n.n.n.
 * SG100 and SG1000 appliances are automatically upgraded to BIOS firmware version 3B12.EC and BMC firmware version n.n.n.
 
+== ILM policy history
+
+Only the latest 10 historical policies are preserved on upgrade.
 
 == Alerts might be triggered
 
