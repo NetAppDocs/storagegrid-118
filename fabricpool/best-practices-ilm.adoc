@@ -14,7 +14,7 @@ If you are using FabricPool to tier data to StorageGRID, you must understand the
 CAUTION: FabricPool has no knowledge of StorageGRID ILM rules or policies. Data loss can occur if the StorageGRID ILM policy is misconfigured. For detailed information, see link:../ilm/what-ilm-rule-is.html[Create an ILM rule: Overview] and link:../ilm/creating-ilm-policy.html[Create an ILM policy: Overview].
 
 == Guidelines for using ILM with FabricPool
-When you use the FabricPool setup wizard, the wizard automatically creates a new ILM rule for each S3 bucket you create and adds that rule to an inactive policy. You are prompted to activate the policy by assigning it to the default ILM policy tag. The automatically created rule follows the recommended best practices: it uses 2+1 erasure coding at a single site.
+When you use the FabricPool setup wizard, the wizard automatically creates a new ILM rule for each S3 bucket you create and adds that rule to an inactive policy. You are prompted to activate the policy. The automatically created rule follows the recommended best practices: it uses 2+1 erasure coding at a single site.
 
 If you are configuring StorageGRID manually instead of using the FabricPool setup wizard, review these guidelines to ensure that your ILM rules and ILM policy are suitable for FabricPool data and your business requirements. You might need to create new rules and update your active ILM policy to meet these guidelines.
 
