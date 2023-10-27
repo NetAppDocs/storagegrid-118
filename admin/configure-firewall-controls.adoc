@@ -120,11 +120,11 @@ For example, you could select *Untrust on displayed nodes* to add all nodes to t
 +
 NOTE: Use the scroll bar on the right side of the table to be sure you have viewed all available nodes. Use the search field to find the settings for any node by entering the node name. You can enter a partial name. For example, if you enter a *GW*, all nodes that have the string "GW" as part of their name are displayed. 
 
-. Optionally, select any additional ports you want open on the untrusted Client Network. These ports can provide access to the Grid Manager, the Tenant Manager, or both. 
-+ 
-For example, you might want to use this option to ensure that the Grid Manager can be accessed on the Client Network for maintenance purposes. 
-+
-NOTE: These additional ports are open on the Client Network, regardless of whether they are closed in the Manage external access tab.
+//. Optionally, select any additional ports you want open on the untrusted Client Network. These ports can provide access to the Grid Manager, the Tenant Manager, or both. 
+//+ 
+//For example, you might want to use this option to ensure that the Grid Manager can be accessed on the Client Network for maintenance purposes. 
+//+
+//NOTE: These additional ports are open on the Client Network, regardless of whether they are closed in the Manage external access tab.
 
 . Select *Save*.
 +
