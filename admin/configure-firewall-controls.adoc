@@ -129,5 +129,3 @@ NOTE: These additional ports are open on the Client Network, regardless of wheth
 . Select *Save*.
 +
 The new firewall settings are immediately applied and enforced. Existing client connections might fail if load balancer endpoints have not been configured.
-
-
