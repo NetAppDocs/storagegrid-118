@@ -15,14 +15,11 @@ Use the three tabs on the Firewall control page to customize the access you need
 
 * *Privileged address list*: Use this tab to allow selected access to closed ports. You can add IP addresses or subnets in CIDR notation that can access ports closed using the Manage external access tab.
 * *Manage external access*: Use this tab to close ports that are open by default, or reopen ports previously closed.
-* *Untrusted Client Network*: Use this tab to specify whether a node trusts inbound traffic from the Client Network. 
-//+
-//This tab also provides the option to specify additional ports you want open when untrusted Client Network is configured. These ports can provide access to the Grid Manager, the Tenant Manager, or both.
+* *Untrusted Client Network*: Use this tab to specify whether a node trusts inbound traffic from the Client Network.
 +
 The settings on this tab override the settings in the Manage external access tab. 
 
 **	A node with an untrusted Client Network will accept only connections on load balancer endpoint ports configured on that node (global, node interface and node type bound endpoints).
-//** Additional ports opened under the Untrusted Client Network tab are open on all untrusted Client Networks, even if no load balancer endpoints are configured.
 ** Load balancer endpoint ports _are the only open ports_ on untrusted Client Networks, regardless of the settings on the Manage external networks tab.
 ** When trusted, all ports opened under the Manage external access tab are accessible, as well as any load balancer endpoints opened on the Client Network.
 
