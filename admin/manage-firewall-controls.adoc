@@ -106,7 +106,7 @@ Suppose you want to allow Grid Manager access only on a specific subnet. You wou
 
 . Attach the Client Network of your Admin Nodes to the subnet.
 . Use the Untrusted Client Network tab to configure the Client Network as untrusted.
-. When you create a load balancer endpoint, add port 443 or 8443 and select *No* for Untrusted Client Network.
+. When you create a load balancer endpoint, add port 443 or 8443 and select *Yes* for Untrusted Client Network.
 . Use the Manage external access tab to block all external ports (with or without privileged IP addresses set for hosts outside that subnet).
 
 After you save your configuration, only hosts on the subnet you specified can access the Grid Manager. All other hosts are are blocked. 
