@@ -13,9 +13,17 @@ You must configure StorageGRID as a client for each external key management serv
 
 .About this task
 
-These instructions apply to Thales CipherTrust Manager. For a list of supported versions, use the https://imt.netapp.com/matrix/#welcome[NetApp Interoperability Matrix Tool (IMT)^].
+These instructions apply to Thales CipherTrust Manager and Hashicorp Vault. For a list of supported versions, use the https://imt.netapp.com/matrix/#welcome[NetApp Interoperability Matrix Tool (IMT)^].
 
 .Steps
+
+. Select one of the following methods to create the key used to create the KMS configuration.
++
+* Before starting the configuration process:
+** For Thales: Use the Thales key tool or external library, Cryptosoft.
+** For Hashicorp: Use one of these external libraries: PyKMIP or Cryptosoft.
++
+* During the configuration process, StorageGRID will create the key for you (using Cryptosoft).
 
 . From the KMS software, create a StorageGRID client for each KMS or KMS cluster you plan to use.
 +
@@ -27,13 +35,11 @@ The encryption key must be 2,048 bits or more, and it must be exportable.
 
 . Record the following information for each KMS or KMS cluster.
 +
-You need this information when you add the KMS to StorageGRID.
+You need this information when you add the KMS to StorageGRID:
 
- ** Host name or IP address for each server.
- ** KMIP port used by the KMS.
- ** Key alias for the encryption key in the KMS.
-+
-NOTE: The encryption key must already exist in the KMS. StorageGRID does not create or manage KMS keys.
+* Host name or IP address for each server.
+* KMIP port used by the KMS.
+* Key alias for the encryption key in the KMS.
 
 . For each KMS or KMS cluster, obtain a server certificate signed by a certificate authority (CA) or a certificate bundle that contains each of the PEM-encoded CA certificate files, concatenated in certificate chain order.
 +
