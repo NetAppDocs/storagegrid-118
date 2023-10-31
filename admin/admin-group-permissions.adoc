@@ -140,7 +140,10 @@ TIP: To see these additional options, users must also have the *Grid topology pa
 
 == Storage appliance administrator
 
-This permission provides access to the E-Series SANtricity System Manager on storage appliances through the Grid Manager.
+This permission provides:
+
+* Access to the E-Series SANtricity System Manager on storage appliances through the Grid Manager.
+* The ability to perform troubleshooting and maintenance tasks on the Manage drives tab for appliance models that support these operations.
 
 == Tenant accounts
 
