@@ -48,6 +48,12 @@ StorageGRID can now support either the TLS 1.2 or TLS 1.3 protocol when it makes
 === Changes to EC rebalance procedure
 The EC rebalance procedure was updated and is now considered complete when the new Site Imbalance metric reaches 0.02 or when the job has been running continuously for 30 days.
 
-=== Documentation changes
+== User interface changes
+
+=== Information moved for additional ports on untrusted Client Network
+
+Previously, the Grid Manager list of ports open to the untrusted Client Network was located on the Firewall control page. That information is now located in a column named, "Open to untrusted Client network" at *Load balancer endpoints* > *Management interface*. For StorageGRID 11.8, you can configure a port to be open or closed to the untrusted Client Network only when you are link:../admin/configuring-load-balancer-endpoints.html#create-lb-endpoint[creating a load balancer endpoint].
+
+== Documentation changes
 
 * The documentation for StorageGRID appliances was moved to a link:https://review.docs.netapp.com/us-en/storagegrid-appliances_main/[new documentation site].
