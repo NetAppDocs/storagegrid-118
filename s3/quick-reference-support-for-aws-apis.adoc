@@ -66,8 +66,8 @@ StorageGRID supports all <<common-params, common parameters and headers>> for th
 StorageGRID supports these request body XML tags:
 
 * `CompleteMultipartUpload`
-* `Part`
 * `ETag`
+* `Part`
 * `PartNumber`
 
 .StorageGRID documentation
@@ -680,9 +680,9 @@ StorageGRID supports all <<common-params, common parameters and headers>> for th
 .Request body XML tags
 StorageGRID supports these request body XML tags:
 
-* `ServerSideEncryptionConfiguration` 			
+* `ApplyServerSideEncryptionByDefault`
 * `Rule`		
-* `ApplyServerSideEncryptionByDefault`	
+* `ServerSideEncryptionConfiguration` 			
 * `SSEAlgorithm`
 
 .StorageGRID documentation
@@ -698,22 +698,23 @@ StorageGRID supports all <<common-params, common parameters and headers>> for th
 .Request body XML tags
 StorageGRID supports these request body XML tags:
 
-* `NewerNoncurrentVersions`
-* `LifecycleConfiguration`
-* `ExpiredObjectDeleteMarker`						
-* `Rule`							
-* `Expiration`						
-* `Days`				
-* `Filter`				
-* `And`			
-* `Prefix`		
-* `Tag`		
+
+* `And`
+* `Days`
+* `Expiration`
+* `ExpiredObjectDeleteMarker`
+* `Filter`
+* `ID`	
 * `Key`	
-* `Value`	
-* `ID`				
-* `NoncurrentVersionExpiration`				
-* `NoncurrentDays`									
-* `Status`	
+* `LifecycleConfiguration`						
+* `NewerNoncurrentVersions`
+* `NoncurrentDays`
+* `NoncurrentVersionExpiration`						
+* `Prefix`
+* `Rule`		
+* `Status`
+* `Tag`		
+* `Value`											
 
 .StorageGRID documentation
 * link:operations-on-buckets.html[Operations on buckets]
@@ -729,18 +730,18 @@ StorageGRID supports all <<common-params, common parameters and headers>> for th
 .Request body XML tags
 StorageGRID supports these request body XML tags:
 
-* `Prefix`
-* `Suffix`
-* `NotificationConfiguration`					
-* `TopicConfiguration`				
 * `Event`			
-* `Filter`			
-* `S3Key`	
-* `FilterRule`	
+* `Filter`
+* `FilterRule`
+* `Id`	
 * `Name`
+* `NotificationConfiguration`
+* `Prefix`
+* `S3Key`
+* `Suffix`		
+* `Topic`
+* `TopicConfiguration`		
 * `Value`
-* `Id`			
-* `Topic`		
 
 .StorageGRID documentation
 link:operations-on-buckets.html[Operations on buckets]
@@ -764,13 +765,13 @@ link:bucket-and-group-access-policies.html[Use bucket and group access policies]
 StorageGRID supports all <<common-params, common parameters and headers>> for this request.
 
 .Request body XML tags
-* `ReplicationConfiguration`
-* `Status`
-* `Prefix`
-* `Destination`
 * `Bucket`
+* `Destination`
+* `Prefix`
+* `ReplicationConfiguration`
+* `Rule`
+* `Status`
 * `StorageClass`
-*  `Rule`
 
 .StorageGRID documentation
 link:operations-on-buckets.html[Operations on buckets]
