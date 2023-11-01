@@ -11,29 +11,14 @@ summary: 'You must configure StorageGRID as a client for each external key manag
 [.lead]
 You must configure StorageGRID as a client for each external key management server or KMS cluster before you can add the KMS to StorageGRID.
 
-.Before you begin
-
-* You have used one of the following methods to create the key used to create the KMS configuration.
-
-** Before starting the configuration process:
-*** For Thales: Use the Thales key tool or external library, Cryptosoft.
-*** For Hashicorp: Use one of these external libraries: PyKMIP or Cryptosoft.
-
-** During the configuration process, StorageGRID will create the key for you (using Cryptosoft).
-
-.About this task
-
-These instructions apply to Thales CipherTrust Manager and Hashicorp Vault. For a list of supported versions, use the https://imt.netapp.com/matrix/#welcome[NetApp Interoperability Matrix Tool (IMT)^].
+NOTE: These instructions apply to Thales CipherTrust Manager and Hashicorp Vault. For a list of supported versions, use the https://imt.netapp.com/matrix/#welcome[NetApp Interoperability Matrix Tool (IMT)^].
 
 .Steps
 
-. Select one of the following methods to create the key used to create the KMS configuration.
+. Select *one* of the following methods to create the key that will be used to create the KMS configuration.
 +
-* Before starting the configuration process:
-** For Thales: Use the Thales key tool or external library, Cryptosoft.
-** For Hashicorp: Use one of these external libraries: PyKMIP or Cryptosoft.
-+
-* During the configuration process, StorageGRID will create the key for you (using Cryptosoft).
+* Create a key using the key management page of your KMS product.
+* Wait to be prompted to have StorageGRID create the key during the configuration process.
 
 . From the KMS software, create a StorageGRID client for each KMS or KMS cluster you plan to use.
 +
@@ -55,12 +40,12 @@ You need this information when you add the KMS to StorageGRID:
 +
 The server certificate allows the external KMS to authenticate itself to StorageGRID.
 
- ** The certificate must use the Privacy Enhanced Mail (PEM) Base-64 encoded X.509 format.
- ** The Subject Alternative Name (SAN) field in each server certificate must include the fully qualified domain name (FQDN) or IP address that StorageGRID will connect to.
+* The certificate must use the Privacy Enhanced Mail (PEM) Base-64 encoded X.509 format.
+* The Subject Alternative Name (SAN) field in each server certificate must include the fully qualified domain name (FQDN) or IP address that StorageGRID will connect to.
 +
 NOTE: When you configure the KMS in StorageGRID, you must enter the same FQDNs or IP addresses in the *Hostname* field.
 
- ** The server certificate must match the certificate used by the KMIP interface of the KMS, which typically uses port 5696.
+* The server certificate must match the certificate used by the KMIP interface of the KMS, which typically uses port 5696.
 
 . Obtain the public client certificate issued to StorageGRID by the external KMS and the private key for the client certificate.
 +

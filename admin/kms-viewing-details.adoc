@@ -22,37 +22,31 @@ The Key management server page appears. The Configuration details tab shows any 
 [cols="1a,2a" options="header"]
 |===
 | Field| Description
-a|
-KMS name
-a|
-The descriptive name of the KMS.
-a|
-Key name
-a|
-The key alias for the StorageGRID client in the KMS.
-a|
-Manages keys for
-a|
-The StorageGRID site associated with the KMS.
+
+| KMS name
+| The descriptive name of the KMS.
+
+| Key name
+| The key alias for the StorageGRID client in the KMS.
+
+| Manages keys for
+| The StorageGRID site associated with the KMS.
 
 This field displays the name of a specific StorageGRID site or *Sites not managed by another KMS (default KMS).*
-a|
-Hostname
-a|
-The fully qualified domain name or IP address of the KMS.
+
+| Hostname
+| The fully qualified domain name or IP address of the KMS.
 
 If there is a cluster of two key management servers, the fully qualified domain name or IP address of both servers are listed. If there are more than two key management servers in a cluster, the fully qualified domain name or IP address of the first KMS is listed along with the number of additional key management servers in the cluster.
 
 For example: `10.10.10.10 and 10.10.10.11` or `10.10.10.10 and 2 others`.
 
 To view all hostnames in a cluster, open a KMS and select *Edit* or *Actions* > *Edit*.
-a|
-Certificate expiration
-a|
-Current state of the server certificate, optional CA certificate, and the client certificate: valid, expired, nearing expiration, or unknown.
+
+| Certificate expiration
+| Current state of the server certificate, optional CA certificate, and the client certificate: valid, expired, nearing expiration, or unknown.
 
 *Note:* It might take StorageGRID as long as 30 minutes to get updates to the certificate expiration. You must refresh your web browser to see the current values.
-
 |===
 
 . If the Certificate expiration is Unknown, wait up to 30 minutes and then refresh your web browser.
