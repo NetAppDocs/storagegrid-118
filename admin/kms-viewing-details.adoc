@@ -61,4 +61,8 @@ CAUTION: You must address any certificate issues as soon as possible to maintain
 
 . To view certificate details for this KMS, select the KMS name from the table.
 
-. On the KMS summary page, review the metadata and certificate PEM for both the server certificate and the client certificate. As required, select *Edit certificate* to replace a certificate with a new one.
+. On the KMS summary page:
++
+* View the key details, including the key name, key UID, and the date and time the key was last modified.
+* Review the metadata and certificate PEM for both the server certificate and the client certificate. As required, select *Edit certificate* to replace a certificate with a new one.
+* Select *Rotate key* to
