@@ -119,7 +119,7 @@ Empty for anonymous requests.
 |If the request was routed by a trusted Layer 7 load balancer, the IP address of the load balancer.
 
 |UUDM
-|Universally Unique Identifier for a delete marker
+|Universally Unique Identifier for a Delete Marker
 |The identifier of a delete marker. Audit log messages specify either UUDM or UUID, where UUDM indicates a delete marker created as a result of an object delete request, and UUID indicates an object.
 
 |UUID
