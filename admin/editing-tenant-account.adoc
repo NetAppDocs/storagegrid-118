@@ -64,4 +64,4 @@ If *Uses own identity source* is:
 .. Select the radio button for the tenant, then select *Action* > *Edit*.
 .. To go to the Select permissions page, select *Continue*.
 .. Select the *Use grid federation connection* checkbox.
-.. Optionally, select *Clone existing local users and groups* to clone them to the newly cloned tenant (remote grid). If you want, you can stop the cloning in progress or retry cloning if some local users or groups failed to be cloned after the last clone operation was completed.
+.. Optionally, select *Clone existing local users and groups* to clone them to the remote grid. If you want, you can stop the cloning in progress or retry cloning if some local users or groups failed to be cloned after the last clone operation was completed.
