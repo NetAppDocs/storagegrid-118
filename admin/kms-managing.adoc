@@ -103,7 +103,7 @@ CAUTION: You must address any certificate issues as soon as possible to maintain
 
 .. To replace the certificate, select *Edit certificate* to upload a new certificate.
 
-.. Repeat these sub-steps for the client certificate.
+.. Repeat these sub-steps and select *Client certificate* instead of Server certificate.
 
 . When the *KMS CA certificate expiration*, *KMS client certificate expiration*, and *KMS server certificate expiration* alerts are triggered, note the description of each alert and perform the recommended actions.
 +
