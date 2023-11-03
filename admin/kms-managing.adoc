@@ -20,11 +20,6 @@ Managing a key management server (KMS) involves viewing or editing details, view
 
 You can view information about each key management server (KMS) in your StorageGRID system, including the current status of the server and client certificates.
 
-.Before you begin
-
-* You are signed in to the Grid Manager using a link:../admin/web-browser-requirements.html[supported web browser].
-* To make changes to KMS details, you have the link:admin-group-permissions.html[Root access permission].
-
 .Steps
 
 . Select *CONFIGURATION* > *Security* > *Key management server*.
@@ -96,11 +91,21 @@ CAUTION: You must address any certificate issues as soon as possible to maintain
 
 .Steps
 
-. If the Certificate expiration is Unknown, wait up to 30 minutes and then refresh your web browser.
+. Select *CONFIGURATION* > *Security* > *Key management server*.
 
-. If the Certificate expiration column indicates that a certificate has expired or is nearing expiration, select *Edit certificate* to replace a certificate with a new one.
-+
-When the *KMS CA certificate expiration*, *KMS client certificate expiration*, and *KMS server certificate expiration* alerts are triggered, note the description of each alert and perform the recommended actions.
+. In the table, look at the value for Certificate expiration for each KMS.
+
+. If Certificate expiration for any KMS is Unknown, wait up to 30 minutes and then refresh your web browser.
+
+. If the Certificate expiration column indicates that a certificate has expired or is nearing expiration, select the KMS to go to the KMS details page.
+
+.. Select *Server certificate* and verify the value for the "Expires on" field.
+
+.. To replace the certificate, select *Edit certificate* to upload a new certificate.
+
+.. Repeat these sub-steps for the client certificate.
+
+. When the *KMS CA certificate expiration*, *KMS client certificate expiration*, and *KMS server certificate expiration* alerts are triggered, note the description of each alert and perform the recommended actions.
 +
 NOTE: It might take StorageGRID as long as 30 minutes to get updates to the certificate expiration. Refresh your web browser to see the current values.
 
@@ -121,7 +126,7 @@ The Encrypted nodes tab lists the appliance nodes in your StorageGRID system tha
 
 . Review the information in the table for each appliance node.
 +
-[cols="1a,2a" options="header"]
+[cols="1a,3a" options="header"]
 |===
 | Column| Description
 
