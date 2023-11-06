@@ -18,7 +18,7 @@ Managing a key management server (KMS) involves viewing or editing details, mana
 
 == View KMS details
 
-You can view information about each key management server (KMS) in your StorageGRID system, including the current status of the server and client certificates.
+You can view information about each key management server (KMS) in your StorageGRID system, including key details and the current status of the server and client certificates.
 
 .Steps
 
@@ -61,10 +61,10 @@ To view all hostnames in a cluster, select a KMS and select *Edit* or *Actions* 
 | The key alias for the StorageGRID client in the KMS.
 
 | Key UID
-| The unique identifier for the KMS.
+| The unique identifier of the latest version of the key.
 
 | Last modified
-| The date and time of the latest key rotation.
+| The date and time of the latest version of the key.
 
 .2+| Server certificate
 | Metadata
@@ -81,7 +81,9 @@ To view all hostnames in a cluster, select a KMS and select *Edit* or *Actions* 
 | The contents of the PEM (privacy enhanced mail) file for the certificate.
 |===
 
-. As often as required by your organization's security practices, select *Rotate key* to replace the key with a new key.
+. As often as required by your organization's security practices, select *Rotate key* to create a new version of the key.
++
+When key rotation is successful, the Key UID and Last modified fields are updated.
 
 == Manage certificates
 
@@ -212,7 +214,7 @@ You only need to edit the key name in rare cases. For example, you must edit the
 
 [CAUTION]
 ====
-Never attempt to rotate a key by changing the key name (alias) for the KMS. Instead, rotate the key by updating the key version in the KMS software. StorageGRID requires all previously used key versions (as well as any future ones) to be accessible from the KMS with the same key alias. If you change the key alias for a configured KMS, StorageGRID might not be able to decrypt your data.
+Never attempt to rotate a key by changing the key name (alias) for the KMS. Instead, rotate the key by updating the key version in the KMS software, or select *Rotate key* on the KMS details page. StorageGRID requires all previously used key versions (as well as any future ones) to be accessible from the KMS with the same key alias. If you change the key alias for a configured KMS, StorageGRID might not be able to decrypt your data.
 
 link:kms-considerations-and-requirements.html[Considerations and requirements for using a key management server]
 ====
