@@ -63,8 +63,6 @@ If you need to edit a tenant that has the *Use grid federation connection* permi
 
 * If a tenant has the *Use grid federation connection* permission, you can edit tenant details from either grid in the connection. However, any changes you make will not be copied to the other grid. If you want to keep the tenant details synchronized between grids, you must make the same edits on both grids.
 
-* If you choose the option to clone existing local users and groups, the local users and groups of the source tenant will be cloned to the newly cloned tenant. If you want, you can stop the cloning in progress or retry cloning if some local users or groups failed to be cloned after the last clone operation was completed.
-
 * You can't clear the *Use grid federation connection* permission when you are editing a tenant.
 
 * You can't select a different grid federation connection when you are editing a tenant.

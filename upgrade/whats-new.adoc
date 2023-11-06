@@ -48,6 +48,9 @@ StorageGRID can now support either the TLS 1.2 or TLS 1.3 protocol when it makes
 === Changes to EC rebalance procedure
 The EC rebalance procedure was updated and is now considered complete when the new Site Imbalance metric reaches 0.02 or when the job has been running continuously for 30 days.
 
+=== Metadata-only Storage Nodes
+You can now specify that a new link:../primer/what-storage-node-is.html#types-of-storage-nodes[software-based Storage Node] will be used to store only metadata instead of both objects and metadata.
+
 == User interface changes
 
 === Information moved for additional ports on untrusted Client Network
