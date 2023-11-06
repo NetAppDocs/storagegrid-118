@@ -11,7 +11,7 @@ summary: 'You must configure StorageGRID as a client for each external key manag
 [.lead]
 You must configure StorageGRID as a client for each external key management server or KMS cluster before you can add the KMS to StorageGRID.
 
-NOTE: These instructions apply to Thales CipherTrust Manager and Hashicorp Vault. For a list of supported versions, use the https://imt.netapp.com/matrix/#welcome[NetApp Interoperability Matrix Tool (IMT)^].
+NOTE: These instructions apply to Thales CipherTrust Manager and Hashicorp Vault. For a list of supported products and versions, use the https://imt.netapp.com/matrix/#welcome[NetApp Interoperability Matrix Tool (IMT)^].
 
 .Steps
 
