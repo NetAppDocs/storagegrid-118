@@ -81,8 +81,8 @@ To view all hostnames in a cluster, select a KMS and select *Edit* or *Actions* 
 | Certificate PEM
 | The contents of the PEM (privacy enhanced mail) file for the certificate.
 |===
-[[rotate-key]]
-. As often as required by your organization's security practices, select *Rotate key*, or use the KMS software, to create a new version of the key.
+
+. [[rotate-key]]As often as required by your organization's security practices, select *Rotate key*, or use the KMS software, to create a new version of the key.
 +
 When key rotation is successful, the Key UID and Last modified fields are updated.
 +
