@@ -15,18 +15,17 @@ NOTE: These instructions apply to Thales CipherTrust Manager and Hashicorp Vault
 
 .Steps
 
-. Select *one* of the following methods to create the key that will be used to create the KMS configuration.
-+
-* Create a key using the key management page of your KMS product.
-* Wait to be prompted to have StorageGRID create the key during the configuration process.
-
 . From the KMS software, create a StorageGRID client for each KMS or KMS cluster you plan to use.
 +
 Each KMS manages a single encryption key for the StorageGRID appliances nodes at a single site or at a group of sites.
 
-. From the KMS software, create an AES encryption key for each KMS or KMS cluster.
+. [[create-key-with-kms-product]]Create a key using one of the following two methods:
++
+* Use the key management page of your KMS product. Create an AES encryption key for each KMS or KMS cluster.
 +
 The encryption key must be 2,048 bits or more, and it must be exportable.
+
+* Have StorageGRID create the key. You will be prompted when link:kms-adding.html#sg-create-key[uploading client certificates].
 
 . Record the following information for each KMS or KMS cluster.
 +

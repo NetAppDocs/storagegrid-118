@@ -48,7 +48,10 @@ Step 1 (KMS details) of the Add a Key Management Server wizard appears.
 | A descriptive name to help you identify this KMS. Must be between 1 and 64 characters.
 
 | Key name
-| The exact key alias for the StorageGRID client in the KMS. Must be between 1 and 255 characters.
+| 
+The exact key alias for the StorageGRID client in the KMS. Must be between 1 and 255 characters.
+
+*Note*: If you haven't created a key using your KMS product, you'll be prompted to have StorageGRID create the key.
 
 | Manages keys for
 | The StorageGRID site that will be associated with this KMS. If possible, you should configure any site-specific key management servers before configuring a default KMS that applies to all sites not managed by another KMS.
@@ -101,6 +104,7 @@ The client certificate metadata appears.
 . Browse to the location of the private key for the client certificate.
 . Upload the private key file.
 
+[[sg-create-key]]
 . Select *Test and save*.
 +
 If a key doesn't exist, you are prompted to have StorageGRID create one.
