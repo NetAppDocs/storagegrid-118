@@ -154,8 +154,8 @@ Bucket default encryption configuration is ignored if the object upload request 
 
 | Creates a new lifecycle configuration for the bucket or replaces an existing lifecycle configuration. StorageGRID supports up to 1,000 lifecycle rules in a lifecycle configuration. Each rule can include the following XML elements:
 
-* Expiration (Days, Date)
-* NoncurrentVersionExpiration (NoncurrentDays)
+* Expiration (Days, Date, ExpiredObjectDeleteMarker)
+* NoncurrentVersionExpiration (NewerNoncurrentVersions, NoncurrentDays)
 * Filter (Prefix, Tag)
 * Status
 * ID
@@ -163,7 +163,6 @@ Bucket default encryption configuration is ignored if the object upload request 
 StorageGRID does not support these actions:
 
 * AbortIncompleteMultipartUpload
-* ExpiredObjectDeleteMarker
 * Transition
 
 See link:create-s3-lifecycle-configuration.html[Create S3 lifecycle configuration]. To understand how the Expiration action in a bucket lifecycle interacts with ILM placement instructions, see link:../ilm/how-ilm-operates-throughout-objects-life.html[How ILM operates throughout an object’s life].
