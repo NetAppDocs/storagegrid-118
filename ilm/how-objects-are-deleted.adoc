@@ -95,7 +95,9 @@ Note: ILM cannot be used to remove expired object delete markers. Use an S3 clie
 [[how_to_remove_delete_markers_created_in_117_or_earlier]]
 === How to remove delete markers created in StorageGRID 11.7 or earlier
 
-Delete markers created in StorageGRID 11.7 or earlier can only be removed through S3 client requests. They must be removed using S3 client requests before a versioned bucket can be deleted. Delete markers created in StorageGRID 11.7 or earlier are not removed by ILM, bucket lifecycle rules, or Delete objects in bucket operations. This restriction also applies to delete markers in buckets created in StorageGRID 11.7 or earlier even if these delete markers were in created in StorageGRID 11.8 or later.
+To remove the delete marker from the bucket,  
+
+When a versioned object is deleted, StorageGRID creates a zero-byte delete marker as the current version of the object. For delete markers created in StorageGRID 11.7 or earlier, the S3 client must explicitly remove the delete marker for this object version before a versioned bucket can be removed. Delete markers created in StorageGRID 11.7 or earlier are not removed by ILM, bucket lifecycle rules, or Delete objects in bucket operations. This restriction also applies to delete markers in buckets created in StorageGRID 11.7 or earlier even if these delete markers were in created in StorageGRID 11.8 or later.
 
 NOTE: Delete markers from a bucket that was created in StorageGRID 11.8 or later can be removed by ILM, bucket lifecycle rules, Delete objects in bucket operations, or an explicit S3 client deletion. 
 
