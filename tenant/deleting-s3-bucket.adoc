@@ -15,7 +15,7 @@ You can use the Tenant Manager to delete one or more S3 buckets that are empty.
 
 * You are signed in to the Tenant Manager using a link:../admin/web-browser-requirements.html[supported web browser].
 * You belong to a user group that has the link:tenant-management-permissions.html[Manage all buckets or Root access permission]. These permissions override the permissions settings in group or bucket policies.
-* The buckets you want to delete are empty.
+* The buckets you want to delete are empty. If buckets you want to delete are _not_ empty, link:../tenant/deleting-s3-bucket-objects.html[delete objects from the bucket].
 
 .About this task
 
@@ -55,4 +55,4 @@ The Buckets page appears and shows all existing S3 buckets.
 +
 StorageGRID confirms that each bucket is empty and then deletes each bucket. This operation might take a few minutes.
 +
-If a bucket is not empty, an error message appears. You must delete all objects and any delete markers in the bucket before you can delete the bucket.
+If a bucket is not empty, an error message appears. You must link:../tenant/deleting-s3-bucket-objects.html[delete all objects and any delete markers in the bucket] before you can delete the bucket.
