@@ -146,14 +146,8 @@ entries:
         url: "/admin/kms-configuring-storagegrid-as-client.html"
       - title: Add a key management server (KMS)
         url: "/admin/kms-adding.html"
-      - title: View KMS details
-        url: "/admin/kms-viewing-details.html"
-      - title: View encrypted nodes
-        url: "/admin/kms-viewing-encrypted-nodes.html"
-      - title: Edit a key management server (KMS)
-        url: "/admin/kms-editing.html"
-      - title: Remove a key management server (KMS)
-        url: "/admin/kms-removing.html"
+      - title: Manage a KMS
+        url: "/admin/kms-managing.html"
     - title: Manage proxy settings
       entries:
       - title: Configure storage proxy
