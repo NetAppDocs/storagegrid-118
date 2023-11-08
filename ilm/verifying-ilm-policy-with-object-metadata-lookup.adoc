@@ -31,7 +31,15 @@ image::../media/object_lookup.png[Object Lookup page]
 +
 The object metadata lookup results appear. This page lists the following types of information:
 +
- * System metadata, including the object ID (UUID), the object name, the name of the container, the tenant account name or ID, the logical size of the object, the date and time the object was first created, and the date and time the object was last modified.
+ * System metadata, including
+ ** object ID (UUID)
+ ** object name
+ ** name of the container
+ ** result type (object, delete marker, S3 bucket or Swift container) 
+ ** tenant account name or ID
+ ** logical size of the object
+ ** date and time the object was first created
+ ** date and time the object was last modified
  * Any custom user metadata key-value pairs associated with the object.
  * For S3 objects, any object tag key-value pairs associated with the object.
  * For replicated object copies, the current storage location of each copy.
@@ -53,3 +61,4 @@ NOTE: If the Audit option is enabled, you can also monitor the audit log for the
 * link:../s3/index.html[Use S3 REST API]
 
 * link:../swift/index.html[Use Swift REST API]
+// 2023 nov 8, SGWS-27432
