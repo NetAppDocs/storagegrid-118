@@ -24,9 +24,6 @@ After you have activated an ILM policy, you should ingest representative test ob
 . Select *ILM* > *Object metadata lookup*.
 . Type the object's identifier in the *Identifier* field. You can enter a UUID, CBID, S3 bucket/object-key, or Swift container/object-name.
 . Optionally, enter a version ID for the object (S3 only).
-+
-image::../media/object_lookup.png[Object Lookup page]
-
 . Select *Look Up*.
 +
 The object metadata lookup results appear. This page lists the following types of information:
@@ -49,6 +46,8 @@ The object metadata lookup results appear. This page lists the following types o
  * All object metadata in the unprocessed, internal storage format. This raw metadata includes internal system metadata that is not guaranteed to persist from release to release.
 +
 The following example shows the object metadata lookup results for an S3 test object that is stored as two replicated copies.
++
+NOTE: The following screenshot is an example. Your results will vary depending on your StorageGRID version.
 +
 image::../media/object_lookup_results.png[Object Lookup Results]
 
