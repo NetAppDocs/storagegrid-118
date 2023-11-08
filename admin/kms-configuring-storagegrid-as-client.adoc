@@ -25,7 +25,7 @@ Each KMS manages a single encryption key for the StorageGRID appliances nodes at
 +
 The encryption key must be 2,048 bits or more, and it must be exportable.
 
-* Have StorageGRID create the key. You will be prompted when link:kms-adding.html#sg-create-key[uploading client certificates].
+* Have StorageGRID create the key. You will be prompted when you test and save after link:kms-adding.html#sg-create-key[uploading client certificates].
 
 . Record the following information for each KMS or KMS cluster.
 +
