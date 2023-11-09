@@ -55,6 +55,8 @@ NOTE: If one or more volumes go offline while a decommission is in progress, the
 
 CAUTION: Don't remove a grid node's virtual machine or other resources until instructed to do so in this procedure.
 
+CAUTION: Use caution when you decommission Storage Nodes in a grid containing software-based metadata-only nodes. If you decommission all nodes configured to store _both_ objects and metadata, the ability to store objects is removed from the grid. See link:../primer/what-storage-node-is.html#types-of-storage-nodes[Types of Storage Nodes] for more information about metadata-only Storage Nodes.
+
 .About this task
 
 When a node is decommissioned, its services are disabled and the node automatically shut down.
@@ -95,7 +97,7 @@ Complete these steps after you complete the node decommission procedure:
 link:../rhel/index.html[Install Red Hat Enterprise Linux or CentOS] and 
 link:../ubuntu/index.html[Install Ubuntu or Debian].
 
- ** *VMware*: You might want to use the vCenter "`Delete from Disk`" option to delete the virtual machine. You might also need to delete any data disks that are independent of the virtual machine.
+ ** *VMware*: You might want to use the vCenter "Delete from Disk" option to delete the virtual machine. You might also need to delete any data disks that are independent of the virtual machine.
 
  ** *StorageGRID appliance*: The appliance node automatically reverts to an undeployed state where you can access the StorageGRID Appliance Installer. You can power off the appliance or add it to another StorageGRID system.
 

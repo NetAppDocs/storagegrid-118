@@ -50,7 +50,7 @@ If the object is permanently unavailable, you must identify the object and then 
 
 A retrieval can also fail if the object is temporarily unavailable. In this case, subsequent retrieval requests should eventually succeed.
 
-If the StorageGRID system is configured to use an ILM rule that creates a single object copy and that copy can't be retrieved, the object is lost and can't be recovered. However, you must still follow the procedure to determine if the object is permanently unavailable to "`clean up`" the StorageGRID system, to cancel the Archive Node's request, and to purge metadata for the lost object.
+If the StorageGRID system is configured to use an ILM rule that creates a single object copy and that copy can't be retrieved, the object is lost and can't be recovered. However, you must still follow the procedure to determine if the object is permanently unavailable to "clean up" the StorageGRID system, to cancel the Archive Node's request, and to purge metadata for the lost object.
 
 [[determining_objects_permanently_unavailable]]
 === Determining if objects are permanently unavailable
@@ -131,7 +131,7 @@ DEV-ARC-20    Arch /19130020  216  /20081201/ C1D172940E6C7E12
 DEV-ARC-20    Arch /19130020  216  /20081201/ F1D7FBC2B4B0779E
 ----
 +
-The `Client’s Name for File Name` is the same as the Archive Node volume ID (or TSM "`high level name`") followed by the object's CBID (or TSM "`low level name`"). That is, the `Client’s Name for File Name` takes the form `/Archive Node volume ID /CBID`. In the first line of the example output, the `Client’s Name for File Name` is `/20081201/ C1D172940E6C7E12`.
+The `Client’s Name for File Name` is the same as the Archive Node volume ID (or TSM "high level name") followed by the object's CBID (or TSM "low level name"). That is, the `Client’s Name for File Name` takes the form `/Archive Node volume ID /CBID`. In the first line of the example output, the `Client’s Name for File Name` is `/20081201/ C1D172940E6C7E12`.
 +
 Recall also that the `Filespace` is the node ID of the Archive Node.
 +
@@ -150,7 +150,7 @@ CAUTION: Use the ADE Console with caution. If the console is used improperly, it
 +
 where `CBID` is the identifier of the object that can't be retrieved from the TSM.
 +
-If the only copies of the object are on tape, the "`bulk retrieval`" request is canceled with a message, "`1 requests canceled`". If copies of the object exist elsewhere in the system, the object retrieval is processed by a different module so the response to the message is "`0 requests canceled`".
+If the only copies of the object are on tape, the "bulk retrieval" request is canceled with a message, "1 requests canceled". If copies of the object exist elsewhere in the system, the object retrieval is processed by a different module so the response to the message is "0 requests canceled".
 
  .. Issue a command to notify the StorageGRID system that an object copy has been lost and that an additional copy must be made: `/proc/CMSI/Object_Lost CBID node_ID`
 +

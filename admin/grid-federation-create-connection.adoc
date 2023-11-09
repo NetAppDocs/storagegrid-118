@@ -20,7 +20,7 @@ image::../media/grid-federation-create-connection.png[graphic overview of steps 
 * You have reviewed the link:grid-federation-overview.html[considerations and requirements] for configuring grid federation connections. 
 * If you plan to use fully qualified domain names (FQDNs) for each grid instead of IP or VIP addresses, you know which names to use and you have confirmed that the DNS server for each grid has the appropriate entries.
 * You are using a link:../admin/web-browser-requirements.html[supported web browser].
-* You must have Root access permission and the provisioning passphrase for both grids.
+* You have Root access permission and the provisioning passphrase for both grids.
 
 == Add connection
 
@@ -41,7 +41,7 @@ Perform these steps on either of the two StorageGRID systems.
 | Field| Description
 
 |Connection name
-|A unique name to help you recognize this connection, for example, "`Grid 1-Grid 2.`"
+|A unique name to help you recognize this connection, for example, "Grid 1-Grid 2."
 
 |FQDN or IP for this grid
 |One of the following:
@@ -135,7 +135,3 @@ If you edit this connection, a new verification file will be created. The origin
 * link:../monitor/grid-federation-monitor-connections.html[Monitor the connection] as part of your normal StorageGRID monitoring activities.
 
 * link:grid-federation-troubleshoot.html[Troubleshoot the connection], including resolving any alerts and errors related to account clone and cross-grid replication.
-
-
-
-

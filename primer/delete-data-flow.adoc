@@ -18,7 +18,7 @@ StorageGRID provides several methods for controlling when objects are retained o
 * *S3 Object Lock*: If the global S3 Object Lock setting is enabled for the grid, S3 clients can create buckets with S3 Object Lock enabled and then use the S3 REST API to specify retain-until-date and legal hold settings for each object version added to that bucket.
  ** An object version that is under a legal hold can't be deleted by any method.
  ** Before an object version's retain-until-date is reached, that version can't be deleted by any method.
- ** Objects in buckets with S3 Object Lock enabled are retained by ILM "`forever`". However, after its retain-until-date is reached, an object version can be deleted by a client request or the expiration of the bucket lifecycle.
+ ** Objects in buckets with S3 Object Lock enabled are retained by ILM "forever". However, after its retain-until-date is reached, an object version can be deleted by a client request or the expiration of the bucket lifecycle.
  ** If S3 clients apply a default retain-until-date to the bucket, they don't need to specify a retain-until-date for each object. 
 * *Client delete request*: An S3 or Swift client can issue a delete object request. When a client deletes an object, all copies of the object are removed from the StorageGRID system.
 * *Delete objects in bucket*: Tenant Manager users can use this option to permanently remove all copies of the objects and object versions in selected buckets from the StorageGRID system. 

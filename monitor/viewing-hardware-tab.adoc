@@ -83,7 +83,7 @@ Some appliance models don't have a storage controller B.
 |Storage hardware
 |The overall status of the storage controller hardware. If SANtricity System Manager reports a status of Needs Attention for the storage hardware, the StorageGRID system also reports this value.
 
-If the status is "`needs attention,`" first check the storage controller using SANtricity OS. Then, ensure that no other alarms exist that apply to the compute controller.
+If the status is "needs attention," first check the storage controller using SANtricity OS. Then, ensure that no other alarms exist that apply to the compute controller.
 
 |Storage controller failed drive count
 |The number of drives that aren't optimal.
@@ -186,9 +186,9 @@ This field is not displayed for appliance models that don't contain a BMC.
 |The configuration status of the storage shelf.
 |===
 
-.. Confirm that all statuses are "`Nominal.`"
+.. Confirm that all statuses are "Nominal."
 +
-If a status is not "`Nominal,`" review any current alerts. You can also use SANtricity System Manager to learn more about some of these hardware values. See the instructions for installing and maintaining your appliance.
+If a status is not "Nominal," review any current alerts. You can also use SANtricity System Manager to learn more about some of these hardware values. See the instructions for installing and maintaining your appliance.
 
 . Select *Network* to view information for each network.
 +
@@ -328,9 +328,9 @@ This field is not displayed for appliance models that don't contain a BMC.
 |The temperature status of the compute controller.
 |===
 
- .. Confirm that all statuses are "`Nominal.`"
+ .. Confirm that all statuses are "Nominal."
 +
-If a status is not "`Nominal,`" review any current alerts.
+If a status is not "Nominal," review any current alerts.
 . Select *Network* to view information for each network.
 +
 The Network Traffic graph provides a summary of overall network traffic.

@@ -118,6 +118,10 @@ Empty for anonymous requests.
 |Trusted Load Balancer IP Address
 |If the request was routed by a trusted Layer 7 load balancer, the IP address of the load balancer.
 
+|UUDM
+|Universally Unique Identifier for a Delete Marker
+|The identifier of a delete marker. Audit log messages specify either UUDM or UUID, where UUDM indicates a delete marker created as a result of an object delete request, and UUID indicates an object.
+
 |UUID
 |Universally Unique Identifier
 |The identifier of the object within the StorageGRID system.
@@ -126,3 +130,6 @@ Empty for anonymous requests.
 |Version ID
 |The version ID of the specific version of an object that was deleted. Operations on buckets and objects in unversioned buckets don't include this field.
 |===
+
+
+// 2023 OCT 13, SGWS-28519

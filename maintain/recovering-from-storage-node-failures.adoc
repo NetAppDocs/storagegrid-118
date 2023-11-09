@@ -52,4 +52,4 @@ Technical support can determine when it is safe to begin recovery of a second St
 | The node replacement procedure depends on the deployment platform and on whether any storage volumes have also failed.
 |===
 
-NOTE: Some StorageGRID recovery procedures use Reaper to handle Cassandra repairs. Repairs occur automatically as soon as the related or required services have started. You might notice script output that mentions "`reaper`" or "`Cassandra repair.`" If you see an error message indicating the repair has failed, run the command indicated in the error message.
+NOTE: Some StorageGRID recovery procedures use Reaper to handle Cassandra repairs. Repairs occur automatically as soon as the related or required services have started. You might notice script output that mentions "reaper" or "Cassandra repair." If you see an error message indicating the repair has failed, run the command indicated in the error message.

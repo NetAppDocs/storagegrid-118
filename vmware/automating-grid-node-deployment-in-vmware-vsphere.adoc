@@ -488,7 +488,7 @@ For example:
 ./deploy-vsphere-ovftool.sh --username=user --password=pwd --single-node="DC1-S3" ./deploy-vsphere-ovftool.ini
 ----
 
-The deployment is complete when the status for each node is "`Passed.`"
+The deployment is complete when the status for each node is "Passed."
 
 ----
 Deployment Summary

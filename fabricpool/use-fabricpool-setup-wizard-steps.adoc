@@ -416,7 +416,7 @@ CAUTION: To avoid data loss, do not use an ILM rule that will expire or delete F
 
 .Steps
 
-. Optionally, update the system-generated *Policy name*. By default, the system appends "`+ FabricPool`" to the name of your active or inactive policy, but you can provide your own name.
+. Optionally, update the system-generated *Policy name*. By default, the system appends "+ FabricPool" to the name of your active or inactive policy, but you can provide your own name.
 
 . Review the list of rules in the inactive policy.
 
