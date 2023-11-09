@@ -86,7 +86,7 @@ The following is a complete list of StorageGRID services.
 
 | Cassandra Reaper
 | Performs automatic repairs of object metadata.
-| All Storage Nodes
+| Storage Nodes
 
 | Chunk service
 | Manages erasure-coded data and parity fragments.
@@ -118,11 +118,11 @@ The following is a complete list of StorageGRID services.
 
 | Identity (idnt)
 | Federates user identities from LDAP and Active Directory.
-| Three Storage Nodes at each site
+| At least three Storage Nodes containing the ADC service
 
 | Lambda Arbitrator
 | Manages S3 Select SelectObjectContent requests.
-| _n/a_
+| All nodes
 
 | Load Balancer (nginx-gw)
 | Provides load balancing of S3 and Swift traffic from clients to Storage Nodes. The Load Balancer service can be configured through the Load Balancer Endpoints configuration page. This service is also known as the nginx-gw service.
