@@ -118,7 +118,7 @@ The following is a complete list of StorageGRID services.
 
 | Identity (idnt)
 | Federates user identities from LDAP and Active Directory.
-| At least three Storage Nodes containing the ADC service
+| At least three Storage Nodes containing the ADC service at each site
 
 | Lambda Arbitrator
 | Manages S3 Select SelectObjectContent requests.
