@@ -11,6 +11,8 @@ summary: 'You can configure one or more external key management servers \(KMS\) 
 [.lead]
 You can configure one or more external key management servers (KMS) to protect the data on specially configured appliance nodes.
 
+NOTE: StorageGRID supports only certain key management servers. For a list of supported products and versions, use the https://imt.netapp.com/matrix/#welcome[NetApp Interoperability Matrix Tool (IMT)^].
+
 == What is a key management server (KMS)?
 
 A key management server (KMS) is an external, third-party system that provides encryption keys to StorageGRID appliance nodes at the associated StorageGRID site using the Key Management Interoperability Protocol (KMIP).
