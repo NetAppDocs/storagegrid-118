@@ -22,6 +22,14 @@ To allow for continued availability, ensure that your ILM policy contains rules 
 * Multiple Gateway Nodes for each client
 * Multiple Storage Nodes for each client
 
+== Client applications might experience short-term disruptions
+
+The StorageGRID system can ingest and retrieve data from client applications throughout the upgrade process; however, client connections to individual Gateway Nodes or Storage Nodes might be disrupted temporarily if the upgrade needs to restart services on those nodes. Connectivity will be restored after the upgrade process completes and services resume on the individual nodes.
+
+You might need to schedule downtime to apply an upgrade if loss of connectivity for a short period is not acceptable. You can use selective approval to schedule when certain nodes are updated.
+
+NOTE: You can use multiple gateways and high availability (HA) groups to provide automatic failover during the upgrade process. See the instructions for link:../admin/configure-high-availability-group.html[configuring high availability groups].
+
 == Appliance firmware is upgraded
 
 During the StorageGRID 11.8 upgrade:
