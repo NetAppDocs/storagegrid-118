@@ -19,7 +19,7 @@ You can view the list of all default and custom alert rules to learn which condi
 
 * Optionally, you have watched the video: https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=4506fc61-c8e9-4b86-ba00-b0b901184b38[Video: Alerts overview for StorageGRID 11.8^]
 +
-image::../media/video-screenshot-alert-overview-117.png[link="https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=4506fc61-c8e9-4b86-ba00-b0b901184b38" alt="Video: Alerts overview for StorageGRID 11.8", window=_blank]
+image::../media/video-screenshot-alert-overview-118.png[link="https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=4506fc61-c8e9-4b86-ba00-b0b901184b38" alt="Video: Alerts overview for StorageGRID 11.8", window=_blank]
 
 .Steps
 . Select *ALERTS* > *Rules*.
