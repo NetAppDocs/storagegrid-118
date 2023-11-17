@@ -15,11 +15,11 @@ StorageGRID nodes can be deployed on VMware virtual machines, within a container
 
 You can enable or disable remote IPMI access for all appliances containing a BMC. The remote IPMI interface allows low-level hardware access to your StorageGRID appliances by anyone with a BMC account and password. If you do not need remote IPMI access to the BMC, disable this option.
 
-* To control remote IPMI access to the BMC in Grid Manager, go to *CONFIGURATION* > *Security settings* > *Appliances*:
+* To control remote IPMI access to the BMC in Grid Manager, go to *CONFIGURATION* > *Security* > *Security settings* > *Appliances*:
 ** Clear the *Enable remote IPMI access* checkbox to disable IPMI access to the BMC.
 ** Select the *Enable remote IPMI access* checkbox to enable IPMI access to the BMC.
 
-* To control remote IPMI access to the BMC the Grid management API, use the management API private endpoint: `PUT /private/bmc`.
+* To control remote IPMI access to the BMC the Grid management API, use the private endpoint: `PUT /private/bmc`.
 
 
 == Firewall configuration
