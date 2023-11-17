@@ -26,7 +26,9 @@ NOTE: You can't use erasure coding if the storage pool includes two sites.
 
 * Don't use a storage pool that includes the default site, All Sites.
 
-* The storage pool should include at least `_k+m_ +1` Storage Nodes.
+* The storage pool should include at least `_k+m_ +1` Storage Nodes that can store object data.
++
+NOTE: Storage Nodes can be configured during installation to contain only object metadata and not object data. For more information, see link:../primer/what-storage-node-is.html#types-of-storage-nodes[Types of Storage Nodes].
 +
 The minimum number of Storage Nodes required is `k+m`. However, having at least one additional Storage Node can help prevent ingest failures or ILM backlogs if a required Storage Node is temporarily unavailable.
 

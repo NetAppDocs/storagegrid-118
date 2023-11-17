@@ -16,9 +16,11 @@ Storage grades identify the type of storage used by a Storage Node. You can crea
 * You have link:../admin/admin-group-permissions.html[specific access permissions].
 
 .About this task
-When you first install StorageGRID, the *Default* storage grade is automatically assigned to every Storage Node in your system. As required, you can optionally define custom storage grades and assign them to different Storage Nodes. 
+When you first install StorageGRID, the *Default* storage grade is automatically assigned to every Storage Node in your system. As required, you can optionally define custom storage grades and assign them to different Storage Nodes.
 
 Using custom storage grades allows you to create ILM storage pools that contain only a specific type of Storage Node. For example, you might want certain objects to be stored on your fastest Storage Nodes, such as StorageGRID all-flash storage appliances.
+
+NOTE: Storage Nodes can be configured during installation to contain only object metadata and not object data. For more information, see link:../primer/what-storage-node-is.html#types-of-storage-nodes[Types of Storage Nodes].
 
 If storage grade is not a concern (for example, all Storage Nodes are identical), you can skip this procedure and use the *includes all storage grades* selection for the storage grade when you link:creating-storage-pool.html[create storage pools]. Using this selection ensures that the storage pool will include every Storage Node at the site, regardless of its storage grade.
 
