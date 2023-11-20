@@ -9,7 +9,7 @@ settings:
     hide_language_selector: true
 sidebar:
   entries:
-    - title: StorageGRID 11.8 Docs
+    - title: 'StorageGRID 11.8 Docs'
       url: /index.html
     - title: Release notes
       url: "/release-notes/index.html"
@@ -20,11 +20,11 @@ sidebar:
       - section: network
       - title: Quick start
         url: "/primer/quick-start.html"
-    - title: Install, upgrade, and hotfix
+    - title: 'Install, upgrade, and hotfix'
       url: "/landing-install-upgrade/index.html"  
       entries:
       - title: Install appliances
-        url: /storagegrid-hardware.html 
+        url: "/storagegrid-hardware.html" 
       - section: rhel
       - section: ubuntu
       - section: vmware
@@ -39,7 +39,7 @@ sidebar:
           url: "/maintain/obtaining-required-materials-for-hotfix.html"
         - title: Download hotfix file
           url: "/maintain/downloading-hotfix-file.html"
-        - title: Check system's condition before applying hotfix
+        - title: 'Check system&#8217;s condition before applying hotfix'
           url: "/maintain/checking-systems-condition-before-applying-hotfix.html"
         - title: Apply hotfix
           url: "/maintain/applying-hotfix.html"
@@ -124,7 +124,7 @@ sidebar:
             url: "/maintain/step-5-resolve-node-conflicts.html"
           - title: Monitor decommission
             url: "/maintain/step-6-monitor-decommission.html"
-      - title: Rename grid, site, or node
+      - title: 'Rename grid, site, or node'
         entries:
         - title: Overview
           url: "/maintain/rename-grid-site-node-overview.html"
