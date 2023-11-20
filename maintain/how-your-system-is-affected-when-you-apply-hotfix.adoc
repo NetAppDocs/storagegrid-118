@@ -11,6 +11,17 @@ summary: 'You must understand how your StorageGRID system will be affected when 
 [.lead]
 You must understand how your StorageGRID system will be affected when you apply a hotfix.
 
+== StorageGRID hotfixes are non-disruptive
+
+The StorageGRID system can ingest and retrieve data from client applications throughout the hotfix process. If you approve all nodes of the same type to hotfix (for example, Storage Nodes), the nodes are brought down one at a time, so there is no time when all grid nodes or all grid nodes of a certain type are unavailable.
+
+To allow for continued availability, ensure that your ILM policy contains rules that specify storing multiple copies of each object. You must also ensure that all external S3 or Swift clients are configured to send requests to one of the following:
+
+* A high availability (HA) group virtual IP address
+* A high availability third-party load balancer
+* Multiple Gateway Nodes for each client
+* Multiple Storage Nodes for each client
+
 == Client applications might experience short-term disruptions
 
 The StorageGRID system can ingest and retrieve data from client applications throughout the hotfix process; however, client connections to individual Gateway Nodes or Storage Nodes might be disrupted temporarily if the hotfix needs to restart services on those nodes. Connectivity will be restored after the hotfix process completes and services resume on the individual nodes.
