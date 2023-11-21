@@ -716,7 +716,6 @@ In this example, the variable `${aws:username}` is part of the Resource element:
 "Resource": "arn:aws:s3:::bucket-name/home/${aws:username}/*"
 ----
 
-
 In this example, the variable `${aws:username}` is part of the condition value in the condition block:
 
 ----
