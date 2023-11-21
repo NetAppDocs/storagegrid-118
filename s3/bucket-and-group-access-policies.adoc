@@ -70,6 +70,10 @@ In the Principal element, wildcard characters aren't supported except to set ano
 "Principal":"*"
 ----
 
+----
+"Principal":{"AWS":"*"}
+----
+
 In the following example, the statement is using the Effect, Principal, Action, and Resource elements. This example shows a complete bucket policy statement that uses the Effect "Allow" to give the Principals, the admin group `federated-group/admin` and the finance group `federated-group/finance`, permissions to perform the Action `s3:ListBucket` on the bucket named `mybucket` and the Action `s3:GetObject` on all objects inside that bucket.
 
 ----
