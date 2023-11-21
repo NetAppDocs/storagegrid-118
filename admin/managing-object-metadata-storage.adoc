@@ -154,7 +154,6 @@ The following table shows how StorageGRID calculates the *allowed metadata space
 |&gt;= 128 GB
 
 
-
 .2+|*Actual reserved space for metadata*
 |&lt;= 4 TB
 |60% of actual reserved space for metadata, up to a maximum of 1.32 TB
