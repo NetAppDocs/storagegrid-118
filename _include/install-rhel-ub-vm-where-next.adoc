@@ -20,4 +20,3 @@ See https://review.docs.netapp.com/us-en/storagegrid-appliances_main/installconf
 * link:../maintain/changing-ip-addresses-and-mtu-values-for-all-nodes-in-grid.html[Update grid node IP addresses] if they have changed since you planned your deployment and generated the Recovery Package.
 * link:../admin/changing-network-options-object-encryption.html[Configure storage encryption], if required.
 * link:../admin/configuring-stored-object-compression.html[Configure storage compression] to reduce the size of stored objects, if required.
-* link:../admin/configuring-audit-client-access.html[Configure access to the system for auditing purposes] through an NFS file share.

@@ -112,6 +112,8 @@ NOTE: This list does not include ports that might be configured as link:../admin
 
 *Note:* This port is required only if NFS-based audit export is enabled.
 
+*Note:* Support for NFS has been deprecated and will be removed in a future release.
+
 | 123
 | UDP
 | NTP
@@ -230,6 +232,8 @@ NOTE: This list does not include ports that might be configured as link:../admin
 
 *Note:* This port is required only if NFS-based audit export is enabled.
 
+*Note:* Support for NFS has been deprecated and will be removed in a future release.
+
 | 2022
 | TCP
 | SSH
@@ -245,6 +249,8 @@ NOTE: This list does not include ports that might be configured as link:../admin
 | Used by NFS-based audit export (nfs).
 
 *Note:* This port is required only if NFS-based audit export is enabled.
+
+*Note:* Support for NFS has been deprecated and will be removed in a future release. 
 
 | 5353
 | UDP
