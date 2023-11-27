@@ -48,7 +48,7 @@ Step 1 (Enter details) of the Create ILM rule wizard appears.
 +
 The default rule must apply to all tenant accounts.
 
-. Leave the Bucket name drop-down selection as *matches all*.
+. Leave the Bucket name drop-down selection as *applies to all buckets*.
 +
 The default rule must apply to all S3 buckets and Swift containers.
 

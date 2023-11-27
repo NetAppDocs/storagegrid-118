@@ -31,7 +31,7 @@ If you don't have either the Root access permission or the Tenant accounts permi
 
 . Optionally, specify the S3 buckets or Swift containers to which this rule applies.
 +
-If *matches all* is selected (default), the rule applies to all S3 buckets or Swift containers.
+If *applies to all buckets* is selected (default), the rule applies to all S3 buckets or Swift containers.
 
 . For S3 tenants, optionally select *Yes* to apply the rule only to older object versions in S3 buckets that have versioning enabled.
 +
