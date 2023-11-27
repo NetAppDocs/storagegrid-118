@@ -65,3 +65,4 @@ For example, to enter 8 TB, which is the maximum supported value, enter *8000000
 image::../media/metadata_reserved_space.png[Metadata Reserved Space]
 
  .. Select *Apply Changes*.
+// 2023-11-27, Jira SGRIDDOC-31
