@@ -38,6 +38,20 @@ StorageGRID makes a best effort attempt to order requests when operations are ma
 |To match the deletion behavior of the AWS CRR and Amazon Simple Notification Service, CloudMirror and event notification requests aren't sent when an object in the source bucket is deleted because of StorageGRID ILM rules. For example, no CloudMirror or event notifications requests are sent if an ILM rule deletes an object after 14 days.
 
 In contrast, search integration requests are sent when objects are deleted because of ILM.
+
+a|
+Using Kafka endpoints
+
+a|
+For Kafka endpoints, Mutual TLS is not supported. As a result, if you have `ssl.client.auth` set to `required` in your Kafka broker configuration, it might cause Kafka endpoint configuration issues.
+
+The authentication of Kafka endpoints uses the following authentication types. These types are different from those used for the authentication of other endpoints, such as Amazon SNS, and require username and password credentials.
+
+* SASL/PLAIN
+* SASL/SCRAM-SHA-256
+* SASL/SCRAM-SHA-512
+
+NOTE: Configured storage proxy settings do not apply to Kafka platform services endpoints.
 |===
 
 == Considerations for using CloudMirror replication service
@@ -76,3 +90,5 @@ In contrast, the CloudMirror service does replicate PutObjectTagging requests or
 |If the destination S3 bucket for CloudMirror replication has S3 Object Lock enabled, the attempt to configure bucket replication (PutBucketReplication) will fail with an AccessDenied error.
 
 |===
+
+// 2023 SEP 25, SGWS-27676
