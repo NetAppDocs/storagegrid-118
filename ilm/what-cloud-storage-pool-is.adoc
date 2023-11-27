@@ -50,8 +50,8 @@ If the Cloud Storage Pool is an Azure Blob storage container, StorageGRID transi
 *Note:* In general, don't configure Azure Blob storage lifecycle management for the container used for a Cloud Storage Pool. RestoreObject operations on objects in the Cloud Storage Pool can be affected by the configured lifecycle.
 
 | What controls object placement?
-| An ILM rule in the active ILM policy.
-| An ILM rule in the active ILM policy.
+| An ILM rule in any active ILM policy.
+| An ILM rule in any active ILM policy.
 
 | Which data protection method is used?
 | Replication or erasure coding.
