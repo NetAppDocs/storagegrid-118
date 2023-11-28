@@ -87,19 +87,17 @@ If the global S3 Object Lock setting is enabled, the ILM policies page indicates
 
 .Edit existing policy
 
-.. Select the checkbox for the policy you want to start with, then select *Edit*.
+.. Select the checkbox for the policy you want to start with, then select *Edit*. You can edit a policy only if it's inactive.
 
 ====
 //end tabbed blocks
 
 [start=3]
-. In the *Policy name* field, enter a unique name for the policy.
+. In the *Description* field, enter a description for the policy.
 
 . Optionally, in the *Reason for change* field, enter the reason you are creating a new policy.
 
 . To add rules to the policy, select *Select rules*. Select a rule name to view the settings for that rule.
-+
-NOTE: Periodically, the list of rules is automatically updated to reflect additions or removals. If a rule is removed after you select it, an error message appears.
 +
 If you are cloning a policy:
 
@@ -239,12 +237,13 @@ Alternatively, you can activate a single policy from the *ILM* > *Policy tags* p
 * If a warning message containing details about the policy appears:
 +
 .. Review the details to ensure the policy would manage data as expected.
-.. Type *yes* in the text box.
+.. If the default rule stores objects for a limited number of days, review the retention diagram and then type in that number of days into the text box.
+.. If the default rule stores objects forever, but one or more other rules has limited retention, type *yes* in the text box.
 .. Select *Activate policy*.
 --
 .Activate multiple policies
 --
-Before you can activate multiple policies, you must create tags and assign a policy to each tag.
+To activate multiple policies, you must create tags and assign a policy to each tag.
 
 TIP: When multiple tags are in use, if tenants frequently reassign policy tags to buckets, grid performance might be impacted. If you have untrusted tenants, consider using only the Default tag.
 

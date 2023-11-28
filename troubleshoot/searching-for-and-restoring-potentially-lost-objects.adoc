@@ -103,7 +103,7 @@ For example, enter:
 Object_Found '/var/local/rangedb/1/p/17/11/00rH0%DkRs&LgA%#3tN6'
 ----
 +
-Issuing the `Object\_Found` command notifies the grid of the object's location. It also triggers the active ILM policies, which make additional copies as specified in the policy.
+Issuing the `Object\_Found` command notifies the grid of the object's location. It also triggers the active ILM policies, which make additional copies as specified in each policy.
 +
 NOTE: If the Storage Node where you found the object is offline, you can copy the object to any Storage Node that is online. Place the object in any /var/local/rangedb directory of the online Storage Node. Then, issue the `Object\_Found` command using that file path to the object.
 
