@@ -98,10 +98,12 @@ In contrast to the system-wide Metadata reserved space setting, the _actual rese
 
 | Size of volume 0 for the node| Actual reserved space for metadata
 
-|Less than 500 GB (non production use)
+|Less than 500 GB (non-production use)
 |10% of volume 0
 
-|500 GB or more
+|500 GB or more +
+or +
+Metadata-only Storage Nodes
 |The smaller of these values:
 
 * Volume 0
@@ -150,7 +152,6 @@ The following table shows how StorageGRID calculates the *allowed metadata space
 |
 |&lt; 128 GB
 |&gt;= 128 GB
-
 
 
 .2+|*Actual reserved space for metadata*
