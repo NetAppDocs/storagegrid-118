@@ -85,7 +85,7 @@ Use the `ExpiredObjectDeleteMarker` action to remove expired object delete marke
 ** First rule: Use "Noncurrent time" as the Reference time to match the noncurrent versions of the object. In link:create-ilm-rule-enter-details.html[Step 1 (Enter details) of the Create an ILM rule wizard], select *Yes* for the question, "Apply this rule to older object versions only (in S3 buckets with versioning enabled)?" 
 ** Second rule: Use *Ingest time* to match the current version. The "Noncurrent time" rule must appear in the policy above the *Ingest time* rule.
 +
-NOTE: ILM cannot be used to remove expired object delete markers or delete markers created in StorageGRID 11.7 or earlier. Use an S3 client request with a version ID specified or bucket lifecycle rules to remove expired object delete markers in StorageGRID 11.8 or later. Delete markers created in StorageGRID 11.7 or earlier can only be removed through S3 client requests.
+NOTE: ILM cannot be used to remove expired object delete markers. Use an S3 client request to remove expired object delete markers.
 
 * *Delete objects in bucket*: Use the tenant manager to link:../tenant/deleting-s3-bucket-objects.html[delete all object versions], including delete markers, from a bucket.
 +
