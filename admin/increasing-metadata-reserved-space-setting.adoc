@@ -12,7 +12,7 @@ summary: 'You might be able to increase the Metadata Reserved Space system setti
 You might be able to increase the Metadata Reserved Space system setting if your Storage Nodes meet specific requirements for RAM and available space.
 
 .What you'll need
-* You are signed in to the Grid Manager using a xref:../admin/web-browser-requirements.adoc[supported web browser].
+* You are signed in to the Grid Manager using a link:web-browser-requirements.html[supported web browser].
 * You have the link:admin-group-permissions.html[Root Access permission or the Grid Topology Page Configuration and Other Grid Configuration permissions].
 
 .About this task
@@ -28,7 +28,7 @@ Be aware that if you increase this setting, you will simultaneously reduce the s
 
 NOTE: In general, it is better to use a higher value instead of a lower value. If the Metadata Reserved Space setting is too large, you can decrease it later. In contrast, if you increase the value later, the system might need to move object data to free up space.
 
-For a detailed explanation of how the Metadata Reserved Space setting affects the allowed space for object metadata storage on a particular Storage Node, see xref:managing-object-metadata-storage.adoc[Manage object metadata storage].
+For a detailed explanation of how the Metadata Reserved Space setting affects the allowed space for object metadata storage on a particular Storage Node, see link:managing-object-metadata-storage.html[Manage object metadata storage].
 
 .Steps
 . Determine the current Metadata Reserved Space setting.
@@ -65,3 +65,4 @@ For example, to enter 8 TB, which is the maximum supported value, enter *8000000
 image::../media/metadata_reserved_space.png[Metadata Reserved Space]
 
  .. Select *Apply Changes*.
+// 2023-11-27, Jira SGRIDDOC-31
