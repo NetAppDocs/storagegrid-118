@@ -15,7 +15,7 @@ When the AutoSupport package fails to send, "Failed" appears on the *Results* ta
 
 image::../media/autosupport_results_tab.png[AutoSupport package send failure]
 
-NOTE: If you have configured a proxy server to forward AutoSupport messages to NetApp, you should link:configuring-storage-proxy-settings.html[verify that the proxy server configuration settings are correct].
+NOTE: If you configured a proxy server to forward AutoSupport messages to NetApp, you should link:configuring-storage-proxy-settings.html[verify that the proxy server configuration settings are correct].
 
 == Weekly AutoSupport package failure
 
