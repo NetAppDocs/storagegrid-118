@@ -125,6 +125,4 @@ If the `versionId` query parameter is not specified in the request, the operatio
 
 | SelectObjectContent
 | link:select-object-content.html[SelectObjectContent]
-
 |===
-
