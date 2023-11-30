@@ -22,13 +22,13 @@ In general, you should use the *Read-after-new-write* consistency setting for yo
 The following bucket configurations support strong consistency. These configurations require that more Storage Nodes are available for the configuration to be successful.
 
 * <<change-bucket-consistency,Bucket consistency (change)>>
-* Background empty bucket deletion
+* link:use-s3-console.html[Background empty bucket deletion]
 * link:configuring-cross-origin-resource-sharing-cors.html[CORS configuration]
 * link:../ilm/create-ilm-rule-define-placements.html[Last Access Time configuration]
-* Bucket lifecycle configuration
-* Platform services configuration: Notification or Replication
-* Bucket policy configuration
-* Bucket tagging
+* link:../s3/create-s3-lifecycle-configuration.html[Bucket lifecycle configuration]
+* link:what-platform-services-are.html[Platform services configuration: Notification or Replication]
+* link:../s3/bucket-and-group-access-policies.html[Bucket policy configuration]
+* link:../admin/what-is-autosupport.html[Bucket tagging]
 
 == [[change-bucket-consistency]]Change a bucket's consistency setting
 
