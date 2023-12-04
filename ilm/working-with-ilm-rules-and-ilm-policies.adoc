@@ -133,7 +133,7 @@ To remove an ILM rule that is not currently used:
 
 . Select *ILM* > *Rules*.
 . Confirm that the rule you want to remove is not used in any policy.
-. If the rule you want to remove is not in use, select the rule and select *Remove*. You can select multiple rules and remove all of them at the same time.
+. If the rule you want to remove is not in use, select the rule and select *Actions* > *Remove*. You can select multiple rules and remove all of them at the same time.
 . Select *Yes* to confirm that you want to remove the ILM rule.
 
 == View ILM metrics

@@ -42,8 +42,6 @@ image::../media/policy_6_active_policy.png[Example ILM Policy 6 Active Policy]
 
 In this ILM policy, objects belonging to Tenant A are protected by 2+1 erasure coding at a single site, while objects belonging to all other tenants are protected across two sites using 2-copy replication.
 
-NOTE: The first rule in this example uses an advanced filter to ensure that erasure coding is not used for small objects. Any of Tenant A's objects that are smaller than 1 MB will be protected by the default rule, which uses replication.
-
 === Rule 1: One-site erasure coding for Tenant A
 
 [cols="1a,2a" options="header"]
@@ -149,7 +147,7 @@ NOTE: The existing 2+1 fragments at Site 1 aren't reused. StorageGRID considers 
 
 === What happens when replication instructions change
 
-In the currently active ILM policy for this example, objects belonging other tenants are protected using two replicated copies in storage pools at Sites 1 and 2. In the new ILM policy, objects belonging to other tenants will be protected using three replicated copies in storage pools at Sites 1, 2, and 3.
+In the currently active ILM policy for this example, objects belonging to other tenants are protected using two replicated copies in storage pools at Sites 1 and 2. In the new ILM policy, objects belonging to other tenants will be protected using three replicated copies in storage pools at Sites 1, 2, and 3.
 
 When the new ILM policy is activated, the following ILM operations occur:
 

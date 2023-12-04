@@ -17,7 +17,7 @@ Review the considerations for decommissioning an Admin Node, Gateway Node, or Ar
 
 * You can't decommission an Admin Node if one of its network interfaces is part of a high availability (HA) group. You must first remove the network interfaces from the HA group. See the instructions for link:../admin/managing-high-availability-groups.html[managing HA groups].
 
-* As required, you can safely change an ILM policy while decommissioning an Admin Node.
+* As required, you can safely change ILM policies while decommissioning an Admin Node.
 
 * If you decommission an Admin Node and single sign-on (SSO) is enabled for your StorageGRID system, you must remember to remove the node's relying party trust from Active Directory Federation Services (AD FS).
 
@@ -29,7 +29,7 @@ Review the considerations for decommissioning an Admin Node, Gateway Node, or Ar
 
 * You can't decommission a Gateway Node if one of its network interfaces is part of a high availability (HA) group. You must first remove the network interfaces from the HA group. See the instructions for link:../admin/managing-high-availability-groups.html[managing HA groups].
 
-* As required, you can safely change an ILM policy while decommissioning a Gateway Node.
+* As required, you can safely change ILM policies while decommissioning a Gateway Node.
 
 * If you use link:../admin/grid-federation-overview.html[grid federation], ensure that the IP address of the node you are decommissioning was not specified for a grid federation connection.
 
@@ -47,7 +47,7 @@ NOTE: Support for Archive Nodes and the Cloud Tiering - Simple Storage Service (
 
 . If you are currently using an Archive Node with the Cloud Tiering - Simple Storage Service (S3) option, link:../admin/migrating-objects-from-cloud-tiering-s3-to-cloud-storage-pool.html[migrate your objects to a Cloud Storage Pool].
 
-. Confirm that the Archive Node is no longer being used by any ILM rules in an active ILM policy.
+. Confirm that the Archive Node is no longer being used by any ILM rules in the active ILM policies.
 
 .. Go to the *ILM* > *Storage pools* page.
 .. From the list of storage pools, select any storage pools that contain only Archive Nodes. 

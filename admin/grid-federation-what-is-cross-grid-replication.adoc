@@ -72,7 +72,7 @@ The S3 client can verify an object's replication status by issuing a GetObject o
 +
 NOTE: StorageGRID does not support the `x-amz-replication-status` header.
 
-. StorageGRID uses each grid's active ILM policy to manage the objects, just as it would any other object. For example, Object A on Grid 1 might be stored as two replicated copies and retained forever, while the copy of Object A that was replicated to Grid 2 might be stored using 2+1 erasure coding and deleted after three years. 
+. StorageGRID uses each grid's active ILM policies to manage the objects, just as it would any other object. For example, Object A on Grid 1 might be stored as two replicated copies and retained forever, while the copy of Object A that was replicated to Grid 2 might be stored using 2+1 erasure coding and deleted after three years. 
 
 === What happens when objects are deleted?
 
