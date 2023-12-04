@@ -11,6 +11,8 @@ summary: 'NFS audit clients are granted access to an audit share based on their 
 [.lead]
 NFS audit clients are granted access to an audit share based on their IP address. Grant access to the audit share to a new NFS audit client by adding its IP address to the audit share.
 
+NOTE: Support for NFS has been deprecated and will be removed in a future release. 
+
 .Before you begin
 
 * You have the `Passwords.txt` file with the root/admin account password.

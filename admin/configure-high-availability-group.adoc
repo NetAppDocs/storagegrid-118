@@ -23,7 +23,6 @@ You can configure high availability (HA) groups to provide highly available acce
 ** *Linux (after installing the node)*: link:../maintain/linux-adding-trunk-or-access-interfaces-to-node.html[Linux: Add trunk or access interfaces to a node]
 ** *VMware (after installing the node)*: link:../maintain/vmware-adding-trunk-or-access-interfaces-to-node.html[VMware: Add trunk or access interfaces to a node]
 
-
 == Create a high availability group
 
 When you create a high availability group, you select one or more interfaces and organize them in priority order. Then, you assign one or more VIP addresses to the group.
@@ -80,7 +79,6 @@ image::../media/vlan_parent_interface_tooltip.png[VLAN Interface tool tip]
 
 * You can't select a configured interface if it does not have a static IP address.
 
-
 . Select *Continue*.
 
 === Determine the priority order
@@ -123,8 +121,6 @@ You must provide at least one IPv4 address. Optionally, you can specify addition
 +
 The HA Group is created, and you can now use the configured virtual IP addresses.
 
-NOTE: Wait up to 15 minutes for changes to an HA group to be applied to all nodes.
-
 === Next steps
 
 If you will use this HA group for load balancing, create a load balancer endpoint to determine the port and network protocol and to attach any required certificates. See link:configuring-load-balancer-endpoints.html[Configure load balancer endpoints].
@@ -164,8 +160,6 @@ NOTE: If the HA group provides access to the Grid Manager, you must select an in
 .. Optionally, update the virtual IP addresses.
 
 .. Select *Save* and then select *Finish*.
-
-NOTE: Wait up to 15 minutes for changes to an HA group to be applied to all nodes.
 
 ==  Remove a high availability group
 
