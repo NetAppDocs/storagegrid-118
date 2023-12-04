@@ -2,14 +2,14 @@
 permalink: tenant/specifying-urn-for-platform-services-endpoint.html
 sidebar: sidebar
 keywords: how to specify platform services urn
-summary: 'When you create a platform services endpoint, you must specify a Unique Resource Name \(URN\). You will use the URN to reference the endpoint when you create configuration XML for the platform service. The URN for each endpoint must be unique.'
+summary: 'When you create a platform services endpoint, you must specify a Unique Resource Name (URN). You will use the URN to reference the endpoint when you create a configuration XML for the platform service. The URN for each endpoint must be unique.'
 ---
 = Specify URN for platform services endpoint
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-When you create a platform services endpoint, you must specify a Unique Resource Name (URN). You will use the URN to reference the endpoint when you create configuration XML for the platform service. The URN for each endpoint must be unique.
+When you create a platform services endpoint, you must specify a Unique Resource Name (URN). You will use the URN to reference the endpoint when you create a configuration XML for the platform service. The URN for each endpoint must be unique.
 
 StorageGRID validates platform services endpoints as you create them. Before you create a platform services endpoint, confirm that the resource specified in the endpoint exists and that it can be reached.
 
@@ -17,8 +17,8 @@ StorageGRID validates platform services endpoints as you create them. Before you
 
 The URN for a platform services endpoint must start with either `arn:aws` or `urn:mysite`, as follows:
 
-* If the service is hosted on Amazon Web Services (AWS), use `arn:aws`. 
-* If the service is hosted on Google Cloud Platform (GCP), use `arn:aws`.
+* If the service is hosted on Amazon Web Services (AWS), use `arn:aws` 
+* If the service is hosted on Google Cloud Platform (GCP), use `arn:aws`
 * If the service is hosted locally, use `urn:mysite`
 
 For example, if you are specifying the URN for a CloudMirror endpoint hosted on StorageGRID, the URN might begin with `urn:sgws`.
@@ -27,15 +27,15 @@ The next element of the URN specifies the type of platform service, as follows:
 
 [cols="2a,1a" options="header"]
 |===
-|Service |Type
-|CloudMirror replication
-m|s3
+| Service | Type
+| CloudMirror replication
+| `s3`
 
 |Notifications
-m|sns or kafka
+|`sns` or `kafka`
 
-|Search integration
-m|es
+| Search integration
+m| es
 |===
 For example, to continue specifying the URN for a CloudMirror endpoint hosted on StorageGRID, you would add `s3` to get `urn:sgws:s3`.
 
@@ -44,14 +44,14 @@ The final element of the URN identifies the specific target resource at the dest
 [cols="1a,2a" options="header"]
 |===
 | Service| Specific resource
-a|CloudMirror replication
-m|bucket-name
+| CloudMirror replication
+| `bucket-name`
 
-a|Notifications
-m|sns-topic-name or kafka-topic-name
+| Notifications
+| `sns-topic-name` or `kafka-topic-name`
 
 |Search integration
-|`domain-name/index-name/type-name`
+a| `domain-name/index-name/type-name`
 
 *Note:* If the Elasticsearch cluster is *not* configured to create indexes automatically, you must create the index manually before you create the endpoint.
 
