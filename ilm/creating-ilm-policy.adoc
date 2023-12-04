@@ -93,7 +93,7 @@ If the global S3 Object Lock setting is enabled, the ILM policies page indicates
 //end tabbed blocks
 
 [start=3]
-. In the *Description* field, enter a description for the policy.
+. In the *Policy name* field, enter a unique name for the policy.
 
 . Optionally, in the *Reason for change* field, enter the reason you are creating a new policy.
 
