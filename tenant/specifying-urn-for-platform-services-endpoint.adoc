@@ -51,7 +51,7 @@ The final element of the URN identifies the specific target resource at the dest
 | `sns-topic-name` or `kafka-topic-name`
 
 |Search integration
-| `domain-name/index-name/type-name`
+a| `domain-name/index-name/type-name`
 
 *Note:* If the Elasticsearch cluster is *not* configured to create indexes automatically, you must create the index manually before you create the endpoint.
 
