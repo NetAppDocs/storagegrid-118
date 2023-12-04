@@ -124,12 +124,6 @@ link:working-with-ilm-rules-and-ilm-policies.html[Work with ILM rules and ILM po
 link:creating-ilm-policy.html[Create an ILM policy]
 
 link:working-with-ilm-rules-and-ilm-policies.html[Work with ILM rules and ILM policies]
-
-| In an ILM rule that is in a policy that was activated and later deactivated
-| 
-. Edit or delete the rule. If you edit the rule, remove all placements that use the erasure-coding profile.
-. Continue with this procedure.
-| link:working-with-ilm-rules-and-ilm-policies.html[Work with ILM rules and ILM policies]
 |===
 
  .. Refresh the Erasure-Coding Profiles page to ensure that the profile is not used in an ILM rule.
