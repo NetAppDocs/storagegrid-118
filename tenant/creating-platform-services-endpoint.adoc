@@ -163,17 +163,20 @@ The credentials that you supply must have write permissions for the destination 
 
 | SASL/PLAIN
 | Uses a username and password with plain text to authenticate connections to the destination.
-| * Username
+| 
+* Username
 * Password
 
 | SASL/SCRAM-SHA-256
 | Uses a username and password using a challenge-response protocol and SHA-256 hashing to authenticate connections to the destination.
-a| * Username
+| 
+* Username
 * Password
 
 | SASL/SCRAM-SHA-512
 | Uses a username and password using a challenge-response protocol and SHA-512 hashing to authenticate connections to the destination.
-a| * Username
+| 
+* Username
 * Password
 |===
 
