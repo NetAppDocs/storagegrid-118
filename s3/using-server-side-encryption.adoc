@@ -93,4 +93,4 @@ CAUTION: The encryption keys you provide are never stored. If you lose an encryp
 
 .Related information
 
-https://docs.aws.amazon.com/AmazonS3/latest/dev/ServerSideEncryptionCustomerKeys.html[Amazon S3 User Guide: Protecting Data Using Server-Side Encryption with Customer-Provided Encryption Keys (SSE-C)^]
+https://docs.aws.amazon.com/AmazonS3/latest/dev/ServerSideEncryptionCustomerKeys.html[Amazon S3 User Guide: Using server-side encryption with customer-provided keys (SSE-C)^]
