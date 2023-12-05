@@ -39,9 +39,4 @@ When creating ILM rules:
 .Steps
 
 . Select *ILM* > *Rules*.
-+
-Based on the number of sites in the grid, the Make 2 Copies rule or the 1 Copy Per Site rule is shown in the list of rules.
-+
-NOTE: If the global S3 Object Lock setting has been enabled for the StorageGRID system, the summary table includes a *Compliant* column, and the details for the selected rule include a *Compliant* field.
-
 . Select *Create*. link:create-ilm-rule-enter-details.html[Step 1 (Enter details)] of the Create an ILM rule wizard appears.

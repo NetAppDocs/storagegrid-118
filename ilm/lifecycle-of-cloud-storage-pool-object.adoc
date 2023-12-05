@@ -46,7 +46,6 @@ Once an object has been restored, the client application can issue a GetObject r
 
 == Azure: Lifecycle of a Cloud Storage Pool object
 
-
 The steps describe the lifecycle stages of an object that is stored in an Azure Cloud Storage Pool.
 
 . *Object stored in StorageGRID*
@@ -55,7 +54,7 @@ To start the lifecycle, a client application stores an object in StorageGRID.
 
 . *Object moved to Azure Cloud Storage Pool*
 +
-When the object is matched by an ILM rule that uses an Azure Cloud Storage Pool as its placement location, StorageGRID moves the object to the external Azure Blob storage container specified by the Cloud Storage Pool
+When the object is matched by an ILM rule that uses an Azure Cloud Storage Pool as its placement location, StorageGRID moves the object to the external Azure Blob storage container specified by the Cloud Storage Pool.
 +
 NOTE: Don't use Cloud Storage Pools for objects that have been ingested by Swift clients. Swift does not support RestoreObject requests, so StorageGRID will not be able to retrieve any Swift objects that have been transitioned to the Azure Blob storage Archive tier. Issuing a Swift GET object request to retrieve these objects will fail (403 Forbidden).
 

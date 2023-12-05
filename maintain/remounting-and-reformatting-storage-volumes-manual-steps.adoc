@@ -92,7 +92,7 @@ this volume and any data on this volume will be deleted. If you only had two
 copies of object data, you will temporarily have only a single copy.
 StorageGRID Webscale will attempt to restore data redundancy by making
 additional replicated copies or EC fragments, according to the rules in
-the active ILM policy.
+the active ILM policies.
 
 Don't continue to the next step if you believe that the data remaining on
 this volume can't be rebuilt from elsewhere in the grid (for example, if
@@ -114,7 +114,7 @@ this volume and any data on this volume will be deleted. If you only had two
 copies of object data, you will temporarily have only a single copy.
 StorageGRID Webscale will attempt to restore data redundancy by making
 additional replicated copies or EC fragments, according to the rules in
-the active ILM policy.
+the active ILM policies.
 
 Don't continue to the next step if you believe that the data remaining on
 this volume can't be rebuilt from elsewhere in the grid (for example, if
