@@ -9,7 +9,7 @@ summary: 'Object data is managed by the active ILM policy and its ILM rules. ILM
 :imagesdir: ../media/
 
 [.lead]
-Object data is managed by the active ILM policy and its ILM rules. ILM rules make replicated or erasure-coded copies to protect object data from loss.
+Object data is managed by the active ILM policies and associated ILM rules. ILM rules make replicated or erasure-coded copies to protect object data from loss.
 
 Different types or locations of object copies might be required at different times in the object's life. ILM rules are periodically evaluated to ensure that objects are placed as required.
 

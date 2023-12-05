@@ -15,11 +15,11 @@ The workflow diagram shows the high-level steps for using S3 Object Lock. These 
 
 image::../media/s3_object_lock_workflow_gm.png[S3 Object Lock workflow for Grid Manager]
 
-== Grid admin tasks
+== Grid administrator tasks
 
 As the workflow diagram shows, a grid administrator must perform two high-level tasks before S3 tenant users can use S3 Object Lock:
 
-. Create at least one compliant ILM rule and make that rule the default rule in the active ILM policy.
+. Create at least one compliant ILM rule and make that rule the default rule in an active ILM policy.
 . Enable the global S3 Object Lock setting for the entire StorageGRID system.
 
 == Tenant user tasks

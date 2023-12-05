@@ -11,7 +11,7 @@ summary: 'You can use the S3 SelectObjectContent request to filter the contents 
 [.lead]
 You can use the S3 SelectObjectContent request to filter the contents of an S3 object based on a simple SQL statement.
 
-For more information see the https://docs.aws.amazon.com/AmazonS3/latest/API/API_SelectObjectContent.html[AWS documentation for SelectObjectContent^].
+For more information see https://docs.aws.amazon.com/AmazonS3/latest/API/API_SelectObjectContent.html[Amazon Simple Storage Service API Reference: SelectObjectContent^].
 
 .Before you begin
 
