@@ -36,7 +36,7 @@ As you begin using Cloud Storage Pools, it might be helpful to understand the si
 * Google Cloud Platform (GCP)
 
 | What causes objects to be moved to the destination?
-| One or more ILM rules in the active ILM policy. The ILM rules define which objects StorageGRID moves to the Cloud Storage Pool and when the objects are moved.
+| One or more ILM rules in the active ILM policies. The ILM rules define which objects StorageGRID moves to the Cloud Storage Pool and when the objects are moved.
 | The act of ingesting a new object into a source bucket that has been configured with a CloudMirror endpoint. Objects that existed in the source bucket before the bucket was configured with the CloudMirror endpoint aren't replicated, unless they are modified.
 
 | How are objects retrieved?

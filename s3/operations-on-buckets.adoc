@@ -15,7 +15,7 @@ Bucket name restrictions follow the AWS US Standard region restrictions, but you
 
 See the following for more information:
 
-* https://docs.aws.amazon.com/AmazonS3/latest/dev/BucketRestrictions.html[Amazon Web Services (AWS) Documentation: Bucket Restrictions and Limitations^]
+* https://docs.aws.amazon.com/AmazonS3/latest/dev/BucketRestrictions.html[Amazon Simple Storage Service User Guide: Bucket Restrictions and Limitations^]
 
 * link:../admin/configuring-s3-api-endpoint-domain-names.html[Configure S3 endpoint domain names]
 
@@ -207,7 +207,7 @@ not included
 | PutBucketReplication
 | Configures link:../tenant/understanding-cloudmirror-replication-service.html[StorageGRID CloudMirror replication] for the bucket using the replication configuration XML provided in the request body. For CloudMirror replication, you should be aware of the following implementation details:
 
-* StorageGRID only supports V1 of the replication configuration. This means that StorageGRID does not support the use of the `Filter` element for rules, and follows V1 conventions for deletion of object versions. For details, see the https://docs.aws.amazon.com/AmazonS3/latest/userguide/replication-add-config.html[Amazon S3 documentation on replication configuration^].
+* StorageGRID only supports V1 of the replication configuration. This means that StorageGRID does not support the use of the `Filter` element for rules, and follows V1 conventions for deletion of object versions. For details, see https://docs.aws.amazon.com/AmazonS3/latest/userguide/replication-add-config.html[Amazon Simple Storage Service User Guide: Replication configuration^].
 * Bucket replication can be configured on versioned or unversioned buckets.
 * You can specify a different destination bucket in each rule of the replication configuration XML. A source bucket can replicate to more than one destination bucket.
 * Destination buckets must be specified as the URN of StorageGRID endpoints as specified in the Tenant Manager or the Tenant Management API. See link:../tenant/configuring-cloudmirror-replication.html[Configure CloudMirror replication].
