@@ -38,7 +38,7 @@ For example, if Site 2 is unreachable when Tenant A saves an object, StorageGRID
 
 == How an ILM policy evaluates objects
 
-The active ILM policy for your StorageGRID system controls the placement, duration, and ingest behavior of all objects.
+The active ILM policies for your StorageGRID system control the placement, duration, and ingest behavior of all objects.
 
 When clients save objects to StorageGRID, the objects are evaluated against the ordered set of ILM rules in the active policy, as follows:
 

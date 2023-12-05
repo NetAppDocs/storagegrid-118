@@ -37,7 +37,7 @@ You must set up the external bucket or container before you can create the Cloud
 
 | Where are objects stored?
 | On one or more Storage Nodes or Archive Nodes within StorageGRID.
-| In Amazon S3 bucket, Azure Blob storage container, or Google Cloud that is external to the StorageGRID system.
+| In an Amazon S3 bucket, Azure Blob storage container, or Google Cloud that is external to the StorageGRID system.
 
 If the Cloud Storage Pool is an Amazon S3 bucket:
 
@@ -50,8 +50,8 @@ If the Cloud Storage Pool is an Azure Blob storage container, StorageGRID transi
 *Note:* In general, don't configure Azure Blob storage lifecycle management for the container used for a Cloud Storage Pool. RestoreObject operations on objects in the Cloud Storage Pool can be affected by the configured lifecycle.
 
 | What controls object placement?
-| An ILM rule in the active ILM policy.
-| An ILM rule in the active ILM policy.
+| An ILM rule in the active ILM policies.
+| An ILM rule in the active ILM policies.
 
 | Which data protection method is used?
 | Replication or erasure coding.

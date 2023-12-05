@@ -22,6 +22,8 @@ To view the details for a tag:
 
 . Select *ILM* > *Policy tags*.
 . Select the name of the policy from the table. The details page for the tag appears.
+. On the details page, view the previous history of assigned policies.
+. View a policy by selecting it.
 
 == Edit ILM policy tag
 
@@ -38,7 +40,7 @@ Alternatively, select the name of the tag. The details page for the tag appears,
 
 == Remove ILM policy tag
 
-When you remove a policy tag, any buckets that are assigned that tag will be tagged with the Default policy tag.
+When you remove a policy tag, any buckets that are assigned that tag will have the Default policy applied.
 
 To remove a tag:
 
