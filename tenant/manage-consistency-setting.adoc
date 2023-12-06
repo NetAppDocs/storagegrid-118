@@ -61,7 +61,7 @@ The following bucket settings use *strong* consistency by default. If two or mor
 * link:../admin/what-is-autosupport.html[Bucket tagging]
 * link:changing-bucket-versioning.html[Bucket versioning]
 * link:using-s3-object-lock.html[S3 Object Lock]
-* link:admin/reviewing-storagegrid-encryption-methods.html#bucket-encryption-table[Bucket encryption]
+* link:../admin/reviewing-storagegrid-encryption-methods.html#bucket-encryption-table[Bucket encryption]
 
 NOTE: The consistency value for bucket versioning, S3 Object Lock, and bucket encryption cannot be set to a value that is not strongly consistent.
 
