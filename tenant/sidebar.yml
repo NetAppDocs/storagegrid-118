@@ -71,7 +71,7 @@ entries:
       url: "/tenant/viewing-s3-bucket-details.html"
     - title: Apply ILM policy tag to bucket
       url: "/tenant/ilm-policy-tags.html"
-    - title: Manage consistency setting
+    - title: Manage consistency settings
       url: "/tenant/manage-consistency-setting.html"
     - title: Enable or disable last access time updates
       url: "/tenant/enabling-or-disabling-last-access-time-updates.html"

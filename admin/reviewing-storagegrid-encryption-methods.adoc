@@ -34,7 +34,7 @@ NOTE: Managing encryption keys with a KMS is only supported for Storage Nodes an
 
 Existing stored objects aren't encrypted. Object metadata and other sensitive data aren't encrypted.
 
-
+[[bucket-encryption-table]]
 | S3 bucket encryption
 | You issue a PutBucketEncryption request to enable encryption for the bucket. Any new objects that aren't encrypted at the object level are encrypted during ingest.
 | Newly ingested S3 object data only.  

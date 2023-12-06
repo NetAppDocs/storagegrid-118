@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: how to manage bucket consistency, how to change bucket consistency, read after new write, read-after-new-write, strong site, strong-site, strong global, strong-global
 summary: 'Consistency values can be used to specify the availability of bucket setting changes as well as to provide a balance between the availability of the objects within a bucket and the consistency of those objects across different Storage Nodes and sites. You can change the consistency values to be different from the default values so that client applications can meet their operational needs.'
 ---
-= Manage a bucket's consistency setting
+= Manage bucket consistency settings
 :icons: font
 :imagesdir: ../media/
 
@@ -48,11 +48,11 @@ The bucket details page appears.
 
 . Select *Save changes*.
 
-== Change a bucket's consistency setting
+== How bucket settings affect consistency
 
 Buckets have multiple settings that affect the behavior of the buckets and the objects within those buckets. 
 
-The following bucket settings use *strong* consistency by default. Modifications to these settings might not be available when two or more Storage Nodes are not available within any site, or if a site is not available.
+The following bucket settings use *strong* consistency by default. If two or more Storage Nodes are not available within any site, or if a site is not available, any changes to these settings might not take effect for some time.
 
 * link:use-s3-console.html[Background empty bucket deletion]
 * link:../ilm/create-ilm-rule-define-placements.html[Last Access Time]
@@ -61,6 +61,7 @@ The following bucket settings use *strong* consistency by default. Modifications
 * link:../admin/what-is-autosupport.html[Bucket tagging]
 * link:changing-bucket-versioning.html[Bucket versioning]
 * link:using-s3-object-lock.html[S3 Object Lock]
+* link:admin/reviewing-storagegrid-encryption-methods.html#bucket-encryption-table[Bucket encryption]
 
 NOTE: The consistency value for bucket versioning, S3 Object Lock, and bucket encryption cannot be set to a value that is not strongly consistent.
 
@@ -68,9 +69,12 @@ The following bucket settings do not use strong consistency and have higher avai
 
 * link:what-platform-services-are.html[Platform services configuration: Notification, Replication, or Search integration]
 * link:configuring-cross-origin-resource-sharing-cors.html[CORS configuration]
-* <<change-bucket-consistency,Bucket consistency (change)>>
+* <<change-bucket-consistency,Change bucket consistency>>
 
-[[change-bucket-consistency]]To specify a different consistency value when changing a bucket setting:
+[[change-bucket-consistency]]
+== Change bucket consistency setting
+
+To specify a different consistency value when changing a bucket setting:
 
 * Use the Consistency-Control header on the s3 PUT interface for the bucket setting
 * Use the reducedConsistency or force options on the mgmt-api `PUT/org/containers/{bucketName}/{bucketSetting}`
