@@ -19,7 +19,7 @@ Consistency values can be used to specify the availability of bucket setting cha
 
 The bucket consistency is used to determine the consistency for client applications affecting objects within that S3 bucket. In general, you should use the *Read-after-new-write* consistency for your buckets.
 
-== [[change-bucket-consistency]]Change a bucket's consistency
+== [[change-bucket-consistency]]Change bucket consistency
 
 If the *Read-after-new-write* consistency does not meet the client application's requirements, you can change the consistency by setting the bucket consistency or by using the `Consistency-Control` header. The `Consistency-Control` header overrides the bucket consistency.
 
@@ -71,10 +71,4 @@ The following bucket settings do not use strong consistency and have higher avai
 * link:configuring-cross-origin-resource-sharing-cors.html[CORS configuration]
 * <<change-bucket-consistency,Change bucket consistency>>
 
-[[change-bucket-consistency]]
-== Change bucket consistency
-
-To specify a different consistency value when changing a bucket setting:
-
-* Use the Consistency-Control header on the s3 PUT interface for the bucket setting
-* Use the reducedConsistency or force options on the mgmt-api `PUT/org/containers/{bucketName}/{bucketSetting}`
+TIP: If the default consistency used when changing bucket settings does not meet the client application's requirements, you can change the consistency by using the `Consistency-Control` header for the link:../s3/put-bucket-consistency-request.html[S3 REST API] or by using the `reducedConsistency` or `force` options in the link:understanding-tenant-management-api.html[Tenant Management API].
