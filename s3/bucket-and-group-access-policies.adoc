@@ -102,7 +102,7 @@ In the following example, the statement is using the Effect, Principal, Action, 
 
 The bucket policy has a size limit of 20,480 bytes, and the group policy has a size limit of 5,120 bytes.
 
-== Consistency settings for policies
+== Consistency for policies
 
 By default, any updates you make to group policies are eventually consistent. When a group policy becomes consistent, the changes can take an additional 15 minutes to take effect, because of policy caching. By default, any updates you make to bucket policies are strongly consistent.
 
@@ -110,7 +110,7 @@ As required, you can change the consistency guarantees for bucket policy updates
 
 In this case, you can either set the `Consistency-Control` header in the PutBucketPolicy request, or you can use the PUT Bucket consistency request. When a bucket policy becomes consistent, the changes can take an additional 8 seconds to take effect, because of policy caching.
 
-NOTE: If you set the consistency setting to a different value to work around a temporary situation, be sure to set the bucket-level setting back to its original value when you are done. Otherwise, all future bucket requests will use the modified setting.
+NOTE: If you set the consistency to a different value to work around a temporary situation, be sure to set the bucket-level setting back to its original value when you are done. Otherwise, all future bucket requests will use the modified setting.
 
 == Use ARN in policy statements
 

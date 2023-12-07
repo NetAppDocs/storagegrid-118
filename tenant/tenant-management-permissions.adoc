@@ -54,7 +54,7 @@ You can only assign this permission to Swift groups from the Tenant Management A
 |
 *S3 tenants*: Allows users to use the Tenant Manager and the Tenant Management API to create and delete S3 buckets and to manage the settings for all S3 buckets in the tenant account, regardless of S3 bucket or group policies.
 
-*Swift tenants*: Allows Swift users to control the consistency setting for Swift containers using the Tenant Management API.
+*Swift tenants*: Allows Swift users to control the consistency for Swift containers using the Tenant Management API.
 | 
 Users who don't have either the View all buckets or the Manage all buckets permission don't see the *Buckets* menu option.
 

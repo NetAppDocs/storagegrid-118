@@ -2,16 +2,16 @@
 permalink: s3/put-bucket-consistency-request.html
 sidebar: sidebar
 keywords: S3 REST API, S3 operations, PUT bucket consistency request
-summary: 'The PUT Bucket consistency request allows you to specify the consistency setting to apply to operations performed on a bucket.'
+summary: 'The PUT Bucket consistency request allows you to specify the consistency to apply to operations performed on a bucket.'
 ---
 = PUT Bucket consistency
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-The PUT Bucket consistency request allows you to specify the consistency setting to apply to operations performed on a bucket.
+The PUT Bucket consistency request allows you to specify the consistency to apply to operations performed on a bucket.
 
-The default consistency settings are set to guarantee read-after-write for newly created objects.
+The default consistency is set to guarantee read-after-write for newly created objects.
 
 .Before you begin
 
@@ -41,7 +41,7 @@ The `x-ntap-sg-consistency` parameter must contain one of the following values:
 |Provides eventual consistency for both new objects and object updates. For S3 buckets, use only as required (for example, for a bucket that contains log values that are rarely read, or for HEAD or GET operations on keys that don't exist). Not supported for S3 FabricPool buckets.
 |===
 
-*Note:* In general, you should use the "Read-after-new-write" consistency setting. If requests aren't working correctly, change the application client behavior if possible. Or, configure the client to specify the consistency setting for each API request. Set the consistency setting at the bucket level only as a last resort.
+*Note:* In general, you should use the "Read-after-new-write" consistency. If requests aren't working correctly, change the application client behavior if possible. Or, configure the client to specify the consistency for each API request. Set the consistency at the bucket level only as a last resort.
 
 == Request example
 
@@ -55,4 +55,4 @@ Host: _host_
 
 .Related information
 
-link:consistency-controls.html[Consistency settings]
+link:consistency-controls.html[Consistency values]
