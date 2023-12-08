@@ -71,7 +71,7 @@ a|
 
 |===
 
-== Consistency control for compliance settings
+== Consistency for compliance settings
 
 When you update the compliance settings for an S3 bucket with a PUT Bucket compliance request, StorageGRID attempts to update the bucket's metadata across the grid. By default, StorageGRID uses the *Strong-global* consistency to guarantee that all data center sites and all Storage Nodes that contain bucket metadata have read-after-write consistency for the changed compliance settings.
 

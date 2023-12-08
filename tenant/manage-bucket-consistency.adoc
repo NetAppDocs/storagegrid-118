@@ -52,13 +52,13 @@ The bucket details page appears.
 
 Buckets have multiple settings that affect the behavior of the buckets and the objects within those buckets. 
 
-The following bucket settings use *strong* consistency by default. If two or more Storage Nodes are not available within any site, or if a site is not available, any changes to these settings won't be available.
+The following bucket settings use *strong* consistency by default. If two or more Storage Nodes are not available within any site, or if a site is not available, any changes to these settings might not be available.
 
 * link:deleting-s3-bucket-objects.html[Background empty bucket deletion]
 * link:enabling-or-disabling-last-access-time-updates.html[Last Access Time]
 * link:../s3/create-s3-lifecycle-configuration.html[Bucket lifecycle]
 * link:../s3/bucket-and-group-access-policies.html[Bucket policy]
-* link:../s3/bucket-and-group-access-policies.html[Bucket tagging]
+* link:../s3/operations-on-buckets.html[Bucket tagging]
 * link:changing-bucket-versioning.html[Bucket versioning]
 * link:using-s3-object-lock.html[S3 Object Lock]
 * link:../admin/reviewing-storagegrid-encryption-methods.html#bucket-encryption-table[Bucket encryption]
