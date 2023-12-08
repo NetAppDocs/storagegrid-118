@@ -68,7 +68,7 @@ CAUTION: The Recovery Package file must be secured because it contains encryptio
 
 . Select *Run prechecks*, and wait for the prechecks to complete. 
 
-. Review the details for each reported precheck and resolve any reported errors. See the https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/StorageGRID/StorageGRID_software_upgrade_resolution_guide[StorageGRID software upgrade resolution guide^] for the StorageGRID 11.8 release.
+. Review the details for each reported precheck and resolve any reported errors. See the https://kb.netapp.com/hybrid/StorageGRID/Maintenance/StorageGRID_11.8_software_upgrade_resolution_guide[StorageGRID software upgrade resolution guide^] for the StorageGRID 11.8 release.
 +
 You must resolve all precheck _errors_ before you can upgrade your system. However, you don't need to address precheck _warnings_ before upgrading.
 +
