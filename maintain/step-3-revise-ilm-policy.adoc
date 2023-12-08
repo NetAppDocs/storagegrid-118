@@ -44,9 +44,12 @@ Contact technical support if you need assistance designing the new policy.
 
 . If no policies are listed, select *Next* to go to link:step-4-remove-ilm-references.html[Step 4: Remove ILM References].
 
-. If one or more ILM policies are listed in the table, select the link for each policy in the Policy Name column.
+. If one or more ILM policies are listed in the table, decide if you want to remove the policy or edit the policy so it no longer references the site being decommissioned.
+
+. For each policy you need to remove or edit:
+.. Select the link for the policy in the Policy Name column.
 +
-The ILM policy details page for the policy appears in a new browser tab. Use this tab to update ILM. The Decommission Site page will remain open on the other tab.
+The ILM policy details page for the policy appears in a new browser tab. The Decommission Site page will remain open on the other tab.
 
 .. If necessary, select *ILM* > *Storage pools* to create one or more storage pools that don't refer to the site.
 
@@ -55,6 +58,13 @@ The ILM policy details page for the policy appears in a new browser tab. Use thi
 You must select storage pools that don't refer to the site.
 +
 NOTE: Don't use the *All Storage Nodes* storage pool (StorageGRID 11.6 and earlier) in the erasure-coding profiles.
+
+.. Remove or edit the policy:
++
+* link:../ilm/working-with-ilm-rules-and-ilm-policies.html#remove-ilm-policy[Follow the instructions to remove a policy].
+* link:../ilm/working-with-ilm-rules-and-ilm-policies.html#edit-ilm-policy[Follow the instructions to edit a policy].
+
+.. Repeat these steps for each policy in the list.
 
 . Select *ILM* > *Rules* and clone each of the rules listed in the table for Step 3 (Revise ILM Policies).
 .. Use names that will make it easy to select these rules in a new policy.
