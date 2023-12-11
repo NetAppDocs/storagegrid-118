@@ -15,13 +15,13 @@ You can use the Tenant Manager to delete one or more S3 buckets that are empty.
 
 * You are signed in to the Tenant Manager using a link:../admin/web-browser-requirements.html[supported web browser].
 * You belong to a user group that has the link:tenant-management-permissions.html[Manage all buckets or Root access permission]. These permissions override the permissions settings in group or bucket policies.
-* The buckets you want to delete are empty.
+* The buckets you want to delete are empty. If buckets you want to delete are _not_ empty, link:../tenant/deleting-s3-bucket-objects.html[delete objects from the bucket].
 
 .About this task
 
 These instructions describe how to delete an S3 bucket using the Tenant Manager. You can also delete S3 buckets using the link:understanding-tenant-management-api.html[Tenant Management API] or the link:../s3/operations-on-buckets.html[S3 REST API].
 
-You can't delete an S3 bucket if it contains objects, noncurrent object versions, or delete markers. For buckets created in StorageGRID 11.8 or later, the number of delete markers can be seen using the storagegrid_deletemarker_objects metric (see https://prometheus.io/docs/prometheus/latest/querying/basics/[Querying Prometheus^] for information about using this metric). For information about how S3 versioned objects are deleted, see link:../ilm/how-objects-are-deleted.html[How objects are deleted].
+You can't delete an S3 bucket if it contains objects, noncurrent object versions, or delete markers. For information about how S3 versioned objects are deleted, see link:../ilm/how-objects-are-deleted.html[How objects are deleted].
 
 .Steps
 
@@ -55,4 +55,4 @@ The Buckets page appears and shows all existing S3 buckets.
 +
 StorageGRID confirms that each bucket is empty and then deletes each bucket. This operation might take a few minutes.
 +
-If a bucket is not empty, an error message appears. You must delete all objects and any delete markers in the bucket before you can delete the bucket.
+If a bucket is not empty, an error message appears. You must link:../tenant/deleting-s3-bucket-objects.html[delete all objects and any delete markers in the bucket] before you can delete the bucket.
