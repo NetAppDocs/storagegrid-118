@@ -21,7 +21,7 @@ StorageGRID can't decommission a site if any ILM rule in any policy (active or i
 
 If an ILM policy refers to the site you want to remove, you must either:
 
-* Edit each inactive policy so that it:
+* Edit each _inactive_ policy so that it:
 
 ** Fully protects all object data.
 ** Doesn't refer to the site you're decommissioning.
@@ -29,7 +29,7 @@ If an ILM policy refers to the site you want to remove, you must either:
 ** Doesn't use an erasure-coding profile that refers to the site.
 ** Doesn't use the Make 2 Copies rule from StorageGRID 11.6 or earlier installations.
 
-* Remove each active policy and create new policies that don't refer to the site you're decommissioning. Before you remove an active policy, you can clone it to more easily create a new policy.
+* Remove each _active_ policy and create new policies that don't refer to the site you're decommissioning. Before you remove an active policy, you can clone it to more easily create a new policy.
 
 CAUTION: Never create a single-copy ILM rule to accommodate the removal of a site. An ILM rule that creates only one replicated copy for any time period puts data at risk of permanent loss. If only one replicated copy of an object exists, that object is lost if a Storage Node fails or has a significant error. You also temporarily lose access to the object during maintenance procedures such as upgrades.
 
@@ -43,7 +43,7 @@ Contact technical support if you need assistance designing a new policy.
 
 . If no policies are listed, select *Next* to go to link:step-4-remove-ilm-references.html[Step 4: Remove ILM References].
 
-. If one or more ILM policies are listed in the table, decide if you want to remove the policy or edit the policy so it no longer references the site being decommissioned.
+. If one or more ILM policies are listed in the table, decide if you need to remove the policy or edit the policy so it no longer references the site being decommissioned.
 
 . For each _inactive_ policy:
 .. Select the link for the policy in the Policy Name column.
@@ -55,17 +55,7 @@ The ILM policy details page for the policy appears in a new browser tab. The Dec
 * link:../ilm/working-with-ilm-rules-and-ilm-policies.html#remove-ilm-policy[Follow the instructions to remove a policy].
 * link:../ilm/working-with-ilm-rules-and-ilm-policies.html#edit-ilm-policy[Follow the instructions to edit a policy].
 
-.. Repeat these steps for each policy in the list.
-
-. For each _inactive_ policy:
-.. Select the link for the policy in the Policy Name column.
-+
-The ILM policy details page for the policy appears in a new browser tab. The Decommission Site page will remain open on the other tab.
-.. Remove or edit the policy:
-+
-* link:../ilm/working-with-ilm-rules-and-ilm-policies.html#remove-ilm-policy[Follow the instructions to remove a policy].
-* link:../ilm/working-with-ilm-rules-and-ilm-policies.html#edit-ilm-policy[Follow the instructions to edit a policy].
-.. Repeat these steps for each active policy in the list.
+.. Repeat these steps for each inactive policy in the list.
 
 . For each _active_ policy:
 .. Select *ILM* > *Policies* and create a new policy that uses the new rules.
