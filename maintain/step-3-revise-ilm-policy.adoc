@@ -21,22 +21,21 @@ StorageGRID can't decommission a site if any ILM rule in any policy (active or i
 
 If an ILM policy refers to the site you want to remove, you must either:
 
-* Remove the policy.
-+
-or
-* Edit the policy so that it:
+* Edit each inactive policy so that it:
 
 ** Fully protects all object data.
 ** Doesn't refer to the site you're decommissioning.
 ** Doesn't use a storage pool that refers to the site or uses the All Sites option.
 ** Doesn't use an erasure-coding profile that refers to the site.
 ** Doesn't use the Make 2 Copies rule from StorageGRID 11.6 or earlier installations.
-+
+
+* Remove each active policy and create new policies that don't refer to the site you're decommissioning. Before you remove an active policy, you can clone it to more easily create a new policy.
+
 CAUTION: Never create a single-copy ILM rule to accommodate the removal of a site. An ILM rule that creates only one replicated copy for any time period puts data at risk of permanent loss. If only one replicated copy of an object exists, that object is lost if a Storage Node fails or has a significant error. You also temporarily lose access to the object during maintenance procedures such as upgrades.
 
-If you are performing a _connected site decommission_, you must consider how StorageGRID should manage the object data currently at the site you want to remove. Depending on your data protection requirements, the new rules can move existing object data to different sites or they can delete any extra object copies that are no longer needed.
+TIP: If you're performing a _connected site decommission_, you must consider how StorageGRID should manage the object data currently at the site you want to remove. Depending on your data protection requirements, the new rules can move existing object data to different sites or they can delete any extra object copies that are no longer needed.
 
-Contact technical support if you need assistance designing the new policy.
+Contact technical support if you need assistance designing a new policy.
 
 .Steps
 
@@ -46,18 +45,10 @@ Contact technical support if you need assistance designing the new policy.
 
 . If one or more ILM policies are listed in the table, decide if you want to remove the policy or edit the policy so it no longer references the site being decommissioned.
 
-. For each policy you need to remove or edit:
+. For each _inactive_ policy:
 .. Select the link for the policy in the Policy Name column.
 +
 The ILM policy details page for the policy appears in a new browser tab. The Decommission Site page will remain open on the other tab.
-
-.. If necessary, select *ILM* > *Storage pools* to create one or more storage pools that don't refer to the site.
-
-.. If you plan to use erasure coding, select *ILM* > *Erasure coding* to create one or more erasure-coding profiles.
-+
-You must select storage pools that don't refer to the site.
-+
-NOTE: Don't use the *All Storage Nodes* storage pool (StorageGRID 11.6 and earlier) in the erasure-coding profiles.
 
 .. Remove or edit the policy:
 +
@@ -66,15 +57,18 @@ NOTE: Don't use the *All Storage Nodes* storage pool (StorageGRID 11.6 and earli
 
 .. Repeat these steps for each policy in the list.
 
-. Select *ILM* > *Rules* and clone each of the rules listed in the table for Step 3 (Revise ILM Policies).
-.. Use names that will make it easy to select these rules in a new policy.
-.. Update the placement instructions.
+. For each _inactive_ policy:
+.. Select the link for the policy in the Policy Name column.
 +
-Remove any storage pools or erasure-coding profiles that refer to the site and replace them with new storage pools or erasure-coding profiles.
+The ILM policy details page for the policy appears in a new browser tab. The Decommission Site page will remain open on the other tab.
+.. Remove or edit the policy:
 +
-NOTE: Don't use the *All Storage Nodes* storage pool in the new rules.
+* link:../ilm/working-with-ilm-rules-and-ilm-policies.html#remove-ilm-policy[Follow the instructions to remove a policy].
+* link:../ilm/working-with-ilm-rules-and-ilm-policies.html#edit-ilm-policy[Follow the instructions to edit a policy].
+.. Repeat these steps for each active policy in the list.
 
-. Select *ILM* > *Policies* and create a new policy that uses the new rules.
+. For each _active_ policy:
+.. Select *ILM* > *Policies* and create a new policy that uses the new rules.
 .. Select the active policy, and select *Clone*.
 .. Specify a policy name and a reason for change.
 .. Select rules for the cloned policy.
@@ -115,3 +109,14 @@ NOTE: If any rules are listed, you must create and activate a new ILM policy bef
 . If no rules are listed, select *Next*.
 +
 Step 4 (Remove ILM References) appears.
+
+
+.Do we need these steps?
+
+If necessary, select *ILM* > *Storage pools* to create one or more storage pools that don't refer to the site.
+
+If you plan to use erasure coding, select *ILM* > *Erasure coding* to create one or more erasure-coding profiles.
+
+You must select storage pools that don't refer to the site.
+
+NOTE: Don't use the *All Storage Nodes* storage pool (StorageGRID 11.6 and earlier) in the erasure-coding profiles.
