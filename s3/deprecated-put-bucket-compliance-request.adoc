@@ -71,19 +71,19 @@ a|
 
 |===
 
-== Consistency control for compliance settings
+== Consistency for compliance settings
 
-When you update the compliance settings for an S3 bucket with a PUT Bucket compliance request, StorageGRID attempts to update the bucket's metadata across the grid. By default, StorageGRID uses the *Strong-global* consistency setting to guarantee that all data center sites and all Storage Nodes that contain bucket metadata have read-after-write consistency for the changed compliance settings.
+When you update the compliance settings for an S3 bucket with a PUT Bucket compliance request, StorageGRID attempts to update the bucket's metadata across the grid. By default, StorageGRID uses the *Strong-global* consistency to guarantee that all data center sites and all Storage Nodes that contain bucket metadata have read-after-write consistency for the changed compliance settings.
 
-If StorageGRID can't achieve the *Strong-global* consistency setting because a data center site or multiple Storage Nodes at a site are unavailable, the HTTP status code for the response is `503 Service Unavailable.`
+If StorageGRID can't achieve the *Strong-global* consistency because a data center site or multiple Storage Nodes at a site are unavailable, the HTTP status code for the response is `503 Service Unavailable.`
 
-If you receive this response, you must contact the grid administrator to ensure that the required storage services are made available as soon as possible. If the grid administrator is unable to make enough of the Storage Nodes at each site available, technical support might direct you to retry the failed request by forcing the *Strong-site* consistency setting.
+If you receive this response, you must contact the grid administrator to ensure that the required storage services are made available as soon as possible. If the grid administrator is unable to make enough of the Storage Nodes at each site available, technical support might direct you to retry the failed request by forcing the *Strong-site* consistency.
 
-CAUTION: Never force the *Strong-site* consistency setting for PUT bucket compliance unless you have been directed to do so by technical support and unless you understand the potential consequences of using this level.
+CAUTION: Never force the *Strong-site* consistency for PUT bucket compliance unless you have been directed to do so by technical support and unless you understand the potential consequences of using this level.
 
-When the consistency setting is reduced to *Strong-site*, StorageGRID guarantees that updated compliance settings will have read-after-write consistency only for client requests within a site. This means that the StorageGRID system might temporarily have multiple, inconsistent settings for this bucket until all sites and Storage Nodes are available. The inconsistent settings can result in unexpected and undesired behavior. For example, if you are placing a bucket under a legal hold and you force a lower consistency setting, the bucket's previous compliance settings (that is, legal hold off) might continue to be in effect at some data center sites. As a result, objects that you think are on legal hold might be deleted when their retention period expires, either by the user or by AutoDelete, if enabled.
+When the consistency is reduced to *Strong-site*, StorageGRID guarantees that updated compliance settings will have read-after-write consistency only for client requests within a site. This means that the StorageGRID system might temporarily have multiple, inconsistent settings for this bucket until all sites and Storage Nodes are available. The inconsistent settings can result in unexpected and undesired behavior. For example, if you are placing a bucket under a legal hold and you force a lower consistency, the bucket's previous compliance settings (that is, legal hold off) might continue to be in effect at some data center sites. As a result, objects that you think are on legal hold might be deleted when their retention period expires, either by the user or by AutoDelete, if enabled.
 
-To force the use of the *Strong-site* consistency setting, reissue the PUT Bucket compliance request and include the `Consistency-Control` HTTP request header, as follows:
+To force the use of the *Strong-site* consistency, reissue the PUT Bucket compliance request and include the `Consistency-Control` HTTP request header, as follows:
 
 ----
 PUT /mybucket/?x-ntap-sg-compliance HTTP/1.1
