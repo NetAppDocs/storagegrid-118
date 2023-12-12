@@ -13,7 +13,7 @@ There are operations added on to the Swift REST API that are specific to Storage
 
 == GET container consistency request
 
-link:../s3/consistency-controls.html[Consistency settings] provide a balance between the availability of the objects and the consistency of those objects across different Storage Nodes and sites. The GET container consistency request allows you to determine the consistency setting being applied to a particular container.
+link:../s3/consistency-controls.html[Consistency values] provide a balance between the availability of the objects and the consistency of those objects across different Storage Nodes and sites. The GET container consistency request allows you to determine the consistency being applied to a particular container.
 
 === Request
 
@@ -59,7 +59,7 @@ m| Content-Length
 | The length of the response body.
 
 m| x-ntap-sg-consistency
-| The consistency setting level being applied to the container. The following values are supported:
+| The consistency being applied to the container. The following values are supported:
 
 *All*: All nodes receive the data immediately or the request will fail.
 
@@ -85,7 +85,7 @@ x-ntap-sg-consistency: strong-site
 
 == PUT container consistency request
 
-The PUT container consistency request allows you to specify the consistency setting to apply to operations performed on a container. By default, new containers are created using the "Read-after-new-write" consistency setting.
+The PUT container consistency request allows you to specify the consistency to apply to operations performed on a container. By default, new containers are created using the "Read-after-new-write" consistency.
 
 === Request
 
@@ -97,7 +97,7 @@ m| X-Auth-Token
 | The Swift authentication token for the account to use for the request.
 
 m| x-ntap-sg-consistency
-| The consistency setting level to apply to operations on the container. The following values are supported:
+| The consistency to apply to operations on the container. The following values are supported:
 
 *All*: All nodes receive the data immediately or the request will fail.
 
@@ -113,15 +113,15 @@ m| x-ntap-sg-consistency
 |The hostname to which the request is directed.
 |===
 
-=== How consistency settings and ILM rules interact to affect data protection
+=== How consistency and ILM rules interact to affect data protection
 
-Both your choice of link:../s3/consistency-controls.html[consistency setting] and your ILM rule affect how objects are protected. These settings can interact.
+Both your choice of link:../s3/consistency-controls.html[consistency value] and your ILM rule affect how objects are protected. These settings can interact.
 
-For example, the consistency setting used when an object is stored affects the initial placement of object metadata, while the link:../ilm/what-ilm-rule-is.html#ilm-rule-ingest-behavior[ingest behavior] selected for the ILM rule affects the initial placement of object copies. Because StorageGRID requires access to both an object's metadata and its data to fulfill client requests, selecting matching levels of protection for the consistency setting and ingest behavior can provide better initial data protection and more predictable system responses.
+For example, the consistency used when an object is stored affects the initial placement of object metadata, while the link:../ilm/what-ilm-rule-is.html#ilm-rule-ingest-behavior[ingest behavior] selected for the ILM rule affects the initial placement of object copies. Because StorageGRID requires access to both an object's metadata and its data to fulfill client requests, selecting matching levels of protection for the consistency and ingest behavior can provide better initial data protection and more predictable system responses.
 
-=== Example of how consistency setting and ILM rule can interact
+=== Example of how consistency and ILM rules can interact
 
-Suppose you have a two-site grid with the following ILM rule and the following consistency setting:
+Suppose you have a two-site grid with the following ILM rule and the following consistency:
 
 * *ILM rule*: Create two object copies, one at the local site and one at a remote site. The Strict ingest behavior is selected.
 * **: "Strong-global" (Object metadata is immediately distributed to all sites.)
@@ -130,9 +130,9 @@ When a client stores an object to the grid, StorageGRID makes both object copies
 
 The object is fully protected against loss at the time of the ingest successful message. For example, if the local site is lost shortly after ingest, copies of both the object data and the object metadata still exist at the remote site. The object is fully retrievable.
 
-If you instead used the same ILM rule and the "Strong-site" consistency setting, the client might receive a success message after object data is replicated to the remote site but before object metadata is distributed there. In this case, the level of protection of object metadata does not match the level of protection for object data. If the local site is lost shortly after ingest, object metadata is lost. The object can't be retrieved.
+If you instead used the same ILM rule and the "Strong-site" consistency, the client might receive a success message after object data is replicated to the remote site but before object metadata is distributed there. In this case, the level of protection of object metadata does not match the level of protection for object data. If the local site is lost shortly after ingest, object metadata is lost. The object can't be retrieved.
 
-The inter-relationship between consistency settings and ILM rules can be complex. Contact NetApp if you require assistance.
+The inter-relationship between consistency and ILM rules can be complex. Contact NetApp if you require assistance.
 
 === Request example
 

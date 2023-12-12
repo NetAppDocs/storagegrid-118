@@ -19,6 +19,8 @@ If you want to change the configuration of StorageGRID AutoSupport, make your ch
 * You have the link:admin-group-permissions.html[Root access permission].
 * If you will use HTTPS for sending AutoSupport packages, you have provided outbound internet access to the primary Admin Node, either directly or link:configuring-admin-proxy-settings.html[using a proxy server] (inbound connections not required).
 * If HTTP is selected on the StorageGRID AutoSupport page, you have configured a proxy server to forward AutoSupport packages as HTTPS. NetApp's AutoSupport servers will reject packages sent using HTTP.
++
+link:configuring-admin-proxy-settings.html[Learn about configuring admin proxy settings].
 
 * If you will use SMTP as the protocol for AutoSupport packages, you have configured an SMTP mail server. The same mail server configuration is used for alarm email notifications (legacy system).
 
@@ -167,3 +169,5 @@ StorageGRID AutoSupport does not report hardware issues, such as DIMM or host in
 .Related information
 
 https://mysupport.netapp.com/site/global/dashboard[NetApp Support^]
+
+// 2023 NOV 21, SGRIDDOC-29
