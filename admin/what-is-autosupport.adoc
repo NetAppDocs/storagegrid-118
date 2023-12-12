@@ -87,7 +87,7 @@ Swift Write ACL Configuration +
 Bucket Tagging Enabled +
 Bucket Tagging Configuration +
 Versioning Configuration
-| Provides configuration details and statistics at the bucket level. Example of bucket configurations include platform services, compliance, and bucket consistency setting.
+| Provides configuration details and statistics at the bucket level. Example of bucket configurations include platform services, compliance, and bucket consistency.
 
 | GRID-CONFIGURATIONS.XML
 | Attribute ID +

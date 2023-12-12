@@ -64,7 +64,7 @@ The bucket details page appears. From this page, you can perform the following t
 
 * Configure and manage bucket options:
 ** link:ilm-policy-tags.html[ILM policy tags]
-** link:changing-consistency-level.html[Consistency setting]
+** link:manage-bucket-consistency.html[Manage bucket consistency]
 ** link:enabling-or-disabling-last-access-time-updates.html[Last access time updates]
 ** link:changing-bucket-versioning.html[Object versioning]
 ** link:using-s3-object-lock.html[S3 Object Lock]
