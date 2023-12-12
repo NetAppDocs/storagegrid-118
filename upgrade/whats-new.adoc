@@ -19,8 +19,8 @@ This release of StorageGRID introduces the following features and functional cha
 * New tenant permission: View all buckets
 * Manage drives tab (Nodes page) for SG6100 appliances
 
-=== Configurable default consistency setting
-You can change the link:../s3/consistency-controls.html[grid-wide default consistency setting] using the Grid Manager (*CONFIGURATION* > *Storage settings* > *Default bucket consistency*) or the grid-config endpoint of the link:../admin/using-grid-management-api.html[Grid Management private API]. The new default will be applied to buckets created after the change.
+=== Configurable default consistency
+You can change the link:../s3/consistency-controls.html[grid-wide default consistency] using the Grid Manager (*CONFIGURATION* > *Storage settings* > *Default bucket consistency*) or the grid-config endpoint of the link:../admin/using-grid-management-api.html[Grid Management private API]. The new default will be applied to buckets created after the change.
 
 === Rolling reboot procedure
 You can use the link:../maintain/rolling-reboot-procedure.html[rolling reboot procedure] to reboot multiple grid nodes without causing a service disruption.
