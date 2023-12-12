@@ -87,8 +87,8 @@ For example, if an erasure-coding profile exists for 4+2 erasure coding, at leas
 
 | For each affected erasure-coding profile, perform one of the following steps, based on how the profile is being used:
 
- * *Used in the active ILM policy*: Perform an expansion. Add enough new Storage Nodes to allow erasure coding to continue. See the instructions for link:../expand/index.html[expanding your grid].
- * *Used in an ILM rule but not in the active ILM policy*: Edit or delete the rule and then deactivate the erasure-coding profile.
+ * *Used in active ILM policies*: Perform an expansion. Add enough new Storage Nodes to allow erasure coding to continue. See the instructions for link:../expand/index.html[expanding your grid].
+ * *Used in an ILM rule but not in active ILM policies*: Edit or delete the rule and then deactivate the erasure-coding profile.
  * *Not used in any ILM rule*: Deactivate the erasure-coding profile.
 
 *Note:* An error message appears if you attempt to deactivate an erasure-coding profile and object data is still associated with the profile. You might need to wait several weeks before trying the deactivation process again.

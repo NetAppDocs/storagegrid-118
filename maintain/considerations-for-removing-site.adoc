@@ -72,7 +72,7 @@ If you are performing a connected site decommission, you must decide what to do 
 
 * Move object data from the selected site to one or more other sites in your grid.
 +
-*Example for moving data*: Suppose you want to decommission a site in Raleigh because you added a new site in Sunnyvale. In this example, you want to move all object data from the old site to the new site. Before updating your ILM rules and ILM policy, you must review the capacity at both sites. You must ensure that the Sunnyvale site has enough capacity to accommodate the object data from the Raleigh site and that adequate capacity will remain in Sunnyvale for future growth.
+*Example for moving data*: Suppose you want to decommission a site in Raleigh because you added a new site in Sunnyvale. In this example, you want to move all object data from the old site to the new site. Before updating your ILM rules and ILM policies, you must review the capacity at both sites. You must ensure that the Sunnyvale site has enough capacity to accommodate the object data from the Raleigh site and that adequate capacity will remain in Sunnyvale for future growth.
 +
 NOTE: To ensure that adequate capacity is available, you might need to link:../expand/index.html[expand a grid] by adding storage volumes or Storage Nodes to an existing site or adding a new site before you perform this procedure.
 
@@ -94,7 +94,7 @@ NOTE: You can complete Steps 1-4 of the Decommission Site wizard if one or more 
 link:../expand/index.html[expand a grid] to add an equivalent new node at another site. Be sure clients can connect to the replacement node before starting the site decommission procedure.
 * If the site you plan to remove contains any Gateway Node or Admin Nodes that are in an high availability (HA) group, you can complete Steps 1-4 of the Decommission Site wizard. However, you can't complete Step 5 of the wizard, which starts the decommission process, until you remove these nodes from all HA groups. If existing clients connect to an HA group that includes nodes from the site, you must ensure they can continue to connect to StorageGRID after the site is removed.
 * If clients connect directly to Storage Nodes at the site you are planning to remove, you must ensure that they can connect to Storage Nodes at other sites before starting the site decommission procedure.
-* You must provide sufficient space on the remaining sites to accommodate any object data that will be moved because of changes to the active ILM policy. In some cases, you might need to link:../expand/index.html[expand a grid] by adding Storage Nodes, storage volumes, or new sites before you can complete a connected site decommission.
+* You must provide sufficient space on the remaining sites to accommodate any object data that will be moved because of changes to any active ILM policy. In some cases, you might need to link:../expand/index.html[expand a grid] by adding Storage Nodes, storage volumes, or new sites before you can complete a connected site decommission.
 * You must allow adequate time for the decommission procedure to complete. StorageGRID ILM processes might take days, weeks, or even months to move or delete object data from the site before the site can be decommissioned.
 +
 NOTE: Moving or deleting object data from a site might take days, weeks, or even months, depending on the amount of data at the site, the load on your system, network latencies, and the nature of the required ILM changes.

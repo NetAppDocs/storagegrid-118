@@ -120,25 +120,25 @@ The credentials that you supply must have write permissions for the destination 
 [cols="1a,2a,2a" options="header"]
 |===
 | Authentication type| Description| Credentials
-|Anonymous
-|Provides anonymous access to the destination. Only works for endpoints that have security disabled.
-|No authentication.
+| Anonymous
+| Provides anonymous access to the destination. Only works for endpoints that have security disabled.
+| No authentication.
 
-|Access Key
-|Uses AWS-style credentials to authenticate connections with the destination.
+| Access Key
+| Uses AWS-style credentials to authenticate connections with the destination.
 |
 * Access key ID
 * Secret access key
 
-|Basic HTTP
-|Uses a username and password to authenticate connections to the destination.
+| Basic HTTP
+| Uses a username and password to authenticate connections to the destination.
 |
 * Username
 * Password
 
 
-|CAP (C2S Access Portal)
-|Uses certificates and keys to authenticate connections to the destination.
+| CAP (C2S Access Portal)
+| Uses certificates and keys to authenticate connections to the destination.
 |
 * Temporary credentials URL
 * Server CA certificate (PEM file upload)
@@ -157,25 +157,25 @@ The credentials that you supply must have write permissions for the destination 
 [cols="1a,2a,2a" options="header"]
 |===
 | Authentication type| Description| Credentials
-|Anonymous
-|Provides anonymous access to the destination. Only works for endpoints that have security disabled.
-|No authentication.
+| Anonymous
+| Provides anonymous access to the destination. Only works for endpoints that have security disabled.
+| No authentication.
 
-|SASL/PLAIN
-|Uses a username and password with plain text to authenticate connections to the destination.
-|
+| SASL/PLAIN
+| Uses a username and password with plain text to authenticate connections to the destination.
+| 
 * Username
 * Password
 
-|SASL/SCRAM-SHA-256:
-|Uses a username and password using a challenge-response protocol and SHA-256 hashing to authenticate connections to the destination.
-|
+| SASL/SCRAM-SHA-256
+| Uses a username and password using a challenge-response protocol and SHA-256 hashing to authenticate connections to the destination.
+| 
 * Username
 * Password
 
-|SASL/SCRAM-SHA-512
-|Uses a username and password using a challenge-response protocol and SHA-512 hashing to authenticate connections to the destination.
-|
+| SASL/SCRAM-SHA-512
+| Uses a username and password using a challenge-response protocol and SHA-512 hashing to authenticate connections to the destination.
+| 
 * Username
 * Password
 |===
@@ -192,14 +192,14 @@ image::../media/endpoint_create_verify_server.png[Create Endpoint - Validate Cer
 [cols="1a,2a" options="header"]
 |===
 | Type of certificate verification| Description
-a|Use custom CA certificate
-a|Use a custom security certificate. If you select this setting, copy and paste the custom security certificate in the *CA Certificate* text box.
+| Use custom CA certificate
+| Use a custom security certificate. If you select this setting, copy and paste the custom security certificate in the *CA Certificate* text box.
 
-a|Use operating system CA certificate
-a|Use the default Grid CA certificate installed on the operating system to secure connections.
+| Use operating system CA certificate
+| Use the default Grid CA certificate installed on the operating system to secure connections.
 
-a|Do not verify certificate
-a|The certificate used for the TLS connection is not verified. This option is not secure.
+| Do not verify certificate
+| The certificate used for the TLS connection is not verified. This option is not secure.
 |===
 
 . Select *Test and create endpoint*.
