@@ -50,9 +50,9 @@ Contact technical support if you need assistance designing a new policy.
 +
 The ILM policy details page for the policy appears in a new browser tab. The Decommission Site page will remain open on the other tab.
 
-.. To edit the policy, link:../ilm/working-with-ilm-rules-and-ilm-policies.html#edit-ilm-policy[follow the steps to edit a policy]. Create or select storage pools that don't refer to the site.
+.. To edit an _inactive_ policy, link:../ilm/working-with-ilm-rules-and-ilm-policies.html#edit-ilm-policy[follow the steps to edit a policy]. Create or select storage pools that don't refer to the site.
 
-.. To remove an active policy, first clone it by selecting *Clone*. Then link:../ilm/creating-ilm-policy.html[follow the steps for creating an ILM policy]. Also follow these guidelines:
+.. To remove an _active_ policy, first clone it by selecting *Clone*. Then link:../ilm/creating-ilm-policy.html[follow the steps for creating an ILM policy]. Also follow these guidelines:
 
 *** Clear all rules listed for Step 3 (Revise ILM Policies) of the Decommission Site page.
 *** Create and select a default rule and other rules that don't refer to the site. See link:../ilm/creating-default-ilm-rule.html[Create default ILM rule] and link:../ilm/what-ilm-rule-is.html[Create ILM rule].
