@@ -44,16 +44,17 @@ Contact technical support if you need assistance designing a new policy.
 
 . If no policies are listed, select *Next* to go to link:step-4-remove-ilm-references.html[Step 4: Remove ILM References].
 
-. If one or more ILM policies are listed, decide if you need to edit the policy, so it no longer references the site being decommissioned, or remove the policy.
+. If one or more active ILM policies are listed, clone each existing policy or create new policies that don't reference the site being decommissioned:
 
 .. Select the link for the policy in the Policy Name column.
 +
 The ILM policy details page for the policy appears in a new browser tab. The Decommission Site page will remain open on the other tab.
 
-.. To edit an _inactive_ policy, link:../ilm/working-with-ilm-rules-and-ilm-policies.html#edit-ilm-policy[follow the steps to edit a policy]. Create or select storage pools that don't refer to the site.
+.. Follow these guidelines and instructions as needed.
 
-.. To remove an _active_ policy, first clone it by selecting *Clone*. Then link:../ilm/creating-ilm-policy.html[follow the steps for creating an ILM policy]. Also follow these guidelines:
+* To clone a policy, 
 
+* To edit a policy, link:../ilm/working-with-ilm-rules-and-ilm-policies.html#edit-ilm-policy[follow the steps to edit a policy].
 *** Clear all rules listed for Step 3 (Revise ILM Policies) of the Decommission Site page.
 *** Create and select a default rule and other rules that don't refer to the site. See link:../ilm/creating-default-ilm-rule.html[Create default ILM rule] and link:../ilm/what-ilm-rule-is.html[Create ILM rule].
 *** link:../ilm/working-with-ilm-rules-and-ilm-policies.html[Edit or replace rules] that refer to the site.
@@ -75,6 +76,9 @@ CAUTION: When you activate a new ILM policy, StorageGRID uses it to manage all o
 If you are performing a connected site decommission, StorageGRID begins to remove object data from the selected site as soon as you activate the new ILM policy. Moving or deleting all object copies might take weeks. Although you can safely start a site decommission while object data still exists at the site, the decommission procedure will complete more quickly and with fewer disruptions and performance impacts if you allow data to be moved from the site before starting the actual decommission procedure (by selecting *Start Decommission* in Step 5 of the wizard).
 
 . For each policy you want to remove:
+
+// * To remove a policy, first clone it by selecting *Clone*. Then link:../ilm/creating-ilm-policy.html[follow the steps for creating an ILM policy]. Also follow these guidelines:
+
 .. Select the link for the policy in the Policy Name column.
 +
 The ILM policy details page for the policy appears in a new browser tab. The Decommission Site page will remain open on the other tab.
