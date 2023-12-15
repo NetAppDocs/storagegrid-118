@@ -47,19 +47,18 @@ The ILM policy details page for the policy appears in a new browser tab. The Dec
 
 .. Follow these guidelines and instructions as needed:
 
-* Work with ILM policies:
-** link:../ilm/working-with-ilm-rules-and-ilm-policies.html#clone-ilm-policy[Clone an ILM policy].
-** link:../ilm/creating-ilm-policy.html[Create an ILM policy].
-
 * Work with ILM rules:
-** Clear all rules listed for Step 3 (Revise ILM Policies) of the Decommission Site page.
-** Create and select a default rule and other rules that don't refer to the site. See link:../ilm/creating-default-ilm-rule.html[Create default ILM rule] and link:../ilm/what-ilm-rule-is.html[Create ILM rule].
-** link:../ilm/working-with-ilm-rules-and-ilm-policies.html[Edit or replace rules] that refer to the site.
 ** link:../ilm/creating-storage-pool.html[Create one or more storage pools] that don't refer to the site.
+** link:../ilm/working-with-ilm-rules-and-ilm-policies.html[Edit or replace rules] that refer to the site.
 +
 NOTE: Don't select the *Make 2 Copies* rule because that rule uses the *All Storage Nodes* storage pool, which is not allowed.
 +
 CAUTION: You must confirm that the ILM rules are in the correct order. When the policy is activated, new and existing objects are evaluated by the rules in the order listed, starting at the top.
+
+* Work with ILM policies:
+** link:../ilm/working-with-ilm-rules-and-ilm-policies.html#clone-ilm-policy[Clone an ILM policy].
+** link:../ilm/creating-ilm-policy.html[Create an ILM policy].
+** Select a default rule and other rules that don't refer to the site. See link:../ilm/creating-default-ilm-rule.html[Create default ILM rule] and link:../ilm/what-ilm-rule-is.html[Create ILM rule].
 
 .. Ingest test objects and simulate the policy to ensure that the correct rules are applied.
 +
@@ -75,8 +74,8 @@ If you are performing a connected site decommission, StorageGRID begins to remov
 
 . For each _inactive_ policy, edit or remove it by first selecting the link for each policy as described in the previous steps.
 +
-* link:../ilm/working-with-ilm-rules-and-ilm-policies.html#edit-ilm-policy[Edit a policy]
-* link:../ilm/working-with-ilm-rules-and-ilm-policies.html#remove-ilm-policy[Remove a policy]
+* link:../ilm/working-with-ilm-rules-and-ilm-policies.html#edit-ilm-policy[Edit the policy] so it doesn't refer to the site to be decommissioned.
+* link:../ilm/working-with-ilm-rules-and-ilm-policies.html#remove-ilm-policy[Remove a policy].
 
 .	When you finish making changes to ILM rules and policies, there should be no more policies listed in Step 3 (Revise ILM Policies). Select *Next*.
 +
