@@ -184,7 +184,7 @@ Some of the default alerts use link:commonly-used-prometheus-metrics.html[Promet
 |===
 | Alert name| Description
 
-| FabricPool bucket has unsupported bucket consistency setting
+| FabricPool bucket has unsupported bucket consistency
 | A FabricPool bucket uses the Available or Strong-site consistency level, which is not supported.
 |===
 
