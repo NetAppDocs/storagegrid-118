@@ -116,7 +116,7 @@ sidebar:
             url: "/maintain/step-1-select-site.html"
           - title: View details
             url: "/maintain/step-2-view-details.html"
-          - title: Revise ILM policy
+          - title: Revise ILM policies
             url: "/maintain/step-3-revise-ilm-policy.html"
           - title: Remove ILM references
             url: "/maintain/step-4-remove-ilm-references.html"

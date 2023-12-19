@@ -90,6 +90,3 @@ image::../media/decommission_site_step_5_grid_configuration.png[Decommission Sit
 When the new grid configuration has been generated, Step 6 (Monitor Decommission) appears.
 +
 NOTE: The *Previous* button remains disabled until the decommission is complete.
-
-
-
