@@ -84,11 +84,8 @@ In contrast, the CloudMirror service does replicate PutObjectTagging requests or
 | The CloudMirror service does not support objects that are encrypted with SSE-C. If you attempt to ingest an object into the source bucket for CloudMirror replication and the request includes the SSE-C request headers, the operation fails.
 
 | Bucket with S3 Object Lock enabled
-a| If the source bucket has S3 Object Lock enabled, CloudMirror replication is not supported because the source bucket cannot be used as the Cloud Storage Pool target.
-
-If the destination S3 bucket for CloudMirror replication has S3 Object Lock enabled, the attempt to configure bucket replication (PutBucketReplication) will fail with an AccessDenied error.
+| If the destination S3 bucket for CloudMirror replication has S3 Object Lock enabled, the attempt to configure bucket replication (PutBucketReplication) will fail with an AccessDenied error.
 
 |===
 
-// 2023 DEC 11, SGRIDDOC-39
 // 2023 SEP 25, SGWS-27676
