@@ -21,7 +21,7 @@ You have the `Passwords.txt` file.
 
 See the StorageGRID installation instructions for your Linux operating system:
 
-* link:../rhel/index.html[Install Red Hat Enterprise Linux or CentOS]
+* link:../rhel/index.html[Install StorageGRID on Red Hat Enterprise Linux or CentOS]
 
 * link:../ubuntu/index.html[Install Ubuntu or Debian]
 

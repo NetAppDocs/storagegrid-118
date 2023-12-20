@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: red hat enterprise linux, rhel, centos linux, quick start
 summary: 'Follow these high-level steps to install a Red Hat Enterprise Linux \(RHEL\) or CentOS Linux StorageGRID node.'
 ---
-= Quick start for installing Red Hat Enterprise Linux or CentOS
+= Quick start for installing StorageGRID on Red Hat Enterprise Linux or CentOS
 :icons: font
 :imagesdir: ../media/
 

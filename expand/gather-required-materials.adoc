@@ -40,7 +40,7 @@ For details, see the instructions for <<download-and-extract-install-files,downl
 * link:../admin/index.html[Administer StorageGRID]
 * link:../release-notes/index.html[Release notes]
 * Installation instructions for your platform
-** link:../rhel/index.html[Install Red Hat Enterprise Linux or CentOS]
+** link:../rhel/index.html[Install StorageGRID on Red Hat Enterprise Linux or CentOS]
 ** link:../ubuntu/index.html[Install Ubuntu or Debian]
 ** link:../vmware/index.html[Install VMware]
 

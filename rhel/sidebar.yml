@@ -1,8 +1,8 @@
 section: rhel
-title: Install Red Hat Enterprise Linux or CentOS
+title: Install StorageGRID on Red Hat Enterprise Linux or CentOS
 entries:
   - title: Quick start
-    pdf-filename: Install Red Hat Enterprise Linux or CentOS for StorageGRID
+    pdf-filename: Install StorageGRID on Red Hat Enterprise Linux or CentOS
     url: "/rhel/index.html"
   - title: Plan and prepare for Red Hat or CentOS installation
     entries:
@@ -30,7 +30,7 @@ entries:
         url: "/rhel/configuring-docker-storage-volume.html"               
       - title: Install StorageGRID host services
         url: "/rhel/installing-storagegrid-webscale-host-service.html"
-  - title: Automate the installation (Red Hat or CentOS)
+  - title: Automate installation (Red Hat or CentOS)
     url: "/rhel/automating-installation.html"
   - title: Deploy virtual grid nodes (Red Hat or CentOS)
     entries:

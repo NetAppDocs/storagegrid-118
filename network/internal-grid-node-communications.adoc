@@ -19,7 +19,7 @@ In addition to ICMP and the ports listed in the table, StorageGRID uses the Virt
 
 If enterprise networking policies restrict access to any of these ports, you can remap ports at deployment time using a deployment configuration parameter. For more information about port remapping and deployment configuration parameters, see:
 
-* link:../rhel/index.html[Install Red Hat Enterprise Linux or CentOS]
+* link:../rhel/index.html[Install StorageGRID on Red Hat Enterprise Linux or CentOS]
 * link:../ubuntu/index.html[Install Ubuntu or Debian]
 
 == Guidelines for VMware-based nodes

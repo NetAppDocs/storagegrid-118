@@ -13,7 +13,7 @@ Use these steps to add an interface on the Admin Network or the Client Network t
 
 If you did not configure ADMIN_NETWORK_TARGET or CLIENT_NETWORK_TARGET in the node configuration file on the Linux host during installation, use this procedure to add the interface. For more information about the node configuration file, see the instructions for your Linux operating system:
 
-* link:../rhel/index.html[Install Red Hat Enterprise Linux or CentOS]
+* link:../rhel/index.html[Install StorageGRID on Red Hat Enterprise Linux or CentOS]
 
 * link:../ubuntu/index.html[Install Ubuntu or Debian]
 
