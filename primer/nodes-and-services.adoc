@@ -51,7 +51,7 @@ Software-based grid nodes can be deployed as VMware virtual machines or within c
 
 * Virtual machine (VM) in VMware vSphere: See link:../vmware/index.html[Install VMware].
 
-* Within a container engine on Red Hat Enterprise Linux or CentOS: See link:../rhel/index.html[Install StorageGRID on Red Hat Enterprise Linux or CentOS].
+* Within a container engine on Red Hat Enterprise Linux: See link:../rhel/index.html[Install StorageGRID on Red Hat Enterprise Linux].
 
 * Within a container engine on Ubuntu or Debian: See link:../ubuntu/index.html[Install Ubuntu or Debian].
 

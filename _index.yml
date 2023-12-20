@@ -17,7 +17,7 @@ indexpage:
       links:
       - title: StorageGRID appliances
         url: https://review.docs.netapp.com/us-en/storagegrid-appliances_main/installconfig/index.html    
-      - title: Red Hat Enterprise Linux or CentOS
+      - title: Red Hat Enterprise Linux
         url: /rhel/index.html
       - title: Ubuntu or Debian
         url: /ubuntu/index.html

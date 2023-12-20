@@ -41,7 +41,7 @@ After you determine which StorageGRID networks you want to use and how those net
 
 .Install software-based nodes
 
-* link:../rhel/index.html[Install StorageGRID on Red Hat Enterprise Linux or CentOS]
+* link:../rhel/index.html[Install StorageGRID on Red Hat Enterprise Linux]
 
 * link:../ubuntu/index.html[Install Ubuntu or Debian]
 

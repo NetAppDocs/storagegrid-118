@@ -35,7 +35,7 @@ You can deploy grid nodes on new Linux hosts or on existing Linux hosts. If you 
 
 * You have the instructions for installing StorageGRID for your version of Linux, and you have reviewed the hardware and storage requirements.
 
-** link:../rhel/index.html[Install StorageGRID on Red Hat Enterprise Linux or CentOS]
+** link:../rhel/index.html[Install StorageGRID on Red Hat Enterprise Linux]
 
 ** link:../ubuntu/index.html[Install Ubuntu or Debian]
 

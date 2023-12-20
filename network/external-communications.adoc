@@ -19,7 +19,7 @@ If enterprise networking policies restrict access to any of the ports, you can u
 
 To use systems and protocols such as SMTP, DNS, SSH, or DHCP, you must remap ports when deploying nodes. However, you should not remap load balancer endpoints. For information about port remapping, see the installation instructions:
 
-* link:../rhel/index.html[Install StorageGRID on Red Hat Enterprise Linux or CentOS]
+* link:../rhel/index.html[Install StorageGRID on Red Hat Enterprise Linux]
 
 * link:../ubuntu/index.html[Install Ubuntu or Debian]
 

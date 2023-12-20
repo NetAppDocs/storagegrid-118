@@ -47,7 +47,7 @@ To save time and provide consistency, you can automate the installation of the S
 
 [role="quick-margin-list"]
 * Use a standard orchestration framework such as Ansible, Puppet, or Chef to automate:
-** Installation of RHEL or CentOS
+** Installation of RHEL
 ** Configuration of networking and storage
 ** Installation of the container engine and the StorageGRID host service
 ** Deployment of virtual grid nodes

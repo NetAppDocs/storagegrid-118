@@ -16,7 +16,7 @@ For example, you might want to migrate a node to perform OS patching and reboot.
 .Before you begin
 
 * You planned your StorageGRID deployment to include migration support.
-** link:../rhel/node-container-migration-requirements.html[Node container migration requirements for Red Hat Enterprise Linux or Centos]
+** link:../rhel/node-container-migration-requirements.html[Node container migration requirements for Red Hat Enterprise Linux]
 
 ** link:../ubuntu/node-container-migration-requirements.html[Node container migration requirements for Ubuntu or Debian]
 
@@ -120,7 +120,7 @@ Checking for duplication of unique values... PASSED
 +
 For troubleshooting information, see the StorageGRID installation instructions for your Linux operating system.
 
-* link:../rhel/index.html[Install StorageGRID on Red Hat Enterprise Linux or CentOS]
+* link:../rhel/index.html[Install StorageGRID on Red Hat Enterprise Linux]
 
 * link:../ubuntu/index.html[Install Ubuntu or Debian]
 

@@ -48,7 +48,7 @@ Learn how:
 
 [role="quick-margin-list"]
 * https://review.docs.netapp.com/us-en/storagegrid-appliances_main/installconfig/index.html[Install appliance hardware^]
-* link:../rhel/index.html[Install StorageGRID on Red Hat Enterprise Linux or CentOS]
+* link:../rhel/index.html[Install StorageGRID on Red Hat Enterprise Linux]
 * link:../ubuntu/index.html[Install Ubuntu or Debian]
 * link:../vmware/index.html[Install VMware]
 
