@@ -122,7 +122,7 @@ For troubleshooting information, see the StorageGRID installation instructions f
 
 * link:../rhel/index.html[Install StorageGRID on Red Hat Enterprise Linux]
 
-* link:../ubuntu/index.html[Install Ubuntu or Debian]
+* link:../ubuntu/index.html[Install StorageGRID on Ubuntu or Debian]
 
 == Start migrated node
 

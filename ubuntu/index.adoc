@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: about ubuntu, ubuntu overview
 summary: 'Follow these high-level steps to install an Ubuntu or Debian StorageGRID node.'
 ---
-= Quick start for installing Ubuntu or Debian
+= Quick start for installing StorageGRID on Ubuntu or Debian
 :icons: font
 :imagesdir: ../media/
 

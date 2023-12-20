@@ -21,7 +21,7 @@ To use systems and protocols such as SMTP, DNS, SSH, or DHCP, you must remap por
 
 * link:../rhel/index.html[Install StorageGRID on Red Hat Enterprise Linux]
 
-* link:../ubuntu/index.html[Install Ubuntu or Debian]
+* link:../ubuntu/index.html[Install StorageGRID on Ubuntu or Debian]
 
 * link:../vmware/index.html[Install VMware]
 

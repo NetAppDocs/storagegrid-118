@@ -41,7 +41,7 @@ For details, see the instructions for <<download-and-extract-install-files,downl
 * link:../release-notes/index.html[Release notes]
 * Installation instructions for your platform
 ** link:../rhel/index.html[Install StorageGRID on Red Hat Enterprise Linux]
-** link:../ubuntu/index.html[Install Ubuntu or Debian]
+** link:../ubuntu/index.html[Install StorageGRID on Ubuntu or Debian]
 ** link:../vmware/index.html[Install VMware]
 
 | Current documentation for your platform

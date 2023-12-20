@@ -23,7 +23,7 @@ See the StorageGRID installation instructions for your Linux operating system:
 
 * link:../rhel/index.html[Install StorageGRID on Red Hat Enterprise Linux]
 
-* link:../ubuntu/index.html[Install Ubuntu or Debian]
+* link:../ubuntu/index.html[Install StorageGRID on Ubuntu or Debian]
 
 *Appliances:* On StorageGRID appliances, if the Client or Admin Network was not configured in the StorageGRID Appliance Installer during the initial installation, the network can't be added by using only the Change IP tool. First, you must https://review.docs.netapp.com/us-en/storagegrid-appliances_main/commonhardware/placing-appliance-into-maintenance-mode.html[place the appliance in maintenance mode^], configure the links, return the appliance to normal operating mode, and then use the Change IP tool to modify the network configuration. See the https://review.docs.netapp.com/us-en/storagegrid-appliances_main/installconfig/configuring-network-links.html[procedure for configuring network links^].
 

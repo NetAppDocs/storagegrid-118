@@ -17,7 +17,7 @@ You can add extra trunk or access interfaces to a Linux node after it has been i
 
 ** link:../rhel/index.html[Install StorageGRID on Red Hat Enterprise Linux]
 
-** link:../ubuntu/index.html[Install Ubuntu or Debian]
+** link:../ubuntu/index.html[Install StorageGRID on Ubuntu or Debian]
 
 * You have the `Passwords.txt` file.
 * You have link:../admin/admin-group-permissions.html[specific access permissions].

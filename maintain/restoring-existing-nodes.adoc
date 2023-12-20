@@ -35,7 +35,7 @@ You must then validate the grid configuration file, and resolve any networking o
 See the installation instructions for more information about the location of the `/var/local` volume for a node.
 
 * link:../rhel/index.html[Install StorageGRID on Red Hat Enterprise Linux]
-* link:../ubuntu/index.html[Install Ubuntu or Debian]
+* link:../ubuntu/index.html[Install StorageGRID on Ubuntu or Debian]
 
 .Steps
 
