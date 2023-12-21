@@ -23,7 +23,7 @@ To use systems and protocols such as SMTP, DNS, SSH, or DHCP, you must remap por
 
 * link:../ubuntu/index.html[Install StorageGRID on Ubuntu or Debian]
 
-* link:../vmware/index.html[Install VMware]
+* link:../vmware/index.html[Install StorageGRID on VMware]
 
 * https://review.docs.netapp.com/us-en/storagegrid-appliances_main/installconfig/optional-remapping-network-ports-for-appliance.html[Optional: Remap network ports for appliance^]
 

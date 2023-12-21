@@ -69,7 +69,7 @@ For details about mapping virtual or physical ports to node network interfaces, 
 .Software-based nodes
 * link:../rhel/index.html[Install StorageGRID on Red Hat Enterprise Linux]
 * link:../ubuntu/index.html[Install StorageGRID on Ubuntu or Debian]
-* link:../vmware/index.html[Install VMware]
+* link:../vmware/index.html[Install StorageGRID on VMware]
 
 .Appliance nodes
 

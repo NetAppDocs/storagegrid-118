@@ -1,8 +1,8 @@
 section: vmware
-title: Install VMware
+title: Install StorageGRID on VMware
 entries:
   - title: Quick start
-    pdf-filename: Install VMware for StorageGRID
+    pdf-filename: Install StorageGRID on VMware
     url: "/vmware/index.html"
   - title: Plan and prepare for VMware installation
     entries:
