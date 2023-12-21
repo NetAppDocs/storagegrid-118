@@ -1,7 +1,7 @@
 ---
 permalink: rhel/installing-linux.html
 sidebar: sidebar
-keywords: how to install on red hat linux, how to install on centos
+keywords: how to install on red hat linux
 summary: 'You must install StorageGRID on all Red Hat Enterprise Linux grid hosts. For a list of supported versions, use the NetApp Interoperability Matrix Tool.'
 ---
 = Install Linux

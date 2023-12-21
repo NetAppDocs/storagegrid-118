@@ -38,7 +38,7 @@ NOTE: A physical interface on the host can be used by the host itself and one or
 
 ** *RHEL (before installing the node)*: link:../rhel/creating-node-configuration-files.html[Create node configuration files]
 ** *Ubuntu or Debian (before installing the node)*: link:../ubuntu/creating-node-configuration-files.html[Create node configuration files]
-** *RHEL, CentOS, Ubuntu, or Debian (after installing the node)*: link:../maintain/linux-adding-trunk-or-access-interfaces-to-node.html[Linux: Add trunk or access interfaces to a node]
+** *RHEL, Ubuntu, or Debian (after installing the node)*: link:../maintain/linux-adding-trunk-or-access-interfaces-to-node.html[Linux: Add trunk or access interfaces to a node]
 
 === Minimum bandwidth recommendations
 
