@@ -47,6 +47,7 @@ To edit a policy:
 
 CAUTION: An ILM policy that has been incorrectly configured can result in unrecoverable data loss. Before activating an ILM policy, carefully review the ILM policy and its ILM rules, and then simulate the ILM policy. Always confirm that the ILM policy will work as intended.
 
+[[clone-ilm-policy]]
 == Clone an ILM policy
 
 To clone an ILM policy:
