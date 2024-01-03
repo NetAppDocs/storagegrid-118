@@ -15,15 +15,15 @@ indexpage:
         url: /primer/quick-start.html
     - title: Install, upgrade, and hotfix
       links:
-      - title: StorageGRID appliances
+      - title: Install StorageGRID appliances
         url: https://review.docs.netapp.com/us-en/storagegrid-appliances_main/installconfig/index.html    
-      - title: Red Hat Enterprise Linux or CentOS
+      - title: Install StorageGRID on Red Hat Enterprise Linux
         url: /rhel/index.html
-      - title: Ubuntu or Debian
+      - title: Install StorageGRID on Ubuntu or Debian
         url: /ubuntu/index.html
-      - title: VMware
+      - title: Install StorageGRID on VMware
         url: /vmware/index.html
-      - title: Upgrade to new version
+      - title: Upgrade to new StorageGRID version
         url: /upgrade/index.html
       - title: Apply hotfix
         url: /maintain/storagegrid-hotfix-procedure.html
