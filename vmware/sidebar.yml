@@ -4,7 +4,7 @@ entries:
   - title: Quick start
     pdf-filename: Install StorageGRID on VMware
     url: "/vmware/index.html"
-  - title: Plan and prepare for VMware installation
+  - title: Plan and prepare for installation on VMware
     entries:
     - title: Required information and materials
       url: "/vmware/required-materials.html"

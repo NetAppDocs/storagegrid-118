@@ -4,7 +4,7 @@ entries:
   - title: Quick start
     pdf-filename: Install StorageGRID on Red Hat Enterprise Linux
     url: "/rhel/index.html"
-  - title: Plan and prepare for Red Hat installation
+  - title: Plan and prepare for installation on Red Hat
     entries:
     - title: Required information and materials
       url: "/rhel/required-materials.html"
