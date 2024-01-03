@@ -36,7 +36,7 @@ Use the `.zip` file if you are running Windows.
 |===
 | Platform| Installation archive
 
-|Red Hat Enterprise Linux or CentOS
+|Red Hat Enterprise Linux
 m|
 include::../_include/installation-archives-rhel.adoc[]
 
@@ -55,7 +55,7 @@ include::../_include/installation-archives-vmware.adoc[]
 +
 The paths listed in the step for each platform are relative to the top-level directory installed by the archive file.
 
-. If you are recovering a link:../rhel/index.html[Red Hat Enterprise Linux or CentOS system], select the appropriate files.
+. If you are recovering a link:../rhel/index.html[Red Hat Enterprise Linux system], select the appropriate files.
 +
 include::../_include/installation-files-rhel.adoc[]
 

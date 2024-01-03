@@ -35,7 +35,7 @@ The downloads page for the version you selected appears. The page contains three
 
 * An RPM or DEB archive in either `.tgz` or `.zip` format. Select the `.zip` file if you are running Windows on the service laptop.
 
-** Red Hat Enterprise Linux or CentOS +
+** Red Hat Enterprise Linux +
 `StorageGRID-Webscale-_version_-RPM-_uniqueID_.zip` +
 `StorageGRID-Webscale-_version_-RPM-_uniqueID_.tgz`
 
@@ -65,7 +65,7 @@ Perform these steps before upgrading StorageGRID software.
 +
 See the steps for installing StorageGRID host services in the installation instructions:
 +
-* link:../rhel/installing-storagegrid-webscale-host-service.html[Red Hat Enterprise Linux or CentOS: Install StorageGRID host services]
+* link:../rhel/installing-storagegrid-webscale-host-service.html[Red Hat Enterprise Linux: Install StorageGRID host services]
 * link:../ubuntu/installing-storagegrid-webscale-host-services.html[Ubuntu or Debian: Install StorageGRID host services]
 
 +

@@ -2,14 +2,14 @@
 permalink: ubuntu/installing-linux.html
 sidebar: sidebar
 keywords: how to install Linux
-summary: 'You must install Ubuntu or Debian on all grid hosts. For a list of supported versions, use the NetApp Interoperability Matrix Tool.'
+summary: 'You must install StorageGRID on all Ubuntu or Debian grid hosts. For a list of supported versions, use the NetApp Interoperability Matrix Tool.'
 ---
 = Install Linux
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You must install Linux on all grid hosts. For a list of supported versions, use the NetApp Interoperability Matrix Tool.
+You must install StorageGRID on all Ubuntu or Debian grid hosts. For a list of supported versions, use the NetApp Interoperability Matrix Tool.
 
 NOTE: Ensure that your operating system is upgraded to Linux kernel 4.15 or higher.
 
