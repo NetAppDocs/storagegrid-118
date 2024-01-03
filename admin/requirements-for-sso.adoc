@@ -45,9 +45,6 @@ You can use any of the following versions of AD FS:
 
 NOTE: Windows Server 2016 should be using the https://support.microsoft.com/en-us/help/3201845/cumulative-update-for-windows-10-version-1607-and-windows-server-2016[KB3201845 update^], or higher.
 
- ** AD FS 3.0 or higher. 
-
-
 === Additional requirements
 
 * Transport Layer Security (TLS) 1.2 or 1.3
