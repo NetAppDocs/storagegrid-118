@@ -19,9 +19,9 @@ indexpage:
         url: https://review.docs.netapp.com/us-en/storagegrid-appliances_main/installconfig/index.html    
       - title: StorageGRID on Red Hat Enterprise Linux
         url: /rhel/index.html
-      - title: Ubuntu or Debian
+      - title: StorageGRID on Ubuntu or Debian
         url: /ubuntu/index.html
-      - title: VMware
+      - title: StorageGRID on VMware
         url: /vmware/index.html
       - title: Upgrade to new version
         url: /upgrade/index.html
