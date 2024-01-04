@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: vmware
 summary: 'Follow these high-level steps to install a VMware StorageGRID node.'
 ---
-= Quick start for installing VMware
+= Quick start for installing StorageGRID on VMware
 :icons: font
 :imagesdir: ../media/
 

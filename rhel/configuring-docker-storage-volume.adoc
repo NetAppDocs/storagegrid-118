@@ -46,7 +46,7 @@ This step ensures that the storage volume will remount automatically after host 
 
 == Install Docker
 
-The StorageGRID system runs on Red Hat Enterprise Linux or CentOS as a collection of containers. If you have chosen to use the Docker container engine, follow these steps to install Docker. Otherwise, <<Install Podman,install Podman>>.
+The StorageGRID system runs on Red Hat Enterprise Linux as a collection of containers. If you have chosen to use the Docker container engine, follow these steps to install Docker. Otherwise, <<Install Podman,install Podman>>.
 
 .Steps
 

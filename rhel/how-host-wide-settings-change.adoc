@@ -1,7 +1,7 @@
 ---
 permalink: rhel/how-host-wide-settings-change.html
 sidebar: sidebar
-keywords: how to install on red hat linux, how to install on centos
+keywords: how to install on red hat linux
 summary: 'On bare metal systems, StorageGRID makes some changes to host-wide `sysctl` settings.'
 ---
 = How host-wide settings change during installation
