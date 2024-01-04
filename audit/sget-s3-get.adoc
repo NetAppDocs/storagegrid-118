@@ -37,12 +37,12 @@ When an S3 client issues a GET transaction, a request is made to retrieve an obj
 `X-Forwarded-For` is automatically included if it is present in the request and if the `X-Forwarded-For` value is different from the request sender IP address (SAIP audit field).
 
 | LITY
-| List Type 2
-| Present if list-type is specifed to be 2. For GET bucket (listBucket) operations only.
+| ListObjectsV2
+| A _v2 format_ response was requested. For details, see https://docs.aws.amazon.com/AmazonS3/latest/API/API_ListObjectsV2.html[AWS ListObjectsV2^]. For GET bucket operations only. 
 
 | NCHD
 | Number of Children
-| Includes keys and common prefixes. For GET bucket (listBucket) operations only.
+| Includes keys and common prefixes. For GET bucket operations only.
 
 | RANG
 | Range Read
@@ -106,7 +106,7 @@ Empty for anonymous requests.
 
 | TRNC
 | Truncated or Not Truncated
-| Whether the returned content is truncated. For GET bucket (listBucket) operations only.
+| Set to false if all results were returned. Set to true if more results are available to return. For GET bucket operations only.
 
 | UUID
 | Universally Unique Identifier
