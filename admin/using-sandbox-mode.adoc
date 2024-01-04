@@ -87,7 +87,7 @@ If you select this setting, copy the text of the custom certificate and and past
 
 ** *Do not use TLS*: Do not use a TLS certificate to secure the connection.
 +
-CAUTION: If you change the CA certificate, immediately link:../maintain/starting-or-restarting-service.html[restart the `mgmt-api` service] and test for a successful SSO into the Grid Manager.
+CAUTION: If you change the CA certificate, immediately link:../maintain/starting-or-restarting-service.html[restart the `mgmt-api` service on the Admin Nodes] and test for a successful SSO into the Grid Manager.
 
 .. In the Relying Party section, specify the *Relying party identifier* for StorageGRID. This value controls the name you use for each relying party trust in AD FS.
 
@@ -151,6 +151,8 @@ image::../media/save_button_green_checkmark.gif[Save Button with a green check m
 If you select this setting, copy the text of the custom certificate and and paste it in the *CA Certificate* text box.
 
 ** *Do not use TLS*: Do not use a TLS certificate to secure the connection.
++
+CAUTION: If you change the CA certificate, immediately link:../maintain/starting-or-restarting-service.html[restart the `mgmt-api` service on the Admin Nodes] and test for a successful SSO into the Grid Manager.
 
 .. In the Service Provider (SP) section, specify the *SP connection ID* for StorageGRID. This value controls the name you use for each SP connection in PingFederate.
 
