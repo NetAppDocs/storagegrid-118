@@ -55,7 +55,7 @@ You can now specify that a new link:../primer/what-storage-node-is.html#types-of
 
 === Information moved for additional ports on untrusted Client Network
 
-Previously, the Grid Manager list of ports open to the untrusted Client Network was located on the Firewall control page. That information is now located in a column named, "Open to untrusted Client network" at *Load balancer endpoints* > *Management interface*. For StorageGRID 11.8, you can configure a port to be open or closed to the untrusted Client Network only when you are link:../admin/configuring-load-balancer-endpoints.html#create-lb-endpoint[creating a load balancer endpoint].
+Previously, the Grid Manager list of ports open to the untrusted Client Network was located on the Firewall control page. That information is now located in a column named, "Open to untrusted Client network" at *Load balancer endpoints* > *Management interface*. For StorageGRID 11.8, you can configure a port to be open or closed to the untrusted Client Network only when you are link:../admin/configuring-load-balancer-endpoints.html#create-lb-endpoint[creating a management interface load balancer endpoint].
 
 == S3 REST API changes
 

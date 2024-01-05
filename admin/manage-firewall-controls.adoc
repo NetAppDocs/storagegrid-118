@@ -76,7 +76,7 @@ After you save your configuration, the Storage Node no longer allows Swift conne
 
 == Untrusted Client Networks tab
 
-If you are using a Client Network, you can help secure StorageGRID from hostile attacks by accepting inbound client traffic only on explicitly configured endpoints or additional ports you select on this tab. 
+If you are using a Client Network, you can help secure StorageGRID from hostile attacks by accepting inbound client traffic only on explicitly configured endpoints. 
 
 By default, the Client Network on each grid node is _trusted_. That is, by default, StorageGRID trusts inbound connections to each grid node on all link:../network/external-communications.html[available external ports].
 
@@ -105,7 +105,8 @@ Suppose you want to allow Grid Manager access only on a specific subnet. You wou
 
 . Attach the Client Network of your Admin Nodes to the subnet.
 . Use the Untrusted Client Network tab to configure the Client Network as untrusted.
-. When you create a load balancer endpoint, add port 443 or 8443 and select *Yes* for Untrusted Client Network.
+. When you create a management interface load balancer endpoint, enter port and select the management interface that the port will access.
+. Select *Yes* for Untrusted Client Network.
 . Use the Manage external access tab to block all external ports (with or without privileged IP addresses set for hosts outside that subnet).
 
 After you save your configuration, only hosts on the subnet you specified can access the Grid Manager. All other hosts are are blocked. 
