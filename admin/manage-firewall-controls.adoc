@@ -46,7 +46,7 @@ CAUTION: Add the privileged IP address before you block ports 443 and 8443. Any 
 After you save your configuration, all external ports on the Admin Node in your grid will be blocked for all hosts except the jump host. You can then use the jump host to perform maintenance tasks on your grid more securely.
 
 === Example 2: Limit access to the Grid Manager and Tenant Manager
-Suppose you want to limit access to the Grid Manager and Tenant manager for security reasons. You could use these general steps: 
+Suppose you want to limit access to the Grid Manager and Tenant manager (preset ports) for security reasons. You could use these general steps: 
 
 . Use the toggle on the Manage external access tab to block port 443.
 . Use the toggle on the Manage external access tab to allow access to port 8443.
@@ -54,13 +54,15 @@ Suppose you want to limit access to the Grid Manager and Tenant manager for secu
 
 After you save your configuration, hosts will not be able to access port 443, but they can still access the Grid Manager through port 8443 and the Tenant Manager through port 9443.
 
+NOTE: Ports 443, 8443, and 9443 are the preset ports for Grid Manager and Tenant Manager. You can toggle any port to limit access to a specific Grid Manager or Tenant manager. 
+
 === Example 3: Lock down sensitive ports
 Suppose you want to lock down sensitive ports and the service on that port (for example, SSH on port 22). You could use the following general steps: 
 
 . Use the Privileged address list tab to grant access only to the hosts that need access to the service.
 . Use the Manage external access tab to block all ports. 
 
-CAUTION: Add the privileged IP address before you block ports 443 and 8443. Any users currently connected on a blocked port, including you, will lose access to Grid Manager unless their IP address has been added to the Privileged address list. 
+CAUTION: Add the privileged IP address before you block access to any ports assigned to access Grid Manager and Tenant manager (preset ports are 443 and 8443). Any users currently connected on a blocked port, including you, will lose access to Grid Manager unless their IP address has been added to the Privileged address list. 
 
 After you save your configuration, port 22 and SSH service will be available to hosts on the privileged address list. All other hosts will be denied access to the service no matter what interface the request comes from.
 
