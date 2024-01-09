@@ -228,7 +228,7 @@ The endpoint must exist for replication configuration to succeed. If the endpoin
 * Tag values can be up to 256 Unicode characters in length.
 * Key and values are case sensitive.
 
-*Note*: This operation will overwrite any current tags the bucket already has. You can't use this operation to add tags to an existing list of tags.
+*Note*: This operation will overwrite any current tags the bucket already has. If any existing tags are omitted from the set, those tags will be removed for the bucket.
 
 | PutBucketVersioning
 | Uses the `versioning` subresource to set the versioning state of an existing bucket. You can set the versioning state with one of the following values:
