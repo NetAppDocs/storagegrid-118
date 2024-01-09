@@ -1,0 +1,19 @@
+---
+permalink: ubuntu/software-requirements.html
+sidebar: sidebar
+keywords: software requirements
+summary: 'You can use a virtual machine to host any type of StorageGRID node. One virtual machine is required for each grid node installed on the Ubuntu or Debian server.'
+---
+= Software requirements
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can use a virtual machine to host any type of StorageGRID node. One virtual machine is required for each grid node installed on the Ubuntu or Debian server.
+
+== Other required software
+
+Make sure that the following software packages are a the minimum levels specified:
+
+* Python version 3.0 or later
+* Docker Client and Server versions 1.11.0 or later
