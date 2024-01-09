@@ -61,7 +61,7 @@ NOTE: The *Pause* button is enabled only when the ILM evaluation or erasure-code
 
 * To permanently and securely remove data, you must wipe the Storage Node's drives after the decommission procedure is complete.
 
- 
+[[considerations-disconnected-storage-nodes]]
 == Considerations for disconnected Storage Nodes
 
 Review the considerations for decommissioning a disconnected Storage Node.
