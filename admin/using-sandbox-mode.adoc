@@ -18,18 +18,17 @@ You can use sandbox mode to configure and test single sign-on (SSO) before enabl
 * You have configured identity federation for your StorageGRID system.
 * For the identity federation *LDAP service type*, you selected either Active Directory or Azure, based on the SSO identity provider you plan to use.
 +
-[cols="1a,1a"]  
+[cols="1a,1a" options="header"]  
 |===
-|Configured LDAP service type |Options for SSO identity provider
+| Configured LDAP service type | Options for SSO identity provider
 
-|Active Directory
-|* Active Directory
+| Active Directory
+| * Active Directory
 * Azure
 * PingFederate
 
 |Azure
 |Azure
-
 |===
 
 .About this task
@@ -87,6 +86,8 @@ NOTE: To locate the federation service name, go to Windows Server Manager. Selec
 If you select this setting, copy the text of the custom certificate and and paste it in the *CA Certificate* text box.
 
 ** *Do not use TLS*: Do not use a TLS certificate to secure the connection.
++
+CAUTION: If you change the CA certificate, immediately link:../maintain/starting-or-restarting-service.html[restart the mgmt-api service on the Admin Nodes] and test for a successful SSO into the Grid Manager.
 
 .. In the Relying Party section, specify the *Relying party identifier* for StorageGRID. This value controls the name you use for each relying party trust in AD FS.
 
@@ -116,6 +117,8 @@ image::../media/save_button_green_checkmark.gif[Save Button with a green check m
 If you select this setting, copy the text of the custom certificate and and paste it in the *CA Certificate* text box.
 
 ** *Do not use TLS*: Do not use a TLS certificate to secure the connection.
++
+CAUTION: If you change the CA certificate, immediately link:../maintain/starting-or-restarting-service.html[restart the mgmt-api service on the Admin Nodes] and test for a successful SSO into the Grid Manager.
 
 .. In the Enterprise Application section, specify the *Enterprise application name* for StorageGRID. This value controls the name you use for each enterprise application in Azure AD.
 
@@ -150,6 +153,8 @@ image::../media/save_button_green_checkmark.gif[Save Button with a green check m
 If you select this setting, copy the text of the custom certificate and and paste it in the *CA Certificate* text box.
 
 ** *Do not use TLS*: Do not use a TLS certificate to secure the connection.
++
+CAUTION: If you change the CA certificate, immediately link:../maintain/starting-or-restarting-service.html[restart the mgmt-api service on the Admin Nodes] and test for a successful SSO into the Grid Manager.
 
 .. In the Service Provider (SP) section, specify the *SP connection ID* for StorageGRID. This value controls the name you use for each SP connection in PingFederate.
 
