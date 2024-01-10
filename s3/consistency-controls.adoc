@@ -21,7 +21,7 @@ If you want to perform object operations at a different consistency, you can:
 ** In the Grid Manager, go to *CONFIGURATION* > *Storage settings* > *Default consistency*.
 ** link:../admin/using-grid-management-api.html[Use the `grid-config` endpoint of the Grid Management private API].
 +
-NOTE: A change to the grid-wide consistency applies only to buckets created after the setting was changed. To determine the details of a change, see the audit log located at `/var/local/audit/export` (search for *consistencyLevel*).
+NOTE: A change to the grid-wide consistency applies only to buckets created after the setting was changed. To determine the details of a change, see the audit log located at `/var/local/log` (search for *consistencyLevel*).
 
 == Consistency values
 
