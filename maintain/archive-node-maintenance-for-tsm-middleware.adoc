@@ -73,7 +73,7 @@ This example is provided for your information. This procedure can't help you ide
  .. Enter the following command: `ssh admin@Admin_Node_IP`
  .. Enter the password listed in the `Passwords.txt` file.
 . Identify the object or objects that could not be retrieved by the Archive Node:
- .. Go to the directory containing the audit log files: `cd /var/local/audit/export`
+ .. Go to the directory containing the audit log files: `cd /var/local/log`
 +
 The active audit log file is named audit.log. Once a day, the active `audit.log` file is saved, and a new `audit.log` file is started. The name of the saved file indicates when it was saved, in the format `yyyy-mm-dd.txt`. After a day, the saved file is compressed and renamed, in the format `yyyy-mm-dd.txt.gz`, which preserves the original date.
 
