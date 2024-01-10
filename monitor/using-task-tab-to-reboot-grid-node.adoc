@@ -17,4 +17,4 @@ For the complete requirements and instructions for each option on this tab, see 
 
 * link:../maintain/rebooting-grid-node-from-grid-manager.html[Reboot grid node]
 
-* https://review..netapp.com/us-en/storagegrid-appliances/commonhardware/placing-appliance-into-maintenance-mode.html[Place appliance into maintenance mode^]
+* https://docs.netapp.com/us-en/storagegrid-appliances/commonhardware/placing-appliance-into-maintenance-mode.html[Place appliance into maintenance mode^]

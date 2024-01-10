@@ -63,4 +63,4 @@ See link:../s3/changes-to-s3-rest-api-support.html[Changes to S3 REST API suppor
 
 == Documentation changes
 
-* The documentation for StorageGRID appliances was moved to a link:https://review..netapp.com/us-en/storagegrid-appliances/[new documentation site].
+* The documentation for StorageGRID appliances was moved to a link:https://docs.netapp.com/us-en/storagegrid-appliances/[new documentation site].

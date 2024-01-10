@@ -14,7 +14,7 @@ The replacement node must be configured as the primary Admin Node for your Stora
 .Before you begin
 
 * For primary Admin Nodes hosted on virtual machines, the virtual machine has been deployed, powered on, and initialized.
-* For primary Admin Nodes hosted on a services appliance, you have replaced the appliance and have installed software. See the https://review..netapp.com/us-en/storagegrid-appliances/installconfig/index.html[installation instructions for your appliance^].
+* For primary Admin Nodes hosted on a services appliance, you have replaced the appliance and have installed software. See the https://docs.netapp.com/us-en/storagegrid-appliances/installconfig/index.html[installation instructions for your appliance^].
 
 * You have the latest backup of the Recovery Package file (`sgws-recovery-package-_id-revision_.zip`).
 * You have the provisioning passphrase.

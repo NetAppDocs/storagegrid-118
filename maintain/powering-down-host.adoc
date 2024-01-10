@@ -84,10 +84,10 @@ This LED is on when cached data needs to be written to the drives. You must wait
 
 .Related information
 
-https://review..netapp.com/us-en/storagegrid-appliances/sg6100/index.html[SGF6112 storage appliances^]
+https://docs.netapp.com/us-en/storagegrid-appliances/sg6100/index.html[SGF6112 storage appliances^]
 
-https://review..netapp.com/us-en/storagegrid-appliances/sg6000/index.html[SG6000 storage appliances^]
+https://docs.netapp.com/us-en/storagegrid-appliances/sg6000/index.html[SG6000 storage appliances^]
 
-https://review..netapp.com/us-en/storagegrid-appliances/sg5700/index.html[SG5700 storage appliances^]
+https://docs.netapp.com/us-en/storagegrid-appliances/sg5700/index.html[SG5700 storage appliances^]
 
-https://review..netapp.com/us-en/storagegrid-appliances/sg100-1000/index.html[SG100 and SG1000 services appliances^]
+https://docs.netapp.com/us-en/storagegrid-appliances/sg100-1000/index.html[SG100 and SG1000 services appliances^]
