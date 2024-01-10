@@ -80,7 +80,7 @@ The differences in MTU settings could indicate that some, but not all, eth0 netw
 . List the MTU settings for eth0 on all nodes.
  ** Use the query provided in the Grid Manager.
  ** Navigate to `_primary Admin Node IP address_/metrics/graph` and enter the following query: `node_network_mtu_bytes{interface='eth0'}`
-. https://review.docs.netapp.com/us-en/storagegrid-appliances_main/commonhardware/changing-mtu-setting.html[Modify the MTU settings^] as necessary to ensure they are the same for the Grid Network interface (eth0) on all nodes.
+. https://review..netapp.com/us-en/storagegrid-appliances/commonhardware/changing-mtu-setting.html[Modify the MTU settings^] as necessary to ensure they are the same for the Grid Network interface (eth0) on all nodes.
  ** For Linux- and VMware-based nodes, use the following command: `+/usr/sbin/change-ip.py [-h] [-n node] mtu network [network...]+`
 +
 *Example*: `change-ip.py -n node 1500 grid admin`
@@ -148,10 +148,10 @@ NOTE: These steps are applicable only for NRER errors caused by FEC mismatch on 
 .. Check the physical integrity of the cables from the appliance to the switch.
 .. If you want to change FEC settings to try to resolve the NRER alarm, first ensure that the appliance is configured for *Auto* mode on the Link Configuration page of the StorageGRID Appliance Installer (see the instructions for your appliance:
 +
-* https://review.docs.netapp.com/us-en/storagegrid-appliances_main/sg6100/changing-link-configuration-of-sgf6112-appliance.html[SGF6112^]
-* https://review.docs.netapp.com/us-en/storagegrid-appliances_main/sg6000/changing-link-configuration-of-sg6000-cn-controller.html[SG6000^]
-* https://review.docs.netapp.com/us-en/storagegrid-appliances_main/sg5700/changing-link-configuration-of-e5700sg-controller.html[SG5700^]
-* https://review.docs.netapp.com/us-en/storagegrid-appliances_main/sg100-1000/changing-link-configuration-of-services-appliance.html[SG100 and SG1000^]
+* https://review..netapp.com/us-en/storagegrid-appliances/sg6100/changing-link-configuration-of-sgf6112-appliance.html[SGF6112^]
+* https://review..netapp.com/us-en/storagegrid-appliances/sg6000/changing-link-configuration-of-sg6000-cn-controller.html[SG6000^]
+* https://review..netapp.com/us-en/storagegrid-appliances/sg5700/changing-link-configuration-of-e5700sg-controller.html[SG5700^]
+* https://review..netapp.com/us-en/storagegrid-appliances/sg100-1000/changing-link-configuration-of-services-appliance.html[SG100 and SG1000^]
 
 .. Change the FEC settings on the switch ports. The StorageGRID appliance ports will adjust their FEC settings to match, if possible.
 +
@@ -168,7 +168,7 @@ The MTU size configured on the node might be smaller than the setting on the swi
 
 NOTE: For the best network performance, all nodes should be configured with similar MTU values on their Grid Network interfaces. The *Grid Network MTU mismatch* alert is triggered if there is a significant difference in MTU settings for the Grid Network on individual nodes. The MTU values don't have to be the same for all network types. See <<troubleshoot_MTU_alert,Troubleshoot the Grid Network MTU mismatch alert>> for more information.
 
-NOTE: Also see https://review.docs.netapp.com/us-en/storagegrid-appliances_main/commonhardware/changing-mtu-setting.html[Change MTU setting^].
+NOTE: Also see https://review..netapp.com/us-en/storagegrid-appliances/commonhardware/changing-mtu-setting.html[Change MTU setting^].
 
 --
 .High link error rates

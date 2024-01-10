@@ -9,7 +9,7 @@
  ** Connect to each StorageGRID appliance.
  ** Verify receipt of AutoSupport data.
 +
-See https://review.docs.netapp.com/us-en/storagegrid-appliances_main/installconfig/configuring-hardware.html[Set up hardware^].
+See https://docs.netapp.com/us-en/storagegrid-appliances/installconfig/configuring-hardware.html[Set up hardware^].
 
 * Review and follow the link:../harden/index.html[StorageGRID system hardening guidelines] to eliminate security risks.
 * link:../monitor/email-alert-notifications.html[Configure email notifications for system alerts].

@@ -3,7 +3,7 @@ indexpage:
     - title: Quick start
       links:
         - title: Appliance hardware
-          url: https://review.docs.netapp.com/us-en/storagegrid-appliances_main/installconfig/index.html
+          url: https://review..netapp.com/us-en/storagegrid-appliances/installconfig/index.html
         - title: Red Hat Enterprise Linux
           url: ../rhel/index.html
         - title: Ubuntu or Debian

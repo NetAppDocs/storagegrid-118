@@ -27,7 +27,7 @@ You can clone an appliance node if you need to:
 
 * Improve storage efficiency, such as by changing the RAID mode.
 
-See https://review.docs.netapp.com/us-en/storagegrid-appliances_main/commonhardware/how-appliance-node-cloning-works.html[Appliance node cloning: Overview^] for details.
+See https://review..netapp.com/us-en/storagegrid-appliances/commonhardware/how-appliance-node-cloning-works.html[Appliance node cloning: Overview^] for details.
 
 == Considerations for connected Storage Nodes
 
