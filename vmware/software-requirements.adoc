@@ -34,8 +34,3 @@ For supported versions of VMware vSphere Hypervisor and VMware vCenter Server so
 
 For the steps required to install these VMware products, see the VMware documentation.
 
-== Other required software
-
-Make sure that the following software packages are a the minimum levels specified:
-
-*	Python version 3.0 or later

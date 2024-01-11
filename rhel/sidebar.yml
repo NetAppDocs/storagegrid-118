@@ -10,8 +10,6 @@ entries:
       url: "/rhel/required-materials.html"
     - title: Download and extract StorageGRID installation files
       url: "/rhel/downloading-and-extracting-storagegrid-installation-files.html"
-    - title: Software requirements
-      url: "/rhel/software-requirements.html"
     - title: CPU and RAM requirements
       url: "/rhel/cpu-and-ram-requirements.html"
     - title: Storage and performance requirements

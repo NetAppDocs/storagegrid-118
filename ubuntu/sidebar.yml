@@ -10,8 +10,6 @@ entries:
       url: "/ubuntu/required-materials.html"
     - title: Download and extract StorageGRID installation files
       url: "/ubuntu/downloading-and-extracting-storagegrid-installation-files.html"
-    - title: Software requirements
-      url: "/ubuntu/software-requirements.html"
     - title: CPU and RAM requirements
       url: "/ubuntu/cpu-and-ram-requirements.html"
     - title: Storage and performance requirements
