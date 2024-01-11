@@ -108,6 +108,9 @@ Metadata-only Storage Nodes
 
 * Volume 0
 * Metadata reserved space setting
+ 
+
+*Note*: Only one rangedb is required for metadata-only Storage Nodes.
 
 |===
 

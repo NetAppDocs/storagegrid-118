@@ -49,20 +49,20 @@ m|vsphere-non-primary-admin.ovf
 vsphere-non-primary-admin.mf
 |The template file and manifest file for a non-primary Admin Node.
 
-m|vsphere-archive.ovf
+m|vsphere-storage.ovf
 
-vsphere-archive.mf
-|The template file and manifest file for an Archive Node.
+vsphere-storage.mf
+|The template file and manifest file for a Storage Node.
 
 m|vsphere-gateway.ovf
 
 vsphere-gateway.mf
 |The template file and manifest file for a Gateway Node.
 
-m|vsphere-storage.ovf
+m|vsphere-archive.ovf
 
-vsphere-storage.mf
-|The template file and manifest file for a Storage Node.
+vsphere-archive.mf
+|The template file and manifest file for an Archive Node.
 |===
 
 * The `.vdmk`, `.ovf`, and `.mf` files are all in the same directory.
@@ -111,8 +111,8 @@ For example, if this is the first node you are deploying, use these files to dep
 [subs="specialcharacters,quotes"]
 ----
 NetApp-_SG-version_-SHA.vmdk
-sphere-primary-admin.ovf
-sphere-primary-admin.mf
+vsphere-primary-admin.ovf
+vsphere-primary-admin.mf
 ----
 
 . Provide a name for the virtual machine.

@@ -29,8 +29,10 @@ NOTE: VMware live vMotion causes the virtual machine clock time to jump and is n
 You must collect information about the VMware network created for the StorageGRID Grid Network (required), including:
 
 * The network name.
-* If you aren't using DHCP, the required networking details for each grid node (IP address, gateway, and network mask).
-* If you aren't using DHCP, the IP address of the primary Admin Node on the Grid Network. See "How grid nodes discover the primary Admin Node" for more information.
+* The method used to assign IP addresses, either static or DHCP.
+** If you are using static IP addresses, the required networking details for each grid node (IP address, gateway, network mask).
+** If you are using DHCP, the IP address of the primary Admin Node on the Grid Network. See link:how-grid-nodes-discover-primary-admin-node.html[How grid nodes discover the primary Admin Node] for more information.
+
 
 == Admin Network information
 
@@ -38,7 +40,8 @@ For nodes that will be connected to the optional StorageGRID Admin Network, you 
 
 * The network name.
 * The method used to assign IP addresses, either static or DHCP.
-* If you are using static IP addresses, the required networking details for each grid node (IP address, gateway, network mask).
+** If you are using static IP addresses, the required networking details for each grid node (IP address, gateway, network mask).
+** If you are using DHCP, the IP address of the primary Admin Node on the Grid Network. See link:how-grid-nodes-discover-primary-admin-node.html[How grid nodes discover the primary Admin Node] for more information.
 * The external subnet list (ESL) for the Admin Network.
 
 == Client Network information
@@ -63,7 +66,7 @@ The interfaces you add are displayed on the VLAN interfaces page and on the HA g
 
 You must collect the following information for virtual machine-based Storage Nodes:
 
-* The number and size of storage volumes (storage LUNs) you plan to add. See "Storage and performance requirements."
+* The number and size of storage volumes (storage LUNs) you plan to add. See link:storage-and-performance-requirements.html[Storage and performance requirements]."
 
 == Grid configuration information
 
@@ -72,9 +75,3 @@ You must collect information to configure your grid:
 * Grid license
 * Network Time Protocol (NTP) server IP addresses
 * DNS server IP addresses
-
-.Related information
-
-link:how-grid-nodes-discover-primary-admin-node.html[How grid nodes discover the primary Admin Node]
-
-link:storage-and-performance-requirements.html[Storage and performance requirements]

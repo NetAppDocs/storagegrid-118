@@ -114,7 +114,7 @@ NOTE: This setting does not affect the existing nodes in your StorageGRID system
 
 * Select *Untrust on displayed nodes* to add all nodes displayed in the table to the Untrusted Client Network list.  
 * Select *Trust on displayed nodes* to remove all nodes displayed in the table from the Untrusted Client Network list.
-* Use the toggle beside each port to set the Client Network as Trusted or Untrusted for the selected node.  
+* Use the toggle beside each node to set the Client Network as Trusted or Untrusted for the selected node.  
 +
 For example, you could select *Untrust on displayed nodes* to add all nodes to the Untrusted Client Network list and then use the toggle besides an individual node to add that single node to the Trusted Client Network list.
 +
