@@ -11,6 +11,8 @@ summary: 'The Grid Manager is the browser-based graphical interface that allows 
 [.lead]
 The Grid Manager is the browser-based graphical interface that allows you to configure, manage, and monitor your StorageGRID system.
 
+NOTE: The Grid Manager is updated with each release and might not match the screenshots on this page.
+
 When you sign in to the Grid Manager, you are connecting to an Admin Node. Each StorageGRID system includes one primary Admin Node and any number of non-primary Admin Nodes. You can connect to any Admin Node, and each Admin Node displays a similar view of the StorageGRID system.
 
 You can access the Grid Manager using a link:../admin/web-browser-requirements.html[supported web browser].
