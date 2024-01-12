@@ -23,7 +23,7 @@ When you first sign in to the Grid Manager, you can use the dashboard to link:..
 
 The dashboard contains information about system health and performance, storage use, ILM processes, S3 and Swift operations, and the nodes in the grid. You can link:../monitor/viewing-dashboard.html[configure the dashboard] by selecting from a collection of cards that contain the information you need to effectively monitor your system.
 
-image::../media/grid_manager_dashboard.png[Dashboard in the Grid Manager]
+image::../media/grid_manager_dashboard_and_menu.png[Dashboard in the Grid Manager]
 
 For an explanation of the information shown on each card, select the help icon image:../media/icon_nms_question.png[question mark icon] for that card.
 
@@ -71,6 +71,17 @@ image::../media/tenants_page.png[Tenants Menu and Page]
 == ILM menu
 
 The link:using-information-lifecycle-management.html[ILM menu] allows you to link:../ilm/index.html[configure the information lifecycle management (ILM) rules and policies] that govern data durability and availability. You can also enter an object identifier to view the metadata for that object.
+
+From the ILM menu you can view and manage ILM:
+
+* Rules
+* Policies
+* Policy tags
+* Storage pools
+* Erasure coding
+* Storage grades
+* Regions
+* Object metadata lookup
 
 == Configuration menu
 
@@ -133,6 +144,7 @@ Maintenance tasks include:
 * link:../maintain/grid-node-recovery-procedures.html[Grid node recovery procedures] to replace a failed node and restore data
 * link:../maintain/rename-grid-site-node-overview.html[Rename procedures] to change the display names of your grid, sites, and nodes
 * link:../troubleshoot/verifying-object-integrity.html[Object existence check operations] to verify the existence (although not the correctness) of object data
+* Rolling reboot
 * link:../maintain/restoring-volume.html[Volume restoration operations]
 
 === System
@@ -174,6 +186,18 @@ NOTE: The tools available from the *Metrics* option are intended for use by tech
 
 === Alarms (legacy)
 
-From the Alarms (legacy) section of the Support menu, you can review current, historical, and global alarms, set up custom events, and set up email notifications for legacy alarms. See link:../monitor/managing-alarms.html[Manage alarms (legacy system)].
+From the link:../monitor/managing-alarms.html[Alarms (legacy)] section of the Support menu, you can:
+
+* Review current, historical, and global alarms
+* Set up custom events
+* Set up link:../monitor/managing-alarms.html[email notifications for legacy alarms]
 
 NOTE: While the legacy alarm system continues to be supported, the alert system offers significant benefits and is easier to use. 
+
+=== Other
+
+From the Other section of the Support menu, you can:
+
+* Manage link:../admin/manage-link-costs.html[link cost]
+* View link:../admin/viewing-notification-status-and-queues.html[Network Management System (NMS)] entries
+* Manage link:../admin/what-storage-volume-watermarks-are.html[storage watermarks]
