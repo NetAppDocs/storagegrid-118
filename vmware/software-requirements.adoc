@@ -2,14 +2,14 @@
 permalink: vmware/software-requirements.html
 sidebar: sidebar
 keywords: software requirements
-summary: 'You can use a virtual machine to host any type of StorageGRID node. One virtual machine is required for each grid node installed on the VMware server.'
+summary: 'You can use a virtual machine to host any type of StorageGRID node. You need one virtual machine for each grid node.'
 ---
-= Software requirements
+= Software requirements for VMware
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You can use a virtual machine to host any type of StorageGRID node. One virtual machine is required for each grid node installed on the VMware server.
+You can use a virtual machine to host any type of StorageGRID node. You need one virtual machine for each grid node.
 
 == VMware vSphere Hypervisor
 
@@ -36,43 +36,41 @@ For the steps required to install these VMware products, see the VMware document
 
 == Other required software
 
-Successful installation of StorageGRID on operating systems not provided by NetApp requires installation of some non-NetApp software packages, as discussed in this guide. Some supported operating system distributions do not contain these packages by default. 
+To install StorageGRID on VMware, you must install some third-party software packages. Some supported operating systems don't contain these packages by default. The software package versions that StorageGRID installations are tested on include those listed on this page. 
 
-StorageGRID strives to test the package versions shipped with supported operating system versions. The key software package versions that NetApp used to test StorageGRID installation on supported operating systems are listed below. 
+NOTE: If you select a base operating system and container runtime installation option that requires any of these packages, and they are not already present in your operating system installation, install one of the versions listed here if available from your operating system vendor. Otherwise, use the default package versions available from your vendor.
 
-If you select a base operating system and container runtime installation option that requires any of these packages, and they are not already present in your operating system install, NetApp recommends installing one of the tested versions in the table, if available from your operating system vendor. Otherwise NetApp recommends using the default package versions available from your operating system vendor for the operating system version that you have selected.
+=== Python versions tested:
 
-* Python versions tested:
+* 3.5.2-2
+* 3.6.8-2
+* 3.6.8-38
+* 3.6.9-1
+* 3.7.3-1
+* 3.8.10-0
+* 3.9.2-1
+* 3.9.10-2
+* 3.9.16-1
+* 3.10.6-1
+* 3.11.2-6
 
-** 3.5.2-2
-** 3.6.8-2
-** 3.6.8-38
-** 3.6.9-1
-** 3.7.3-1
-** 3.8.10-0
-** 3.9.2-1
-** 3.9.10-2
-** 3.9.16-1
-** 3.10.6-1
-** 3.11.2-6
+=== Podman versions tested:
 
-* Podman versions tested:
+* 3.2.3-0
+* 3.4.4+ds1
+* 4.1.1-7
+* 4.2.0-11
+* 4.3.1+ds1-8+b1
+* 4.4.1-8
+* 4.4.1-12
 
-** 3.2.3-0
-** 3.4.4+ds1
-** 4.1.1-7
-** 4.2.0-11
-** 4.3.1+ds1-8+b1
-** 4.4.1-8
-** 4.4.1-12
+=== Docker versions tested:
 
-* Docker versions tested:
-
-** Docker-CE 20.10.7
-** Docker-CE 20.10.20-3
-** Docker-CE 23.0.6-1
-** Docker-CE 24.0.2-1
-** Docker-CE 24.0.4-1
-** Docker-CE 24.0.5-1
-** Docker-CE 24.0.7-1
-** 1.5-2
+* Docker-CE 20.10.7
+* Docker-CE 20.10.20-3
+* Docker-CE 23.0.6-1
+* Docker-CE 24.0.2-1
+* Docker-CE 24.0.4-1
+* Docker-CE 24.0.5-1
+* Docker-CE 24.0.7-1
+* 1.5-2
