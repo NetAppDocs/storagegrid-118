@@ -11,9 +11,11 @@ summary: 'You can use a virtual machine to host any type of StorageGRID node. Yo
 [.lead]
 You can use a virtual machine to host any type of StorageGRID node. You need one virtual machine for each grid node.
 
-To install StorageGRID on Ubuntu or Debian, you must install some third-party software packages. Some supported operating systems don't contain these packages by default. The software package versions that StorageGRID installations are tested on include those listed on this page. 
+To install StorageGRID on Ubuntu or Debian, you must install some third-party software packages. Some supported Linux distributions don't contain these packages by default. The software package versions that StorageGRID installations are tested on include those listed on this page. 
 
-NOTE: If you select a base operating system and container runtime installation option that requires any of these packages, and they are not already present in your operating system installation, install one of the versions listed here if available from your operating system vendor. Otherwise, use the default package versions available from your vendor.
+NOTE: If you select a Linux distribution and container runtime installation option that requires any of these packages, and they are not installed automatically by the Linux distribution, install one of the versions listed here if available from your provider or the supporting vendor for your Linux distribution. Otherwise, use the default package versions available from your vendor.
+
+NOTE: All installation options require either Podman or Docker. Do not install both packages. Install only the package required by your installation option.
 
 == Python versions tested:
 
