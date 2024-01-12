@@ -130,7 +130,7 @@ In the screenshot, the *Actual reserved* value is 8 TB. This screenshot is for a
 
 == Example for actual reserved metadata space
 
-Suppose you install a new StorageGRID system using version 11.7. For this example, assume that each Storage Node has more than 128 GB of RAM and that volume 0 of Storage Node 1 (SN1) is 6 TB. Based on these values:
+Suppose you install a new StorageGRID system using version 11.7 or later. For this example, assume that each Storage Node has more than 128 GB of RAM and that volume 0 of Storage Node 1 (SN1) is 6 TB. Based on these values:
 
 * The system-wide *Metadata reserved space* is set to 8 TB. (This is the default value for a new StorageGRID 11.6 or higher installation if each Storage Node has more than 128 GB RAM.)
 * The actual reserved space for metadata for SN1 is 6 TB. (The entire volume is reserved because volume 0 is smaller than the *Metadata reserved space* setting.)
