@@ -144,7 +144,7 @@ Maintenance tasks include:
 * link:../maintain/grid-node-recovery-procedures.html[Grid node recovery procedures] to replace a failed node and restore data
 * link:../maintain/rename-grid-site-node-overview.html[Rename procedures] to change the display names of your grid, sites, and nodes
 * link:../troubleshoot/verifying-object-integrity.html[Object existence check operations] to verify the existence (although not the correctness) of object data
-* Rolling reboot
+* Perform a link:../maintain/rolling-reboot-procedure.html[rolling reboot] to restart multiple grid nodes
 * link:../maintain/restoring-volume.html[Volume restoration operations]
 
 === System
