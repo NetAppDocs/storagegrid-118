@@ -37,8 +37,6 @@ The *Search* field in the header bar allows you to quickly navigate to a specifi
 
 The help menu image:../media/icon-help-menu-bar.png[help icon on the menu bar] provides access to the FabricPool and S3 setup wizard, the StorageGRID documentation center for the current release, and the API documentation. You can also determine which version of StorageGRID is currently installed.
 
-image::../media/help_menu.png[Help menu]
-
 .Learn more
 
 * link:../fabricpool/use-fabricpool-setup-wizard.html[Use FabricPool setup wizard]
@@ -49,8 +47,6 @@ image::../media/help_menu.png[Help menu]
 == Alerts menu
 
 The Alerts menu provides an easy-to-use interface for detecting, evaluating, and resolving issues that might occur during StorageGRID operation.
-
-image::../media/alerts_menu.png[Alerts Menu]
 
 From the Alerts menu, you can do the following:
 
@@ -94,8 +90,6 @@ image::../media/tenants_menu_and_page.png[Tenants Menu and Page]
 
 The ILM menu allows you to configure the information lifecycle management (ILM) rules and policies that govern data durability and availability. You can also enter an object identifier to view the metadata for that object.
 
-image::../media/ilm_menu_and_page.png[ILM Menu and Page]
-
 .Learn more
 
 * link:using-information-lifecycle-management.html[Use information lifecycle management]
@@ -105,8 +99,6 @@ image::../media/ilm_menu_and_page.png[ILM Menu and Page]
 == Configuration menu
 
 The Configuration menu allows you to specify network settings, security settings, system settings, monitoring options, and access control options.
-
-image::../media/configuration_menu.png[Configuration Menu]
 
 === Network tasks
 
@@ -156,8 +148,6 @@ Access control tasks include:
 
 The Maintenance menu allows you to perform maintenance tasks, system maintenance, and network maintenance.
 
-image::../media/maintenance_menu.png[Maintenance Menu and Page]
-
 === Tasks
 
 Maintenance tasks include:
@@ -193,8 +183,6 @@ Network maintenance tasks you can perform include:
 == Support menu
 
 The Support menu provides options that help technical support analyze and troubleshoot your system. There are three parts to the Support menu: Tools, Alarms (legacy), and Other.
-
-image::../media/support_menu.png[Support menu]
 
 === Tools
 
