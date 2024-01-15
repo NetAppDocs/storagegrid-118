@@ -2,14 +2,14 @@
 permalink: upgrade/linux-installing-rpm-or-deb-package-on-all-hosts.html
 sidebar: sidebar
 keywords: upgrade, linux, rpm, deb,
-summary: 'If any StorageGRID nodes are deployed on Linux hosts, you must install an additional RPM or DEB package on each of these hosts before you start the upgrade.'
+summary: 'If any StorageGRID nodes are deployed on Linux hosts, install an additional RPM or DEB package on each of these hosts before you start the upgrade.'
 ---
 = Linux: Download and install the RPM or DEB package on all hosts
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-If any StorageGRID nodes are deployed on Linux hosts, you must download and install an additional RPM or DEB package on each of these hosts before you start the upgrade.
+If any StorageGRID nodes are deployed on Linux hosts, download and install an additional RPM or DEB package on each of these hosts before you start the upgrade.
 
 == Download upgrade, Linux, and hotfix files
 When you perform a StorageGRID upgrade from the Grid Manager, you are prompted to download the upgrade archive and any required hotfix as the first step. However, if you need to download files to upgrade Linux hosts, you can save time by downloading all required files in advance.

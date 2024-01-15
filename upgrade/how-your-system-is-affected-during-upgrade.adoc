@@ -2,14 +2,14 @@
 permalink: upgrade/how-your-system-is-affected-during-upgrade.html
 sidebar: sidebar
 keywords: upgrade, firmware, appliance, alert
-summary: 'You must understand how your StorageGRID system will be affected during the upgrade.'
+summary: 'Learn how your StorageGRID system will be affected during upgrade.'
 ---
 = How your system is affected during the upgrade
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You must understand how your StorageGRID system will be affected during the upgrade.
+Learn how your StorageGRID system will be affected during upgrade.
 
 == StorageGRID upgrades are non-disruptive
 
@@ -34,9 +34,11 @@ NOTE: You can use multiple gateways and high availability (HA) groups to provide
 
 During the StorageGRID 11.8 upgrade:
 
-* All StorageGRID appliance nodes are automatically upgraded to StorageGRID Appliance Installer firmware version n.n.
-* SG6060 and SGF6024 appliances are automatically upgraded to BIOS firmware version 3B07.EX and BMC firmware version n.n.n.
-* SG100 and SG1000 appliances are automatically upgraded to BIOS firmware version 3B12.EC and BMC firmware version n.n.n.
+* All StorageGRID appliance nodes are automatically upgraded to StorageGRID Appliance Installer firmware version 3.8.
+* SG6060 and SGF6024 appliances are automatically upgraded to BIOS firmware version 3B07.EX and BMC firmware version 3.99.07.
+* SG100 and SG1000 appliances are automatically upgraded to BIOS firmware version 3B12.EC and BMC firmware version 4.73.07.
+* SGF6112 appliance is automatically upgraded to BIOS firmware version 3A10.QD and BMC firmware version 3.15.07.
+* SGF6112 is converted from legacy boot mode to UEFI boot mode with secure boot enabled.
 
 == ILM policies are handled differently according to their status
 

@@ -41,12 +41,10 @@ Deploy grid nodes. When you deploy grid nodes, they are created as part of the S
 [role="quick-margin-para"]
 When all nodes have been deployed, use the Grid Manager to link:navigating-to-grid-manager.html[configure the grid and complete the installation].
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png[Four] Automate the installation
+== Automate the installation
 
-[role="quick-margin-para"]
 To save time and provide consistency, you can automate the deployment and configuration of grid nodes and the configuration of the StorageGRID system.
 
-[role="quick-margin-list"]
 * link:automating-grid-node-deployment-in-vmware-vsphere.html#automate-grid-node-deployment[Automate grid node deployment using VMware vSphere].
 
 * After you deploy grid nodes, link:automating-grid-node-deployment-in-vmware-vsphere.html#automate-the-configuration-of-storagegrid[automate the configuration of the StorageGRID system] using the Python configuration script provided in the installation archive.

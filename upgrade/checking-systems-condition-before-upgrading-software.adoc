@@ -2,14 +2,14 @@
 permalink: upgrade/checking-systems-condition-before-upgrading-software.html
 sidebar: sidebar
 keywords: upgrade, grid tasks, firewall, ports
-summary: 'Before upgrading a StorageGRID system, you must verify the system is ready to accommodate the upgrade. You must ensure that the system is running normally and that all grid nodes are operational.'
+summary: 'Before upgrading a StorageGRID system, verify that the system is ready to accommodate the upgrade. Ensure that the system is running normally and that all grid nodes are operational.'
 ---
 = Check the system's condition
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Before upgrading a StorageGRID system, you must verify the system is ready to accommodate the upgrade. You must ensure that the system is running normally and that all grid nodes are operational.
+Before upgrading a StorageGRID system, verify the system is ready to accommodate the upgrade. Ensure that the system is running normally and that all grid nodes are operational.
 
 .Steps
 . Sign in to the Grid Manager using a link:../admin/web-browser-requirements.html[supported web browser].
