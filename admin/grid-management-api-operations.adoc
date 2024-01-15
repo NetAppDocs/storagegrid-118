@@ -44,8 +44,9 @@ See "Protecting against Cross-Site Request Forgery" for information about improv
 * *groups*: Operations to manage local Grid Administrator Groups and to retrieve federated Grid Administrator Groups from an external LDAP server.
 * *identity-source*: Operations to configure an external identity source and to manually synchronize federated group and user information.
 * *ilm*: Operations on information lifecycle management (ILM).
+* *in-progress-procedures*: Retrieves the maintenance procedures that are currently in progress.
 * *license*: Operations to retrieve and update the StorageGRID license.
-* *logs*: Operations for collecting and downloading log files.
+* *logs*: Operations for collecting and downloading log files.v
 * *metrics*: Operations on StorageGRID metrics including instant metric queries at a single point in time and range metric queries over a range of time. The Grid Management API uses the Prometheus systems monitoring tool as the backend data source. For information about constructing Prometheus queries, see the Prometheus web site.
 +
 NOTE: Metrics that include ``_private_`` in their names are intended for internal use only. These metrics are subject to change between StorageGRID releases without notice.
@@ -61,6 +62,7 @@ NOTE: Metrics that include ``_private_`` in their names are intended for interna
 * *s3-object-lock*: Operations on global S3 Object Lock settings.
 * *server-certificate*: Operations to view and update Grid Manager server certificates.
 * *snmp*: Operations on the current SNMP configuration.
+* *storage-watermarks*: Storage node watermarks.
 * *traffic-classes*: Operations for traffic classification policies.
 * *untrusted-client-network*: Operations on the untrusted Client Network configuration.
 * *users*: Operations to view and manage Grid Manager users.

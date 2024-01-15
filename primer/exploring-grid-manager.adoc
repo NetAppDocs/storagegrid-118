@@ -11,23 +11,21 @@ summary: 'The Grid Manager is the browser-based graphical interface that allows 
 [.lead]
 The Grid Manager is the browser-based graphical interface that allows you to configure, manage, and monitor your StorageGRID system.
 
+NOTE: The Grid Manager is updated with each release and might not match the example screenshots on this page.
+
 When you sign in to the Grid Manager, you are connecting to an Admin Node. Each StorageGRID system includes one primary Admin Node and any number of non-primary Admin Nodes. You can connect to any Admin Node, and each Admin Node displays a similar view of the StorageGRID system.
 
 You can access the Grid Manager using a link:../admin/web-browser-requirements.html[supported web browser].
 
 == Grid Manager dashboard
 
-When you first sign in to the Grid Manager, you can use the dashboard to monitor system activities at a glance.
+When you first sign in to the Grid Manager, you can use the dashboard to link:../monitor/viewing-dashboard.html[monitor system activities] at a glance.
 
-The dashboard contains information about system health and performance, storage use, ILM processes, S3 and Swift operations, and the nodes in the grid. You can configure the dashboard by selecting from a collection of cards that contain the information you need to effectively monitor your system.
+The dashboard contains information about system health and performance, storage use, ILM processes, S3 and Swift operations, and the nodes in the grid. You can link:../monitor/viewing-dashboard.html[configure the dashboard] by selecting from a collection of cards that contain the information you need to effectively monitor your system.
 
-image::../media/grid_manager_dashboard.png[Dashboard in the Grid Manager]
+image::../media/grid_manager_dashboard_and_menu.png[Dashboard in the Grid Manager]
 
 For an explanation of the information shown on each card, select the help icon image:../media/icon_nms_question.png[question mark icon] for that card.
-
-.Learn more
-
-* link:../monitor/viewing-dashboard.html[View and configure the dashboard]
 
 == Search field
 
@@ -35,24 +33,18 @@ The *Search* field in the header bar allows you to quickly navigate to a specifi
 
 == Help menu
 
-The help menu image:../media/icon-help-menu-bar.png[help icon on the menu bar] provides access to the FabricPool and S3 setup wizard, the StorageGRID documentation center for the current release, and the API documentation. You can also determine which version of StorageGRID is currently installed.
+The help menu image:../media/icon-help-menu-bar.png[help icon on the menu bar] provides access to:
 
-image::../media/help_menu.png[Help menu]
-
-.Learn more
-
-* link:../fabricpool/use-fabricpool-setup-wizard.html[Use FabricPool setup wizard]
-* link:../admin/use-s3-setup-wizard.html[Use S3 setup wizard]
-* link:../admin/using-grid-management-api.html[Use the Grid Management API]
-
+* The link:../fabricpool/use-fabricpool-setup-wizard.html[FabricPool] and link:../admin/use-s3-setup-wizard.html[S3 setup] wizard 
+* The StorageGRID documentation center for the current release
+* link:../admin/using-grid-management-api.html[API documentation]
+* Information about which version of StorageGRID is currently installed
 
 == Alerts menu
 
 The Alerts menu provides an easy-to-use interface for detecting, evaluating, and resolving issues that might occur during StorageGRID operation.
 
-image::../media/alerts_menu.png[Alerts Menu]
-
-From the Alerts menu, you can do the following:
+From the Alerts menu, you can do the following to link:../monitor/managing-alerts.html[manage alerts]:
 
 * Review current alerts
 * Review resolved alerts
@@ -60,53 +52,40 @@ From the Alerts menu, you can do the following:
 * Define alert rules for conditions that trigger alerts
 * Configure the email server for alert notifications
 
-.Learn more
-
-* link:../monitor/managing-alerts.html[Manage alerts]
-
 == Nodes page
 
-The Nodes page displays information about the entire grid, each site in the grid, and each node at a site.
+The link:../monitor/viewing-nodes-page.html[Nodes page] displays information about the entire grid, each site in the grid, and each node at a site.
 
 The Nodes home page displays combined metrics for the entire grid. To view information for a particular site or node, select the site or node.
 
-image::../media/nodes_menu.png[nodes page main]
-
-.Learn more
-
-* link:../monitor/viewing-nodes-page.html[View the Nodes page]
+image::../media/nodes_page.png[nodes page main]
 
 == Tenants page
 
-The Tenants page allows you to create and monitor the storage tenant accounts for your StorageGRID system. You must create at least one tenant account to specify who can store and retrieve objects and which functionality is available to them.
+The link:../admin/managing-tenants.html[Tenants] page allows you to link:../tenant/index.html[create and monitor the storage tenant accounts] for your StorageGRID system. You must create at least one tenant account to specify who can store and retrieve objects and which functionality is available to them.
 
 The Tenants page also provides usage details for each tenant, including the amount of storage used and the number of objects. If you set a quota when you created the tenant, you can see how much of that quota has been used.
 
-image::../media/tenants_menu_and_page.png[Tenants Menu and Page]
-
-.Learn more
-
-* link:../admin/managing-tenants.html[Manage tenants]
-
-* link:../tenant/index.html[Use a tenant account]
+image::../media/tenants_page.png[Tenants Menu and Page]
 
 == ILM menu
 
-The ILM menu allows you to configure the information lifecycle management (ILM) rules and policies that govern data durability and availability. You can also enter an object identifier to view the metadata for that object.
+The link:using-information-lifecycle-management.html[ILM menu] allows you to link:../ilm/index.html[configure the information lifecycle management (ILM) rules and policies] that govern data durability and availability. You can also enter an object identifier to view the metadata for that object.
 
-image::../media/ilm_menu_and_page.png[ILM Menu and Page]
+From the ILM menu you can view and manage ILM:
 
-.Learn more
-
-* link:using-information-lifecycle-management.html[Use information lifecycle management]
-
-* link:../ilm/index.html[Manage objects with ILM]
+* Rules
+* Policies
+* Policy tags
+* Storage pools
+* Erasure coding
+* Storage grades
+* Regions
+* Object metadata lookup
 
 == Configuration menu
 
 The Configuration menu allows you to specify network settings, security settings, system settings, monitoring options, and access control options.
-
-image::../media/configuration_menu.png[Configuration Menu]
 
 === Network tasks
 
@@ -156,8 +135,6 @@ Access control tasks include:
 
 The Maintenance menu allows you to perform maintenance tasks, system maintenance, and network maintenance.
 
-image::../media/maintenance_menu.png[Maintenance Menu and Page]
-
 === Tasks
 
 Maintenance tasks include:
@@ -167,6 +144,7 @@ Maintenance tasks include:
 * link:../maintain/grid-node-recovery-procedures.html[Grid node recovery procedures] to replace a failed node and restore data
 * link:../maintain/rename-grid-site-node-overview.html[Rename procedures] to change the display names of your grid, sites, and nodes
 * link:../troubleshoot/verifying-object-integrity.html[Object existence check operations] to verify the existence (although not the correctness) of object data
+* Performing a link:../maintain/rolling-reboot-procedure.html[rolling reboot] to restart multiple grid nodes
 * link:../maintain/restoring-volume.html[Volume restoration operations]
 
 === System
@@ -194,8 +172,6 @@ Network maintenance tasks you can perform include:
 
 The Support menu provides options that help technical support analyze and troubleshoot your system. There are three parts to the Support menu: Tools, Alarms (legacy), and Other.
 
-image::../media/support_menu.png[Support menu]
-
 === Tools
 
 From the Tools section of the Support menu, you can:
@@ -210,6 +186,18 @@ NOTE: The tools available from the *Metrics* option are intended for use by tech
 
 === Alarms (legacy)
 
-From the Alarms (legacy) section of the Support menu, you can review current, historical, and global alarms, set up custom events, and set up email notifications for legacy alarms. See link:../monitor/managing-alarms.html[Manage alarms (legacy system)].
+From the link:../monitor/managing-alarms.html[Alarms (legacy)] section of the Support menu, you can:
+
+* Review current, historical, and global alarms
+* Set up custom events
+* Set up link:../monitor/managing-alarms.html[email notifications for legacy alarms]
 
 NOTE: While the legacy alarm system continues to be supported, the alert system offers significant benefits and is easier to use. 
+
+=== Other
+
+From the Other section of the Support menu, you can:
+
+* Manage link:../admin/manage-link-costs.html[link cost]
+* View link:../admin/viewing-notification-status-and-queues.html[Network Management System (NMS)] entries
+* Manage link:../admin/what-storage-volume-watermarks-are.html[storage watermarks]

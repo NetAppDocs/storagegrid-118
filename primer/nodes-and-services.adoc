@@ -21,7 +21,7 @@ Admin Nodes can also be used to load balance S3 and Swift client traffic.
 +
 See link:what-admin-node-is.html[What is an Admin Node?]
 
-Storage Nodes:: Manage and store object data and metadata. Each StorageGRID system must have at least three Storage Nodes. If you have multiple sites, each site within your StorageGRID system must also have at least three Storage Nodes.
+Storage Nodes:: Manage and store object data and metadata. Each site in your StorageGRID system must have at least three Storage Nodes.
 +
 See link:what-storage-node-is.html[What is a Storage Node?]
 
