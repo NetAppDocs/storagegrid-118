@@ -2,14 +2,14 @@
 permalink: upgrade/estimating-time-to-complete-upgrade.html
 sidebar: sidebar
 keywords: upgrade, time estimate, duration, cassandra upgrade
-summary: 'When planning an upgrade to StorageGRID 11.8, you must consider when to upgrade, based on how long the upgrade might take. You must also be aware of which operations you can and cannot perform during each stage of the upgrade.'
+summary: 'Consider when to upgrade, based on how long the upgrade might take. Be aware of which operations you can and cannot perform during each stage of the upgrade.'
 ---
 = Estimate the time to complete an upgrade
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-When planning an upgrade to StorageGRID 11.8, you must consider when to upgrade, based on how long the upgrade might take. You must also be aware of which operations you can and can't perform during each stage of the upgrade.
+Consider when to upgrade, based on how long the upgrade might take. Be aware of which operations you can and can't perform during each stage of the upgrade.
 
 .About this task
 The time required to complete a StorageGRID upgrade depends on a variety of factors such as client load and hardware performance.

@@ -21,7 +21,7 @@ Verify that the server responds, indicating connectivity.
 
 . Mount the audit read-only share using a command appropriate to the client operating system. A sample Linux command is (enter on one line):
 +
-`mount -t nfs -o hard,intr _Admin_Node_IP_address_:/var/local/audit/export _myAudit_`
+`mount -t nfs -o hard,intr _Admin_Node_IP_address_:/var/local/log _myAudit_`
 +
 Use the IP address of the Admin Node hosting the AMS service and the predefined share name for the audit system. The mount point can be any name selected by the client (for example, `_myAudit_` in the previous command).
 

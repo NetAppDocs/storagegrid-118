@@ -76,7 +76,7 @@ indexpage:
     - title: More resources
       links:
       - title: StorageGRID support page
-        url: https://mysupport.netapp.com/site/products/all/details/5d9f1107e01d9c0001ee50f6/downloads-tab
+        url: https://mysupport.netapp.com/site/products/all/details/5d9f1107e01d9c0001ee50f6/guideme-tab
       - title: NetApp Interoperability Matrix Tool (IMT)
         url: https://imt.netapp.com/matrix/#welcome
       - title: StorageGRID knowledge base

@@ -68,6 +68,13 @@ a|3 for each Storage Node on this host
 
 a|12 TB (4 TB/LUN) See <<storage_req_SN,Storage requirements for Storage Nodes>> for more information.
 
+a|Storage Node (metadata-only)
+a|Object metadata
+a|1
+a|4 TB See <<storage_req_SN,Storage requirements for Storage Nodes>> for more information. 
+
+*Note*: Only one rangedb is required for metadata-only Storage Nodes.
+
 a|Admin Node audit logs
 a|System data
 a|1 for each Admin Node on this host
