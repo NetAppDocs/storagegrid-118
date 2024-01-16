@@ -4,13 +4,16 @@ sidebar: sidebar
 keywords: features, removed, deprecated
 summary: 'Some features were removed or deprecated in this release. Review these items to understand whether you need to update client applications or modify your configuration before you upgrade.'
 ---
-= Removed or deprecated features
+= Removed or deprecated features and capabilities
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
 Some features were removed or deprecated in this release. Review these items to understand whether you need to update client applications or modify your configuration before you upgrade.
 
+Deprecated features might be removed beginning in N+2 major versions. For example, if a feature is deprecated in version N (for example, 6.3), the last version where the feature will exist is N+1 (for example, 6.4). Version N+2 (for example, 6.5) is the earliest that the feature removal will occur. See the https://mysupport.netapp.com/site/info/version-support[Software Version Support page^] for additional information on version support.
+
+In certain situations, NetApp might end support for particular features sooner than indicated.
+
 == repair-data script deprecated
 The repair-data script is deprecated and will be removed in a future release. When possible, use the link:../maintain/restoring-volume.html[Volume restoration procedure in the Grid Manager].
-
