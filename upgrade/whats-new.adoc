@@ -98,6 +98,6 @@ See https://docs.netapp.com/us-en/bluexp-storagegrid/index.html[StorageGRID mana
 
 The Grid Manager list of ports open to the untrusted Client Network is now located in a column named, "Open to untrusted Client network" at *CONFIGURATION* > *Network* > *Load balancer endpoints* > *Management interface* (previously located on the Firewall control page).
 
-== Documentation changes
+== Documentation change
 
-* The documentation for StorageGRID appliances was moved to a link:https://review.docs.netapp.com/us-en/storagegrid-appliances_main/[new documentation site].
+* The documentation for StorageGRID appliances was moved to a link:https://review.docs.netapp.com/us-en/storagegrid-appliances_main/[new documentation site^].
