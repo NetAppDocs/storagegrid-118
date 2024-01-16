@@ -178,7 +178,7 @@ image::../media/recovering_cassandra.png[screenshot showing recovery progress in
 
 . After the `sn-recovery-postinstall.sh` script has started services on the node, you can restore object data to any storage volumes that were formatted by the script. 
 +
-The script asks if you want to restore object data manually.
+The script asks if you want to use the Grid Manager volume restoration process.
 
 * In most cases, you should link:../maintain/restoring-volume.html[restore object data using Grid Manager]. Answer `y` to use the Grid Manager.
 
@@ -186,7 +186,7 @@ The script asks if you want to restore object data manually.
 +
 [NOTE]
 ====
-If you answer `n` to restore object data manually:
+If you answer `n` to using the Grid Manager volume restoration process (restore object data manually):
 
 * You aren't able to restore object data using Grid Manager. 
 * You can monitor the progress of manual restoration jobs using Grid Manager.
