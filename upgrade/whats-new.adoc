@@ -55,7 +55,7 @@ Create load balancer endpoints to manage the management interface workload on Ad
 
 * Hashicorp is now fully supported for KMIP.
 
-* Enhancements were made to TLS policy configuration.
+* Enhancements were made to TLS policy configuration. See link:../admin/manage-tls-ssh-policy.html[Manage the TLS and SSH policy].
 
 === Account clone improvement
 Existing accounts can be cloned to a remote grid.
