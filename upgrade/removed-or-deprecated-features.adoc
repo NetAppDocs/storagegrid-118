@@ -13,7 +13,7 @@ Some features were removed or deprecated in this release. Review these items to 
 
 Deprecated features might be removed beginning in N+2 major versions. For example, if a feature is deprecated in version N (for example, 6.3), the last version where the feature will exist is N+1 (for example, 6.4). Version N+2 (for example, 6.5) is the earliest that the feature removal will occur.
 
-In certain situations, NetApp might end support for particular features sooner than indicated.
+NOTE: In certain situations, NetApp might end support for particular features sooner than indicated.
 
 == StorageGRID 11.8 end of feature support
 See the https://mysupport.netapp.com/site/info/version-support[Software Version Support page^] for additional information.
