@@ -656,4 +656,4 @@ Some of the default alerts use link:commonly-used-prometheus-metrics.html[Promet
 | Tenant quota usage high
 | A high percentage of quota space is being used. This rule is disabled by default because it might cause too many notifications.
 |===
-// 2023-1-16, SGRIDOC42
+// 2024-1-16, SGRIDOC42
