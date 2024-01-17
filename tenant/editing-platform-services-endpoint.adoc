@@ -29,8 +29,6 @@ image::../media/endpoints_list.png[Endpoints List]
 The endpoint details page appears.
 
 . Select *Configuration*.
-+
-image::../media/endpoint_edit_configuration.png[Edit Endpoint Configuration]
 
 . As needed, change the configuration of the endpoint.
 +
