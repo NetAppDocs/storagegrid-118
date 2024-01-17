@@ -11,7 +11,13 @@ summary: 'Some features were removed or deprecated in this release. Review these
 [.lead]
 Some features were removed or deprecated in this release. Review these items to understand whether you need to update client applications or modify your configuration before you upgrade.
 
-Deprecated features might be removed beginning in N+2 major versions. For example, if a feature is deprecated in version N (for example, 6.3), the last version where the feature will exist is N+1 (for example, 6.4). Version N+2 (for example, 6.5) is the earliest that the feature removal will occur.
+.Definitions
+
+Deprecated:: The feature *should not* be used in new production environments. Existing production environments can continue using the feature.
+End of Life:: Last shipped version that contains the feature. No future versions will support the feature.
+Removed:: First version that *does not* contain the feature.
+
+Deprecated features will be removed in N+2 major versions. For example, if a feature is deprecated in version N (for example, 6.3), the last version where the feature will exist is N+1 (for example, 6.4). Version N+2 (for example, 6.5) is the first release when the feature doesn't exist in the product.
 
 NOTE: In certain situations, NetApp might end support for particular features sooner than indicated.
 
@@ -22,41 +28,28 @@ See the https://mysupport.netapp.com/site/info/version-support[Software Version 
 |===
 | Feature| Deprecated| End of Life| Removed
 
+| Active Directory (AD) 20012R2
+| -
+| 11.7
+| 11.8
+
 | Archive Node support
 | 11.7
 | 11.8
 | 11.9
-
-| Swift API support
-| -
-| 11.8
-| 11.9
-
-| AD 20012R2
-| -
-| 11.7
-| 11.8
-
-| CLB service
-| 11.4
-| 11.6
-| 11.7
 
 | Audit export through CIPS/Samba
 | 11.1
 | 11.6
 |11.7
 
-| `repair-data` script
+| CLB service
+| 11.4
+| 11.6
+| 11.7
+
+| Swift API support
+| -
 | 11.8
-| 
-| 
+| 11.9
 |===
-
-
-
-
-
-
-== repair-data script deprecated
-The repair-data script is deprecated and will be removed in a future release. When possible, use the link:../maintain/restoring-volume.html[Volume restoration procedure in the Grid Manager].
