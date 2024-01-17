@@ -184,7 +184,7 @@ Some of the default alerts use link:commonly-used-prometheus-metrics.html[Promet
 |===
 | Alert name| Description
 
-| FabricPool bucket has unsupported bucket consistency
+| FabricPool bucket has unsupported bucket consistency setting
 | A FabricPool bucket uses the Available or Strong-site consistency level, which is not supported.
 |===
 
@@ -477,7 +477,7 @@ Some of the default alerts use link:commonly-used-prometheus-metrics.html[Promet
 | The space available on the root disk is low.
 
 | Low system data capacity
-| The space available for StorageGRID system data on the /var/local mount point is low.
+| The space available for /var/local is low. If this condition is not addressed, S3 or Swift operations might fail.
 
 | Low tmp directory free space
 | The space available in the /tmp directory is low.
@@ -488,6 +488,12 @@ Some of the default alerts use link:commonly-used-prometheus-metrics.html[Promet
 [cols="1a,2a" options="header"]
 |===
 | Alert name| Description
+
+| Admin Network receive usage
+| The receive usage on the Admin Network is high.
+
+| Admin Network transmit usage
+| The transmit usage on the Admin Network is high.
 
 | Firewall configuration failure
 | Failed to apply firewall configuration.
@@ -555,6 +561,9 @@ Some of the default alerts use link:commonly-used-prometheus-metrics.html[Promet
 | Storage Node not in desired storage state
 | The LDR service on a Storage Node cannot transition to the desired state because of an internal error or volume related issue
 
+| TCP connection usage
+| The number of TCP connections on this node is approaching the maximum number that can be tracked.
+
 | Unable to communicate with node
 | One or more services are unresponsive, or the node cannot be reached.
 
@@ -589,6 +598,9 @@ Some of the default alerts use link:commonly-used-prometheus-metrics.html[Promet
 [cols="1a,2a" options="header"]
 |===
 | Alert name| Description
+
+| Platform Services pending request capacity low
+| The number of Platform Services pending requests is approaching capacity.
 
 | Platform services unavailable
 | Too few Storage Nodes with the RSM service are running or available at a site.
@@ -644,3 +656,4 @@ Some of the default alerts use link:commonly-used-prometheus-metrics.html[Promet
 | Tenant quota usage high
 | A high percentage of quota space is being used. This rule is disabled by default because it might cause too many notifications.
 |===
+// 2024-1-16, SGRIDOC42
