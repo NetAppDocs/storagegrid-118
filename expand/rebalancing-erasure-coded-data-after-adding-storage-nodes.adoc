@@ -99,7 +99,7 @@ To get help on the rebalance-data command:
 
 ** If `State` is `In progress`, the EC rebalance operation is still running. You should periodically monitor the procedure until it completes.
 +
-Use the `Site Imbalance` value to assess how unbalanced erasure-code data usage is across the Storage Nodes at the site. This value can range from 0.5 to 0, with 0 indicating that erasure-coding data usage is completely balanced across all Storage Nodes at the site.
+Use the `Site Imbalance` value to assess how unbalanced erasure-code data usage is across the Storage Nodes at the site. This value can range from 1.0 to 0, with 0 indicating that erasure-coding data usage is completely balanced across all Storage Nodes at the site.
 + 
 The EC rebalance job is considered complete and will stop when the data in all nodes is within a 5% deviation of the target data partition.   
 
