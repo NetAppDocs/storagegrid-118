@@ -103,6 +103,8 @@ You must enable S3 Object Lock when you create the bucket. You can't add or disa
 | GetBucketTagging
 | Uses the `tagging` subresource to return all tags for a bucket.
 
+*Caution*: If present, do not modify the `NTAP-SG-ILM-BUCKET-TAG` ILM policy tag using the S3 API. Set and modify ILM policy tags using only the Tenant Manager or Tenant Manager API where the ILM policy tag is validated.
+
 | GetBucketVersioning
 | This implementation uses the `versioning` subresource to return the versioning state of a bucket.
 
@@ -227,6 +229,8 @@ The endpoint must exist for replication configuration to succeed. If the endpoin
 * Tags associated with a bucket must have unique tag keys. A tag key can be up to 128 Unicode characters in length.
 * Tag values can be up to 256 Unicode characters in length.
 * Key and values are case sensitive.
+
+*Caution*: If present, do not modify the `NTAP-SG-ILM-BUCKET-TAG` ILM policy tag using the S3 API. Set and modify ILM policy tags using only the Tenant Manager or Tenant Manager API where the ILM policy tag is validated.
 
 *Note*: This operation will overwrite any current tags the bucket already has. If any existing tags are omitted from the set, those tags will be removed for the bucket.
 
