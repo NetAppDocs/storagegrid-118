@@ -39,7 +39,7 @@ NOTE: In certain situations, NetApp might end support for particular features so
 | 11.8
 | 11.9
 
-| Audit export through CIPS/Samba
+| Audit export through CIFS/Samba
 | 11.1
 | 11.6
 |11.7
