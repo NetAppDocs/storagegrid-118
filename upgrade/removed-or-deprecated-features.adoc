@@ -2,14 +2,14 @@
 permalink: upgrade/removed-or-deprecated-features.html
 sidebar: sidebar
 keywords: features, removed, deprecated
-summary: 'Some features were removed or deprecated in this release. Review these items to understand whether you need to update client applications or modify your configuration before you upgrade.'
+summary: 'Some features and capabilities were removed or deprecated in this release. Review these items to understand whether you need to update client applications or modify your configuration before you upgrade.'
 ---
 = Removed or deprecated features and capabilities
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Some features were removed or deprecated in this release. Review these items to understand whether you need to update client applications or modify your configuration before you upgrade.
+Some features and capabilities were removed or deprecated in this release. Review these items to understand whether you need to update client applications or modify your configuration before you upgrade.
 
 == Definitions
 
