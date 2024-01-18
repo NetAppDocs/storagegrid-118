@@ -13,7 +13,7 @@ indexpage:
         - title: Remove a grid node
           url: ../maintain/grid-node-decommissioning.html
         - title: Remove a site
-          url: ../maintain/site-decommissioning.html
+          url: ../maintain/considerations-for-removing-site.html
     - title: Additional maintenance procedures
       links:
       - title: Rename grid, site, or node

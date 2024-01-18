@@ -24,7 +24,7 @@ StorageGRID supports up to 1,000 lifecycle rules in a lifecycle configuration. E
 * Status
 * ID
 
-If you apply a lifecycle configuration to a bucket, the lifecycle settings for the bucket always override StorageGRID ILM settings. StorageGRID uses the Expiration settings for the bucket, not ILM, to determine whether to delete or retain specific objects.
+Each object follows the retention settings of either an S3 bucket lifecycle or an ILM policy. When an S3 bucket lifecycle is configured, the lifecycle expiration actions override the ILM policy for objects matching the bucket lifecycle filter. Objects that do not match the bucket lifecycle filter use the retention settings of the ILM policy. If an object matches a bucket lifecycle filter and no expiration actions are explicitly specified, the retention settings of the ILM policy are not used and it is implied that object versions are retained forever. See link:../ilm/example-8-priorities-for-s3-bucket-lifecycle-and-ilm-policy.html[Example priorities for S3 bucket lifecycle and ILM policy].
 
 As a result, an object might be removed from the grid even though the placement instructions in an ILM rule still apply to the object. Or, an object might be retained on the grid even after any ILM placement instructions for the object have lapsed. For details, see link:../ilm/how-ilm-operates-throughout-objects-life.html[How ILM operates throughout an object's life].
 
