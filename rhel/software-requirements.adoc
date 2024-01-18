@@ -17,7 +17,7 @@ NOTE: If you select a Linux distribution and container runtime installation opti
 
 NOTE: All installation options require either Podman or Docker. Do not install both packages. Install only the package required by your installation option.
 
-== Python versions tested:
+== Python versions tested
 
 * 3.5.2-2
 * 3.6.8-2
@@ -31,7 +31,7 @@ NOTE: All installation options require either Podman or Docker. Do not install b
 * 3.10.6-1
 * 3.11.2-6
 
-== Podman versions tested:
+== Podman versions tested
 
 * 3.2.3-0
 * 3.4.4+ds1
@@ -41,7 +41,9 @@ NOTE: All installation options require either Podman or Docker. Do not install b
 * 4.4.1-8
 * 4.4.1-12
 
-== Docker versions tested:
+== Docker versions tested
+
+IMPORTANT: Docker support is deprecated and will be removed in a future release.
 
 * Docker-CE 20.10.7
 * Docker-CE 20.10.20-3
