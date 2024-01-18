@@ -230,7 +230,7 @@ The endpoint must exist for replication configuration to succeed. If the endpoin
 * Tag values can be up to 256 Unicode characters in length.
 * Key and values are case sensitive.
 
-*Caution*: If a non-default ILM policy tag is set for this bucket, there will be a `NTAP-SG-ILM-BUCKET-TAG` bucket tag with a value assigned to it. Make sure that the `NTAP-SG-ILM-BUCKET-TAG` bucket tag is included with an assigned value in all PutBucketTagging requests. Do not modify or remove this tag.
+*Caution*: If a non-default ILM policy tag is set for this bucket, there will be a `NTAP-SG-ILM-BUCKET-TAG` bucket tag with a value assigned to it. Make sure that the `NTAP-SG-ILM-BUCKET-TAG` bucket tag is included with the assigned value in all PutBucketTagging requests. Do not modify or remove this tag.
 
 *Note*: This operation will overwrite any current tags the bucket already has. If any existing tags are omitted from the set, those tags will be removed for the bucket.
 
