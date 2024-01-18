@@ -44,7 +44,7 @@ Result::
 +
 The `Expiration` action applies only to expired delete markers, which implies keeping everything else forever (starting with "docs/").
 +
-Delete markers that start with "docs/" are removed when they expire.
+Delete markers that start with "docs/" are removed when they become expired.
 
 * An object named "video/movie" is ingested. It does not match the filter and uses the ILM retention policy.
 ** After 50 days a delete-marker is created and "video/movie" becomes noncurrent.
