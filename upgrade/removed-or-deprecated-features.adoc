@@ -1,7 +1,7 @@
 ---
-permalink: upgrade/removed-or-deprecated-features.html
+permalink: removed-or-deprecated-features.html
 sidebar: sidebar
-keywords: features, removed, deprecated
+keywords:
 summary: 'Some features and capabilities were removed or deprecated in this release. Review these items to understand whether you need to update client applications or modify your configuration before you upgrade.'
 ---
 = Removed or deprecated features and capabilities
@@ -55,7 +55,7 @@ NOTE: In certain situations, NetApp might end support for particular features so
 | 12.0
 
 | Swift API support
-| -
+| 11.7
 | 11.8
 | 11.9
 |===
