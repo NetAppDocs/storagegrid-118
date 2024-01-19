@@ -103,7 +103,6 @@ The client certificate metadata appears.
 
 . Browse to the location of the private key for the client certificate.
 . Upload the private key file.
-
 [[sg-create-key]]
 . Select *Test and save*.
 +
