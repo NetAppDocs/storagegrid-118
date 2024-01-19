@@ -74,8 +74,6 @@ Rolling reboot procedure:: You can now use the link:../maintain/rolling-reboot-p
 
 == Grid Manager
 
-Grid Manager integrated with BlueXP:: See https://docs.netapp.com/us-en/bluexp-storagegrid/index.html[StorageGRID management using BlueXP^].
-
 Untrusted Client Networks, information about additional ports:: The Grid Manager list of ports open to the untrusted Client Network is now located in a column named, "Open to untrusted Client network" at *CONFIGURATION* > *Network* > *Load balancer endpoints* > *Management interface* (previously located on the Firewall control page). See link:../admin/configuring-load-balancer-endpoints.html[Configure load balancer endpoints].
 
 
