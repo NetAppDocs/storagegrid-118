@@ -65,7 +65,7 @@ Automatic volume restoration:: Added a toggle for volume restoration to occur au
 
 Erasure coding, changes to configurations and rebalance procedure:: Improvements to erasure coding configurations.
 +
-link:../expand/rebalancing-erasure-coded-data-after-adding-storage-nodes.html[Erasure coding rebalance procedure] is now considered complete when the new Site Imbalance metric reaches 0.02 or when the job has been running continuously for 30 days.
+Redistribute erasure-coded fragments among existing and new Storage Nodes. Recalculate the balance during maintenance tasks to provide better distribution when tasks are complete. See link:../expand/rebalancing-erasure-coded-data-after-adding-storage-nodes.html[Erasure coding rebalance procedure].
 
 Management API stack trace:: The *Management API stack trace* security setting lets you control whether a stack trace is returned in Grid Manager and Tenant Manager API error responses. See link:../admin/changing-browser-session-timeout-interface.html[Change interface security settings].
 
