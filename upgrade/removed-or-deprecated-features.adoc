@@ -1,5 +1,5 @@
 ---
-permalink: removed-or-deprecated-features.html
+permalink: upgrade/removed-or-deprecated-features.html
 sidebar: sidebar
 keywords:
 summary: 'Some features and capabilities were removed or deprecated in this release. Review these items to understand whether you need to update client applications or modify your configuration before you upgrade.'
@@ -42,7 +42,7 @@ NOTE: In certain situations, NetApp might end support for particular features so
 | Audit export through CIFS/Samba
 | 11.1
 | 11.6
-|11.7
+| 11.7
 
 | CLB service
 | 11.4
