@@ -44,6 +44,8 @@ CAUTION: Changing the ILM policy tag for a bucket will trigger ILM reevaluation 
 +
 CAUTION: Ensure that your S3 applications do not accidentally override or delete the new bucket tag. If this tag is omitted when applying a new TagSet to the bucket, objects in the bucket will revert to being evaluated against the default ILM policy.
 +
+CAUTION: Set and modify ILM policy tags using only the Tenant Manager or Tenant Manager API where the ILM policy tag is validated. Do not modify the `NTAP-SG-ILM-BUCKET-TAG` ILM policy tag using the S3 PutBucketTagging API or the S3 DeleteBucketTagging API.
++
 NOTE: Changing the policy tag assigned to a bucket has a temporary performance impact while objects are being reevaluated using the new ILM policy.
 
 // 2023 NOV 21, SGRIDDOC-25
