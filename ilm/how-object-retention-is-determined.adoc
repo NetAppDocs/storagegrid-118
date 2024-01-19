@@ -72,8 +72,8 @@ StorageGRID deletes both copies of the object on day 400 in response to the clie
 S3 Object Lock::
 Retain-until-date for an object version is 2026-03-31. A legal hold is not in effect.
 Compliant ILM rule::
-Store two copies on Storage Nodes "forever."
+Store two copies on Storage Nodes "forever"
 Client delete request::
-Issued on 2024-03-31.
+Issued on 2024-03-31
 Result::
 StorageGRID will not delete the object version because the retain-until-date is still 2 years away.
