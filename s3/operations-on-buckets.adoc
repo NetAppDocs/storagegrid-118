@@ -70,6 +70,8 @@ You must enable S3 Object Lock when you create the bucket. You can't add or disa
 | DeleteBucketTagging
 | Uses the `tagging` subresource to remove all tags from a bucket.
 
+*Caution*: If a non-default ILM policy tag is set for this bucket, there will be a `NTAP-SG-ILM-BUCKET-TAG` bucket tag with a value assigned to it. Do not modify or remove this tag.
+
 | GetBucketAcl
 | Returns a positive response and the ID, DisplayName, and Permission of the bucket owner, indicating that the owner has full access to the bucket.
 
