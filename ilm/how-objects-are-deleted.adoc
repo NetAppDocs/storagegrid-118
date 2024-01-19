@@ -79,13 +79,13 @@ To free space when deleting versioned objects, or to remove delete markers, use 
 +
 The `NewerNoncurrentVersions` action in the bucket lifecycle configuration specifies the number of noncurrent versions retained in a versioned S3 bucket. If there are more noncurrent versions than `NewerNoncurrentVersions` specifies, StorageGRID removes the older versions when the NoncurrentDays value has elapsed. The `NewerNoncurrentVersions` threshold overrides lifecycle rules provided by ILM, meaning that a noncurrent object with a version within the `NewerNoncurrentVersions` threshold is retained if ILM requests its deletion.
 +
-Use the `ExpiredObjectDeleteMarker` action to remove expired object delete markers.
+To remove expired object delete markers use the `ExpiredObjectDeleteMarker` action with one of the following tags: `ExpiredObjectDeleteMarker`, `Days`, or `Date`.
 
 * *ILM*: link:creating-ilm-policy.html[Clone an active policy] and add two ILM rules to the new policy:
 ** First rule: Use "Noncurrent time" as the Reference time to match the noncurrent versions of the object. In link:create-ilm-rule-enter-details.html[Step 1 (Enter details) of the Create an ILM rule wizard], select *Yes* for the question, "Apply this rule to older object versions only (in S3 buckets with versioning enabled)?" 
 ** Second rule: Use *Ingest time* to match the current version. The "Noncurrent time" rule must appear in the policy above the *Ingest time* rule.
 +
-NOTE: ILM cannot be used to remove expired object delete markers. Use an S3 client request to remove expired object delete markers.
+NOTE: ILM cannot be used to remove current object delete markers. Use an S3 client request or S3 Bucket Lifecycle to remove current object delete markers.
 
 * *Delete objects in bucket*: Use the tenant manager to link:../tenant/deleting-s3-bucket-objects.html[delete all object versions], including delete markers, from a bucket.
 +

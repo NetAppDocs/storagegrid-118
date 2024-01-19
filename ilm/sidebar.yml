@@ -130,3 +130,6 @@ entries:
       url: "/ilm/example-6-changing-ilm-policy.html"
     - title: 'Example 7: Compliant ILM policy for S3 Object Lock'
       url: "/ilm/example-7-compliant-ilm-policy-for-s3-object-lock.html"
+    - title: 'Example 8: Priorities for S3 bucket lifecycle and ILM policy'
+      url: "/ilm/example-8-priorities-for-s3-bucket-lifecycle-and-ilm-policy.html"
+      

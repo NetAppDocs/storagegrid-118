@@ -30,7 +30,7 @@ Regardless of who controls how long objects are retained, ILM settings control w
 
 == How S3 bucket lifecycle and ILM interact
 
-The Expiration action in an S3 bucket lifecycle always overrides ILM settings. As a result, an object might be retained on the grid even after any ILM instructions for placing the object have lapsed.
+When an S3 bucket lifecycle is configured, the lifecycle expiration actions override the ILM policy for objects that match the lifecycle filter. As a result, an object might be retained on the grid even after any ILM instructions for placing the object have lapsed.
 
 == Examples for object retention
 
