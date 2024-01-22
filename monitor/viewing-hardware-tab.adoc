@@ -237,7 +237,7 @@ NOTE: The values shown in the table assume all four links are used.
 |10
 |10
 |===
-See https://review.docs.netapp.com/us-en/storagegrid-appliances_main/installconfig/configuring-network-links.html[Configure network links^] for more information about configuring the 10/25-GbE ports.
+See https://docs.netapp.com/us-en/storagegrid-appliances/installconfig/configuring-network-links.html[Configure network links^] for more information about configuring the 10/25-GbE ports.
 
 .. Review the Network Communication section.
 +

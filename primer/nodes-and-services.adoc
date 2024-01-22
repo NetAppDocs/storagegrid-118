@@ -42,7 +42,7 @@ StorageGRID hardware appliances are specially designed for use in a StorageGRID 
 
 See the following to learn about the available appliances: 
 
-* https://review.docs.netapp.com/us-en/storagegrid-appliances_main/[StorageGRID Appliance Documentation^]
+* https://docs.netapp.com/us-en/storagegrid-appliances/[StorageGRID Appliance Documentation^]
 * https://hwu.netapp.com[NetApp Hardware Universe^] 
 
 === Software-based nodes
