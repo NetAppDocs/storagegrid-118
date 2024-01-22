@@ -71,18 +71,22 @@ image::../media/change_ip_tool_main_menu.png[screenshot showing welcome screen o
 +
 After you make your selection, the main menu appears, with the *Selected nodes* field updated to reflect your choice. All subsequent actions are performed only on the nodes displayed.
 . On the main menu, select option *2* to edit IP/mask, gateway, and MTU information for the selected nodes.
- .. Select the network where you want to make changes:
-  *** *1*: Grid network
-  *** *2*: Admin network
-  *** *3*: Client network
-  *** *4*: All networks
+.. Select the network where you want to make changes:
++
+--
+*** *1*: Grid network
+*** *2*: Admin network
+*** *3*: Client network
+*** *4*: All networks
+--
++
+--
 After you make your selection, the prompt shows the node name, network name (Grid, Admin, or Client), data type (IP/mask, Gateway, or MTU), and current value.
 
-+
 Editing the IP address, prefix length, gateway, or MTU of a DHCP-configured interface will change the interface to static. When you select to change an interface configured by DHCP, a warning is displayed to inform you that the interface will change to static.
 
-+
 Interfaces configured as `fixed` can't be edited.
+--
 
  .. To set a new value, enter it in the format shown for the current value.
  .. To leave the current value unchanged, press *Enter*.
