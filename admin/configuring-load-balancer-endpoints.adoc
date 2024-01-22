@@ -116,7 +116,10 @@ If you enter *80* or *8443*, the endpoint is configured only on Gateway Nodes, u
 | Untrusted Client Network
 | Select *Yes* if this endpoint should be accessible to untrusted Client Networks. Otherwise, select *No*.
 
-*Note*: When you select *Yes*, the port is open on all untrusted Client Networks.
+When you select *Yes*, the port is open on all untrusted Client Networks.
+
+*Note*: You can only configure a port to be open or closed to untrusted Client Networks when you are creating the load balancer endpoint.
+
 |===
 --
 ====

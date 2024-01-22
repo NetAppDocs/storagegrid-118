@@ -67,8 +67,6 @@ indexpage:
       links:
       - title: Enable StorageGRID
         url: https://docs.netapp.com/us-en/storagegrid-enable/index.html
-      - title: StorageGRID management using BlueXP
-        url: https://docs.netapp.com/us-en/bluexp-storagegrid/index.html  
       - title: StorageGRID video library
         url: https://www.youtube.com/playlist?list=PLdXI3bZJEw7nh2wGRA65iulXhtXwLiqrY
       - title: NetApp learning services

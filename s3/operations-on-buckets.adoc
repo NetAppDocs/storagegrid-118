@@ -70,6 +70,8 @@ You must enable S3 Object Lock when you create the bucket. You can't add or disa
 | DeleteBucketTagging
 | Uses the `tagging` subresource to remove all tags from a bucket.
 
+*Caution*: If a non-default ILM policy tag is set for this bucket, there will be a `NTAP-SG-ILM-BUCKET-TAG` bucket tag with a value assigned to it. Do not issue a DeleteBucketTagging request if there is a `NTAP-SG-ILM-BUCKET-TAG` bucket tag. Instead, issue a PutBucketTagging request with only the `NTAP-SG-ILM-BUCKET-TAG` tag and its assigned value to remove all other tags from the bucket. Do not modify or remove the `NTAP-SG-ILM-BUCKET-TAG` bucket tag.
+
 | GetBucketAcl
 | Returns a positive response and the ID, DisplayName, and Permission of the bucket owner, indicating that the owner has full access to the bucket.
 
@@ -102,6 +104,8 @@ You must enable S3 Object Lock when you create the bucket. You can't add or disa
 
 | GetBucketTagging
 | Uses the `tagging` subresource to return all tags for a bucket.
+
+*Caution*: If a non-default ILM policy tag is set for this bucket, there will be a `NTAP-SG-ILM-BUCKET-TAG` bucket tag with a value assigned to it. Do not modify or remove this tag.
 
 | GetBucketVersioning
 | This implementation uses the `versioning` subresource to return the versioning state of a bucket.
@@ -227,6 +231,8 @@ The endpoint must exist for replication configuration to succeed. If the endpoin
 * Tags associated with a bucket must have unique tag keys. A tag key can be up to 128 Unicode characters in length.
 * Tag values can be up to 256 Unicode characters in length.
 * Key and values are case sensitive.
+
+*Caution*: If a non-default ILM policy tag is set for this bucket, there will be a `NTAP-SG-ILM-BUCKET-TAG` bucket tag with a value assigned to it. Make sure that the `NTAP-SG-ILM-BUCKET-TAG` bucket tag is included with the assigned value in all PutBucketTagging requests. Do not modify or remove this tag.
 
 *Note*: This operation will overwrite any current tags the bucket already has. If any existing tags are omitted from the set, those tags will be removed for the bucket.
 
