@@ -46,19 +46,20 @@ image::../media/change_ip_tool_main_menu.png[screenshot showing welcome screen o
 After the selection is made, the main menu screen appears. The Selected nodes field reflects your new selection, and now all operations selected will only be performed on this item.
 . On the main menu, select the option to edit subnets for the Admin Network (option *3*).
 . Choose one of the following:
-
++
+--
 ** Add a subnet by entering this command: `add CIDR`
 ** Delete a subnet by entering this command: `del CIDR`
 ** Set the list of subnets by entering this command: `set CIDR`
-+
-NOTE: For all commands, you can enter multiple addresses using this format: `add CIDR, CIDR`
-+
-Example: `add 172.14.0.0/16, 172.15.0.0/16, 172.16.0.0/16`
-+
-TIP: You can reduce the amount of typing required by using "up arrow" to recall previously typed values to the current input prompt, and then edit them if necessary.
-
+--
 +
 --
+NOTE: For all commands, you can enter multiple addresses using this format: `add CIDR, CIDR`
+
+Example: `add 172.14.0.0/16, 172.15.0.0/16, 172.16.0.0/16`
+
+TIP: You can reduce the amount of typing required by using "up arrow" to recall previously typed values to the current input prompt, and then edit them if necessary.
+
 The example input below shows adding subnets to the Admin Network Subnet List:
 
 image::../media/change_ip_tool_aesl_sample_input.gif[change ip tool aesl example]
