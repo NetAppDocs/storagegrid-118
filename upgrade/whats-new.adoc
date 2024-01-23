@@ -25,9 +25,9 @@ FIPS support:: Support for FIPS 140-2 validated cryptography.
 
 SGF6112 improvements:: StorageGRID 11.8 and StorageGRID Appliance Installer firmware version 3.8.0 support:
 +
+* Significantly improved PUT performance for new SGF6112 installations.
 * UEFI secure boot on both upgraded and new SGF6112 nodes.
 * Local key manager for DAS NVMe SSD drive passwords.
-* Significantly improved PUT performance for new SGF6112 installations.
 
 
 == Configure and manage
