@@ -29,11 +29,6 @@ NOTE: In certain situations, NetApp might end support for particular features so
 |===
 | Feature| Deprecated| End of Life| Removed
 
-| Active Directory (AD) 20012R2
-| -
-| 11.7
-| 11.8
-
 | Archive Node support
 | 11.7
 | 11.8
@@ -54,8 +49,13 @@ NOTE: In certain situations, NetApp might end support for particular features so
 | 11.9
 | 12.0
 
-| Swift API support
-| 11.7
+| NFS audit export
 | 11.8
 | 11.9
+| 12.0
+
+| Swift API support
+| 11.7
+| 11.9
+| 12.0
 |===
