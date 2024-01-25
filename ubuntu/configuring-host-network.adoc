@@ -113,7 +113,7 @@ Use the same name for the bond on every host, for example, bond0.
 +
 Note that steps 1 and 2 require appropriate configuration on the edge switches terminating the other ends of the network links. The edge switch ports must also be aggregated into a LACP port channel, configured as a trunk, and allowed to pass all required VLANs.
 +
-Sample interface configuration files for this per-host networking configuration scheme are provided.
+Example interface configuration files for this per-host networking configuration scheme are provided.
 
 .Related information
 

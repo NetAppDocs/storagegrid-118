@@ -2,14 +2,14 @@
 permalink: admin/configuring-tsm-server.html
 sidebar: sidebar
 keywords: tsm server, tivoli storage manager
-summary: 'This section includes sample instructions for preparing a TSM server following TSM best practices.'
+summary: 'This section includes example instructions for preparing a TSM server following TSM best practices.'
 ---
 = Configure the TSM server
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-This section includes sample instructions for preparing a TSM server following TSM best practices.
+This section includes example instructions for preparing a TSM server following TSM best practices.
 
 The following instructions guide you through the process of:
 

@@ -85,7 +85,7 @@ image::../media/export_text_report.gif[screenshot described by surrounding text]
 +
 The Export Text Report window opens displaying the report.
 +
-image::../media/export_text_report_data.gif[screenshot showing sample text report]
+image::../media/export_text_report_data.gif[screenshot showing example text report]
 
 . Select and copy the contents of the Export Text Report window.
 +

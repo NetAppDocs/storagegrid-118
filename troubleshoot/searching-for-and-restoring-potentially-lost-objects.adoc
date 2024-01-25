@@ -46,7 +46,7 @@ For example:
 Admin: # grep LLST messages_about_lost_objects.txt
 ----
 +
-An LLST audit message looks like this sample message.
+An LLST audit message looks like this example message.
 +
 ----
 [AUDT:\[NOID\(UI32\):12448208\][CBIL(UI64):0x38186FE53E3C49A5]
@@ -202,7 +202,7 @@ For example:
 Admin: # grep ORLM messages_about_restored_object.txt
 ----
 +
-An ORLM audit message looks like this sample message.
+An ORLM audit message looks like this example message.
 +
 ----
 [AUDT:[CBID(UI64):0x38186FE53E3C49A5][RULE(CSTR):"Make 2 Copies"]

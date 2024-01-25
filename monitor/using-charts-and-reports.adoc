@@ -67,7 +67,7 @@ The lines and colors used to draw charts have specific meaning.
 
 [cols="1a,3a" options="header"]
 |===
-| Sample| Meaning
+| Example| Meaning
 |image:../media/dark_green_chart_line.gif[screenshot showing dark green line]
 |Reported attribute values are plotted using dark green lines.
 

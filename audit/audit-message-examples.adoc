@@ -11,7 +11,7 @@ summary: 'You can find detailed information in each audit message. All audit mes
 [.lead]
 You can find detailed information in each audit message. All audit messages use the same format.
 
-The following is a sample audit message as it might appear in the `audit.log` file:
+The following is an example audit message as it might appear in the `audit.log` file:
 
 ----
 2014-07-17T21:17:58.959669

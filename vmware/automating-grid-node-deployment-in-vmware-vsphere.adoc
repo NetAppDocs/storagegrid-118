@@ -66,16 +66,16 @@ m| deploy-vsphere-ovftool.sh
 | The Bash shell script used to automate the deployment of virtual grid nodes.
 
 m| deploy-vsphere-ovftool-sample.ini
-| The sample configuration file for use with the `deploy-vsphere-ovftool.sh` script.
+| The example configuration file for use with the `deploy-vsphere-ovftool.sh` script.
 |===
 
 === Define the configuration file for your deployment
 
-You specify the information needed to deploy virtual grid nodes for StorageGRID in a configuration file, which is used by the `deploy-vsphere-ovftool.sh` Bash script. You can modify a sample configuration file, so that you don't have to create the file from scratch.
+You specify the information needed to deploy virtual grid nodes for StorageGRID in a configuration file, which is used by the `deploy-vsphere-ovftool.sh` Bash script. You can modify an example configuration file, so that you don't have to create the file from scratch.
 
 .Steps
 
-. Make a copy of the sample configuration file (`deploy-vsphere-ovftool.sample.ini`). Save the new file as `deploy-vsphere-ovftool.ini` in the same directory as `deploy-vsphere-ovftool.sh`.
+. Make a copy of the example configuration file (`deploy-vsphere-ovftool.sample.ini`). Save the new file as `deploy-vsphere-ovftool.ini` in the same directory as `deploy-vsphere-ovftool.sh`.
 . Open `deploy-vsphere-ovftool.ini`.
 . Enter all of the information required to deploy VMware virtual grid nodes.
 +
@@ -518,13 +518,13 @@ m| configure-storagegrid.py
 | Python script used to automate the configuration
 
 m| configure-storagegrid.sample.json
-| Sample configuration file for use with the script
+| Example configuration file for use with the script
 
 m| configure-storagegrid.blank.json
 | Blank configuration file for use with the script
 |===
 
-* You have created a `configure-storagegrid.json` configuration file. To create this file, you can modify the sample configuration file (`configure-storagegrid.sample.json`) or the blank configuration file (`configure-storagegrid.blank.json`).
+* You have created a `configure-storagegrid.json` configuration file. To create this file, you can modify the example configuration file (`configure-storagegrid.sample.json`) or the blank configuration file (`configure-storagegrid.blank.json`).
 
 You can use the `configure-storagegrid.py` Python script and the `configure-storagegrid.json` configuration file to automate the configuration of your StorageGRID system.
 

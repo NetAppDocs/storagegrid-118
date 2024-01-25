@@ -99,7 +99,7 @@ This option allows you to quit the Change IP tool and start it again later, with
 
 . Do one of the following:
  ** Select option *9* if you want to clear all changes without saving or applying the new network configuration.
- ** Select option *10* if you are ready to apply changes and provision the new network configuration. During provisioning, the output displays the status as updates are applied as shown in the following sample output:
+ ** Select option *10* if you are ready to apply changes and provision the new network configuration. During provisioning, the output displays the status as updates are applied as shown in the following example output:
 +
 ----
 Generating new grid networking description file...
