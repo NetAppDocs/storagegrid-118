@@ -13,7 +13,7 @@ Detailed descriptions of audit messages returned by the system are listed in the
 
 The audit messages are also listed alphabetically by their four-character codes. This alphabetic list enables you to find information about specific messages.
 
-The four-character codes used throughout this chapter are the ATYP values found in the audit messages as shown in the following sample message:
+The four-character codes used throughout this chapter are the ATYP values found in the audit messages as shown in the following example message:
 
 [subs="specialcharacters,quotes"]
 ----
