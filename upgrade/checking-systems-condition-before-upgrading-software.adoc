@@ -29,7 +29,7 @@ NOTE: Contact technical support if a task does not finish or release its lock.
 +
 NOTE: No additional ports are required when upgrading to StorageGRID 11.8.
 +
-Make sure that the following previously opened link:../network/internal-grid-node-communications.html#storagegrid-internal-ports[internal ports] are available before you upgrade to StorageGRID 11.8:
+Make sure that the following previously opened link:../network/internal-grid-node-communications.html#storagegrid-internal-ports[internal port] is available before you upgrade to StorageGRID 11.8:
 +
 [cols="1a,2a" options=header] 
 |===
