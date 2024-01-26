@@ -29,8 +29,6 @@ NOTE: Contact technical support if a task does not finish or release its lock.
 +
 NOTE: No additional ports are required when upgrading to StorageGRID 11.8.
 +
-
-
 The following required port was added in StorageGRID 11.7. Make sure it's available before you upgrade to StorageGRID 11.8.
 +
 [cols="1a,2a" options=header] 
