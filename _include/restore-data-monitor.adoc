@@ -1,7 +1,7 @@
 //This is the shared Monitor repairs instruction for restoring object data in the Storage Node maintenance procedures. This file is also included in the Decommission disconnected nodes procedure//
 //unlike the related restoring Includes, this file doesn't include a title because of the differences between the restoring object data and decommission disconnected nodes procedure//
 // start tabbed area
-+
+
 [role="tabbed-block"]
 ====
 
