@@ -93,7 +93,7 @@ Follow these steps to restore a failed volume or node.
 
 . In Grid Manager go to *MAINTENANCE* > *Volume restoration*.
 
-. Select the *Nodes to restore* tab, then slide the toggle to *Manual restore mode*.
+. Select the *Nodes to restore* tab, then slide the toggle for *Automatic restore mode* to the disabled position.
 +
 The number on the tab indicates the number of nodes with volumes requiring restoration.
 

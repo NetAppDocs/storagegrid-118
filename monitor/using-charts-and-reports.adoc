@@ -11,6 +11,8 @@ summary: 'You can use charts and reports to monitor the state of the StorageGRID
 [.lead]
 You can use charts and reports to monitor the state of the StorageGRID system and troubleshoot problems.
 
+NOTE: The Grid Manager is updated with each release and might not match the example screenshots on this page.
+
 == Types of charts
 
 Charts and graphs summarize the values of specific StorageGRID metrics and attributes.
