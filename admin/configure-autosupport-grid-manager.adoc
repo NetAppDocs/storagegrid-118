@@ -45,7 +45,7 @@ The protocol you set is used for sending all types of AutoSupport packages.
 
 .Steps
 
-. Select *SUPPORT* > *Tools* > *AutoSupport* > *Settings*. The AutoSupport page appears, and the Settings tab is selected.
+. Select *SUPPORT* > *Tools* > *AutoSupport* > *Settings*.
 
 . Select the protocol you want to use to send AutoSupport packages.
 
