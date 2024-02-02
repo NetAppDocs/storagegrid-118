@@ -82,12 +82,10 @@ Follow these steps to view the Metadata reserved space setting for your StorageG
 
 . Select *CONFIGURATION* > *System* > *Storage settings*.
 . On the Storage settings page, expand the *Metadata reserved space* section.
-+
-image::../media/metadata_reserved_space_storage_option.png[Metadata Reserved Space Storage Option]
-
-In the screenshot, the Metadata reserved space value is 8,000 GB (8 TB). This is the default setting for a new StorageGRID 11.6 or higher installation in which each Storage Node has 128 GB or more of RAM.
 
 For StorageGRID 11.8 or higher, the Metadata reserved space value must be at least 100 GB and no more than 1 PB.
+
+The default setting for a new StorageGRID 11.6 or higher installation in which each Storage Node has 128 GB or more of RAM is 8,000 GB (8 TB). 
 
 == Actual reserved space for metadata
 
