@@ -4,7 +4,7 @@ settings:
     pdf_enabled: false
     termcheck_enabled: false
   prod:
-    pdf_enabled: false
+    pdf_enabled: true
     harmony_enabled: false
     hide_language_selector: true
 sidebar:
