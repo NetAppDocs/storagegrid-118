@@ -52,12 +52,12 @@ The table provides a high-level summary of what is supported for each SNMP versi
 |===
 |  | SNMPv1| SNMPv2c| SNMPv3
 
-| Queries
+| Queries (GET, GETNEXT)
 | Read-only MIB queries
 | Read-only MIB queries
 | Read-only MIB queries
 
-| Query authentication
+| Query authentication (GET, GETNEXT)
 | Community string
 | Community string
 | User-based Security Model (USM) user
@@ -81,3 +81,5 @@ The table provides a high-level summary of what is supported for each SNMP versi
 * SNMPv3: StorageGRID does not support the Transport Support Mode (TSM).
 * SNMPv3: The only authentication protocol supported is SHA (HMAC-SHA-96).
 * SNMPv3: The only privacy protocol supported is AES.
+
+// 2024 MAR 5, SGRIDDOC-53
