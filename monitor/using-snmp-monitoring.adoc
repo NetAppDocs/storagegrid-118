@@ -52,17 +52,21 @@ The table provides a high-level summary of what is supported for each SNMP versi
 |===
 |  | SNMPv1| SNMPv2c| SNMPv3
 
-| Queries (GET, GETNEXT)
+| Queries 
+
+(GET and GETNEXT)
 | Read-only MIB queries
 | Read-only MIB queries
 | Read-only MIB queries
 
-| Query authentication (GET, GETNEXT)
+| Query authentication
 | Community string
 | Community string
 | User-based Security Model (USM) user
 
 | Notifications
+
+(TRAP and INFORM)
 | Traps only
 | Traps and informs
 | Traps and informs
