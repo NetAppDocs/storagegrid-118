@@ -150,9 +150,9 @@ If an out-of-memory error occurs for the Cassandra database, a heap dump is crea
 
 .Steps
 . View the event:
-.. Select *SUPPORT* and under Tools, select *Grid topology*.
-.. Expand your grid site name and select *<grid_node_name>*.
-.. Select *SSM* > *Events* > *Configuration*.
+.. Select *SUPPORT* > *Tools* > *Grid topology*.
+.. Expand the site, then select *_grid_node_name_*.
+.. Select *SSM*, then select *Events* > *Configuration*.
 
 . Verify that the Cassandra Heap Out Of Memory Errors count is 1 or greater.
 +
