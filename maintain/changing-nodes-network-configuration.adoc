@@ -21,11 +21,11 @@ You have the `Passwords.txt` file.
 
 See the StorageGRID installation instructions for your Linux operating system:
 
-* link:../rhel/index.html[Install Red Hat Enterprise Linux or CentOS]
+* link:../rhel/index.html[Install StorageGRID on Red Hat Enterprise Linux]
 
-* link:../ubuntu/index.html[Install Ubuntu or Debian]
+* link:../ubuntu/index.html[Install StorageGRID on Ubuntu or Debian]
 
-*Appliances:* On StorageGRID appliances, if the Client or Admin Network was not configured in the StorageGRID Appliance Installer during the initial installation, the network can't be added by using only the Change IP tool. First, you must https://review.docs.netapp.com/us-en/storagegrid-appliances_main/commonhardware/placing-appliance-into-maintenance-mode.html[place the appliance in maintenance mode^], configure the links, return the appliance to normal operating mode, and then use the Change IP tool to modify the network configuration. See the https://review.docs.netapp.com/us-en/storagegrid-appliances_main/installconfig/configuring-network-links.html[procedure for configuring network links^].
+*Appliances:* On StorageGRID appliances, if the Client or Admin Network was not configured in the StorageGRID Appliance Installer during the initial installation, the network can't be added by using only the Change IP tool. First, you must https://docs.netapp.com/us-en/storagegrid-appliances/commonhardware/placing-appliance-into-maintenance-mode.html[place the appliance in maintenance mode^], configure the links, return the appliance to normal operating mode, and then use the Change IP tool to modify the network configuration. See the https://docs.netapp.com/us-en/storagegrid-appliances/installconfig/configuring-network-links.html[procedure for configuring network links^].
 
 You can change the IP address, subnet mask, gateway, or MTU value for one or more nodes on any network.
 
@@ -36,9 +36,9 @@ You can also add or remove a node from a Client Network or from an Admin Network
 +
 Nodes can't be removed from the Grid Network.
 
-IMPORTANT: IP address swaps aren't allowed. If you must exchange IP addresses between grid nodes, you must use a temporary intermediate IP address.
+NOTE: IP address swaps aren't allowed. If you must exchange IP addresses between grid nodes, you must use a temporary intermediate IP address.
 
-IMPORTANT: If single sign-on (SSO) is enabled for your StorageGRID system and you are changing the IP address of an Admin Node, be aware that any relying party trust that was configured using the Admin Node's IP address (instead of its fully qualified domain name, as recommended) will become invalid. You will no longer be able to sign in to the node. Immediately after changing the IP address, you must update or reconfigure the node's relying party trust in Active Directory Federation Services (AD FS) with the new IP address. See the instructions for link:../admin/configuring-sso.html[configuring SSO].
+NOTE: If single sign-on (SSO) is enabled for your StorageGRID system and you are changing the IP address of an Admin Node, be aware that any relying party trust that was configured using the Admin Node's IP address (instead of its fully qualified domain name, as recommended) will become invalid. You will no longer be able to sign in to the node. Immediately after changing the IP address, you must update or reconfigure the node's relying party trust in Active Directory Federation Services (AD FS) with the new IP address. See the instructions for link:../admin/configuring-sso.html[configuring SSO].
 
 NOTE: Any changes you make to the network using the Change IP tool are propagated to the installer firmware for the StorageGRID appliances. That way, if StorageGRID software is reinstalled on an appliance, or if an appliance is placed into maintenance mode, the networking configuration will be correct.
 
@@ -49,6 +49,7 @@ NOTE: Any changes you make to the network using the Change IP tool are propagate
  .. Enter the password listed in the `Passwords.txt` file.
  .. Enter the following command to switch to root: `su -`
  .. Enter the password listed in the `Passwords.txt` file.
+
 +
 When you are logged in as root, the prompt changes from `$` to `#`.
 . Start the Change IP tool by entering the following command: `change-ip`
@@ -71,18 +72,22 @@ image::../media/change_ip_tool_main_menu.png[screenshot showing welcome screen o
 +
 After you make your selection, the main menu appears, with the *Selected nodes* field updated to reflect your choice. All subsequent actions are performed only on the nodes displayed.
 . On the main menu, select option *2* to edit IP/mask, gateway, and MTU information for the selected nodes.
- .. Select the network where you want to make changes:
-  *** *1*: Grid network
-  *** *2*: Admin network
-  *** *3*: Client network
-  *** *4*: All networks
+.. Select the network where you want to make changes:
++
+--
+*** *1*: Grid network
+*** *2*: Admin network
+*** *3*: Client network
+*** *4*: All networks
+--
++
+--
 After you make your selection, the prompt shows the node name, network name (Grid, Admin, or Client), data type (IP/mask, Gateway, or MTU), and current value.
 
-+
 Editing the IP address, prefix length, gateway, or MTU of a DHCP-configured interface will change the interface to static. When you select to change an interface configured by DHCP, a warning is displayed to inform you that the interface will change to static.
 
-+
 Interfaces configured as `fixed` can't be edited.
+--
 
  .. To set a new value, enter it in the format shown for the current value.
  .. To leave the current value unchanged, press *Enter*.
@@ -126,7 +131,7 @@ If the new network configuration does not require any physical networking change
 +
 If you need to make physical or virtual networking configuration changes for the new network configuration to function, you must use the *stage* option, shut down the affected nodes, make the necessary physical networking changes, and restart the affected nodes. If you select *apply* without first making these networking changes, the changes will usually fail.
 +
-IMPORTANT: If you use the *stage* option, you must restart the node as soon as possible after staging to minimize disruptions.
+NOTE: If you use the *stage* option, you must restart the node as soon as possible after staging to minimize disruptions.
 
  ** *cancel*: Don't make any network changes at this time.
 +

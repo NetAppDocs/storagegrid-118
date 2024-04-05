@@ -31,7 +31,9 @@ TIP: A bucket that uses S3 Object Lock will remain in the *Deleting objects: rea
 ** Delete the bucket
 ** Keep the bucket in read-only mode to reserve its name for future use
 
-* If a bucket has object versioning enabled, any delete markers that are in the bucket when you start these steps will not be removed by the delete objects operation. If you want to delete a versioned bucket after all objects have been deleted, you must remove any pre-existing delete markers.
+* If a bucket has object versioning enabled, delete markers that were created in StorageGRID 11.8 or later can be removed using the Delete objects in bucket operations.
+
+* If a bucket has object versioning enabled, the delete objects operation will not remove delete markers that were created in StorageGRID 11.7 or earlier. See information about deleting objects in a bucket in link:../ilm/how-objects-are-deleted.html#delete-s3-versioned-objects[How S3 versioned objects are deleted].
 
 * If you use link:grid-federation-manage-cross-grid-replication.html[cross-grid replication], note the following: 
 

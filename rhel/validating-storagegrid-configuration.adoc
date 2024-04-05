@@ -1,7 +1,7 @@
 ---
 permalink: rhel/validating-storagegrid-configuration.html
 sidebar: sidebar
-keywords: how to validate red hat linux centos configuration
+keywords: how to validate red hat linux configuration
 summary: 'After creating configuration files in /etc/storagegrid/nodes for each of your StorageGRID nodes, you must validate the contents of those files.'
 ---
 = Validate the StorageGRID configuration
@@ -18,6 +18,8 @@ sudo storagegrid node validate all
 ----
 
 If the files are correct, the output shows *PASSED* for each configuration file, as shown in the example.
+
+NOTE: When using only one LUN on metadata-only nodes, you might receive a warning message that can be ignored.
 
 image::../media/rhel_node_configuration_file_output.gif[This image is explained by the surrounding text.]
 

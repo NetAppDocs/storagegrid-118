@@ -17,7 +17,7 @@ Account clone is required for link:grid-federation-what-is-cross-grid-replicatio
 
 The workflow diagram shows the steps that grid administrators and permitted tenants will perform to set up account clone. These steps are performed after the link:grid-federation-create-connection.html[grid federation connection is configured].
 
-image:../media/grid-federation-account-clone-workflow.png[workflow for account clone]
+image::../media/grid-federation-account-clone-workflow.png[workflow for account clone]
 
 == Grid admin workflow
 
@@ -62,7 +62,7 @@ After optionally configuring SSO or identity federation, a grid admin performs t
 +
 The grid where the tenant is originally created is known as the tenant's _source grid_. The grid where the tenant is replicated is known as the tenant's _destination grid_. 
 
-. Create a new S3 tenant account on that grid.
+. On that grid, create a new S3 tenant account or edit an existing account.
 
 . Assign the *Use grid federation connection* permission.
 . If the tenant account will manage its own federated users, assign the *Use own identity source* permission.
@@ -71,7 +71,7 @@ If this permission is assigned, both the source and destination tenant accounts 
 
 . Select a specific grid federation connection.
 
-. Save the tenant.
+. Save the new or modified tenant.
 +
 When a new tenant with the *Use grid federation connection* permission is saved, StorageGRID automatically creates a replica of that tenant on the other grid, as follows:
 

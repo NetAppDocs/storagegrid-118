@@ -70,6 +70,10 @@ In the Principal element, wildcard characters aren't supported except to set ano
 "Principal":"*"
 ----
 
+----
+"Principal":{"AWS":"*"}
+----
+
 In the following example, the statement is using the Effect, Principal, Action, and Resource elements. This example shows a complete bucket policy statement that uses the Effect "Allow" to give the Principals, the admin group `federated-group/admin` and the finance group `federated-group/finance`, permissions to perform the Action `s3:ListBucket` on the bucket named `mybucket` and the Action `s3:GetObject` on all objects inside that bucket.
 
 ----
@@ -98,16 +102,15 @@ In the following example, the statement is using the Effect, Principal, Action, 
 
 The bucket policy has a size limit of 20,480 bytes, and the group policy has a size limit of 5,120 bytes.
 
+== Consistency for policies
 
-== Consistency control settings for policies
+By default, any updates you make to group policies are eventually consistent. When a group policy becomes consistent, the changes can take an additional 15 minutes to take effect, because of policy caching. By default, any updates you make to bucket policies are strongly consistent.
 
-By default, any updates you make to group policies are eventually consistent. When a group policy becomes consistent, the changes can take an additional 15 minutes to take effect, because of policy caching. By default, any updates you make to bucket policies are also eventually consistent.
+As required, you can change the consistency guarantees for bucket policy updates. For example, you might want a change to a bucket policy to be available during a site outage.
 
-As required, you can change the consistency guarantees for bucket policy updates. For example, you might want a change to a bucket policy to become effective as soon as possible for security reasons.
+In this case, you can either set the `Consistency-Control` header in the PutBucketPolicy request, or you can use the PUT Bucket consistency request. When a bucket policy becomes consistent, the changes can take an additional 8 seconds to take effect, because of policy caching.
 
-In this case, you can either set the `Consistency-Control` header in the PutBucketPolicy request, or you can use the PUT Bucket consistency request. When changing the consistency control for this request, you must use the value *all*, which provides the highest guarantee of read-after-write consistency. If you specify any other consistency control value in a header for the PUT Bucket consistency request, the request will be rejected. If you specify any other value for a PutBucketPolicy request, the value will be ignored. When a bucket policy becomes consistent, the changes can take an additional 8 seconds to take effect, because of policy caching.
-
-NOTE: If you set the consistency level to *all* to force a new bucket policy to become effective sooner, be sure to set the bucket-level control back to its original value when you are done. Otherwise, all future bucket requests will use the *all* setting.
+NOTE: If you set the consistency to a different value to work around a temporary situation, be sure to set the bucket-level setting back to its original value when you are done. Otherwise, all future bucket requests will use the modified setting.
 
 == Use ARN in policy statements
 
@@ -164,7 +167,7 @@ In policy statements, you can use the Resource element to specify the bucket or 
 Use the Principal element to identity the user, group, or tenant account that is allowed/denied access to the resource by the policy statement.
 
 * Each policy statement in a bucket policy must include a Principal element. Policy statements in a group policy don't need the Principal element because the group is understood to be the principal.
-* In a policy, principals are denoted by the element "`Principal,`" or alternatively "`NotPrincipal`" for exclusion.
+* In a policy, principals are denoted by the element "Principal," or alternatively "NotPrincipal" for exclusion.
 * Account-based identities must be specified using an ID or an ARN:
 +
 ----
@@ -527,7 +530,7 @@ Possible settings for this permission include:
  ** If an existing object is not found, this permission has no effect.
 * When this permission is not present, the effect is the same as if Allow were set.
 
-IMPORTANT: If the current S3 policy allows overwrite, and the PutOverwriteObject permission is set to Deny, the client can't overwrite an object's data, user-defined metadata, or object tagging. In addition, if the *Prevent client modification* checkbox is selected (*CONFIGURATION* > *Security settings* > *Network and objects*), that setting overrides the setting of the PutOverwriteObject permission.
+NOTE: If the current S3 policy allows overwrite, and the PutOverwriteObject permission is set to Deny, the client can't overwrite an object's data, user-defined metadata, or object tagging. In addition, if the *Prevent client modification* checkbox is selected (*CONFIGURATION* > *Security settings* > *Network and objects*), that setting overrides the setting of the PutOverwriteObject permission.
 
 == Specify conditions in a policy
 
@@ -592,19 +595,19 @@ Condition operators are categorized as follows:
 | Compares a key to a numeric value based on negated matching.
 
 | NumericGreaterThan
-| Compares a key to a numeric value based on "`greater than`" matching.
+| Compares a key to a numeric value based on "greater than" matching.
 
 | NumericGreaterThanEquals
-| Compares a key to a numeric value based on "`greater than or equals`" matching.
+| Compares a key to a numeric value based on "greater than or equals" matching.
 
 | NumericLessThan
-| Compares a key to a numeric value based on "`less than`" matching.
+| Compares a key to a numeric value based on "less than" matching.
 
 | NumericLessThanEquals
-| Compares a key to a numeric value based on "`less than or equals`" matching.
+| Compares a key to a numeric value based on "less than or equals" matching.
 
 | Bool
-| Compares a key to a Boolean value based on "`true or false`" matching.
+| Compares a key to a Boolean value based on "true or false" matching.
 
 | IpAddress
 | Compares a key to an IP address or range of IP addresses.
@@ -620,52 +623,87 @@ Condition operators are categorized as follows:
 
 [cols="1a,1a,2a" options="header"]
 |===
-| Category| Applicable condition keys| Description
+| Condition keys | Actions | Description
 
-| IP operators
 | aws:SourceIp
+| IP operators
 | Will compare to the IP address from which the request was sent. Can be used for bucket or object operations.
 
 *Note:* If the S3 request was sent through the Load Balancer service on Admin Nodes and Gateways Nodes, this will compare to the IP address upstream of the Load Balancer service.
 
 *Note*: If a third-party, non-transparent load balancer is used, this will compare to the IP address of that load balancer. Any `X-Forwarded-For` header will be ignored because its validity can't be ascertained.
 
-| Resource/Identity
 | aws:username
+| Resource/Identity
 | Will compare to the sender's username from which the request was sent. Can be used for bucket or object operations.
 
+
+| s3:delimiter
 | 
 s3:ListBucket and
 
 s3:ListBucketVersions permissions
-| s3:delimiter
 | Will compare to the delimiter parameter specified in a ListObjects or ListObjectVersions request.
 
+| s3:ExistingObjectTag/<tag-key>
+| s3:DeleteObjectTagging
+
+s3:DeleteObjectVersionTagging
+
+s3:GetObject
+
+s3:GetObjectAcl
+
+3:GetObjectTagging
+
+s3:GetObjectVersion
+
+s3:GetObjectVersionAcl
+
+s3:GetObjectVersionTagging
+
+s3:PutObjectAcl
+
+s3:PutObjectTagging
+
+s3:PutObjectVersionAcl
+
+s3:PutObjectVersionTagging
+| Will require that the existing object has the specific tag key and value.
+
+| s3:max-keys
 | 
 s3:ListBucket and
 
 s3:ListBucketVersions permissions
-| s3:max-keys
 | Will compare to the max-keys parameter specified in a ListObjects or ListObjectVersions request.
 
-| 
-s3:ListBucket and
-
-s3:ListBucketVersions permissions
-| s3:prefix
-| Will compare to the prefix parameter specified in a ListObjects or ListObjectVersions request.
-
-| s3:PutObject
 | s3:object-lock-remaining-retention-days
+| s3:PutObject
 | Compares to the retain-until-date specified in the `x-amz-object-lock-retain-until-date` request header or computed from the bucket default retention period to make sure that these values are within the allowable range for the following requests:
 
 * PutObject
 * CopyObject
 * CreateMultipartUpload
 
-| s3:PutObjectRetention
 | s3:object-lock-remaining-retention-days
+| s3:PutObjectRetention
 | Compares to the retain-until-date specified in the PutObjectRetention request to ensure that it is within the allowable range.
+
+| s3:prefix
+| 
+s3:ListBucket and
+
+s3:ListBucketVersions permissions
+| Will compare to the prefix parameter specified in a ListObjects or ListObjectVersions request.
+
+| s3:RequestObjectTag/<tag-key>
+| s3:PutObject
+
+s3:PutObjectTagging
+
+s3:PutObjectVersionTagging
+| Will require a specific tag key and value when the object request includes tagging.
 |===
 
 == Specify variables in a policy
@@ -677,7 +715,6 @@ In this example, the variable `${aws:username}` is part of the Resource element:
 ----
 "Resource": "arn:aws:s3:::bucket-name/home/${aws:username}/*"
 ----
-
 
 In this example, the variable `${aws:username}` is part of the condition value in the condition block:
 
@@ -787,9 +824,9 @@ To ensure that overwrites are always denied, you can:
  ** Add a DeleteObject DENY operation to the S3 policy.
  ** Add a PutObject ALLOW operation to the S3 policy.
 
-IMPORTANT: Setting DeleteObject to DENY in an S3 policy does not prevent ILM from deleting objects when a rule such as "`zero copies after 30 days`" exists.
+NOTE: Setting DeleteObject to DENY in an S3 policy does not prevent ILM from deleting objects when a rule such as "zero copies after 30 days" exists.
 
-IMPORTANT: Even when all of these rules and policies are applied, they don't guard against concurrent writes (see Situation A). They do guard against sequential completed overwrites (see Situation B).
+NOTE: Even when all of these rules and policies are applied, they don't guard against concurrent writes (see Situation A). They do guard against sequential completed overwrites (see Situation B).
 
 *Situation A*: Concurrent writes (not guarded against)
 
@@ -818,3 +855,4 @@ PUT#1 -------> PUT#2 ---X (denied)
 
 * link:../tenant/index.html[Use a tenant account]
 
+// 2023 OCT 5, SGWS-27457

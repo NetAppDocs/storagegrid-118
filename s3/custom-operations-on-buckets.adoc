@@ -18,10 +18,10 @@ The following table lists the custom operations supported by StorageGRID.
 | Operation| Description
 
 | link:get-bucket-consistency-request.html[GET Bucket consistency]
-| Returns the consistency level being applied to a particular bucket.
+| Returns the consistency being applied to a particular bucket.
 
 | link:put-bucket-consistency-request.html[PUT Bucket consistency]
-| Sets the consistency level applied to a particular bucket.
+| Sets the consistency applied to a particular bucket.
 
 | link:get-bucket-last-access-time-request.html[GET Bucket last access time]
 | Returns whether last access time updates are enabled or disabled for a particular bucket.

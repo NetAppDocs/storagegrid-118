@@ -30,7 +30,7 @@ Work with your NetApp account representative to understand the options and to pl
 * Do you need to comply with any legal or regulatory requirements?
 
 [role="quick-margin-para"]
-Optionally, work with your NetApp Professional Services consultant to access the NetApp ConfigBuilder tool to complete a configuration workbook for use when installing and deploying your new system. You can also use this tool to help automate the configuration of any StorageGRID appliance. See https://review.docs.netapp.com/us-en/storagegrid-appliances_main/installconfig/automating-appliance-installation-and-configuration.html[Automate appliance installation and configuration^].
+Optionally, work with your NetApp Professional Services consultant to access the NetApp ConfigBuilder tool to complete a configuration workbook for use when installing and deploying your new system. You can also use this tool to help automate the configuration of any StorageGRID appliance. See https://docs.netapp.com/us-en/storagegrid-appliances/installconfig/automating-appliance-installation-and-configuration.html[Automate appliance installation and configuration^].
 
 [role="quick-margin-para"]
 Review link:index.html[Learn about StorageGRID] and the link:../network/index.html[Networking guidelines].
@@ -47,10 +47,10 @@ To complete the installation, you install StorageGRID software on each appliance
 Learn how:
 
 [role="quick-margin-list"]
-* https://review.docs.netapp.com/us-en/storagegrid-appliances_main/installconfig/index.html[Install appliance hardware^]
-* link:../rhel/index.html[Install Red Hat Enterprise Linux or CentOS]
-* link:../ubuntu/index.html[Install Ubuntu or Debian]
-* link:../vmware/index.html[Install VMware]
+* https://docs.netapp.com/us-en/storagegrid-appliances/installconfig/index.html[Install appliance hardware^]
+* link:../rhel/index.html[Install StorageGRID on Red Hat Enterprise Linux]
+* link:../ubuntu/index.html[Install StorageGRID on Ubuntu or Debian]
+* link:../vmware/index.html[Install StorageGRID on VMware]
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Three] Sign in and check system health
 

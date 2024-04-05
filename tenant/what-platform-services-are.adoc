@@ -19,7 +19,7 @@ For example, you might use CloudMirror replication to mirror specific customer r
 +
 NOTE: CloudMirror replication is not supported if the source bucket has S3 Object Lock enabled.
 
-Notifications:: Use link:understanding-notifications-for-buckets.html[per-bucket event notifications] to send notifications about specific actions performed on objects to a specified external Amazon Simple Notification Service™ (SNS).
+Notifications:: Use link:understanding-notifications-for-buckets.html[per-bucket event notifications] to send notifications about specific actions performed on objects to a specified external Amazon Simple Notification Service (Amazon SNS).
 +
 For example, you could configure alerts to be sent to administrators about each object added to a bucket, where the objects represent log files associated with a critical system event.
 +
@@ -39,7 +39,7 @@ TIP: The use of platform services must be enabled for each tenant account by a S
 
 == How platform services are configured
 
-Platform services communicate with external endpoints that you configure using the link:configuring-platform-services-endpoints.html[Tenant Manager] or the link:understanding-tenant-management-api.html[Tenant Management API]. Each endpoint represents an external destination, such as a StorageGRID S3 bucket, an Amazon Web Services bucket, a Simple Notification Service (SNS) topic, or an Elasticsearch cluster hosted locally, on AWS, or elsewhere.
+Platform services communicate with external endpoints that you configure using the link:configuring-platform-services-endpoints.html[Tenant Manager] or the link:understanding-tenant-management-api.html[Tenant Management API]. Each endpoint represents an external destination, such as a StorageGRID S3 bucket, an Amazon Web Services bucket, an Amazon SNS topic, or an Elasticsearch cluster hosted locally, on AWS, or elsewhere.
 
 After you create an external endpoint, you can enable a platform service for a bucket by adding XML configuration to the bucket. The XML configuration identifies the objects that the bucket should act on, the action that the bucket should take, and the endpoint that the bucket should use for the service.
 
@@ -83,4 +83,3 @@ The format for the configuration XML is governed by the S3 REST APIs used to imp
 .Related information
 
 link:considerations-for-platform-services.html[Considerations for platform services]
-

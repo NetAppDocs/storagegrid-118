@@ -28,7 +28,7 @@ To perform Storage Node decommissioning, all nodes and all services need to be h
 
 . To view the active grid tasks, select *primary Admin Node* > *CMN* > *Grid Tasks* > *Overview*.
 . Check the status of the decommissioning grid task.
- .. If the status of the decommissioning grid task indicates a problem with saving grid task bundles, select *primary Admin Node* > *CMN* > *Events* > *Overview*
+ .. If the status of the decommissioning grid task indicates a problem with saving grid task bundles, select *primary Admin Node* > *CMN* > *Events* > *Overview*.
  .. Check the number of Available Audit Relays.
 +
 If the attribute Available Audit Relay is one or greater, the CMN service is connected to at least one ADC service. ADC services act as Audit Relays.

@@ -21,7 +21,7 @@ link:node-container-migration-requirements.html[Node container migration require
 
 .About this task
 
-When allocating block storage volumes (LUNs) to hosts, use the tables in "`Storage requirements`" to determine the following:
+When allocating block storage volumes (LUNs) to hosts, use the tables in "Storage requirements" to determine the following:
 
 * Number of volumes required for each host (based on the number and types of nodes that will be deployed on that host)
 * Storage category for each volume (that is, System Data or Object Data)
@@ -31,7 +31,9 @@ You will use this information as well as the persistent name assigned by Linux t
 
 NOTE: You don't need to partition, format, or mount any of these volumes; you just need to ensure they are visible to the hosts.
 
-Avoid using "`raw`" special device files (`/dev/sdb`, for example) as you compose your list of volume names. These files can change across reboots of the host, which will impact proper operation of the system. If you are using iSCSI LUNs and Device Mapper Multipathing, consider using multipath aliases in the `/dev/mapper` directory, especially if your SAN topology includes redundant network paths to the shared storage. Alternatively, you can use the system-created softlinks under `/dev/disk/by-path/` for your persistent device names.
+NOTE: Only one object-data LUN is required for metadata-only Storage Nodes.
+
+Avoid using "raw" special device files (`/dev/sdb`, for example) as you compose your list of volume names. These files can change across reboots of the host, which will impact proper operation of the system. If you are using iSCSI LUNs and Device Mapper Multipathing, consider using multipath aliases in the `/dev/mapper` directory, especially if your SAN topology includes redundant network paths to the shared storage. Alternatively, you can use the system-created softlinks under `/dev/disk/by-path/` for your persistent device names.
 
 For example:
 

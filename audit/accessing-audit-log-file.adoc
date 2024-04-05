@@ -2,14 +2,14 @@
 permalink: audit/accessing-audit-log-file.html
 sidebar: sidebar
 keywords: storagegrid, audit, log, log file, access, accessing
-summary: 'The audit share contains the active audit.log file and any compressed audit log files. For easy access to audit logs, you can configure client access to audit shares for NFS. You can also access audit log files directly from the command line of the Admin Node.'
+summary: 'The audit share contains the active audit.log file and any compressed audit log files. You can access audit log files directly from the command line of the Admin Node.'
 ---
 = Access audit log file
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-The audit share contains the active `audit.log` file and any compressed audit log files. For easy access to audit logs, you can link:../admin/configuring-audit-client-access.html[configure audit client access for NFS]. You can also access audit log files directly from the command line of the Admin Node.
+The audit share contains the active `audit.log` file and any compressed audit log files. You can access audit log files directly from the command line of the Admin Node.
 
 .Before you begin
 
@@ -29,6 +29,6 @@ When you are logged in as root, the prompt changes from `$` to `#`.
 
 . Go to the directory containing the audit log files:
 +
-`cd /var/local/audit/export`
+`cd /var/local/log`
 . View the current or a saved audit log file, as required.
 

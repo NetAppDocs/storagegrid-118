@@ -15,14 +15,14 @@ You can add extra trunk or access interfaces to a Linux node after it has been i
 
 * You have access to the instructions for installing StorageGRID on your Linux platform.
 
-** link:../rhel/index.html[Install Red Hat Enterprise Linux or CentOS]
+** link:../rhel/index.html[Install StorageGRID on Red Hat Enterprise Linux]
 
-** link:../ubuntu/index.html[Install Ubuntu or Debian]
+** link:../ubuntu/index.html[Install StorageGRID on Ubuntu or Debian]
 
 * You have the `Passwords.txt` file.
 * You have link:../admin/admin-group-permissions.html[specific access permissions].
 
-IMPORTANT: Don't attempt to add interfaces to a node while a software upgrade, recovery procedure, or expansion procedure is active.
+CAUTION: Don't attempt to add interfaces to a node while a software upgrade, recovery procedure, or expansion procedure is active.
 
 .About this task
 
@@ -41,17 +41,17 @@ The node is unavailable for a brief time when you add interfaces. You should per
 
 . Add an entry to the file to specify the name and, optionally, the description of each extra interface you want to add to the node. Use this format.
 +
-`INTERFACES_TARGET_nnnn=_value_`
+`INTERFACE_TARGET_nnnn=_value_`
 +
-For _nnnn_, specify a unique number for each `INTERFACES_TARGET` entry you are adding.
+For _nnnn_, specify a unique number for each `INTERFACE_TARGET` entry you are adding.
 +
 For _value_, specify the name of the physical interface on the bare-metal host. Then, optionally, add a comma and provide a description of the interface, which is displayed on the VLAN interfaces page and the HA groups page. 
 +
 For example:
 +
-`INTERFACES_TARGET_01=ens256, Trunk`
+`INTERFACE_TARGET_0001=ens256, Trunk`
 +
-IMPORTANT: Don't specify any other network parameters, or a validation error will result.
+NOTE: Don't specify any other network parameters, or a validation error will result.
 
 . Run the following command to validate your changes to the node configuration file:
 +

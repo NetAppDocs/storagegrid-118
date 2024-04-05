@@ -71,9 +71,9 @@ image::../media/ilm_rule_multiple_placements_in_single_time_period.png[ILM place
 The first placement instruction image:../media/icon_number_1.png[Icon number 1] has two lines for the first year:
 
 * The first line creates two replicated object copies at two data center sites.
-* The second line creates a 6+3 erasure-coded copy using three data center sites.
+* The second line creates a 6+3 erasure-coded copy using all data center sites.
 
-The second placement instruction image:../media/icon_number_2.png[Icon number 1] creates two archived copies after one year and keeps those copies forever.
+The second placement instruction image:../media/icon_number_2.png[Icon number 1] creates two copies after one year and keeps those copies forever.
 
 When you define the set of placement instructions for a rule, you must ensure that at least one placement instruction begins at day 0, that there are no gaps between the time periods you have defined, and that the final placement instruction continues either forever or until you no longer require any object copies.
 
@@ -91,7 +91,7 @@ Ingest behavior controls whether object copies are immediately placed according 
 
 * link:data-protection-options-for-ingest.html[Ingest options]
 * link:advantages-disadvantages-of-ingest-options.html[Advantages, disadvantages, and limitations of the ingest options]
-* link:../s3/consistency-controls.html#how-consistency-controls-and-ILM-rules-interact[How consistency controls and ILM rules interact to affect data protection]
+* link:../s3/consistency-controls.html#how-consistency-controls-and-ILM-rules-interact[How consistency and ILM rules interact to affect data protection]
 
 == Example ILM rule
 
@@ -99,7 +99,7 @@ As an example, an ILM rule could specify the following:
 
 * Apply only to the objects belonging to Tenant A.
 * Make two replicated copies of those objects and store each copy at a different site.
-* Retain the two copies "`forever,`" which means that StorageGRID will not automatically delete them. Instead, StorageGRID will retain these objects until they are deleted by a client delete request or by the expiration of a bucket lifecycle.
+* Retain the two copies "forever," which means that StorageGRID will not automatically delete them. Instead, StorageGRID will retain these objects until they are deleted by a client delete request or by the expiration of a bucket lifecycle.
 * Use the Balanced option for ingest behavior: the two-site placement instruction is applied as soon as Tenant A saves an object to StorageGRID, unless it is not possible to immediately make both required copies.
 +
 For example, if Site 2 is unreachable when Tenant A saves an object, StorageGRID will make two interim copies on Storage Nodes at Site 1. As soon as Site 2 becomes available, StorageGRID will make the required copy at that site.

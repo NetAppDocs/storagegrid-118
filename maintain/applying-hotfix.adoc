@@ -68,7 +68,7 @@ NOTE: If any errors are reported, resolve them, re-upload the hotfix file, and s
 +
 This table shows all nodes in your grid and the current stage of the hotfix installation for each node. The nodes in the table are grouped by type (Admin Nodes, Gateway Nodes, Storage Nodes, and Archive Nodes).
 
-.. The progress bar reaches completion, and then the primary Admin Node is shown as "`Complete.`"
+.. The progress bar reaches completion, and then the primary Admin Node is shown as "Complete."
 +
 image::../media/hotfix_progress_table.png[Hotfix Progress Table]
 
@@ -76,7 +76,7 @@ image::../media/hotfix_progress_table.png[Hotfix Progress Table]
 
 . Approve the grid nodes that are ready to be updated. Approved nodes of the same type are upgraded one at a time.
 +
-IMPORTANT: Don't approve the hotfix for a node unless you are sure the node is ready to be updated. When the hotfix is applied to a grid node, some services on that node might be restarted. These operations might cause service interruptions for clients that are communicating with the node.
+CAUTION: Don't approve the hotfix for a node unless you are sure the node is ready to be updated. When the hotfix is applied to a grid node, some services on that node might be restarted. These operations might cause service interruptions for clients that are communicating with the node.
 
  ** Select one or more *Approve* buttons to add one or more individual nodes to the hotfix queue.
  ** Select the *Approve All* button within each grouping to add all nodes of the same type to the hotfix queue. If you have entered search criteria in the *Search* box, the *Approve All* button applies to all the nodes selected by the search criteria.
@@ -89,7 +89,7 @@ NOTE: You must complete the StorageGRID hotfix before you can start a different 
 +
 ** Select *Remove* or *Remove All* to remove a node or all nodes from the hotfix queue.
 +
-When the Stage progresses beyond "`Queued,`" the *Remove* button is hidden and you can no longer remove the node from the hotfix process.
+When the Stage progresses beyond "Queued," the *Remove* button is hidden and you can no longer remove the node from the hotfix process.
 +
 image::../media/approve_all_progresstable.png[Hotfix progress with remove button]
 

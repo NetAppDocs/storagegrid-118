@@ -35,9 +35,9 @@ You can deploy grid nodes on new Linux hosts or on existing Linux hosts. If you 
 
 * You have the instructions for installing StorageGRID for your version of Linux, and you have reviewed the hardware and storage requirements.
 
-** link:../rhel/index.html[Install Red Hat Enterprise Linux or CentOS]
+** link:../rhel/index.html[Install StorageGRID on Red Hat Enterprise Linux]
 
-** link:../ubuntu/index.html[Install Ubuntu or Debian]
+** link:../ubuntu/index.html[Install StorageGRID on Ubuntu or Debian]
 
 
 * If you plan to deploy new grid nodes on existing hosts, you have confirmed the existing hosts have enough CPU, RAM, and storage capacity for the additional nodes.
@@ -68,7 +68,7 @@ To install the StorageGRID software on an appliance node, you use the StorageGRI
 .Before you begin
 
 * The appliance has been installed in a rack or cabinet, connected to your networks, and powered on.
-* You have completed the https://review.docs.netapp.com/us-en/storagegrid-appliances_main/installconfig/configuring-hardware.html[Set up hardware^] steps.
+* You have completed the https://docs.netapp.com/us-en/storagegrid-appliances/installconfig/configuring-hardware.html[Set up hardware^] steps.
 +
 Setting up appliance hardware includes the required steps for configuring StorageGRID connections (network links and IP addresses) as well the optional steps for enabling node encryption, changing the RAID mode, and remapping network ports.
 
@@ -134,7 +134,7 @@ a|
 +
 The node name is assigned to this appliance node in the StorageGRID system. It is shown on the Nodes page (Overview tab) in the Grid Manager. If required, you can change the name when you approve the node.
 
-. In the *Installation* section, confirm that the current state is "`Ready to start installation of _node name_ into grid with primary Admin Node _admin_ip_`" and that the *Start Installation* button is enabled.
+. In the *Installation* section, confirm that the current state is "Ready to start installation of _node name_ into grid with primary Admin Node _admin_ip_" and that the *Start Installation* button is enabled.
 +
 If the *Start Installation* button is not enabled, you might need to change the network configuration or port settings. For instructions, see the maintenance instructions for your appliance.
 
@@ -142,7 +142,7 @@ If the *Start Installation* button is not enabled, you might need to change the 
 +
 image::../media/appliance_installer_home_start_installation_enabled.gif[This image is described by the surrounding text.]
 +
-The Current state changes to "`Installation is in progress,`" and the Monitor Installation page is displayed.
+The Current state changes to "Installation is in progress," and the Monitor Installation page is displayed.
 
 . If your expansion includes multiple appliance nodes, repeat the previous steps for each appliance.
 +
@@ -156,7 +156,7 @@ image::../media/monitor_installation_configure_storage.gif[This image is explain
 +
 The blue status bar indicates which task is currently in progress. Green status bars indicate tasks that have completed successfully.
 +
-NOTE: The installer ensures that tasks completed in a previous install aren't re-run. If you are re-running an installation, any tasks that don't need to be re-run are shown with a green status bar and a status of "`Skipped.`"
+NOTE: The installer ensures that tasks completed in a previous install aren't re-run. If you are re-running an installation, any tasks that don't need to be re-run are shown with a green status bar and a status of "Skipped."
 
 . Review the progress of first two installation stages.
 +

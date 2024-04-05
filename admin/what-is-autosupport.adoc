@@ -87,7 +87,7 @@ Swift Write ACL Configuration +
 Bucket Tagging Enabled +
 Bucket Tagging Configuration +
 Versioning Configuration
-| Provides configuration details and statistics at the bucket level. Example of bucket configurations include platform services, compliance, and bucket consistency level.
+| Provides configuration details and statistics at the bucket level. Example of bucket configurations include platform services, compliance, and bucket consistency.
 
 | GRID-CONFIGURATIONS.XML
 | Attribute ID +
@@ -126,7 +126,7 @@ Table name
 
 | ILM.XML
 | ILM raw XML
-| ILM active policy file. Contains details about the active ILM policy, such as storage pool ID, ingest behavior, filters, rules, and description.
+| ILM active policy file. Contains details about the active ILM policies, such as storage pool ID, ingest behavior, filters, rules, and description.
 
 | LOG.TGZ
 | _n/a_

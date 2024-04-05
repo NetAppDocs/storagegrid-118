@@ -16,6 +16,8 @@ When you access the Decommission Nodes page in the Grid Manager, you can see at 
 * You are signed in to the Grid Manager using a link:../admin/web-browser-requirements.html[supported web browser].
 * You have the link:../admin/admin-group-permissions.html[Maintenance or Root access permission].
 
+CAUTION: Use caution when you decommission Storage Nodes in a grid containing software-based metadata-only nodes. If you decommission all nodes configured to store _both_ objects and metadata, the ability to store objects is removed from the grid. See link:../primer/what-storage-node-is.html#types-of-storage-nodes[Types of Storage Nodes] for more information about metadata-only Storage Nodes.
+
 .Steps
 
 . Select *MAINTENANCE* > *Tasks* > *Decommission*.
@@ -85,8 +87,8 @@ For example, if an erasure-coding profile exists for 4+2 erasure coding, at leas
 
 | For each affected erasure-coding profile, perform one of the following steps, based on how the profile is being used:
 
- * *Used in the active ILM policy*: Perform an expansion. Add enough new Storage Nodes to allow erasure coding to continue. See the instructions for link:../expand/index.html[expanding your grid].
- * *Used in an ILM rule but not in the active ILM policy*: Edit or delete the rule and then deactivate the erasure-coding profile.
+ * *Used in active ILM policies*: Perform an expansion. Add enough new Storage Nodes to allow erasure coding to continue. See the instructions for link:../expand/index.html[expanding your grid].
+ * *Used in an ILM rule but not in active ILM policies*: Edit or delete the rule and then deactivate the erasure-coding profile.
  * *Not used in any ILM rule*: Deactivate the erasure-coding profile.
 
 *Note:* An error message appears if you attempt to deactivate an erasure-coding profile and object data is still associated with the profile. You might need to wait several weeks before trying the deactivation process again.

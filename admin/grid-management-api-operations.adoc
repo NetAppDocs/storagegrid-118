@@ -23,16 +23,17 @@ NOTE: This list only includes operations available in the public API.
 * *audit*: Operations to list and update the audit configuration.
 * *auth*: Operations to perform user session authentication.
 +
-The Grid Management API supports the Bearer Token Authentication Scheme. To sign in, you provide a username and password in the JSON body of the authentication request (that is, `POST /api/v3/authorize`). If the user is successfully authenticated, a security token is returned. This token must be provided in the header of subsequent API requests ("Authorization: Bearer _token_").
+The Grid Management API supports the Bearer Token Authentication Scheme. To sign in, you provide a username and password in the JSON body of the authentication request (that is, `POST /api/v3/authorize`). If the user is successfully authenticated, a security token is returned. This token must be provided in the header of subsequent API requests ("Authorization: Bearer _token_"). The token expires after 16 hours.
 +
-NOTE: If single sign-on is enabled for the StorageGRID system, you must perform different steps to authenticate. See "`Authenticating in to the API if single sign-on is enabled.`"
+NOTE: If single sign-on is enabled for the StorageGRID system, you must perform different steps to authenticate. See "Authenticating in to the API if single sign-on is enabled."
 +
-See "`Protecting against Cross-Site Request Forgery`" for information about improving authentication security.
+See "Protecting against Cross-Site Request Forgery" for information about improving authentication security.
 
 * *client-certificates*: Operations to configure client certificates so that StorageGRID can be accessed securely using external monitoring tools.
 * *config*: Operations related to the product release and versions of the Grid Management API. You can list the product release version and the major versions of the Grid Management API supported by that release, and you can disable deprecated versions of the API.
 * *deactivated-features*: Operations to view features that might have been deactivated.
 * *dns-servers*: Operations to list and change configured external DNS servers.
+* *drive-details*: Operations on drives for specific storage appliance models.
 * *endpoint-domain-names*: Operations to list and change S3 endpoint domain names.
 * *erasure-coding*: Operations on erasure-coding profiles.
 * *expansion*: Operations on expansion (procedure-level).
@@ -43,8 +44,9 @@ See "`Protecting against Cross-Site Request Forgery`" for information about impr
 * *groups*: Operations to manage local Grid Administrator Groups and to retrieve federated Grid Administrator Groups from an external LDAP server.
 * *identity-source*: Operations to configure an external identity source and to manually synchronize federated group and user information.
 * *ilm*: Operations on information lifecycle management (ILM).
+* *in-progress-procedures*: Retrieves the maintenance procedures that are currently in progress.
 * *license*: Operations to retrieve and update the StorageGRID license.
-* *logs*: Operations for collecting and downloading log files.
+* *logs*: Operations for collecting and downloading log files.v
 * *metrics*: Operations on StorageGRID metrics including instant metric queries at a single point in time and range metric queries over a range of time. The Grid Management API uses the Prometheus systems monitoring tool as the backend data source. For information about constructing Prometheus queries, see the Prometheus web site.
 +
 NOTE: Metrics that include ``_private_`` in their names are intended for internal use only. These metrics are subject to change between StorageGRID releases without notice.
@@ -60,6 +62,7 @@ NOTE: Metrics that include ``_private_`` in their names are intended for interna
 * *s3-object-lock*: Operations on global S3 Object Lock settings.
 * *server-certificate*: Operations to view and update Grid Manager server certificates.
 * *snmp*: Operations on the current SNMP configuration.
+* *storage-watermarks*: Storage node watermarks.
 * *traffic-classes*: Operations for traffic classification policies.
 * *untrusted-client-network*: Operations on the untrusted Client Network configuration.
 * *users*: Operations to view and manage Grid Manager users.

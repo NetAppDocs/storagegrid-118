@@ -13,19 +13,19 @@ Clients need to communicate with grid nodes to ingest and retrieve content. The 
 
 == Restricted access to ports
 
-If enterprise networking policies restrict access to any of the ports, you can use link:../admin/configuring-load-balancer-endpoints.html[load balancer endpoints] to allow access on user-defined ports. You can then use link:../admin/manage-firewall-controls.html[untrusted Client Networks] to allow access only on load balancer endpoint ports.
+If enterprise networking policies restrict access to any of the ports, you can use link:../admin/configuring-load-balancer-endpoints.html[load balancer endpoints] to allow access on user-defined ports.
 
 == Port remapping
 
 To use systems and protocols such as SMTP, DNS, SSH, or DHCP, you must remap ports when deploying nodes. However, you should not remap load balancer endpoints. For information about port remapping, see the installation instructions:
 
-* link:../rhel/index.html[Install Red Hat Enterprise Linux or CentOS]
+* link:../rhel/index.html[Install StorageGRID on Red Hat Enterprise Linux]
 
-* link:../ubuntu/index.html[Install Ubuntu or Debian]
+* link:../ubuntu/index.html[Install StorageGRID on Ubuntu or Debian]
 
-* link:../vmware/index.html[Install VMware]
+* link:../vmware/index.html[Install StorageGRID on VMware]
 
-* https://review.docs.netapp.com/us-en/storagegrid-appliances_main/installconfig/optional-remapping-network-ports-for-appliance.html[Optional: Remap network ports for appliance^]
+* https://docs.netapp.com/us-en/storagegrid-appliances/installconfig/optional-remapping-network-ports-for-appliance.html[Optional: Remap network ports for appliance^]
 
 
 == Ports used for external communications
@@ -111,6 +111,8 @@ NOTE: This list does not include ports that might be configured as link:../admin
 | Used by NFS-based audit export (portmap).
 
 *Note:* This port is required only if NFS-based audit export is enabled.
+
+*Note:* Support for NFS has been deprecated and will be removed in a future release.
 
 | 123
 | UDP
@@ -230,6 +232,8 @@ NOTE: This list does not include ports that might be configured as link:../admin
 
 *Note:* This port is required only if NFS-based audit export is enabled.
 
+*Note:* Support for NFS has been deprecated and will be removed in a future release.
+
 | 2022
 | TCP
 | SSH
@@ -245,6 +249,8 @@ NOTE: This list does not include ports that might be configured as link:../admin
 | Used by NFS-based audit export (nfs).
 
 *Note:* This port is required only if NFS-based audit export is enabled.
+
+*Note:* Support for NFS has been deprecated and will be removed in a future release. 
 
 | 5353
 | UDP
@@ -292,6 +298,13 @@ NOTE: This list does not include ports that might be configured as link:../admin
 
 *Note:* This port is required only if certificate-based Prometheus access is enabled.
 
+|9092
+|TCP
+|Kafka
+|Storage Nodes with ADC
+|Kafka cluster
+|Used for platform services messages sent to a Kafka cluster. Tenants can override the default Kafka port setting of 9092 when creating an endpoint.
+
 | 9443
 | TCP
 | HTTPS
@@ -337,3 +350,4 @@ NOTE: This list does not include ports that might be configured as link:../admin
 
 |===
 
+// 2023 SEP 19, SGWS-25330

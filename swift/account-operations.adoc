@@ -32,7 +32,7 @@ The following supported request query parameters are optional:
 * `Marker`
 * `Prefix`
 
-A successful execution returns the following headers with an "`HTTP/1.1 204 No Content`" response if the account is found and has no containers or the container list is empty; or an "`HTTP/1.1 200 OK`" response if the account is found and the container list is not empty:
+A successful execution returns the following headers with an "HTTP/1.1 204 No Content" response if the account is found and has no containers or the container list is empty; or an "HTTP/1.1 200 OK" response if the account is found and the container list is not empty:
 
 * `Accept-Ranges`
 * `Content-Length`
@@ -56,7 +56,7 @@ The following request header is required:
 
 * `X-Auth-Token`
 
-A successful execution returns the following headers with an "`HTTP/1.1 204 No Content`" response:
+A successful execution returns the following headers with an "HTTP/1.1 204 No Content" response:
 
 * `Accept-Ranges`
 * `Content-Length`
@@ -69,4 +69,4 @@ A successful execution returns the following headers with an "`HTTP/1.1 204 No C
 
 .Related information
 
-link:monitoring-and-auditing-operations.html[Monitor and audit operations]
+link:swift-operations-tracked-in-audit-logs.html[Swift operations tracked in the audit logs]

@@ -46,7 +46,7 @@ After an link:../admin/creating-tenant-account.html[S3 tenant account is created
 * Use S3 Select
 * Monitor storage usage
 
-TIP: While you can create and manage S3 buckets with the Tenant Manager, you must use an S3 client to ingest and manage objects. See link:../s3/index.html[Use S3 REST API] for details.
+TIP: Although you can create and manage S3 buckets with the Tenant Manager, you must use an link:../s3/index.html[S3 client] or link:use-s3-console.html[S3 Console] to ingest and manage objects.
 
 === Configure Swift tenants
 

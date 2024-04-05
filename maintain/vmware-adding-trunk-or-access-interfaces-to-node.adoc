@@ -19,7 +19,7 @@ You can add a trunk or access interface to a VM node after the node has been ins
 * You have the `Passwords.txt` file.
 * You have link:../admin/admin-group-permissions.html[specific access permissions].
 
-IMPORTANT: Don't attempt to add interfaces to a node while a software upgrade, recovery procedure, or expansion procedure is active.
+CAUTION: Don't attempt to add interfaces to a node while a software upgrade, recovery procedure, or expansion procedure is active.
 
 .About this task
 
@@ -36,6 +36,7 @@ The node might be unavailable for a brief time when you add interfaces.
 image::../media/vcenter.png[vCenter]
 . Use SSH to log in to the Admin Node or Gateway Node. 
 . Use `ip link show` to confirm the new network interface ens256 is detected.
++
 ----
 ip link show
 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN mode DEFAULT group default qlen 1000

@@ -33,8 +33,8 @@ When configuring regions, follow these guidelines:
 +
 NOTE: EU is not considered to be an alias for eu-west-1. If you want to use the EU or eu-west-1 region, you must use the exact name.
 
-* You can't delete or modify a region if it is currently used within the active ILM policy or the proposed ILM policy.
-* If the region used as the advanced filter in an ILM rule is invalid, it is still possible to add that rule to the proposed policy. However, an error occurs if you attempt to save or activate the proposed policy.
+* You can't delete or modify a region if it's used in a rule that is assigned to any policy (active or inactive).
+* If you use an invalid region as the advanced filter in an ILM rule, you can't add that rule to a policy.
 +
 An invalid region can result if you use a region as an advanced filter in an ILM rule but you later delete that region, or if you use the Grid Management API to create a rule and specify a region that you have not defined.
 * If you delete a region after using it to create an S3 bucket, you will need to re-add the region if you ever want to use the Location Constraint advanced filter to find objects in that bucket.
@@ -53,7 +53,7 @@ You must use this exact region name as the LocationConstraint request element wh
 
 . To remove an unused region, select the delete icon image:../media/icon-x-to-remove.png[Remove icon].
 +
-An error message appears if you attempt to remove a region that is currently used in the active policy or the proposed policy.
+An error message appears if you attempt to remove a region that is currently used in any policy (active or inactive).
 
 . When you are done making changes, select *Save*.
 +

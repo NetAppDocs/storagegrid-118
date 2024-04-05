@@ -9,7 +9,9 @@ summary: 'The Tenant Manager is the browser-based graphical interface that tenan
 :imagesdir: ../media/
 
 [.lead]
-The Tenant Manager is the browser-based graphical interface that tenant users access to configure, manage, and monitor their storage accounts.
+The link:../tenant/index.html[Tenant Manager] is the browser-based graphical interface that tenant users access to configure, manage, and monitor their storage accounts.
+
+NOTE: The Tenant Manager is updated with each release and might not match the example screenshots on this page.
 
 When tenant users sign in to the Tenant Manager, they are connecting to an Admin Node.
 
@@ -27,8 +29,6 @@ image::../media/tenant_dashboard_with_buckets.png[Tenant Manager dashboard]
 
 The Storage menu is provided for S3 tenant accounts only. This menu allows S3 users to manage access keys; create, manage, and delete buckets; manage platform services endpoints; and view any grid federation connections they are permitted to use.
 
-image::../media/s3_menu.png[S3 Menu]
-
 === My access keys
 
 S3 tenant users can manage access keys as follows:
@@ -44,18 +44,18 @@ S3 tenant users with the appropriate permissions can perform the following tasks
 
 * Create buckets
 * Enable S3 Object Lock for a new bucket (assumes that S3 Object Lock is enabled for the StorageGRID system)
-* Update consistency level settings
+* Update consistency values
 * Enable and disable last access time updates
 * Enable or suspend object versioning
 * Update S3 Object Lock default retention
 * Configure cross-origin resource sharing (CORS)
 * Delete all objects in a bucket
 * Delete empty buckets
-* Use the link:../tenant/use-s3-console.html[experimental S3 Console] to manage bucket objects
+* Use the link:../tenant/use-s3-console.html[S3 Console] to manage bucket objects
 
 If a grid administrator has enabled the use of platform services for the tenant account, an S3 tenant user with the appropriate permissions can also perform these tasks:
 
-* Configure S3 event notifications, which can be sent to a destination service that supports the Amazon Simple Notification Service™ (Amazon SNS).
+* Configure S3 event notifications, which can be sent to a destination service that supports the Amazon Simple Notification Service.
 * Configure CloudMirror replication, which enables the tenant to automatically replicate objects to an external S3 bucket.
 * Configure search integration, which sends object metadata to a destination search index whenever an object is created, deleted, or its metadata or tags are updated.
 
@@ -70,9 +70,3 @@ If a grid administrator has enabled the use of a grid federation connection for 
 == Access Management menu
 
 The Access Management menu allows StorageGRID tenants to import user groups from a federated identity source and assign management permissions. Tenants can also manage local tenant groups and users, unless single sign-on (SSO) is in effect for the entire StorageGRID system.
-
-image::../media/access_management_menu.png[Access Management Menu]
-
-.Related information
-
-* link:../tenant/index.html[Use a tenant account]

@@ -51,7 +51,7 @@ NOTE: You can't enable the *Node Encryption* setting after an appliance is added
  ** Each individual DEK is encrypted by a master key encryption key (KEK). The initial KEK is a temporary key that encrypts the DEKs until the appliance can connect to the KMS.
 . Add the appliance node to StorageGRID.
 
-See https://review.docs.netapp.com/us-en/storagegrid-appliances_main/installconfig/optional-enabling-node-encryption.html[Enable node encryption^] for details.
+See https://docs.netapp.com/us-en/storagegrid-appliances/installconfig/optional-enabling-node-encryption.html[Enable node encryption^] for details.
 
 == Key management encryption process (occurs automatically)
 

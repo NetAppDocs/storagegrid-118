@@ -26,7 +26,7 @@ Before adding storage volumes to existing Storage Nodes, review the following gu
 
 After you have decided to add storage volumes and have determined which Storage Nodes you must expand to satisfy your ILM policy, follow the instructions for your type of Storage Node:
 
-* To add one or two expansion shelves to an SG6060 storage appliance, go to https://review.docs.netapp.com/us-en/storagegrid-appliances_main/sg6000/adding-expansion-shelf-to-deployed-sg6060.html[Add expansion shelf to deployed SG6060^].
+* To add one or two expansion shelves to an SG6060 storage appliance, go to https://docs.netapp.com/us-en/storagegrid-appliances/sg6000/adding-expansion-shelf-to-deployed-sg6060.html[Add expansion shelf to deployed SG6060^].
 
 * For a software-based node, follow the instructions for 
 link:adding-storage-volumes-to-storage-nodes.html[adding storage volumes to Storage Nodes].

@@ -26,7 +26,7 @@ Alerts are triggered at specific severity levels when alert rule conditions eval
 
 Like alerts, alarms are triggered at specific severity levels when attributes reach defined threshold values. However, unlike alerts, many alarms are triggered for events that you can safely ignore, which might result in an excessive number of email or SNMP notifications.
 
-IMPORTANT: The alarm system is deprecated and will be removed in a future release. If you are still using legacy alarms, you should fully transition to the alert system as soon as possible.
+NOTE: The alarm system is deprecated and will be removed in a future release. If you are still using legacy alarms, you should fully transition to the alert system as soon as possible.
 
 When an alarm is triggered, the following actions occur:
 

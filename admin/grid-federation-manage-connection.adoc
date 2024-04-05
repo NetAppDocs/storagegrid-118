@@ -31,7 +31,7 @@ NOTE: While the connection is being edited, account clone or cross-grid replicat
 
 . Select *NODES* and confirm that all other Admin Nodes in your system are online.
 +
-NOTE: When you edit a grid federation connection, StorageGRID attempts to save a "`candidate configuration`" file on all Admin Nodes on the first grid. If this file can't be saved to all Admin Nodes, a warning message appears when you select *Save and test*.
+NOTE: When you edit a grid federation connection, StorageGRID attempts to save a "candidate configuration" file on all Admin Nodes on the first grid. If this file can't be saved to all Admin Nodes, a warning message appears when you select *Save and test*.
 
 . Select *CONFIGURATION* > *System* > *Grid federation*.
 
@@ -191,7 +191,7 @@ In general, use the same number of days for the certificates on both sides of th
 
 You can remove a grid federation connection from either grid in the connection. As shown in the figure, you must perform prerequisite steps on both grids to confirm that the connection is not being used by any tenant on either grid.
 
-image:../media/grid-federation-remove-connection.png[steps to remove grid federation connection]
+image::../media/grid-federation-remove-connection.png[steps to remove grid federation connection]
 
 Before removing a connection, note the following:
 

@@ -1,7 +1,7 @@
 ---
 permalink: rhel/where-to-go-next.html
 sidebar: sidebar
-keywords: what to do after red hat linux centos installation
+keywords: what to do after red hat linux installation
 summary: 'After completing an installation, perform the required integration and configuration tasks. You can perform the optional tasks as needed.'
 ---
 = Where to go next

@@ -61,7 +61,7 @@ entries:
         url: "/audit/client-write-audit-messages.html"
       - title: Management audit message
         url: "/audit/management-audit-message.html"
-      - title: ILM operations audit messages
+      - title: ILM audit messages
         url: "/audit/ilm-audit-messages.html"  
     - title: Audit message reference
       entries:

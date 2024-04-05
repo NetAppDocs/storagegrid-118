@@ -73,7 +73,7 @@ For example, you can use this setting to force storage to become read-only even 
 The attribute can take one of the following values:
 
 * Offline: When the desired state is Offline, the LDR service takes the *LDR* > *Storage* component offline.
-* Read-only: When the desired state is Read-only, the LDR service moves the storage state to read-only and stops accepting new content. Note that content might continue to be saved to the Storage Node for a short time until open sessions are closed.
+* Read-only: When the desired state is Read-only, the LDR service moves the storage state to Read-only and stops accepting new content. However, the LDR service continues to accept S3 or ILM driven purge and delete requests. Note that content might continue to be saved to the Storage Node for a short time until open sessions are closed.
 * Online: Leave the value at Online during normal system operations. The Storage State -- Current of the storage component will be dynamically set by the service based on the condition of the LDR service, such as the amount of available object storage space. If space is low, the component becomes Read-only.
 
 | Health Check Timeout

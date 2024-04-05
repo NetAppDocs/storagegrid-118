@@ -11,7 +11,7 @@ summary: 'You can use the following example rules and policy as a starting point
 [.lead]
 You can use the following example rules and policy as a starting point when defining an ILM policy to meet your object protection and retention requirements.
 
-CAUTION: The following ILM rules and policy are only examples. There are many ways to configure ILM rules. Before activating a new policy, simulate the proposed policy to confirm it will work as intended to protect content from loss.
+CAUTION: The following ILM rules and policy are only examples. There are many ways to configure ILM rules. Before activating a new policy, simulate it to confirm it will work as intended to protect content from loss.
 
 == ILM rule 1 for example 1: Copy object data to two sites
 
@@ -62,7 +62,7 @@ This example ILM rule uses an erasure-coding profile and an S3 bucket to determi
 | For objects in the S3 bucket named finance-records, create one erasure-coded copy in the pool specified by the erasure-coding profile. Keep this copy forever.
 |===
 
-image:../media/ilm_rule_ec_for_s3_bucket_finance_records.png[ILM rule 2 for example 1: erasure-coding profile with bucket matching]
+image::../media/ilm_rule_ec_for_s3_bucket_finance_records.png[ILM rule 2 for example 1: erasure-coding profile with bucket matching]
 
 == ILM policy for example 1
 
@@ -77,5 +77,5 @@ image::../media/policy_1_configured_policy.png[ILM policy for example 1]
 
 .Related information
 
-* link:creating-ilm-policy.html[Create an ILM policy: Overview]
-* link:creating-proposed-ilm-policy.html[Create a proposed ILM policy]
+* link:ilm-policy-overview.html[ILM policies: Overview]
+* link:creating-ilm-policy.html[Create ILM policies]

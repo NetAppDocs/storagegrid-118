@@ -11,6 +11,14 @@ summary: 'StorageGRID nodes can be deployed on VMware virtual machines, within a
 [.lead]
 StorageGRID nodes can be deployed on VMware virtual machines, within a container engine on Linux hosts, or as dedicated hardware appliances. Each type of platform and each type of node has its own set of hardening best practices.
 
+== Control remote IPMI access to BMC
+
+You can enable or disable remote IPMI access for all appliances containing a BMC. The remote IPMI interface allows low-level hardware access to your StorageGRID appliances by anyone with a BMC account and password. If you do not need remote IPMI access to the BMC, disable this option.
+
+* To control remote IPMI access to the BMC in Grid Manager, go to *CONFIGURATION* > *Security* > *Security settings* > *Appliances*:
+** Clear the *Enable remote IPMI access* checkbox to disable IPMI access to the BMC.
+** Select the *Enable remote IPMI access* checkbox to enable IPMI access to the BMC.
+
 == Firewall configuration
 
 As part of the system hardening process, you must review external firewall configurations and modify them so that traffic is accepted only from the IP addresses and on the ports from which it is strictly needed. 
@@ -89,5 +97,8 @@ Follow these guidelines to secure any hardware appliance nodes in your StorageGR
 +
 include::../_include/enable-disable-ipmi.adoc[]
 
-* If the storage controller in the appliance includes FDE or FIPS drives and the Drive Security feature is enabled, use SANtricity to configure Drive Security keys. See https://review.docs.netapp.com/us-en/storagegrid-appliances_main/installconfig/accessing-and-configuring-santricity-system-manager.html[Configure SANtricity System Manager (SG6000 and SG5700)^].
-* For appliances without FDE or FIPS drives, enable node encryption using a Key Management Server (KMS). See https://review.docs.netapp.com/us-en/storagegrid-appliances_main/installconfig/optional-enabling-node-encryption.html[Optional: Enable node encryption^].
+* For appliance models containing SED, FDE, or FIPS NL-SAS drives that you manage with SANtricity System Manager, https://docs.netapp.com/us-en/storagegrid-appliances/installconfig/accessing-and-configuring-santricity-system-manager.html[enable and configure SANtricity Drive Security^].
+
+* For appliance models containing SED or FIPS NVMe SSDs that you manage using the StorageGRID Appliance Installer and Grid Manager, https://docs.netapp.com/us-en/storagegrid-appliances/installconfig/optional-enabling-node-encryption.html[enable and configure StorageGRID drive encryption^].
+
+* For appliances without SED, FDE, or FIPS drives, enable and configure StorageGRID software node encryption https://docs.netapp.com/us-en/storagegrid-appliances/installconfig/optional-enabling-node-encryption.html[using a Key Management Server (KMS)^].

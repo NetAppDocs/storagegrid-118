@@ -32,7 +32,7 @@ You can restore object data for a failed storage volume or Storage Node using Gr
 
 After you have replaced the drives and performed the manual steps to format the volumes, Grid Manager displays the volumes as candidates for restoration on the *MAINTENANCE* > *Volume restoration* > *Nodes to restore* tab.
 
-Whenever possible, restore object data using the *Volume restoration* page in the Grid Manager. Follow these guidelines:
+Whenever possible, restore object data using the Volume restoration page in the Grid Manager. You can either <<enable-auto-restore-mode,enable automatic restore mode>> to automatically start volume restoration when the volumes are ready to be restored or <<manually-restore,manually perform volume restoration>>. Follow these guidelines:
 
 * If the volumes are listed at *MAINTENANCE* > *Volume restoration* > *Nodes to restore*, restore object data as described in the steps below. The volumes will be listed if:
 ** Some, but not all, storage volumes in a node have failed
@@ -58,10 +58,34 @@ You can restore two types of object data:
 ** If the only remaining copy of an object is in a Cloud Storage Pool, StorageGRID must issue multiple requests to the Cloud Storage Pool endpoint to restore object data. 
 ** If the only remaining copy of an object is on an Archive Node, object data is retrieved from the Archive Node. Restoring object data to a Storage Node from an Archive Node takes longer than restoring object copies from other Storage Nodes.
 * Erasure-coded (EC) data objects are restored by reassembling the stored fragments. Corrupt or lost fragments are recreated by the erasure-coding algorithm from the remaining data and parity fragments.
++
+Repairs of erasure-coded data can begin while some Storage Nodes are offline. However, if all erasure-coded data cannot be accounted for, the repair can't be completed. Repair will complete after all nodes are available.
 
 NOTE: Volume restoration is dependent on the availability of resources where object copies are stored. Progress of volume restoration is nonlinear and might take days or weeks to complete.
 
-== Restore failed volume or node
+== [[enable-auto-restore-mode]]Enable automatic restore mode
+When you enable Automatic restore mode, volume restoration automatically starts when the volumes are ready to be restored.
+
+.Steps
+
+. In Grid Manager go to *MAINTENANCE* > *Volume restoration*.
+. Select the *Nodes to restore* tab, then slide the toggle for *Automatic restore mode* to the enabled position.
+. When the confirmation dialog box appears, review the details.
++
+
+[NOTE]
+====
+* You will not be able to start volume restoration jobs manually on any nodes.
+* Volume restorations will begin automatically only when no other maintenance procedures are in progress.
+* You can monitor the status of the job from the progress monitoring page.
+* StorageGRID automatically retries volume restorations that fail to start.
+====
+
+. When you understand the results of enabling Automatic restore mode, select *Yes* in the confirmation dialog box.
++
+You can disable Automatic restore mode at any time.
+
+== [[manually-restore]]Manually restore failed volume or node
 
 Follow these steps to restore a failed volume or node.
 
@@ -69,15 +93,13 @@ Follow these steps to restore a failed volume or node.
 
 . In Grid Manager go to *MAINTENANCE* > *Volume restoration*.
 
-. Select the *Nodes to restore* tab.
+. Select the *Nodes to restore* tab, then slide the toggle for *Automatic restore mode* to the disabled position.
 +
 The number on the tab indicates the number of nodes with volumes requiring restoration.
-+
-image::../media/vol-restore-nodes-to-restore.png[Volume restoration - Nodes to restore tab]
 
 . Expand each node to see the volumes in it that need restoration and their status.
  
-. Correct any issues preventing restoration of each volume that are indicated when you select Waiting for manual steps, if it displays as the volume status.
+. Correct any issues preventing restoration of each volume. Issues will be indicated when you select *Waiting for manual steps*, if it displays as the volume status.
 
 . Select a node to restore where all the volumes indicate a Ready to restore status.
 +
@@ -97,9 +119,7 @@ If a volume restoration can't be started, the node returns to the *Nodes to rest
 
 The *Restoration progress* tab shows the status of the volume restoration process and information about the volumes for a node being restored.
 
-image::../media/vol-restore-restore-progress.png[Volume restoration - Restoration progress tab]
-
-Data repair rates for replicated and erasure-coded objects in all volumes are estimates summarizing all restorations in process, including those restorations initiated using the `repair-data` script. The percentage of objects in those volumes that are intact and don't require restoration is also indicated.
+Data repair rates for replicated and erasure-coded objects in all volumes are averages summarizing all restorations in process, including those restorations initiated using the `repair-data` script. The percentage of objects in those volumes that are intact and don't require restoration is also indicated.
 
 NOTE: Replicated data restoration is dependent on the availability of resources where the replicated copies are stored. Progress of replicated data restoration is nonlinear and might take days or weeks to complete.
 
@@ -113,17 +133,12 @@ The Restoration jobs section displays information about volume restorations star
 ** Expand the Details column to display the restoration start time and job ID.
 
 * If a volume restoration fails:
-** The Status column indicates failed.
-** An error appears, indicating the cause of failure.
-+
-Correct the issues indicated in the error. Then select *Retry* to re-initiate the volume restoration. 
-+
-If multiple restoration jobs have failed, selecting *Retry* starts the most recently failed job.
+** The Status column indicates `failed (attempting retry)`, and will be retried automatically.
+** If multiple restoration jobs have failed, the most recent job will be retried automatically first.
+** The *EC repair failure* alert is triggered if the retries continue to fail. Follow the steps in the alert to resolve the issue.
 
 == [[view-restoration-history]]View restoration history
 
 The *Restoration history* tab shows information about all volume restorations that have successfully completed.
 
-NOTE: Sizes aren't applicable for replicated objects and display only for restorations that contain erasure-coded (EC) data objects.
-
-image::../media/vol-restore-restore-history.png[Volume restoration - Restoration history tab]
+NOTE: Sizes aren't applicable for replicated objects and appear only for restorations that contain erasure-coded (EC) data objects.

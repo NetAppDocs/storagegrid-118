@@ -2,14 +2,14 @@
 permalink: upgrade/how-your-system-is-affected-during-upgrade.html
 sidebar: sidebar
 keywords: upgrade, firmware, appliance, alert
-summary: 'You must understand how your StorageGRID system will be affected during the upgrade.'
+summary: 'Learn how your StorageGRID system will be affected during upgrade.'
 ---
 = How your system is affected during the upgrade
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You must understand how your StorageGRID system will be affected during the upgrade.
+Learn how your StorageGRID system will be affected during upgrade.
 
 == StorageGRID upgrades are non-disruptive
 
@@ -22,15 +22,30 @@ To allow for continued availability, ensure that your ILM policy contains rules 
 * Multiple Gateway Nodes for each client
 * Multiple Storage Nodes for each client
 
+== Client applications might experience short-term disruptions
+
+The StorageGRID system can ingest and retrieve data from client applications throughout the upgrade process; however, client connections to individual Gateway Nodes or Storage Nodes might be disrupted temporarily if the upgrade needs to restart services on those nodes. Connectivity will be restored after the upgrade process completes and services resume on the individual nodes.
+
+You might need to schedule downtime to apply an upgrade if loss of connectivity for a short period is not acceptable. You can use selective approval to schedule when certain nodes are updated.
+
+NOTE: You can use multiple gateways and high availability (HA) groups to provide automatic failover during the upgrade process. See the instructions for link:../admin/configure-high-availability-group.html[configuring high availability groups].
+
 == Appliance firmware is upgraded
 
 During the StorageGRID 11.8 upgrade:
 
-* All StorageGRID appliance nodes are automatically upgraded to StorageGRID Appliance Installer firmware version n.n.
-* SGF6112, SG110, and SG1100 appliances were delivered with StorageGRID 11.8 compatible BIOS firmware.
-* SG6060 and SGF6024 appliances are automatically upgraded to BIOS firmware version 3B07.EX and BMC firmware version n.n.n.
-* SG100 and SG1000 appliances are automatically upgraded to BIOS firmware version 3B12.EC and BMC firmware version n.n.n.
+* All StorageGRID appliance nodes are automatically upgraded to StorageGRID Appliance Installer firmware version 3.8.
+* SG6060 and SGF6024 appliances are automatically upgraded to BIOS firmware version 3B07.EX and BMC firmware version 3.99.07.
+* SG100 and SG1000 appliances are automatically upgraded to BIOS firmware version 3B12.EC and BMC firmware version 4.73.07.
+* SGF6112 appliance is automatically upgraded to BIOS firmware version 3A10.QD and BMC firmware version 3.15.07.
+* SGF6112 is converted from legacy boot mode to UEFI boot mode with secure boot enabled.
+* SG110 and SG1100 appliances were delivered with StorageGRID 11.8 compatible BIOS firmware.
 
+== ILM policies are handled differently according to their status
+
+*	The active policy will remain the same after upgrade.
+* Only the latest 10 historical policies are preserved on upgrade.
+* If there is a proposed policy, it will be deleted during upgrade.
 
 == Alerts might be triggered
 
@@ -83,4 +98,4 @@ This error will resolve after the upgrade to 11.8 is complete.
 While the 11.8 upgrade is in progress, use the following tools to view bucket details or manage buckets, instead of using the Tenant Manager:
 
 *	To perform standard S3 operations on a bucket, use either the link:../s3/operations-on-buckets.html[S3 REST API] or the link:../tenant/understanding-tenant-management-api.html[Tenant Management API].
-* To perform StorageGRID custom operations on a bucket (for example, viewing and modifying the bucket consistency level, enabling or disabling last access time updates, or configuring search integration), use the Tenant Management API.
+* To perform StorageGRID custom operations on a bucket (for example, viewing and modifying the bucket consistency, enabling or disabling last access time updates, or configuring search integration), use the Tenant Management API.

@@ -2,14 +2,14 @@
 permalink: upgrade/linux-installing-rpm-or-deb-package-on-all-hosts.html
 sidebar: sidebar
 keywords: upgrade, linux, rpm, deb,
-summary: 'If any StorageGRID nodes are deployed on Linux hosts, you must install an additional RPM or DEB package on each of these hosts before you start the upgrade.'
+summary: 'If any StorageGRID nodes are deployed on Linux hosts, install an additional RPM or DEB package on each of these hosts before you start the upgrade.'
 ---
 = Linux: Download and install the RPM or DEB package on all hosts
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-If any StorageGRID nodes are deployed on Linux hosts, you must download and install an additional RPM or DEB package on each of these hosts before you start the upgrade.
+If any StorageGRID nodes are deployed on Linux hosts, download and install an additional RPM or DEB package on each of these hosts before you start the upgrade.
 
 == Download upgrade, Linux, and hotfix files
 When you perform a StorageGRID upgrade from the Grid Manager, you are prompted to download the upgrade archive and any required hotfix as the first step. However, if you need to download files to upgrade Linux hosts, you can save time by downloading all required files in advance.
@@ -35,7 +35,7 @@ The downloads page for the version you selected appears. The page contains three
 
 * An RPM or DEB archive in either `.tgz` or `.zip` format. Select the `.zip` file if you are running Windows on the service laptop.
 
-** Red Hat Enterprise Linux or CentOS +
+** Red Hat Enterprise Linux +
 `StorageGRID-Webscale-_version_-RPM-_uniqueID_.zip` +
 `StorageGRID-Webscale-_version_-RPM-_uniqueID_.tgz`
 
@@ -65,7 +65,7 @@ Perform these steps before upgrading StorageGRID software.
 +
 See the steps for installing StorageGRID host services in the installation instructions:
 +
-* link:../rhel/installing-storagegrid-webscale-host-service.html[Red Hat Enterprise Linux or CentOS: Install StorageGRID host services]
+* link:../rhel/installing-storagegrid-webscale-host-service.html[Red Hat Enterprise Linux: Install StorageGRID host services]
 * link:../ubuntu/installing-storagegrid-webscale-host-services.html[Ubuntu or Debian: Install StorageGRID host services]
 
 +

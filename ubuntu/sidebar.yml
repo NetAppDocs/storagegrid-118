@@ -1,15 +1,17 @@
 section: ubuntu
-title: Install Ubuntu or Debian
+title: Install StorageGRID on Ubuntu or Debian
 entries:
   - title: Quick start
-    pdf-filename: Install Ubuntu or Debian for StorageGRID
+    pdf-filename: Install StorageGRID on Ubuntu or Debian
     url: "/ubuntu/index.html"
-  - title: Plan and prepare for Ubuntu or Debian installation
+  - title: Plan and prepare for installation on Ubuntu or Debian
     entries:
     - title: Required information and materials
       url: "/ubuntu/required-materials.html"
     - title: Download and extract StorageGRID installation files
       url: "/ubuntu/downloading-and-extracting-storagegrid-installation-files.html"
+    - title: Software requirements
+      url: "/ubuntu/software-requirements.html"
     - title: CPU and RAM requirements
       url: "/ubuntu/cpu-and-ram-requirements.html"
     - title: Storage and performance requirements

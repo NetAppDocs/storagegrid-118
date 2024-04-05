@@ -19,6 +19,8 @@ sudo storagegrid node validate all
 
 If the files are correct, the output shows *PASSED* for each configuration file, as shown in the example.
 
+NOTE: When using only one LUN on metadata-only nodes, you might receive a warning message that can be ignored.
+
 image::../media/rhel_node_configuration_file_output.gif[This image is explained by the surrounding text.]
 
 TIP: For an automated installation, you can suppress this output by using the `-q` or `--quiet` options in the `storagegrid` command (for example, `storagegrid --quiet...`). If you suppress the output, the command will have a non-zero exit value if any configuration warnings or errors were detected.

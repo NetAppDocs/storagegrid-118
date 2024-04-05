@@ -17,9 +17,11 @@ Conflicting client requests, such as two clients writing to the same key, are re
 
 == Object size
 
-The maximum _recommended_ size for a single CopyObject operation is 5 GiB (5,368,709,120 bytes). If you have objects that are larger than 5 GiB, use multipart upload instead. 
+The maximum _recommended_ size for a single PutObject operation is 5 GiB (5,368,709,120 bytes). If you have objects that are larger than 5 GiB, use link:operations-for-multipart-uploads.html[multipart upload] instead.
 
-The maximum _supported_ size for a single CopyObject operation is 5 TiB (5,497,558,138,880 bytes). However, the *S3 PUT Object size too large* alert will be triggered if you attempt to upload an object that exceeds 5 GiB.
+The maximum _supported_ size for a single PutObject operation is 5 TiB (5,497,558,138,880 bytes). 
+
+NOTE: If you upgraded from StorageGRID 11.6 or earlier, the S3 PUT Object size too large alert will be triggered if you attempt to upload an object that exceeds 5 GiB. If you have a new installation of StorageGRID 11.7 or 11.8, the alert won't be triggered in this case. However, to align with the AWS S3 standard, future releases of StorageGRID won't support uploads of objects larger than 5 GiB.
 
 == UTF-8 characters in user metadata
 
@@ -118,7 +120,7 @@ If you link:using-server-side-encryption.html[use server-side encryption], the r
  ** `x-amz-server-side-encryption-customer-key-MD5`: Specify the MD5 digest of the new encryption key.
  
 +
-IMPORTANT: The encryption keys you provide are never stored. If you lose an encryption key, you lose the corresponding object. Before using customer-provided keys to secure object data, review the considerations for link:using-server-side-encryption.html[using server-side encryption].
+CAUTION: The encryption keys you provide are never stored. If you lose an encryption key, you lose the corresponding object. Before using customer-provided keys to secure object data, review the considerations for link:using-server-side-encryption.html[using server-side encryption].
 
 * If you want to encrypt the target object (the copy) with a unique key managed by StorageGRID (SSE), include this header in the CopyObject request:
  ** `x-amz-server-side-encryption`
@@ -127,5 +129,5 @@ NOTE: The `server-side-encryption` value of the object can't be updated. Instead
 
 == Versioning
 
-If the source bucket is versioned, you can use the `x-amz-copy-source` header to copy the latest version of an object. To copy a specific version of an object, you must explicitly specify the version to copy using the `versionId` subresource. If the destination bucket is versioned, the generated version is returned in the `x-amz-version-id` response header. If versioning is suspended for the target bucket, then `x-amz-version-id` returns a "`null`" value.
+If the source bucket is versioned, you can use the `x-amz-copy-source` header to copy the latest version of an object. To copy a specific version of an object, you must explicitly specify the version to copy using the `versionId` subresource. If the destination bucket is versioned, the generated version is returned in the `x-amz-version-id` response header. If versioning is suspended for the target bucket, then `x-amz-version-id` returns a "null" value.
 

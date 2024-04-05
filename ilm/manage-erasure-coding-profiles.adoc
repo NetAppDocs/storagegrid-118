@@ -57,12 +57,6 @@ You can deactivate an erasure-coding profile if you no longer plan to use it and
 TIP: Confirm that no erasure-coded data repair operations or decommission procedures are in process. An error message is returned if you attempt to deactivate an erasure-coding profile while either of these operations are in progress.
 
 .About this task
-When you deactivate an erasure-coding profile, the profile still appears on the Erasure-Coding Profiles page, but its status is Deactivated.
-
-image::../media/deactivated_ec_profile.png[Deactivated EC Profile]
-
-You can no longer use an erasure-coding profile that has been deactivated. A deactivated profile is not shown when you create the placement instructions for an ILM rule. You can't reactivate a deactivated profile.
-
 StorageGRID prevents you from deactivating an erasure-coding profile if either of the following is true:
 
 * The erasure-coding profile is currently used in an ILM rule.
@@ -72,7 +66,7 @@ StorageGRID prevents you from deactivating an erasure-coding profile if either o
 
 . Select *ILM* > *Erasure coding*.
 
-. Review the *Status* column to confirm that the erasure-coding profile you want to deactivate is not used in any ILM rules.
+. On the Active tab, review the *Status* column to confirm that the erasure-coding profile you want to deactivate is not used in any ILM rules.
 +
 You can't deactivate an erasure-coding profile if it is used in any ILM rule. In the example, the 2+1 Data Center 1 profile is used in at least one ILM rule.
 +
@@ -81,7 +75,7 @@ image::../media/ec_profile_used_in_ilm_rule.png[EC Profile Used in ILM Rule]
 . If the profile is used in an ILM rule, follow these steps:
 .. Select *ILM* > *Rules*.
 .. Select each rule and review the retention diagram to determine if the rule uses the erasure-coding profile you want to deactivate.
-.. If the ILM rule uses the erasure-coding profile you want to deactivate, determine if the rule is used in either the active ILM policy or a proposed policy.
+.. If the ILM rule uses the erasure-coding profile you want to deactivate, determine if the rule is used in any ILM policy.
 .. Complete the additional steps in the table, based on where the erasure-coding profile is used.
 +
 [cols="2a,4a,1a" options="header"]
@@ -99,9 +93,9 @@ image::../media/ec_profile_used_in_ilm_rule.png[EC Profile Used in ILM Rule]
 
 | link:working-with-ilm-rules-and-ilm-policies.html[Work with ILM rules and ILM policies]
 
-| In an ILM rule that is currently in the active ILM policy
+| In an ILM rule that is currently in an active ILM policy
 | 
-. Clone the active policy.
+. Clone the policy.
 . Remove the ILM rule that uses the erasure-coding profile.
 . Add one or more new ILM rules to ensure objects are protected.
 . Save, simulate, and activate the new policy.
@@ -118,24 +112,18 @@ link:creating-ilm-policy.html[Create an ILM policy]
 
 link:working-with-ilm-rules-and-ilm-policies.html[Work with ILM rules and ILM policies]
 
-| In an ILM rule that is currently in a proposed ILM policy
+| In an ILM rule that is currently in an ILM policy
 | 
-. Edit the proposed policy.
+. Edit the policy.
 . Remove the ILM rule that uses the erasure-coding profile.
 . Add one or more new ILM rules to ensure all objects are protected.
-. Save the proposed policy.
+. Save the policy.
 . Edit or delete the rule you removed from the policy. If you edit the rule, remove all placements that use the erasure-coding profile.
 . Continue with this procedure.
 | 
 link:creating-ilm-policy.html[Create an ILM policy]
 
 link:working-with-ilm-rules-and-ilm-policies.html[Work with ILM rules and ILM policies]
-
-| In an ILM rule that is in a historical ILM policy
-| 
-. Edit or delete the rule. If you edit the rule, remove all placements that use the erasure-coding profile. (The rule will now appear as a historical rule in the historical policy.)
-. Continue with this procedure.
-| link:working-with-ilm-rules-and-ilm-policies.html[Work with ILM rules and ILM policies]
 |===
 
  .. Refresh the Erasure-Coding Profiles page to ensure that the profile is not used in an ILM rule.
@@ -145,5 +133,9 @@ link:working-with-ilm-rules-and-ilm-policies.html[Work with ILM rules and ILM po
 TIP: You can select multiple profiles to deactivate at the same time, as long as each profile is not used in any rule.
 
 . If you are sure you want to deactivate the profile, select *Deactivate*.
- ** If StorageGRID is able to deactivate the erasure-coding profile, its status is Deactivated. You can no longer select this profile for any ILM rule.
- ** If StorageGRID is not able to deactivate the profile, an error message appears. For example, an error message appears if object data is still associated with this profile. You might need to wait several weeks before trying the deactivation process again.
+
+.Results
+
+* If StorageGRID is able to deactivate the erasure-coding profile, its status is Deactivated. You can no longer select this profile for any ILM rule. You can't reactivate a deactivated profile.
+
+* If StorageGRID is not able to deactivate the profile, an error message appears. For example, an error message appears if object data is still associated with this profile. You might need to wait several weeks before trying the deactivation process again.

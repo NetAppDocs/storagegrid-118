@@ -11,7 +11,7 @@ summary: 'There are several tasks you can perform to help determine the source o
 [.lead]
 There are several tasks you can perform to help determine the source of issues related to StorageGRID network, hardware, and platform issues.
 
-== "`422: Unprocessable Entity`" errors
+== "422: Unprocessable Entity" errors
 
 The error 422: Unprocessable Entity can occur for different reasons. Check the error message to determine what caused your issue.
 
@@ -79,8 +79,8 @@ The differences in MTU settings could indicate that some, but not all, eth0 netw
 .Steps
 . List the MTU settings for eth0 on all nodes.
  ** Use the query provided in the Grid Manager.
- ** Navigate to `_primary Admin Node IP address_/metrics/graph` and enter the following query: `node_network_mtu_bytes{interface='eth0'}`
-. https://review.docs.netapp.com/us-en/storagegrid-appliances_main/commonhardware/changing-mtu-setting.html[Modify the MTU settings^] as necessary to ensure they are the same for the Grid Network interface (eth0) on all nodes.
+ ** Navigate to `_primary Admin Node IP address_/metrics/graph` and enter the following query: `node_network_mtu_bytes{device="eth0"}`
+. https://docs.netapp.com/us-en/storagegrid-appliances/commonhardware/changing-mtu-setting.html[Modify the MTU settings^] as necessary to ensure they are the same for the Grid Network interface (eth0) on all nodes.
  ** For Linux- and VMware-based nodes, use the following command: `+/usr/sbin/change-ip.py [-h] [-n node] mtu network [network...]+`
 +
 *Example*: `change-ip.py -n node 1500 grid admin`
@@ -148,15 +148,15 @@ NOTE: These steps are applicable only for NRER errors caused by FEC mismatch on 
 .. Check the physical integrity of the cables from the appliance to the switch.
 .. If you want to change FEC settings to try to resolve the NRER alarm, first ensure that the appliance is configured for *Auto* mode on the Link Configuration page of the StorageGRID Appliance Installer (see the instructions for your appliance:
 +
-* https://review.docs.netapp.com/us-en/storagegrid-appliances_main/sg6100/changing-link-configuration-of-sgf6112-appliance.html[SGF6112^]
-* https://review.docs.netapp.com/us-en/storagegrid-appliances_main/sg6000/changing-link-configuration-of-sg6000-cn-controller.html[SG6000^]
-* https://review.docs.netapp.com/us-en/storagegrid-appliances_main/sg5700/changing-link-configuration-of-e5700sg-controller.html[SG5700^]
-* https://review.docs.netapp.com/us-en/storagegrid-appliances_main/sg110-1100/changing-link-configuration-of-services-appliance.html[SG110 and SG1100^]
-* https://review.docs.netapp.com/us-en/storagegrid-appliances_main/sg100-1000/changing-link-configuration-of-services-appliance.html[SG100 and SG1000^]
+* https://docs.netapp.com/us-en/storagegrid-appliances/sg6100/changing-link-configuration-of-sgf6112-appliance.html[SGF6112^]
+* https://docs.netapp.com/us-en/storagegrid-appliances/sg6000/changing-link-configuration-of-sg6000-cn-controller.html[SG6000^]
+* https://docs.netapp.com/us-en/storagegrid-appliances/sg5700/changing-link-configuration-of-e5700sg-controller.html[SG5700^]
+* https://docs.netapp.com/us-en/storagegrid-appliances/sg110-1100/changing-link-configuration-of-services-appliance.html[SG110 and SG1100^]
+* https://docs.netapp.com/us-en/storagegrid-appliances/sg100-1000/changing-link-configuration-of-services-appliance.html[SG100 and SG1000^]
 
 .. Change the FEC settings on the switch ports. The StorageGRID appliance ports will adjust their FEC settings to match, if possible.
 +
-You can't configure FEC settings on StorageGRID appliances. Instead, the appliances attempt to discover and mirror the FEC settings on the switch ports they are connected to. If the links are forced to 25-GbE or 100-GbE network speeds, the switch and NIC might fail to negotiate a common FEC setting. Without a common FEC setting, the network will fall back to "`no-FEC`" mode. When FEC is not enabled, the connections are more susceptible to errors caused by electrical noise.
+You can't configure FEC settings on StorageGRID appliances. Instead, the appliances attempt to discover and mirror the FEC settings on the switch ports they are connected to. If the links are forced to 25-GbE or 100-GbE network speeds, the switch and NIC might fail to negotiate a common FEC setting. Without a common FEC setting, the network will fall back to "no-FEC" mode. When FEC is not enabled, the connections are more susceptible to errors caused by electrical noise.
 +
 NOTE: StorageGRID appliances support Firecode (FC) and Reed Solomon (RS) FEC, as well as no FEC.
 --
@@ -167,9 +167,9 @@ If the error is caused by a switch port and NIC MTU mismatch, check that the MTU
 
 The MTU size configured on the node might be smaller than the setting on the switch port the node is connected to. If a StorageGRID node receives an Ethernet frame larger than its MTU, which is possible with this configuration, the NRER alarm might be reported. If you believe this is what is happening, either change the MTU of the switch port to match the StorageGRID network interface MTU, or change the MTU of the StorageGRID network interface to match the switch port, depending on your end-to-end MTU goals or requirements.
 
-IMPORTANT: For the best network performance, all nodes should be configured with similar MTU values on their Grid Network interfaces. The *Grid Network MTU mismatch* alert is triggered if there is a significant difference in MTU settings for the Grid Network on individual nodes. The MTU values don't have to be the same for all network types. See <<troubleshoot_MTU_alert,Troubleshoot the Grid Network MTU mismatch alert>> for more information.
+NOTE: For the best network performance, all nodes should be configured with similar MTU values on their Grid Network interfaces. The *Grid Network MTU mismatch* alert is triggered if there is a significant difference in MTU settings for the Grid Network on individual nodes. The MTU values don't have to be the same for all network types. See <<troubleshoot_MTU_alert,Troubleshoot the Grid Network MTU mismatch alert>> for more information.
 
-NOTE: Also see https://review.docs.netapp.com/us-en/storagegrid-appliances_main/commonhardware/changing-mtu-setting.html[Change MTU setting^].
+NOTE: Also see https://docs.netapp.com/us-en/storagegrid-appliances/commonhardware/changing-mtu-setting.html[Change MTU setting^].
 
 --
 .High link error rates
@@ -216,19 +216,19 @@ You might see issues with network connectivity for StorageGRID nodes hosted on L
 
 === MAC address cloning
 
-In some cases, network issues can be resolved by using MAC address cloning. If you are using virtual hosts, set the value of the MAC address cloning key for each of your networks to "true" in your node configuration file. This setting causes the MAC address of the StorageGRID container to use the MAC address of the host. To create node configuration files, see the instructions for link:../rhel/creating-node-configuration-files.html[Red Hat Enterprise Linux or CentOS] or link:../ubuntu/creating-node-configuration-files.html[Ubuntu or Debian].
+In some cases, network issues can be resolved by using MAC address cloning. If you are using virtual hosts, set the value of the MAC address cloning key for each of your networks to "true" in your node configuration file. This setting causes the MAC address of the StorageGRID container to use the MAC address of the host. To create node configuration files, see the instructions for link:../rhel/creating-node-configuration-files.html[Red Hat Enterprise Linux] or link:../ubuntu/creating-node-configuration-files.html[Ubuntu or Debian].
 
-IMPORTANT: Create separate virtual network interfaces for use by the Linux host OS. Using the same network interfaces for the Linux host OS and the StorageGRID container might cause the host OS to become unreachable if promiscuous mode has not been enabled on the hypervisor.
+NOTE: Create separate virtual network interfaces for use by the Linux host OS. Using the same network interfaces for the Linux host OS and the StorageGRID container might cause the host OS to become unreachable if promiscuous mode has not been enabled on the hypervisor.
 
-For more information about enabling MAC cloning, see the instructions for link:../rhel/configuring-host-network.html[Red Hat Enterprise Linux or CentOS] or link:../ubuntu/configuring-host-network.html[Ubuntu or Debian].
+For more information about enabling MAC cloning, see the instructions for link:../rhel/configuring-host-network.html[Red Hat Enterprise Linux] or link:../ubuntu/configuring-host-network.html[Ubuntu or Debian].
 
 === Promiscuous mode
 
 If you don't want to use MAC address cloning and would rather allow all interfaces to receive and transmit data for MAC addresses other than the ones assigned by the hypervisor, ensure that the security properties at the virtual switch and port group levels are set to *Accept* for Promiscuous Mode, MAC Address Changes, and Forged Transmits. The values set on the virtual switch can be overridden by the values at the port group level, so ensure that settings are the same in both places.
 
-For more information about using Promiscuous Mode, see the instructions for link:../rhel/configuring-host-network.html[Red Hat Enterprise Linux or CentOS] or link:../ubuntu/configuring-host-network.html[Ubuntu or Debian].
+For more information about using Promiscuous Mode, see the instructions for link:../rhel/configuring-host-network.html[Red Hat Enterprise Linux] or link:../ubuntu/configuring-host-network.html[Ubuntu or Debian].
 
-== Linux: Node status is "`orphaned`"
+== Linux: Node status is "orphaned"
 
 A Linux node in an orphaned state usually indicates that either the storagegrid service or the StorageGRID node daemon controlling the node's container died unexpectedly.
 
@@ -344,3 +344,5 @@ storagegrid node stop node-name
 ----
 storagegrid node start node-name
 ----
+
+// 2024 MAR 8, SGRIDDOC-49

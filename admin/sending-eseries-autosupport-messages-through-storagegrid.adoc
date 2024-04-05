@@ -17,7 +17,7 @@ See https://docs.netapp.com/us-en/e-series-santricity/sm-support/autosupport-fea
 * You are signed into the Grid Manager using a link:../admin/web-browser-requirements.html[supported web browser].
 * You have the link:admin-group-permissions.html[Storage appliance administrator or Root access permission].
 * You have configured SANtricity AutoSupport:
-** For SG6000 and SG5700 appliances, https://review.docs.netapp.com/us-en/storagegrid-appliances_main/installconfig/accessing-and-configuring-santricity-system-manager.html[configure AutoSupport in SANtricity System Manager^]
+** For SG6000 and SG5700 appliances, https://docs.netapp.com/us-en/storagegrid-appliances/installconfig/accessing-and-configuring-santricity-system-manager.html[configure AutoSupport in SANtricity System Manager^]
 
 NOTE: You must have SANtricity firmware 8.70 or higher to access SANtricity System Manager using the Grid Manager.
 
@@ -65,10 +65,10 @@ NOTE: The certificate that enables HTTPS is pre-installed.
 
 . Select *Test Configuration* to test the routing and configuration of your AutoSupport proxy server.
 +
-If correct, a message in a green banner appears: "`Your AutoSupport configuration has been verified.`"
+If correct, a message in a green banner appears: "Your AutoSupport configuration has been verified."
 +
 If the test fails, an error message appears in a red banner. Check your StorageGRID DNS settings and networking, ensure the link:../primer/what-admin-node-is.html[preferred sender Admin Node] can connect to the NetApp Support Site, and try the test again.
 
 . Select *Save*.
 +
-The configuration is saved, and a confirmation message appears: "`AutoSupport delivery method has been configured.`"
+The configuration is saved, and a confirmation message appears: "AutoSupport delivery method has been configured."

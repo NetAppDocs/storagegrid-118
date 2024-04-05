@@ -14,7 +14,7 @@ You can view the buckets in your tenant account.
 .Before you begin
 
 * You are signed in to the Tenant Manager using a link:../admin/web-browser-requirements.html[supported web browser].
-
+* You belong to a user group that has the link:tenant-management-permissions.html[Root access, Manage all buckets, or View all buckets permission]. These permissions override the permission settings in group or bucket policies.
 
 .Steps
 
@@ -26,7 +26,7 @@ The Buckets page appears.
 +
 As required, you can sort the information by any column, or you can page forward and back through the list.
 +
-IMPORTANT: The Object Count and Space Used values displayed are estimates. These estimates are affected by the timing of ingests, network connectivity, and node status. If buckets have versioning enabled, deleted object versions are included in the object count.
+NOTE: The Object Count and Space Used values displayed are estimates. These estimates are affected by the timing of ingests, network connectivity, and node status. If buckets have versioning enabled, deleted object versions are included in the object count.
 +
 [cols="1a,3a" options="header"]
 |===
@@ -60,14 +60,18 @@ This column appears only if S3 Object Lock is enabled for the grid. This column 
 
 . To view details for a specific bucket, select the bucket name from the table.
 +
-The bucket details page appears. From this page, you can perform the following tasks:
+The bucket details page appears. From this page, you can perform the following tasks if you have the required permissions:
 
-* Configure and manage bucket options, such as link:changing-consistency-level.html[consistency level], link:enabling-or-disabling-last-access-time-updates.html[last access time updates], link:changing-bucket-versioning.html[object versioning], link:using-s3-object-lock.html[S3 Object Lock] and link:update-default-retention-settings.html[default bucket retention]
+* Configure and manage bucket options:
+** link:ilm-policy-tags.html[ILM policy tags]
+** link:manage-bucket-consistency.html[Manage bucket consistency]
+** link:enabling-or-disabling-last-access-time-updates.html[Last access time updates]
+** link:changing-bucket-versioning.html[Object versioning]
+** link:using-s3-object-lock.html[S3 Object Lock]
+** link:update-default-retention-settings.html[Default bucket retention]
 * Configure bucket access, such as link:configuring-cross-origin-resource-sharing-cors.html[cross-origin resource sharing (CORS)]
 * link:what-platform-services-are.html[Manage platform services] (if allowed for the tenant), including CloudMirror replication, event notifications, and search integration
 * Enable and link:grid-federation-manage-cross-grid-replication.html[manage cross-grid replication] (if allowed for the tenant) to replicate objects ingested into this bucket to another StorageGRID system
 * Access the link:use-s3-console.html[S3 Console] to manage the objects in the bucket
 * link:deleting-s3-bucket-objects.html[Delete all objects in a bucket]
 * link:deleting-s3-bucket.html[Delete a bucket] that is already empty
-
-

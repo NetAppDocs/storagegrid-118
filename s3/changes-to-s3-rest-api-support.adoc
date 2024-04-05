@@ -15,6 +15,12 @@ You should be aware of changes to the StorageGRID system's support for the S3 RE
 |===
 | Release| Comments
 
+|11.8
+|
+* Added support for `ExpiredObjectDeleteMarker` in a PutBucketLifecycleConfiguration operation, which deletes expired object delete markers.
+* Added support for the `s3:ExistingObjectTag/<tag-key>` policy condition key, which requires that existing objects have the specific tag key and value.
+* Added support for the `s3:RequestObjectTag/<tag-key>` policy condition key, which requires a specific tag and key value when the object request includes tagging.
+
 |11.7
 |
 * Added support for using GOVERNANCE mode with S3 Object Lock.
@@ -60,7 +66,7 @@ You should be aware of changes to the StorageGRID system's support for the S3 RE
 |Added support for cross-origin resource sharing (CORS), HTTP for S3 client connections to grid nodes, and compliance settings on buckets.
 
 |11.0
-|Added support for configuring platform services (CloudMirror replication, notifications, and Elasticsearch search integration) for buckets. Also added support for object tagging location constraints for buckets, and the Available consistency control setting.
+|Added support for configuring platform services (CloudMirror replication, notifications, and Elasticsearch search integration) for buckets. Also added support for object tagging location constraints for buckets, and the Available consistency.
 
 |10.4
 |Added support for ILM scanning changes to versioning, Endpoint Domain Names page updates, conditions and variables in policies, policy examples, and the PutOverwriteObject permission.
@@ -78,3 +84,6 @@ You should be aware of changes to the StorageGRID system's support for the S3 RE
 |Initial support of the S3 REST API by the StorageGRID system.The currently supported version of the _Simple Storage Service API Reference_ is 2006-03-01.
 
 |===
+
+// 2023 OCT 26, SGWS-27431
+// 2023 OCT 5, SGWS-27457

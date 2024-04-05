@@ -33,7 +33,7 @@ At installation, each storage device is assigned a file system universal unique 
 
 In the following example, device `/dev/sdc` has a volume size of 4 TB, is mounted to `/var/local/rangedb/0`, using the device name `/dev/disk/by-uuid/822b0547-3b2b-472e-ad5e-e1cf1809faba` in the /`etc/fstab` file:
 
-image::../media/mounting_storage_devices.gif[Volume size sample]
+image::../media/mounting_storage_devices.gif[Volume size example]
 
 .Steps
 

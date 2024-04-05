@@ -29,7 +29,7 @@ Specifies a single-commit ingest operation when the ILM rule uses the Dual commi
 +
 NOTE: If you are ingesting an object into a bucket with S3 Object Lock enabled, the `REDUCED_REDUNDANCY` option is ignored. If you are ingesting an object into a legacy Compliant bucket, the `REDUCED_REDUNDANCY` option returns an error. StorageGRID will always perform a dual-commit ingest to ensure that compliance requirements are satisfied.
 
-IMPORTANT: If a multipart upload is not completed within 15 days, the operation is marked as inactive and all associated data is deleted from the system.
+CAUTION: If a multipart upload is not completed within 15 days, the operation is marked as inactive and all associated data is deleted from the system.
 
 NOTE: The `ETag` value returned is not an MD5 sum of the data, but follows the Amazon S3 API implementation of the `ETag` value for multipart objects.
 
@@ -47,7 +47,7 @@ NOTE: When versioning is enabled for a bucket, completing a multipart upload alw
 
 If the bucket where the multipart upload occurs is configured for a platform service, multipart upload succeeds even if the associated replication or notification action fails.
 
-If this occurs, an alarm is raised in the Grid Manager on Total Events (SMTT). The Last Event message displays "`Failed to publish notifications for bucket-nameobject key`" for the last object whose notification failed. (To see this message, select *NODES* > *_Storage Node_* > *Events*. View Last Event at the top of the table.) Event messages are also listed in `/var/local/log/bycast-err.log`.
+If this occurs, an alarm is raised in the Grid Manager on Total Events (SMTT). The Last Event message displays "Failed to publish notifications for bucket-nameobject key" for the last object whose notification failed. (To see this message, select *NODES* > *_Storage Node_* > *Events*. View Last Event at the top of the table.) Event messages are also listed in `/var/local/log/bycast-err.log`.
 
 A tenant can trigger the failed replication or notification by updating the object's metadata or tags. A tenant can resubmit the existing values to avoid making unwanted changes.
 

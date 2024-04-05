@@ -15,7 +15,7 @@ Monitor the overall health of your StorageGRID system on a daily basis.
 
 The StorageGRID system can continue to operate when parts of the grid are unavailable. Potential issues indicated by alerts or alarms (legacy system) aren't necessarily issues with system operations. Investigate issues summarized on the Health status card of the Grid Manager Dashboard.
 
-To be notified of alerts as soon as they are triggered, you can https://review.docs.netapp.com/us-en/storagegrid-appliances_main/installconfig/setting-up-email-notifications-for-alerts.html[set up email notifications for alerts^] or link:using-snmp-monitoring.html[configure SNMP traps].
+To be notified of alerts as soon as they are triggered, you can https://docs.netapp.com/us-en/storagegrid-appliances/installconfig/setting-up-email-notifications-for-alerts.html[set up email notifications for alerts^] or link:using-snmp-monitoring.html[configure SNMP traps].
 
 image::../media/health_status_card.png[Health status card - dashboard]
 
@@ -85,9 +85,9 @@ The node is connected to the grid.
 
 *Resolved alerts*: You can search and view a history of alerts that have been resolved.
 
-Optionally, you have watched the video: https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=18df5a3d-bf19-4a9e-8922-afbd009b141b[Video: Alerts overview for StorageGRID 11.7^]
+Optionally, you have watched the video: https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=4506fc61-c8e9-4b86-ba00-b0b901184b38[Video: Alerts overview for StorageGRID 11.8^]
 
-image::../media/video-screenshot-alert-overview-117.png[link="https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=18df5a3d-bf19-4a9e-8922-afbd009b141b" alt="Video: Alerts overview for StorageGRID 11.7", window=_blank]
+image::../media/video-screenshot-alert-overview-118.png[link="https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=4506fc61-c8e9-4b86-ba00-b0b901184b38" alt="Video: Alerts overview for StorageGRID 11.8", window=_blank]
 
 The following table describes the information shown in the Grid Manager for current and resolved alerts.
 
@@ -167,7 +167,7 @@ See link:silencing-alert-notifications.html[Silence alert notifications].
 +
 You must have the link:../admin/admin-group-permissions.html[Manage alerts or Root access permission] to silence an alert rule.
 +
-IMPORTANT: Be careful when deciding to silence an alert rule. If an alert rule is silenced, you might not detect an underlying problem until it prevents a critical operation from completing.
+CAUTION: Be careful when deciding to silence an alert rule. If an alert rule is silenced, you might not detect an underlying problem until it prevents a critical operation from completing.
 
 . To view the current conditions for the alert rule:
  .. From the alert details, select *View conditions*.
@@ -179,6 +179,6 @@ A pop-up appears, listing the Prometheus expression for each defined severity.
 +
 You must have the link:../admin/admin-group-permissions.html[Manage alerts or Root access permission] to edit an alert rule.
 +
-IMPORTANT: Be careful when deciding to edit an alert rule. If you change trigger values, you might not detect an underlying problem until it prevents a critical operation from completing.
+CAUTION: Be careful when deciding to edit an alert rule. If you change trigger values, you might not detect an underlying problem until it prevents a critical operation from completing.
 
 . To close the alert details, select *Close*.

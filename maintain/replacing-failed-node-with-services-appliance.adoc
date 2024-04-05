@@ -17,9 +17,9 @@ You can use a services appliance to recover a failed Gateway Node, a failed non-
  ** The virtual machine hosting the node can't be restored.
  ** The physical or virtual Linux host for the grid node has failed, and must be replaced.
  ** The services appliance hosting the grid node must be replaced.
-* You have confirmed that the StorageGRID Appliance Installer version on the services appliance matches the software version of your StorageGRID system. See https://review.docs.netapp.com/us-en/storagegrid-appliances_main/installconfig/verifying-and-upgrading-storagegrid-appliance-installer-version.html[Verify and upgrade StorageGRID Appliance Installer version^].
+* You have confirmed that the StorageGRID Appliance Installer version on the services appliance matches the software version of your StorageGRID system. See https://docs.netapp.com/us-en/storagegrid-appliances/installconfig/verifying-and-upgrading-storagegrid-appliance-installer-version.html[Verify and upgrade StorageGRID Appliance Installer version^].
 
-IMPORTANT: Don't deploy both an SG110 and an SG1100 services appliance or an SG100 and an SG1000 services appliance in the same site. Unpredictable performance might result.
+NOTE: Don't deploy both an SG110 and an SG1100 services appliance or an SG100 and an SG1000 services appliance in the same site. Unpredictable performance might result.
 
 .About this task
 

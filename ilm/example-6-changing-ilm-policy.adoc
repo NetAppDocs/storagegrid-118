@@ -13,9 +13,9 @@ If your data protection needs to be changed or you add new sites, you can create
 
 Before changing a policy, you must understand how changes in ILM placements can temporarily affect the overall performance of a StorageGRID system.
 
-In this example, a new StorageGRID site has been added in an expansion, and a new active ILM policy needs to be implemented to store data at the new site. To implement a new active policy, first create a proposed policy by either link:creating-proposed-ilm-policy.html[cloning an existing policy _or_ starting from scratch]. Afterward, you must link:simulating-ilm-policy.html[simulate] and then link:activating-ilm-policy.html[activate] the new policy.
+In this example, a new StorageGRID site has been added in an expansion, and a new active ILM policy needs to be implemented to store data at the new site. To implement a new active policy, first link:creating-ilm-policy.html[create a policy]. Afterward, you must link:../ilm/creating-ilm-policy.html#simulate-ilm-policy[simulate] and then link:../ilm/creating-ilm-policy.html#activate-ilm-policy[activate] the new policy.
 
-CAUTION: The following ILM rules and policy are only examples. There are many ways to configure ILM rules. Before activating a new policy, simulate the proposed policy to confirm it will work as intended to protect content from loss.
+CAUTION: The following ILM rules and policy are only examples. There are many ways to configure ILM rules. Before activating a new policy, simulate it to confirm it will work as intended to protect content from loss.
 
 == How changing an ILM policy affects performance
 
@@ -41,8 +41,6 @@ In this example, the active ILM policy was initially designed for a two-site Sto
 image::../media/policy_6_active_policy.png[Example ILM Policy 6 Active Policy]
 
 In this ILM policy, objects belonging to Tenant A are protected by 2+1 erasure coding at a single site, while objects belonging to all other tenants are protected across two sites using 2-copy replication.
-
-NOTE: The first rule in this example uses an advanced filter to ensure that erasure coding is not used for small objects. Any of Tenant A's objects that are smaller than 1 MB will be protected by the default rule, which uses replication.
 
 === Rule 1: One-site erasure coding for Tenant A
 
@@ -82,11 +80,11 @@ NOTE: The first rule in this example uses an advanced filter to ensure that eras
 | Two replicated copies from day 0 to forever: one copy at Site 1 and one copy at Site 2.
 |===
 
-== Proposed ILM policy for example 6: Data protection at three sites
+== ILM policy for example 6: Data protection at three sites
 
 In this example, the ILM policy is being replaced with a new policy for a three-site StorageGRID system.
 
-After performing an expansion to add the new site, the grid administrator created two new storage pools: a storage pool for Site 3 and a storage pool containing all three sites (not the same as the All Storage Nodes default storage pool). Then, the administrator created two new ILM rules and a new proposed ILM policy, which is designed to protect data at all three sites.
+After performing an expansion to add the new site, the grid administrator created two new storage pools: a storage pool for Site 3 and a storage pool containing all three sites (not the same as the All Storage Nodes default storage pool). Then, the administrator created two new ILM rules and a new ILM policy, which is designed to protect data at all three sites.
 
 When this new ILM policy is activated, objects belonging to Tenant A will be protected by 2+1 erasure coding at three sites, while objects belonging to other tenants (and smaller objects belonging to Tenant A) will be protected across three sites using 3-copy replication.
 
@@ -128,9 +126,9 @@ When this new ILM policy is activated, objects belonging to Tenant A will be pro
 | Three replicated copies from day 0 to forever: one copy at Site 1, one copy at Site 2, and one copy at Site 3.
 |===
 
-== Activating the proposed ILM policy for example 6
+== Activating the ILM policy for example 6
 
-When you activate a new proposed ILM policy, existing objects might be moved to new locations or new object copies might be created for existing objects, based on the placement instructions in any new or updated rules.
+When you activate a new ILM policy, existing objects might be moved to new locations or new object copies might be created for existing objects, based on the placement instructions in any new or updated rules.
 
 CAUTION: Errors in an ILM policy can cause unrecoverable data loss. Carefully review and simulate the policy before activating it to confirm that it will work as intended.
 
@@ -138,7 +136,7 @@ CAUTION: When you activate a new ILM policy, StorageGRID uses it to manage all o
 
 === What happens when erasure-coding instructions change
 
-In the currently active ILM policy for this example, objects belonging to Tenant A are protected using 2+1 erasure coding at Site 1. In the new proposed ILM policy, objects belonging to Tenant A will be protected using 2+1 erasure coding at Sites 1, 2, and 3.
+In the currently active ILM policy for this example, objects belonging to Tenant A are protected using 2+1 erasure coding at Site 1. In the new ILM policy, objects belonging to Tenant A will be protected using 2+1 erasure coding at Sites 1, 2, and 3.
 
 When the new ILM policy is activated, the following ILM operations occur:
 
@@ -149,7 +147,7 @@ NOTE: The existing 2+1 fragments at Site 1 aren't reused. StorageGRID considers 
 
 === What happens when replication instructions change
 
-In the currently active ILM policy for this example, objects belonging other tenants are protected using two replicated copies in storage pools at Sites 1 and 2. In the new proposed ILM policy, objects belonging to other tenants will be protected using three replicated copies in storage pools at Sites 1, 2, and 3.
+In the currently active ILM policy for this example, objects belonging to other tenants are protected using two replicated copies in storage pools at Sites 1 and 2. In the new ILM policy, objects belonging to other tenants will be protected using three replicated copies in storage pools at Sites 1, 2, and 3.
 
 When the new ILM policy is activated, the following ILM operations occur:
 
@@ -158,7 +156,7 @@ When the new ILM policy is activated, the following ILM operations occur:
 
 === Performance impact of activating this policy
 
-When the proposed ILM policy in this example is activated, the overall performance of this StorageGRID system will be temporarily affected. Higher than normal levels of grid resources will be required to create new erasure-coded fragments for Tenant A's existing objects and new replicated copies at Site 3 for other tenants' existing objects.
+When the ILM policy in this example is activated, the overall performance of this StorageGRID system will be temporarily affected. Higher than normal levels of grid resources will be required to create new erasure-coded fragments for Tenant A's existing objects and new replicated copies at Site 3 for other tenants' existing objects.
 
 As a result of the ILM policy change, client read and write requests might temporarily experience higher than normal latencies. Latencies will return to normal levels after the placement instructions are fully implemented across the grid.
 
