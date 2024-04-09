@@ -11,6 +11,8 @@ summary: 'The Hardware tab displays CPU utilization and memory usage for each no
 [.lead]
 The Hardware tab displays CPU utilization and memory usage for each node, and additional hardware information about appliances.
 
+NOTE: The Grid Manager is updated with each release and might not match the example screenshots on this page.
+
 The Hardware tab is shown for all nodes.
 
 image::../media/nodes_page_hardware_tab_graphs.png[Nodes page Hardware tab]
@@ -237,7 +239,7 @@ NOTE: The values shown in the table assume all four links are used.
 |10
 |10
 |===
-See https://review.docs.netapp.com/us-en/storagegrid-appliances_main/installconfig/configuring-network-links.html[Configure network links^] for more information about configuring the 10/25-GbE ports.
+See https://docs.netapp.com/us-en/storagegrid-appliances/installconfig/configuring-network-links.html[Configure network links^] for more information about configuring the 10/25-GbE ports.
 
 .. Review the Network Communication section.
 +

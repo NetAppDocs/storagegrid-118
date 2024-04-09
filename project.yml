@@ -1,16 +1,19 @@
 settings:
   name: "StorageGRID 11.8"
+  search: "storagegrid-enable,storagegrid-118,storagegrid-appliances"
   internal:
     pdf_enabled: false
     termcheck_enabled: false
   prod:
-    pdf_enabled: false
-    harmony_enabled: false
-    hide_language_selector: true
+    pdf_enabled: true
+    harmony_enabled: true
+    hide_language_selector: false
 sidebar:
   entries:
     - title: 'StorageGRID 11.8 Docs'
       url: /index.html
+    - title: StorageGRID appliances
+      url: "/storagegrid-hardware.html"
     - title: Release notes
       url: "/release-notes/index.html"
     - title: Get started

@@ -30,7 +30,7 @@ Regardless of who controls how long objects are retained, ILM settings control w
 
 == How S3 bucket lifecycle and ILM interact
 
-The Expiration action in an S3 bucket lifecycle always overrides ILM settings. As a result, an object might be retained on the grid even after any ILM instructions for placing the object have lapsed.
+When an S3 bucket lifecycle is configured, the lifecycle expiration actions override the ILM policy for objects that match the lifecycle filter. As a result, an object might be retained on the grid even after any ILM instructions for placing the object have lapsed.
 
 == Examples for object retention
 
@@ -72,8 +72,8 @@ StorageGRID deletes both copies of the object on day 400 in response to the clie
 S3 Object Lock::
 Retain-until-date for an object version is 2026-03-31. A legal hold is not in effect.
 Compliant ILM rule::
-Store two copies on Storage Nodes "forever."
+Store two copies on Storage Nodes "forever"
 Client delete request::
-Issued on 2024-03-31.
+Issued on 2024-03-31
 Result::
 StorageGRID will not delete the object version because the retain-until-date is still 2 years away.

@@ -69,4 +69,4 @@ A successful execution returns the following headers with an "HTTP/1.1 204 No Co
 
 .Related information
 
-link:monitoring-and-auditing-operations.html[Monitor and audit operations]
+link:swift-operations-tracked-in-audit-logs.html[Swift operations tracked in the audit logs]

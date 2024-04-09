@@ -19,7 +19,7 @@ NOTE: Support for NFS has been deprecated and will be removed in a future releas
 +
 Verify that the server responds, indicating connectivity.
 
-. Mount the audit read-only share using a command appropriate to the client operating system. A sample Linux command is (enter on one line):
+. Mount the audit read-only share using a command appropriate to the client operating system. An example Linux command is (enter on one line):
 +
 `mount -t nfs -o hard,intr _Admin_Node_IP_address_:/var/local/log _myAudit_`
 +
