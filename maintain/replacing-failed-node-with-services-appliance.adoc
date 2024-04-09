@@ -23,7 +23,7 @@ NOTE: Don't deploy both an SG110 and an SG1100 services appliance or an SG100 an
 
 .About this task
 
-You can use an services appliance to recover a failed grid node in the following cases:
+You can use a services appliance to recover a failed grid node in the following cases:
 
 * The failed node was hosted on VMware or Linux (link:installing-services-appliance-platform-change-only.html[platform change])
 * The failed node was hosted on a services appliance (link:preparing-appliance-for-reinstallation-platform-replacement-only.html[platform replacement])
