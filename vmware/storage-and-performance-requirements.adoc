@@ -108,5 +108,3 @@ NOTE: If you assign less than 500 GB to volume 0 (non-production use only), 10% 
 
 For details, go to link:../admin/managing-object-metadata-storage.html[Manage object metadata storage].
 // mairead-SGRIDOC59-apr9
-=======
-// 2024 MAR 13, SGRIDDOC-55
