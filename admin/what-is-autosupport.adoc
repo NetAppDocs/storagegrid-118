@@ -126,7 +126,7 @@ Table name
 
 | ILM.XML
 | ILM raw XML
-| ILM active policy file. Contains details about the active ILM policies, such as storage pool ID, ingest behavior, filters, rules, and description.
+| ILM active policy file. Contains details about the active ILM policies, such as storage pool ID, ingest behavior, filters, rules, and description. Also contains the XML for the default ILM policy.
 
 | LOG.TGZ
 | _n/a_
