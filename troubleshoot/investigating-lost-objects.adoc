@@ -48,7 +48,7 @@ When you are logged in as root, the prompt changes from `$` to `#`.
 [ATIM(UI64):1581535134780426][ATYP(FC32):OLST][ANID(UI32):12448208][AMID(FC32):ILMX][ATID(UI64):7729403978647354233]]
 ----
 . Use the `ObjectByUUID` command to find the object by its identifier (UUID), and then determine if data is at risk.
- .. Telnet to localhost 1402 to access the LDR console.
+ .. Use SSH to log in to any storage node. Then access the LDR console by entering "telnet 0 1402".
  .. Enter: `/proc/OBRP/ObjectByUUID UUID_value`
 +
 In this first example, the object with `UUID 926026C4-00A4-449B-AC72-BCCA72DD1311` has two locations listed.
@@ -167,3 +167,5 @@ If the objects exist, you can reset the count of *Objects lost* to clear the ale
 
 Technical support might ask you to determine if there is a storage recovery procedure in progress. See the information about link:../maintain/restoring-volume.html[restoring object data using Grid Manager] and link:../maintain/restoring-object-data-to-storage-volume.html[restoring object data to a storage volume].
 |===
+
+// 2024 DEC 18, storagegrid-118-github-issue-32
