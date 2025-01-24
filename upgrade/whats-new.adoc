@@ -29,10 +29,13 @@ SGF6112 improvements:: StorageGRID 11.8 and StorageGRID Appliance Installer firm
 * UEFI secure boot on both upgraded and new SGF6112 nodes.
 * Local key manager for DAS NVMe SSD drive passwords.
 
-
 == Configure and manage
 
 Consistency grid-wide default:: You can change the link:../s3/consistency-controls.html[grid-wide default consistency] using the Grid Manager or the grid-config endpoint of the link:../admin/using-grid-management-api.html[Grid Management private API]. The new default will be applied to buckets created after the change.
+
+Default audit destinations:: Fresh installations of StorageGRID 11.8 default to local node audit destinations. Previously, audit messages were sent to the audit log (`/var/local/log/audit.log`) on Admin Nodes only.
++
+For information about changing audit log destinations, refer to link:../monitor/configure-audit-messages.html#Select-audit-information-destinations[Select audit information destinations].
 
 ILM policy tags:: Allows per-bucket ILM policies controlled with bucket tags. Multiple active and inactive ILM policies can exist at the same time. See link:../ilm/ilm-policy-overview.html[ILM policies:Overview].
 
