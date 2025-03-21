@@ -52,7 +52,7 @@ Admin: # grep OLST audit.log
 [ATIM(UI64):1581535134780426][ATYP(FC32):OLST][ANID(UI32):12448208][AMID(FC32):ILMX][ATID(UI64):7729403978647354233]]
 ----
 . Use the `ObjectByUUID` command to find the object by its identifier (UUID), and then determine if data is at risk.
- .. Telnet to localhost 1402 to access the LDR console.
+ .. Use SSH to log in to any storage node. Then access the LDR console by entering "telnet 0 1402".
  .. Enter: `/proc/OBRP/ObjectByUUID UUID_value`
 +
 In this first example, the object with `UUID 926026C4-00A4-449B-AC72-BCCA72DD1311` has two locations listed.

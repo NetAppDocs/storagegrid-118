@@ -96,7 +96,7 @@ NOTE: Always enclose the object file path in single quotes in commands to escape
 
 . If the object path was found, attempt to restore the object to StorageGRID:
 .. From the same Storage Node, change the ownership of the object file so that it can be managed by StorageGRID. Enter: `chown ldr-user:bycast 'file_path_of_object'`
-.. Telnet to localhost 1402 to access the LDR console. Enter: `telnet 0 1402`
+.. Use SSH to log in to any storage node. Then access the LDR console by entering "telnet 0 1402".
 .. Enter: `cd /proc/STOR`
 .. Enter: `Object_Found 'file_path_of_object'`
 +
