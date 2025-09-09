@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: storagegrid-console.html
 keywords: storagegrid, how to enable, third-party solutions, tools, applications, examples
-summary: "Learn how to manage your StorageGRID systems from NetApp Console using Grid Manager and use NetApp Console's data services for backups, data tiering, and more."
+summary: "Learn how to manage your StorageGRID systems from the NetApp Console using Grid Manager and use the NetApp Console's data services for backups, data tiering, and more."
 ---
 = How to manage StorageGRID using NetApp Console
 :hardbreaks:
@@ -12,4 +12,4 @@ summary: "Learn how to manage your StorageGRID systems from NetApp Console using
 :imagesdir: ./media/
 
 [.lead]
-Go to https://docs.netapp.com/us-en/console-storagegrid/index.html[StorageGRID management using NetApp Console^] to learn how to manage your StorageGRID systems from NetApp Console using Grid Manager and use NetApp Console's data services for backups, data tiering, and more.
+Go to https://docs.netapp.com/us-en/console-storagegrid/index.html[StorageGRID management using the NetApp Console^] to learn how to manage your StorageGRID systems from the NetApp Console using Grid Manager and use NetApp Console's data services for backups, data tiering, and more.
