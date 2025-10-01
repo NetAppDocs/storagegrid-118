@@ -149,6 +149,7 @@ A Total Events (SMTT) alarm is triggered when the Cassandra database has an out-
 If an out-of-memory error occurs for the Cassandra database, a heap dump is created, a Total Events (SMTT) alarm is triggered, and the Cassandra Heap Out Of Memory Errors count is incremented by one.
 
 .Steps
+
 . View the event:
 .. Select *SUPPORT* > *Tools* > *Grid topology*.
 .. Expand the site, then select *_grid_node_*.
