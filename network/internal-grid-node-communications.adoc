@@ -129,6 +129,14 @@ If enterprise networking policies restrict access to any of these ports, you can
 | Storage Nodes
 | Metadata internal traffic.
 
+| 5353
+| UDP
+| All nodes
+| All nodes
+
+| Provides the multicast DNS (mDNS) service used for full-grid IP changes and for primary Admin Node discovery during installation, expansion, and recovery.
+
+*Note*: Configuring this port is optional.
 | 7001
 | TCP
 | Storage Nodes
