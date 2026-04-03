@@ -1,4 +1,8 @@
 indexpage:
+   title: Recover or replace nodes
+   lead: If a grid node fails, you can recover it by replacing the failed physical or virtual server, reinstalling StorageGRID software, and restoring recoverable data.
+   summary: If a grid node fails, you can recover it by replacing the failed physical or virtual server, reinstalling StorageGRID software, and restoring recoverable data.
+   keywords: recover, replace, warnings, grid, node, storagegrid systems
    tiles:
     - title: Get started
       links:

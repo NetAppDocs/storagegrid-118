@@ -1,4 +1,8 @@
 indexpage:
+   title: Use StorageGRID tenants and clients
+   lead: After the initial configuration is complete, StorageGRID tenant accounts can create buckets and use S3 client applications to ingest, retrieve, and delete objects.
+   summary: After the initial configuration is complete, StorageGRID tenant accounts can create buckets and use S3 client applications to ingest, retrieve, and delete objects.
+   keywords: applications, tenant, ingest, storagegrid systems, monitor, api, management
    tiles:
     - title: Learn about tenants
       links:

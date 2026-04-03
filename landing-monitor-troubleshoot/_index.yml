@@ -1,4 +1,8 @@
 indexpage:
+   title: Monitor and troubleshoot a StorageGRID system
+   lead: When your system is up and running, you should monitor its activities on a regular basis and troubleshoot and resolve any alerts. You might also want to configure an external syslog server, use SNMP monitoring, or collect additional data.
+   summary: When your system is up and running, you should monitor its activities on a regular basis and troubleshoot and resolve any alerts. You might also want to configure an external syslog server, use SNMP monitoring, or collect additional data.
+   keywords: monitor, troubleshoot, storagegrid system, dashboard, audit, message
    tiles:
     - title: Monitor your system
       links:
