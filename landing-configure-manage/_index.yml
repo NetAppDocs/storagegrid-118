@@ -1,4 +1,8 @@
 indexpage:
+   title: Configure and manage a StorageGRID system
+   lead: The configuration tasks you need to perform for a new StorageGRID system depend on how you will use your grid. At a minimum, you set up system access; use the FabricPool and S3 wizards; and manage various storage and security settings.
+   summary: The configuration tasks you need to perform for a new StorageGRID system depend on how you will use your grid. At a minimum, you set up system access; use the FabricPool and S3 wizards; and manage various storage and security settings.
+   keywords: storagegrid system, configure, manage, security, settings, admin, group
    tiles:
     - title: Get started
       links:
