@@ -1,4 +1,8 @@
 indexpage:
+   title: Maintain a StorageGRID system
+   lead: You can add nodes or sites to expand the capacity or functionality of your system. You can also perform various maintenance procedures to recover from failures or to keep your StorageGRID system up-to-date and performing efficiently.
+   summary: You can add nodes or sites to expand the capacity or functionality of your system. You can also perform various maintenance procedures to recover from failures or to keep your StorageGRID system up-to-date and performing efficiently.
+   keywords: storagegrid system, maintenance, capacity, grid, remove, maintain, decommission
    tiles:
     - title: Get started
       links:

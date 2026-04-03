@@ -1,4 +1,8 @@
 indexpage:
+   title: Get started with a StorageGRID system
+   lead: Before installing and using a StorageGRID system, take some time to learn about what StorageGRID is.
+   summary: Before installing and using a StorageGRID system, take some time to learn about what StorageGRID is.
+   keywords: storagegrid system, install, network, topology, data, manage
    tiles:
     - title: Learn and explore
       links:
