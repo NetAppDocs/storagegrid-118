@@ -35,7 +35,7 @@ Consistency grid-wide default:: You can change the link:../s3/consistency-contro
 
 Default audit destinations:: Fresh installations of StorageGRID 11.8 default to local node audit destinations. Previously, audit messages were sent to the audit log (`/var/local/log/audit.log`) on Admin Nodes only.
 +
-For information about changing audit log destinations, refer to link:../monitor/configure-audit-messages.html#Select-audit-information-destinations[Select audit information destinations].
+For information about changing audit log destinations, refer to link:../monitor/configure-audit-messages.html#select-audit-information-destinations[Select audit information destinations].
 
 ILM policy tags:: Allows per-bucket ILM policies controlled with bucket tags. Multiple active and inactive ILM policies can exist at the same time. See link:../ilm/ilm-policy-overview.html[ILM policies:Overview].
 
